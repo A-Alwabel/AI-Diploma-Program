@@ -1,0 +1,582 @@
+[
+  {
+    "path": "Course 01/unit2-search-algorithms/examples/06_machine_learning_intro.ipynb",
+    "cell_index": 4,
+    "error": "SyntaxError: unterminated string literal (detected at line 17) (line 17)",
+    "snippet": [
+      "# Example: House Price Prediction",
+      "# Features (X): size, bedrooms, location, age",
+      "# Label (y): price",
+      "data = {",
+      " 'size_sqft': [1200, 1500, 1800, 2000, 2200],",
+      " 'bedrooms': [2, 3, 3, 4, 4],",
+      " 'location': ['A', 'B', 'A', 'C', 'B'],",
+      " 'age_years': [5, 10, 2, 15, 8],"
+    ]
+  },
+  {
+    "path": "Course 01/unit2-search-algorithms/examples/07_rdf_sparql_knowledge_graph.ipynb",
+    "cell_index": 1,
+    "error": "SyntaxError: unterminated string literal (detected at line 7) (line 7)",
+    "snippet": [
+      "# Install required libraries ",
+      "# if not already installed",
+      "# !pip install rdflib sparqlwrapper",
+      "from rdflib import Graph, Namespace, URIRef, Literal, BNode",
+      "from rdflib.namespace import RDF, RDFS, FOAF, XSD",
+      "from SPARQLWrapper import SPARQLWrapper, JSON   ",
+      "print('\u2705 Libraries imported successfully!\")\")",
+      ""
+    ]
+  },
+  {
+    "path": "Course 01/unit2-search-algorithms/exercises/exercise_01.ipynb",
+    "cell_index": 1,
+    "error": "SyntaxError: unterminated triple-quoted string literal (detected at line 147) (line 5)",
+    "snippet": [
+      "# 2 - Exercise 1: AI Concepts and Applications\u0627\u0644\u0648\u062d\u062f\u0629 2 - \u062a\u0645\u0631\u064a\u0646 1: \u0645\u0641\u0627\u0647\u064a\u0645 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0648\u0627\u0644\u062a\u0637\u0628\u064a\u0642\u0627\u062a",
+      "",
+      "Complete the following exercises to practice Unit 2 concepts.",
+      "\u0623\u0643\u0645\u0644 \u0627\u0644\u062a\u0645\u0627\u0631\u064a\u0646 \u0627\u0644\u062a\u0627\u0644\u064a\u0629 \u0644\u0645\u0645\u0627\u0631\u0633\u0629 \u0645\u0641\u0627\u0647\u064a\u0645 \u0627\u0644\u0648\u062d\u062f\u0629 2.",
+      "\"\"\"",
+      "",
+      "import numpy as np",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "path": "Course 01/unit4-neural-networks-basics/exercises/exercise_01.ipynb",
+    "cell_index": 1,
+    "error": "SyntaxError: unterminated triple-quoted string literal (detected at line 92) (line 5)",
+    "snippet": [
+      "# 4 - Exercise 1: Neural Networks Basics\u0627\u0644\u0648\u062d\u062f\u0629 4 - \u062a\u0645\u0631\u064a\u0646 1: \u0623\u0633\u0627\u0633\u064a\u0627\u062a \u0627\u0644\u0634\u0628\u0643\u0627\u062a \u0627\u0644\u0639\u0635\u0628\u064a\u0629",
+      "",
+      "Complete the following exercises.",
+      "\u0623\u0643\u0645\u0644 \u0627\u0644\u062a\u0645\u0627\u0631\u064a\u0646 \u0627\u0644\u062a\u0627\u0644\u064a\u0629.",
+      "\"\"\"",
+      "",
+      "import numpy as np",
+      ""
+    ]
+  },
+  {
+    "path": "Course 01/unit5-generative-ai-intro/examples/04_diabetes_classification_ffnn.ipynb",
+    "cell_index": 2,
+    "error": "SyntaxError: invalid syntax (line 6)",
+    "snippet": [
+      "import numpy as np",
+      "import pandas as pd",
+      "from sklearn.model_selection import train_test_split",
+      "from sklearn.preprocessing import LabelEncoder, OneHotEncoder",
+      "StandardScaler",
+      "from sklearn.metrics ",
+      "accuracy_score, precision_score, recall_score, f1_score, classification_reportfrom tensorflow ",
+      "kerasfrom tensorflow.keras.models import Sequential"
+    ]
+  },
+  {
+    "path": "Course 03/modules/module_05/notebook_05_why_how_after.ipynb",
+    "cell_index": 2,
+    "error": "SyntaxError: invalid syntax (line 7)",
+    "snippet": [
+      "# Example: Why Probabilities and Inference matter in ML",
+      "import numpy as np",
+      "from scipy import stats",
+      "",
+      "# Example: Understanding prediction uncertaint",
+      "y",
+      "= np.array([0.85, 0.92, 0.78, 0.95, 0.88])",
+      "mean_pred = np.mean(predictions)"
+    ]
+  },
+  {
+    "path": "Course 03/unit1-linear-algebra/examples/06_transformation_matrices_orthogonal_basis.ipynb",
+    "cell_index": 1,
+    "error": "SyntaxError: invalid syntax (line 3)",
+    "snippet": [
+      "import numpy as np",
+      "import matplotlib.pyplot as plt",
+      "from scipy.linalg  ",
+      "qr, orth",
+      "print(\"\u2705 Libraries imported!\")",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "path": "Course 03/unit2-calculus/examples/05_function_approximation_ml.ipynb",
+    "cell_index": 1,
+    "error": "SyntaxError: invalid syntax (line 3)",
+    "snippet": [
+      "import numpy as np",
+      "import matplotlib.pyplot as plt",
+      "from scipy.optimize ",
+      "minimize",
+      "from sklearn.linear_model import LinearRegression",
+      "from sklearn.metrics ",
+      "mean_squared_error",
+      "print(\"\u2705 Libraries imported!\")"
+    ]
+  },
+  {
+    "path": "Course 03/unit3-optimization/examples/04_regression_real_datasets.ipynb",
+    "cell_index": 1,
+    "error": "SyntaxError: invalid syntax (line 9)",
+    "snippet": [
+      "import numpy as np",
+      "import pandas as pd",
+      "import matplotlib.pyplot as plt",
+      "from sklearn.model_selection import train_test_split",
+      "from sklearn.linear_model import LinearRegression",
+      "LinearRegression, Ridge, Lasso",
+      "from sklearn.preprocessing import LabelEncoder, OneHotEncoder",
+      "StandardScaler, PolynomialFeatures"
+    ]
+  },
+  {
+    "path": "Course 03/unit5-probability/examples/06_maximum_likelihood_estimation.ipynb",
+    "cell_index": 1,
+    "error": "SyntaxError: invalid syntax (line 3)",
+    "snippet": [
+      "import numpy as np",
+      "import matplotlib.pyplot as plt",
+      "from scipy ",
+      "statsfrom scipy.optimize ",
+      "minimize_scalar, minimize   ",
+      "import warningswarnings.filterwarnings('ignore')",
+      "",
+      ""
+    ]
+  },
+  {
+    "path": "Course 04/unit1-data-processing/examples/01_data_loading_exploration.ipynb",
+    "cell_index": 4,
+    "error": "SyntaxError: invalid syntax (line 2)",
+    "snippet": [
+      "# Set display options ",
+      "for better outputpd.set_option('display.max_columns', None)",
+      "pd.set_option('display.width', None)",
+      "",
+      "",
+      "",
+      "",
+      "print(\"=\" * 60)"
+    ]
+  },
+  {
+    "path": "Course 04/unit1-data-processing/examples/03_data_preprocessing.ipynb",
+    "cell_index": 2,
+    "error": "SyntaxError: invalid syntax (line 3)",
+    "snippet": [
+      "# Step 1: Import necessary libraries",
+      "# These libraries help us preprocess data ",
+      "for machine learningimport pandas as pd ",
+      "# For data manipulation",
+      "import numpy as np ",
+      "# For numerical operations",
+      "from sklearn.preprocessing import (, LabelEncoderStandardScaler, ",
+      ""
+    ]
+  },
+  {
+    "path": "Course 04/unit1-data-processing/examples/04_linear_regression.ipynb",
+    "cell_index": 4,
+    "error": "SyntaxError: invalid syntax (line 2)",
+    "snippet": [
+      "# Set style ",
+      "for better plotsplt.style.use('seaborn-v0_8')",
+      "sns.set_palette(\"husl\")",
+      "",
+      "",
+      "",
+      "",
+      "print(\"=\" * 60)"
+    ]
+  },
+  {
+    "path": "Course 04/unit1-data-processing/examples/05_polynomial_regression.ipynb",
+    "cell_index": 4,
+    "error": "SyntaxError: unterminated string literal (detected at line 4) (line 4)",
+    "snippet": [
+      "# Load real-world US Accidents dataset ",
+      "for Traffic Management",
+      "# GDI Theme: Traffic Management - Understanding how visibility affects accident impact distance",
+      "print('\\n\ud83d\udce5 Loading US Accidents dataset...\")\")",
+      "",
+      "",
+      "print(\"\u062a\u062d\u0645\u064a\u0644 \u0645\u062c\u0645\u0648\u0639\u0629 \u0628\u064a\u0627\u0646\u0627\u062a \u062d\u0648\u0627\u062f\u062b \u0627\u0644\u0645\u0631\u0648\u0631 \u0627\u0644\u0623\u0645\u0631\u064a\u0643\u064a\u0629...\")",
+      ""
+    ]
+  },
+  {
+    "path": "Course 04/unit2-regression/examples/01_ridge_lasso_regression.ipynb",
+    "cell_index": 4,
+    "error": "SyntaxError: invalid decimal literal (line 137)",
+    "snippet": [
+      "# Load real-world Credit Card Fraud dataset ",
+      "for Terrorism Financing Detection",
+      "# GDI Theme: Terrorism Financing - Predicting transaction amounts ",
+      "from patterns",
+      "# This dataset has many features (V1-V28, Time) - perfect ",
+      "for regularization!",
+      "",
+      "print(\"\\n\ud83d\udce5 Loading Credit Card Fraud dataset...\")"
+    ]
+  },
+  {
+    "path": "Course 04/unit3-classification/examples/01_logistic_regression.ipynb",
+    "cell_index": 2,
+    "error": "SyntaxError: invalid syntax (line 26)",
+    "snippet": [
+      "# Step 1: Import necessary libraries",
+      "# These libraries help us build and evaluate classification models",
+      "# ALL imports are here at the beginning - this is best practice!",
+      "",
+      "# Data manipulation and numerical operations",
+      "import pandas as pd ",
+      "# For data manipulation",
+      "import numpy as np "
+    ]
+  },
+  {
+    "path": "Course 04/unit3-classification/examples/02_decision_trees.ipynb",
+    "cell_index": 2,
+    "error": "SyntaxError: unmatched ')' (line 19)",
+    "snippet": [
+      "# Step 1: Import necessary libraries",
+      "# These libraries help us build tree-based classification models",
+      "import pandas as pd ",
+      "# For data manipulation",
+      "import numpy as np ",
+      "# For numerical operations",
+      "import matplotlib.pyplot as plt ",
+      "# For visualizations"
+    ]
+  },
+  {
+    "path": "Course 04/unit3-classification/examples/03_svm.ipynb",
+    "cell_index": 3,
+    "error": "SyntaxError: invalid syntax (line 17)",
+    "snippet": [
+      "# Step 1: Import necessary libraries",
+      "# These libraries help us build SVM classification models",
+      "import pandas as pd ",
+      "# For data manipulation",
+      "import numpy as np ",
+      "# For numerical operations",
+      "import matplotlib.pyplot as plt ",
+      "# For visualizations"
+    ]
+  },
+  {
+    "path": "Course 04/unit3-classification/examples/04_knn.ipynb",
+    "cell_index": 3,
+    "error": "SyntaxError: invalid syntax (line 17)",
+    "snippet": [
+      "# Step 1: Import necessary libraries",
+      "# These libraries help us build KNN classification models",
+      "import pandas as pd ",
+      "# For data manipulation",
+      "import numpy as np ",
+      "# For numerical operations",
+      "import matplotlib.pyplot as plt ",
+      "# For visualizations"
+    ]
+  },
+  {
+    "path": "Course 04/unit4-clustering/examples/01_kmeans_clustering.ipynb",
+    "cell_index": 2,
+    "error": "SyntaxError: unmatched ')' (line 15)",
+    "snippet": [
+      "# Step 1: Import necessary libraries",
+      "# These libraries help us perform K-Means clustering",
+      "import pandas as pd ",
+      "# For data manipulation",
+      "import numpy as np ",
+      "# For numerical operations",
+      "import matplotlib.pyplot as plt ",
+      "# For visualizations"
+    ]
+  },
+  {
+    "path": "Course 06/unit1-ethics-foundations/examples/03_case_study_analysis.ipynb",
+    "cell_index": 2,
+    "error": "SyntaxError: unmatched ')' (line 17)",
+    "snippet": [
+      "import matplotlib.pyplot as plt",
+      "import numpy as np",
+      "# Step 1: Import necessary libraries",
+      "# These libraries help us analyze and visualize the case study",
+      "",
+      "numpy as np ",
+      "# For numerical operations: Arrays, calculations",
+      "import pandas as pd "
+    ]
+  },
+  {
+    "path": "Course 06/unit2-bias-justice/exercises/exercise_02.ipynb",
+    "cell_index": 1,
+    "error": "SyntaxError: unterminated triple-quoted string literal (detected at line 152) (line 93)",
+    "snippet": [
+      "2: Bias, Justice, and Discrimination in AIExercise 2: Bias Mitigation TechniquesThis exercise requires you to implement and compare different bias mitigation techniques.",
+      "\"\"\"",
+      "import numpy as np",
+      "import pandas as pd",
+      "from sklearn.model_selection import train_test_split",
+      "from sklearn.ensemble ",
+      "RandomForestClassifier",
+      "from sklearn.preprocessing import LabelEncoder, OneHotEncoder"
+    ]
+  },
+  {
+    "path": "Course 06/unit4-transparency-accountability/examples/07_explainable_ai_techniques.ipynb",
+    "cell_index": 1,
+    "error": "SyntaxError: invalid syntax (line 1)",
+    "snippet": [
+      "as np",
+      "print(\"\u2705 Libraries imported!\")",
+      "",
+      "",
+      "",
+      "",
+      "print(\"\\nExplainable AI Techniques\")",
+      ""
+    ]
+  },
+  {
+    "path": "Course 07/unit1-nlp-fundamentals/exercises/01_text_preprocessing_exercise.ipynb",
+    "cell_index": 1,
+    "error": "SyntaxError: invalid syntax (line 3)",
+    "snippet": [
+      "import pandas as pd",
+      "",
+      "%pip install nltk pandas -q\\n",
+      "",
+      "pandas as pd",
+      "refrom nltk.corpus ",
+      "stopwordsfrom nltk.tokenize ",
+      "word_tokenizefrom nltk.stem "
+    ]
+  },
+  {
+    "path": "Course 07/unit2-tokenization-morphology/examples/04_word_embeddings_glove_fasttext.ipynb",
+    "cell_index": 1,
+    "error": "SyntaxError: invalid syntax (line 3)",
+    "snippet": [
+      "import numpy as np",
+      "from gensim.models import KeyedVectors   ",
+      "gensim.downloader as api",
+      "print(\"\u2705 Libraries imported!\")",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "path": "Course 07/unit4-deep-learning-nlp/examples/03_bert_advanced_usage.ipynb",
+    "cell_index": 1,
+    "error": "SyntaxError: invalid syntax (line 4)",
+    "snippet": [
+      "import numpy as np",
+      "import pandas as pd",
+      "from sklearn.model_selection import train_test_split",
+      "from sklearn.metrics ",
+      "accuracy_score, classification_report",
+      "",
+      "# Try importing Hugging Face Transformerstry:",
+      "    from transformers "
+    ]
+  },
+  {
+    "path": "Course 08/unit3-rnns/exercises/01_rnn_exercise.ipynb",
+    "cell_index": 1,
+    "error": "SyntaxError: invalid syntax (line 2)",
+    "snippet": [
+      "",
+      "torch.nn as nnimport numpy as np",
+      "import pandas as pd",
+      "import matplotlib.pyplot as plt",
+      "print('\u2705 Setup complete!')"
+    ]
+  },
+  {
+    "path": "Course 08/unit4-transformers/examples/03_gpt_text_generation.ipynb",
+    "cell_index": 2,
+    "error": "SyntaxError: invalid syntax (line 1)",
+    "snippet": [
+      "%pip install transformers torch datasets -q",
+      "torchfrom transformers ",
+      "GPT2LMHeadModel, GPT2Tokenizer, GPT2Configfrom transformers ",
+      "Trainer, TrainingArguments   ",
+      "import warningswarnings.filterwarnings('ignore')",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "path": "Course 08/unit5-deployment/examples/02_tensorflow_serving.ipynb",
+    "cell_index": 2,
+    "error": "SyntaxError: invalid syntax (line 1)",
+    "snippet": [
+      "%pip install tensorflow tensorflow-serving-api -q",
+      "tensorflow as tf",
+      "numpy as np",
+      "print(f'TensorFlow version: {tf.__version__}')",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "path": "Course 08/unit5-deployment/examples/03_onnx_conversion.ipynb",
+    "cell_index": 2,
+    "error": "SyntaxError: invalid syntax (line 3)",
+    "snippet": [
+      "import numpy as np",
+      "",
+      "torch.nn as nn",
+      "onnx",
+      "onnxruntime as ort",
+      "print('\u2705 Setup complete!')"
+    ]
+  },
+  {
+    "path": "Course 09/unit1-rl-fundamentals/examples/07_mini_projects_cartpole_frozenlake_qlearning_dqn.ipynb",
+    "cell_index": 1,
+    "error": "SyntaxError: invalid syntax (line 4)",
+    "snippet": [
+      "import numpy as np",
+      "import matplotlib.pyplot as plt",
+      "gym",
+      "randomfrom collections  ",
+      "defaultdict",
+      "print(\"\u2705 Libraries imported!\")",
+      "",
+      ""
+    ]
+  },
+  {
+    "path": "Course 09/unit1-rl-fundamentals/examples/mini_projects_applying_rl_in_games_like_cartpole_and_frozenlake_implementing_q_l.ipynb",
+    "cell_index": 1,
+    "error": "SyntaxError: unterminated string literal (detected at line 4) (line 4)",
+    "snippet": [
+      "# Gym has two common packages: gymnasium (new) and gym (older)",
+      "# This notebook tries both.",
+      "try:",
+      " import gymnasium as gymgym_name = 'gymnasiumexcept ImportError:",
+      " import gymgym_name = 'gym",
+      "print('Using:', gym_name)",
+      "env = gym.make('CartPole-v1')",
+      "obs, info = env.reset()"
+    ]
+  },
+  {
+    "path": "Course 09/unit1-rl-fundamentals/examples/setting_up_rl_environment_installing_openai_gym_and_using_python_based_framework.ipynb",
+    "cell_index": 1,
+    "error": "SyntaxError: unterminated string literal (detected at line 4) (line 4)",
+    "snippet": [
+      "# Gym has two common packages: gymnasium (new) and gym (older)",
+      "# This notebook tries both.",
+      "try:",
+      " import gymnasium as gymgym_name = 'gymnasiumexcept ImportError:",
+      " import gymgym_name = 'gym",
+      "print('Using:', gym_name)",
+      "env = gym.make('CartPole-v1')",
+      "obs, info = env.reset()"
+    ]
+  },
+  {
+    "path": "Course 09/unit2-policy-value/examples/05_td_algorithms_td0_nstep.ipynb",
+    "cell_index": 1,
+    "error": "SyntaxError: invalid syntax (line 3)",
+    "snippet": [
+      "import numpy as np",
+      "import matplotlib.pyplot as plt",
+      "from collections  ",
+      "defaultdict",
+      "print(\"\u2705 Libraries imported!\")",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "path": "Course 09/unit2-policy-value/examples/applying_q_learning_and_sarsa_in_openai_gym_cartpole_frozenlake.ipynb",
+    "cell_index": 1,
+    "error": "SyntaxError: unterminated string literal (detected at line 4) (line 4)",
+    "snippet": [
+      "# Gym has two common packages: gymnasium (new) and gym (older)",
+      "# This notebook tries both.",
+      "try:",
+      " import gymnasium as gymgym_name = 'gymnasiumexcept ImportError:",
+      " import gymgym_name = 'gym",
+      "print('Using:', gym_name)",
+      "env = gym.make('CartPole-v1')",
+      "obs, info = env.reset()"
+    ]
+  },
+  {
+    "path": "Course 09/unit2-policy-value/examples/running_td0_and_n_step_td_algorithms_in_simple_rl_environments.ipynb",
+    "cell_index": 1,
+    "error": "SyntaxError: unterminated string literal (detected at line 4) (line 4)",
+    "snippet": [
+      "# Gym has two common packages: gymnasium (new) and gym (older)",
+      "# This notebook tries both.",
+      "try:",
+      " import gymnasium as gymgym_name = 'gymnasiumexcept ImportError:",
+      " import gymgym_name = 'gym",
+      "print('Using:', gym_name)",
+      "env = gym.make('CartPole-v1')",
+      "obs, info = env.reset()"
+    ]
+  },
+  {
+    "path": "Course 09/unit5-applications/examples/implementing_multi_agent_rl_environments_and_training_cooperativecompetitive_age.ipynb",
+    "cell_index": 1,
+    "error": "SyntaxError: unterminated string literal (detected at line 4) (line 4)",
+    "snippet": [
+      "# Gym has two common packages: gymnasium (new) and gym (older)",
+      "# This notebook tries both.",
+      "try:",
+      " import gymnasium as gymgym_name = 'gymnasiumexcept ImportError:",
+      " import gymgym_name = 'gym",
+      "print('Using:', gym_name)",
+      "env = gym.make('CartPole-v1')",
+      "obs, info = env.reset()"
+    ]
+  },
+  {
+    "path": "Course 11/unit1-deployment-basics/examples/03_local_deployment_testing.ipynb",
+    "cell_index": 3,
+    "error": "SyntaxError: invalid syntax (line 1)",
+    "snippet": [
+      "from flask import Flask, request, jsonify   import joblib",
+      "",
+      "# Load model",
+      "# ",
+      "",
+      "model = joblib.load('model.pkl')",
+      "",
+      "app = Flask(__name__)"
+    ]
+  },
+  {
+    "path": "Course 12/unit3-model-development/examples/04_model_selection_architecture_design.ipynb",
+    "cell_index": 1,
+    "error": "SyntaxError: invalid syntax (line 1)",
+    "snippet": [
+      "tensorflow as tffrom tensorflow ",
+      "keras ",
+      "numpy as np",
+      "print(\"\u2705 Libraries imported!\")",
+      "",
+      "",
+      "print(\"\\nModel Selection and Architecture Design\")",
+      ""
+    ]
+  }
+]

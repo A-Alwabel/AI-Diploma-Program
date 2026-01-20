@@ -1,0 +1,197 @@
+[
+  {
+    "path": "Course 01/unit2-search-algorithms/examples/06_machine_learning_intro.ipynb",
+    "cell_index": 4,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 01/unit2-search-algorithms/examples/07_rdf_sparql_knowledge_graph.ipynb",
+    "cell_index": 1,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 01/unit2-search-algorithms/exercises/exercise_01.ipynb",
+    "cell_index": 1,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 01/unit4-neural-networks-basics/exercises/exercise_01.ipynb",
+    "cell_index": 1,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 01/unit5-generative-ai-intro/examples/04_diabetes_classification_ffnn.ipynb",
+    "cell_index": 2,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 03/modules/module_05/notebook_05_why_how_after.ipynb",
+    "cell_index": 2,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 03/unit1-linear-algebra/examples/06_transformation_matrices_orthogonal_basis.ipynb",
+    "cell_index": 1,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 03/unit2-calculus/examples/05_function_approximation_ml.ipynb",
+    "cell_index": 1,
+    "action": "normalize_imports"
+  },
+  {
+    "path": "Course 03/unit3-optimization/examples/04_regression_real_datasets.ipynb",
+    "cell_index": 1,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 03/unit5-probability/examples/06_maximum_likelihood_estimation.ipynb",
+    "cell_index": 1,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 04/unit1-data-processing/examples/01_data_loading_exploration.ipynb",
+    "cell_index": 4,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 04/unit1-data-processing/examples/03_data_preprocessing.ipynb",
+    "cell_index": 2,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 04/unit1-data-processing/examples/04_linear_regression.ipynb",
+    "cell_index": 4,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 04/unit1-data-processing/examples/05_polynomial_regression.ipynb",
+    "cell_index": 4,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 04/unit2-regression/examples/01_ridge_lasso_regression.ipynb",
+    "cell_index": 4,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 04/unit3-classification/examples/01_logistic_regression.ipynb",
+    "cell_index": 2,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 04/unit3-classification/examples/02_decision_trees.ipynb",
+    "cell_index": 2,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 04/unit3-classification/examples/03_svm.ipynb",
+    "cell_index": 3,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 04/unit3-classification/examples/04_knn.ipynb",
+    "cell_index": 3,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 04/unit4-clustering/examples/01_kmeans_clustering.ipynb",
+    "cell_index": 2,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 06/unit1-ethics-foundations/examples/03_case_study_analysis.ipynb",
+    "cell_index": 2,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 06/unit2-bias-justice/exercises/exercise_02.ipynb",
+    "cell_index": 1,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 06/unit4-transparency-accountability/examples/07_explainable_ai_techniques.ipynb",
+    "cell_index": 1,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 07/unit1-nlp-fundamentals/exercises/01_text_preprocessing_exercise.ipynb",
+    "cell_index": 1,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 07/unit2-tokenization-morphology/examples/04_word_embeddings_glove_fasttext.ipynb",
+    "cell_index": 1,
+    "action": "normalize_imports"
+  },
+  {
+    "path": "Course 07/unit4-deep-learning-nlp/examples/03_bert_advanced_usage.ipynb",
+    "cell_index": 1,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 08/unit3-rnns/exercises/01_rnn_exercise.ipynb",
+    "cell_index": 1,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 08/unit4-transformers/examples/03_gpt_text_generation.ipynb",
+    "cell_index": 2,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 08/unit5-deployment/examples/02_tensorflow_serving.ipynb",
+    "cell_index": 2,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 08/unit5-deployment/examples/03_onnx_conversion.ipynb",
+    "cell_index": 2,
+    "action": "normalize_imports"
+  },
+  {
+    "path": "Course 09/unit1-rl-fundamentals/examples/07_mini_projects_cartpole_frozenlake_qlearning_dqn.ipynb",
+    "cell_index": 1,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 09/unit1-rl-fundamentals/examples/mini_projects_applying_rl_in_games_like_cartpole_and_frozenlake_implementing_q_l.ipynb",
+    "cell_index": 1,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 09/unit1-rl-fundamentals/examples/setting_up_rl_environment_installing_openai_gym_and_using_python_based_framework.ipynb",
+    "cell_index": 1,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 09/unit2-policy-value/examples/05_td_algorithms_td0_nstep.ipynb",
+    "cell_index": 1,
+    "action": "normalize_imports"
+  },
+  {
+    "path": "Course 09/unit2-policy-value/examples/applying_q_learning_and_sarsa_in_openai_gym_cartpole_frozenlake.ipynb",
+    "cell_index": 1,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 09/unit2-policy-value/examples/running_td0_and_n_step_td_algorithms_in_simple_rl_environments.ipynb",
+    "cell_index": 1,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 09/unit5-applications/examples/implementing_multi_agent_rl_environments_and_training_cooperativecompetitive_age.ipynb",
+    "cell_index": 1,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 11/unit1-deployment-basics/examples/03_local_deployment_testing.ipynb",
+    "cell_index": 3,
+    "action": "comment_out_invalid_cell"
+  },
+  {
+    "path": "Course 12/unit3-model-development/examples/04_model_selection_architecture_design.ipynb",
+    "cell_index": 1,
+    "action": "normalize_imports"
+  }
+]

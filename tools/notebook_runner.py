@@ -4,6 +4,7 @@ Execute all notebooks in the repository and generate execution reports.
 """
 
 import json
+import os
 import sys
 import time
 import traceback
@@ -24,7 +25,8 @@ except ImportError:
 BASE_DIR = Path(__file__).parent.parent
 
 # Execution timeout per notebook (in seconds)
-NOTEBOOK_TIMEOUT = 300  # 5 minutes
+DEFAULT_NOTEBOOK_TIMEOUT = 300  # 5 minutes
+NOTEBOOK_TIMEOUT = int(os.environ.get("NOTEBOOK_TIMEOUT", DEFAULT_NOTEBOOK_TIMEOUT))
 
 def find_all_notebooks(base_dir: Path) -> List[Path]:
     """Find all .ipynb files in the repository."""

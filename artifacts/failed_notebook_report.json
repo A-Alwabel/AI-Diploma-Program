@@ -1,0 +1,534 @@
+{
+  "generated": "2026-01-19T17:57:54.567243",
+  "total": 75,
+  "passed": 68,
+  "failed": 7,
+  "results": [
+    {
+      "path": "Course 01/unit2-search-algorithms/examples/06_machine_learning_intro.ipynb",
+      "status": "passed",
+      "execution_time": 1.6412348747253418,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 01/unit2-search-algorithms/examples/07_rdf_sparql_knowledge_graph.ipynb",
+      "status": "passed",
+      "execution_time": 0.6524450778961182,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 01/unit2-search-algorithms/exercises/exercise_01.ipynb",
+      "status": "passed",
+      "execution_time": 0.5584940910339355,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 01/unit3-knowledge-representation/examples/05_perceptron_xor.ipynb",
+      "status": "passed",
+      "execution_time": 1.5924582481384277,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 01/unit3-ml-basics/examples/05_solving_xor_keras.ipynb",
+      "status": "passed",
+      "execution_time": 0.7648460865020752,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 01/unit4-neural-networks-basics/examples/03_cnn_rnn_architectures.ipynb",
+      "status": "passed",
+      "execution_time": 1.2854280471801758,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 01/unit4-neural-networks-basics/exercises/exercise_01.ipynb",
+      "status": "passed",
+      "execution_time": 0.5870399475097656,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 01/unit5-generative-ai-intro/examples/04_diabetes_classification_ffnn.ipynb",
+      "status": "passed",
+      "execution_time": 0.7509021759033203,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 03/modules/module_01/exercises/exercise_01.ipynb",
+      "status": "passed",
+      "execution_time": 0.7459602355957031,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 03/modules/module_01/exercises/exercise_02.ipynb",
+      "status": "passed",
+      "execution_time": 0.6832067966461182,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 03/modules/module_02/exercises/exercise_01.ipynb",
+      "status": "passed",
+      "execution_time": 0.8735501766204834,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 03/modules/module_02/exercises/exercise_02.ipynb",
+      "status": "passed",
+      "execution_time": 0.6330959796905518,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 03/modules/module_02/notebook_02_why_how_after.ipynb",
+      "status": "passed",
+      "execution_time": 0.9533131122589111,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 03/modules/module_03/exercises/exercise_01.ipynb",
+      "status": "passed",
+      "execution_time": 0.6144189834594727,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 03/modules/module_03/exercises/exercise_02.ipynb",
+      "status": "passed",
+      "execution_time": 0.6566879749298096,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 03/modules/module_04/exercises/exercise_01.ipynb",
+      "status": "passed",
+      "execution_time": 0.8244380950927734,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 03/modules/module_05/exercises/exercise_01.ipynb",
+      "status": "passed",
+      "execution_time": 1.1403493881225586,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 03/modules/module_05/notebook_05_why_how_after.ipynb",
+      "status": "passed",
+      "execution_time": 0.5814449787139893,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 03/unit1-linear-algebra/examples/06_transformation_matrices_orthogonal_basis.ipynb",
+      "status": "passed",
+      "execution_time": 0.8035290241241455,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 03/unit2-calculus/examples/05_function_approximation_ml.ipynb",
+      "status": "passed",
+      "execution_time": 0.6464908123016357,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 03/unit3-optimization/examples/04_regression_real_datasets.ipynb",
+      "status": "passed",
+      "execution_time": 0.5453090667724609,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 03/unit5-probability/examples/06_maximum_likelihood_estimation.ipynb",
+      "status": "passed",
+      "execution_time": 0.5922417640686035,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 04/unit1-data-processing/examples/01_data_loading_exploration.ipynb",
+      "status": "failed",
+      "execution_time": 1.5372369289398193,
+      "error": "An error occurred while executing the following cell:\n------------------\n# Comprehensive data information\n# .info() gives us a summary: data types, non-null counts, memory usage\n# Why .info()? It's a quick health check - shows \n\n\n\n# if we have missing values!\n\n# df.info()\n# - Prints comprehensive summary of DataFrame\n# - Shows:\n# - Number of rows and columns\n# - Column names and data types\n# - Non-null counts (how many non-missing values per column)\n# - Memory usage\n# - Useful \n# for quick data quality check\n# - Returns None (prints to console, doesn't return DataFrame)\n\n\n\n\n# print(\"\\n\u2139\ufe0f Data Info / \u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a:\")\n\n\n\n\n# print(\" (This shows us data types AND\")\n\n\n\n# if there are missing values)\")\n\n\n\n\nprint(df.info()\n------------------\n\n\n\u001b[0;36m  Cell \u001b[0;32mIn[12], line 37\u001b[0;36m\u001b[0m\n\u001b[0;31m    print(df.info()\u001b[0m\n\u001b[0m                   ^\u001b[0m\n\u001b[0;31m_IncompleteInputError\u001b[0m\u001b[0;31m:\u001b[0m incomplete input\n\n",
+      "error_traceback": "Traceback (most recent call last):\n  File \"/Users/abdullah/.cursor/worktrees/AI_Diploma/rfa/tools/notebook_runner.py\", line 105, in execute_notebook_nbclient\n    client.execute()\n    ~~~~~~~~~~~~~~^^\n  File \"/opt/anaconda3/lib/python3.13/site-packages/jupyter_core/utils/__init__.py\", line 165, in wrapped\n    return loop.run_until_complete(inner)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^\n  File \"/opt/anaconda3/lib/python3.13/asyncio/base_events.py\", line 725, in run_until_complete\n    return future.result()\n           ~~~~~~~~~~~~~^^\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbclient/client.py\", line 709, in async_execute\n    await self.async_execute_cell(\n        cell, index, execution_count=self.code_cells_executed + 1\n    )\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbclient/client.py\", line 1062, in async_execute_cell\n    await self._check_raise_for_error(cell, cell_index, exec_reply)\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbclient/client.py\", line 918, in _check_raise_for_error\n    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)\nnbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:\n------------------\n# Comprehensive data information\n# .info() gives us a summary: data types, non-null counts, memory usage\n# Why .info()? It's a quick health check - shows \n\n\n\n# if we have missing values!\n\n# df.info()\n# - Prints comprehensive summary of DataFrame\n# - Shows:\n# - Number of rows and columns\n# - Column names and data types\n# - Non-null counts (how many non-missing values per column)\n# - Memory usage\n# - Useful \n# for quick data quality check\n# - Returns None (prints to console, doesn't return DataFrame)\n\n\n\n\n# print(\"\\n\u2139\ufe0f Data Info / \u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a:\")\n\n\n\n\n# print(\" (This shows us data types AND\")\n\n\n\n# if there are missing values)\")\n\n\n\n\nprint(df.info()\n------------------\n\n\n\u001b[0;36m  Cell \u001b[0;32mIn[12], line 37\u001b[0;36m\u001b[0m\n\u001b[0;31m    print(df.info()\u001b[0m\n\u001b[0m                   ^\u001b[0m\n\u001b[0;31m_IncompleteInputError\u001b[0m\u001b[0;31m:\u001b[0m incomplete input\n\n\n"
+    },
+    {
+      "path": "Course 04/unit1-data-processing/examples/03_data_preprocessing.ipynb",
+      "status": "failed",
+      "execution_time": 0.6794731616973877,
+      "error": "An error occurred while executing the following cell:\n------------------\n# Split into train and test sets (80% train, 20% test)\n# \u0627\u0644\u062a\u0642\u0633\u064a\u0645 \u0625\u0644\u0649 \u0645\u062c\u0645\u0648\u0639\u0627\u062a \u062a\u062f\u0631\u064a\u0628 \u0648\u0627\u062e\u062a\u0628\u0627\u0631 (80% \u062a\u062f\u0631\u064a\u0628\u060c 20% \u0627\u062e\u062a\u0628\u0627\u0631)\n\n# strat\n\n# ify=y)\n# (not 42) - different projects use different seeds \n# for variety\n# - train_test_split(): Splits data into training and testing sets\n# - X: Features (input variables) - DataFrame or array\n# - y: Target (output variable) - Series or array\n# : 20% \n# for testing, 80%\n# for training (can use 0.25\n# for 25%)\n# : Seed \n# for random number generator\n# - Ensures same split every time (reproducibility)\n# = different splits\n# - We use 57 here (not 42) \n# for variety across notebooks\n# - strat\n\n# ify=y: Maintains class distribution in train/test\n# - If y has 60% \n# class 0, 40% \n# class 1, train/test will have same ratio\n# - Important \n# for imbalanced datasets\n# - Returns 4 arrays: X_train, X_test, y_train, y_test\n# - X_train: Training features (80% of X)\n# - X_test: Testing features (20% of X)\n# - y_train: Training targets (80% of y)\n# - y_test: Testing targets (20% of y)\n# X_train, X_test, y_train, y_test = train_test_split(\n#  X, y,\n#  test_size=0.2,\n#  random_state=57, \n# Using 57 instead of 42 \n# for variety across different notebooksstrat\n\n# ify=y \n# Maintain \n# class distribution\n)\n\n\n\n\n# print(f\"\\nOriginal data shape: {X.shape}\")\n\n\n\n\n# print(f\"\u0634\u0643\u0644 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0623\u0635\u0644\u064a\u0629: {X.shape}\")\n\n\n\n\n# print(f\"\\nTraining set:\")\n\n\n\n\n# print(f\"\u0645\u062c\u0645\u0648\u0639\u0629 \u0627\u0644\u062a\u062f\u0631\u064a\u0628:\")\n\n\n\n\n# print(f\" X_train: {X_train.shape}\")\n\n\n\n\n# print(f\" y_train: {y_train.shape}\")\n\n\n\n\n# print(f\"\\nTest set:\")\n\n\n\n\n# print(f\"\u0645\u062c\u0645\u0648\u0639\u0629 \u0627\u0644\u0627\u062e\u062a\u0628\u0627\u0631:\")\n\n\n\n\n# print(f\" X_test: {X_test.shape}\")\n\n\n\n\n# print(f\" y_test: {y_test.shape}\")\n\n\n\n\n# print(f\"\\nTrain percentage: {len(X_train) / len(X) * 100:.1f}%\")\n\n\n\n\n# print(f\"Test percentage: {len(X_test) / len(X) * 100:.1f}%\")\n------------------\n\n\n\u001b[0;36m  Cell \u001b[0;32mIn[13], line 45\u001b[0;36m\u001b[0m\n\u001b[0;31m    )\u001b[0m\n\u001b[0m    ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m unmatched ')'\n\n",
+      "error_traceback": "Traceback (most recent call last):\n  File \"/Users/abdullah/.cursor/worktrees/AI_Diploma/rfa/tools/notebook_runner.py\", line 105, in execute_notebook_nbclient\n    client.execute()\n    ~~~~~~~~~~~~~~^^\n  File \"/opt/anaconda3/lib/python3.13/site-packages/jupyter_core/utils/__init__.py\", line 165, in wrapped\n    return loop.run_until_complete(inner)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^\n  File \"/opt/anaconda3/lib/python3.13/asyncio/base_events.py\", line 725, in run_until_complete\n    return future.result()\n           ~~~~~~~~~~~~~^^\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbclient/client.py\", line 709, in async_execute\n    await self.async_execute_cell(\n        cell, index, execution_count=self.code_cells_executed + 1\n    )\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbclient/client.py\", line 1062, in async_execute_cell\n    await self._check_raise_for_error(cell, cell_index, exec_reply)\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbclient/client.py\", line 918, in _check_raise_for_error\n    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)\nnbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:\n------------------\n# Split into train and test sets (80% train, 20% test)\n# \u0627\u0644\u062a\u0642\u0633\u064a\u0645 \u0625\u0644\u0649 \u0645\u062c\u0645\u0648\u0639\u0627\u062a \u062a\u062f\u0631\u064a\u0628 \u0648\u0627\u062e\u062a\u0628\u0627\u0631 (80% \u062a\u062f\u0631\u064a\u0628\u060c 20% \u0627\u062e\u062a\u0628\u0627\u0631)\n\n# strat\n\n# ify=y)\n# (not 42) - different projects use different seeds \n# for variety\n# - train_test_split(): Splits data into training and testing sets\n# - X: Features (input variables) - DataFrame or array\n# - y: Target (output variable) - Series or array\n# : 20% \n# for testing, 80%\n# for training (can use 0.25\n# for 25%)\n# : Seed \n# for random number generator\n# - Ensures same split every time (reproducibility)\n# = different splits\n# - We use 57 here (not 42) \n# for variety across notebooks\n# - strat\n\n# ify=y: Maintains class distribution in train/test\n# - If y has 60% \n# class 0, 40% \n# class 1, train/test will have same ratio\n# - Important \n# for imbalanced datasets\n# - Returns 4 arrays: X_train, X_test, y_train, y_test\n# - X_train: Training features (80% of X)\n# - X_test: Testing features (20% of X)\n# - y_train: Training targets (80% of y)\n# - y_test: Testing targets (20% of y)\n# X_train, X_test, y_train, y_test = train_test_split(\n#  X, y,\n#  test_size=0.2,\n#  random_state=57, \n# Using 57 instead of 42 \n# for variety across different notebooksstrat\n\n# ify=y \n# Maintain \n# class distribution\n)\n\n\n\n\n# print(f\"\\nOriginal data shape: {X.shape}\")\n\n\n\n\n# print(f\"\u0634\u0643\u0644 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0623\u0635\u0644\u064a\u0629: {X.shape}\")\n\n\n\n\n# print(f\"\\nTraining set:\")\n\n\n\n\n# print(f\"\u0645\u062c\u0645\u0648\u0639\u0629 \u0627\u0644\u062a\u062f\u0631\u064a\u0628:\")\n\n\n\n\n# print(f\" X_train: {X_train.shape}\")\n\n\n\n\n# print(f\" y_train: {y_train.shape}\")\n\n\n\n\n# print(f\"\\nTest set:\")\n\n\n\n\n# print(f\"\u0645\u062c\u0645\u0648\u0639\u0629 \u0627\u0644\u0627\u062e\u062a\u0628\u0627\u0631:\")\n\n\n\n\n# print(f\" X_test: {X_test.shape}\")\n\n\n\n\n# print(f\" y_test: {y_test.shape}\")\n\n\n\n\n# print(f\"\\nTrain percentage: {len(X_train) / len(X) * 100:.1f}%\")\n\n\n\n\n# print(f\"Test percentage: {len(X_test) / len(X) * 100:.1f}%\")\n------------------\n\n\n\u001b[0;36m  Cell \u001b[0;32mIn[13], line 45\u001b[0;36m\u001b[0m\n\u001b[0;31m    )\u001b[0m\n\u001b[0m    ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m unmatched ')'\n\n\n"
+    },
+    {
+      "path": "Course 04/unit1-data-processing/examples/04_linear_regression.ipynb",
+      "status": "failed",
+      "execution_time": 0.796623945236206,
+      "error": "An error occurred while executing the following cell:\n------------------\n# Calculate residuals (prediction errors)\n# = Actual values - Predicted values\n# = y_test_m - y_test_pred_m\n# print(f\"\u2705 Residuals calculated: {len(residuals)} residuals\")\n\n\n\n\n# print(f\" Mean residual: ${residuals.mean():.2f} (should be close to 0)\")\n\n\n\n\n# print(f\" Std residual: ${residuals.std():.2f}\")\n\n# 5))\n\n# axes[0].axvline(0, color='r', linestyle='--', linewidth=2)\n# axes[0].set_xlabel('Residuals')\n# axes[0].set_ylabel('Frequency')\n# axes[0].set_title('Residuals Distribution')\n# axes[0].grid(True, alpha=0.3)\n\n\n# axes[1].axhline(0, color='r', linestyle='--', linewidth=2)\n# axes[1].set_xlabel('Predicted Values')\n# axes[1].set_ylabel('Residuals')\n# axes[1].set_title('Residuals vs Predicted Values')\n# axes[1].grid(True, alpha=0.3)\n\n# plt.tight_layout()\n# plt.savefig('residuals_analysis.png', dpi=300, bbox_inches='tight')\n\n\n\n\n# print(\"\\n\u2713 Plot saved as 'residuals_analysis.png'\")\nplt.show()\n\n\n\n\n\n\n\n# print(\"\\n\" + \"=\" * 60)\n\n\n\n\n# print(\"Example 4 Complete! \u2713\")\n\n\n\n\n# print(\"\u0627\u0643\u062a\u0645\u0644 \u0627\u0644\u0645\u062b\u0627\u0644 4! \u2713\")\n\n\n\n\n# print(\"=\" * 60)\n------------------\n\n\n\u001b[0;31m---------------------------------------------------------------------------\u001b[0m\n\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)\nCell \u001b[0;32mIn[22], line 38\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[38;5;66;03m# Calculate residuals (prediction errors)\u001b[39;00m\n\u001b[1;32m      2\u001b[0m \u001b[38;5;66;03m# = Actual values - Predicted values\u001b[39;00m\n\u001b[1;32m      3\u001b[0m \u001b[38;5;66;03m# = y_test_m - y_test_pred_m\u001b[39;00m\n\u001b[0;32m   (...)\u001b[0m\n\u001b[1;32m     36\u001b[0m \n\u001b[1;32m     37\u001b[0m \u001b[38;5;66;03m# print(\"\\n\u2713 Plot saved as 'residuals_analysis.png'\")\u001b[39;00m\n\u001b[0;32m---> 38\u001b[0m plt\u001b[38;5;241m.\u001b[39mshow()\n\n\u001b[0;31mNameError\u001b[0m: name 'plt' is not defined\n",
+      "error_traceback": "Traceback (most recent call last):\n  File \"/Users/abdullah/.cursor/worktrees/AI_Diploma/rfa/tools/notebook_runner.py\", line 105, in execute_notebook_nbclient\n    client.execute()\n    ~~~~~~~~~~~~~~^^\n  File \"/opt/anaconda3/lib/python3.13/site-packages/jupyter_core/utils/__init__.py\", line 165, in wrapped\n    return loop.run_until_complete(inner)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^\n  File \"/opt/anaconda3/lib/python3.13/asyncio/base_events.py\", line 725, in run_until_complete\n    return future.result()\n           ~~~~~~~~~~~~~^^\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbclient/client.py\", line 709, in async_execute\n    await self.async_execute_cell(\n        cell, index, execution_count=self.code_cells_executed + 1\n    )\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbclient/client.py\", line 1062, in async_execute_cell\n    await self._check_raise_for_error(cell, cell_index, exec_reply)\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbclient/client.py\", line 918, in _check_raise_for_error\n    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)\nnbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:\n------------------\n# Calculate residuals (prediction errors)\n# = Actual values - Predicted values\n# = y_test_m - y_test_pred_m\n# print(f\"\u2705 Residuals calculated: {len(residuals)} residuals\")\n\n\n\n\n# print(f\" Mean residual: ${residuals.mean():.2f} (should be close to 0)\")\n\n\n\n\n# print(f\" Std residual: ${residuals.std():.2f}\")\n\n# 5))\n\n# axes[0].axvline(0, color='r', linestyle='--', linewidth=2)\n# axes[0].set_xlabel('Residuals')\n# axes[0].set_ylabel('Frequency')\n# axes[0].set_title('Residuals Distribution')\n# axes[0].grid(True, alpha=0.3)\n\n\n# axes[1].axhline(0, color='r', linestyle='--', linewidth=2)\n# axes[1].set_xlabel('Predicted Values')\n# axes[1].set_ylabel('Residuals')\n# axes[1].set_title('Residuals vs Predicted Values')\n# axes[1].grid(True, alpha=0.3)\n\n# plt.tight_layout()\n# plt.savefig('residuals_analysis.png', dpi=300, bbox_inches='tight')\n\n\n\n\n# print(\"\\n\u2713 Plot saved as 'residuals_analysis.png'\")\nplt.show()\n\n\n\n\n\n\n\n# print(\"\\n\" + \"=\" * 60)\n\n\n\n\n# print(\"Example 4 Complete! \u2713\")\n\n\n\n\n# print(\"\u0627\u0643\u062a\u0645\u0644 \u0627\u0644\u0645\u062b\u0627\u0644 4! \u2713\")\n\n\n\n\n# print(\"=\" * 60)\n------------------\n\n\n\u001b[0;31m---------------------------------------------------------------------------\u001b[0m\n\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)\nCell \u001b[0;32mIn[22], line 38\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[38;5;66;03m# Calculate residuals (prediction errors)\u001b[39;00m\n\u001b[1;32m      2\u001b[0m \u001b[38;5;66;03m# = Actual values - Predicted values\u001b[39;00m\n\u001b[1;32m      3\u001b[0m \u001b[38;5;66;03m# = y_test_m - y_test_pred_m\u001b[39;00m\n\u001b[0;32m   (...)\u001b[0m\n\u001b[1;32m     36\u001b[0m \n\u001b[1;32m     37\u001b[0m \u001b[38;5;66;03m# print(\"\\n\u2713 Plot saved as 'residuals_analysis.png'\")\u001b[39;00m\n\u001b[0;32m---> 38\u001b[0m plt\u001b[38;5;241m.\u001b[39mshow()\n\n\u001b[0;31mNameError\u001b[0m: name 'plt' is not defined\n\n"
+    },
+    {
+      "path": "Course 04/unit1-data-processing/examples/05_polynomial_regression.ipynb",
+      "status": "passed",
+      "execution_time": 1.7187037467956543,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 04/unit2-regression/examples/01_ridge_lasso_regression.ipynb",
+      "status": "failed",
+      "execution_time": 0.5729160308837891,
+      "error": "An error occurred while executing the following cell:\n------------------\n# 5. Coefficient Comparison\n# print(\"\\n\" + \"=\" * 60)\n\n\n\n\n# print(\"5. Coefficient Comparison\")\n\n\n\n\nprint(\"\u0645\u0642\u0627\u0631\u0646\u0629 \u0627\u0644\u0645\u0639\u0627\u0645\u0644\u0627\u062a\")\n\n\n\n\n# print(\"=\" * 60)\n# pd.DataFrame(data)\n# - pd.DataFrame(): Creates pandas DataFrame (2D table-like structure)\n# - data: Dictionary where keys become column names, values become column dat\n# a\n# = list of values \n# for that column\n# - Returns DataFrame with rows and columns\n# - DataFrame is the main pandas data structure (like Excel spreadsheet in Python)\n\n# coef_comparison = pd.DataFrame({\n#  'Feature': X_data.columns, 'Linear': lr.coef_,\n#  'Ridge': best_ridge['model'].coef_,\n#  'Lasso': best_lasso['model'].coef_\n})\n\n\n\n\n# print(\"\\nCoefficient Comparison (first 5 features):\")\n\n\n\n\n# print(coef_comparison.head().to_string(index=False))\n\n\n\n\n# print(\"\\n\ud83d\udca1 Quick Look - What to Notice in the Table Above:\")\n\n\n\n\n# print(\" - Look at the 'Population' row: Linear= -0.002308, Ridge= -0.000024, Lasso= -0.000000\")\n\n\n\n\n# print(\" - Notice: Lasso set Population coefficient to EXACTLY 0.000000 (removed this feature!)\")\n\n\n\n\n# print(\" - Notice: Ridge shrunk it to -0.000024 (very small, but NOT zero - still keeps the feature)\")\n\n\n\n\n# print(\" - Look at other features: Compare how Ridge shrinks vs Lasso removes coefficients\")\n\n\n\n\n# print(\" - This shows Lasso's feature selection power - it can completely remove features! \ud83c\udfaf\")\n\n\n\n\n# print(\"\\nLasso shrinks many coefficients to zero (feature selection)\")\n\n\n\n\nprint(\"\u0644\u0627\u0633\u0648 \u064a\u0642\u0644\u0635 \u0627\u0644\u0639\u062f\u064a\u062f \u0645\u0646 \u0627\u0644\u0645\u0639\u0627\u0645\u0644\u0627\u062a \u0625\u0644\u0649 \u0627\u0644\u0635\u0641\u0631 (\u0627\u062e\u062a\u064a\u0627\u0631 \u0627\u0644\u0645\u064a\u0632\u0627\u062a)\")\n\n# Add interpretation\n# print(\"\\n\" + \"=\" * 60)\n\n\n\n\n# print(\"\ud83d\udca1 Understanding Coefficient Differences | \u0641\u0647\u0645 \u0627\u062e\u062a\u0644\u0627\u0641\u0627\u062a \u0627\u0644\u0645\u0639\u0627\u0645\u0644\u0627\u062a\")\n\n\n\n\n# print(\"=\" * 60)\n\n# = (np.abs(best_lasso['model'].coef_) < 0.01).sum()\n# ridge_zeros = (np.abs(best_ridge['model'].coef_) < 0.01).sum()\n# linear_zeros = (np.abs(lr.coef_) < 0.01).sum()\n\n\n\n\n\n# print(f\"\\n\ud83d\udcca Coefficient Analysis:\")\n\n\n\n\n# print(f\" - Linear Regression: {linear_zeros} coefficients near zero\")\n\n\n\n\n# print(f\" - Ridge: {ridge_zeros} coefficients near zero (shrinks but keeps all)\")\n\n\n\n\n# print(f\" - Lasso: {lasso_zeros} coefficients set to zero (feature selection!)\")\n\n\n\n\n\n# print(f\"\\n\ud83d\udd0d What This Shows:\")\n\n\n\n\n# print(f\" - Ridge: Shrinks coefficients toward 0 but keeps all features\")\n\n\n\n\n# print(f\" - Lasso: Can completely remove features (coefficient = 0)\")\n\n\n\n\n# print(f\" - Lasso's sparsity: Only {best_lasso['n_features']} features have non-zero coefficients\")\n\n# = np.abs(lr.coef_ - best_ridge['model'].coef_)\n# coef_diff_lasso = np.abs(lr.coef_ - best_lasso['model'].coef_)\n\n\n\n\n\n# print(f\"\\n\ud83d\udcca Coefficient Shrinking:\")\n\n\n\n\n# print(f\" - Ridge average change: {coef_diff_ridge.mean():.4f}\")\n\n\n\n\n# print(f\" - Lasso average change: {coef_diff_lasso.mean():.4f}\")\n\n\n\n\n# if coef_diff_lasso.mean() > coef_diff_ridge.mean():\n#  print(f\" - Lasso shrinks coefficients more aggressively\")\n\n\n\n\n\n# print(f\"\\n\ud83d\udcda What This Teaches Us:\")\n\n\n\n\n# print(f\" - Regularization reduces coefficient magnitudes (prevents overfitting)\")\n\n\n\n\n# print(f\" - Ridge: Gentle shrinking, keeps all features\")\n\n\n\n\n# print(f\" - Lasso: Aggressive shrinking, removes irrelevant features\")\n\n\n\n\n# print(f\" - Smaller coefficients = simpler\")\n\n# model = better generalization\")\n\n\n\n\n# print(f\" - Lasso is useful when you have many features (automatic feature selection)\")\n\n\n\n\n# print(f\" - Ridge is useful when all features might be relevant\")\n------------------\n\n\n\u001b[0;36m  Cell \u001b[0;32mIn[12], line 31\u001b[0;36m\u001b[0m\n\u001b[0;31m    })\u001b[0m\n\u001b[0m    ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m unmatched '}'\n\n",
+      "error_traceback": "Traceback (most recent call last):\n  File \"/Users/abdullah/.cursor/worktrees/AI_Diploma/rfa/tools/notebook_runner.py\", line 105, in execute_notebook_nbclient\n    client.execute()\n    ~~~~~~~~~~~~~~^^\n  File \"/opt/anaconda3/lib/python3.13/site-packages/jupyter_core/utils/__init__.py\", line 165, in wrapped\n    return loop.run_until_complete(inner)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^\n  File \"/opt/anaconda3/lib/python3.13/asyncio/base_events.py\", line 725, in run_until_complete\n    return future.result()\n           ~~~~~~~~~~~~~^^\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbclient/client.py\", line 709, in async_execute\n    await self.async_execute_cell(\n        cell, index, execution_count=self.code_cells_executed + 1\n    )\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbclient/client.py\", line 1062, in async_execute_cell\n    await self._check_raise_for_error(cell, cell_index, exec_reply)\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbclient/client.py\", line 918, in _check_raise_for_error\n    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)\nnbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:\n------------------\n# 5. Coefficient Comparison\n# print(\"\\n\" + \"=\" * 60)\n\n\n\n\n# print(\"5. Coefficient Comparison\")\n\n\n\n\nprint(\"\u0645\u0642\u0627\u0631\u0646\u0629 \u0627\u0644\u0645\u0639\u0627\u0645\u0644\u0627\u062a\")\n\n\n\n\n# print(\"=\" * 60)\n# pd.DataFrame(data)\n# - pd.DataFrame(): Creates pandas DataFrame (2D table-like structure)\n# - data: Dictionary where keys become column names, values become column dat\n# a\n# = list of values \n# for that column\n# - Returns DataFrame with rows and columns\n# - DataFrame is the main pandas data structure (like Excel spreadsheet in Python)\n\n# coef_comparison = pd.DataFrame({\n#  'Feature': X_data.columns, 'Linear': lr.coef_,\n#  'Ridge': best_ridge['model'].coef_,\n#  'Lasso': best_lasso['model'].coef_\n})\n\n\n\n\n# print(\"\\nCoefficient Comparison (first 5 features):\")\n\n\n\n\n# print(coef_comparison.head().to_string(index=False))\n\n\n\n\n# print(\"\\n\ud83d\udca1 Quick Look - What to Notice in the Table Above:\")\n\n\n\n\n# print(\" - Look at the 'Population' row: Linear= -0.002308, Ridge= -0.000024, Lasso= -0.000000\")\n\n\n\n\n# print(\" - Notice: Lasso set Population coefficient to EXACTLY 0.000000 (removed this feature!)\")\n\n\n\n\n# print(\" - Notice: Ridge shrunk it to -0.000024 (very small, but NOT zero - still keeps the feature)\")\n\n\n\n\n# print(\" - Look at other features: Compare how Ridge shrinks vs Lasso removes coefficients\")\n\n\n\n\n# print(\" - This shows Lasso's feature selection power - it can completely remove features! \ud83c\udfaf\")\n\n\n\n\n# print(\"\\nLasso shrinks many coefficients to zero (feature selection)\")\n\n\n\n\nprint(\"\u0644\u0627\u0633\u0648 \u064a\u0642\u0644\u0635 \u0627\u0644\u0639\u062f\u064a\u062f \u0645\u0646 \u0627\u0644\u0645\u0639\u0627\u0645\u0644\u0627\u062a \u0625\u0644\u0649 \u0627\u0644\u0635\u0641\u0631 (\u0627\u062e\u062a\u064a\u0627\u0631 \u0627\u0644\u0645\u064a\u0632\u0627\u062a)\")\n\n# Add interpretation\n# print(\"\\n\" + \"=\" * 60)\n\n\n\n\n# print(\"\ud83d\udca1 Understanding Coefficient Differences | \u0641\u0647\u0645 \u0627\u062e\u062a\u0644\u0627\u0641\u0627\u062a \u0627\u0644\u0645\u0639\u0627\u0645\u0644\u0627\u062a\")\n\n\n\n\n# print(\"=\" * 60)\n\n# = (np.abs(best_lasso['model'].coef_) < 0.01).sum()\n# ridge_zeros = (np.abs(best_ridge['model'].coef_) < 0.01).sum()\n# linear_zeros = (np.abs(lr.coef_) < 0.01).sum()\n\n\n\n\n\n# print(f\"\\n\ud83d\udcca Coefficient Analysis:\")\n\n\n\n\n# print(f\" - Linear Regression: {linear_zeros} coefficients near zero\")\n\n\n\n\n# print(f\" - Ridge: {ridge_zeros} coefficients near zero (shrinks but keeps all)\")\n\n\n\n\n# print(f\" - Lasso: {lasso_zeros} coefficients set to zero (feature selection!)\")\n\n\n\n\n\n# print(f\"\\n\ud83d\udd0d What This Shows:\")\n\n\n\n\n# print(f\" - Ridge: Shrinks coefficients toward 0 but keeps all features\")\n\n\n\n\n# print(f\" - Lasso: Can completely remove features (coefficient = 0)\")\n\n\n\n\n# print(f\" - Lasso's sparsity: Only {best_lasso['n_features']} features have non-zero coefficients\")\n\n# = np.abs(lr.coef_ - best_ridge['model'].coef_)\n# coef_diff_lasso = np.abs(lr.coef_ - best_lasso['model'].coef_)\n\n\n\n\n\n# print(f\"\\n\ud83d\udcca Coefficient Shrinking:\")\n\n\n\n\n# print(f\" - Ridge average change: {coef_diff_ridge.mean():.4f}\")\n\n\n\n\n# print(f\" - Lasso average change: {coef_diff_lasso.mean():.4f}\")\n\n\n\n\n# if coef_diff_lasso.mean() > coef_diff_ridge.mean():\n#  print(f\" - Lasso shrinks coefficients more aggressively\")\n\n\n\n\n\n# print(f\"\\n\ud83d\udcda What This Teaches Us:\")\n\n\n\n\n# print(f\" - Regularization reduces coefficient magnitudes (prevents overfitting)\")\n\n\n\n\n# print(f\" - Ridge: Gentle shrinking, keeps all features\")\n\n\n\n\n# print(f\" - Lasso: Aggressive shrinking, removes irrelevant features\")\n\n\n\n\n# print(f\" - Smaller coefficients = simpler\")\n\n# model = better generalization\")\n\n\n\n\n# print(f\" - Lasso is useful when you have many features (automatic feature selection)\")\n\n\n\n\n# print(f\" - Ridge is useful when all features might be relevant\")\n------------------\n\n\n\u001b[0;36m  Cell \u001b[0;32mIn[12], line 31\u001b[0;36m\u001b[0m\n\u001b[0;31m    })\u001b[0m\n\u001b[0m    ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m unmatched '}'\n\n\n"
+    },
+    {
+      "path": "Course 04/unit3-classification/examples/01_logistic_regression.ipynb",
+      "status": "failed",
+      "execution_time": 0.6798019409179688,
+      "error": "An error occurred while executing the following cell:\n------------------\nif 'TF_AVAILABLE' in globals() and TF_AVAILABLE:\n    # if 'TF_AVAILABLE' in globals() and TF_AVAILABLE:\n        # Display all calculated metrics\n        # Note: Metrics were calculated in cell 15 above\n        # print(\"\\nTraining Metrics:\")\n\n\n\n\n        # print(f\" Accuracy: {train_accuracy:.4f}\")\n\n\n\n\n        # print(f\" Precision: {train_precision:.4f}\")\n\n\n\n\n        # print(f\" Recall: {train_recall:.4f}\")\n\n\n\n\n        # print(f\" F1 Score: {train_f1:.4f}\")\n\n\n\n\n        # print(\"\\nTest Metrics:\")\n\n\n\n\n        # print(f\" Accuracy: {test_accuracy:.4f}\")\n\n\n\n\n        # print(f\" Precision: {test_precision:.4f}\")\n\n\n\n\n        # print(f\" Recall: {test_recall:.4f}\")\n\n\n\n\n        # print(f\" F1 Score: {test_f1:.4f}\")\n\n        # Add interpretation\n        # print(\"\\n\" + \"=\" * 60)\n\n\n\n\n        # print(\"\ud83d\udca1 Interpreting the Metrics | \u062a\u0641\u0633\u064a\u0631 \u0627\u0644\u0645\u0642\u0627\u064a\u064a\u0633\")\n\n\n\n\n        # print(\"=\" * 60)\n\n\n\n\n        # print(f\"\\n\ud83d\udcca Accuracy ({test_accuracy:.2%}):\")\n\n\n\n\n        # print(f\" - The model correctly predicts {test_accuracy:.2%} of all cases\")\n\n\n\n\n        # print(f\" - {'\u2705 Excellent!'\")\n\n\n\n        # if test_accuracy > 0.9 else '\u2705 Good!' \n\n\n\n        # if test_accuracy > 0.8 else '\u26a0\ufe0f Room for improvement'}\")\n\n\n\n\n        # print(f\" - This is the overall correctness of the model\")\n\n\n\n\n\n        # print(f\"\\n\ud83d\udcca Precision ({test_precision:.2%}):\")\n\n\n\n\n        # print(f\" - Of all cases predicted as Class 1, {test_precision:.2%} are actually Class 1\")\n\n\n\n\n        # print(f\" - {'\u2705 High precision'\")\n\n\n\n        # if test_precision > 0.9 else '\u2705 Good precision' \n\n\n\n        # if test_precision > 0.8 else '\u26a0\ufe0f Low precision'}\")\n\n\n\n\n        # print(f\" - High precision = few false positives (reliable positive predictions)\")\n\n\n\n\n\n        # print(f\"\\n\ud83d\udcca Recall ({test_recall:.2%}):\")\n\n\n\n\n        # print(f\" - The model catches {test_recall:.2%} of all actual Class 1 cases\")\n\n\n\n\n        # print(f\" - {'\u2705 High recall'\")\n\n\n\n        # if test_recall > 0.9 else '\u2705 Good recall' \n\n\n\n        # if test_recall > 0.8 else '\u26a0\ufe0f Low recall'}\")\n\n\n\n\n        # print(f\" - High recall = few false negatives (catches most positives)\")\n\n\n\n\n\n        # print(f\"\\n\ud83d\udcca F1 Score ({test_f1:.2%}):\")\n\n\n\n\n        # print(f\" - Harmonic mean of precision and recall: {test_f1:.2%}\")\n\n\n\n\n        # print(f\" - {'\u2705 Excellent balance'\")\n\n\n\n        # if test_f1 > 0.9 else '\u2705 Good balance' \n\n\n\n        # if test_f1 > 0.8 else '\u26a0\ufe0f Imbalanced'}\")\n\n\n\n\n        # print(f\" - Balances precision and recall (useful when classes are imbalanced)\")\n\n\n\n\n\n        # print(f\"\\n\ud83d\udd0d What to Notice:\")\n\n\n\n\n        # if test_precision > test_recall:\n        #  print(f\" - Precision ({test_precision:.2%}) > Recall ({test_recall:.2%})\")\n\n\n\n\n        #  print(f\" - Model is CONSERVATIVE: careful about predicting Class 1\")\n\n\n\n\n        #  print(f\" - Fewer false positives, but may miss some actual positives\")\n        # elif test_recall > test_precision:\n        #  print(f\" - Recall ({test_recall:.2%}) > Precision ({test_precision:.2%})\")\n\n\n\n\n        #  print(f\" - Model is AGGRESSIVE: catches most positives\")\n\n\n\n\n        #  print(f\" - Fewer false negatives, but may have more false positives\")\n        # else:\n        #  print(f\" - Precision and Recall are balanced\")\n\n\n\n\n        #  print(f\" - Model has good balance between catching positives and being reliable\")\n\n\n\n\n\n        # print(f\"\\n\ud83d\udcda What This Teaches Us:\")\n\n\n\n\n        # print(f\" - Accuracy alone isn't enough - need precision and recall too\")\n\n\n\n        #  print(f\" - Precision vs Recall trade-off: can't maximize both simultaneously\")\n\n\n\n\n        # print(f\" - F1 score helps balance this trade-off\")\n\n\n\n\n        # print(f\" - Compare train vs test: train accuracy {train_accuracy:.2%} vs test {test_accuracy:.2%}\")\n\n\n\n\n        # if abs(train_accuracy - test_accuracy) > 0.05:\n        #  print(f\" - \u26a0\ufe0f Large gap suggests possible overfitting!\")\n        # else:\n        #  print(f\" - \u2705 Similar performance suggests good generalization\")\n\n\n\n\n\n        # print(\"\\n\" + \"=\" * 60)\n\n\n\n\n        # print(\"\ud83c\udfaf Quick Reference: When to Use Which Metric? | \u0645\u0631\u062c\u0639 \u0633\u0631\u064a\u0639: \u0645\u062a\u0649 \u062a\u0633\u062a\u062e\u062f\u0645 \u0623\u064a \u0645\u0642\u064a\u0627\u0633\u061f\")\n\n\n\n\n        # print(\"=\" * 60)\n\n\n\n\n        # print(\"\\n\ud83d\udcca Use ACCURACY when:\")\n\n\n\n\n        # print(\" - Classes are balanced (similar number of samples in each class)\")\n\n\n\n\n        # print(\" - Cost of false positives = cost of false negatives\")\n\n\n\n\n        # print(\" - You want overall performance measure\")\n\n\n\n\n        # print(\" - Example: General classification problems\")\n\n\n\n\n\n        # print(\"\\n\ud83d\udcca Use PRECISION when:\")\n\n\n\n\n        # print(\" - False positives are COSTLY (worse than false negatives)\")\n\n\n\n\n        # print(\" - You want reliable positive predictions\")\n\n\n\n\n        # print(\" - Example: Spam detection (don't block real emails)\")\n\n\n\n        #  print(\" - Example: Content moderation (don't ban legitimate users)\")\n\n\n\n\n\n        # print(\"\\n\ud83d\udcca Use RECALL when:\")\n\n\n\n\n        # print(\" - False negatives are COSTLY (worse than false positives)\")\n\n\n\n\n        # print(\" - You want to catch ALL positive cases\")\n\n\n\n\n        # print(\" - Example: Fraud detection (don't miss any fraud cases)\")\n\n\n\n\n        # print(\" - Example: Fraud detection (catch all fraud cases)\")\n\n\n\n\n\n        # print(\"\\n\ud83d\udcca Use F1 SCORE when:\")\n\n\n\n\n        # print(\" - You need BOTH precision and recall\")\n\n\n\n\n        # print(\" - Classes are imbalanced\")\n\n\n\n\n        # print(\" - You want a balanced measure\")\n\n\n\n\n        # print(\" - Example: General use when you need both metrics balanced\")\n\n\n\n\n\n        # print(\"\\n\ud83d\udca1 Remember:\")\n\n\n\n\n        # print(\" - Metrics are calculated AFTER training (on test data)\")\n\n\n\n\n        # print(\" - Choose metric based on your problem's cost of errors\")\n\n\n\n        #  print(\" - You can't maximize both precision and recall simultaneously\")\n\n\n\n\n        # print(\" - F1 score balances the trade-off between precision and recall\")\n\n\n\n\n\n        # print(\"\\n\" + \"=\" * 60)\n\n\n\n\n        # print(\"\ud83c\udfaf What to Do AFTER Getting Metrics? | \u0645\u0627\u0630\u0627 \u062a\u0641\u0639\u0644 \u0628\u0639\u062f \u0627\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u0627\u0644\u0645\u0642\u0627\u064a\u064a\u0633\u061f\")\n\n\n\n\n        # print(\"=\" * 60)\n\n\n\n\n        # print(\"\\n\ud83d\udcca The Purpose: Metrics Guide Your Next Actions\")\n\n\n\n\n        # print(\" Metrics are not just numbers - they tell you WHAT TO DO NEXT!\")\n\n\n\n\n\n        # print(\"\\n\ud83d\udd04 The Improvement Cycle:\")\n\n\n\n\n        # print(\" 1. Train model \u2192 Get metrics\")\n\n\n\n\n        # print(\" 2. Analyze metrics \u2192 Identify problems\")\n\n\n\n\n        # print(\" 3. Take action \u2192 Improve model\")\n\n\n\n\n        # print(\" 4. Re-train \u2192 Get new metrics\")\n\n\n\n\n        # print(\" 5. Repeat until satisfied!\")\n\n\n\n\n        # print(\"\\n\ud83d\udca1 This is REAL-WORLD practice used by Google, Amazon, Microsoft, and all ML companies!\")\n\n\n\n\n        # print(\" This cycle is called 'Model Iteration' or 'MLOps' in industry\")\n\n\n\n\n        # print(\" It's not just educational - it's how ML actually works in production!\")\n\n\n\n\n\n        # print(\"\\n\u2705 Actions You Can Take Based on Metrics:\")\n\n\n\n\n\n        # print(\"\\n1\ufe0f\u20e3 If Accuracy is Low (< 70%):\")\n\n\n\n\n        # print(\" - \u2705 Check data quality (missing values, outliers)\")\n\n\n\n\n        # print(\" - \u2705 Add more features (collect more data)\")\n\n\n\n\n        # print(\" - \u2705 Try different algorithms (Decision Trees, SVM)\")\n\n\n\n\n        # print(\" - \u2705 Check\")\n\n\n\n        # if problem is non-linear (use non-linear models)\")\n\n\n\n\n        # print(\" - \u274c Don't just edit dataset randomly - understand WHY it's low\")\n\n\n\n\n\n        # print(\"\\n2\ufe0f\u20e3 If Precision is Low (many false positives):\")\n\n\n\n\n        # print(\" - \u2705 Increase classification threshold (make model more conservative)\")\n\n\n\n\n        # print(\" - \u2705 Add features that help distinguish false positives\")\n\n\n\n\n        # print(\" - \u2705 Use class weights\")\n\n\n\n        if classes are imbalanced\")\n\n\n\n\n        # print(\" - \u2705 Remove noisy features that cause false positives\")\n\n\n\n\n\n        # print(\"\\n3\ufe0f\u20e3 If Recall is Low (many false negatives):\")\n\n\n\n\n        # print(\" - \u2705 Decrease classification threshold (make model more aggressive)\")\n\n\n\n\n        # print(\" - \u2705 Use class_weight='balanced' for imbalanced classes\")\n\n\n\n\n        # print(\" - \u2705 Add features that help catch missed cases\")\n\n\n\n\n        # print(\" - \u2705 Collect more data for the minority class\")\n\n\n\n\n\n        # print(\"\\n4\ufe0f\u20e3 If Train Accuracy >> Test Accuracy (Overfitting):\")\n\n\n\n\n        # print(\" - \u2705 Add regularization (L1/L2)\")\n\n\n\n\n        # print(\" - \u2705 Reduce model complexity\")\n\n\n\n\n        # print(\" - \u2705 Get more training data\")\n\n\n\n\n        # print(\" - \u2705 Use cross-validation\")\n\n\n\n\n\n        # print(\"\\n5\ufe0f\u20e3 If Metrics are Good but Need Optimization:\")\n\n\n\n\n        # print(\" - \u2705 Tune hyperparameters (threshold, C parameter)\")\n\n\n\n\n        # print(\" - \u2705 Try feature engineering (create new features)\")\n\n\n\n\n        # print(\" - \u2705 Try ensemble methods (combine multiple models)\")\n\n\n\n\n\n        # print(\"\\n\ud83d\udcdd Can You Edit the Dataset?\")\n\n\n\n\n        # print(\" \u2705 YES, but carefully:\")\n\n\n\n\n        # print(\" - Remove outliers (if they're errors)\")\n\n\n\n\n        # print(\" - Handle missing values properly\")\n\n\n\n\n        # print(\" - Add more data (especially for minority class)\")\n\n\n\n\n        # print(\" - Create new features from existing ones\")\n\n\n\n\n        # print(\" - \u274c DON'T remove data just because model predicts it wrong\")\n\n\n\n\n        # print(\" - \u274c DON'T change labels to match predictions (that's cheating!)\")\n\n\n\n\n\n        # print(\"\\n\ud83c\udfaf Real-World Workflow:\")\n\n\n\n\n        # print(\" Step 1: Train model \u2192 Get metrics\")\n\n\n\n\n        # print(\" Step 2: If metrics are poor \u2192 Identify the problem\")\n\n\n\n\n        # print(\" Step 3: Take appropriate action (see above)\")\n\n\n\n\n        # print(\" Step 4: Re-train with improvements\")\n\n\n\n\n        # print(\" Step 5: Compare new metrics to old metrics\")\n\n\n\n\n        # print(\" Step 6: If improved \u2192 Deploy! If not \u2192 Try different approach\")\n\n\n\n\n\n        # print(\"\\n\ud83d\udca1 Key Insight:\")\n\n\n\n\n        # print(\" Metrics are your COMPASS - they point you toward improvement!\")\n\n\n\n\n        # print(\" Low precision? \u2192 Focus on reducing false positives\")\n\n\n\n\n        # print(\" Low recall? \u2192 Focus on catching more positives\")\n\n\n\n\n        # print(\" Overfitting? \u2192 Focus on generalization\")\n\n\n\n\n        # print(\" Good metrics? \u2192 You're ready to deploy!\")\n\n\n\n\n\n        # print(\"\\n\" + \"=\" * 60)\n\n\n\n\n        # print(\"\ud83c\udf0d Real-World Confirmation | \u062a\u0623\u0643\u064a\u062f \u0645\u0646 \u0627\u0644\u0639\u0627\u0644\u0645 \u0627\u0644\u062d\u0642\u064a\u0642\u064a\")\n\n\n\n\n        # print(\"=\" * 60)\n\n\n\n\n        # print(\"\\n\u2705 This workflow is used by:\")\n\n\n\n\n        # print(\" - Google (Gmail spam detection, search ranking)\")\n\n\n\n\n        # print(\" - Amazon (product recommendations, fraud detection)\")\n\n\n\n\n        # print(\" - Netflix (movie recommendations)\")\n\n\n\n\n        # print(\" - Banks (credit scoring, fraud detection)\")\n\n\n\n\n        # print(\" - Hospitals (medical diagnosis systems)\")\n\n\n\n\n        # print(\" - ALL machine learning companies!\")\n\n\n\n\n        # print(\"\\n\ud83d\udcda Industry Terms:\")\n\n\n\n\n        # print(\" - 'Model Iteration': The cycle of train \u2192 evaluate \u2192 improve\")\n\n\n\n\n        # print(\" - 'MLOps': Machine Learning Operations (deploying and monitoring models)\")\n\n\n\n\n        # print(\" - 'A/B Testing': Testing multiple models in production\")\n\n\n\n\n        # print(\" - 'Model Versioning': Tracking different versions of models\")\n\n\n\n\n        # print(\"\\n\ud83c\udfaf Bottom Line:\")\n\n\n\n\n        # print(\" This is NOT just for learning - this is HOW ML works in the real world!\")\n\n\n\n\n        # print(\" Every ML engineer, data scientist, and ML team follows this cycle!\")\n------------------\n\n\n\u001b[0;36m  Cell \u001b[0;32mIn[13], line 533\u001b[0;36m\u001b[0m\n\u001b[0;31m    if classes are imbalanced\")\u001b[0m\n\u001b[0m                             ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m unterminated string literal (detected at line 533)\n\n",
+      "error_traceback": "Traceback (most recent call last):\n  File \"/Users/abdullah/.cursor/worktrees/AI_Diploma/rfa/tools/notebook_runner.py\", line 105, in execute_notebook_nbclient\n    client.execute()\n    ~~~~~~~~~~~~~~^^\n  File \"/opt/anaconda3/lib/python3.13/site-packages/jupyter_core/utils/__init__.py\", line 165, in wrapped\n    return loop.run_until_complete(inner)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^\n  File \"/opt/anaconda3/lib/python3.13/asyncio/base_events.py\", line 725, in run_until_complete\n    return future.result()\n           ~~~~~~~~~~~~~^^\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbclient/client.py\", line 709, in async_execute\n    await self.async_execute_cell(\n        cell, index, execution_count=self.code_cells_executed + 1\n    )\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbclient/client.py\", line 1062, in async_execute_cell\n    await self._check_raise_for_error(cell, cell_index, exec_reply)\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbclient/client.py\", line 918, in _check_raise_for_error\n    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)\nnbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:\n------------------\nif 'TF_AVAILABLE' in globals() and TF_AVAILABLE:\n    # if 'TF_AVAILABLE' in globals() and TF_AVAILABLE:\n        # Display all calculated metrics\n        # Note: Metrics were calculated in cell 15 above\n        # print(\"\\nTraining Metrics:\")\n\n\n\n\n        # print(f\" Accuracy: {train_accuracy:.4f}\")\n\n\n\n\n        # print(f\" Precision: {train_precision:.4f}\")\n\n\n\n\n        # print(f\" Recall: {train_recall:.4f}\")\n\n\n\n\n        # print(f\" F1 Score: {train_f1:.4f}\")\n\n\n\n\n        # print(\"\\nTest Metrics:\")\n\n\n\n\n        # print(f\" Accuracy: {test_accuracy:.4f}\")\n\n\n\n\n        # print(f\" Precision: {test_precision:.4f}\")\n\n\n\n\n        # print(f\" Recall: {test_recall:.4f}\")\n\n\n\n\n        # print(f\" F1 Score: {test_f1:.4f}\")\n\n        # Add interpretation\n        # print(\"\\n\" + \"=\" * 60)\n\n\n\n\n        # print(\"\ud83d\udca1 Interpreting the Metrics | \u062a\u0641\u0633\u064a\u0631 \u0627\u0644\u0645\u0642\u0627\u064a\u064a\u0633\")\n\n\n\n\n        # print(\"=\" * 60)\n\n\n\n\n        # print(f\"\\n\ud83d\udcca Accuracy ({test_accuracy:.2%}):\")\n\n\n\n\n        # print(f\" - The model correctly predicts {test_accuracy:.2%} of all cases\")\n\n\n\n\n        # print(f\" - {'\u2705 Excellent!'\")\n\n\n\n        # if test_accuracy > 0.9 else '\u2705 Good!' \n\n\n\n        # if test_accuracy > 0.8 else '\u26a0\ufe0f Room for improvement'}\")\n\n\n\n\n        # print(f\" - This is the overall correctness of the model\")\n\n\n\n\n\n        # print(f\"\\n\ud83d\udcca Precision ({test_precision:.2%}):\")\n\n\n\n\n        # print(f\" - Of all cases predicted as Class 1, {test_precision:.2%} are actually Class 1\")\n\n\n\n\n        # print(f\" - {'\u2705 High precision'\")\n\n\n\n        # if test_precision > 0.9 else '\u2705 Good precision' \n\n\n\n        # if test_precision > 0.8 else '\u26a0\ufe0f Low precision'}\")\n\n\n\n\n        # print(f\" - High precision = few false positives (reliable positive predictions)\")\n\n\n\n\n\n        # print(f\"\\n\ud83d\udcca Recall ({test_recall:.2%}):\")\n\n\n\n\n        # print(f\" - The model catches {test_recall:.2%} of all actual Class 1 cases\")\n\n\n\n\n        # print(f\" - {'\u2705 High recall'\")\n\n\n\n        # if test_recall > 0.9 else '\u2705 Good recall' \n\n\n\n        # if test_recall > 0.8 else '\u26a0\ufe0f Low recall'}\")\n\n\n\n\n        # print(f\" - High recall = few false negatives (catches most positives)\")\n\n\n\n\n\n        # print(f\"\\n\ud83d\udcca F1 Score ({test_f1:.2%}):\")\n\n\n\n\n        # print(f\" - Harmonic mean of precision and recall: {test_f1:.2%}\")\n\n\n\n\n        # print(f\" - {'\u2705 Excellent balance'\")\n\n\n\n        # if test_f1 > 0.9 else '\u2705 Good balance' \n\n\n\n        # if test_f1 > 0.8 else '\u26a0\ufe0f Imbalanced'}\")\n\n\n\n\n        # print(f\" - Balances precision and recall (useful when classes are imbalanced)\")\n\n\n\n\n\n        # print(f\"\\n\ud83d\udd0d What to Notice:\")\n\n\n\n\n        # if test_precision > test_recall:\n        #  print(f\" - Precision ({test_precision:.2%}) > Recall ({test_recall:.2%})\")\n\n\n\n\n        #  print(f\" - Model is CONSERVATIVE: careful about predicting Class 1\")\n\n\n\n\n        #  print(f\" - Fewer false positives, but may miss some actual positives\")\n        # elif test_recall > test_precision:\n        #  print(f\" - Recall ({test_recall:.2%}) > Precision ({test_precision:.2%})\")\n\n\n\n\n        #  print(f\" - Model is AGGRESSIVE: catches most positives\")\n\n\n\n\n        #  print(f\" - Fewer false negatives, but may have more false positives\")\n        # else:\n        #  print(f\" - Precision and Recall are balanced\")\n\n\n\n\n        #  print(f\" - Model has good balance between catching positives and being reliable\")\n\n\n\n\n\n        # print(f\"\\n\ud83d\udcda What This Teaches Us:\")\n\n\n\n\n        # print(f\" - Accuracy alone isn't enough - need precision and recall too\")\n\n\n\n        #  print(f\" - Precision vs Recall trade-off: can't maximize both simultaneously\")\n\n\n\n\n        # print(f\" - F1 score helps balance this trade-off\")\n\n\n\n\n        # print(f\" - Compare train vs test: train accuracy {train_accuracy:.2%} vs test {test_accuracy:.2%}\")\n\n\n\n\n        # if abs(train_accuracy - test_accuracy) > 0.05:\n        #  print(f\" - \u26a0\ufe0f Large gap suggests possible overfitting!\")\n        # else:\n        #  print(f\" - \u2705 Similar performance suggests good generalization\")\n\n\n\n\n\n        # print(\"\\n\" + \"=\" * 60)\n\n\n\n\n        # print(\"\ud83c\udfaf Quick Reference: When to Use Which Metric? | \u0645\u0631\u062c\u0639 \u0633\u0631\u064a\u0639: \u0645\u062a\u0649 \u062a\u0633\u062a\u062e\u062f\u0645 \u0623\u064a \u0645\u0642\u064a\u0627\u0633\u061f\")\n\n\n\n\n        # print(\"=\" * 60)\n\n\n\n\n        # print(\"\\n\ud83d\udcca Use ACCURACY when:\")\n\n\n\n\n        # print(\" - Classes are balanced (similar number of samples in each class)\")\n\n\n\n\n        # print(\" - Cost of false positives = cost of false negatives\")\n\n\n\n\n        # print(\" - You want overall performance measure\")\n\n\n\n\n        # print(\" - Example: General classification problems\")\n\n\n\n\n\n        # print(\"\\n\ud83d\udcca Use PRECISION when:\")\n\n\n\n\n        # print(\" - False positives are COSTLY (worse than false negatives)\")\n\n\n\n\n        # print(\" - You want reliable positive predictions\")\n\n\n\n\n        # print(\" - Example: Spam detection (don't block real emails)\")\n\n\n\n        #  print(\" - Example: Content moderation (don't ban legitimate users)\")\n\n\n\n\n\n        # print(\"\\n\ud83d\udcca Use RECALL when:\")\n\n\n\n\n        # print(\" - False negatives are COSTLY (worse than false positives)\")\n\n\n\n\n        # print(\" - You want to catch ALL positive cases\")\n\n\n\n\n        # print(\" - Example: Fraud detection (don't miss any fraud cases)\")\n\n\n\n\n        # print(\" - Example: Fraud detection (catch all fraud cases)\")\n\n\n\n\n\n        # print(\"\\n\ud83d\udcca Use F1 SCORE when:\")\n\n\n\n\n        # print(\" - You need BOTH precision and recall\")\n\n\n\n\n        # print(\" - Classes are imbalanced\")\n\n\n\n\n        # print(\" - You want a balanced measure\")\n\n\n\n\n        # print(\" - Example: General use when you need both metrics balanced\")\n\n\n\n\n\n        # print(\"\\n\ud83d\udca1 Remember:\")\n\n\n\n\n        # print(\" - Metrics are calculated AFTER training (on test data)\")\n\n\n\n\n        # print(\" - Choose metric based on your problem's cost of errors\")\n\n\n\n        #  print(\" - You can't maximize both precision and recall simultaneously\")\n\n\n\n\n        # print(\" - F1 score balances the trade-off between precision and recall\")\n\n\n\n\n\n        # print(\"\\n\" + \"=\" * 60)\n\n\n\n\n        # print(\"\ud83c\udfaf What to Do AFTER Getting Metrics? | \u0645\u0627\u0630\u0627 \u062a\u0641\u0639\u0644 \u0628\u0639\u062f \u0627\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u0627\u0644\u0645\u0642\u0627\u064a\u064a\u0633\u061f\")\n\n\n\n\n        # print(\"=\" * 60)\n\n\n\n\n        # print(\"\\n\ud83d\udcca The Purpose: Metrics Guide Your Next Actions\")\n\n\n\n\n        # print(\" Metrics are not just numbers - they tell you WHAT TO DO NEXT!\")\n\n\n\n\n\n        # print(\"\\n\ud83d\udd04 The Improvement Cycle:\")\n\n\n\n\n        # print(\" 1. Train model \u2192 Get metrics\")\n\n\n\n\n        # print(\" 2. Analyze metrics \u2192 Identify problems\")\n\n\n\n\n        # print(\" 3. Take action \u2192 Improve model\")\n\n\n\n\n        # print(\" 4. Re-train \u2192 Get new metrics\")\n\n\n\n\n        # print(\" 5. Repeat until satisfied!\")\n\n\n\n\n        # print(\"\\n\ud83d\udca1 This is REAL-WORLD practice used by Google, Amazon, Microsoft, and all ML companies!\")\n\n\n\n\n        # print(\" This cycle is called 'Model Iteration' or 'MLOps' in industry\")\n\n\n\n\n        # print(\" It's not just educational - it's how ML actually works in production!\")\n\n\n\n\n\n        # print(\"\\n\u2705 Actions You Can Take Based on Metrics:\")\n\n\n\n\n\n        # print(\"\\n1\ufe0f\u20e3 If Accuracy is Low (< 70%):\")\n\n\n\n\n        # print(\" - \u2705 Check data quality (missing values, outliers)\")\n\n\n\n\n        # print(\" - \u2705 Add more features (collect more data)\")\n\n\n\n\n        # print(\" - \u2705 Try different algorithms (Decision Trees, SVM)\")\n\n\n\n\n        # print(\" - \u2705 Check\")\n\n\n\n        # if problem is non-linear (use non-linear models)\")\n\n\n\n\n        # print(\" - \u274c Don't just edit dataset randomly - understand WHY it's low\")\n\n\n\n\n\n        # print(\"\\n2\ufe0f\u20e3 If Precision is Low (many false positives):\")\n\n\n\n\n        # print(\" - \u2705 Increase classification threshold (make model more conservative)\")\n\n\n\n\n        # print(\" - \u2705 Add features that help distinguish false positives\")\n\n\n\n\n        # print(\" - \u2705 Use class weights\")\n\n\n\n        if classes are imbalanced\")\n\n\n\n\n        # print(\" - \u2705 Remove noisy features that cause false positives\")\n\n\n\n\n\n        # print(\"\\n3\ufe0f\u20e3 If Recall is Low (many false negatives):\")\n\n\n\n\n        # print(\" - \u2705 Decrease classification threshold (make model more aggressive)\")\n\n\n\n\n        # print(\" - \u2705 Use class_weight='balanced' for imbalanced classes\")\n\n\n\n\n        # print(\" - \u2705 Add features that help catch missed cases\")\n\n\n\n\n        # print(\" - \u2705 Collect more data for the minority class\")\n\n\n\n\n\n        # print(\"\\n4\ufe0f\u20e3 If Train Accuracy >> Test Accuracy (Overfitting):\")\n\n\n\n\n        # print(\" - \u2705 Add regularization (L1/L2)\")\n\n\n\n\n        # print(\" - \u2705 Reduce model complexity\")\n\n\n\n\n        # print(\" - \u2705 Get more training data\")\n\n\n\n\n        # print(\" - \u2705 Use cross-validation\")\n\n\n\n\n\n        # print(\"\\n5\ufe0f\u20e3 If Metrics are Good but Need Optimization:\")\n\n\n\n\n        # print(\" - \u2705 Tune hyperparameters (threshold, C parameter)\")\n\n\n\n\n        # print(\" - \u2705 Try feature engineering (create new features)\")\n\n\n\n\n        # print(\" - \u2705 Try ensemble methods (combine multiple models)\")\n\n\n\n\n\n        # print(\"\\n\ud83d\udcdd Can You Edit the Dataset?\")\n\n\n\n\n        # print(\" \u2705 YES, but carefully:\")\n\n\n\n\n        # print(\" - Remove outliers (if they're errors)\")\n\n\n\n\n        # print(\" - Handle missing values properly\")\n\n\n\n\n        # print(\" - Add more data (especially for minority class)\")\n\n\n\n\n        # print(\" - Create new features from existing ones\")\n\n\n\n\n        # print(\" - \u274c DON'T remove data just because model predicts it wrong\")\n\n\n\n\n        # print(\" - \u274c DON'T change labels to match predictions (that's cheating!)\")\n\n\n\n\n\n        # print(\"\\n\ud83c\udfaf Real-World Workflow:\")\n\n\n\n\n        # print(\" Step 1: Train model \u2192 Get metrics\")\n\n\n\n\n        # print(\" Step 2: If metrics are poor \u2192 Identify the problem\")\n\n\n\n\n        # print(\" Step 3: Take appropriate action (see above)\")\n\n\n\n\n        # print(\" Step 4: Re-train with improvements\")\n\n\n\n\n        # print(\" Step 5: Compare new metrics to old metrics\")\n\n\n\n\n        # print(\" Step 6: If improved \u2192 Deploy! If not \u2192 Try different approach\")\n\n\n\n\n\n        # print(\"\\n\ud83d\udca1 Key Insight:\")\n\n\n\n\n        # print(\" Metrics are your COMPASS - they point you toward improvement!\")\n\n\n\n\n        # print(\" Low precision? \u2192 Focus on reducing false positives\")\n\n\n\n\n        # print(\" Low recall? \u2192 Focus on catching more positives\")\n\n\n\n\n        # print(\" Overfitting? \u2192 Focus on generalization\")\n\n\n\n\n        # print(\" Good metrics? \u2192 You're ready to deploy!\")\n\n\n\n\n\n        # print(\"\\n\" + \"=\" * 60)\n\n\n\n\n        # print(\"\ud83c\udf0d Real-World Confirmation | \u062a\u0623\u0643\u064a\u062f \u0645\u0646 \u0627\u0644\u0639\u0627\u0644\u0645 \u0627\u0644\u062d\u0642\u064a\u0642\u064a\")\n\n\n\n\n        # print(\"=\" * 60)\n\n\n\n\n        # print(\"\\n\u2705 This workflow is used by:\")\n\n\n\n\n        # print(\" - Google (Gmail spam detection, search ranking)\")\n\n\n\n\n        # print(\" - Amazon (product recommendations, fraud detection)\")\n\n\n\n\n        # print(\" - Netflix (movie recommendations)\")\n\n\n\n\n        # print(\" - Banks (credit scoring, fraud detection)\")\n\n\n\n\n        # print(\" - Hospitals (medical diagnosis systems)\")\n\n\n\n\n        # print(\" - ALL machine learning companies!\")\n\n\n\n\n        # print(\"\\n\ud83d\udcda Industry Terms:\")\n\n\n\n\n        # print(\" - 'Model Iteration': The cycle of train \u2192 evaluate \u2192 improve\")\n\n\n\n\n        # print(\" - 'MLOps': Machine Learning Operations (deploying and monitoring models)\")\n\n\n\n\n        # print(\" - 'A/B Testing': Testing multiple models in production\")\n\n\n\n\n        # print(\" - 'Model Versioning': Tracking different versions of models\")\n\n\n\n\n        # print(\"\\n\ud83c\udfaf Bottom Line:\")\n\n\n\n\n        # print(\" This is NOT just for learning - this is HOW ML works in the real world!\")\n\n\n\n\n        # print(\" Every ML engineer, data scientist, and ML team follows this cycle!\")\n------------------\n\n\n\u001b[0;36m  Cell \u001b[0;32mIn[13], line 533\u001b[0;36m\u001b[0m\n\u001b[0;31m    if classes are imbalanced\")\u001b[0m\n\u001b[0m                             ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m unterminated string literal (detected at line 533)\n\n\n"
+    },
+    {
+      "path": "Course 04/unit3-classification/examples/02_decision_trees.ipynb",
+      "status": "failed",
+      "execution_time": 0.7795939445495605,
+      "error": "An error occurred while executing the following cell:\n------------------\n# 6. Confusion Matrices\n# print('\\n\" + \"=\" * 60)\")\n\n\n# print(\"6. Confusion Matrices\")\n\n\n\n\nprint(\"\u0645\u0635\u0641\u0648\u0641\u0627\u062a \u0627\u0644\u0627\u0631\u062a\u0628\u0627\u0643\")\n\n\n\n\n# print(\"=\" * 60)\n\n# Note: Titanic dataset has 2 \n# classes (High Risk=0, Low Risk=1), so confusion matrices will be 2x2fig, axes = plt.subplots(1, 3, figsize=(18, 5))\n# models_to_plot = [\n#  (dt_default, 'Decision Tree (Default)', y_test_pred_dt),\n#  (dt_pruned, 'Decision Tree (Pruned)', y_test_pred_pruned),\n#  (rf, 'Random Forest', y_test_pred_rf)\n]\n\n# Class labels \n# for binary classification (Airport Security)\n\n# class_labels = ['High Risk', 'Low Risk']\n\n# for idx, (model, title, predictions) in enumerate(models_to_plot):\n#  cm = confusion_matrix(y_test, predictions)\n#  sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', ax=axes[idx],\n#  xticklabels=class_labels,\n#  yticklabels=class_labels)\n#  axes[idx].set_xlabel('Predicted')\n#  axes[idx].set_ylabel('Actual')\n#  axes[idx].set_title(title)\n\n# plt.tight_layout()\n# plt.savefig('confusion_matrices_trees.png', dpi=300, bbox_inches='tight')\n\n\n\n\n# print(\"\\n\u2713 Plot saved as 'confusion_matrices_trees.png'\")\n\n\n\n\n# print(\"\\n\ud83d\udca1 Note: Confusion matrices show 2 classes (High Risk=0, Low Risk=1)\")\n\n\n\n\n# print(\" - Diagonal shows correct predictions\")\n\n\n\n\n# print(\" - For Airport Security: High Risk = Not Survived, Low Risk = Survived\")\n\n\n\n\n# print(\" - Off-diagonal shows misclassifications\")\nplt.show()\n------------------\n\n\n\u001b[0;36m  Cell \u001b[0;32mIn[12], line 23\u001b[0;36m\u001b[0m\n\u001b[0;31m    ]\u001b[0m\n\u001b[0m    ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m unmatched ']'\n\n",
+      "error_traceback": "Traceback (most recent call last):\n  File \"/Users/abdullah/.cursor/worktrees/AI_Diploma/rfa/tools/notebook_runner.py\", line 105, in execute_notebook_nbclient\n    client.execute()\n    ~~~~~~~~~~~~~~^^\n  File \"/opt/anaconda3/lib/python3.13/site-packages/jupyter_core/utils/__init__.py\", line 165, in wrapped\n    return loop.run_until_complete(inner)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^\n  File \"/opt/anaconda3/lib/python3.13/asyncio/base_events.py\", line 725, in run_until_complete\n    return future.result()\n           ~~~~~~~~~~~~~^^\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbclient/client.py\", line 709, in async_execute\n    await self.async_execute_cell(\n        cell, index, execution_count=self.code_cells_executed + 1\n    )\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbclient/client.py\", line 1062, in async_execute_cell\n    await self._check_raise_for_error(cell, cell_index, exec_reply)\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbclient/client.py\", line 918, in _check_raise_for_error\n    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)\nnbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:\n------------------\n# 6. Confusion Matrices\n# print('\\n\" + \"=\" * 60)\")\n\n\n# print(\"6. Confusion Matrices\")\n\n\n\n\nprint(\"\u0645\u0635\u0641\u0648\u0641\u0627\u062a \u0627\u0644\u0627\u0631\u062a\u0628\u0627\u0643\")\n\n\n\n\n# print(\"=\" * 60)\n\n# Note: Titanic dataset has 2 \n# classes (High Risk=0, Low Risk=1), so confusion matrices will be 2x2fig, axes = plt.subplots(1, 3, figsize=(18, 5))\n# models_to_plot = [\n#  (dt_default, 'Decision Tree (Default)', y_test_pred_dt),\n#  (dt_pruned, 'Decision Tree (Pruned)', y_test_pred_pruned),\n#  (rf, 'Random Forest', y_test_pred_rf)\n]\n\n# Class labels \n# for binary classification (Airport Security)\n\n# class_labels = ['High Risk', 'Low Risk']\n\n# for idx, (model, title, predictions) in enumerate(models_to_plot):\n#  cm = confusion_matrix(y_test, predictions)\n#  sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', ax=axes[idx],\n#  xticklabels=class_labels,\n#  yticklabels=class_labels)\n#  axes[idx].set_xlabel('Predicted')\n#  axes[idx].set_ylabel('Actual')\n#  axes[idx].set_title(title)\n\n# plt.tight_layout()\n# plt.savefig('confusion_matrices_trees.png', dpi=300, bbox_inches='tight')\n\n\n\n\n# print(\"\\n\u2713 Plot saved as 'confusion_matrices_trees.png'\")\n\n\n\n\n# print(\"\\n\ud83d\udca1 Note: Confusion matrices show 2 classes (High Risk=0, Low Risk=1)\")\n\n\n\n\n# print(\" - Diagonal shows correct predictions\")\n\n\n\n\n# print(\" - For Airport Security: High Risk = Not Survived, Low Risk = Survived\")\n\n\n\n\n# print(\" - Off-diagonal shows misclassifications\")\nplt.show()\n------------------\n\n\n\u001b[0;36m  Cell \u001b[0;32mIn[12], line 23\u001b[0;36m\u001b[0m\n\u001b[0;31m    ]\u001b[0m\n\u001b[0m    ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m unmatched ']'\n\n\n"
+    },
+    {
+      "path": "Course 04/unit3-classification/examples/03_svm.ipynb",
+      "status": "failed",
+      "execution_time": 0.9098739624023438,
+      "error": "An error occurred while executing the following cell:\n------------------\n# 8))\n# plt.plot(fpr_linear, tpr_linear, linewidth=2, label=f'Linear (AUC = {auc_linear:.4f})')\n# plt.plot(fpr_rbf, tpr_rbf, linewidth=2, label=f'RBF (AUC = {auc_rbf:.4f})')\n# plt.plot(fpr_poly, tpr_poly, linewidth=2, label=f'Polynomial (AUC = {auc_poly:.4f})')\n# plt.plot([0, 1], [0, 1], 'k--', linewidth=1, label='Random Classifier')\n# plt.xlabel('False Positive Rate')\n# plt.ylabel('True Positive Rate')\n# plt.title('SVM ROC Curves Comparison')\nplt.legend()\n# plt.grid(True, alpha=0.3)\n# plt.tight_layout()\n# plt.savefig('svm_roc_curves.png', dpi=300, bbox_inches='tight')\n\n\n\n\n# print(\"\\n\u2713 Plot saved as 'svm_roc_curves.png'\")\nplt.show()\n\n\n\n\n\n# print(\"\\n\" + \"=\" * 60)\n\n\n\n\n# print(\"\ud83d\udca1 Interpreting ROC Curves | \u062a\u0641\u0633\u064a\u0631 \u0645\u0646\u062d\u0646\u064a\u0627\u062a ROC\")\n\n\n\n\n# print(\"=\" * 60)\n\n\n\n\n# print(\"\\n\ud83d\udcca What You Should See:\")\n\n\n\n\n# print(\" - Three colored lines: Linear (blue), RBF (orange), Polynomial (green)\")\n\n\n\n\n# print(\" - Diagonal dashed line: Random classifier (AUC = 0.5, worst possible)\")\n\n\n\n\n# print(\" - Curves above diagonal = better than random\")\n\n\n\n\n# print(\" - Curves closer to top-left corner = better performance\")\n\n\n\n\n# print(\"\\n\ud83d\udd0d Key Observations:\")\n\n\n\n\n# print(\" - RBF curve is highest (best AUC = 0.9556) \u2192 Best at distinguishing classes\")\n\n\n\n\n# print(\" - Linear curve is close (AUC = 0.9535) \u2192 Also excellent\")\n\n\n\n\n# print(\" - Polynomial curve is slightly lower (AUC = 0.9522) \u2192 Still excellent\")\n\n\n\n\n# print(\" - All curves are far above diagonal \u2192 All kernels perform well!\")\n\n\n\n\n# print(\"\\n\ud83d\udca1 How to Read ROC Curves:\")\n\n\n\n\n# print(\" - X-axis (False Positive Rate): Rate of false alarms\")\n\n\n\n\n# print(\" - Y-axis (True Positive Rate): Rate of correctly detected attacks\")\n\n\n\n\n# print(\" - Top-left corner = perfect (100% detection, 0% false alarms)\")\n\n\n\n\n# print(\" - Diagonal line = random guessing (50% detection, 50% false alarms)\")\n\n\n\n\n# print(\" - Higher curve = better at balancing detection vs false alarms\")\n\n\n\n\n# print(\"\\n\ud83d\udca1 For GDI Cyber Threat Detection:\")\n\n\n\n\n# print(\" - ROC curves show model's ability to detect attacks while minimizing false alarms\")\n\n\n\n\n# print(\" - All three kernels achieve excellent performance (AUC > 0.95)\")\n\n\n\n\n# print(\" - RBF kernel has slight edge (best AUC) for this cybersecurity dataset\")\n\n\n\n\n# print(\" - In production, choose kernel with best AUC for most reliable threat detection\")\n\n\n\n\n\n# print(\"\\n\" + \"=\" * 60)\n\n\n\n\n# print(\"Example 3 Complete! \u2713\")\n\n\n\n\n# print(\"\u0627\u0643\u062a\u0645\u0644 \u0627\u0644\u0645\u062b\u0627\u0644 3! \u2713\")\n\n\n\n\n# print(\"=\" * 60)\n------------------\n\n\n\u001b[0;31m---------------------------------------------------------------------------\u001b[0m\n\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)\nCell \u001b[0;32mIn[20], line 9\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[38;5;66;03m# 8))\u001b[39;00m\n\u001b[1;32m      2\u001b[0m \u001b[38;5;66;03m# plt.plot(fpr_linear, tpr_linear, linewidth=2, label=f'Linear (AUC = {auc_linear:.4f})')\u001b[39;00m\n\u001b[1;32m      3\u001b[0m \u001b[38;5;66;03m# plt.plot(fpr_rbf, tpr_rbf, linewidth=2, label=f'RBF (AUC = {auc_rbf:.4f})')\u001b[39;00m\n\u001b[0;32m   (...)\u001b[0m\n\u001b[1;32m      7\u001b[0m \u001b[38;5;66;03m# plt.ylabel('True Positive Rate')\u001b[39;00m\n\u001b[1;32m      8\u001b[0m \u001b[38;5;66;03m# plt.title('SVM ROC Curves Comparison')\u001b[39;00m\n\u001b[0;32m----> 9\u001b[0m plt\u001b[38;5;241m.\u001b[39mlegend()\n\u001b[1;32m     10\u001b[0m \u001b[38;5;66;03m# plt.grid(True, alpha=0.3)\u001b[39;00m\n\u001b[1;32m     11\u001b[0m \u001b[38;5;66;03m# plt.tight_layout()\u001b[39;00m\n\u001b[1;32m     12\u001b[0m \u001b[38;5;66;03m# plt.savefig('svm_roc_curves.png', dpi=300, bbox_inches='tight')\u001b[39;00m\n\u001b[0;32m   (...)\u001b[0m\n\u001b[1;32m     16\u001b[0m \n\u001b[1;32m     17\u001b[0m \u001b[38;5;66;03m# print(\"\\n\u2713 Plot saved as 'svm_roc_curves.png'\")\u001b[39;00m\n\u001b[1;32m     18\u001b[0m plt\u001b[38;5;241m.\u001b[39mshow()\n\n\u001b[0;31mNameError\u001b[0m: name 'plt' is not defined\n",
+      "error_traceback": "Traceback (most recent call last):\n  File \"/Users/abdullah/.cursor/worktrees/AI_Diploma/rfa/tools/notebook_runner.py\", line 105, in execute_notebook_nbclient\n    client.execute()\n    ~~~~~~~~~~~~~~^^\n  File \"/opt/anaconda3/lib/python3.13/site-packages/jupyter_core/utils/__init__.py\", line 165, in wrapped\n    return loop.run_until_complete(inner)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^\n  File \"/opt/anaconda3/lib/python3.13/asyncio/base_events.py\", line 725, in run_until_complete\n    return future.result()\n           ~~~~~~~~~~~~~^^\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbclient/client.py\", line 709, in async_execute\n    await self.async_execute_cell(\n        cell, index, execution_count=self.code_cells_executed + 1\n    )\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbclient/client.py\", line 1062, in async_execute_cell\n    await self._check_raise_for_error(cell, cell_index, exec_reply)\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbclient/client.py\", line 918, in _check_raise_for_error\n    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)\nnbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:\n------------------\n# 8))\n# plt.plot(fpr_linear, tpr_linear, linewidth=2, label=f'Linear (AUC = {auc_linear:.4f})')\n# plt.plot(fpr_rbf, tpr_rbf, linewidth=2, label=f'RBF (AUC = {auc_rbf:.4f})')\n# plt.plot(fpr_poly, tpr_poly, linewidth=2, label=f'Polynomial (AUC = {auc_poly:.4f})')\n# plt.plot([0, 1], [0, 1], 'k--', linewidth=1, label='Random Classifier')\n# plt.xlabel('False Positive Rate')\n# plt.ylabel('True Positive Rate')\n# plt.title('SVM ROC Curves Comparison')\nplt.legend()\n# plt.grid(True, alpha=0.3)\n# plt.tight_layout()\n# plt.savefig('svm_roc_curves.png', dpi=300, bbox_inches='tight')\n\n\n\n\n# print(\"\\n\u2713 Plot saved as 'svm_roc_curves.png'\")\nplt.show()\n\n\n\n\n\n# print(\"\\n\" + \"=\" * 60)\n\n\n\n\n# print(\"\ud83d\udca1 Interpreting ROC Curves | \u062a\u0641\u0633\u064a\u0631 \u0645\u0646\u062d\u0646\u064a\u0627\u062a ROC\")\n\n\n\n\n# print(\"=\" * 60)\n\n\n\n\n# print(\"\\n\ud83d\udcca What You Should See:\")\n\n\n\n\n# print(\" - Three colored lines: Linear (blue), RBF (orange), Polynomial (green)\")\n\n\n\n\n# print(\" - Diagonal dashed line: Random classifier (AUC = 0.5, worst possible)\")\n\n\n\n\n# print(\" - Curves above diagonal = better than random\")\n\n\n\n\n# print(\" - Curves closer to top-left corner = better performance\")\n\n\n\n\n# print(\"\\n\ud83d\udd0d Key Observations:\")\n\n\n\n\n# print(\" - RBF curve is highest (best AUC = 0.9556) \u2192 Best at distinguishing classes\")\n\n\n\n\n# print(\" - Linear curve is close (AUC = 0.9535) \u2192 Also excellent\")\n\n\n\n\n# print(\" - Polynomial curve is slightly lower (AUC = 0.9522) \u2192 Still excellent\")\n\n\n\n\n# print(\" - All curves are far above diagonal \u2192 All kernels perform well!\")\n\n\n\n\n# print(\"\\n\ud83d\udca1 How to Read ROC Curves:\")\n\n\n\n\n# print(\" - X-axis (False Positive Rate): Rate of false alarms\")\n\n\n\n\n# print(\" - Y-axis (True Positive Rate): Rate of correctly detected attacks\")\n\n\n\n\n# print(\" - Top-left corner = perfect (100% detection, 0% false alarms)\")\n\n\n\n\n# print(\" - Diagonal line = random guessing (50% detection, 50% false alarms)\")\n\n\n\n\n# print(\" - Higher curve = better at balancing detection vs false alarms\")\n\n\n\n\n# print(\"\\n\ud83d\udca1 For GDI Cyber Threat Detection:\")\n\n\n\n\n# print(\" - ROC curves show model's ability to detect attacks while minimizing false alarms\")\n\n\n\n\n# print(\" - All three kernels achieve excellent performance (AUC > 0.95)\")\n\n\n\n\n# print(\" - RBF kernel has slight edge (best AUC) for this cybersecurity dataset\")\n\n\n\n\n# print(\" - In production, choose kernel with best AUC for most reliable threat detection\")\n\n\n\n\n\n# print(\"\\n\" + \"=\" * 60)\n\n\n\n\n# print(\"Example 3 Complete! \u2713\")\n\n\n\n\n# print(\"\u0627\u0643\u062a\u0645\u0644 \u0627\u0644\u0645\u062b\u0627\u0644 3! \u2713\")\n\n\n\n\n# print(\"=\" * 60)\n------------------\n\n\n\u001b[0;31m---------------------------------------------------------------------------\u001b[0m\n\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)\nCell \u001b[0;32mIn[20], line 9\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[38;5;66;03m# 8))\u001b[39;00m\n\u001b[1;32m      2\u001b[0m \u001b[38;5;66;03m# plt.plot(fpr_linear, tpr_linear, linewidth=2, label=f'Linear (AUC = {auc_linear:.4f})')\u001b[39;00m\n\u001b[1;32m      3\u001b[0m \u001b[38;5;66;03m# plt.plot(fpr_rbf, tpr_rbf, linewidth=2, label=f'RBF (AUC = {auc_rbf:.4f})')\u001b[39;00m\n\u001b[0;32m   (...)\u001b[0m\n\u001b[1;32m      7\u001b[0m \u001b[38;5;66;03m# plt.ylabel('True Positive Rate')\u001b[39;00m\n\u001b[1;32m      8\u001b[0m \u001b[38;5;66;03m# plt.title('SVM ROC Curves Comparison')\u001b[39;00m\n\u001b[0;32m----> 9\u001b[0m plt\u001b[38;5;241m.\u001b[39mlegend()\n\u001b[1;32m     10\u001b[0m \u001b[38;5;66;03m# plt.grid(True, alpha=0.3)\u001b[39;00m\n\u001b[1;32m     11\u001b[0m \u001b[38;5;66;03m# plt.tight_layout()\u001b[39;00m\n\u001b[1;32m     12\u001b[0m \u001b[38;5;66;03m# plt.savefig('svm_roc_curves.png', dpi=300, bbox_inches='tight')\u001b[39;00m\n\u001b[0;32m   (...)\u001b[0m\n\u001b[1;32m     16\u001b[0m \n\u001b[1;32m     17\u001b[0m \u001b[38;5;66;03m# print(\"\\n\u2713 Plot saved as 'svm_roc_curves.png'\")\u001b[39;00m\n\u001b[1;32m     18\u001b[0m plt\u001b[38;5;241m.\u001b[39mshow()\n\n\u001b[0;31mNameError\u001b[0m: name 'plt' is not defined\n\n"
+    },
+    {
+      "path": "Course 04/unit3-classification/examples/04_knn.ipynb",
+      "status": "passed",
+      "execution_time": 0.8874139785766602,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 04/unit4-clustering/examples/01_kmeans_clustering.ipynb",
+      "status": "passed",
+      "execution_time": 0.7870399951934814,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 06/unit1-ethics-foundations/examples/03_case_study_analysis.ipynb",
+      "status": "passed",
+      "execution_time": 0.6953773498535156,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 06/unit2-bias-justice/exercises/exercise_02.ipynb",
+      "status": "passed",
+      "execution_time": 0.733536958694458,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 06/unit4-transparency-accountability/examples/07_explainable_ai_techniques.ipynb",
+      "status": "passed",
+      "execution_time": 0.7375352382659912,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 07/unit1-nlp-fundamentals/exercises/01_text_preprocessing_exercise.ipynb",
+      "status": "passed",
+      "execution_time": 0.6178629398345947,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 07/unit2-tokenization-morphology/examples/04_word_embeddings_glove_fasttext.ipynb",
+      "status": "passed",
+      "execution_time": 0.5702400207519531,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 07/unit4-deep-learning-nlp/examples/03_bert_advanced_usage.ipynb",
+      "status": "passed",
+      "execution_time": 0.7557532787322998,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 08/unit1-deep-learning-basics/examples/01_simple_neural_network.ipynb",
+      "status": "passed",
+      "execution_time": 0.6565289497375488,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 08/unit2-cnns/examples/01_cnn_architecture.ipynb",
+      "status": "passed",
+      "execution_time": 0.6036150455474854,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 08/unit2-cnns/examples/04_pretrained_cnn_architectures.ipynb",
+      "status": "passed",
+      "execution_time": 0.6082150936126709,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 08/unit2-cnns/examples/05_training_cnn_image_datasets.ipynb",
+      "status": "passed",
+      "execution_time": 0.7414288520812988,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 08/unit2-cnns/examples/06_transfer_learning_object_detection.ipynb",
+      "status": "passed",
+      "execution_time": 0.6205627918243408,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 08/unit3-rnns/examples/04_text_generation_rnn_lstm_gru.ipynb",
+      "status": "passed",
+      "execution_time": 0.6896781921386719,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 08/unit3-rnns/examples/05_transformer_models_bert_gpt_nlp.ipynb",
+      "status": "passed",
+      "execution_time": 0.8373558521270752,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 08/unit3-rnns/examples/06_sentiment_analysis_translation_speech.ipynb",
+      "status": "passed",
+      "execution_time": 0.7476999759674072,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 08/unit3-rnns/exercises/01_rnn_exercise.ipynb",
+      "status": "passed",
+      "execution_time": 0.6622729301452637,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 08/unit4-transformers/examples/03_gpt_text_generation.ipynb",
+      "status": "passed",
+      "execution_time": 0.7563462257385254,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 08/unit5-deployment/examples/02_tensorflow_serving.ipynb",
+      "status": "passed",
+      "execution_time": 0.735896110534668,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 08/unit5-deployment/examples/03_onnx_conversion.ipynb",
+      "status": "passed",
+      "execution_time": 0.5876109600067139,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 08/unit5-deployment/examples/07_model_optimization_quantization.ipynb",
+      "status": "passed",
+      "execution_time": 1.4624178409576416,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 09/unit1-rl-fundamentals/examples/04_openai_gym_setup.ipynb",
+      "status": "passed",
+      "execution_time": 0.558617115020752,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 09/unit1-rl-fundamentals/examples/06_solving_rl_problems_states_actions_rewards.ipynb",
+      "status": "passed",
+      "execution_time": 0.8996930122375488,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 09/unit1-rl-fundamentals/examples/07_mini_projects_cartpole_frozenlake_qlearning_dqn.ipynb",
+      "status": "passed",
+      "execution_time": 0.8071370124816895,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 09/unit1-rl-fundamentals/examples/mini_projects_applying_rl_in_games_like_cartpole_and_frozenlake_implementing_q_l.ipynb",
+      "status": "passed",
+      "execution_time": 0.5988049507141113,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 09/unit1-rl-fundamentals/examples/setting_up_rl_environment_installing_openai_gym_and_using_python_based_framework.ipynb",
+      "status": "passed",
+      "execution_time": 0.8464088439941406,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 09/unit2-policy-value/examples/04_monte_carlo_value_estimation.ipynb",
+      "status": "passed",
+      "execution_time": 1.0871329307556152,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 09/unit2-policy-value/examples/05_td_algorithms_td0_nstep.ipynb",
+      "status": "passed",
+      "execution_time": 0.7897481918334961,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 09/unit2-policy-value/examples/applying_q_learning_and_sarsa_in_openai_gym_cartpole_frozenlake.ipynb",
+      "status": "passed",
+      "execution_time": 0.5814671516418457,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 09/unit2-policy-value/examples/running_td0_and_n_step_td_algorithms_in_simple_rl_environments.ipynb",
+      "status": "passed",
+      "execution_time": 0.5346629619598389,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 09/unit5-applications/examples/implementing_multi_agent_rl_environments_and_training_cooperativecompetitive_age.ipynb",
+      "status": "passed",
+      "execution_time": 0.8068881034851074,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 10/unit1-generative-fundamentals/examples/01_generative_vs_discriminative.ipynb",
+      "status": "passed",
+      "execution_time": 0.6640470027923584,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 10/unit1-generative-fundamentals/examples/04_building_training_simple_gan.ipynb",
+      "status": "passed",
+      "execution_time": 0.7439460754394531,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 10/unit1-generative-fundamentals/examples/05_implementing_vae_image_generation.ipynb",
+      "status": "passed",
+      "execution_time": 0.764275074005127,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 10/unit1-generative-fundamentals/examples/07_training_techniques_gradient_penalties.ipynb",
+      "status": "passed",
+      "execution_time": 1.4649631977081299,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 10/unit2-gans/examples/01_gan_architecture.ipynb",
+      "status": "passed",
+      "execution_time": 0.5304450988769531,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 10/unit2-gans/examples/04_text_generation_gpt_models.ipynb",
+      "status": "passed",
+      "execution_time": 0.8320679664611816,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 10/unit2-gans/examples/05_fine_tuning_language_models.ipynb",
+      "status": "passed",
+      "execution_time": 0.7148568630218506,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 10/unit2-gans/examples/05_finetuning_language_models.ipynb",
+      "status": "passed",
+      "execution_time": 0.5326228141784668,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 10/unit2-gans/examples/07_building_text_to_text_generation.ipynb",
+      "status": "passed",
+      "execution_time": 0.5458319187164307,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 10/unit2-gans/examples/08_generating_creative_text_stories_poems.ipynb",
+      "status": "passed",
+      "execution_time": 0.6278810501098633,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 10/unit4-applications/examples/02_image_generation_advanced.ipynb",
+      "status": "passed",
+      "execution_time": 0.6176719665527344,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 10/unit4-applications/exercises/01_generation_exercise.ipynb",
+      "status": "passed",
+      "execution_time": 0.6597120761871338,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 11/unit1-deployment-basics/examples/03_local_deployment_testing.ipynb",
+      "status": "passed",
+      "execution_time": 0.5391101837158203,
+      "error": null,
+      "error_traceback": null
+    },
+    {
+      "path": "Course 12/unit3-model-development/examples/04_model_selection_architecture_design.ipynb",
+      "status": "passed",
+      "execution_time": 0.5965309143066406,
+      "error": null,
+      "error_traceback": null
+    }
+  ],
+  "duration_seconds": 58.65385699272156
+}

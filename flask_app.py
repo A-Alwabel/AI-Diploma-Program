@@ -19,8 +19,7 @@ def predict():
         probability = model.predict_proba(features)[0].tolist()
         
         return jsonify({
-            'prediction': int(prediction),
-            'probabilities': probability,
+            'prediction': int(prediction), 'probabilities': probability,
             'status': 'success'
         })
     except Exception as e:

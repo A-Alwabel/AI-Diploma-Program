@@ -1,0 +1,158 @@
+# Failure Manifest
+
+Total failed: 75
+
+## Categories
+- unknown: 75
+
+## Failures
+- Course 01/unit2-search-algorithms/examples/06_machine_learning_intro.ipynb
+  - None: An error occurred while executing the following cell: ------------------ # Example: House Price Prediction # Features (X): size, bedrooms, location, age # Label (y): price data = {
+- Course 01/unit2-search-algorithms/examples/07_rdf_sparql_knowledge_graph.ipynb
+  - None: An error occurred while executing the following cell: ------------------ # Install required libraries  # if not already installed # !pip install rdflib sparqlwrapper from rdflib im
+- Course 01/unit2-search-algorithms/exercises/exercise_01.ipynb
+  - None: An error occurred while executing the following cell: ------------------ # 2 - Exercise 1: AI Concepts and Applicationsالوحدة 2 - تمرين 1: مفاهيم الذكاء الاصطناعي والتطبيقات  Compl
+- Course 01/unit3-knowledge-representation/examples/05_perceptron_xor.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import numpy as np import matplotlib.pyplot as plt from tensorflow import keras from tensorflow.keras.model
+- Course 01/unit3-ml-basics/examples/05_solving_xor_keras.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import numpy as np import tensorflow as tf from tensorflow import keras from tensorflow.keras import layers
+- Course 01/unit4-neural-networks-basics/examples/03_cnn_rnn_architectures.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import numpy as np from tensorflow import keras from tensorflow.keras.models import Sequential from tensorf
+- Course 01/unit4-neural-networks-basics/exercises/exercise_01.ipynb
+  - None: An error occurred while executing the following cell: ------------------ # 4 - Exercise 1: Neural Networks Basicsالوحدة 4 - تمرين 1: أساسيات الشبكات العصبية  Complete the following
+- Course 01/unit5-generative-ai-intro/examples/04_diabetes_classification_ffnn.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import numpy as np import pandas as pd from sklearn.model_selection import train_test_split from sklearn.pr
+- Course 03/modules/module_01/exercises/exercise_01.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import numpy as np   def create_data_matrix(samples, features):  # TODO: Create a matrix with the specified
+- Course 03/modules/module_01/exercises/exercise_02.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import numpy as np   def compute_determinant(matrix):  # TODO: Compute determinant using np.linalg.det()  p
+- Course 03/modules/module_02/exercises/exercise_01.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import numpy as np from scipy.optimize import approx_fprime # Note: scipy.misc.derivative moved, using appr
+- Course 03/modules/module_02/exercises/exercise_02.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import numpy as np   def gradient_descent(func, gradient_func, initial_x, learning_rate=0.1, iterations=100
+- Course 03/modules/module_02/notebook_02_why_how_after.ipynb
+  - None: An error occurred while executing the following cell: ------------------ # Example: Why Calculus matters in ML import numpy as np import matplotlib.pyplot as plt  # Example: Unders
+- Course 03/modules/module_03/exercises/exercise_01.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import numpy as np   class SimpleGDOptimizer:    def __init__(self, lr=0.01):  self.lr = lr    def update(s
+- Course 03/modules/module_03/exercises/exercise_02.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import numpy as np   def calculate_mse(predictions, targets):  # TODO: Calculate MSE   # Formula: mean((pre
+- Course 03/modules/module_04/exercises/exercise_01.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import numpy as np   def compute_covariance_matrix(data):  # TODO: Compute covariance matrix   # Hint: Cent
+- Course 03/modules/module_05/exercises/exercise_01.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import numpy as np from scipy import stats   def compute_confidence_interval(data, confidence=0.95):  # TOD
+- Course 03/modules/module_05/notebook_05_why_how_after.ipynb
+  - None: An error occurred while executing the following cell: ------------------ # Example: Why Probabilities and Inference matter in ML import numpy as np from scipy import stats  # Examp
+- Course 03/unit1-linear-algebra/examples/06_transformation_matrices_orthogonal_basis.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import numpy as np import matplotlib.pyplot as plt from scipy.linalg   qr, orth print("✅ Libraries imported
+- Course 03/unit2-calculus/examples/05_function_approximation_ml.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import numpy as np import matplotlib.pyplot as plt from scipy.optimize  minimize from sklearn.linear_model 
+- Course 03/unit3-optimization/examples/04_regression_real_datasets.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import numpy as np import pandas as pd import matplotlib.pyplot as plt from sklearn.model_selection import 
+- Course 03/unit5-probability/examples/06_maximum_likelihood_estimation.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import numpy as np import matplotlib.pyplot as plt from scipy  statsfrom scipy.optimize  minimize_scalar, m
+- Course 04/unit1-data-processing/examples/01_data_loading_exploration.ipynb
+  - None: An error occurred while executing the following cell: ------------------ # Set display options  for better outputpd.set_option('display.max_columns', None) pd.set_option('display.w
+- Course 04/unit1-data-processing/examples/03_data_preprocessing.ipynb
+  - None: An error occurred while executing the following cell: ------------------ # Step 1: Import necessary libraries # These libraries help us preprocess data  for machine learningimport 
+- Course 04/unit1-data-processing/examples/04_linear_regression.ipynb
+  - None: An error occurred while executing the following cell: ------------------ # Set style  for better plotsplt.style.use('seaborn-v0_8') sns.set_palette("husl")     print("=" * 60)     
+- Course 04/unit1-data-processing/examples/05_polynomial_regression.ipynb
+  - None: An error occurred while executing the following cell: ------------------ # Load real-world US Accidents dataset  for Traffic Management # GDI Theme: Traffic Management - Understand
+- Course 04/unit2-regression/examples/01_ridge_lasso_regression.ipynb
+  - None: An error occurred while executing the following cell: ------------------ # Load real-world Credit Card Fraud dataset  for Terrorism Financing Detection # GDI Theme: Terrorism Finan
+- Course 04/unit3-classification/examples/01_logistic_regression.ipynb
+  - None: An error occurred while executing the following cell: ------------------ # Step 1: Import necessary libraries # These libraries help us build and evaluate classification models # A
+- Course 04/unit3-classification/examples/02_decision_trees.ipynb
+  - None: An error occurred while executing the following cell: ------------------ # Step 1: Import necessary libraries # These libraries help us build tree-based classification models impor
+- Course 04/unit3-classification/examples/03_svm.ipynb
+  - None: An error occurred while executing the following cell: ------------------ # Step 1: Import necessary libraries # These libraries help us build SVM classification models import panda
+- Course 04/unit3-classification/examples/04_knn.ipynb
+  - None: An error occurred while executing the following cell: ------------------ # Step 1: Import necessary libraries # These libraries help us build KNN classification models import panda
+- Course 04/unit4-clustering/examples/01_kmeans_clustering.ipynb
+  - None: An error occurred while executing the following cell: ------------------ # Step 1: Import necessary libraries # These libraries help us perform K-Means clustering import pandas as 
+- Course 06/unit1-ethics-foundations/examples/03_case_study_analysis.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import matplotlib.pyplot as plt import numpy as np # Step 1: Import necessary libraries # These libraries h
+- Course 06/unit2-bias-justice/exercises/exercise_02.ipynb
+  - None: An error occurred while executing the following cell: ------------------ 2: Bias, Justice, and Discrimination in AIExercise 2: Bias Mitigation TechniquesThis exercise requires you 
+- Course 06/unit4-transparency-accountability/examples/07_explainable_ai_techniques.ipynb
+  - None: An error occurred while executing the following cell: ------------------ as np print("✅ Libraries imported!")     print("\nExplainable AI Techniques")     print("=" * 60)      prin
+- Course 07/unit1-nlp-fundamentals/exercises/01_text_preprocessing_exercise.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import pandas as pd  %pip install nltk pandas -q\n  pandas as pd refrom nltk.corpus  stopwordsfrom nltk.tok
+- Course 07/unit2-tokenization-morphology/examples/04_word_embeddings_glove_fasttext.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import numpy as np from gensim.models import KeyedVectors    gensim.downloader as api print("✅ Libraries im
+- Course 07/unit4-deep-learning-nlp/examples/03_bert_advanced_usage.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import numpy as np import pandas as pd from sklearn.model_selection import train_test_split from sklearn.me
+- Course 08/unit1-deep-learning-basics/examples/01_simple_neural_network.ipynb
+  - None: An error occurred while executing the following cell: ------------------   # Visualization: Neural Network Architecture # تصور: هيكل الشبكة العصبيةtry:  import matplotlib.pyplot as
+- Course 08/unit2-cnns/examples/01_cnn_architecture.ipynb
+  - None: An error occurred while executing the following cell: ------------------   # Visualization: Neural Network Architecture # تصور: هيكل الشبكة العصبيةtry:  import matplotlib.pyplot as
+- Course 08/unit2-cnns/examples/04_pretrained_cnn_architectures.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import tensorflow as tf from tensorflow import keras from tensorflow.keras.applications import ResNet50, VG
+- Course 08/unit2-cnns/examples/05_training_cnn_image_datasets.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import tensorflow as tf from tensorflow import keras from tensorflow.keras.datasets import cifar10 import n
+- Course 08/unit2-cnns/examples/06_transfer_learning_object_detection.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import tensorflow as tf from tensorflow import keras import numpy as np  print("✅ Libraries imported!") pri
+- Course 08/unit3-rnns/examples/04_text_generation_rnn_lstm_gru.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import tensorflow as tf from tensorflow import keras import numpy as np  print("✅ Libraries imported!") pri
+- Course 08/unit3-rnns/examples/05_transformer_models_bert_gpt_nlp.ipynb
+  - None: An error occurred while executing the following cell: ------------------ from transformers import BertTokenizer, BertModel, GPT2Tokenizer, GPT2Model import torch  print("✅ Librarie
+- Course 08/unit3-rnns/examples/06_sentiment_analysis_translation_speech.ipynb
+  - None: An error occurred while executing the following cell: ------------------ from transformers import pipeline import torch  print("✅ Libraries imported!") print("\nSentiment Analysis,
+- Course 08/unit3-rnns/exercises/01_rnn_exercise.ipynb
+  - None: An error occurred while executing the following cell: ------------------  torch.nn as nnimport numpy as np import pandas as pd import matplotlib.pyplot as plt print('✅ Setup comple
+- Course 08/unit4-transformers/examples/03_gpt_text_generation.ipynb
+  - None: An error occurred while executing the following cell: ------------------ %pip install transformers torch datasets -q torchfrom transformers  GPT2LMHeadModel, GPT2Tokenizer, GPT2Con
+- Course 08/unit5-deployment/examples/02_tensorflow_serving.ipynb
+  - None: An error occurred while executing the following cell: ------------------ %pip install tensorflow tensorflow-serving-api -q tensorflow as tf numpy as np print(f'TensorFlow version: 
+- Course 08/unit5-deployment/examples/03_onnx_conversion.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import numpy as np  torch.nn as nn onnx onnxruntime as ort print('✅ Setup complete!') ------------------   
+- Course 08/unit5-deployment/examples/07_model_optimization_quantization.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import tensorflow as tf import numpy as np  print("✅ Libraries imported!") print("\nModel Optimization and 
+- Course 09/unit1-rl-fundamentals/examples/04_openai_gym_setup.ipynb
+  - None: An error occurred while executing the following cell: ------------------ # Install OpenAI Gym (run this once) # !pip install gym matplotlib numpyimport gym import numpy as np impor
+- Course 09/unit1-rl-fundamentals/examples/06_solving_rl_problems_states_actions_rewards.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import numpy as np import matplotlib.pyplot as plt gym print("✅ Libraries imported!")     print("\nSolving 
+- Course 09/unit1-rl-fundamentals/examples/07_mini_projects_cartpole_frozenlake_qlearning_dqn.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import numpy as np import matplotlib.pyplot as plt gym randomfrom collections   defaultdict print("✅ Librar
+- Course 09/unit1-rl-fundamentals/examples/mini_projects_applying_rl_in_games_like_cartpole_and_frozenlake_implementing_q_l.ipynb
+  - None: An error occurred while executing the following cell: ------------------ # Gym has two common packages: gymnasium (new) and gym (older) # This notebook tries both. try:  import gym
+- Course 09/unit1-rl-fundamentals/examples/setting_up_rl_environment_installing_openai_gym_and_using_python_based_framework.ipynb
+  - None: An error occurred while executing the following cell: ------------------ # Gym has two common packages: gymnasium (new) and gym (older) # This notebook tries both. try:  import gym
+- Course 09/unit2-policy-value/examples/04_monte_carlo_value_estimation.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import numpy as np import matplotlib.pyplot as plt from collections import defaultdict    random print("✅ L
+- Course 09/unit2-policy-value/examples/05_td_algorithms_td0_nstep.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import numpy as np import matplotlib.pyplot as plt from collections   defaultdict print("✅ Libraries import
+- Course 09/unit2-policy-value/examples/applying_q_learning_and_sarsa_in_openai_gym_cartpole_frozenlake.ipynb
+  - None: An error occurred while executing the following cell: ------------------ # Gym has two common packages: gymnasium (new) and gym (older) # This notebook tries both. try:  import gym
+- Course 09/unit2-policy-value/examples/running_td0_and_n_step_td_algorithms_in_simple_rl_environments.ipynb
+  - None: An error occurred while executing the following cell: ------------------ # Gym has two common packages: gymnasium (new) and gym (older) # This notebook tries both. try:  import gym
+- Course 09/unit5-applications/examples/implementing_multi_agent_rl_environments_and_training_cooperativecompetitive_age.ipynb
+  - None: An error occurred while executing the following cell: ------------------ # Gym has two common packages: gymnasium (new) and gym (older) # This notebook tries both. try:  import gym
+- Course 10/unit1-generative-fundamentals/examples/01_generative_vs_discriminative.ipynb
+  - None: An error occurred while executing the following cell: ------------------   # Visualization: Generative vs Discriminative Models # تصور: النماذج التوليدية مقابل التمييزيةtry:  impor
+- Course 10/unit1-generative-fundamentals/examples/04_building_training_simple_gan.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import tensorflow as tf from tensorflow import keras import numpy as np import matplotlib.pyplot as plt  pr
+- Course 10/unit1-generative-fundamentals/examples/05_implementing_vae_image_generation.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import tensorflow as tf from tensorflow import keras import numpy as np  print("✅ Libraries imported!") pri
+- Course 10/unit1-generative-fundamentals/examples/07_training_techniques_gradient_penalties.ipynb
+  - None: An error occurred while executing the following cell: ------------------ import tensorflow as tf import numpy as np  print("✅ Libraries imported!") print("\nTraining Techniques: Gr
+- Course 10/unit2-gans/examples/01_gan_architecture.ipynb
+  - None: An error occurred while executing the following cell: ------------------   # Visualization: Generative vs Discriminative Models # تصور: النماذج التوليدية مقابل التمييزيةtry:  impor
+- Course 10/unit2-gans/examples/04_text_generation_gpt_models.ipynb
+  - None: An error occurred while executing the following cell: ------------------ from transformers import GPT2LMHeadModel, GPT2Tokenizer import torch  print("✅ Libraries imported!") print(
+- Course 10/unit2-gans/examples/05_fine_tuning_language_models.ipynb
+  - None: An error occurred while executing the following cell: ------------------ from transformers import GPT2LMHeadModel, GPT2Tokenizer, Trainer, TrainingArguments    torch print("✅ Libra
+- Course 10/unit2-gans/examples/05_finetuning_language_models.ipynb
+  - None: An error occurred while executing the following cell: ------------------ from transformers import AutoModelForCausalLM, AutoTokenizer, Trainer, TrainingArguments    torch print("✅ 
+- Course 10/unit2-gans/examples/07_building_text_to_text_generation.ipynb
+  - None: An error occurred while executing the following cell: ------------------ from transformers import T5ForConditionalGeneration, T5Tokenizer import torch  print("✅ Libraries imported!
+- Course 10/unit2-gans/examples/08_generating_creative_text_stories_poems.ipynb
+  - None: An error occurred while executing the following cell: ------------------ from transformers import GPT2LMHeadModel, GPT2Tokenizer import torch  print("✅ Libraries imported!") print(
+- Course 10/unit4-applications/examples/02_image_generation_advanced.ipynb
+  - None: An error occurred while executing the following cell: ------------------ %pip install diffusers transformers accelerate -q from diffusers import StableDiffusionPipeline import torc
+- Course 10/unit4-applications/exercises/01_generation_exercise.ipynb
+  - None: An error occurred while executing the following cell: ------------------ %pip install transformers torch -q from transformers import GPT2LMHeadModel, GPT2Tokenizer  # TODO: Load mo
+- Course 11/unit1-deployment-basics/examples/03_local_deployment_testing.ipynb
+  - None: An error occurred while executing the following cell: ------------------ from flask import Flask, request, jsonify   import joblib  # Load model #   model = joblib.load('model.pkl'
+- Course 12/unit3-model-development/examples/04_model_selection_architecture_design.ipynb
+  - None: An error occurred while executing the following cell: ------------------ tensorflow as tffrom tensorflow  keras  numpy as np print("✅ Libraries imported!")   print("\nModel Selecti
