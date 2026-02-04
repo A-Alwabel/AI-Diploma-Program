@@ -49,6 +49,20 @@ By the end of this unit, students will be able to:
 
 ---
 
+## Recommended order (examples) | ترتيب الأمثلة الموصى به
+
+Follow this order to align with slides **05 → 10 → 16 → 14 → 15 → 11 → 20**. Full table: `DOCS/EXAMPLES_ORDER.md`.
+
+1. `01_cnn_architecture.ipynb`  
+2. `02_image_processing_fundamentals_and_feature_extraction.ipynb`  
+3. `03_cnn_advanced_architectures.ipynb`  
+4. `04_transfer_learning_object_detection.ipynb`  
+5. `05_transfer_learning_cnns.ipynb`  
+6. `06_pretrained_cnn_architectures.ipynb`  
+7. `07_training_cnn_image_datasets.ipynb`  
+
+---
+
 **Unit Duration:** 3 weeks  
 **Difficulty:** Advanced  
 **Prerequisites:** Unit 1 completion, understanding of neural networks

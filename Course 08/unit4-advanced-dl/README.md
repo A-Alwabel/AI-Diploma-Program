@@ -55,6 +55,26 @@ Based on official curriculum (AIAT 122), this unit covers:
 
 ---
 
+## Recommended order (examples) | ترتيب الأمثلة الموصى به
+
+Follow this order to align with slides **04 → 09 → 22 → 18 → 07**. Full table: `DOCS/EXAMPLES_ORDER.md`.
+
+1. `01_gans_and_autoencoders_vaes.ipynb`  
+2. `02_implementing_a_vae_variational_autoencoder_for_anomaly_detection.ipynb`  
+3. `03_reinforcement_learning_fundamentals_deep_q_networks_policy_gradients.ipynb`  
+4. `04_ethical_concerns_in_ai_bias_fairness_interpretability.ipynb`  
+
+---
+
+## Exercises | التمارين
+
+After the examples, complete the exercises in `unit4-advanced-dl/exercises/` (aligned with slides 04, 09, 22, 18):
+
+1. `01_gans_vaes_exercise.ipynb` – Build a simple GAN or VAE; aligns with `01_gans_and_autoencoders_vaes.ipynb`, `02_implementing_a_vae_...ipynb`.
+2. `02_reinforcement_learning_exercise.ipynb` – Use OpenAI Gym (or Gymnasium); aligns with `03_reinforcement_learning_fundamentals_...ipynb`.
+
+---
+
 ## Unit Breakdown | تفصيل الوحدة
 
 **Theoretical Hours:** 7  

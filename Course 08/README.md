@@ -45,6 +45,9 @@ This course provides comprehensive training in Deep Learning using TensorFlow an
 
 ## Prerequisites | المتطلبات الأساسية
 
+**What you need:** You only need **this repository** (clone or download) and the **root `requirements.txt`** at the AI Diploma folder. No other files or external data are required—notebooks download datasets (e.g. MNIST) automatically when you run them.  
+**ما تحتاجه:** تحتاج فقط **هذا المستودع** وملف **`requirements.txt`** في مجلد الدبلوم. لا حاجة لملفات أو بيانات إضافية—الأمثلة تحمّل البيانات (مثل MNIST) تلقائياً عند التشغيل.
+
 **Python Version**: Python 3.8+ required (3.10 or 3.11 recommended)
 
 **Knowledge**: Students should have:

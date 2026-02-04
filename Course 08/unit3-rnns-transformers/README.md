@@ -52,6 +52,20 @@ Based on official curriculum (AIAT 122), this unit covers:
 
 ---
 
+## Recommended order (examples) | ترتيب الأمثلة الموصى به
+
+Follow this order to align with slides **21 → 17 → 12 → 03 → 13**. Full table: `DOCS/EXAMPLES_ORDER.md`.
+
+1. `01_understanding_sequential_data_and_time_series_prediction.ipynb`  
+2. `02_rnn_basics.ipynb`  
+3. `03_lstm_advanced.ipynb`  
+4. `04_transformer_attention.ipynb`  
+5. `05_bert_finetuning.ipynb`  
+
+*Optional:* `06_gpt_text_generation.ipynb`, `07_sequence_to_sequence.ipynb`, `08_text_generation_rnn_lstm_gru.ipynb`, `09_transformer_models_bert_gpt_nlp.ipynb`, `10_sentiment_analysis_translation_speech.ipynb`
+
+---
+
 ## Unit Breakdown | تفصيل الوحدة
 
 **Theoretical Hours:** 6  

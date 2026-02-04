@@ -12,7 +12,7 @@
 1. **Go to Google Colab:** https://colab.research.google.com/
 2. **Upload notebook:**
    - Click "File" → "Upload notebook"
-   - Select the notebook file (e.g., `04_perceptron_mlp_tensorflow_pytorch_setup.ipynb`)
+   - Select the notebook file (e.g., `03_perceptron_mlp_tensorflow_pytorch_setup.ipynb`)
    - Or use "File" → "Open notebook" → "GitHub" and paste repository URL
 
 ### Step 2: Enable GPU
@@ -60,8 +60,8 @@ else:
 
 These notebooks work much better with GPU:
 
-1. **`04_perceptron_mlp_tensorflow_pytorch_setup.ipynb`** - TensorFlow/PyTorch setup
-2. **`03_gpt_text_generation.ipynb`** - GPT text generation (transformers)
+1. **`03_perceptron_mlp_tensorflow_pytorch_setup.ipynb`** - TensorFlow/PyTorch setup
+2. **`06_gpt_text_generation.ipynb`** - GPT text generation (transformers)
 3. **All CNN notebooks** - Image classification training
 4. **All RNN notebooks** - Sequence modeling training
 5. **All Transformer notebooks** - Attention mechanisms training
@@ -92,6 +92,15 @@ These notebooks work much better with GPU:
 
 **Problem:** "TensorFlow/PyTorch not detecting GPU"
 - **Solution:** Restart runtime after enabling GPU
+
+**Problem (local/Anaconda):** `AttributeError: partially initialized module 'charset_normalizer' has no attribute 'md__mypyc'` when running `import tensorflow as tf`
+- **Cause:** Broken or incompatible `charset_normalizer` (used by `requests`, which TensorFlow uses).
+- **Fix:** In a terminal (with the same environment active), run:
+  ```bash
+  pip install --upgrade charset-normalizer requests
+  ```
+  Then **restart the Jupyter kernel** (Kernel → Restart) and run the imports cell again.
+- **Note:** Course 08 notebooks that use TensorFlow catch this error and print the fix; if you see that message, run the command above and restart the kernel.
 
 ---
 

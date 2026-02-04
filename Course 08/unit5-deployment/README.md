@@ -63,6 +63,20 @@ Based on official curriculum (AIAT 122), this unit covers:
 
 ---
 
+## Recommended order (examples) | ترتيب الأمثلة الموصى به
+
+Unit 5 has no institution slides. Use examples in numerical order. Full table: `DOCS/EXAMPLES_ORDER.md`.
+
+1. `01_model_optimization.ipynb`  
+2. `02_tensorflow_serving.ipynb`  
+3. `03_onnx_conversion.ipynb`  
+4. `04_model_pruning.ipynb`  
+5. `05_model_distillation.ipynb`  
+6. `06_flask_fastapi_deployment.ipynb`  
+7. `07_model_optimization_quantization.ipynb`  
+
+---
+
 ## Unit Breakdown | تفصيل الوحدة
 
 **Theoretical Hours:** 7  

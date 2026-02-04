@@ -48,6 +48,21 @@ By the end of this unit, students will be able to:
 
 ---
 
+## Recommended order (examples) | ترتيب الأمثلة الموصى به
+
+Follow this order to align with slides **08 → 01 → 02 → 06 → 19 → 23**. Full table: `DOCS/EXAMPLES_ORDER.md`.
+
+1. `01_deep_learning_fundamentals_compared_to_traditional_ml.ipynb`  
+2. `02_simple_neural_network.ipynb`  
+3. `03_perceptron_mlp_tensorflow_pytorch_setup.ipynb`  
+4. `04_activation_functions_and_optimization_algorithms.ipynb`  
+5. `05_backpropagation_detailed.ipynb`  
+6. `06_optimization_techniques.ipynb`  
+
+*Optional:* `07_image_processing_feature_extraction.ipynb`, `08_forward_and_backward_propagation.ipynb`  
+
+---
+
 **Unit Duration:** 2 weeks  
 **Difficulty:** Advanced  
 **Prerequisites:** Completion of Semester 1 courses, understanding of neural networks basics
