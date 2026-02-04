@@ -5,6 +5,27 @@ Use this order so **examples** match the **slide sequence** you use in class.
 
 ---
 
+## How do I know what topics each notebook covers?
+
+- **In each notebook:** Open any example notebook and look at the **first cell**. You will see a line **📌 Covers slide(s):** that lists which lecture slide(s) it goes with (e.g. *"**08** — Fundamentals of Deep Learning"*). Do that notebook after watching those slides so you don’t get confused.
+- **In this document:** Use the tables below. Each row shows **Slide** (number), **Topic** (what the slide is about), and **Example notebook** (which file to run). So you can see at a glance which notebook has which topics without opening every file.
+
+**Summary:** Every notebook states its topics/slides at the top; this doc gives you the full map in one place.
+
+---
+
+## Why 23 slides but a different number of examples?
+
+- **The 23 slides** are lecture slides (theory/topics). They are numbered 01–23 but **presented in a different order** in class (e.g. Unit 1: 08 → 01 → 02 → 06 → 19 → 23). Slide numbers are IDs, not sequence.
+- **One slide can cover more than one topic** (e.g. Slide 01: "Anatomy of NN, TensorFlow, layers, fit(), loss"). We often use **one notebook per slide** (or per main topic), but not always 1:1.
+- **Sometimes one notebook is used for two slides** (e.g. Slide 04 AutoEncoders + Slide 09 GANs → same notebook `01_gans_and_autoencoders_vaes`; Slide 14 + 15 both Object Detection → `04_transfer_learning_object_detection`). So we can have **fewer** notebooks than slides for that unit.
+- **Sometimes one slide maps to two notebooks** (e.g. Slide 20 Transfer Learning → `05_transfer_learning_cnns` and `06_pretrained_cnn_architectures`). So we can have **more** notebooks than slides.
+- **Unit 5 has no slides** (0 of the 23). All Unit 5 examples (01–07) are for deployment/optimization with **no** slide counterpart. So the total number of **examples** (36 across units) is **not** 23: the 23 slides cover only Units 1–4; Unit 5 adds 7 more notebooks.
+
+**Summary:** Slides = theory; examples = hands-on. The mapping is by **topic**, not by "one example per slide." Some slides share a notebook; some slides need two notebooks; Unit 5 has only notebooks.
+
+---
+
 ## Unit 1: Deep Learning Basics  
 **Slide order:** 08 → 01 → 02 → 06 → 19 → 23
 
@@ -105,8 +126,6 @@ Use this order so **examples** match the **slide sequence** you use in class.
 5. `05_model_distillation.ipynb`  
 6. `06_flask_fastapi_deployment.ipynb`  
 7. `07_model_optimization_quantization.ipynb`  
-
-*Then (optional):* `regularization_techniques_dropout_batch_normalization.ipynb`, `optimizing_deep_learning_models_using_regularization.ipynb`, `model_compression_for_edge_devices.ipynb`, `cloud_deployment_of_deep_learning_models.ipynb`
 
 ---
 

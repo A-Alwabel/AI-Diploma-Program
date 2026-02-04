@@ -22,6 +22,8 @@
 | Unit 4 | `unit4-advanced-dl/` | Advanced Deep Learning Techniques (GANs, VAEs, RL, transfer learning, ethics) |
 | Unit 5 | `unit5-deployment/` | Model Optimization and Deployment |
 
+**📌 Which notebook covers which topic?** Each example notebook has a **📌 Covers slide(s):** line in its first cell (which lecture slide it matches). For the full map (slide ↔ topic ↔ notebook), see **`DOCS/EXAMPLES_ORDER.md`**. That way you always know what you’re learning and won’t get confused.
+
 ## Course Overview | نظرة عامة على الدورة
 
 This course provides comprehensive training in Deep Learning using TensorFlow and PyTorch. Students will learn to build, train, and deploy deep neural networks for various applications.

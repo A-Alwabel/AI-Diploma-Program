@@ -151,10 +151,10 @@ The institution’s 23 slides align with Course 08 (AIAT 122) and cover **Units 
 
 | Official (theory + practical) | In institution slides? | Where to get it |
 |------------------------------|------------------------|------------------|
-| Regularization (Dropout, BatchNorm, L1/L2), hyperparameter tuning | ❌ **No** | Course: `unit5-deployment/examples/` (e.g. `regularization_*.ipynb`) |
+| Regularization (Dropout, BatchNorm, L1/L2), hyperparameter tuning | ❌ **No** | Course: `unit5-deployment/examples/` (e.g. `04_model_pruning.ipynb`, `05_model_distillation.ipynb`) |
 | Model compression (pruning, quantization) | ❌ **No** | Course: `04_model_pruning.ipynb`, `07_model_optimization_quantization.ipynb` |
 | Deploying models (SavedModel, ONNX, Flask, FastAPI, TensorFlow Serving, cloud) | ❌ **No** | Course: `02_tensorflow_serving.ipynb`, `03_onnx_conversion.ipynb`, `06_flask_fastapi_deployment.ipynb` |
-| Mobile (TensorFlow Lite) | ❌ **No** | Course: `model_compression_for_edge_devices.ipynb` |
+| Mobile (TensorFlow Lite) | ❌ **No** | Course: `07_model_optimization_quantization.ipynb` (TFLite conversion) |
 | End-to-end deep learning project | ❌ **No** | Course: `unit5-deployment/` + PROJECTS/ |
 
 ---
