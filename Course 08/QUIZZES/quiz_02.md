@@ -1,5 +1,5 @@
-# Quiz 02 | اختبار 02
-## AIAT 122 - Deep Learning | التعلم العميق
+# Quiz 02
+## AIAT 122 - Deep Learning
 
 **Time Limit:** 45 minutes  
 **Total Points:** 100 points
@@ -11,10 +11,10 @@
 ### Question 1 (10 points)
 [Question about Explain deep learning concepts]
 
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
+a) Option A  
+b) Option B  
+c) Option C  
+d) Option D
 
 **Answer:** [Answer]
 
@@ -23,10 +23,10 @@
 ### Question 2 (10 points)
 [Question about Develop deep learning architectures]
 
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
+a) Option A  
+b) Option B  
+c) Option C  
+d) Option D
 
 **Answer:** [Answer]
 
@@ -35,10 +35,10 @@
 ### Question 3 (10 points)
 [Question about Build and deploy models]
 
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
+a) Option A  
+b) Option B  
+c) Option C  
+d) Option D
 
 **Answer:** [Answer]
 
@@ -47,10 +47,10 @@
 ### Question 4 (10 points)
 [Question about Optimize models]
 
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
+a) Option A  
+b) Option B  
+c) Option C  
+d) Option D
 
 **Answer:** [Answer]
 

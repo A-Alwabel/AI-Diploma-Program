@@ -1,9 +1,9 @@
-# Unit 4: Advanced Deep Learning Techniques | تقنيات التعلم العميق المتقدمة
+# Unit 4: Advanced Deep Learning Techniques
 ## AIAT 122 - Deep Learning
 
 **Maps to (DETAILED_UNIT_DESCRIPTIONS):** Unit 4 — Advanced Deep Learning Techniques (GANs, VAEs, RL, transfer learning, ethics).
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+## ✅ Prerequisites Checklist
 
 Before starting this unit, confirm:
 
@@ -13,7 +13,7 @@ Before starting this unit, confirm:
 - [ ] Installed required libraries (`pip check` passes)
 - [ ] Reviewed related topics in `COURSE_MAP.md` if needed
 
-### Learning Objectives | أهداف التعلم
+### Learning Objectives
 
 By the end of this unit, students will be able to:
 - Understand Generative Adversarial Networks (GANs) and Variational Autoencoders (VAEs)
@@ -27,7 +27,7 @@ By the end of this unit, students will be able to:
 
 ---
 
-## Topics Covered | المواضيع المغطاة
+## Topics Covered
 
 Based on official curriculum (AIAT 122), this unit covers:
 
@@ -55,7 +55,7 @@ Based on official curriculum (AIAT 122), this unit covers:
 
 ---
 
-## Recommended order (examples) | ترتيب الأمثلة الموصى به
+## Recommended order (examples)
 
 Follow this order to align with slides **04 → 09 → 22 → 18 → 07**. Full table: `DOCS/EXAMPLES_ORDER.md`.
 
@@ -66,7 +66,7 @@ Follow this order to align with slides **04 → 09 → 22 → 18 → 07**. Full 
 
 ---
 
-## Exercises | التمارين
+## Exercises
 
 After the examples, complete the exercises in `unit4-advanced-dl/exercises/` (aligned with slides 04, 09, 22, 18):
 
@@ -75,20 +75,20 @@ After the examples, complete the exercises in `unit4-advanced-dl/exercises/` (al
 
 ---
 
-## Unit Breakdown | تفصيل الوحدة
+## Unit Breakdown
 
 **Theoretical Hours:** 7  
 **Practical Hours:** 7  
 **Total Hours:** 14
 
-### Theoretical Content | المحتوى النظري
+### Theoretical Content
 
 - GANs and Autoencoders (VAEs)
 - Reinforcement learning fundamentals
 - Transfer learning and fine-tuning
 - Ethical concerns in AI
 
-### Practical Content | المحتوى العملي
+### Practical Content
 
 - Building and training GANs for image generation
 - Implementing a VAE (Variational Autoencoder) for anomaly detection

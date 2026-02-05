@@ -2,7 +2,7 @@
 ## Course 08 (AIAT 122 – Deep Learning) vs. `/Users/abdullah/Downloads/Content`
 
 **Institution materials:** 23 PowerPoint files (`Copy of 01.pptx` … `Copy of 23.pptx`)  
-**Author:** Dr. Afshan Hashmi – أكاديمية طويق (Tuwaik Academy)  
+**Author:** Dr. Afshan Hashmi – Tuwaik Academy  
 **Generated:** 2025-02-04
 
 ---

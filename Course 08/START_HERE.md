@@ -1,6 +1,6 @@
-# START HERE! | ابدأ من هنا!
+# START HERE!
 
-## 👋 Welcome! | مرحباً!
+## 👋 Welcome!
 
 This course is part of Semester 2 of the AI Diploma Program.
 
@@ -9,14 +9,14 @@ This course is part of Semester 2 of the AI Diploma Program.
 
 ---
 
-## 📋 Prerequisites | المتطلبات الأساسية
+## 📋 Prerequisites
 
 **Before starting this course, you must have completed:**
 - All Semester 1 courses (AIAT 111-116)
 
 ---
 
-## 📚 Learning Path | مسار التعلم
+## 📚 Learning Path
 
 1. **Read README.md** - Understand course overview
 2. **Review prerequisites** - Ensure you have required knowledge
@@ -28,7 +28,7 @@ This course is part of Semester 2 of the AI Diploma Program.
 
 ---
 
-## ✅ Progress Tracking | تتبع التقدم
+## ✅ Progress Tracking
 
 Use `STUDENT_PROGRESS_CHECKLIST.md` to track your progress.
 

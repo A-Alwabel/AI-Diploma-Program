@@ -1,10 +1,8 @@
 # AIAT 122 - Deep Learning
-## التعلم العميق
 
-## 🚀 NEW STUDENTS: START HERE! | الطلاب الجدد: ابدأ من هنا!
+## 🚀 NEW STUDENTS: START HERE!
 
-**👉 If you're a new student, read `START_HERE.md` FIRST!**  
-**👉 إذا كنت طالباً جديداً، اقرأ `START_HERE.md` أولاً!**
+**👉 If you're a new student, read `START_HERE.md` FIRST!**
 
 ---
 
@@ -26,12 +24,12 @@
 
 **📌 Notebook order:** Do examples in **file order** (01 → 02 → 03 …) as listed in each unit's README. Slide numbers in the doc are references to lecture slides, not the sequence to follow.
 
-## Course Overview | نظرة عامة على الدورة
+## Course Overview
 
 This course provides comprehensive training in Deep Learning using TensorFlow and PyTorch. Students will learn to build, train, and deploy deep neural networks for various applications.
 
 **Course Code:** AIAT 122  
-**Language:** Bilingual (Arabic/English)
+**Language:** English
 **Credit Hours:** 3  
 **Lecture Hours:** 2  
 **Practical Hours:** 2  
@@ -47,10 +45,9 @@ This course provides comprehensive training in Deep Learning using TensorFlow an
 
 ---
 
-## Prerequisites | المتطلبات الأساسية
+## Prerequisites
 
-**What you need:** You only need **this repository** (clone or download) and the **root `requirements.txt`** at the AI Diploma folder. No other files or external data are required—notebooks download datasets (e.g. MNIST) automatically when you run them.  
-**ما تحتاجه:** تحتاج فقط **هذا المستودع** وملف **`requirements.txt`** في مجلد الدبلوم. لا حاجة لملفات أو بيانات إضافية—الأمثلة تحمّل البيانات (مثل MNIST) تلقائياً عند التشغيل.
+**What you need:** You only need **this repository** (clone or download) and the **root `requirements.txt`** at the AI Diploma folder. No other files or external data are required—notebooks download datasets (e.g. MNIST) automatically when you run them.
 
 **Python Version**: Python 3.8+ required (3.10 or 3.11 recommended)
 
@@ -66,7 +63,7 @@ This course provides comprehensive training in Deep Learning using TensorFlow an
 
 ---
 
-## Course Learning Outcomes (CLOs) | مخرجات التعلم
+## Course Learning Outcomes (CLOs)
 
 **The detailed objectives of the training program are: For the trainee to be able to:**
 
@@ -82,7 +79,7 @@ This course provides comprehensive training in Deep Learning using TensorFlow an
 
 ---
 
-## 📁 Course Structure | هيكل الدورة
+## 📁 Course Structure
 
 ```
 Course 08/

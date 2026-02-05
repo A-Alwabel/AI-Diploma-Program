@@ -1,6 +1,6 @@
-# Unit 1: Deep Learning Basics | أساسيات التعلم العميق
+# Unit 1: Deep Learning Basics
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+## ✅ Prerequisites Checklist
 
 Before starting this unit, confirm:
 
@@ -10,7 +10,7 @@ Before starting this unit, confirm:
 - [ ] Installed required libraries (`pip check` passes)
 - [ ] Reviewed related topics in `COURSE_MAP.md` if needed
 
-### Learning Objectives | أهداف التعلم
+### Learning Objectives
 
 By the end of this unit, students will be able to:
 - Understand deep learning fundamentals
@@ -21,7 +21,7 @@ By the end of this unit, students will be able to:
 
 ---
 
-## Topics Covered | المواضيع المغطاة
+## Topics Covered
 
 1. **Deep Learning Introduction**
    - What is deep learning?
@@ -48,7 +48,7 @@ By the end of this unit, students will be able to:
 
 ---
 
-## Recommended order (examples) | ترتيب الأمثلة الموصى به
+## Recommended order (examples)
 
 Follow this order to align with slides **08 → 01 → 02 → 06 → 19 → 23**. Full table: `DOCS/EXAMPLES_ORDER.md`.
 

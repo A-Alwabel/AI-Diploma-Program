@@ -1,9 +1,9 @@
-# Unit 3: Recurrent Neural Networks (RNNs) and Transformers | الشبكات العصبية المتكررة والمحولات
+# Unit 3: Recurrent Neural Networks (RNNs) and Transformers
 ## AIAT 122 - Deep Learning
 
 **Maps to (DETAILED_UNIT_DESCRIPTIONS):** Unit 3 — Recurrent Neural Networks (RNNs) and Transformers for Sequential Data.
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+## ✅ Prerequisites Checklist
 
 Before starting this unit, confirm:
 
@@ -13,7 +13,7 @@ Before starting this unit, confirm:
 - [ ] Installed required libraries (`pip check` passes)
 - [ ] Reviewed related topics in `COURSE_MAP.md` if needed
 
-### Learning Objectives | أهداف التعلم
+### Learning Objectives
 
 By the end of this unit, students will be able to:
 - Understand sequential data and time series prediction
@@ -25,7 +25,7 @@ By the end of this unit, students will be able to:
 
 ---
 
-## Topics Covered | المواضيع المغطاة
+## Topics Covered
 
 Based on official curriculum (AIAT 122), this unit covers:
 
@@ -52,7 +52,7 @@ Based on official curriculum (AIAT 122), this unit covers:
 
 ---
 
-## Recommended order (examples) | ترتيب الأمثلة الموصى به
+## Recommended order (examples)
 
 Follow this order to align with slides **21 → 17 → 12 → 03 → 13**. Full table: `DOCS/EXAMPLES_ORDER.md`.
 
@@ -66,20 +66,20 @@ Follow this order to align with slides **21 → 17 → 12 → 03 → 13**. Full 
 
 ---
 
-## Unit Breakdown | تفصيل الوحدة
+## Unit Breakdown
 
 **Theoretical Hours:** 6  
 **Practical Hours:** 6  
 **Total Hours:** 12
 
-### Theoretical Content | المحتوى النظري
+### Theoretical Content
 
 - Understanding sequential data and time series prediction
 - RNN structure and challenges (vanishing gradients problem)
 - Advanced architectures: LSTM, GRU, Transformers, attention mechanism
 - Applications in NLP
 
-### Practical Content | المحتوى العملي
+### Practical Content
 
 - Implementing RNN, LSTM, and GRU for text generation
 - Using Transformer models like BERT and GPT for NLP tasks

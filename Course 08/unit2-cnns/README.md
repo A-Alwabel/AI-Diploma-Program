@@ -1,7 +1,7 @@
-# Unit 2: CNNs for Images | الشبكات العصبية التلافيفية للصور
+# Unit 2: CNNs for Images
 ## AIAT 122 - Deep Learning
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+## ✅ Prerequisites Checklist
 
 Before starting this unit, confirm:
 
@@ -11,7 +11,7 @@ Before starting this unit, confirm:
 - [ ] Installed required libraries (`pip check` passes)
 - [ ] Reviewed related topics in `COURSE_MAP.md` if needed
 
-### Learning Objectives | أهداف التعلم
+### Learning Objectives
 
 By the end of this unit, students will be able to:
 - Understand Convolutional Neural Networks
@@ -22,7 +22,7 @@ By the end of this unit, students will be able to:
 
 ---
 
-## Topics Covered | المواضيع المغطاة
+## Topics Covered
 
 1. **CNN Fundamentals**
    - Convolution operation
@@ -49,7 +49,7 @@ By the end of this unit, students will be able to:
 
 ---
 
-## Recommended order (examples) | ترتيب الأمثلة الموصى به
+## Recommended order (examples)
 
 Follow this order to align with slides **05 → 10 → 16 → 14 → 15 → 11 → 20**. Full table: `DOCS/EXAMPLES_ORDER.md`.
 

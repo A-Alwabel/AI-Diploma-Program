@@ -1,11 +1,11 @@
-# Student Progress Checklist | قائمة تقدم الطالب
+# Student Progress Checklist
 ## AIAT 122 - Deep Learning
 
 **Note:** Templates in `TEMPLATES/` are instructor-only. Students should follow units and notebooks.
 
 ---
 
-## 📋 Course Progress | تقدم الدورة
+## 📋 Course Progress
 
 ### Unit 1: Deep Learning Basics
 - [ ] Read Unit 1 README

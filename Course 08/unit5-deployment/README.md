@@ -1,7 +1,7 @@
-# Unit 5: Deploying Deep Learning Models | نشر نماذج التعلم العميق
+# Unit 5: Deploying Deep Learning Models
 ## AIAT 122 - Deep Learning
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+## ✅ Prerequisites Checklist
 
 Before starting this unit, confirm:
 
@@ -11,7 +11,7 @@ Before starting this unit, confirm:
 - [ ] Installed required libraries (`pip check` passes)
 - [ ] Reviewed related topics in `COURSE_MAP.md` if needed
 
-### Learning Objectives | أهداف التعلم
+### Learning Objectives
 
 By the end of this unit, students will be able to:
 - Optimize deep learning models for deployment
@@ -22,7 +22,7 @@ By the end of this unit, students will be able to:
 
 ---
 
-## Topics Covered | المواضيع المغطاة
+## Topics Covered
 
 Based on official curriculum (AIAT 122), this unit covers:
 
@@ -63,7 +63,7 @@ Based on official curriculum (AIAT 122), this unit covers:
 
 ---
 
-## Recommended order (examples) | ترتيب الأمثلة الموصى به
+## Recommended order (examples)
 
 Unit 5 has no institution slides. Use examples in numerical order. Full table: `DOCS/EXAMPLES_ORDER.md`.
 
@@ -77,13 +77,13 @@ Unit 5 has no institution slides. Use examples in numerical order. Full table: `
 
 ---
 
-## Unit Breakdown | تفصيل الوحدة
+## Unit Breakdown
 
 **Theoretical Hours:** 7  
 **Practical Hours:** 13  
 **Total Hours:** 20
 
-### Theoretical Content | المحتوى النظري
+### Theoretical Content
 
 - Model optimization techniques
 - Deployment architectures
@@ -91,7 +91,7 @@ Unit 5 has no institution slides. Use examples in numerical order. Full table: `
 - Monitoring strategies
 - Production best practices
 
-### Practical Content | المحتوى العملي
+### Practical Content
 
 - Quantizing a TensorFlow model
 - Deploying with TensorFlow Serving
