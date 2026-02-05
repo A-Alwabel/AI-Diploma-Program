@@ -61,6 +61,8 @@ Follow this order to align with slides **05 → 10 → 16 → 14 → 15 → 11 �
 6. `06_pretrained_cnn_architectures.ipynb`  
 7. `07_training_cnn_image_datasets.ipynb`  
 
+**Why is 07 last?** We do transfer learning (05, 06) before the full "train from scratch" pipeline (07) so you see how to reuse pretrained models first; 07 then shows training a CNN from scratch on CIFAR-10.
+
 ---
 
 **Unit Duration:** 3 weeks  

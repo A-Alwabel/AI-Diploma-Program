@@ -24,6 +24,8 @@
 
 **📌 Which notebook covers which topic?** Each example notebook has a **📌 Covers slide(s):** line in its first cell (which lecture slide it matches). For the full map (slide ↔ topic ↔ notebook), see **`DOCS/EXAMPLES_ORDER.md`**. That way you always know what you’re learning and won’t get confused.
 
+**📌 Notebook order:** Do examples in **file order** (01 → 02 → 03 …) as listed in each unit's README. Slide numbers in the doc are references to lecture slides, not the sequence to follow.
+
 ## Course Overview | نظرة عامة على الدورة
 
 This course provides comprehensive training in Deep Learning using TensorFlow and PyTorch. Students will learn to build, train, and deploy deep neural networks for various applications.

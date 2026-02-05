@@ -59,7 +59,7 @@ Follow this order to align with slides **08 → 01 → 02 → 06 → 19 → 23**
 5. `05_backpropagation_detailed.ipynb`  
 6. `06_optimization_techniques.ipynb`  
 
-*Optional:* `07_image_processing_feature_extraction.ipynb`, `08_forward_and_backward_propagation.ipynb`  
+*Optional (do after the core 01–06; order between them doesn't matter):* `07_image_processing_feature_extraction.ipynb`, `08_forward_and_backward_propagation.ipynb`  
 
 ---
 

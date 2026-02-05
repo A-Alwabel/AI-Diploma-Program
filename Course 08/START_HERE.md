@@ -24,6 +24,8 @@ This course is part of Semester 2 of the AI Diploma Program.
 4. **Complete exercises** - Practice what you learn
 5. **Take quizzes** - Test your understanding
 
+**📌 Notebook order:** In each unit, do the example notebooks in **file order** (01, 02, 03, …). The numbers in `DOCS/EXAMPLES_ORDER.md` (e.g. slide 08, 01, 02) are **slide references**, not the order you should follow—always use the order listed in each unit’s README.
+
 ---
 
 ## ✅ Progress Tracking | تتبع التقدم

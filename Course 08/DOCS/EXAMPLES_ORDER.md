@@ -72,6 +72,8 @@ Use this order so **examples** match the **slide sequence** you use in class.
 6. `06_pretrained_cnn_architectures.ipynb`  
 7. `07_training_cnn_image_datasets.ipynb`  
 
+*Why 07 last?* Transfer learning (05, 06) comes before the full training pipeline (07) so you see pretrained reuse first; 07 then trains a CNN from scratch on CIFAR-10.
+
 ---
 
 ## Unit 3: RNNs & Transformers  
@@ -92,7 +94,7 @@ Use this order so **examples** match the **slide sequence** you use in class.
 4. `04_transformer_attention.ipynb`  
 5. `05_bert_finetuning.ipynb`  
 
-*Then (optional):* `06_gpt_text_generation.ipynb`, `07_sequence_to_sequence.ipynb`, `08_text_generation_rnn_lstm_gru.ipynb`, `09_transformer_models_bert_gpt_nlp.ipynb`, `10_sentiment_analysis_translation_speech.ipynb`
+*Then (optional; do after 01–05; order among these doesn't matter):* `06_gpt_text_generation.ipynb`, `07_sequence_to_sequence.ipynb`, `08_text_generation_rnn_lstm_gru.ipynb`, `09_transformer_models_bert_gpt_nlp.ipynb`, `10_sentiment_analysis_translation_speech.ipynb`
 
 ---
 
