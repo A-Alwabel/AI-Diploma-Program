@@ -1,92 +1,89 @@
-# Quiz 05
+# Quiz 05 – Unit 5: Model Optimization and Deployment
 ## AIAT 122 - Deep Learning
 
 **Time Limit:** 45 minutes  
-**Total Points:** 100 points
+**Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)  
+**Covers:** Unit 5 (quantization, pruning, distillation, ONNX, serving, Flask/FastAPI).  
+**Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
 
 ---
 
 ## Part 1: Multiple Choice (40 points)
 
 ### Question 1 (10 points)
-[Question about Explain deep learning concepts]
+**Model quantization** (e.g. converting weights from float32 to int8) is used to:
 
-a) Option A  
-b) Option B  
-c) Option C  
-d) Option D
-
-**Answer:** [Answer]
+a) Increase model size  
+b) **Reduce model size and speed up inference** with often minimal accuracy loss when done carefully  
+c) Only improve accuracy  
+d) Replace the need for a GPU  
 
 ---
 
 ### Question 2 (10 points)
-[Question about Develop deep learning architectures]
+What is **knowledge distillation**?
 
-a) Option A  
-b) Option B  
-c) Option C  
-d) Option D
-
-**Answer:** [Answer]
+a) Removing layers from the model  
+b) **Training a smaller “student” model to mimic the outputs of a larger “teacher” model** to get similar performance with less compute  
+c) Converting to ONNX only  
+d) Only used in training  
 
 ---
 
 ### Question 3 (10 points)
-[Question about Build and deploy models]
+**ONNX** (Open Neural Network Exchange) is useful because:
 
-a) Option A  
-b) Option B  
-c) Option C  
-d) Option D
-
-**Answer:** [Answer]
+a) It is the only way to train models  
+b) It provides a **standard format** to export models so they can run across frameworks (e.g. TensorFlow, PyTorch) and runtimes  
+c) It replaces TensorFlow  
+d) It is only for reinforcement learning  
 
 ---
 
 ### Question 4 (10 points)
-[Question about Optimize models]
+Why do we expose a model via a **REST API** (e.g. Flask or FastAPI) in production?
 
-a) Option A  
-b) Option B  
-c) Option C  
-d) Option D
-
-**Answer:** [Answer]
+a) To train the model  
+b) So **other services or applications can send requests and get predictions** over the network (HTTP)  
+c) Only to reduce latency  
+d) To replace the need for a database  
 
 ---
 
 ## Part 2: Code Writing (30 points)
 
 ### Question 5 (30 points)
-Write code to [implement a Deep Learning concept].
+Write a **minimal FastAPI** application that: (1) defines a POST endpoint `/predict` that accepts a JSON body with a list of numbers (e.g. `{"features": [0.1, 0.2, 0.3]}`), (2) uses a dummy predictor (e.g. return the sum of the list or a fixed class) and returns a JSON response (e.g. `{"prediction": 0}`). No need to load a real model file.
 
-**Answer Key:**
-```python
-# Solution code here
-```
+**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_05_solution.md`.
 
 ---
 
 ## Part 3: Short Answer (30 points)
 
 ### Question 6 (15 points)
-Explain [a key concept from Deep Learning].
+Give **two** trade-offs when deploying a model (e.g. latency vs accuracy, model size vs performance, batch vs real-time).
 
-**Answer Key:**
-- Key point 1
-- Key point 2
-- Key point 3
+**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_05_solution.md`.
 
 ---
 
 ### Question 7 (15 points)
-Describe [an application or technique from Deep Learning].
+What is **model pruning**, and what is one benefit and one risk?
 
-**Answer Key:**
-- Description point 1
-- Description point 2
+**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_05_solution.md`.
 
 ---
+
+## Part 4: Application (10 points)
+
+### Question 8 (10 points)
+A team deploys a model with **2 s latency** but the product requirement is **200 ms**. Name **two** concrete optimization strategies (e.g. quantization, smaller model, batching) and **one** trade-off to consider.
+
+**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_05_solution.md`.
+
+---
+
+**Mapping:** CLO3, CLO4; notebooks: 01_model_optimization, 06_flask_fastapi_deployment, 07_model_optimization_quantization.
 
 **For:** AIAT 122 - Deep Learning

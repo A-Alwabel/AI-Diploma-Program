@@ -77,6 +77,25 @@ Unit 5 has no institution slides. Use examples in numerical order. Full table: `
 
 ---
 
+## Exercises
+
+Complete the exercise in `unit5-deployment/exercises/`:
+
+1. **`01_deep_learning_model_deployment_exercise.ipynb`** – Deploy a model (e.g. API or export). Aligns with `01_model_optimization.ipynb`, `06_flask_fastapi_deployment.ipynb`.
+
+**Solutions:** See `DOCS/SOLUTIONS/exercises/` (instructor-only; do not distribute before deadline).
+
+---
+
+## Teaching note (instructors)
+
+- **Suggested time:** Examples 01–07: ~2–2.5 hours. Unit 5 has no institution slides; use notebooks only (~7 theory + 13 practical hours).
+- **Demo notebook:** `06_flask_fastapi_deployment.ipynb` – show defining the API and a test request.
+- **Common stumbling block:** TensorFlow Serving / Docker if not familiar; focus on 01, 03, 06, 07 for core optimization + API.
+- **Exercise alignment:** Deployment exercise with 01_model_optimization and 06_flask_fastapi_deployment.
+
+---
+
 ## Unit Breakdown
 
 **Theoretical Hours:** 7  

@@ -63,6 +63,25 @@ Follow this order to align with slides **08 → 01 → 02 → 06 → 19 → 23**
 
 ---
 
+## Exercises
+
+Complete the exercise in `unit1-deep-learning-basics/exercises/`:
+
+1. **`01_neural_network_exercise.ipynb`** – Medical image classification (data preprocessing, model architecture, training). Aligns with examples `01_deep_learning_fundamentals_*`, `02_simple_neural_network.ipynb`.
+
+**Solutions:** See `DOCS/SOLUTIONS/exercises/` (instructor-only; do not distribute before deadline).
+
+---
+
+## Teaching note (instructors)
+
+- **Suggested time:** Core examples 01–06: ~2 hours total in lab; optional 07–08: +30 min. Theory (slides): ~6 hours.
+- **Demo notebook:** `02_simple_neural_network.ipynb` – run training cell and show loss/accuracy curve and sample predictions.
+- **Common stumbling block:** TensorFlow `charset_normalizer` / `md__mypyc` error on import – see `DOCS/COLAB_SETUP.md` (pip upgrade + restart kernel).
+- **Exercise alignment:** `01_neural_network_exercise` builds on 01_deep_learning_fundamentals and 02_simple_neural_network.
+
+---
+
 **Unit Duration:** 2 weeks  
 **Difficulty:** Advanced  
 **Prerequisites:** Completion of Semester 1 courses, understanding of neural networks basics

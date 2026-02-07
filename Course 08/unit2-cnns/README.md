@@ -63,6 +63,27 @@ Follow this order to align with slides **05 → 10 → 16 → 14 → 15 → 11 �
 
 **Why is 07 last?** We do transfer learning (05, 06) before the full "train from scratch" pipeline (07) so you see how to reuse pretrained models first; 07 then shows training a CNN from scratch on CIFAR-10.
 
+**⏱ Long run:** Notebooks **04**, **05**, and **07** can take **10–40+ minutes** to run (downloads, transfer learning, or full training). Use a GPU (e.g. Colab) and a smaller subset or fewer epochs if you need a quicker demo.
+
+---
+
+## Exercises
+
+Complete the exercise in `unit2-cnns/exercises/`:
+
+1. **`01_cnn_exercise.ipynb`** – CNN for image classification. Aligns with `01_cnn_architecture.ipynb`, `05_transfer_learning_cnns.ipynb`, `07_training_cnn_image_datasets.ipynb`.
+
+**Solutions:** See `DOCS/SOLUTIONS/exercises/` (instructor-only; do not distribute before deadline).
+
+---
+
+## Teaching note (instructors)
+
+- **Suggested time:** Examples 01–07: ~2.5–3 hours in lab. Theory (slides): ~6 hours.
+- **Demo notebook:** `01_cnn_architecture.ipynb` or `05_transfer_learning_cnns.ipynb` – show conv/pool structure or transfer learning flow.
+- **Common stumbling block:** GPU memory on full CIFAR-10/ImageNet; use subset or smaller batch size; recommend Colab GPU (see `DOCS/COLAB_SETUP.md`).
+- **Exercise alignment:** `01_cnn_exercise` builds on 01_cnn_architecture and transfer learning examples.
+
 ---
 
 **Unit Duration:** 3 weeks  

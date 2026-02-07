@@ -64,6 +64,8 @@ Follow this order to align with slides **04 → 09 → 22 → 18 → 07**. Full 
 3. `03_reinforcement_learning_fundamentals_deep_q_networks_policy_gradients.ipynb`  
 4. `04_ethical_concerns_in_ai_bias_fairness_interpretability.ipynb`  
 
+**⏱ Long run:** Notebooks **01** (GANs) and **02** (VAE) may take **5–15+ minutes** to train; **03** (RL) depends on environment and steps. Use GPU for GAN/VAE when possible (see `DOCS/COLAB_SETUP.md`).
+
 ---
 
 ## Exercises
@@ -72,6 +74,17 @@ After the examples, complete the exercises in `unit4-advanced-dl/exercises/` (al
 
 1. `01_gans_vaes_exercise.ipynb` – Build a simple GAN or VAE; aligns with `01_gans_and_autoencoders_vaes.ipynb`, `02_implementing_a_vae_...ipynb`.
 2. `02_reinforcement_learning_exercise.ipynb` – Use OpenAI Gym (or Gymnasium); aligns with `03_reinforcement_learning_fundamentals_...ipynb`.
+
+**Solutions:** See `DOCS/SOLUTIONS/exercises/` (instructor-only; do not distribute before deadline).
+
+---
+
+## Teaching note (instructors)
+
+- **Suggested time:** Examples 01–04: ~2 hours. Theory (slides): ~7 hours.
+- **Demo notebook:** `01_gans_and_autoencoders_vaes.ipynb` or `04_ethical_concerns_in_ai_bias_fairness_interpretability.ipynb` – show GAN/VAE idea or fairness metrics.
+- **Common stumbling block:** GAN training instability; RL env (Gym vs Gymnasium); ethics notebook uses synthetic data – clarify that real audits use real demographic data.
+- **Exercise alignment:** GANs/VAEs with 01, 02; RL with 03.
 
 ---
 

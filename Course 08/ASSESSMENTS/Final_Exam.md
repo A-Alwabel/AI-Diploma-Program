@@ -2,8 +2,10 @@
 ## AIAT 122
 
 **Time Limit:** 2 hours  
-**Total Points:** 100 points  
+**Total Points:** 110 points (100 required; Q13 may be bonus or count toward total)  
 **Instructions:** Answer all questions. Show your work for partial credit.
+
+**Marking scheme:** Part 1 (Q1–Q6): 5 pts each = 30. Part 2 (Q7–Q9): 10 pts each = 30. Part 3 (Q10: 15 pts, Q11: 10 pts) = 25. Part 4 (Q12): 15 pts. Part 5 (Q13): 10 pts. **Total: 110** (100 required; Q13 may be bonus or count toward total). See `Final_Exam_Rubric.md` for detailed criteria.
 
 ---
 
@@ -111,6 +113,13 @@ Design a deep learning system for medical image diagnosis:
 3. Address class imbalance
 4. Implement model optimization for deployment
 5. Consider ethical implications (bias, explainability)
+
+---
+
+## Part 5: Debug / Critique (10 points, optional toward total)
+
+### Question 13 (10 points)
+The following training setup is given: a CNN is trained for 50 epochs with no validation split, no early stopping, and a fixed learning rate of 0.1. The final training accuracy is 99% but the instructor reports poor performance on unseen images. **Identify at least two problems** in this setup and **suggest one fix** for each.
 
 ---
 

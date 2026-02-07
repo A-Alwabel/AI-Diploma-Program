@@ -64,13 +64,35 @@ Follow this order to align with slides **21 → 17 → 12 → 03 → 13**. Full 
 
 *Optional (do after the core 01–05; order among these doesn't matter):* `06_gpt_text_generation.ipynb`, `07_sequence_to_sequence.ipynb`, `08_text_generation_rnn_lstm_gru.ipynb`, `09_transformer_models_bert_gpt_nlp.ipynb`, `10_sentiment_analysis_translation_speech.ipynb`
 
+**⏱ Long run:** Notebooks **05** (BERT fine-tuning), **06** (GPT), and **09–10** can take **5–15+ minutes** (downloads, model load, training). Use Colab GPU and a small batch/subset for quicker runs.
+
+---
+
+## Exercises
+
+Complete the exercises in `unit3-rnns-transformers/exercises/`:
+
+1. **`01_rnn_exercise.ipynb`** – RNN/LSTM for sequence or text. Aligns with `02_rnn_basics.ipynb`, `03_lstm_advanced.ipynb`.
+2. **`01_transformer_exercise.ipynb`** – Transformer/BERT usage. Aligns with `04_transformer_attention.ipynb`, `05_bert_finetuning.ipynb`.
+
+**Solutions:** See `DOCS/SOLUTIONS/exercises/` (instructor-only; do not distribute before deadline).
+
+---
+
+## Teaching note (instructors)
+
+- **Suggested time:** Core examples 01–05: ~2 hours; optional 06–10: +1–1.5 hours. Theory (slides): ~6 hours.
+- **Demo notebook:** `04_transformer_attention.ipynb` or `05_bert_finetuning.ipynb` – show attention or BERT fine-tuning.
+- **Common stumbling block:** GPU for BERT/GPT; long runtimes on CPU; recommend Colab GPU and small batch size (see `DOCS/COLAB_SETUP.md`).
+- **Exercise alignment:** RNN exercise with 02, 03; Transformer exercise with 04, 05.
+
 ---
 
 ## Unit Breakdown
 
 **Theoretical Hours:** 6  
-**Practical Hours:** 6  
-**Total Hours:** 12
+**Practical Hours:** 13  
+**Total Hours:** 19
 
 ### Theoretical Content
 

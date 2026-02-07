@@ -1,92 +1,92 @@
-# Quiz 02
+# Quiz 02 – Unit 2: CNNs
 ## AIAT 122 - Deep Learning
 
 **Time Limit:** 45 minutes  
-**Total Points:** 100 points
+**Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)  
+**Covers:** Unit 2 (CNN architecture, convolution, pooling, transfer learning, image processing).  
+**Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
 
 ---
 
 ## Part 1: Multiple Choice (40 points)
 
 ### Question 1 (10 points)
-[Question about Explain deep learning concepts]
+What does a **convolutional layer** do in a CNN?
 
-a) Option A  
-b) Option B  
-c) Option C  
-d) Option D
-
-**Answer:** [Answer]
+a) Flattens the image to a vector  
+b) Applies learnable filters that slide over the image to detect local patterns (e.g. edges)  
+c) Reduces the number of parameters by removing layers  
+d) Only works on 1D data  
 
 ---
 
 ### Question 2 (10 points)
-[Question about Develop deep learning architectures]
+What is the main purpose of **max pooling**?
 
-a) Option A  
-b) Option B  
-c) Option C  
-d) Option D
-
-**Answer:** [Answer]
+a) To increase the spatial dimensions of the feature map  
+b) To reduce spatial size, retain strong activations, and add translation invariance  
+c) To add more parameters  
+d) To replace convolution  
 
 ---
 
 ### Question 3 (10 points)
-[Question about Build and deploy models]
+Why is **transfer learning** useful for image classification?
 
-a) Option A  
-b) Option B  
-c) Option C  
-d) Option D
-
-**Answer:** [Answer]
+a) It makes models smaller  
+b) We can use features learned on large datasets (e.g. ImageNet) and adapt them to our task with less data and training time  
+c) It removes the need for a GPU  
+d) It only works for text  
 
 ---
 
 ### Question 4 (10 points)
-[Question about Optimize models]
+**Data augmentation** (e.g. random rotation, flip) for images is used to:
 
-a) Option A  
-b) Option B  
-c) Option C  
-d) Option D
-
-**Answer:** [Answer]
+a) Speed up training  
+b) Increase effective dataset size and improve generalization by adding variation  
+c) Reduce model size  
+d) Replace the need for a validation set  
 
 ---
 
 ## Part 2: Code Writing (30 points)
 
 ### Question 5 (30 points)
-Write code to [implement a Deep Learning concept].
+Write code to build a **small CNN** in Keras for image classification with:
+- One Conv2D layer (e.g. 32 filters, 3×3, ReLU), then MaxPooling2D (2×2).
+- Flatten, then one Dense layer (64 units, ReLU), then Dense(10, softmax).
+- Input shape suitable for 28×28 grayscale images (e.g. MNIST). Compile with `adam` and `sparse_categorical_crossentropy`.
 
-**Answer Key:**
-```python
-# Solution code here
-```
+**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_02_solution.md`.
 
 ---
 
 ## Part 3: Short Answer (30 points)
 
 ### Question 6 (15 points)
-Explain [a key concept from Deep Learning].
+Why do we use **convolutional layers** instead of only **fully connected (dense) layers** for images? Give two reasons.
 
-**Answer Key:**
-- Key point 1
-- Key point 2
-- Key point 3
+**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_02_solution.md`.
 
 ---
 
 ### Question 7 (15 points)
-Describe [an application or technique from Deep Learning].
+What is **fine-tuning** in transfer learning, and when would you freeze some layers instead of training all of them?
 
-**Answer Key:**
-- Description point 1
-- Description point 2
+**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_02_solution.md`.
 
 ---
+
+## Part 4: Application (10 points)
+
+### Question 8 (10 points)
+You train a CNN on **500 images** and get high training accuracy, but the model fails on new images with **different lighting or background**. What is likely going on, and what would you add or change (e.g. data, augmentation, or regularization)?
+
+**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_02_solution.md`.
+
+---
+
+**Mapping:** CLO2, CLO3; notebooks: 01_cnn_architecture, 05_transfer_learning_cnns, 06_pretrained_cnn_architectures.
 
 **For:** AIAT 122 - Deep Learning

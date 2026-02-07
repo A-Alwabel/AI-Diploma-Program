@@ -4,11 +4,13 @@
 
 **👉 If you're a new student, read `START_HERE.md` FIRST!**
 
+**👩‍🏫 Instructors:** First time teaching? See **`DOCS/TEACHING_GUIDE.md`** then **`DOCS/INSTRUCTOR_RUNBOOK.md`**.
+
 ---
 
 **✅ Official Path:** Follow the unit folders in order (Unit 1 → Unit 5).
 
-**📚 Official Unit Content:** See `../DETAILED_UNIT_DESCRIPTIONS.md` for detailed theoretical and practical content per unit.
+**📚 Official Unit Content / Source of truth:** This README and `DOCS/EXAMPLES_ORDER.md` are the **source of truth** for unit content and notebook order. If `../DETAILED_UNIT_DESCRIPTIONS.md` exists at the repo level, it aligns with them; otherwise this README + EXAMPLES_ORDER define the curriculum.
 
 **Unit ↔ Folder Mapping (aligned with Detailed Unit Descriptions):**
 
@@ -96,7 +98,7 @@ Course 08/
 │
 ├── PROJECTS/
 ├── QUIZZES/
-└── DOCS/
+└── DOCS/                    (includes COLAB_SETUP.md, EXAMPLES_ORDER.md, PHASES_TO_10_TEACHING_PLAN.md)
 ```
 
 ---
