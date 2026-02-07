@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-01-25T00:17:00",
+  "baseline_created": true,
+  "syntax_errors": {
+    "total_notebooks": 795,
+    "notebooks_with_errors": 59,
+    "total_errors": 148
+  },
+  "cell_type_issues": {
+    "total_notebooks": 795,
+    "notebooks_with_issues": 482,
+    "code_in_markdown_count": 1206,
+    "markdown_in_code_count": 117,
+    "total_issues": 1323
+  },
+  "summary": {
+    "total_issues": 1471,
+    "syntax_errors": 148,
+    "cell_type_issues": 1323
+  },
+  "backup_status": {
+    "backup_directory": "artifacts/backups/notebooks_20260125_000930",
+    "backup_verified": true,
+    "backup_count": 795
+  }
+}

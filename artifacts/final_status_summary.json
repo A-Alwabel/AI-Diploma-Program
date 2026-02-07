@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-01-25T01:34:32.130527",
+  "syntax_errors": {
+    "baseline": 148,
+    "current": 2,
+    "fixed": 146,
+    "percent": 98.64864864864865
+  },
+  "cell_type_issues": {
+    "markdown_in_code": {
+      "baseline": 117,
+      "current": 0,
+      "fixed": 117,
+      "percent": 100.0
+    },
+    "code_in_markdown": {
+      "current": 1481,
+      "note": "Many are documentation examples - acceptable"
+    }
+  },
+  "overall": {
+    "baseline": 1471,
+    "current": 1483,
+    "fixed": -12,
+    "percent": -0.8157715839564922
+  }
+}

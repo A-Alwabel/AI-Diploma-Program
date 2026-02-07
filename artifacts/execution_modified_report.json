@@ -1,0 +1,124 @@
+{
+  "total": 23,
+  "passed": 22,
+  "failed": 1,
+  "skipped": 0,
+  "results": [
+    {
+      "path": "Course 03/unit2-calculus/examples/04_backpropagation_neural_networks.ipynb",
+      "status": "passed",
+      "error": null
+    },
+    {
+      "path": "Course 04/unit1-data-processing/examples/05_polynomial_regression.ipynb",
+      "status": "passed",
+      "error": null
+    },
+    {
+      "path": "Course 04/unit2-regression/examples/01_ridge_lasso_regression.ipynb",
+      "status": "passed",
+      "error": null
+    },
+    {
+      "path": "Course 04/unit3-classification/examples/01_logistic_regression.ipynb",
+      "status": "passed",
+      "error": null
+    },
+    {
+      "path": "Course 04/unit3-classification/examples/03_svm.ipynb",
+      "status": "passed",
+      "error": null
+    },
+    {
+      "path": "Course 07/unit1-nlp-fundamentals/exercises/01_text_preprocessing_exercise.ipynb",
+      "status": "passed",
+      "error": null
+    },
+    {
+      "path": "Course 07/unit2-tokenization-morphology/examples/04_word_embeddings_glove_fasttext.ipynb",
+      "status": "passed",
+      "error": null
+    },
+    {
+      "path": "Course 07/unit5-applications-ethics/exercises/01_nlp_applications_ethics_exercise.ipynb",
+      "status": "passed",
+      "error": null
+    },
+    {
+      "path": "Course 08/unit3-rnns-transformers/examples/03_gpt_text_generation.ipynb",
+      "status": "failed",
+      "error": "[NbConvertApp] Converting notebook /Users/abdullah/Downloads/AI Diploma/Course 08/unit3-rnns-transformers/examples/03_gpt_text_generation.ipynb to notebook\n[NbConvertApp] ERROR | Timeout waiting for execute reply (90s).\nCancellation requested; stopping current tasks.\nTraceback (most recent call last):\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbclient/client.py\", line 782, in _async_poll_for_reply\n    msg = await ensure_async(self.kc.shell_channel.get_msg(timeout=new_timeout))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.13/site-packages/jupyter_core/utils/__init__.py\", line 198, in ensure_async\n    result = await obj\n             ^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.13/site-packages/jupyter_client/channels.py\", line 313, in get_msg\n    raise Empty\n_queue.Empty\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/opt/anaconda3/bin/jupyter-nbconvert\", line 11, in <module>\n    sys.exit(main())\n             ~~~~^^\n  File \"/opt/anaconda3/lib/python3.13/site-packages/jupyter_core/application.py\", line 283, in launch_instance\n    super().launch_instance(argv=argv, **kwargs)\n    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.13/site-packages/traitlets/config/application.py\", line 1075, in launch_instance\n    app.start()\n    ~~~~~~~~~^^\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbconvert/nbconvertapp.py\", line 420, in start\n    self.convert_notebooks()\n    ~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbconvert/nbconvertapp.py\", line 597, in convert_notebooks\n    self.convert_single_notebook(notebook_filename)\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbconvert/nbconvertapp.py\", line 563, in convert_single_notebook\n    output, resources = self.export_single_notebook(\n                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        notebook_filename, resources, input_buffer=input_buffer\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbconvert/nbconvertapp.py\", line 487, in export_single_notebook\n    output, resources = self.exporter.from_filename(\n                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        notebook_filename, resources=resources\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbconvert/exporters/exporter.py\", line 201, in from_filename\n    return self.from_file(f, resources=resources, **kw)\n           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/lib/python3.13/site-packages/nbconvert/exporters/exporter.py\", line 220, in from_file\n    return self.from_notebook_node(\n           ~~~~~~~~~~~~~~~~~~~~~~~^\n        nbformat.read(file_stream, as_version=4), resources=resources, **kw\n        ^^^^^^^^^^^^^^^"
+    },
+    {
+      "path": "Course 08/unit3-rnns-transformers/exercises/01_rnn_exercise.ipynb",
+      "status": "passed",
+      "error": null
+    },
+    {
+      "path": "Course 09/unit1-rl-fundamentals/examples/mini_projects_applying_rl_in_games_like_cartpole_and_frozenlake_implementing_q_l.ipynb",
+      "status": "passed",
+      "error": null
+    },
+    {
+      "path": "Course 09/unit1-rl-fundamentals/examples/setting_up_rl_environment_installing_openai_gym_and_using_python_based_framework.ipynb",
+      "status": "passed",
+      "error": null
+    },
+    {
+      "path": "Course 09/unit2-policy-value/examples/applying_q_learning_and_sarsa_in_openai_gym_cartpole_frozenlake.ipynb",
+      "status": "passed",
+      "error": null
+    },
+    {
+      "path": "Course 09/unit2-policy-value/examples/running_td0_and_n_step_td_algorithms_in_simple_rl_environments.ipynb",
+      "status": "passed",
+      "error": null
+    },
+    {
+      "path": "Course 09/unit3-deep-rl/examples/02_actor_critic.ipynb",
+      "status": "passed",
+      "error": null
+    },
+    {
+      "path": "Course 09/unit4-exploration-exploitation/exercises/02_exploration_exercise.ipynb",
+      "status": "passed",
+      "error": null
+    },
+    {
+      "path": "Course 09/unit5-applications/examples/02_game_playing_agent.ipynb",
+      "status": "passed",
+      "error": null
+    },
+    {
+      "path": "Course 09/unit5-applications/examples/implementing_multi_agent_rl_environments_and_training_cooperativecompetitive_age.ipynb",
+      "status": "passed",
+      "error": null
+    },
+    {
+      "path": "Course 10/unit2-text-generation/examples/05_fine_tuning_language_models.ipynb",
+      "status": "passed",
+      "error": null
+    },
+    {
+      "path": "Course 10/unit2-text-generation/examples/05_finetuning_language_models.ipynb",
+      "status": "passed",
+      "error": null
+    },
+    {
+      "path": "Course 10/unit3-image-generation/examples/03_vae_advanced_topics.ipynb",
+      "status": "passed",
+      "error": null
+    },
+    {
+      "path": "Course 10/unit3-image-generation/exercises/01_vae_exercise.ipynb",
+      "status": "passed",
+      "error": null
+    },
+    {
+      "path": "Course 10/unit5-future-trends/examples/03_music_generation.ipynb",
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "timestamp": "2026-01-30T02:26:07.749606"
+}
