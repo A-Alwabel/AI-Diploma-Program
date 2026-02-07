@@ -1,3 +1,7 @@
+# Instructor/dev only – not for students (execution reports, re-run scripts)
+/artifacts/
+/tools/
+
 # Exclude solutions directory
 SOLUTIONS_ALL/
 
