@@ -34,6 +34,8 @@ Image_Classification_System/
 
 **Starter code:** If you want a minimal skeleton, use the scripts in `starter/` (see `starter/README.md`). You can also start from scratch.
 
+**Recommended preparation:** Complete **Unit 2** (CNNs, transfer learning—e.g. `01_cnn_architecture`, `05_transfer_learning_cnns`, `07_training_cnn_image_datasets`) and **Unit 5** deployment (e.g. `06_flask_fastapi_deployment.ipynb`) so you can build and serve a model.
+
 ---
 
 ## Steps (recommended order)

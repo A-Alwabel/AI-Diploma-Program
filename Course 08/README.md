@@ -49,7 +49,7 @@ This course provides comprehensive training in Deep Learning using TensorFlow an
 
 ## Prerequisites
 
-**What you need:** You only need **this repository** (clone or download) and the **root `requirements.txt`** at the AI Diploma folder. No other files or external data are required—notebooks download datasets (e.g. MNIST) automatically when you run them.
+**What you need:** You only need **this repository** (clone or download) and the **root `requirements.txt`** at the AI Diploma folder. No other files or external data are required—notebooks download datasets (e.g. MNIST) automatically when you run them. **Libraries:** Most notebooks use **TensorFlow/Keras**; some (e.g. Unit 3 BERT/transformers) use **PyTorch**. Install both for full coverage (see `DOCS/REQUIREMENTS_COURSE_08.md`).
 
 **Python Version**: Python 3.8+ required (3.10 or 3.11 recommended)
 
@@ -62,6 +62,8 @@ This course provides comprehensive training in Deep Learning using TensorFlow an
 - **GPU strongly recommended** for training deep learning models (10-100x faster)
 - **Use Google Colab for free GPU access!** (See `DOCS/COLAB_SETUP.md`)
 - CPU works but training will be very slow
+
+**Notebooks without slides?** You can follow the **notebook order** in each unit README even if you don't have the institution slides; each notebook has enough theory to proceed. Unit 5 has no slides—use its examples in file order.
 
 ---
 
