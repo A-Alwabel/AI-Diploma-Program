@@ -110,6 +110,8 @@ If the repo has no `DETAILED_UNIT_DESCRIPTIONS.md` or `COURSE_MAP.md` at the AI 
 
 **Suggested fix:** Add minimal inline comments to notebooks that have none. Maintain this standard when adding or editing notebooks.
 
+**Title and ordering:** The first heading (H1) in each notebook should match the **filename number** (e.g. `02_simple_neural_network.ipynb` → `# 02 Simple Neural Network`) so students can follow the recommended order in DOCS/EXAMPLES_ORDER.md. Step numbers inside a notebook (Step 1, 2, 3…) should be consecutive and match the order of cells.
+
 ---
 
 ## Summary table
