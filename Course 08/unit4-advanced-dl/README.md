@@ -1,7 +1,7 @@
 # Unit 4: Advanced Deep Learning Techniques
 ## AIAT 122 - Deep Learning
 
-**Maps to (DETAILED_UNIT_DESCRIPTIONS):** Unit 4 — Advanced Deep Learning Techniques (GANs, VAEs, RL, transfer learning, ethics).
+**Unit content** aligns with curriculum (see course README and DOCS/EXAMPLES_ORDER.md; DETAILED_UNIT_DESCRIPTIONS if available in your repo). Topic: Advanced Deep Learning (GANs, VAEs, RL, transfer learning, ethics).
 
 ## ✅ Prerequisites Checklist
 
@@ -11,7 +11,7 @@ Before starting this unit, confirm:
 - [ ] Understand deep learning fundamentals (Units 1-3)
 - [ ] Comfortable with neural network training
 - [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
+- [ ] Reviewed related topics (see course README and DOCS/EXAMPLES_ORDER.md; COURSE_MAP if available in your repo)
 
 ### Learning Objectives
 

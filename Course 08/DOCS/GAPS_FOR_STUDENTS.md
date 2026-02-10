@@ -83,14 +83,14 @@ If the repo has no `DETAILED_UNIT_DESCRIPTIONS.md` or `COURSE_MAP.md` at the AI 
 
 ---
 
-## 8. Optional: more math depth (optional; not a bug)
+## 8. Math depth required (medium impact)
 
-**Gap:** Theory in notebooks is **short** (3–5 bullets). Students who want **derivations** (e.g. chain rule for backprop, full Q/K/V formula for attention) won’t find them in the notebook.
+**Gap:** Theory in notebooks is **short** (3–5 bullets). Where the topic is **math-heavy** (e.g. backprop, attention, optimization), key **formulas and derivations** (e.g. chain rule for backprop, Q/K/V for attention) are required in the course materials, not optional.
 
-- **Design:** Course standard is “short theory + runnable code”; deep dives are for slides or external material.
-- **Impact:** Only affects students who want more formal detail; they can use the slides or other resources.
+- **Course standard:** Notebooks must include **key math** where the topic demands it: formulas, short derivation, or a clear “Key math” subsection. Full derivations can be in the notebook or linked to slides/reference (e.g. Goodfellow et al.).
+- **Impact:** Without this, students do not get the formal grounding the course expects.
 
-**Suggested fix:** No change required. Optionally, add one line in the backprop or attention notebook: “For a full derivation of the chain rule (or Q,K,V), see the lecture slides or a reference (e.g. Goodfellow et al.).”
+**Suggested fix:** For each math-heavy notebook (e.g. backpropagation, activation/optimization, attention/transformers), add a **Key formulas / Math** subsection (or expand Theory) with: the main equation(s), a short derivation or “why this form,” and optionally “For full derivation see [slides/reference].” See **DOCS/NOTEBOOK_STANDARD.md** (required elements).
 
 ---
 
@@ -125,7 +125,7 @@ If the repo has no `DETAILED_UNIT_DESCRIPTIONS.md` or `COURSE_MAP.md` at the AI 
 | 5 | Project 01 preparation | Low | One “Recommended preparation” line in project README |
 | 6 | Long-run note inside notebook | Low | Optional: one “⏱ Runtime” cell in longest notebooks |
 | 7 | Common errors (beyond TF) | Low | Optional: short “Common errors” in REQUIREMENTS or COLAB_SETUP |
-| 8 | More math depth | Optional | No change or one "see slides/reference" line |
+| 8 | Math depth (required where topic is math-heavy) | Medium | Add key formulas/derivations in notebooks (or "Key math" subsection); link to slides/reference for full derivation |
 | 9 | Code comments inconsistent | Low | Minimal inline comments per code cell; document standard (section 9) |
 
 ---

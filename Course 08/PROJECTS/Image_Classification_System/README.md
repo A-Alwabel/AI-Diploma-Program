@@ -36,6 +36,8 @@ Image_Classification_System/
 
 **Recommended preparation:** Complete **Unit 2** (CNNs, transfer learning—e.g. `01_cnn_architecture`, `05_transfer_learning_cnns`, `07_training_cnn_image_datasets`) and **Unit 5** deployment (e.g. `06_flask_fastapi_deployment.ipynb`) so you can build and serve a model.
 
+**Optional — try also:** After finishing the main project, try a small extension (e.g. export the same model to ONNX or TFLite, or add a simple Gradio/Streamlit demo) to practice deployment variants. Not required for full marks.
+
 ---
 
 ## Steps (recommended order)

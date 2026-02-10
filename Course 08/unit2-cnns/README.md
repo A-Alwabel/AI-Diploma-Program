@@ -9,7 +9,7 @@ Before starting this unit, confirm:
 - [ ] Comfortable with tensors and activation functions
 - [ ] Understand basic image data formats
 - [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
+- [ ] Reviewed related topics (see course README and DOCS/EXAMPLES_ORDER.md; COURSE_MAP if available in your repo)
 
 ### Learning Objectives
 

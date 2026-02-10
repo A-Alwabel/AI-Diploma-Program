@@ -8,7 +8,7 @@ Before starting this unit, confirm:
 - [ ] Completed Course 04 (Machine Learning) recommended
 - [ ] Comfortable with Python and NumPy
 - [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
+- [ ] Reviewed related topics (see course README and DOCS/EXAMPLES_ORDER.md; COURSE_MAP if available in your repo)
 
 ### Learning Objectives
 

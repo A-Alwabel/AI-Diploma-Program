@@ -10,7 +10,7 @@
 
 **✅ Official Path:** Follow the unit folders in order (Unit 1 → Unit 5).
 
-**📚 Official Unit Content / Source of truth:** This README and `DOCS/EXAMPLES_ORDER.md` are the **source of truth** for unit content and notebook order. If `../DETAILED_UNIT_DESCRIPTIONS.md` exists at the repo level, it aligns with them; otherwise this README + EXAMPLES_ORDER define the curriculum.
+**📚 Source of truth for what to study:** **This README** + **`DOCS/EXAMPLES_ORDER.md`** define unit content and notebook order. If your repo has `../DETAILED_UNIT_DESCRIPTIONS.md`, it aligns with these; otherwise this README + EXAMPLES_ORDER are the curriculum.
 
 **Unit ↔ Folder Mapping (aligned with Detailed Unit Descriptions):**
 

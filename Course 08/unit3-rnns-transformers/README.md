@@ -1,7 +1,7 @@
 # Unit 3: Recurrent Neural Networks (RNNs) and Transformers
 ## AIAT 122 - Deep Learning
 
-**Maps to (DETAILED_UNIT_DESCRIPTIONS):** Unit 3 — Recurrent Neural Networks (RNNs) and Transformers for Sequential Data.
+**Unit content** aligns with curriculum (see course README and DOCS/EXAMPLES_ORDER.md; DETAILED_UNIT_DESCRIPTIONS if available in your repo). Topic: RNNs and Transformers for Sequential Data.
 
 ## ✅ Prerequisites Checklist
 
@@ -11,7 +11,7 @@ Before starting this unit, confirm:
 - [ ] Understand deep learning fundamentals (Unit 1)
 - [ ] Comfortable with neural network architectures
 - [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
+- [ ] Reviewed related topics (see course README and DOCS/EXAMPLES_ORDER.md; COURSE_MAP if available in your repo)
 
 ### Learning Objectives
 
