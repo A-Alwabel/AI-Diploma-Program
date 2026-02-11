@@ -65,7 +65,7 @@ Based on official curriculum (AIAT 122), this unit covers:
 
 ## Recommended order (examples)
 
-Unit 5 has no institution slides. Use examples in numerical order. Full table: `DOCS/EXAMPLES_ORDER.md`.
+**Do notebooks in this number order: 01 → 02 → 03 → … → 07.** (Unit 5 has no slides; order is by file number only.) Full table: `DOCS/EXAMPLES_ORDER.md`.
 
 1. `01_model_optimization.ipynb`  
 2. `02_tensorflow_serving.ipynb`  

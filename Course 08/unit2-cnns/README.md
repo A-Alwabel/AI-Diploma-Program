@@ -51,7 +51,7 @@ By the end of this unit, students will be able to:
 
 ## Recommended order (examples)
 
-Follow this order to align with slides **05 → 10 → 16 → 14 → 15 → 11 → 20**. Full table: `DOCS/EXAMPLES_ORDER.md`.
+**Do notebooks in this number order: 01 → 02 → 03 → … → 07.** (Slide numbers are topic IDs only—do **not** use them to decide order.) Full table: `DOCS/EXAMPLES_ORDER.md`.
 
 1. `01_cnn_architecture.ipynb`  
 2. `02_image_processing_fundamentals_and_feature_extraction.ipynb`  

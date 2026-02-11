@@ -57,7 +57,7 @@ Based on official curriculum (AIAT 122), this unit covers:
 
 ## Recommended order (examples)
 
-Follow this order to align with slides **04 → 09 → 22 → 18 → 07**. Full table: `DOCS/EXAMPLES_ORDER.md`.
+**Do notebooks in this number order: 01 → 02 → 03 → 04.** (Slide numbers are topic IDs only—do **not** use them to decide order.) Full table: `DOCS/EXAMPLES_ORDER.md`.
 
 1. `01_gans_and_autoencoders_vaes.ipynb`  
 2. `02_implementing_a_vae_variational_autoencoder_for_anomaly_detection.ipynb`  

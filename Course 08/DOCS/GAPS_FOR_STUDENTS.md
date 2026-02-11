@@ -5,6 +5,40 @@ This list is for instructors and maintainers: it summarizes **gaps** (missing or
 
 ---
 
+## Theory → Practical connection (gaps)
+
+These gaps concern how clearly **theory** (slides, concepts) is tied to **practice** (notebooks, exercises, assessments) for students.
+
+| # | Gap | Impact | Suggested fix |
+|---|-----|--------|----------------|
+| T1 | **Exercises don't state which theory/notebook they apply** | Low–medium | In each exercise notebook, add one line: *"This exercise applies the theory and code patterns from examples 01_deep_learning_fundamentals, 02_simple_neural_network."* (Unit README already says "aligns with"; putting it in the exercise makes the link visible there too.) |
+| T2 | **Quizzes don't say which notebook/slide the question comes from** | Low | Quiz has "Mapping: CLO1; notebooks: 02_..., 05_..., 06_..." at the end. Optionally add a short line at the top: *"Concepts from Unit 1 examples 02, 05, 06 (and related slides)."* so students know theory→practice→assessment. |
+| T3 | **Within a notebook: theory bullet ↔ code step not explicit** | Low | "Theory (short)" lists bullets; then Step 1, 2, 3… run. Steps don't say "This implements the [chain rule / optimizer] bullet above." Optionally add one sentence before a key code block: *"The next cell implements the gradient-update formula from Theory above."* |
+| T4 | **Unit 5 has no slides** | By design | Theory for Unit 5 is only inside each notebook (Theory section + code). README already states "Unit 5 has no slides." No fix needed; just be aware the theory→practical link is notebook-internal only for Unit 5. |
+| T5 | **Self-study without slides** | Mitigated | README says "each notebook has enough theory to proceed." Some notebooks could add one line after Theory (short): *"The steps below put this theory into code."* to make the link explicit for self-learners. |
+
+**Summary:** The connection exists (slide↔notebook, Theory (short) + steps, README "Theory → Practical" line). The gaps above are about making that link **explicit in more places** (exercise intro, quiz header, optional in-notebook callouts).
+
+**Applied fixes (2026-02-11):** T1 — added **Theory → Practice:** line to all 8 exercise notebooks (which examples they apply). T2 — added **Concepts from:** line to all 5 quizzes (which unit examples and slides). T5 — added **The steps below put this theory into code.** after Theory (short) in Unit 1 examples 01, 02, 04, 05, 06. T3 (in-notebook callout before a specific code block) remains optional; T4 (Unit 5 no slides) is by design.
+
+---
+
+## "Dr, it's not connected" / ordering confusion (student feedback)
+
+**Gap:** Students sometimes say the material feels "not connected"—often because of **ordering confusion**: slide numbers (08, 01, 02, …) do **not** match notebook file numbers (01, 02, 03, …). So if the lecturer says "today we did slide 08," the correct notebook to do is **01_** (first in the unit), not "08." Optional notebooks (e.g. 07, 08) can also feel "out of order" if done at the wrong time.
+
+**Applied fix:** One clear rule is now stated in several places: **Always follow notebook file number order (01 → 02 → 03 …). Slide numbers are topic IDs only—do not use them to decide order.** Added to: README ("❓ Dr, it's not connected"), START_HERE, DOCS/EXAMPLES_ORDER.md (section "Order rule"), and each unit README ("Do notebooks in this number order: 01 → 02 → …"). When a student says "it's not connected," point them to this rule and to the unit README list.
+
+---
+
+## "Some notebooks are not clear" / students didn't understand (student feedback)
+
+**Gap:** Students say they follow the order but "some notebooks are not clear" or "I didn't understand some of it" — i.e. **content clarity**, not ordering.
+
+**Applied fix:** (1) **Student guide:** **DOCS/WHEN_A_NOTEBOOK_IS_NOT_CLEAR.md** — how to pinpoint which part (notebook + section), how to use Theory/Steps/Expected/Summary, what to do when math or code is unclear, which notebooks are often harder, and one sentence to use when asking the instructor. (2) **Instructor guide:** **DOCS/NOTEBOOK_CLARITY_FOR_INSTRUCTORS.md** — table of notebooks often reported unclear (backprop, optimization, attention, transfer learning, RL, GANs/VAE, etc.) with "Why students struggle" and "What helps"; checklist for editing notebooks for clarity; optional "If this is unclear" lines. (3) **README and START_HERE:** Short pointer to WHEN_A_NOTEBOOK_IS_NOT_CLEAR. (4) **In-notebook hints:** Added 💡 **If this is unclear** in Unit 1 notebooks 04, 05, 06 (activation, backprop, optimization) so students see what to focus on and how to ask for help.
+
+---
+
 ## 1. Broken or missing references (medium impact)
 
 **Gap:** Several places point to files that may **not exist** in the repo:
@@ -118,6 +152,7 @@ If the repo has no `DETAILED_UNIT_DESCRIPTIONS.md` or `COURSE_MAP.md` at the AI 
 
 | # | Gap | Impact | Fix |
 |---|-----|--------|-----|
+| T | Theory → Practical (T1–T5) | Low–medium | See "Theory → Practical connection (gaps)" above |
 | 1 | Broken refs (DETAILED_UNIT_DESCRIPTIONS, COURSE_MAP) | Medium | Clarify START_HERE + unit READMEs; say “if available” or use README + EXAMPLES_ORDER as primary |
 | 2 | No self-check (exercises/quizzes) | By design | Optional: “expected output” hint in exercises; or state in checklist that solutions are released by instructor |
 | 3 | Slides dependency wording | Low–medium | One sentence: “You can follow notebooks in order even without slides” |

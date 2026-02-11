@@ -50,7 +50,7 @@ By the end of this unit, students will be able to:
 
 ## Recommended order (examples)
 
-Follow this order to align with slides **08 → 01 → 02 → 06 → 19 → 23**. Full table: `DOCS/EXAMPLES_ORDER.md`.
+**Do notebooks in this number order: 01 → 02 → 03 → 04 → 05 → 06.** (Slide numbers 08, 01, 02, etc. are topic IDs only—do **not** use them to decide order.) Full table: `DOCS/EXAMPLES_ORDER.md`.
 
 1. `01_deep_learning_fundamentals_compared_to_traditional_ml.ipynb`  
 2. `02_simple_neural_network.ipynb`  

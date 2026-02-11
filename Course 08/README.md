@@ -24,7 +24,12 @@
 
 **📌 Which notebook covers which topic?** Each example notebook has a **📌 Covers slide(s):** line in its first cell (which lecture slide it matches). For the full map (slide ↔ topic ↔ notebook), see **`DOCS/EXAMPLES_ORDER.md`**. That way you always know what you’re learning and won’t get confused.
 
+**📌 Theory → Practical:** Lecture slides (theory) are **directly applied** in the example notebooks: each notebook states which slide(s) it covers, includes a short **Theory (short)** recap, then **Step 1, Step 2, …** code so you see the concept in practice. Do each notebook **after** the corresponding slide(s) so theory and practice stay connected.
+
 **📌 Notebook order:** Do examples in **file order** (01 → 02 → 03 …) as listed in each unit's README. Slide numbers in the doc are references to lecture slides, not the sequence to follow.
+
+**❓ "Dr, it's not connected" / ordering confusion?**  
+Always follow **notebook file number order** (01, then 02, then 03, …) in each unit. **Slide numbers** (e.g. 08, 01, 02) are only **topic IDs**—they do **not** tell you which notebook to do first. So: first notebook in the unit is always **01_…**, second is **02_…**, and so on. Optional notebooks (e.g. 07, 08 in Unit 1) are clearly marked; do them after the core numbered sequence. If you follow 01 → 02 → 03 …, theory and practice stay connected.
 
 ## Course Overview
 
@@ -64,6 +69,8 @@ This course provides comprehensive training in Deep Learning using TensorFlow an
 - CPU works but training will be very slow
 
 **Notebooks without slides?** You can follow the **notebook order** in each unit README even if you don't have the institution slides; each notebook has enough theory to proceed. Unit 5 has no slides—use its examples in file order.
+
+**If a notebook isn't clear?** Some parts are harder (e.g. backprop, attention, optimization). See **`DOCS/WHEN_A_NOTEBOOK_IS_NOT_CLEAR.md`** for what to do: pinpoint which part, use the notebook's Theory and Steps, and how to ask your instructor so they can help quickly.
 
 ---
 

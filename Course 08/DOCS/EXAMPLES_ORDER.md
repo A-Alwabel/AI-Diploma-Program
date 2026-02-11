@@ -5,6 +5,13 @@ Use this order so **examples** match the **slide sequence** you use in class.
 
 ---
 
+## ⚠️ Order rule (avoids "it's not connected")
+
+**Always do notebooks in file number order: 01 → 02 → 03 → …** in each unit.  
+**Slide numbers** (08, 01, 02, 06, 19, 23, etc.) are **topic IDs** for which lecture slide a notebook matches—they are **not** the order to follow. So the first notebook in Unit 1 is always `01_deep_learning_fundamentals_…` (which covers slide **08**), then `02_simple_neural_network` (slide **01**), and so on. If students say "it's not connected," point them to this rule: **follow notebook numbers, ignore slide numbers for order.** Optional notebooks (e.g. 07, 08) are done after the core sequence.
+
+---
+
 ## How do I know what topics each notebook covers?
 
 - **In each notebook:** Open any example notebook and look at the **first cell**. You will see a line **📌 Covers slide(s):** that lists which lecture slide(s) it goes with (e.g. *"**08** — Fundamentals of Deep Learning"*). Do that notebook after watching those slides so you don’t get confused.

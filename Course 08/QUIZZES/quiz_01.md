@@ -4,6 +4,7 @@
 **Time Limit:** 45 minutes  
 **Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)  
 **Covers:** Unit 1 (neural networks, backpropagation, optimization, activation functions).  
+**Concepts from:** Unit 1 examples 02 (simple NN), 05 (backprop), 06 (optimization) and related slides.  
 **Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
 
 ---

@@ -4,6 +4,7 @@
 **Time Limit:** 45 minutes  
 **Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)  
 **Covers:** Unit 3 (RNNs, LSTM, attention, Transformers, BERT/GPT).  
+**Concepts from:** Unit 3 examples 02 (RNN), 03 (LSTM), 04 (attention), 05 (BERT) and related slides.  
 **Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
 
 ---

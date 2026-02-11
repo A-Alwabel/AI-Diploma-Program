@@ -4,6 +4,7 @@
 **Time Limit:** 45 minutes  
 **Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)  
 **Covers:** Unit 2 (CNN architecture, convolution, pooling, transfer learning, image processing).  
+**Concepts from:** Unit 2 examples 01 (CNN architecture), 02 (image processing), 05–07 (transfer learning, training) and related slides.  
 **Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
 
 ---

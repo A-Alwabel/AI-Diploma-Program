@@ -54,7 +54,7 @@ Based on official curriculum (AIAT 122), this unit covers:
 
 ## Recommended order (examples)
 
-Follow this order to align with slides **21 → 17 → 12 → 03 → 13**. Full table: `DOCS/EXAMPLES_ORDER.md`.
+**Do notebooks in this number order: 01 → 02 → 03 → 04 → 05**, then optional 06–10. (Slide numbers are topic IDs only—do **not** use them to decide order.) Full table: `DOCS/EXAMPLES_ORDER.md`.
 
 1. `01_understanding_sequential_data_and_time_series_prediction.ipynb`  
 2. `02_rnn_basics.ipynb`  
