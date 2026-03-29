@@ -14,6 +14,8 @@ Usage:
   python3 DOCS/verify_notebooks_courses_08_11.py              # AST only, write report
   python3 DOCS/verify_notebooks_courses_08_11.py --execute --smoke --timeout 300
   python3 DOCS/verify_notebooks_courses_08_11.py --execute --smoke-heavy --timeout 300  # + Marian Hub
+  # On macOS, batch execute can trigger "Python quit unexpectedly" — use:
+  python3 DOCS/verify_notebooks_courses_08_11.py --execute --mac-safe --smoke --timeout 300
 
 Report: DOCS/NOTEBOOK_VERIFICATION_REPORT_COURSES_08_11.md
 """
@@ -22,6 +24,8 @@ from __future__ import annotations
 import argparse
 import ast
 import json
+import os
+import platform
 import re
 import sys
 import traceback
@@ -142,6 +146,33 @@ def effective_execute_timeout(nb_path: Path, cli_timeout: int) -> int:
     return max(cli_timeout, floor)
 
 
+def apply_mac_safe_env() -> None:
+    """
+    Lower risk of native macOS crashes ("Python quit unexpectedly") when nbclient
+    spawns many ipykernel subprocesses with TensorFlow / PyTorch / OpenMP.
+
+    Child kernels inherit the current process environment.
+    """
+    # Objective-C + fork (Jupyter / multiprocessing on macOS)
+    os.environ.setdefault("OBJC_DISABLE_INITIALIZE_FORK_SAFETY", "YES")
+    # Hugging Face tokenizers forking workers
+    os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
+    # Thread caps — reduces OpenMP / BLAS clashes and memory spikes
+    for k, v in (
+        ("OMP_NUM_THREADS", "1"),
+        ("MKL_NUM_THREADS", "1"),
+        ("OPENBLAS_NUM_THREADS", "1"),
+        ("VECLIB_MAXIMUM_THREADS", "1"),
+        ("NUMEXPR_NUM_THREADS", "1"),
+        ("KMP_DUPLICATE_LIB_OK", "TRUE"),
+        ("TF_NUM_INTEROP_THREADS", "1"),
+        ("TF_NUM_INTRAOP_THREADS", "1"),
+    ):
+        os.environ.setdefault(k, v)
+    # Apple Silicon PyTorch MPS: reduce abrupt GPU allocator failures
+    os.environ.setdefault("PYTORCH_MPS_HIGH_WATERMARK_RATIO", "0.0")
+
+
 def execute_notebook(nb_path: Path, timeout: int) -> tuple[bool, str]:
     try:
         import nbformat
@@ -197,6 +228,11 @@ def main() -> int:
         action="store_true",
         help="Exit non-zero if any executed notebook fails (in addition to AST failures)",
     )
+    ap.add_argument(
+        "--mac-safe",
+        action="store_true",
+        help="Set env vars (threads, fork safety, tokenizers) to reduce macOS native crashes during --execute",
+    )
     args = ap.parse_args()
 
     notebooks = iter_notebooks()
@@ -242,12 +278,26 @@ def main() -> int:
             lines.append("")
 
     if args.execute:
+        if platform.system() == "Darwin" and not args.mac_safe:
+            print(
+                "macOS: batch --execute can crash Python natively (TensorFlow/PyTorch/OpenMP). "
+                "Re-run with --mac-safe or use --smoke only. AST-only check is always safe.\n",
+                file=sys.stderr,
+                flush=True,
+            )
+        if args.mac_safe:
+            apply_mac_safe_env()
+            print("Applied --mac-safe environment for notebook subprocesses.", flush=True)
+
         lines.append("## Phase 2: Execute (nbclient)")
         lines.append("")
         lines.append(
             f"CLI timeout: **{args.timeout}s**; some paths use a higher floor "
             f"(see `EXECUTE_TIMEOUT_MIN_BY_SUFFIX` in the script)."
         )
+        if args.mac_safe:
+            lines.append("")
+            lines.append("*macOS: **--mac-safe** was used (thread caps, fork safety, tokenizers parallelism off).*")
         lines.append("")
         if args.smoke_heavy:
             to_run = [p for p in SMOKE_HEAVY_PATHS if p.is_file()]
