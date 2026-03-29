@@ -179,7 +179,24 @@ def main() -> int:
         help="Execute SMOKE_HEAVY_PATHS (includes Marian translation; needs network, long timeout)",
     )
     ap.add_argument("--timeout", type=int, default=120, help="Execute timeout per notebook (seconds)")
+    ap.add_argument(
+        "--cap-timeout",
+        type=int,
+        default=0,
+        help="If >0, clip per-notebook timeout to at most this (keeps full batches from stalling on one Hub download)",
+    )
     ap.add_argument("--max-execute", type=int, default=0, help="Cap execute count (0 = all)")
+    ap.add_argument(
+        "--progress-log",
+        type=str,
+        default="",
+        help="Append one JSON object per notebook (path relative to repo root), e.g. DOCS/exec_progress.jsonl",
+    )
+    ap.add_argument(
+        "--fail-on-exec",
+        action="store_true",
+        help="Exit non-zero if any executed notebook fails (in addition to AST failures)",
+    )
     args = ap.parse_args()
 
     notebooks = iter_notebooks()
@@ -244,14 +261,34 @@ def main() -> int:
             to_run = notebooks[: args.max_execute]
         else:
             to_run = notebooks
+        progress_path = (REPO / args.progress_log) if args.progress_log else None
+        if progress_path:
+            progress_path.parent.mkdir(parents=True, exist_ok=True)
+            progress_path.write_text("", encoding="utf-8")
+
         for i, nb_path in enumerate(to_run):
             rel = nb_path.relative_to(REPO)
             t_out = effective_execute_timeout(nb_path, args.timeout)
+            if args.cap_timeout > 0:
+                t_out = min(t_out, args.cap_timeout)
             print(f"[{i+1}/{len(to_run)}] Executing {rel} (timeout {t_out}s) ...", flush=True)
             ok, msg = execute_notebook(nb_path, t_out)
             exec_results.append((nb_path, ok, msg))
-            if not ok:
+            if ok:
+                print(f"  PASS", flush=True)
+            else:
                 print(f"  FAIL: {msg[:200]}...", flush=True)
+            if progress_path:
+                rec = {
+                    "index": i + 1,
+                    "total": len(to_run),
+                    "path": str(rel).replace("\\", "/"),
+                    "ok": ok,
+                    "error_preview": (msg[:2000] if not ok else ""),
+                }
+                with progress_path.open("a", encoding="utf-8") as pl:
+                    pl.write(json.dumps(rec, ensure_ascii=False) + "\n")
+                    pl.flush()
 
         ok_c = sum(1 for _, o, _ in exec_results if o)
         lines.append(f"| Execute PASS | {ok_c} |")
@@ -272,7 +309,12 @@ def main() -> int:
     REPORT_PATH.write_text("\n".join(lines), encoding="utf-8")
     print(f"Wrote {REPORT_PATH.relative_to(REPO)}", flush=True)
 
-    return 1 if ast_failures else 0
+    code = 0
+    if ast_failures:
+        code = 1
+    elif args.execute and args.fail_on_exec and any(not o for _, o, _ in exec_results):
+        code = 1
+    return code
 
 
 if __name__ == "__main__":
