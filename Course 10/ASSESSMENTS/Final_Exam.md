@@ -98,7 +98,11 @@ D) No concerns
 ---
 
 ### Question 11 (10 points)
-**CLO5:** Write code to generate text using a pre-trained GPT model from Hugging Face.
+**CLO5:** Write a PyTorch function that performs **temperature-controlled text sampling** from a character-level language model. Given a model that outputs logits of shape `(vocab_size,)`, write code to:
+1. Apply temperature scaling (`logits / temperature`).
+2. Convert to probabilities with softmax.
+3. Sample the next token using `torch.multinomial`.
+4. Explain what happens to diversity when temperature → 0 vs temperature → ∞.
 
 ---
 

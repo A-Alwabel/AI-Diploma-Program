@@ -12,7 +12,7 @@ This course is part of Semester 2 of the AI Diploma Program.
 ## 🚀 Student quick start (3 steps)
 
 1. **Read README.md** — Course overview, unit mapping, and what you'll learn.
-2. **Set up your environment** — See **DOCS/REQUIREMENTS_COURSE_08.md** (Python, TensorFlow, PyTorch). For free GPU: **DOCS/COLAB_SETUP.md**.
+2. **Set up your environment** — See **DOCS/REQUIREMENTS_COURSE_08.md** (Python, PyTorch). For free GPU: **DOCS/COLAB_SETUP.md**.
 3. **Start Unit 1** — Open `unit1-deep-learning-basics/README.md` and do the example notebooks in file order (01, 02, 03, …).
 
 ---

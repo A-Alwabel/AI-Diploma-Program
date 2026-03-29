@@ -1,92 +1,93 @@
-# Quiz 02 | اختبار 02
-## AIAT 124 - Generative AI | الذكاء الاصطناعي التوليدي
+# Quiz 02 – Unit 2: Text and Language Generation
+## AIAT 124 - Generative AI
 
-**Time Limit:** 45 minutes  
-**Total Points:** 100 points
+**Time Limit:** 45 minutes
+**Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)
+**Covers:** Unit 2 (language models, GPT, text generation, fine-tuning, BLEU/perplexity).
+**Concepts from:** Unit 2 examples 04 (text generation GPT), 07 (text-to-text), 08 (creative text), 09 (BLEU/perplexity) and related slides.
+**Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
 
 ---
 
 ## Part 1: Multiple Choice (40 points)
 
 ### Question 1 (10 points)
-[Question about Explain generative AI principles]
+What is **autoregressive text generation**?
 
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
-
-**Answer:** [Answer]
+a) Generating all tokens simultaneously
+b) Generating text one token at a time, where each new token is conditioned on all previously generated tokens
+c) A technique specific to BERT
+d) Generating text using only CNNs
 
 ---
 
 ### Question 2 (10 points)
-[Question about Apply generative modeling]
+**Perplexity** as an evaluation metric measures:
 
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
-
-**Answer:** [Answer]
+a) The speed of text generation
+b) How uncertain the model is about the test data — lower perplexity means the model predicts the text more confidently
+c) The length of generated text
+d) The BLEU score
 
 ---
 
 ### Question 3 (10 points)
-[Question about Implement generative models]
+The key architectural difference between **GPT (decoder-only)** and **BERT (encoder-only)** is:
 
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
-
-**Answer:** [Answer]
+a) GPT uses convolutions; BERT uses attention
+b) GPT generates text autoregressively using causal (left-to-right) attention; BERT reads full context bidirectionally for understanding
+c) BERT can generate text; GPT cannot
+d) There is no architectural difference
 
 ---
 
 ### Question 4 (10 points)
-[Question about Evaluate model performance]
+**BLEU score** evaluates text quality by:
 
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
-
-**Answer:** [Answer]
+a) Measuring perplexity
+b) Comparing n-gram overlaps between generated text and reference text — higher BLEU = closer to reference
+c) Using a discriminator neural network
+d) Measuring number of unique words
 
 ---
 
 ## Part 2: Code Writing (30 points)
 
 ### Question 5 (30 points)
-Write code to [implement a Generative AI concept].
+Write PyTorch code to define a **character-level LSTM language model**:
+- Use: nn.Embedding(vocab_size=50, embedding_dim=32), nn.LSTM(32, hidden_size=64, num_layers=2, batch_first=True), nn.Linear(64, 50).
+- Write a generate(seed_text, max_length=50) function that produces characters one at a time using argmax selection.
+- Show the CrossEntropyLoss used for training (input: logits of shape [batch, seq, vocab]; target: next character indices).
 
-**Answer Key:**
-```python
-# Solution code here
-```
+**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_02_solution.md`.
 
 ---
 
 ## Part 3: Short Answer (30 points)
 
 ### Question 6 (15 points)
-Explain [a key concept from Generative AI].
+Explain **beam search** for text generation. How does it differ from greedy decoding, and what trade-off does it introduce?
 
-**Answer Key:**
-- Key point 1
-- Key point 2
-- Key point 3
+**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_02_solution.md`.
 
 ---
 
 ### Question 7 (15 points)
-Describe [an application or technique from Generative AI].
+What is **few-shot prompting** in LLMs? Give one concrete example showing a few-shot prompt for sentiment classification.
 
-**Answer Key:**
-- Description point 1
-- Description point 2
+**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_02_solution.md`.
 
 ---
+
+## Part 4: Application (10 points)
+
+### Question 8 (10 points)
+A text generation model produces coherent but very repetitive outputs for different prompts. What would you change in the generation strategy (e.g., temperature, top-k, top-p sampling) to increase diversity?
+
+**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_02_solution.md`.
+
+---
+
+**Mapping:** CLO2, CLO6; notebooks: 04_text_generation_gpt_models, 07_building_text_to_text_generation, 09_evaluating_text_quality_bleu_perplexity.
 
 **For:** AIAT 124 - Generative AI

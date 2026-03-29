@@ -2,7 +2,7 @@
 
 Use this as the single reference for **how to run** Course 08 notebooks and code.
 
-**TensorFlow vs PyTorch:** Most notebooks use **TensorFlow/Keras**. Unit 3 (e.g. BERT, some transformers) and a few others use **PyTorch**. Install both for full coverage (see Dependencies below).
+**Framework:** All notebooks use **PyTorch**. TensorFlow is no longer required. Install PyTorch for full coverage (see Dependencies below).
 
 ---
 
@@ -19,17 +19,10 @@ Course 08 uses the **root AI Diploma `requirements.txt`** when present. For Cour
 
 ```bash
 pip install numpy matplotlib
-pip install tensorflow   # or tensorflow-cpu
-pip install torch torchvision   # for PyTorch examples
+pip install torch torchvision   # PyTorch (all notebooks)
 pip install scikit-learn
 pip install fastapi uvicorn     # Unit 5 deployment
 pip install onnx onnxruntime    # Unit 5 ONNX
-```
-
-For transformers/NLP (Unit 3):
-
-```bash
-pip install transformers datasets
 ```
 
 For reinforcement learning (Unit 4, notebook `03_reinforcement_learning_...`):
@@ -50,7 +43,7 @@ pip install -r requirements.txt
 
 ## GPU (recommended)
 
-- **Local:** NVIDIA GPU with CUDA; install `tensorflow` / `torch` with GPU support.
+- **Local:** NVIDIA GPU with CUDA; install `torch` with GPU support.
 - **Free cloud:** Use **Google Colab** (see `DOCS/COLAB_SETUP.md`). Enable GPU: Runtime → Change runtime type → GPU.
 
 ---
@@ -59,11 +52,10 @@ pip install -r requirements.txt
 
 ```python
 import numpy as np
-import tensorflow as tf
-print("TensorFlow:", tf.__version__)
-# Optional:
 import torch
 print("PyTorch:", torch.__version__)
+import torchvision
+print("torchvision:", torchvision.__version__)
 ```
 
 ---
@@ -82,8 +74,8 @@ If `../DETAILED_UNIT_DESCRIPTIONS.md` or `COURSE_MAP.md` are not in your repo, u
 | If you see… | Do this |
 |-------------|--------|
 | **CUDA out of memory** | Reduce batch size (e.g. 32 → 16), use a smaller model or subset of data, or enable GPU and restart runtime (Colab: Runtime → Restart). |
-| **ModuleNotFoundError** (e.g. `No module named 'tensorflow'`) | Install dependencies: `pip install -r requirements.txt` or `pip install tensorflow torch` (see Dependencies above). |
-| **charset_normalizer / md__mypyc** (TensorFlow import fails) | Run `pip install --upgrade charset-normalizer requests`, then restart the kernel. See `DOCS/COLAB_SETUP.md` (Troubleshooting). |
+| **ModuleNotFoundError** (e.g. `No module named 'torch'`) | Install dependencies: `pip install torch torchvision` (see Dependencies above). |
+| **Kernel crash on macOS** | This course requires PyTorch only. Avoid installing TensorFlow on macOS Python 3.9. Run `pip uninstall tensorflow` if installed. |
 | **Training very slow** | Enable GPU (Colab: Runtime → Change runtime type → GPU). On CPU, use fewer epochs or a smaller data subset. |
 
 ---

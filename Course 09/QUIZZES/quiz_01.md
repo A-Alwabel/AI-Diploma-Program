@@ -1,92 +1,94 @@
-# Quiz 01 | اختبار 01
-## AIAT 123 - Reinforcement Learning | التعلم التعزيزي
+# Quiz 01 – Unit 1: Reinforcement Learning Fundamentals
+## AIAT 123 - Reinforcement Learning
 
-**Time Limit:** 45 minutes  
-**Total Points:** 100 points
+**Time Limit:** 45 minutes
+**Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)
+**Covers:** Unit 1 (RL concepts, MDPs, value functions, exploration vs exploitation).
+**Concepts from:** Unit 1 examples 04 (OpenAI Gym), 05 (epsilon-greedy), 06 (RL problems), 07 (CartPole/FrozenLake) and related slides.
+**Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
 
 ---
 
 ## Part 1: Multiple Choice (40 points)
 
 ### Question 1 (10 points)
-[Question about Explain RL principles]
+Which best describes the difference between **supervised learning** and **reinforcement learning**?
 
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
-
-**Answer:** [Answer]
+a) Supervised learning uses rewards; RL uses labeled data
+b) RL learns from interaction and feedback (rewards), while supervised learning learns from labeled input-output pairs
+c) RL always requires more data
+d) There is no difference
 
 ---
 
 ### Question 2 (10 points)
-[Question about Apply RL algorithms]
+In a **Markov Decision Process (MDP)**, the Markov property states that:
 
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
-
-**Answer:** [Answer]
+a) Future states depend on all past states
+b) The next state depends only on the current state and action, not on history
+c) The reward depends only on the initial state
+d) Actions have no effect on future states
 
 ---
 
 ### Question 3 (10 points)
-[Question about Implement deep RL]
+What is the role of the **discount factor (gamma)** in RL?
 
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
-
-**Answer:** [Answer]
+a) It speeds up training
+b) It balances the importance of immediate vs future rewards (0 = only immediate, 1 = equal future weight)
+c) It determines the number of training episodes
+d) It controls the learning rate
 
 ---
 
 ### Question 4 (10 points)
-[Question about Evaluate RL models]
+In the **epsilon-greedy** exploration strategy:
 
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
-
-**Answer:** [Answer]
+a) The agent always picks the action with the highest known reward
+b) With probability epsilon the agent picks a random action (explore); otherwise it picks the greedy best action (exploit)
+c) Epsilon controls the learning rate
+d) The agent never explores once training begins
 
 ---
 
 ## Part 2: Code Writing (30 points)
 
 ### Question 5 (30 points)
-Write code to [implement a Reinforcement Learning concept].
+Write Python code to implement a **simple Q-learning update** for a grid world:
+- Initialize a Q-table of shape (5, 4) with zeros (5 states, 4 actions).
+- Given: state=2, action=1, reward=10, next_state=3, alpha=0.1, gamma=0.9.
+- Write the Q-learning update rule: Q[s,a] += alpha * (r + gamma * max(Q[s',:]) - Q[s,a])
+- Print the updated Q[2, 1] value.
 
-**Answer Key:**
-```python
-# Solution code here
-```
+**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_01_solution.md`.
 
 ---
 
 ## Part 3: Short Answer (30 points)
 
 ### Question 6 (15 points)
-Explain [a key concept from Reinforcement Learning].
+Explain what a **policy** is in RL, and describe the difference between a **deterministic policy** and a **stochastic policy**.
 
-**Answer Key:**
-- Key point 1
-- Key point 2
-- Key point 3
+**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_01_solution.md`.
 
 ---
 
 ### Question 7 (15 points)
-Describe [an application or technique from Reinforcement Learning].
+Describe the **exploration-exploitation dilemma**. Why is it a challenge, and name **one** strategy (besides epsilon-greedy) used to address it.
 
-**Answer Key:**
-- Description point 1
-- Description point 2
+**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_01_solution.md`.
 
 ---
+
+## Part 4: Application (10 points)
+
+### Question 8 (10 points)
+An RL agent trained in CartPole achieves high rewards during training but fails at deployment. What might be the cause, and what would you change (e.g., more episodes, epsilon schedule, reward shaping)?
+
+**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_01_solution.md`.
+
+---
+
+**Mapping:** CLO1; notebooks: 04_openai_gym_setup, 05_exploration_strategies_epsilon_greedy, 06_solving_rl_problems_states_actions_rewards, 07_mini_projects_cartpole_frozenlake_qlearning_dqn.
 
 **For:** AIAT 123 - Reinforcement Learning

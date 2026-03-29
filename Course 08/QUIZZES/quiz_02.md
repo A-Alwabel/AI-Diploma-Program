@@ -54,10 +54,11 @@ d) Replace the need for a validation set
 ## Part 2: Code Writing (30 points)
 
 ### Question 5 (30 points)
-Write code to build a **small CNN** in Keras for image classification with:
-- One Conv2D layer (e.g. 32 filters, 3×3, ReLU), then MaxPooling2D (2×2).
-- Flatten, then one Dense layer (64 units, ReLU), then Dense(10, softmax).
-- Input shape suitable for 28×28 grayscale images (e.g. MNIST). Compile with `adam` and `sparse_categorical_crossentropy`.
+Write code to build a **small CNN** in **PyTorch** for image classification with:
+- One `nn.Conv2d` layer (1 input channel, 32 filters, 3×3, ReLU), then `nn.MaxPool2d(2)`.
+- `Flatten`, then one `nn.Linear(32*13*13, 64)` with ReLU, then `nn.Linear(64, 10)` (logits).
+- Input shape suitable for 28×28 grayscale images (e.g. MNIST).
+- Show the full `nn.Module` class with `__init__` and `forward` methods.
 
 **Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_02_solution.md`.
 

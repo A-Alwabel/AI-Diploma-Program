@@ -44,6 +44,7 @@
 
 ### Projects
 - [ ] Complete Project 01 (Image Classification System)
+- [ ] Complete Sequence/Text Project (Unit 3 capstone — see `unit3-rnns-transformers/projects/` if available)
 
 ---
 

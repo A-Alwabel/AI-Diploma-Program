@@ -54,10 +54,11 @@ d) To normalize the inputs
 ## Part 2: Code Writing (30 points)
 
 ### Question 5 (30 points)
-Write code to build a **2-layer feedforward neural network** in Keras/TensorFlow for **MNIST digit classification** (10 classes). Requirements:
+Write code to build a **2-layer feedforward neural network** in **PyTorch** for **MNIST digit classification** (10 classes). Requirements:
+- Define a class `SimpleNN` inheriting from `nn.Module`.
 - One hidden layer with 128 units and ReLU activation.
-- Output layer with 10 units and softmax activation.
-- Use appropriate input shape and compile with `sparse_categorical_crossentropy` and `adam` optimizer.
+- Output layer with 10 units (logits, no softmax needed here — use `CrossEntropyLoss`).
+- Include `__init__` and `forward` methods. Input size is 784 (flattened 28×28).
 
 **Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_01_solution.md`.
 

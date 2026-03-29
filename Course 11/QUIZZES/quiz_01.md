@@ -1,92 +1,95 @@
-# Quiz 01 | اختبار 01
-## AIAT 125 - AI Model Deployment | نشر نماذج الذكاء الاصطناعي
+# Quiz 01 – Unit 1: AI Model Deployment Basics
+## AIAT 125 - AI Model Deployment
 
-**Time Limit:** 45 minutes  
-**Total Points:** 100 points
+**Time Limit:** 45 minutes
+**Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)
+**Covers:** Unit 1 (deployment lifecycle, model serialization, REST APIs, Docker basics).
+**Concepts from:** Unit 1 examples (local deployment testing) and related slides.
+**Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
 
 ---
 
 ## Part 1: Multiple Choice (40 points)
 
 ### Question 1 (10 points)
-[Question about Explain deployment concepts]
+What is the main purpose of **model deployment** in the AI lifecycle?
 
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
-
-**Answer:** [Answer]
+a) To train the model
+b) To make a trained model available to users or other systems so it can produce predictions on new data
+c) To evaluate model accuracy offline
+d) To visualize model performance
 
 ---
 
 ### Question 2 (10 points)
-[Question about Apply deployment techniques]
+Which serialization format is **cross-framework** and allows AI models to run across runtimes (TF, PyTorch, etc.)?
 
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
-
-**Answer:** [Answer]
+a) Pickle
+b) ONNX (Open Neural Network Exchange)
+c) JSON
+d) CSV
 
 ---
 
 ### Question 3 (10 points)
-[Question about Implement APIs]
+In a **REST API** for model serving, the client sends data and receives predictions via:
 
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
-
-**Answer:** [Answer]
+a) Direct database access
+b) HTTP requests (typically POST with JSON body) and receives JSON responses
+c) File transfer only
+d) WebSocket only
 
 ---
 
 ### Question 4 (10 points)
-[Question about Use containerization]
+**Docker** is used in AI deployment to:
 
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
-
-**Answer:** [Answer]
+a) Train models faster
+b) Package the model, code, and all dependencies into a portable container that runs consistently across environments
+c) Monitor model performance
+d) Replace cloud services
 
 ---
 
 ## Part 2: Code Writing (30 points)
 
 ### Question 5 (30 points)
-Write code to [implement a AI Model Deployment concept].
+Write a minimal **FastAPI** application to serve an ML model:
+- Import FastAPI and BaseModel from pydantic.
+- Define PredictInput(BaseModel) with field features: list[float].
+- Create POST endpoint /predict that accepts PredictInput and returns {"prediction": sum(features)}.
+- Include app = FastAPI() and the correct uvicorn run command.
+- Show how you would test this with a requests.post() call.
 
-**Answer Key:**
-```python
-# Solution code here
-```
+**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_01_solution.md`.
 
 ---
 
 ## Part 3: Short Answer (30 points)
 
 ### Question 6 (15 points)
-Explain [a key concept from AI Model Deployment].
+Describe the **AI model deployment lifecycle**. Name the four key stages and explain what happens at each.
 
-**Answer Key:**
-- Key point 1
-- Key point 2
-- Key point 3
+**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_01_solution.md`.
 
 ---
 
 ### Question 7 (15 points)
-Describe [an application or technique from AI Model Deployment].
+What is **model drift**, and why is it a concern? Give one example of data drift and one example of concept drift.
 
-**Answer Key:**
-- Description point 1
-- Description point 2
+**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_01_solution.md`.
 
 ---
+
+## Part 4: Application (10 points)
+
+### Question 8 (10 points)
+A data scientist trains a model locally (95% accuracy) but when deployed to a colleague's machine it fails with ModuleNotFoundError. What is the root cause, and how does Docker solve this problem?
+
+**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_01_solution.md`.
+
+---
+
+**Mapping:** CLO1, CLO2, CLO3; notebooks: Unit 1 deployment examples.
 
 **For:** AIAT 125 - AI Model Deployment

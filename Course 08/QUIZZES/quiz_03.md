@@ -54,9 +54,10 @@ d) Reinforcement learning
 ## Part 2: Code Writing (30 points)
 
 ### Question 5 (30 points)
-Write code to build a **simple RNN or LSTM** in Keras for sequence classification (e.g. binary sentiment). Use:
-- An Embedding layer (vocab_size=1000, output_dim=64), then an LSTM layer (32 units), then Dense(1, sigmoid).
-- Compile with `adam` and `binary_crossentropy`. You may assume input is integer sequences of max length 100.
+Write code to build a **simple LSTM** in **PyTorch** for sequence classification (e.g. binary sentiment). Use:
+- `nn.Embedding(vocab_size=1000, embedding_dim=64)`, then `nn.LSTM(input_size=64, hidden_size=32, batch_first=True)`.
+- Take the last hidden state and pass through `nn.Linear(32, 1)` with sigmoid for binary output.
+- Show the full `nn.Module` class with `__init__` and `forward` methods. Input is integer sequences of shape `(batch, seq_len=100)`.
 
 **Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_03_solution.md`.
 

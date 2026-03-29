@@ -15,7 +15,7 @@
 - [ ] Take Quiz 01
 - [ ] Take Unit 1 Test
 
-### Unit 2: Cloud Deployment
+### Unit 2: Model Packaging and Serving (`unit2-versioning-serving/`)
 - [ ] Read Unit 2 README
 - [ ] Complete all examples
 - [ ] Complete all exercises
@@ -23,7 +23,7 @@
 - [ ] Take Quiz 02
 - [ ] Take Unit 2 Test
 
-### Unit 3: MLOps
+### Unit 3: Cloud Deployment and Infrastructure (`unit3-cloud-deployment/`)
 - [ ] Read Unit 3 README
 - [ ] Complete all examples
 - [ ] Complete all exercises
@@ -31,7 +31,7 @@
 - [ ] Take Quiz 03
 - [ ] Take Unit 3 Test
 
-### Unit 4: Production Practices
+### Unit 4: Containers and Orchestration (`unit4-containers-orchestration/`)
 - [ ] Read Unit 4 README
 - [ ] Complete all examples
 - [ ] Complete all exercises
@@ -39,7 +39,7 @@
 - [ ] Take Quiz 04
 - [ ] Take Unit 4 Test
 
-### Unit 5: Applications
+### Unit 5: Monitoring, Maintenance, and MLOps (`unit5-pipelines-monitoring/`)
 - [ ] Read Unit 5 README
 - [ ] Complete all examples
 - [ ] Complete all exercises

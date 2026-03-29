@@ -100,7 +100,10 @@ Implement a CNN for image classification:
 ---
 
 ### Question 11 (10 points)
-Fine-tune a pre-trained BERT model for text classification using Hugging Face Transformers.
+Write a **PyTorch** text classification model for sequence data using an LSTM. Define:
+1. A model class with `nn.Embedding`, `nn.LSTM`, and `nn.Linear` layers.
+2. Show the `forward` method that takes token IDs and returns a class logit.
+3. Briefly describe how you would train this model (loss function and optimizer choice).
 
 ---
 
