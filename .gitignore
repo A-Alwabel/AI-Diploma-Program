@@ -1,329 +1,72 @@
-# Instructor/dev only – not for students (execution reports, re-run scripts)
-/artifacts/
-/tools/
-
-# Exclude solutions directory
-SOLUTIONS_ALL/
-
-# Exclude internal development documentation (META folders)
-# These are for course developers, not students
-**/META/*.md
-**/META/*.py
-
-# Exclude internal review and status files
-*REVIEW*.md
-*NOTEBOOK_REVIEW*.md
-FINAL_STATUS.md
-**/FINAL_STATUS.md
-review_*.py
-*_review_*.py
-
-# Exclude temporary/version files (files starting with =)
-=*
-
-# Exclude duplicate quiz summary files (we use README.md instead)
-**/QUIZZES/quiz_summary.md
-
 # Python
 __pycache__/
-*.pyc
-*.pyo
 *.py[cod]
-*$py.class
-*.so
+*.pyo
+*.pyd
 .Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
 .venv/
 venv/
-ENV/
 env/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+ENV/
 
 # Jupyter
 .ipynb_checkpoints/
-*.ipynb_checkpoints/
-*.nbconvert*.ipynb
+*.ipynb_checkpoint
 
-# ML experiment tracking
+# ML artifacts (auto-generated, not for version control)
 mlruns/
+wandb/
+*.pt
+*.pth
+*.pkl
+*.joblib
+*.onnx
+*.h5
+*.pb
+model_*.zip
 
-# OS-specific files
+# Data files (download scripts provided in notebooks)
+data/
+*.csv
+*.parquet
+*.npy
+*.npz
+/tmp/
+
+# Logs & outputs
+*.log
+pipeline.log
+artifacts/
+outputs/
+
+# OS
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
-desktop.ini
-$RECYCLE.BIN/
+
+# Agent/internal files
+AGENTS.md
+.cursor/hooks/state/
+.cursor/plans/
+# Internal agent verification/planning docs inside course DOCS folders
+**/DOCS/20_MIN_NOTEBOOK_PLAN.md
+**/DOCS/FULL_RE_REVIEW*.md
+**/DOCS/NOTEBOOK_CLARITY*.md
+**/DOCS/NOTEBOOK_RUN*.md
+**/DOCS/OUTPUT_AND_PEDAGOGY*.md
+**/DOCS/PHASES_TO*.md
+**/DOCS/REVIEW_AFTER*.md
+**/DOCS/TEACHING_VERIFICATION*.md
+**/DOCS/notebook_exec*.jsonl
+**/DOCS/notebook_exec*.out
+**/DOCS/fixed28*.jsonl
+**/DOCS/fixed28*.out
 
 # IDE
 .vscode/
 .idea/
-*.swp
-*.swo
-*~
-.project
-.pydevproject
-.settings/
-
-# Environment variables
-.env
-.env.local
-
-# Logs
-*.log
-
-# Temporary files
-*.tmp
-*.temp
-*.bak
-*.backup
-
-# Internal development folders (not for students)
-**/META/
-**/SCRIPTS/
-
-# Internal development scripts
-*_fix*.py
-*convert*.py
-*setup*.py
-*create*.py
-*update*.py
-*rebuild*.py
-extract_*.py
-
-# Internal documentation files
-FINAL_STATUS.md
-*REVIEW*.md
-*NOTEBOOK_REVIEW*.md
-*COMPARISON*.md
-*STATUS*.md
-*SUMMARY*.md
-*VERIFICATION*.md
-!DOCS/guides/COMPREHENSIVE_100_PERCENT_VERIFICATION.md
-!DOCS/guides/FINAL_100_PERCENT_STATUS.md
-!DOCS/guides/THEORY_PRACTICAL_VERIFICATION.md
-!DOCS/guides/FINAL_100_PERCENT_VERIFICATION_REPORT.md
-!DOCS/guides/PERFECT_10_VERIFICATION.md
-!DOCS/guides/THEORY_PRACTICAL_VERIFICATION.md
-!DOCS/guides/FINAL_100_PERCENT_VERIFICATION_REPORT.md
-!DOCS/guides/PERFECT_10_VERIFICATION.md
-*ARCHIVED*
-*IMPLEMENTATION_COMPLETE*
-
-# Development artifacts
-*.code-workspace
-**/META/*.json
-**/META/*.py
-
-# Keep important reference docs
-!STRUCTURE_ALIGNMENT_VERIFICATION.md
-!SEMESTER2_OFFICIAL_GOALS.md
-!SEMESTER2_ALIGNMENT_REPORT.md
-!CLEANUP_PLAN.md
-
-# Root-level internal documentation (keep only essential)
-# Keep: README.md, requirements.txt, .gitignore, .gitattributes
-# Keep: STRUCTURE_ALIGNMENT_VERIFICATION.md, SEMESTER2_*.md (useful references)
-STRUCTURE_COMPARISON.md
-CONTENT_DEVELOPMENT_STATUS.md
-COMPREHENSIVE_NOTEBOOK_REVIEW_FINAL.md
-NOTEBOOK_REVIEW_REPORT.md
-STRUCTURE_COMPARISON_ANALYSIS.md
-COURSE_01_COMPARISON.md
-PLAN_COMPARISON.md
-COURSE_06_STATUS.md
-CLEANUP_PLAN.md
-CLEANUP_SUMMARY.md
-
-# Source files (if content extracted to notebooks)
-*.pptx
-**/course-content/*.pptx
-
-# Root-level Python scripts (development tools)
-create_course_content.py
-review_notebooks_comprehensive.py
-
-# Setup guides (if not student-facing, move to DOCS or remove)
-# Keep CROSS_PLATFORM_GUIDE.md if it's for students
-# GITHUB_SETUP.md - decide if student-facing
-
-# Additional internal markdown files to exclude
-**/META/**/*.md
-**/SCRIPTS/**/*.md
-*ARCHIVED*.md
-*IMPLEMENTATION_COMPLETE*.md
-
-# Exclude solution files from course folders (students shouldn't see answers)
-**/solutions/
-**/solutions/**
-**/SOLUTION/
-**/SOLUTION/**
-
-# Exclude quiz answer keys (instructor-only)
-**/*_ANSWER_KEY.md
-**/*ANSWER_KEY*.md
-**/*answer_key*.md
-**/*Answer_Key*.md
-
-# Exclude teacher-only documentation
-TEACHER_*.md
-*TEACHER*.md
-INSTRUCTOR_*.md
-*INSTRUCTOR*.md
-TEACHER_ONLY_README.md
-
-# Exclude development/status documentation (not for students)
-*STATUS*.md
-*REVIEW*.md
-*SUMMARY*.md
-!Course 05/QUIZZES/quiz_summary.md
-*VERIFICATION*.md
-!DOCS/guides/COMPREHENSIVE_100_PERCENT_VERIFICATION.md
-!DOCS/guides/FINAL_100_PERCENT_STATUS.md
-!DOCS/guides/THEORY_PRACTICAL_VERIFICATION.md
-!DOCS/guides/FINAL_100_PERCENT_VERIFICATION_REPORT.md
-!DOCS/guides/PERFECT_10_VERIFICATION.md
-*COMPARISON*.md
-*ANALYSIS*.md
-*FIXES*.md
-*COMPLETE*.md
-*CREATED*.md
-*DEPLOYMENT*.md
-*CONFLICT*.md
-*CONSISTENCY*.md
-*COVERAGE*.md
-*REPORT*.md
-!DOCS/guides/UNIT_BY_UNIT_VERIFICATION.md
-*PLAN*.md
-!DOCS/guides/AI_DIPLOMA_DEEP_DIVE_PLAN.md
-*BEGINNER_GUIDES*.md
-*PROJECT_BEGINNER*.md
-*PROJECT_COURSE*.md
-*PROJECT_REAL*.md
-*PROJECT_SOLUTIONS*.md
-*PROJECT_STUDENT*.md
-*QUIZ_STANDARDIZATION*.md
-*QUIZ_STRUCTURE*.md
-*COURSE_SUMMARIES*.md
-*COURSE_SUMMARY*.md
-*COURSE_*_QUIZ*.md
-*COURSE_*_STATUS*.md
-*EMPTY_*.md
-*GUIDE_*.md
-*GUIDES_*.md
-*README_VS*.md
-*SHOULD_WE*.md
-*WHAT_NEXT*.md
-*HONEST_*.md
-*FINAL_FIXES*.md
-*FINAL_STUDENT*.md
-*NOTEBOOK_FIXES*.md
-*STRUCTURE_COMPARISON*.md
-*CONTENT_DEVELOPMENT*.md
-*COMPREHENSIVE_NOTEBOOK*.md
-*NOTEBOOK_REVIEW*.md
-*COURSE_01_COMPARISON*.md
-*PLAN_COMPARISON*.md
-*COURSE_06_STATUS*.md
-*CLEANUP_*.md
-*ALL_COURSES_*.md
-*BEGINNER_PROJECT*.md
-*CONFLICT_CHECK*.md
-*COURSE_MAP.md
-
-!COMPLETE_COURSE_STRUCTURE_AND_CLOS.md
-!LEARNING_FLOW_ALIGNMENT_REPORT.md
-# Exclude development Python scripts (root level and course folders)
-create_*.py
-*_fix*.py
-*convert*.py
-*setup*.py
-*update*.py
-*rebuild*.py
-extract_*.py
-review_*.py
-*_review_*.py
-check_*.py
-fix_*.py
-standardize_*.py
-merge_*.py
-**/META/*.py
-**/SCRIPTS/*.py
-!tools/add_inputs_outputs_c05.py
-!tools/clarity_updates_c05.py
-!tools/fix_corrupted_json_notebooks.py
-
-# Keep only essential root-level files for students
-# README.md - course overview (KEEP)
-# requirements.txt - dependencies (KEEP)
-# .gitignore - git rules (KEEP)
-# CROSS_PLATFORM_GUIDE.md - student guide (KEEP)
-# GITHUB_SETUP.md - student guide (KEEP)
-# SEMESTER2_OFFICIAL_GOALS.md - useful reference (KEEP)
-
-# Root-level generated output files (students can generate these by running notebooks)
-# Hide only root-level outputs, keep Course directory files (they're examples/references)
-/*.png
-/*.html
-/*.pkl
-/*.joblib
-# But keep important root-level images/docs if they exist
-!README*.png
-!logo*.png
-!diagram*.png
-
-# Internal analysis/cleanup documentation (not for students)
-FILE_IMPORTANCE_ANALYSIS.md
-CLEANUP_PLAN*.md
-
-# Course-level meta files (hide from students)
-**/COURSE_SUMMARY.md
-**/COURSE_*_COMPLETE*.md
-**/COURSE_*_STATUS*.md
-**/COURSE_*_QUIZ*.md
-**/COURSE_*_OUTPUT*.md
-
-# Course-level analysis/report files
-**/NOTEBOOK_ANALYSIS.md
-**/NOTEBOOK_COVERAGE*.md
-**/EXERCISE_COVERAGE*.md
-**/REQUIREMENTS_VERIFICATION*.md
-**/TESTING_REPORT.md
-**/NEXT_STEPS.md
-**/ASSESSMENTS/ASSESSMENT_SUMMARY.md
-
-# Large dataset files (students download separately)
-# Keep small sample files, exclude large datasets
-Course 04/datasets/raw/*.csv
-!Course 04/datasets/raw/crime_statistics.csv
-!Course 04/datasets/raw/titanic.csv
-
-# Development/research files in DOCS and datasets (specific patterns)
-Course 04/DOCS/COMPREHENSIVE_*.md
-Course 04/DOCS/FINAL_*.md
-Course 04/DOCS/DEEP_*.md
-Course 04/DOCS/DATASET_CHOICE*.md
-Course 04/DOCS/*TEST_RESULTS*.md
-Course 04/DOCS/QUICK_TEST*.md
-Course 04/DOCS/REAL_DATASETS_AVAILABILITY*.md
-Course 04/DOCS/*ALIGNMENT_ASSESSMENT*.md
-Course 04/datasets/*ALTERNATIVES*.md
-Course 04/datasets/*SEARCH*.md
-Course 04/datasets/KAGGLE_SEARCH*.md
-Course 04/datasets/combine_*.py

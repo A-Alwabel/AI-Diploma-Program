@@ -1,93 +1,37 @@
-# AI Diploma Curriculum - Python Requirements
-# Comprehensive list of all libraries used across all courses
+# Core deep learning
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
 
-# Core Data Science Libraries
-numpy>=1.21.0
-pandas>=1.3.0
-scipy>=1.7.0
+# Scientific computing
+numpy>=1.24.0
+scipy>=1.10.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+pandas>=2.0.0
 
-# Machine Learning
-scikit-learn>=1.0.0
-xgboost>=1.5.0
-lightgbm>=3.3.0
+# Machine learning
+scikit-learn>=1.3.0
 
-# Deep Learning Frameworks
-tensorflow>=2.8.0
-keras>=2.8.0
-torch>=1.11.0
-torchvision>=0.12.0
-torchaudio>=0.11.0
+# Reinforcement learning
+gymnasium>=0.29.0
 
-# Natural Language Processing
-nltk>=3.7
-spacy>=3.4.0
-gensim>=4.2.0
-transformers>=4.20.0
-sentencepiece>=0.1.96
+# Model deployment
+fastapi>=0.100.0
+uvicorn>=0.23.0
+onnx>=1.14.0
+onnxruntime>=1.15.0
 
-# Computer Vision & Image Processing
-opencv-python>=4.5.0
-Pillow>=9.0.0
+# Experiment tracking
+mlflow>=2.5.0
 
-# Visualization
-matplotlib>=3.5.0
-seaborn>=0.11.0
-plotly>=5.10.0
-
-# Reinforcement Learning
-gym>=0.21.0
-stable-baselines3>=1.5.0
-gymnasium>=0.26.0
-
-# Model Deployment & APIs
-flask>=2.0.0
-fastapi>=0.75.0
-uvicorn>=0.17.0
-requests>=2.27.0
-
-# Explainable AI
-shap>=0.40.0
-lime>=0.2.0
-
-# Probabilistic Models
-pgmpy>=0.1.19
-pymc3>=3.11.0
-
-# GPU Acceleration (Optional)
-# cudf-cu11>=22.04.0  # Uncomment if using NVIDIA GPU
-# cuml-cu11>=22.04.0  # Uncomment if using NVIDIA GPU
-
-# Security & Encryption
-cryptography>=37.0.0
-
-# Web Scraping
-beautifulsoup4>=4.11.0
-scrapy>=2.6.0
-
-# API Clients
-openai>=0.20.0  # For GPT models
+# Notebook tools
+jupyterlab>=4.0.0
+nbformat>=5.9.0
+nbclient>=0.8.0
+ipykernel>=6.25.0
 
 # Utilities
-jupyter>=1.0.0
-ipykernel>=6.15.0
-notebook>=6.4.0
-nbclient>=0.7.0  # For programmatic notebook execution
-nbformat>=5.7.0  # For notebook format handling
-tqdm>=4.64.0
-joblib>=1.1.0
-
-# Model Versioning & MLOps
-mlflow>=1.24.0
-wandb>=0.12.0
-
-# Statistical Analysis
-statsmodels>=0.13.0
-
-# Distributed Computing (for Course 05)
-dask>=2022.5.0
-
-# Data Validation
-great-expectations>=0.15.0  # Optional
-
-# Note: Some courses may require additional specialized libraries
-# Install as needed for specific course requirements
+tqdm>=4.65.0
+pillow>=10.0.0
+requests>=2.31.0
