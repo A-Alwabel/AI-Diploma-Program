@@ -13,56 +13,55 @@ Before starting this unit, confirm:
 ### Learning Objectives | أهداف التعلم
 
 By the end of this unit, students will be able to:
-- Apply RL to real-world problems
-- Understand multi-agent RL
-- Work with hierarchical RL
-- Implement transfer learning in RL
-- Analyze ethical considerations in RL
+- Apply RL to real-world problems across several domains
+- Understand advanced topics such as meta-learning and few-shot adaptation
+- Work with multi-agent RL in cooperative and competitive settings
+- Evaluate ethical, safety, and deployment considerations in RL
+- Explore extension topics such as hierarchical, goal-conditioned, and model-based RL
 
 ---
 
 ## Topics Covered | المواضيع المغطاة
 
-Based on official curriculum (AIAT 123), this unit covers:
+Based on the instructor materials and the practical notebooks included in this
+folder, this unit covers:
 
-1. **Real-World RL Applications**
-   - Autonomous navigation
-   - Game playing (AlphaGo, AlphaZero)
-   - Robotics and control
-   - Recommendation systems
-   - Resource allocation
+1. **Applications of Reinforcement Learning**
+   - Autonomous systems and robotics
+   - Healthcare and treatment optimization
    - Finance and trading
+   - Game playing and strategic decision-making
+   - Recommendation and resource optimization problems
+   - Selected NLP-oriented RL use cases
 
-2. **Multi-Agent Reinforcement Learning**
-   - Multi-agent environments
-   - Competitive vs cooperative settings
-   - Nash equilibrium in RL
-   - Independent learning
-   - Centralized training, decentralized execution
+2. **Deep RL Applications**
+   - DQN-style game environments
+   - Search + RL case studies such as AlphaGo-style systems
+   - Deep RL for robotic control
+   - Interpreting learning curves and agent performance
 
-3. **Hierarchical Reinforcement Learning**
-   - Options framework
-   - Skill learning
-   - Goal-conditioned policies
-   - Temporal abstraction
+3. **Meta-Learning and Few-Shot RL**
+   - Fast adaptation across tasks
+   - Generalization with limited experience
+   - Transfer and reuse of learned behaviors
 
-4. **Transfer Learning in RL**
-   - Domain adaptation
-   - Transfer between tasks
-   - Pre-trained policies
-   - Few-shot learning in RL
+4. **Multi-Agent Reinforcement Learning**
+   - Cooperative vs competitive settings
+   - Communication between agents
+   - Centralized training vs decentralized execution
+   - Practical multi-agent scenarios
 
-5. **Advanced Topics**
-   - Imitation learning
-   - Inverse reinforcement learning
-   - Meta-learning for RL
-   - Safe reinforcement learning
+5. **Ethics, Safety, and Evaluation**
+   - Bias and fairness concerns
+   - Safety in high-stakes RL systems
+   - Robustness and deployment risks
+   - Evaluating reward, regret, convergence, and stability
 
-6. **Ethical Considerations**
-   - Safety in RL systems
-   - Fairness and bias
-   - Transparency and interpretability
-   - Responsible RL development
+6. **Course Extensions in This Repo**
+   - Hierarchical RL and options
+   - Goal-conditioned RL
+   - Model-based RL and world models
+   - Model-based vs model-free comparisons
 
 ---
 
@@ -74,21 +73,21 @@ Based on official curriculum (AIAT 123), this unit covers:
 
 ### Theoretical Content | المحتوى النظري
 
-- Real-world applications overview
+- RL applications across domains
+- Deep RL application patterns
+- Meta-learning and few-shot ideas
 - Multi-agent RL concepts
-- Hierarchical RL approaches
-- Transfer learning strategies
-- Advanced topics
-- Ethical considerations
+- Ethics, safety, and evaluation criteria
+- Extension topics included in this repo
 
 ### Practical Content | المحتوى العملي
 
-- Building RL solution for a real problem
-- Implementing multi-agent RL
-- Creating hierarchical policies
-- Transfer learning experiments
-- Safety constraints implementation
-- Ethical analysis of RL systems
+- Building RL solutions for application scenarios
+- Implementing multi-agent RL environments
+- Running hierarchical and goal-conditioned RL notebooks
+- Comparing model-based and model-free approaches
+- Interpreting evaluation metrics and training behavior
+- Analyzing safety and ethical considerations
 
 ---
 

@@ -39,7 +39,7 @@
 - [ ] Take Quiz 04
 - [ ] Take Unit 4 Test
 
-### Unit 5: Multi-Agent Systems and Advanced Topics (`unit5-multi-agent/`)
+### Unit 5: Applications and Advanced Topics (`unit5-applications/`)
 - [ ] Read Unit 5 README
 - [ ] Complete all examples
 - [ ] Complete all exercises
