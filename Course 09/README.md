@@ -1,118 +1,113 @@
 # AIAT 123 - Reinforcement Learning
-## التعلم المعزز
 
-## 🚀 NEW STUDENTS: START HERE! | الطلاب الجدد: ابدأ من هنا!
+## New Students: Start Here
 
-**👉 If you're a new student, read `START_HERE.md` FIRST!**  
-**👉 إذا كنت طالباً جديداً، اقرأ `START_HERE.md` أولاً!**
+Read `START_HERE.md` first.
 
----
+## Course Overview
 
-**✅ Official Path:** Follow the unit folders in order (Unit 1 → Unit 5).
-
-**📚 Official Unit Content:** See `../DETAILED_UNIT_DESCRIPTIONS.md` for detailed theoretical and practical content per unit.
-
-**Unit ↔ Folder Mapping (aligned with Detailed Unit Descriptions):**
-
-| Detailed Unit | Folder | Topic |
-|---------------|--------|-------|
-| Unit 1 | `unit1-rl-fundamentals/` | Introduction to Reinforcement Learning |
-| Unit 2 | `unit2-policy-value/` | Prediction and Control without a Model |
-| Unit 3 | `unit3-deep-rl/` | Deep Reinforcement Learning |
-| Unit 4 | `unit4-exploration-exploitation/` | Exploration and Exploitation Strategies |
-| Unit 5 | `unit5-applications/` | Advanced Topics and Applications |
-
-## Course Overview | نظرة عامة على الدورة
-
-This course provides comprehensive training in Reinforcement Learning (RL). Students will learn to build agents that learn from interaction with environments through trial and error.
+This course teaches reinforcement learning from first principles through guided
+examples, exercises, quizzes, and a final project path. The student journey moves
+from RL fundamentals and MDPs to classical algorithms, deep RL, exploration
+strategy design, and real-world applications.
 
 **Course Code:** AIAT 123  
-**Language:** Bilingual (Arabic/English)
+**Language:** English  
 **Credit Hours:** 4  
 **Lecture Hours:** 2  
 **Practical Hours:** 4  
 **Total Hours:** 96 (32 theoretical + 64 practical)
 
-**Unit Breakdown:**
-- Unit 1: 6 theoretical + 12 practical = 18 hours
-- Unit 2: 6 theoretical + 13 practical = 19 hours
-- Unit 3: 6 theoretical + 13 practical = 19 hours
-- Unit 4: 7 theoretical + 13 practical = 20 hours
-- Unit 5: 7 theoretical + 13 practical = 20 hours
+## Supporting Documents
 
+Students may use these supporting documents when needed:
 
----
+- `../docs/COURSE_MAP.md`
+- `../docs/SETUP_GUIDE.md`
+- `../docs/TROUBLESHOOTING_GUIDE.md`
 
+## Course Learning Outcomes
 
----
+By the end of the course, students should be able to:
 
-## Safety Procedures | إجراءات السلامة
+- Explain the core principles of reinforcement learning, including agents, rewards,
+  environments, and Markov Decision Processes (MDPs).
+- Apply reinforcement learning algorithms such as Q-learning, policy gradient
+  methods, and Actor-Critic methods to decision-making problems.
+- Implement deep reinforcement learning methods with neural networks.
+- Evaluate and improve RL systems using training, exploration, and performance
+  analysis techniques.
+- Build RL solutions for practical applications such as navigation, games, and
+  optimization.
+- Analyze challenges and ethical considerations in RL, including safety and
+  exploration trade-offs.
 
-**Important:** Please review the safety procedures before starting any lab work or practical exercises.
+## Unit Map
 
-**مهم:** يرجى مراجعة إجراءات السلامة قبل بدء أي عمل مخبري أو تمارين عملية.
+| Unit | Folder | Main Focus |
+| ---- | ------ | ---------- |
+| Unit 1 | `unit1-rl-fundamentals/` | RL foundations, MDPs, Gym basics |
+| Unit 2 | `unit2-policy-value/` | Classical prediction and control methods |
+| Unit 3 | `unit3-deep-rl/` | Deep RL methods and training stability |
+| Unit 4 | `unit4-exploration-exploitation/` | Exploration strategy |
+| Unit 5 | `unit5-applications/` | Applications and advanced integration |
 
-📖 **Full Safety Guide:** See `../DOCS/SAFETY_PROCEDURES.md` for complete safety procedures and requirements.
+## Student Workflow
 
-**Key Safety Rules:**
-- ✅ Maintain clean, organized workspace
-- ✅ Keep food and drinks away from equipment
-- ✅ Know locations of fire extinguishers and first aid tools
-- ✅ Report safety concerns immediately
+Follow this pattern in every unit:
 
----
+1. Read the unit `README.md`
+2. Complete the numbered example notebooks in order
+3. Complete the unit exercise notebook
+4. Review the unit solution notebook only after attempting the exercise
+5. Take the unit quiz
 
-## Prerequisites | المتطلبات الأساسية
+For the whole course:
 
-**Python Version**: Python 3.8+ required (3.10 or 3.11 recommended)
+1. Start with `START_HERE.md`
+2. Work through Units 1 to 5 in order
+3. Complete the core project in `PROJECTS/`
+4. Finish with `ASSESSMENTS/Final_Exam.md`
 
-**Knowledge**: Students should have:
-- Completion of Courses 01-08
-- Understanding of probability and statistics
-- Familiarity with machine learning
+## Important Note on Notebook Naming
 
----
+Some units currently contain both numbered notebooks and long descriptive notebook
+filenames covering similar topics.
 
-## Course Learning Outcomes (CLOs) | مخرجات التعلم
+For students, the rule is simple:
 
-**The detailed objectives of the training program are: For the trainee to be able to:**
+- Only the **numbered notebooks** (`01`, `02`, `03`, ...) are part of the
+  required study path.
+- If you see a long descriptive notebook filename, **ignore it** unless your
+  instructor explicitly tells you to use it.
+- Do not switch between numbered and long descriptive notebooks as your main
+  path, because that can create duplication and confusion.
 
-**CLO1:** Explain basic principles of reinforcement learning, including key concepts such as reward signals, agents, environments, and decision-making processes in Markov Decision Processes (MDPs).
+## Course Structure
 
-**CLO2:** Apply reinforcement learning algorithms such as Q-learning, policy gradient methods, and Actor-Critic approaches to solve decision-making problems.
-
-**CLO3:** Implement deep reinforcement learning techniques using neural networks and explore their relationship with deep learning.
-
-**CLO4:** Evaluate and improve reinforcement learning models by applying strategies to improve training efficiency and performance.
-
-**CLO5:** Develop reinforcement learning-based solutions for real-world applications such as autonomous navigation, game playing, and optimization tasks.
-
-**CLO6:** Critically analyze challenges and ethical considerations in reinforcement learning, including exploration vs exploitation strategies and safety concerns.
-
----
-
-## 📁 Course Structure | هيكل الدورة
-
-```
+```text
 Course 09/
-│
 ├── README.md
 ├── START_HERE.md
 ├── STUDENT_PROGRESS_CHECKLIST.md
-│
-├── unit1-rl-fundamentals/           📚 Unit 1: Introduction to RL
-├── unit2-policy-value/              📚 Unit 2: Policy & Value-Based Methods
-├── unit3-deep-rl/                   📚 Unit 3: Deep Reinforcement Learning
-├── unit4-exploration-exploitation/  📚 Unit 4: Exploration & Exploitation
-├── unit5-applications/              📚 Unit 5: Applications & Implementations
-│
+├── unit1-rl-fundamentals/
+├── unit2-policy-value/
+├── unit3-deep-rl/
+├── unit4-exploration-exploitation/
+├── unit5-applications/
 ├── PROJECTS/
 ├── QUIZZES/
+├── ASSESSMENTS/
 └── DOCS/
 ```
 
----
+## Notes for Instructors
 
-**Created for**: AIAT 123 - Reinforcement Learning  
-**Last Updated:** 2025-12-10
+- Keep instructor-only answer keys and grading materials in clearly separated
+  instructor-only locations under `DOCS/` or solution paths.
+- Do not expose solution files directly in student instructions unless students
+  are explicitly told to review them after attempting the exercise.
+
+**Created for:** AIAT 123 - Reinforcement Learning  
+**Last Updated:** 2026-04-05
 

@@ -1,19 +1,17 @@
-# Unit 3: Deep Reinforcement Learning | التعلم المعزز العميق
+# Unit 3: Deep Reinforcement Learning
 ## AIAT 123 - Reinforcement Learning
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+## Before You Start
 
-Before starting this unit, confirm:
+Make sure you have completed Unit 2 and are comfortable with:
 
-- [ ] Completed Unit 2: Prediction and Control without a Model
-- [ ] Completed Course 08 Unit 1 (Deep Learning Basics) recommended
-- [ ] Comfortable with neural networks and backpropagation
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
+- tabular RL basics
+- neural networks and backpropagation
+- PyTorch basics from Course 08
 
-### Learning Objectives | أهداف التعلم
+## Learning Objectives
 
-By the end of this unit, students will be able to:
+By the end of this unit, you should be able to:
 - Understand Deep Q-Networks (DQN)
 - Implement policy gradient methods
 - Work with Actor-Critic algorithms
@@ -22,7 +20,7 @@ By the end of this unit, students will be able to:
 
 ---
 
-## Topics Covered | المواضيع المغطاة
+## Topics Covered
 
 Based on official curriculum (AIAT 123), this unit covers:
 
@@ -71,13 +69,13 @@ Based on official curriculum (AIAT 123), this unit covers:
 
 ---
 
-## Unit Breakdown | تفصيل الوحدة
+## Unit Breakdown
 
 **Theoretical Hours:** 6  
 **Practical Hours:** 13  
 **Total Hours:** 19
 
-### Theoretical Content | المحتوى النظري
+### Theoretical Content
 
 - Deep RL fundamentals
 - DQN algorithm and variants
@@ -86,7 +84,7 @@ Based on official curriculum (AIAT 123), this unit covers:
 - DDPG for continuous control
 - Applications and challenges
 
-### Practical Content | المحتوى العملي
+### Practical Content
 
 - Implementing DQN from scratch
 - Training DQN on Atari games
@@ -97,6 +95,42 @@ Based on official curriculum (AIAT 123), this unit covers:
 - Hyperparameter tuning
 
 ---
+
+## Study Order
+
+Follow these notebooks in order:
+
+1. `examples/01_dqn_implementation.ipynb`
+2. `examples/02_actor_critic.ipynb`
+3. `examples/03_ppo_algorithm.ipynb`
+4. `examples/04_training_evaluation_monitoring.ipynb`
+5. `examples/05_optimization_experience_replay_reward_shaping.ipynb`
+
+### Supplemental notebooks
+
+This unit also contains long descriptive notebook filenames that expand on the
+same themes. Treat them as supplemental unless your instructor assigns them.
+
+### Important note
+
+This README includes DDPG in the intended scope of the unit. Use the numbered
+notebooks as the core student path first; any DDPG-specific material should be
+treated as advanced or supplemental until a dedicated student-facing notebook is
+provided in the main sequence.
+
+Student rule:
+
+- The required path in this unit is the numbered notebooks only.
+- Long descriptive filenames and DDPG-related material are supplemental
+  unless your instructor assigns them.
+- Review the solution only after completing your own
+  exercise attempt.
+
+## Exercise and Quiz
+
+1. Complete `exercises/01_deep_reinforcement_learning_exercise.ipynb`
+2. Review `solutions/01_deep_reinforcement_learning_solution.ipynb`
+3. Take `../QUIZZES/quiz_03.md`
 
 **Unit Duration:** 3 weeks  
 **Difficulty:** Advanced  

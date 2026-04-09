@@ -1,53 +1,58 @@
 # Project Template: Reinforcement Learning Application
 ## AIAT 123 - Reinforcement Learning
 
-## Project Overview
+## 1. Problem Statement
 
-Build an RL agent that solves a real-world problem.
+What decision-making problem are you solving?
 
-## Real-World Problem Statement
+## 2. Why RL Fits
 
-[Describe the problem]
+Explain why this is a sequential decision problem rather than a standard
+supervised learning problem.
 
-**Examples:**
-- Game-playing agent
-- Resource optimization system
-- Recommendation system
-- Autonomous navigation
+## 3. Environment Design
 
-## Requirements
+- **State:**
+- **Action:**
+- **Reward:**
+- **Episode end condition:**
 
-### Functional Requirements
-- [ ] Requirement 1
-- [ ] Requirement 2
-- [ ] Requirement 3
+## 4. Baseline
 
-### Technical Requirements
-- [ ] Implement RL algorithm
-- [ ] Design appropriate environment
-- [ ] Train agent
-- [ ] Evaluate performance
+Describe a simple baseline:
 
-## Deliverables
+- random policy
+- heuristic policy
+- rule-based controller
 
-1. **Code**: Complete implementation
-2. **Report**: Technical report
-3. **Presentation**: 10-minute presentation
-4. **Demo**: Agent demonstration
+## 5. RL Approach
 
-## Evaluation Rubric
+- algorithm selected:
+- why it is appropriate:
+- exploration strategy:
 
-- **Problem Relevance**: 20 points
-- **Algorithm Implementation**: 25 points
-- **Environment Design**: 20 points
-- **Training & Results**: 20 points
-- **Documentation**: 15 points
+## 6. Training Setup
 
-**Total: 100 points**
+- number of episodes:
+- key hyperparameters:
+- tools/libraries:
 
-## Submission Guidelines
+## 7. Results
 
-- Submit all code as .ipynb files
-- Document environment design
-- Include training curves and results
-- Provide performance analysis
+Include:
+
+- reward curve
+- success rate or equivalent metric
+- comparison with baseline
+
+## 8. Failure Analysis
+
+What did not work well?
+
+## 9. Ethics / Safety Reflection
+
+If this system were deployed in the real world, what risk would matter most?
+
+## 10. Next Improvement
+
+What would you improve next if you had more time?

@@ -1,69 +1,100 @@
-# START HERE! | ابدأ من هنا!
-
-## 👋 Welcome! | مرحباً!
+# Start Here
 
 This course is part of Semester 2 of the AI Diploma Program.
 
-**✅ Official Path:** Follow the unit folders in order (Unit 1 → Unit 5).  
-**📚 Official unit structure:** See **README.md** (Unit ↔ Folder mapping) and `../DETAILED_UNIT_DESCRIPTIONS.md` for learning outcomes per unit.
+## Student Quick Start
 
----
+1. Read `README.md`
+2. Set up the environment
+3. Start `unit1-rl-fundamentals/`
+4. Follow the numbered notebooks in order
+5. Complete the exercise, then the quiz
 
-## 🚀 Student Quick Start (3 steps)
+## Environment Setup
 
-1. **Read README.md** — Course overview, unit mapping, and what you'll learn.
-2. **Set up your environment** — Install dependencies below. For free GPU: use **Google Colab**.
-3. **Start Unit 1** — Open `unit1-rl-fundamentals/README.md` and do the example notebooks in file order (01, 02, 03, …).
+Recommended:
 
-### Required packages
+- Python 3.10 or 3.11
+- Jupyter Notebook or JupyterLab
+- A clean virtual environment
+
+Install the core packages:
 
 ```bash
 pip install numpy matplotlib
-pip install torch torchvision        # PyTorch (all notebooks)
-pip install gymnasium                # OpenAI Gym environments (Unit 1)
+pip install torch torchvision
+pip install gymnasium[classic_control]
 pip install scikit-learn
 ```
 
-### Verify setup
+If you prefer a hosted environment, Google Colab is acceptable for most notebooks.
+
+## Verify Your Setup
 
 ```python
-import torch, gymnasium, numpy
+import torch
+import gymnasium
+import numpy
+
 print("PyTorch:", torch.__version__)
 print("Gymnasium:", gymnasium.__version__)
+print("NumPy:", numpy.__version__)
 ```
 
----
+## Before You Begin
 
-## 📋 Prerequisites | المتطلبات الأساسية
+You should already be comfortable with:
 
-**Before starting this course, you must have completed:**
-- All Semester 1 courses (AIAT 111–116)
-- Course 08 — Deep Learning Basics (especially neural networks and PyTorch)
+- Python basics
+- Probability and statistics fundamentals
+- Machine learning basics
+- Neural network basics from Course 08
 
----
+## Recommended Learning Path
 
-## 📚 Learning Path | مسار التعلم
+1. Read `README.md`
+2. Read the `README.md` inside the current unit
+3. Complete the numbered example notebooks in order
+4. Complete the unit exercise notebook
+5. Review the unit solution notebook after attempting the exercise
+6. Take the unit quiz
+7. Update `STUDENT_PROGRESS_CHECKLIST.md`
 
-1. **Read README.md** — Understand course overview and goals.
-2. **Review prerequisites** — Make sure you're comfortable with PyTorch basics.
-3. **Start with Unit 1** — RL Fundamentals: MDPs, rewards, OpenAI Gym.
-4. **Unit 2** — Classical RL Algorithms: Q-learning, SARSA, Dynamic Programming.
-5. **Unit 3** — Deep RL: DQN, Policy Gradient, Actor-Critic, PPO.
-6. **Unit 4** — Exploration and Exploitation Strategies: epsilon-greedy, UCB, Thompson Sampling.
-7. **Unit 5** — Multi-Agent Systems and Advanced Topics.
-8. **Complete exercises** — Practice what you learn in each unit.
-9. **Take quizzes** — Test your understanding after each unit.
+## Important Guidance
 
-**📌 Notebook order:** In each unit, do the example notebooks in **file order** (01, 02, 03, …). Always use the order shown in each unit's README, not slide numbers.
+### Which notebooks should students follow?
 
-**❓ If a notebook isn't clear:** Open `DOCS/WHEN_A_NOTEBOOK_IS_NOT_CLEAR.md` (if available) or ask your instructor.
+Follow the **numbered notebooks first** (`01`, `02`, `03`, ...).
 
----
+Some units also contain long descriptive notebook filenames that overlap with
+the numbered versions.
 
-## ✅ Progress Tracking | تتبع التقدم
+Use this rule:
 
-Use `STUDENT_PROGRESS_CHECKLIST.md` to track your progress through all 5 units.
+- The **required student path** is the numbered notebooks only.
+- Long descriptive notebook filenames are supplemental/reference materials.
+- Ignore those long filenames unless your instructor explicitly assigns them.
 
----
+### What if a notebook is confusing?
 
-**Ready to begin?** Read the course README.md first!
+If a notebook is not clear:
+
+1. Re-read the unit `README.md`
+2. Review the previous notebook in the same unit
+3. Check `../docs/TROUBLESHOOTING_GUIDE.md` for environment issues
+4. Ask your instructor before skipping the topic
+
+## Supporting Documents
+
+- `../docs/SETUP_GUIDE.md`
+- `../docs/TROUBLESHOOTING_GUIDE.md`
+- `../docs/COURSE_MAP.md`
+
+## Progress Tracking
+
+Use `STUDENT_PROGRESS_CHECKLIST.md` to track your progress across all five units,
+the project, and the final exam.
+
+## Start Now
+
+Open `unit1-rl-fundamentals/README.md` and begin with the first numbered notebook.

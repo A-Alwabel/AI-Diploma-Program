@@ -1,51 +1,72 @@
-# Unit 1: Reinforcement Learning Fundamentals | أساسيات التعلم المعزز
+# Unit 1: Reinforcement Learning Fundamentals
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+## Before You Start
 
-Before starting this unit, confirm:
+Make sure you are comfortable with:
 
-- [ ] Completed Course 04 (Machine Learning)
-- [ ] Comfortable with probability basics and Markov processes
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Read `Course 09/START_HERE.md`
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
+- Python basics
+- Probability basics
+- Markov process intuition
+- The environment setup from `Course 09/START_HERE.md`
 
-### Learning Objectives | أهداف التعلم
+## Learning Goals
 
-By the end of this unit, students will be able to:
-- Understand reinforcement learning concepts
-- Understand Markov Decision Processes (MDPs)
-- Implement value functions
-- Understand policy and value iteration
-- Apply RL to simple problems
+By the end of this unit, you should be able to:
 
----
+- explain the core reinforcement learning setup
+- define an MDP in simple environments
+- interpret states, actions, rewards, and policies
+- understand value functions and Bellman-style reasoning
+- use value and policy iteration at an introductory level
+- formulate simple RL problems before moving to larger algorithms
 
-## Topics Covered | المواضيع المغطاة
+## Unit Topics
 
-1. **Introduction to Reinforcement Learning**
-   - What is RL?
-   - Agent, environment, actions, rewards
-   - RL vs supervised/unsupervised learning
+1. Introduction to reinforcement learning
+2. Markov Decision Processes (MDPs)
+3. States, actions, rewards, and policies
+4. Value functions and Bellman equations
+5. Policy evaluation, policy iteration, and value iteration
+6. Gym basics and simple RL problem setup
 
-2. **Markov Decision Processes (MDPs)**
-   - States and actions
-   - Transition probabilities
-   - Reward function
-   - Policy
+## Study Order
 
-3. **Value Functions**
-   - State value function
-   - Action value function (Q-function)
-   - Bellman equations
+Follow these notebooks in order:
 
-4. **Basic Algorithms**
-   - Policy evaluation
-   - Policy iteration
-   - Value iteration
+1. `examples/01_mdp_example.ipynb`
+2. `examples/02_mdp_solving.ipynb`
+3. `examples/03_value_iteration.ipynb`
+4. `examples/04_openai_gym_setup.ipynb`
+5. `examples/05_exploration_strategies_epsilon_greedy.ipynb`
+6. `examples/06_solving_rl_problems_states_actions_rewards.ipynb`
+7. `examples/07_mini_projects_cartpole_frozenlake_qlearning_dqn.ipynb`
 
----
+### Supplemental notebooks
+
+This folder also contains long descriptive notebook filenames that overlap with
+some numbered notebooks. Treat those as supplemental unless your instructor asks
+you to use them.
+
+Student rule:
+
+- The required path in this unit is the numbered notebooks only.
+- Ignore long descriptive notebook filenames unless your
+  instructor explicitly assigns them.
+- Review the solution only after you finish your own attempt.
+
+## Exercise and Quiz
+
+After the examples:
+
+1. Complete `exercises/01_rl_fundamentals_and_mdps_exercise.ipynb`
+2. Review `solutions/01_rl_fundamentals_and_mdps_solution.ipynb`
+3. Take `../QUIZZES/quiz_01.md`
+
+## Expected Outcome
+
+After Unit 1, you should be able to read a simple RL problem, define its MDP,
+reason about rewards and policies, and follow a basic Gym workflow without
+guessing what each step is doing.
 
 **Unit Duration:** 2 weeks  
-**Difficulty:** Advanced  
-**Prerequisites:** Completion of Courses 01-08, understanding of probability
+**Difficulty:** Foundational to intermediate

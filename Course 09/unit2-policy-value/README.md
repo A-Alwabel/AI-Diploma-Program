@@ -1,18 +1,18 @@
-# Unit 2: Policy and Value-Based Methods | السياسات والطرق القائمة على القيمة
+# Unit 2: Policy and Value-Based Methods
 ## AIAT 123 - Reinforcement Learning
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+## Before You Start
 
-Before starting this unit, confirm:
+Make sure you have completed Unit 1 and can already:
 
-- [ ] Completed Unit 1: Introduction to Reinforcement Learning
-- [ ] Understand MDPs, policies, and value functions
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
+- define an MDP
+- explain states, actions, rewards, and policies
+- interpret value functions
+- work through simple Gym examples
 
-### Learning Objectives | أهداف التعلم
+## Learning Objectives
 
-By the end of this unit, students will be able to:
+By the end of this unit, you should be able to:
 - Understand why model-free methods are needed when the environment model is unknown
 - Work with Dynamic Programming foundations and understand their limits
 - Implement Monte Carlo and Temporal Difference (TD) methods
@@ -21,10 +21,10 @@ By the end of this unit, students will be able to:
 
 ---
 
-## Topics Covered | المواضيع المغطاة
+## Topics Covered
 
-Based on the instructor unit materials and the notebooks included in this folder, this
-unit focuses on model-free prediction and control:
+Based on the instructor unit materials and the notebooks included in this
+folder, this unit focuses on model-free prediction and control:
 
 1. **Dynamic Programming Foundations**
    - Bellman equations
@@ -62,12 +62,42 @@ unit focuses on model-free prediction and control:
    - Computational trade-offs
    - Small environment experiments
 
-### Note | ملاحظة
+### Note
 
 This folder also includes a short `policy_gradient` notebook as supplemental material.
 The main policy-gradient treatment belongs to `unit3-deep-rl/`.
 
 ---
+
+## Study Order
+
+Follow these notebooks in order:
+
+1. `examples/01_q_learning.ipynb`
+2. `examples/02_sarsa_algorithm.ipynb`
+3. `examples/04_monte_carlo_value_estimation.ipynb`
+4. `examples/05_td_algorithms_td0_nstep.ipynb`
+5. `examples/06_policy_vs_value_iteration_comparison.ipynb`
+
+### Supplemental notebooks
+
+You may also see longer descriptive notebook filenames and
+`examples/03_policy_gradient_basics.ipynb`. Treat those as supplemental while
+studying this unit. The core policy-gradient path belongs to Unit 3.
+
+Student rule:
+
+- The required path in this unit is the numbered notebooks listed above.
+- Treat `examples/03_policy_gradient_basics.ipynb` and any
+  long descriptive filenames as supplemental.
+- Review the solution only after completing your own
+  exercise attempt.
+
+## Exercise and Quiz
+
+1. Complete `exercises/01_q_learning_exercise.ipynb`
+2. Review `solutions/01_q_learning_solution.ipynb`
+3. Take `../QUIZZES/quiz_02.md`
 
 **Unit Duration:** 2 weeks  
 **Difficulty:** Advanced  

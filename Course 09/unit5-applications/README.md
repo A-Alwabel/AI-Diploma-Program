@@ -1,27 +1,28 @@
-# Unit 5: Applications and Advanced Topics | التطبيقات والمواضيع المتقدمة
+# Unit 5: Applications and Advanced Topics
 ## AIAT 123 - Reinforcement Learning
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+## Before You Start
 
-Before starting this unit, confirm:
+Make sure you have completed Units 1 to 4 and are comfortable with:
 
-- [ ] Completed Units 1-4 in this course
-- [ ] Comfortable with deep RL and evaluation metrics
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
+- classical RL methods
+- deep RL basics
+- evaluation metrics and training curves
+- exploration strategy trade-offs
 
-### Learning Objectives | أهداف التعلم
+## Learning Objectives
 
-By the end of this unit, students will be able to:
+By the end of this unit, you should be able to:
 - Apply RL to real-world problems across several domains
 - Understand advanced topics such as meta-learning and few-shot adaptation
 - Work with multi-agent RL in cooperative and competitive settings
 - Evaluate ethical, safety, and deployment considerations in RL
-- Explore extension topics such as hierarchical, goal-conditioned, and model-based RL
+- Explore extension topics such as hierarchical, goal-conditioned, and
+  model-based RL
 
 ---
 
-## Topics Covered | المواضيع المغطاة
+## Topics Covered
 
 Based on the instructor materials and the practical notebooks included in this
 folder, this unit covers:
@@ -65,13 +66,13 @@ folder, this unit covers:
 
 ---
 
-## Unit Breakdown | تفصيل الوحدة
+## Unit Breakdown
 
 **Theoretical Hours:** 7  
 **Practical Hours:** 13  
 **Total Hours:** 20
 
-### Theoretical Content | المحتوى النظري
+### Theoretical Content
 
 - RL applications across domains
 - Deep RL application patterns
@@ -80,7 +81,7 @@ folder, this unit covers:
 - Ethics, safety, and evaluation criteria
 - Extension topics included in this repo
 
-### Practical Content | المحتوى العملي
+### Practical Content
 
 - Building RL solutions for application scenarios
 - Implementing multi-agent RL environments
@@ -90,6 +91,44 @@ folder, this unit covers:
 - Analyzing safety and ethical considerations
 
 ---
+
+## Study Order
+
+Follow these notebooks in order:
+
+1. `examples/01_rl_applications.ipynb`
+2. `examples/02_game_playing_agent.ipynb`
+3. `examples/03_resource_optimization.ipynb`
+4. `examples/04_multi_agent_rl.ipynb`
+5. `examples/05_hierarchical_rl_options.ipynb`
+6. `examples/06_model_based_rl_world_models.ipynb`
+7. `examples/07_model_based_vs_model_free_comparison.ipynb`
+8. `examples/08_goal_conditioned_rl.ipynb`
+
+### Supplemental notebooks
+
+Long descriptive notebook filenames in this folder expand on the numbered path
+and should be treated as supplemental unless your instructor assigns them.
+
+Student rule:
+
+- The required path in this unit is the numbered notebooks only.
+- Ignore long descriptive notebook filenames unless your
+  instructor explicitly assigns them.
+- Review the solution only after completing your own
+  exercise attempt.
+
+## Exercise and Quiz
+
+1. Complete `exercises/01_rl_exercise.ipynb`
+2. Review `solutions/01_rl_solution.ipynb`
+3. Take `../QUIZZES/quiz_05.md`
+
+## Connection to Project Work
+
+This unit is the closest preparation stage for the course project in
+`../PROJECTS/RL_Game_Agent/README.md`. As you finish this unit, you should be
+ready to connect RL concepts to a complete application workflow.
 
 **Unit Duration:** 3 weeks  
 **Difficulty:** Advanced  

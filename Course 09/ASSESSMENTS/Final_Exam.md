@@ -2,119 +2,149 @@
 ## AIAT 123
 
 **Time Limit:** 2 hours  
-**Total Points:** 100 points  
-**Instructions:** Answer all questions. Show your work for partial credit.
+**Total Points:** 100  
+**Coverage:** Units 1-5  
+**Instructions:** Answer all questions. Show reasoning for partial credit.  
+**Instructor key:** `../DOCS/SOLUTIONS/final_exam_solution.md`
 
 ---
 
-## Part 1: Multiple Choice (30 points)
+## Part 1: Multiple Choice (20 points)
 
 ### Question 1 (5 points)
-**CLO1:** What are the main components of an RL system?
+Which statement best describes a **Markov Decision Process (MDP)**?
 
-A) Only agent  
-B) Agent, environment, actions, rewards, states  
-C) Only environment  
-D) Only rewards
+A) A system with labels but no actions  
+B) A framework with states, actions, rewards, and transitions  
+C) A neural network architecture  
+D) A dataset used for supervised learning
 
 ---
 
 ### Question 2 (5 points)
-**CLO2:** What does Q-learning learn?
+Why is **Q-learning** called an off-policy method?
 
-A) Policy directly  
-B) Action-value function Q(s,a)  
-C) Only value function  
-D) Only rewards
+A) It cannot use exploration  
+B) It updates toward the greedy next action value, even if the behavior
+policy explored differently  
+C) It always needs a model of the environment  
+D) It is only used for continuous action spaces
 
 ---
 
 ### Question 3 (5 points)
-**CLO3:** What is the main advantage of Deep Q-Networks (DQN)?
+What is the main purpose of **experience replay** in DQN?
 
-A) They are simpler  
-B) They can handle high-dimensional state spaces  
-C) They don't need experience replay  
-D) They are always faster
+A) To reduce the number of actions  
+B) To break correlations between consecutive samples and reuse experience  
+C) To remove the need for epsilon-greedy  
+D) To replace the target network
 
 ---
 
 ### Question 4 (5 points)
-**CLO4:** What is the exploration-exploitation dilemma?
+Which statement about **model-based RL** is most accurate?
 
-A) Only exploration  
-B) Balancing trying new actions vs using known good actions  
-C) Only exploitation  
-D) No dilemma exists
-
----
-
-### Question 5 (5 points)
-**CLO5:** Which is a real-world application of RL?
-
-A) Only games  
-B) Game AI, robotics, recommendation systems, autonomous vehicles  
-C) Only robotics  
-D) Only games and robotics
+A) It never uses planning  
+B) It learns or uses a model of the environment and can plan with it  
+C) It always outperforms model-free RL  
+D) It is the same as Monte Carlo learning
 
 ---
 
-### Question 6 (5 points)
-**CLO6:** What ethical concern is specific to RL?
+## Part 2: Short Answer (30 points)
 
-A) Only bias  
-B) Safety in exploration, reward hacking, unintended behaviors  
-C) Only privacy  
-D) No ethical concerns
+### Question 5 (10 points)
+Explain the difference between:
+
+- **state**
+- **action**
+- **reward**
+- **policy**
+
+Use one simple environment such as FrozenLake, CartPole, or a recommendation system.
 
 ---
 
-## Part 2: Short Answer Questions (30 points)
+### Question 6 (10 points)
+Compare **Q-learning**, **SARSA**, and **Policy Gradient** at a high level.
+
+Your answer should mention:
+
+- what each method learns
+- when each method is a reasonable choice
+- one limitation of each
+
+---
 
 ### Question 7 (10 points)
-**CLO1:** Explain the Markov Decision Process (MDP) framework. What are states, actions, rewards, and the transition function?
+Explain the **exploration-exploitation dilemma** and compare
+**epsilon-greedy** with **UCB** or **Thompson Sampling**.
 
 ---
 
-### Question 8 (10 points)
-**CLO2:** Compare Q-learning and Policy Gradient methods. When would you use each?
+## Part 3: Practical / Coding (30 points)
+
+### Question 8 (15 points)
+Write Python code for one **value iteration** sweep on a small grid-world MDP.
+
+Requirements:
+
+- assume a small discrete state space
+- compute the Bellman optimality update for each non-terminal state
+- store the updated state values
+- explain in one sentence why terminal states are handled differently
 
 ---
 
-### Question 9 (10 points)
-**CLO3:** Explain how experience replay works in DQN and why it's important for stable training.
+### Question 9 (15 points)
+Write Python or pseudocode for a minimal **Q-learning** training loop.
+
+Requirements:
+
+- initialize a Q-table
+- use epsilon-greedy action selection
+- take one environment step
+- apply the Q-update
+- repeat across episodes
+
+You do not need to implement a full environment.
 
 ---
 
-## Part 3: Practical/Coding Questions (25 points)
+## Part 4: Application and Judgment (20 points)
 
-### Question 10 (15 points)
-**CLO2:** Implement Q-learning algorithm for a simple grid world environment:
-- 5x5 grid
-- Start at (0,0), goal at (4,4)
-- Actions: up, down, left, right
-- Reward: +10 for goal, -1 for each step
-- Implement Q-table updates and action selection
+### Question 10 (10 points)
+Design an RL formulation for **product recommendation** or **resource optimization**.
+
+Define:
+
+1. state
+2. action
+3. reward
+4. one challenge with delayed or misleading rewards
 
 ---
 
 ### Question 11 (10 points)
-**CLO3:** Write code to create a simple DQN agent using PyTorch for the CartPole environment.
+You are deploying an RL system in a real-world setting.
+
+Answer both:
+
+1. What is one **ethical or safety risk** such as reward hacking,
+   unsafe exploration, manipulation, or unfair exposure?
+2. What is one **evaluation metric or testing strategy** you would use before deployment?
 
 ---
 
-## Part 4: Case Study / Real-World Application (15 points)
+## Grading Note
 
-### Question 12 (15 points)
-**CLO5, CLO6:** Design an RL system for optimizing ad placement on a website:
-1. Define the RL problem (states, actions, rewards)
-2. Choose appropriate RL algorithm
-3. Address exploration-exploitation balance
-4. Consider ethical implications (user privacy, manipulation)
-5. Evaluation strategy
+Strong answers should connect algorithms to the actual course flow:
 
----
+- Unit 1: RL foundations and MDPs
+- Unit 2: classical prediction and control
+- Unit 3: deep RL
+- Unit 4: exploration strategies
+- Unit 5: applications, advanced topics, and deployment thinking
 
-**End of Exam**
-
-**Good Luck!**
+## End of Exam
