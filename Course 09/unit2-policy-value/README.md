@@ -85,6 +85,10 @@ You may also see longer descriptive notebook filenames and
 `examples/03_policy_gradient_basics.ipynb`. Treat those as supplemental while
 studying this unit. The core policy-gradient path belongs to Unit 3.
 
+The longer descriptive notebooks are preserved as source/reference notebooks.
+They are not the primary student-facing lessons for this unit and are archived
+under `../DOCS/REFERENCE_NOTEBOOKS/`.
+
 Student rule:
 
 - The required path in this unit is the numbered notebooks listed above.

@@ -49,6 +49,9 @@ Use this checklist as your main student progress tracker for the course.
 ## Final Assessment
 
 - [ ] Complete `ASSESSMENTS/Final_Exam.md`
+- [ ] Review `DOCS/FINAL_REVIEW_GUIDE.md`
+- [ ] Review `DOCS/ALGORITHM_CHEAT_SHEET.md`
+- [ ] Use `DOCS/GLOSSARY.md` for any unclear terminology
 
 ## Course Completion
 

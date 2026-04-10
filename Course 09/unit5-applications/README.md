@@ -110,6 +110,10 @@ Follow these notebooks in order:
 Long descriptive notebook filenames in this folder expand on the numbered path
 and should be treated as supplemental unless your instructor assigns them.
 
+They are preserved as source/reference notebooks. Students should not treat them
+as a second main path beside the numbered sequence. They are archived under
+`../DOCS/REFERENCE_NOTEBOOKS/`.
+
 Student rule:
 
 - The required path in this unit is the numbered notebooks only.

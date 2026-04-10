@@ -111,6 +111,9 @@ Follow these notebooks in order:
 This unit also contains long descriptive notebook filenames that expand on the
 same themes. Treat them as supplemental unless your instructor assigns them.
 
+They are preserved as source/reference notebooks and should not replace the
+numbered student path. They are archived under `../DOCS/REFERENCE_NOTEBOOKS/`.
+
 ### Important note
 
 This README includes DDPG in the intended scope of the unit. Use the numbered

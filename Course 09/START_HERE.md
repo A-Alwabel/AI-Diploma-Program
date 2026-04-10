@@ -75,6 +75,11 @@ Use this rule:
 - Long descriptive notebook filenames are supplemental/reference materials.
 - Ignore those long filenames unless your instructor explicitly assigns them.
 
+Those long descriptive notebooks are kept to preserve source material from the
+course-building process. They are not the curated student sequence and are now
+archived under `DOCS/REFERENCE_NOTEBOOKS/`. If you want the cleanest path, stay
+with the numbered notebooks only.
+
 ### What if a notebook is confusing?
 
 If a notebook is not clear:
@@ -89,6 +94,9 @@ If a notebook is not clear:
 - `../docs/SETUP_GUIDE.md`
 - `../docs/TROUBLESHOOTING_GUIDE.md`
 - `../docs/COURSE_MAP.md`
+- `DOCS/GLOSSARY.md`
+- `DOCS/ALGORITHM_CHEAT_SHEET.md`
+- `DOCS/FINAL_REVIEW_GUIDE.md`
 
 ## Progress Tracking
 

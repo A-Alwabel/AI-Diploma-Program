@@ -47,6 +47,10 @@ This folder also contains long descriptive notebook filenames that overlap with
 some numbered notebooks. Treat those as supplemental unless your instructor asks
 you to use them.
 
+These long descriptive notebooks are preserved as source/reference material.
+They are not the main teaching path for students and have been archived under
+`../DOCS/REFERENCE_NOTEBOOKS/`.
+
 Student rule:
 
 - The required path in this unit is the numbered notebooks only.

@@ -25,6 +25,9 @@ Students may use these supporting documents when needed:
 - `../docs/COURSE_MAP.md`
 - `../docs/SETUP_GUIDE.md`
 - `../docs/TROUBLESHOOTING_GUIDE.md`
+- `DOCS/GLOSSARY.md`
+- `DOCS/ALGORITHM_CHEAT_SHEET.md`
+- `DOCS/FINAL_REVIEW_GUIDE.md`
 
 ## Course Learning Outcomes
 
@@ -82,6 +85,17 @@ For students, the rule is simple:
   instructor explicitly tells you to use it.
 - Do not switch between numbered and long descriptive notebooks as your main
   path, because that can create duplication and confusion.
+
+For context:
+
+- The long descriptive notebooks are preserved because the course was built from
+  more than one source set.
+- They are retained as **reference/source notebooks**, not as parallel student
+  lessons.
+- They are archived under `DOCS/REFERENCE_NOTEBOOKS/` instead of staying mixed
+  into the student lesson folders.
+- See `DOCS/REFERENCE_NOTEBOOKS_AUDIT.md` if you need the reasoning behind this
+  decision.
 
 ## Course Structure
 
