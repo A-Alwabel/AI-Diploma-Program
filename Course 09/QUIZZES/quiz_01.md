@@ -7,7 +7,6 @@ bonus or toward total)
 **Covers:** Unit 1 RL basics, MDPs, value intuition, discounting, and
 introductory exploration concepts.
 **Concepts from:** Unit 1 numbered notebooks `01` to `07` and related slides.
-**Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
 
 ---
 
@@ -67,8 +66,6 @@ Write Python code to implement a **simple Q-learning update** for a grid world:
   `Q[s, a] += alpha * (r + gamma * max(Q[s', :]) - Q[s, a])`
 - Print the updated Q[2, 1] value.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_01_solution.md`.
-
 ---
 
 ## Part 3: Short Answer (30 points)
@@ -77,16 +74,12 @@ Write Python code to implement a **simple Q-learning update** for a grid world:
 Explain what a **policy** is in RL, and describe the difference between a
 **deterministic policy** and a **stochastic policy**.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_01_solution.md`.
-
 ---
 
 ### Question 7 (15 points)
 Describe the **exploration-exploitation dilemma**. Why is it a challenge, and
 give **one practical way** to reduce poor exploration behavior, such as
 epsilon decay or a clearer exploration schedule.
-
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_01_solution.md`.
 
 ---
 
@@ -96,8 +89,6 @@ epsilon decay or a clearer exploration schedule.
 An RL agent trained in CartPole achieves high rewards during training but fails
 at evaluation. What might be the cause, and what would you change
 (`e.g.`, more episodes, a better exploration schedule, or reward design)?
-
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_01_solution.md`.
 
 ---
 

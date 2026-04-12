@@ -7,7 +7,6 @@ bonus or toward total)
 **Covers:** Unit 5 application framing, multi-agent RL, hierarchical RL,
 model-based RL, goal-conditioned RL, and high-level ethics/safety.
 **Concepts from:** Unit 5 numbered example notebooks and related slides.
-**Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
 
 ---
 
@@ -67,8 +66,6 @@ Write Python pseudocode to set up a **multi-agent grid world** with two agents:
 - Shared reward: +10 when BOTH agents reach the goal; -1 per step.
 - You do not need to implement full RL training.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_05_solution.md`.
-
 ---
 
 ## Part 3: Short Answer (30 points)
@@ -77,16 +74,12 @@ Write Python pseudocode to set up a **multi-agent grid world** with two agents:
 Explain **goal-conditioned RL**: what it is, how it differs from standard
 RL, and one practical application.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_05_solution.md`.
-
 ---
 
 ### Question 7 (15 points)
 Explain one important **trade-off between model-based and model-free RL**.
 Then give **one situation** where model-based RL may be preferred and
 **one situation** where model-free RL may be preferred.
-
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_05_solution.md`.
 
 ---
 
@@ -96,8 +89,6 @@ Then give **one situation** where model-based RL may be preferred and
 Design a high-level RL system to **optimize ad placement** on a website.
 Define: state, action, reward, and suggest a reasonable RL framing or
 algorithm. Mention one ethical consideration.
-
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_05_solution.md`.
 
 ---
 

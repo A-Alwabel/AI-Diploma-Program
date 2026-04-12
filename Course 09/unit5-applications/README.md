@@ -128,14 +128,11 @@ Student rule:
   instructor explicitly assigns them.
 - Treat meta-learning and few-shot RL as supplemental topics unless your
   instructor assigns extra material for them.
-- Review the solution only after completing your own
-  exercise attempt.
 
 ## Exercise and Quiz
 
 1. Complete `exercises/01_rl_exercise.ipynb`
-2. Review `solutions/01_rl_solution.ipynb`
-3. Take `../QUIZZES/quiz_05.md`
+2. Take `../QUIZZES/quiz_05.md`
 
 ## Connection to Project Work
 

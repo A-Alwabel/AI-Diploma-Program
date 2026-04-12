@@ -7,7 +7,6 @@ bonus or toward total)
 **Covers:** Unit 3 DQN, policy-gradient intuition, actor-critic, replay,
 target networks, and simplified PPO-style stability ideas.
 **Concepts from:** Unit 3 numbered example notebooks and related slides.
-**Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
 
 ---
 
@@ -67,8 +66,6 @@ Write a minimal **DQN setup** using PyTorch for CartPole:
 - Write the Bellman update target: target = r + gamma * max(Q(s', a')).
 - Show how you compute the MSE loss between predicted Q[s,a] and the target.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_03_solution.md`.
-
 ---
 
 ## Part 3: Short Answer (30 points)
@@ -77,16 +74,12 @@ Write a minimal **DQN setup** using PyTorch for CartPole:
 Explain **reward shaping**: what it is, why it is used, and one risk of using
 it poorly.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_03_solution.md`.
-
 ---
 
 ### Question 7 (15 points)
 At a high level, what advantage is **Proximal Policy Optimization (PPO)**
 trying to achieve over vanilla Policy Gradient (REINFORCE)? Describe the kind
 of update constraint it enforces.
-
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_03_solution.md`.
 
 ---
 
@@ -96,8 +89,6 @@ of update constraint it enforces.
 A DQN agent trained in a small Gym-style environment achieves near-zero reward
 for many episodes before improving. What is the likely cause, and how do
 **experience replay** and **epsilon decay** help?
-
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_03_solution.md`.
 
 ---
 

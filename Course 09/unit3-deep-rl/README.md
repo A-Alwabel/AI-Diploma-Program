@@ -135,14 +135,11 @@ Student rule:
   your instructor assigns them.
 - Treat advanced variants such as Atari DQN, Double/Dueling DQN, A2C, A3C, and
   DDPG as outside the required numbered path unless explicitly assigned.
-- Review the solution only after completing your own
-  exercise attempt.
 
 ## Exercise and Quiz
 
 1. Complete `exercises/01_deep_reinforcement_learning_exercise.ipynb`
-2. Review `solutions/01_deep_reinforcement_learning_solution.ipynb`
-3. Take `../QUIZZES/quiz_03.md`
+2. Take `../QUIZZES/quiz_03.md`
 
 **Unit Duration:** 3 weeks  
 **Difficulty:** Advanced  

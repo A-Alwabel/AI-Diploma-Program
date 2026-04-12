@@ -8,7 +8,6 @@ bonus or toward total)
 UCB, Boltzmann, Thompson Sampling, and high-level curiosity-driven
 exploration).
 **Concepts from:** Unit 4 numbered examples 01 to 05.
-**Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
 
 ---
 
@@ -71,8 +70,6 @@ Implement **epsilon-greedy with decay** in Python:
 - Print epsilon values after 0, 100, and 500 decay steps (compute manually
   using the formula).
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_04_solution.md`.
-
 ---
 
 ## Part 3: Short Answer (30 points)
@@ -81,15 +78,11 @@ Implement **epsilon-greedy with decay** in Python:
 Compare **epsilon-greedy** and **UCB** exploration strategies. In what
 scenario would UCB be preferred, and why?
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_04_solution.md`.
-
 ---
 
 ### Question 7 (15 points)
 What is the **exploration-exploitation dilemma** in the multi-armed bandit
 problem? Explain how **Thompson Sampling** addresses it.
-
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_04_solution.md`.
 
 ---
 
@@ -100,8 +93,6 @@ You are running a multi-armed bandit style online experiment with several
 uncertain actions and limited data. What exploration strategy would you
 recommend, and why? Choose one of the methods taught in Unit 4
 (for example: epsilon-greedy with decay, UCB, or Thompson Sampling).
-
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_04_solution.md`.
 
 ---
 

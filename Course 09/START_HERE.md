@@ -56,9 +56,8 @@ You should already be comfortable with:
 2. Read the `README.md` inside the current unit
 3. Complete the numbered example notebooks in order
 4. Complete the unit exercise notebook
-5. Review the unit solution notebook after attempting the exercise
-6. Take the unit quiz
-7. Update `STUDENT_PROGRESS_CHECKLIST.md`
+5. Take the unit quiz
+6. Update `STUDENT_PROGRESS_CHECKLIST.md`
 
 ## Important Guidance
 

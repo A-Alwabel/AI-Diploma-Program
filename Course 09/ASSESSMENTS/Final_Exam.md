@@ -6,7 +6,6 @@
 **Coverage:** Required numbered path across Units 1-5  
 **Instructions:** Answer all questions. Show reasoning for partial credit.
 Keep answers within the scope of the numbered student path.  
-**Instructor key:** `../DOCS/SOLUTIONS/final_exam_solution.md`
 
 ---
 

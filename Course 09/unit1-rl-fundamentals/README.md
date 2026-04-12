@@ -56,15 +56,13 @@ Student rule:
 - The required path in this unit is the numbered notebooks only.
 - Ignore long descriptive notebook filenames unless your
   instructor explicitly assigns them.
-- Review the solution only after you finish your own attempt.
 
 ## Exercise and Quiz
 
 After the examples:
 
 1. Complete `exercises/01_rl_fundamentals_and_mdps_exercise.ipynb`
-2. Review `solutions/01_rl_fundamentals_and_mdps_solution.ipynb`
-3. Take `../QUIZZES/quiz_01.md`
+2. Take `../QUIZZES/quiz_01.md`
 
 ## Expected Outcome
 

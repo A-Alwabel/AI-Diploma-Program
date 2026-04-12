@@ -62,8 +62,7 @@ Follow this pattern in every unit:
 1. Read the unit `README.md`
 2. Complete the numbered example notebooks in order
 3. Complete the unit exercise notebook
-4. Review the unit solution notebook only after attempting the exercise
-5. Take the unit quiz
+4. Take the unit quiz
 
 For the whole course:
 
@@ -94,9 +93,6 @@ For context:
   lessons.
 - They are archived under `DOCS/REFERENCE_NOTEBOOKS/` instead of staying mixed
   into the student lesson folders.
-- See `DOCS/REFERENCE_NOTEBOOKS_AUDIT.md` if you need the reasoning behind this
-  decision.
-
 ## Course Structure
 
 ```text
@@ -114,13 +110,6 @@ Course 09/
 ├── ASSESSMENTS/
 └── DOCS/
 ```
-
-## Notes for Instructors
-
-- Keep instructor-only answer keys and grading materials in clearly separated
-  instructor-only locations under `DOCS/` or solution paths.
-- Do not expose solution files directly in student instructions unless students
-  are explicitly told to review them after attempting the exercise.
 
 **Created for:** AIAT 123 - Reinforcement Learning  
 **Last Updated:** 2026-04-05

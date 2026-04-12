@@ -102,14 +102,11 @@ Student rule:
 - The required path in this unit is the numbered notebooks listed above.
 - Treat `examples/03_policy_gradient_basics.ipynb` and any
   long descriptive filenames as supplemental.
-- Review the solution only after completing your own
-  exercise attempt.
 
 ## Exercise and Quiz
 
 1. Complete `exercises/01_q_learning_exercise.ipynb`
-2. Review `solutions/01_q_learning_solution.ipynb`
-3. Take `../QUIZZES/quiz_02.md`
+2. Take `../QUIZZES/quiz_02.md`
 
 **Unit Duration:** 2 weeks  
 **Difficulty:** Advanced  
