@@ -3,8 +3,9 @@
 
 **Time Limit:** 2 hours  
 **Total Points:** 100  
-**Coverage:** Units 1-5  
-**Instructions:** Answer all questions. Show reasoning for partial credit.  
+**Coverage:** Required numbered path across Units 1-5  
+**Instructions:** Answer all questions. Show reasoning for partial credit.
+Keep answers within the scope of the numbered student path.  
 **Instructor key:** `../DOCS/SOLUTIONS/final_exam_solution.md`
 
 ---
@@ -79,7 +80,7 @@ Your answer should mention:
 
 ### Question 7 (10 points)
 Explain the **exploration-exploitation dilemma** and compare
-**epsilon-greedy** with **UCB** or **Thompson Sampling**.
+**epsilon-greedy** with **UCB** or **Thompson Sampling** at a high level.
 
 ---
 
@@ -139,12 +140,16 @@ Answer both:
 
 ## Grading Note
 
-Strong answers should connect algorithms to the actual course flow:
+Strong answers should connect algorithms to the actual course flow and should
+not depend on supplemental-only topics:
 
 - Unit 1: RL foundations and MDPs
 - Unit 2: classical prediction and control
 - Unit 3: deep RL
 - Unit 4: exploration strategies
 - Unit 5: applications, advanced topics, and deployment thinking
+
+Ethics, safety, and fairness are assessed here at a high-level judgment level,
+not as a separate deep technical specialization block.
 
 ## End of Exam

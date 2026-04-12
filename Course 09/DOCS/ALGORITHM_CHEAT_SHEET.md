@@ -145,6 +145,38 @@ Use this page when you remember the algorithm names but forget:
 - Good for: principled exploration in bandit-style settings
 - Weakness: students may focus on formula over intuition
 
+#### Thompson Sampling
+
+- Main idea: sample actions according to uncertainty-aware beliefs
+- Good for: bandit-style problems where probabilistic uncertainty is useful
+- Weakness: students may say "Bayesian" without explaining the actual decision
+  logic
+
+#### Boltzmann Exploration
+
+- Main idea: turn action values into probabilities using a temperature parameter
+- Good for: smoother exploration than purely random action choice
+- Weakness: temperature can feel abstract unless students connect it to
+  "more spread out" versus "more greedy" action probabilities
+
+#### Epsilon Decay
+
+- Main idea: explore more early, less later
+- Good for: simple training schedules where a basic exploration plan is enough
+- Weakness: if epsilon stays too high, the agent keeps acting too randomly late
+  in training
+
+#### Bandit vs Full RL
+
+- Bandit setting:
+  choose an action and observe reward, but there is no full state-transition
+  story
+- Full RL setting:
+  actions change future states, so exploration affects the whole trajectory
+- Student warning:
+  Unit 4 often teaches the exploration intuition through bandits first because
+  it isolates the trade-off more clearly
+
 ### Unit 5
 
 #### Multi-Agent RL
@@ -194,6 +226,11 @@ No. The actor chooses. The critic evaluates.
 
 No. It may be more sample efficient, but it also depends on model quality and
 planning cost.
+
+### "Bandit exploration and RL exploration are exactly the same."
+
+No. The exploration-exploitation trade-off is shared, but full RL also has
+state transitions and long-term consequences that bandits do not.
 
 ### "More complex means more correct."
 

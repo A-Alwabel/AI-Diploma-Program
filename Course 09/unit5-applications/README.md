@@ -14,18 +14,19 @@ Make sure you have completed Units 1 to 4 and are comfortable with:
 
 By the end of this unit, you should be able to:
 - Apply RL to real-world problems across several domains
-- Understand advanced topics such as meta-learning and few-shot adaptation
 - Work with multi-agent RL in cooperative and competitive settings
-- Evaluate ethical, safety, and deployment considerations in RL
+- discuss ethical, safety, and deployment considerations in RL applications
 - Explore extension topics such as hierarchical, goal-conditioned, and
   model-based RL
+- connect application notebooks back to the earlier RL foundations
 
 ---
 
 ## Topics Covered
 
-Based on the instructor materials and the practical notebooks included in this
-folder, this unit covers:
+Based on the numbered student-facing notebooks in this unit, the required path
+focuses on applying RL ideas to realistic scenarios and introducing several
+advanced directions at a student-friendly level.
 
 1. **Applications of Reinforcement Learning**
    - Autonomous systems and robotics
@@ -36,33 +37,40 @@ folder, this unit covers:
    - Selected NLP-oriented RL use cases
 
 2. **Deep RL Applications**
-   - DQN-style game environments
-   - Search + RL case studies such as AlphaGo-style systems
-   - Deep RL for robotic control
+   - Small game and control examples
+   - RL framing for application case studies
    - Interpreting learning curves and agent performance
 
-3. **Meta-Learning and Few-Shot RL**
-   - Fast adaptation across tasks
-   - Generalization with limited experience
-   - Transfer and reuse of learned behaviors
-
-4. **Multi-Agent Reinforcement Learning**
+3. **Multi-Agent Reinforcement Learning**
    - Cooperative vs competitive settings
    - Communication between agents
    - Centralized training vs decentralized execution
    - Practical multi-agent scenarios
 
-5. **Ethics, Safety, and Evaluation**
+4. **Ethics, Safety, and Evaluation**
    - Bias and fairness concerns
    - Safety in high-stakes RL systems
    - Robustness and deployment risks
-   - Evaluating reward, regret, convergence, and stability
+   - Evaluation questions to ask before deployment
 
-6. **Course Extensions in This Repo**
+5. **Course Extensions in This Repo**
    - Hierarchical RL and options
    - Goal-conditioned RL
    - Model-based RL and world models
    - Model-based vs model-free comparisons
+
+### Important scope note
+
+The numbered student path in this unit does **not** provide a full dedicated
+implementation lesson for:
+
+- meta-learning
+- few-shot RL
+- AlphaGo-style search + RL systems
+- advanced RL safety frameworks beyond discussion-level treatment
+
+Those topics should be treated as supplemental or instructor-led extensions
+unless dedicated student-facing notebooks are added later.
 
 ---
 
@@ -76,9 +84,8 @@ folder, this unit covers:
 
 - RL applications across domains
 - Deep RL application patterns
-- Meta-learning and few-shot ideas
 - Multi-agent RL concepts
-- Ethics, safety, and evaluation criteria
+- Ethics, safety, and evaluation discussion
 - Extension topics included in this repo
 
 ### Practical Content
@@ -88,7 +95,7 @@ folder, this unit covers:
 - Running hierarchical and goal-conditioned RL notebooks
 - Comparing model-based and model-free approaches
 - Interpreting evaluation metrics and training behavior
-- Analyzing safety and ethical considerations
+- Discussing safety and ethical considerations in applied settings
 
 ---
 
@@ -119,6 +126,8 @@ Student rule:
 - The required path in this unit is the numbered notebooks only.
 - Ignore long descriptive notebook filenames unless your
   instructor explicitly assigns them.
+- Treat meta-learning and few-shot RL as supplemental topics unless your
+  instructor assigns extra material for them.
 - Review the solution only after completing your own
   exercise attempt.
 

@@ -13,16 +13,19 @@ Make sure you have completed Unit 2 and are comfortable with:
 
 By the end of this unit, you should be able to:
 - Understand Deep Q-Networks (DQN)
-- Implement policy gradient methods
-- Work with Actor-Critic algorithms
-- Apply deep RL to complex environments
-- Handle challenges in deep RL training
+- Explain why deep RL is needed beyond tabular methods
+- Implement introductory policy-gradient style training
+- Understand the actor-critic idea and why it helps stabilize learning
+- Interpret training, evaluation, and optimization choices in small deep RL setups
+- Explain major stability challenges in deep RL training
 
 ---
 
 ## Topics Covered
 
-Based on official curriculum (AIAT 123), this unit covers:
+Based on the numbered student-facing notebooks in this unit, the required path
+focuses on introductory deep RL using small Gym-style environments and
+teacher-friendly implementations.
 
 1. **Introduction to Deep Reinforcement Learning**
    - Why deep RL?
@@ -34,38 +37,44 @@ Based on official curriculum (AIAT 123), this unit covers:
    - Q-learning with neural networks
    - Experience replay
    - Target networks
-   - DQN variants (Double DQN, Dueling DQN)
-   - Applications of DQN
+   - Why DQN is more stable than naive neural Q-learning
+   - Small-environment applications and interpretation
 
 3. **Policy Gradient Methods**
    - REINFORCE algorithm
-   - Policy gradient theorem
+   - Policy-gradient intuition
    - Advantages and challenges
-   - Improvements to REINFORCE
+   - Why direct policy learning can help
 
 4. **Actor-Critic Methods**
    - Actor-Critic architecture
-   - Advantage Actor-Critic (A2C)
-   - Proximal Policy Optimization (PPO)
-   - Asynchronous Advantage Actor-Critic (A3C)
+   - Policy + value interaction
+   - Why critics reduce variance
+   - PPO as a stability-oriented extension discussed at a simplified level
 
-5. **Deep Deterministic Policy Gradient (DDPG)**
-   - DDPG for continuous action spaces
-   - DDPG architecture
-   - Exploration in DDPG
-   - Applications
+5. **Training, Evaluation, and Optimization**
+   - Monitoring rewards and learning curves
+   - Replay, target networks, and reward shaping
+   - Hyperparameter sensitivity
 
-6. **Deep RL Applications**
-   - Games and simulations
-   - Robotics
-   - Autonomous vehicles
-   - Healthcare and optimization
-
-7. **Challenges in Deep RL**
+6. **Challenges in Deep RL**
    - Exploration vs exploitation dilemma
    - Sample efficiency
    - Stability and convergence
    - Generalization and overfitting
+
+### Important scope note
+
+The numbered student path in this unit does **not** provide a full dedicated
+implementation lesson for:
+
+- Atari-scale DQN training
+- Double DQN or Dueling DQN
+- A2C or A3C as separate implementation blocks
+- DDPG for continuous control
+
+These topics should be treated as supplemental or instructor-led extensions
+unless dedicated student-facing notebooks are added later.
 
 ---
 
@@ -78,19 +87,18 @@ Based on official curriculum (AIAT 123), this unit covers:
 ### Theoretical Content
 
 - Deep RL fundamentals
-- DQN algorithm and variants
+- DQN foundations
 - Policy gradient methods
-- Actor-Critic approaches
-- DDPG for continuous control
-- Applications and challenges
+- Actor-Critic intuition
+- Simplified PPO framing
+- Training challenges and stability ideas
 
 ### Practical Content
 
 - Implementing DQN from scratch
-- Training DQN on Atari games
-- Building REINFORCE algorithm
-- Implementing Actor-Critic methods
-- Applying DDPG to continuous control
+- Training DQN in small Gym-style environments
+- Building introductory policy-gradient style code
+- Studying actor-critic ideas through simplified examples
 - Training and evaluation
 - Hyperparameter tuning
 
@@ -116,16 +124,17 @@ numbered student path. They are archived under `../DOCS/REFERENCE_NOTEBOOKS/`.
 
 ### Important note
 
-This README includes DDPG in the intended scope of the unit. Use the numbered
-notebooks as the core student path first; any DDPG-specific material should be
-treated as advanced or supplemental until a dedicated student-facing notebook is
-provided in the main sequence.
+The notebook `examples/03_ppo_algorithm.ipynb` should be taught as a bridge from
+policy-gradient intuition toward PPO-style stability ideas unless the lesson is
+expanded into a fuller PPO implementation later.
 
 Student rule:
 
 - The required path in this unit is the numbered notebooks only.
-- Long descriptive filenames and DDPG-related material are supplemental
-  unless your instructor assigns them.
+- Long descriptive filenames and DDPG-related material are supplemental unless
+  your instructor assigns them.
+- Treat advanced variants such as Atari DQN, Double/Dueling DQN, A2C, A3C, and
+  DDPG as outside the required numbered path unless explicitly assigned.
 - Review the solution only after completing your own
   exercise attempt.
 

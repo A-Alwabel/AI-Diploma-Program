@@ -73,11 +73,19 @@ The main policy-gradient treatment belongs to `unit3-deep-rl/`.
 
 Follow these notebooks in order:
 
-1. `examples/01_q_learning.ipynb`
-2. `examples/02_sarsa_algorithm.ipynb`
-3. `examples/04_monte_carlo_value_estimation.ipynb`
-4. `examples/05_td_algorithms_td0_nstep.ipynb`
+1. `examples/04_monte_carlo_value_estimation.ipynb`
+2. `examples/05_td_algorithms_td0_nstep.ipynb`
+3. `examples/01_q_learning.ipynb`
+4. `examples/02_sarsa_algorithm.ipynb`
 5. `examples/06_policy_vs_value_iteration_comparison.ipynb`
+
+Why this order:
+
+- Monte Carlo and TD build the model-free prediction ideas first.
+- Q-learning and SARSA then make more sense as control methods built on that
+  intuition.
+- The final comparison notebook helps students connect the control view back to
+  policy/value iteration thinking from smaller environments.
 
 ### Supplemental notebooks
 

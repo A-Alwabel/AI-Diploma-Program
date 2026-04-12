@@ -132,6 +132,42 @@ Quick self-check:
 
 ## Final Exam Preparation Strategy
 
+## Cross-Unit Concept Links
+
+Students often remember each unit separately but forget the bridges between
+them. Review these links before the exam:
+
+- Unit 1 -> Unit 2:
+  Bellman thinking leads into policy/value updates, then into Monte Carlo,
+  TD, Q-learning, and SARSA.
+- Unit 2 -> Unit 3:
+  Deep RL keeps the same learning ideas but replaces tables with function
+  approximation when the state space is too large.
+- Unit 3 -> Unit 4:
+  Better function approximation does not remove the need for exploration;
+  it only changes where the challenge appears.
+- Unit 4 -> Unit 5:
+  Real applications require not only a learning algorithm, but also a good
+  problem formulation, safe reward design, and careful evaluation.
+
+## High-Value Confusion Pairs
+
+- **state** vs **reward**:
+  State is what the agent sees; reward is the feedback about what happened.
+- **policy** vs **value**:
+  Policy says what to do; value estimates how good states or actions are.
+- **Monte Carlo** vs **TD**:
+  Monte Carlo waits for full returns; TD updates earlier using bootstrapping.
+- **Q-learning** vs **SARSA**:
+  Q-learning learns toward the greedy next value; SARSA learns from the action
+  actually taken by the current policy.
+- **model-free** vs **model-based**:
+  Model-free learns directly from experience; model-based also uses a model for
+  planning or prediction.
+- **goal-conditioned RL** vs **meta-learning**:
+  Goal-conditioned RL reuses one policy across goals; meta-learning focuses on
+  adapting quickly across tasks.
+
 ### The Night Before
 
 - Review this guide once from start to end

@@ -137,14 +137,35 @@ Choosing the action that currently looks best.
 Choose a random action with probability `epsilon`; otherwise choose the current
 best action.
 
+### Epsilon Decay
+
+Reducing `epsilon` over time so the agent explores more early in training and
+acts more greedily later.
+
 ### Upper Confidence Bound (UCB)
 
 A method that adds an uncertainty bonus so rarely tried actions get more
 attention.
 
+### Boltzmann Exploration (Softmax Exploration)
+
+An exploration method that samples actions according to probabilities based on
+their estimated values. Higher temperature means more exploration; lower
+temperature makes the policy more greedy.
+
 ### Thompson Sampling
 
 An exploration method that samples from uncertainty-aware action beliefs.
+
+### Intrinsic Motivation / Curiosity
+
+An exploration idea where the agent gets an extra internal reward for novelty,
+surprise, or prediction error, not only for the external task reward.
+
+### Multi-Armed Bandit
+
+A simplified decision problem where the agent repeatedly chooses among actions
+with uncertain rewards, without a full state-transition structure like an MDP.
 
 ### Regret
 
