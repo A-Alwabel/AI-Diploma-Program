@@ -84,8 +84,9 @@ def symbol_summaries(src: str) -> dict[int, str]:
             label = "Async function" if is_async else "Function"
             if doc:
                 one = " ".join(doc.strip().split())
-                if len(one) > 130:
-                    one = one[:127] + "..."
+                # Keep the one-line # header above `def` short for notebook readability.
+                if len(one) > 90:
+                    one = one[:87] + "..."
                 out[node.lineno] = f"{label} `{node.name}` (what it does): {one}"
             else:
                 params = _params_preview(node)
@@ -97,8 +98,8 @@ def symbol_summaries(src: str) -> dict[int, str]:
             doc = ast.get_docstring(node)
             if doc:
                 one = " ".join(doc.strip().split())
-                if len(one) > 130:
-                    one = one[:127] + "..."
+                if len(one) > 90:
+                    one = one[:87] + "..."
                 out[node.lineno] = f"Class `{node.name}` (what it does): {one}"
             else:
                 out[node.lineno] = (
@@ -343,6 +344,9 @@ def describe(stripped: str, line_no: int | None = None, summaries: dict[int, str
         return "Explicitly raise an error to signal invalid state or failed checks."
     if s.startswith("open("):
         return "Open a file path for reading/writing bytes or text."
+    # Literal dict rows like `"key": {` or `"key": "value",` inside a big dict literal.
+    if re.match(r'^\s*"[^"]+"\s*:\s*', s) or re.match(r"^\s*'[^']+'\s*:\s*", s):
+        return "One key/value row inside a dict literal (domain -> fields or nested table)."
     if len(s) > 90:
         return f"Execute: {s[:90]} …"
     return f"Execute: {s}"
