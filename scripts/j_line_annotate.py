@@ -23,6 +23,10 @@ _STUD_AXIS_NOTE_FIRST = (
 )
 _STUD_AXIS_NOTE_MORE = "Same plot panel as the line above—one more small plotting tweak."
 
+# Generic assignment J-lines (must match describe() fall-through for simple `=` lines).
+_STUD_ASSIGN_NOTE_FIRST = "Save a value in a name so the next lines can read it."
+_STUD_ASSIGN_NOTE_MORE = "Another assignment—same idea: store a value for the lines below."
+
 
 def multiline_string_continuation_lines(src: str) -> set[int]:
     """
@@ -279,7 +283,7 @@ def describe(stripped: str, line_no: int | None = None, summaries: dict[int, str
             return "Image handle returned by imshow for attaching a colorbar."
         if s.startswith("idx") and "enumerate" in s:
             return "Loop index used to place text labels above each summary bar."
-        return "Save a value in a name so the next lines can read it."
+        return _STUD_ASSIGN_NOTE_FIRST
     if s.startswith("ACTIONS"):
         return "Literal list of action names (indices match ACTION_TO_DELTA keys)."
     if s.startswith("ACTION_TO_DELTA"):
@@ -434,6 +438,8 @@ _LEGACY_J_LINE_BODIES: frozenset[str] = frozenset(
         "Suspend until an awaitable completes (async concurrency).",
         "Call a Seaborn plotting helper (statistical visuals).",
         "Call a pandas API (tables, series, IO, or transforms).",
+        _STUD_ASSIGN_NOTE_FIRST,
+        _STUD_ASSIGN_NOTE_MORE,
     }
 )
 
@@ -507,6 +513,74 @@ def _recent_axis_code_call(out_lines: list[str], max_code: int = 8) -> bool:
         seen += 1
         k -= 1
     return False
+
+
+def _looks_like_plain_assignment(stripped: str) -> bool:
+    """Heuristic: top-level binding with `=` (not def/if/for, not ==). Used for assign J-line follow-ups."""
+    s = stripped.split("#")[0].strip()
+    if not s or s.endswith(":"):
+        return False
+    if s.startswith(
+        (
+            "def ",
+            "async def ",
+            "class ",
+            "for ",
+            "while ",
+            "if ",
+            "elif ",
+            "else:",
+            "return ",
+            "with ",
+            "assert ",
+            "import ",
+            "from ",
+            "@",
+            "pass",
+            "break",
+            "continue",
+            "raise ",
+            "del ",
+            "global ",
+            "nonlocal ",
+        )
+    ):
+        return False
+    if "==" in s or "=" not in s:
+        return False
+    if s.startswith("!") or s.startswith("%"):
+        return False
+    eq = s.find("=")
+    if eq <= 0:
+        return False
+    lhs = s[:eq]
+    if "(" in lhs:
+        return False
+    return True
+
+
+def _last_code_line_had_assign_family_hint(out_lines: list[str]) -> bool:
+    """True if the comment directly above the last emitted code line is an assign-family J-line."""
+    k = len(out_lines) - 1
+    while k >= 0 and not out_lines[k].strip():
+        k -= 1
+    if k < 0:
+        return False
+    if out_lines[k].lstrip().startswith("#"):
+        return False
+    j = k - 1
+    while j >= 0 and not out_lines[j].strip():
+        j -= 1
+    if j < 0:
+        return False
+    bod = _hash_comment_body(out_lines[j])
+    if bod is None:
+        return False
+    return bod in (
+        _STUD_ASSIGN_NOTE_FIRST,
+        _STUD_ASSIGN_NOTE_MORE,
+        "Assign/update a variable used later in this cell or in other cells.",
+    )
 
 
 def _def_or_class_sig(stripped: str) -> tuple[str, str] | None:
@@ -642,10 +716,23 @@ def strip_prior_j_comments(src: str) -> str:
                             "Configure a specific subplot axis (limits, ticks, title, labels, plotting calls).",
                         )
                     )
+                assign_ok: tuple[str, ...] = ()
+                if _looks_like_plain_assignment(nxt.strip()) and describe(
+                    nxt.strip(), nxt_lineno, summaries
+                ) == _STUD_ASSIGN_NOTE_FIRST:
+                    assign_ok = tuple(
+                        f"{indent}# {t}".rstrip()
+                        for t in (
+                            _STUD_ASSIGN_NOTE_FIRST,
+                            _STUD_ASSIGN_NOTE_MORE,
+                            "Assign/update a variable used later in this cell or in other cells.",
+                        )
+                    )
                 if cur.rstrip() in (
                     expected_full.rstrip(),
                     expected_generic.rstrip(),
                     *axis_ok,
+                    *assign_ok,
                 ):
                     i += 1
                     continue
@@ -722,8 +809,11 @@ def annotate_source(src: str, summaries: dict[int, str] | None = None) -> str:
             continue
         indent = raw[: len(raw) - len(raw.lstrip())]
         note = describe(raw.strip(), lineno, summaries)
-        if _is_axes_or_ax_call_line(raw.lstrip()) and _recent_axis_code_call(out_lines):
+        st = raw.lstrip()
+        if _is_axes_or_ax_call_line(st) and _recent_axis_code_call(out_lines):
             note = _STUD_AXIS_NOTE_MORE
+        elif note == _STUD_ASSIGN_NOTE_FIRST and _last_code_line_had_assign_family_hint(out_lines):
+            note = _STUD_ASSIGN_NOTE_MORE
         desired = f"{indent}# {note}"
         _pop_stale_j_headers_for_line(out_lines, note)
         j = len(out_lines) - 1
