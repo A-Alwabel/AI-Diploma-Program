@@ -17,6 +17,12 @@ from pathlib import Path
 
 _APPEND_RE = re.compile(r"\.append\(")
 
+# Matplotlib axis J-lines (plain English for weak coders; must match describe() ax/axes branch).
+_STUD_AXIS_NOTE_FIRST = (
+    "Work on one plot panel: title, tick marks, axis labels, or drawings on that panel."
+)
+_STUD_AXIS_NOTE_MORE = "Same plot panel as the line above—one more small plotting tweak."
+
 
 def multiline_string_continuation_lines(src: str) -> set[int]:
     """
@@ -91,8 +97,8 @@ def symbol_summaries(src: str) -> dict[int, str]:
             else:
                 params = _params_preview(node)
                 out[node.lineno] = (
-                    f"{label} `{node.name}` (what it does): no docstring in this cell; "
-                    f"read the indented body for the exact logic. Parameter names: {params}."
+                    f"{label} `{node.name}` (what it does): no long English blurb here—read the "
+                    f"indented lines top to bottom. Inputs you will see: {params}."
                 )
         elif isinstance(node, ast.ClassDef):
             doc = ast.get_docstring(node)
@@ -103,8 +109,8 @@ def symbol_summaries(src: str) -> dict[int, str]:
                 out[node.lineno] = f"Class `{node.name}` (what it does): {one}"
             else:
                 out[node.lineno] = (
-                    f"Class `{node.name}` (what it does): defines an object blueprint "
-                    "(attributes + methods); read the indented block to see each part."
+                    f"Class `{node.name}` (what it does): a reusable pattern for objects; "
+                    "read the indented block to see fields and methods."
                 )
     return out
 
@@ -120,15 +126,15 @@ def describe(stripped: str, line_no: int | None = None, summaries: dict[int, str
         nm = name.group(1) if name else "function"
         label = "Async function" if s.startswith("async ") else "Function"
         return (
-            f"{label} `{nm}` (what it does): parser summary unavailable here; "
-            "read the indented body line-by-line for the behavior."
+            f"{label} `{nm}` (what it does): read the indented lines under it in order—"
+            "that is where the real behavior lives."
         )
     if s.endswith(":") and s.startswith("class "):
         m = re.search(r"class\s+(\w+)", s)
         nm = m.group(1) if m else "class"
         return (
-            f"Class `{nm}` (what it does): parser summary unavailable here; "
-            "read the indented class body for attributes and methods."
+            f"Class `{nm}` (what it does): read the indented block under it to see what each "
+            "part stores or does."
         )
     if s in ("{", "}"):
         return "Part of a dict/set literal layout (syntax grouping)."
@@ -141,13 +147,13 @@ def describe(stripped: str, line_no: int | None = None, summaries: dict[int, str
     if s.startswith("%"):
         return "Line magic: Jupyter/IPython directive for this line only."
     if s.startswith("import ") or s.startswith("from "):
-        return "Import names from a package/module into the notebook kernel namespace."
+        return "Load a library so you can use its ready-made functions and types below."
     if s.startswith("f\"") or s.startswith("f'") or s.startswith('f"""') or s.startswith("f'''"):
-        return "Build a formatted string (f-string) with embedded values for printing/titles."
+        return "Build text with {…} holes filled in by variables (an f-string)."
     if re.fullmatch(r"\)+[,;]?", s):
         return "Close the parentheses opened earlier (end this function call / grouping)."
     if s.startswith("print("):
-        return "Print text to the notebook cell output (console)."
+        return "Show text or numbers in the cell output area under the code."
     if s.startswith("torch.") or s.startswith("nn."):
         return "Call a PyTorch API (tensor/module/training-related)."
     if s.startswith("F.") or s.startswith("nn.functional"):
@@ -155,43 +161,43 @@ def describe(stripped: str, line_no: int | None = None, summaries: dict[int, str
     if s.startswith("gym.") or s.startswith("spaces."):
         return "Call Gymnasium / classic Gym API (env, spaces, registration)."
     if s.startswith("np."):
-        return "Call a NumPy helper (array creation, options, or array conversion)."
+        return "Use NumPy for fast numeric arrays and math on grids of numbers."
     if s.startswith("plt."):
-        return "Call a Matplotlib pyplot helper (figure/axes/plot/show)."
+        return "Use pyplot to create or tweak a figure (plot, labels, show, etc.)."
     if s.startswith("sns."):
-        return "Call a Seaborn plotting helper (statistical visuals)."
+        return "Use Seaborn for nicer statistical plots with less boilerplate."
     if s.startswith("pd."):
-        return "Call a pandas API (tables, series, IO, or transforms)."
+        return "Use pandas for tables (rows/columns) and CSV-style data work."
     if s.startswith("fig."):
-        return "Configure or update the active Matplotlib Figure object."
+        return "Change something about the whole figure (not just one small subplot)."
     if s.startswith("ax.") or s.startswith("axes["):
-        return "Configure a subplot axis (limits, ticks, labels, or artists)."
+        return _STUD_AXIS_NOTE_FIRST
     if s.startswith("return "):
-        return "Return a value from this function to its caller."
+        return "Send a value back to whoever called this function."
     if s.startswith("yield "):
-        return "Yield the next value from a generator iterator."
+        return "Produce the next value for someone looping with 'for ... in this'."
     if s.startswith("await "):
-        return "Suspend until an awaitable completes (async concurrency)."
+        return "Wait here until an async task finishes (only in async code)."
     if s.startswith("if "):
-        return "Branch: only run the next indented lines when this condition is true."
+        return "If the condition is True, run the indented block under this line."
     if s == "continue":
-        return "Skip the rest of this loop body and jump to the next iteration."
+        return "Skip to the next lap of the loop (ignore the rest of this lap)."
     if s == "break":
-        return "Exit the nearest enclosing loop immediately."
+        return "Stop the loop completely and continue after the loop block."
     if s.startswith("for "):
-        return "Loop header: repeat the indented block for each item in the iterable."
+        return "Start a loop: repeat the indented block once per item in the sequence."
     if s.startswith("while "):
-        return "Loop header: repeat while the condition stays true."
+        return "Start a loop: repeat the indented block while the condition stays True."
     if s.startswith("elif "):
-        return "Else-if branch: checked only when previous conditions were false."
+        return "Else-if: only checked when the earlier if/elif tests were False."
     if s.startswith("else:"):
-        return "Else branch: runs when the matching if/elif chain was not taken."
+        return "Else: run this block when none of the if/elif tests above matched."
     if s.startswith("with "):
-        return "Context manager: setup/teardown around the indented block (files, locks, env)."
+        return "Safely open/use a resource; Python cleans up when the block ends."
     if s.startswith("assert "):
-        return "Runtime check: raises AssertionError if the condition is false."
+        return "Crash with a clear error if something you expect to be true is False."
     if _APPEND_RE.search(s):
-        return "Append one value to a list (mutates the list in place)."
+        return "Add one new item to the end of a list (the list grows in place)."
     if "=" in s and not s.startswith("==") and not s.startswith("!="):
         if s.startswith("ACTIONS"):
             return "Create the list of action names (their indices are the numeric action ids)."
@@ -273,7 +279,7 @@ def describe(stripped: str, line_no: int | None = None, summaries: dict[int, str
             return "Image handle returned by imshow for attaching a colorbar."
         if s.startswith("idx") and "enumerate" in s:
             return "Loop index used to place text labels above each summary bar."
-        return "Assign/update a variable used later in this cell or in other cells."
+        return "Save a value in a name so the next lines can read it."
     if s.startswith("ACTIONS"):
         return "Literal list of action names (indices match ACTION_TO_DELTA keys)."
     if s.startswith("ACTION_TO_DELTA"):
@@ -299,9 +305,9 @@ def describe(stripped: str, line_no: int | None = None, summaries: dict[int, str
     if s.startswith("fig.colorbar"):
         return "Add a colorbar beside a heatmap axis to map colors back to numeric values."
     if s.startswith("zip("):
-        return "Iterate multiple sequences in parallel (pair aligned items together)."
+        return "Walk two (or more) lists side by side: item 0 with item 0, etc."
     if s.startswith("enumerate("):
-        return "Loop with (index, value) pairs while iterating a sequence."
+        return "Loop with a counter: gives (0, first item), (1, second item), ..."
     if s.startswith("sum("):
         return "Aggregate by summing numeric values across an iterable."
     if s.startswith("isinstance("):
@@ -309,9 +315,9 @@ def describe(stripped: str, line_no: int | None = None, summaries: dict[int, str
     if s.startswith("callable("):
         return "Check whether an object is a function/method-like callable."
     if s.startswith("globals()"):
-        return "Access the notebook kernel's global symbol table as a dict-like mapping."
+        return "Look up every global name in this notebook run (advanced auto-plot helper)."
     if s.startswith("locals()"):
-        return "Read the current scope's local variable mapping (debug/introspection)."
+        return "Look up local names in the current function (advanced / debugging)."
     if s.startswith("len("):
         return "Read a length/count (list size, episodes, steps, etc.)."
     if s.startswith("max("):
@@ -321,9 +327,9 @@ def describe(stripped: str, line_no: int | None = None, summaries: dict[int, str
     if s.startswith("divmod("):
         return "Divide and return quotient/remainder (e.g., row/col from flat index)."
     if s.startswith("int("):
-        return "Cast a numeric type to int (discrete ids, indices, counts)."
+        return "Turn a number into a whole number (for indices, counts, discrete ids)."
     if s.startswith("float("):
-        return "Cast a value to float for numeric pipelines."
+        return "Turn a value into a decimal number for math."
     if s.startswith("str("):
         return "Convert an object to a string (labels, logging, formatting)."
     if s.startswith("range("):
@@ -381,17 +387,74 @@ _SUMMARY_HDR_RE = re.compile(
     r"^(?P<ind>\s*)#\s*(?P<kind>Function|Async function|Class)\s+`(?P<name>\w+)`\s*\(what it does\):.*$"
 )
 
-# Older notebooks may stack two slightly different auto-comments before `ax.*` calls.
-_AXIS_COMMENT_CANON = "Configure a subplot axis (limits, ticks, labels, or artists)."
-_AXIS_COMMENT_FOLLOW = "More on the same axes object (limits, ticks, labels, artists)."
+# Recognized Matplotlib axis J-line bodies (current + legacy wording from older runs).
+_LEGACY_AXIS_NOTE_CANON = "Configure a subplot axis (limits, ticks, labels, or artists)."
+_LEGACY_AXIS_NOTE_MORE = "More on the same axes object (limits, ticks, labels, artists)."
 _AXIS_COMMENT_VARIANTS: frozenset[str] = frozenset(
     {
-        _AXIS_COMMENT_CANON,
+        _STUD_AXIS_NOTE_FIRST,
+        _STUD_AXIS_NOTE_MORE,
+        _LEGACY_AXIS_NOTE_CANON,
+        _LEGACY_AXIS_NOTE_MORE,
         "Configure a specific subplot axis (limits, ticks, title, labels, plotting calls).",
     }
 )
-# Any of these bodies above an axes/ax line is treated as already-explained context.
-_ALL_AXIS_COMMENT_BODIES: frozenset[str] = _AXIS_COMMENT_VARIANTS | frozenset({_AXIS_COMMENT_FOLLOW})
+_ALL_AXIS_COMMENT_BODIES: frozenset[str] = _AXIS_COMMENT_VARIANTS
+
+# When describe() wording changes, strip+annotate can otherwise leave the old # line
+# sitting directly above the same code line. Pop these bodies if they differ from
+# the freshly computed desired note.
+_LEGACY_J_LINE_BODIES: frozenset[str] = frozenset(
+    {
+        "Loop header: repeat the indented block for each item in the iterable.",
+        "Loop header: repeat while the condition stays true.",
+        "Branch: only run the next indented lines when this condition is true.",
+        "Else-if branch: checked only when previous conditions were false.",
+        "Else branch: runs when the matching if/elif chain was not taken.",
+        "Assign/update a variable used later in this cell or in other cells.",
+        "Import names from a package/module into the notebook kernel namespace.",
+        "Append one value to a list (mutates the list in place).",
+        "Return a value from this function to its caller.",
+        "Skip the rest of this loop body and jump to the next iteration.",
+        "Exit the nearest enclosing loop immediately.",
+        "Context manager: setup/teardown around the indented block (files, locks, env).",
+        "Runtime check: raises AssertionError if the condition is false.",
+        "Call a NumPy helper (array creation, options, or array conversion).",
+        "Call a Matplotlib pyplot helper (figure/axes/plot/show).",
+        "Configure or update the active Matplotlib Figure object.",
+        "Print text to the notebook cell output (console).",
+        "Build a formatted string (f-string) with embedded values for printing/titles.",
+        "Iterate multiple sequences in parallel (pair aligned items together).",
+        "Loop with (index, value) pairs while iterating a sequence.",
+        "Access the notebook kernel's global symbol table as a dict-like mapping.",
+        "Read the current scope's local variable mapping (debug/introspection).",
+        "Cast a numeric type to int (discrete ids, indices, counts).",
+        "Cast a value to float for numeric pipelines.",
+        "Yield the next value from a generator iterator.",
+        "Suspend until an awaitable completes (async concurrency).",
+        "Call a Seaborn plotting helper (statistical visuals).",
+        "Call a pandas API (tables, series, IO, or transforms).",
+    }
+)
+
+
+def _pop_stale_j_headers_for_line(out_lines: list[str], desired_body: str) -> None:
+    """Remove trailing auto-J # lines that describe() no longer emits for the next code line."""
+    want = desired_body.rstrip()
+    while out_lines:
+        j0 = len(out_lines) - 1
+        while j0 >= 0 and out_lines[j0].strip() == "":
+            j0 -= 1
+        if j0 < 0:
+            break
+        bod = _hash_comment_body(out_lines[j0])
+        if bod is None:
+            break
+        if bod == want:
+            break
+        if bod not in _LEGACY_J_LINE_BODIES and bod not in _ALL_AXIS_COMMENT_BODIES:
+            break
+        out_lines.pop()
 
 
 def _hash_comment_body(line: str) -> str | None:
@@ -417,7 +480,7 @@ def _dedupe_axis_comment_stack(lines: list[str]) -> list[str]:
                 j += 1
             if j < len(lines) and _is_axes_or_ax_call_line(lines[j].lstrip()):
                 indent = lines[j][: len(lines[j]) - len(lines[j].lstrip())]
-                out.append(f"{indent}# {_AXIS_COMMENT_CANON}")
+                out.append(f"{indent}# {_STUD_AXIS_NOTE_FIRST}")
                 out.append(lines[j])
                 i = j + 1
                 continue
@@ -568,9 +631,17 @@ def strip_prior_j_comments(src: str) -> str:
                 note_generic = describe(nxt.strip(), None, None)
                 expected_full = f"{indent}# {note_full}"
                 expected_generic = f"{indent}# {note_generic}"
-                axis_ok = ()
+                axis_ok: tuple[str, ...] = ()
                 if _is_axes_or_ax_call_line(nxt.strip()):
-                    axis_ok = (f"{indent}# {_AXIS_COMMENT_FOLLOW}".rstrip(),)
+                    axis_ok = tuple(
+                        f"{indent}# {t}".rstrip()
+                        for t in (
+                            _STUD_AXIS_NOTE_MORE,
+                            _LEGACY_AXIS_NOTE_MORE,
+                            _LEGACY_AXIS_NOTE_CANON,
+                            "Configure a specific subplot axis (limits, ticks, title, labels, plotting calls).",
+                        )
+                    )
                 if cur.rstrip() in (
                     expected_full.rstrip(),
                     expected_generic.rstrip(),
@@ -652,8 +723,9 @@ def annotate_source(src: str, summaries: dict[int, str] | None = None) -> str:
         indent = raw[: len(raw) - len(raw.lstrip())]
         note = describe(raw.strip(), lineno, summaries)
         if _is_axes_or_ax_call_line(raw.lstrip()) and _recent_axis_code_call(out_lines):
-            note = _AXIS_COMMENT_FOLLOW
+            note = _STUD_AXIS_NOTE_MORE
         desired = f"{indent}# {note}"
+        _pop_stale_j_headers_for_line(out_lines, note)
         j = len(out_lines) - 1
         while j >= 0 and out_lines[j].strip() == "":
             j -= 1
