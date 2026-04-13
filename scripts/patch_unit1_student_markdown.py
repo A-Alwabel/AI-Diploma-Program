@@ -7,6 +7,11 @@ One-off patcher: add weak-coder scaffolding to Unit 1 example notebooks (Course 
 - Appends a short **For weaker coders** line to Closing Takeaway when missing.
 
 Usage (repo root): python3 scripts/patch_unit1_student_markdown.py
+
+Course-wide Lesson Brief / Closing / generic Step Guide passes live in
+`patch_course09_student_markdown_all.py` (that script skips Step Guide heuristics
+under `Course 09/unit1-rl-fundamentals/examples/` so this file remains the source
+of truth for those notebooks).
 """
 from __future__ import annotations
 
