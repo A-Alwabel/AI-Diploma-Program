@@ -51,6 +51,24 @@ def _cell_has_ipython_magic(src: str) -> bool:
     return False
 
 
+def _params_preview(node: ast.FunctionDef | ast.AsyncFunctionDef) -> str:
+    """Comma-separated parameter names for student-facing hints (no types)."""
+    names: list[str] = []
+    names.extend(a.arg for a in node.args.posonlyargs)
+    names.extend(a.arg for a in node.args.args)
+    if node.args.vararg:
+        names.append("*" + node.args.vararg.arg)
+    names.extend(a.arg for a in node.args.kwonlyargs)
+    if node.args.kwarg:
+        names.append("**" + node.args.kwarg.arg)
+    if not names:
+        return "no named parameters in the signature"
+    head = ", ".join(names[:10])
+    if len(names) > 10:
+        head += ", ..."
+    return head
+
+
 def symbol_summaries(src: str) -> dict[int, str]:
     """Map 1-based source line number -> short English summary for def/class lines."""
     out: dict[int, str] = {}
@@ -62,16 +80,18 @@ def symbol_summaries(src: str) -> dict[int, str]:
     for node in ast.walk(tree):
         if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)):
             doc = ast.get_docstring(node)
-            kind = "async function" if isinstance(node, ast.AsyncFunctionDef) else "function"
+            is_async = isinstance(node, ast.AsyncFunctionDef)
+            label = "Async function" if is_async else "Function"
             if doc:
                 one = " ".join(doc.strip().split())
                 if len(one) > 130:
                     one = one[:127] + "..."
-                out[node.lineno] = f"{kind.title()} `{node.name}`: {one}"
+                out[node.lineno] = f"{label} `{node.name}` (what it does): {one}"
             else:
+                params = _params_preview(node)
                 out[node.lineno] = (
-                    f"Define {kind} `{node.name}`: parameters in parentheses; "
-                    "the indented body below implements its behavior step-by-step."
+                    f"{label} `{node.name}` (what it does): no docstring in this cell; "
+                    f"read the indented body for the exact logic. Parameter names: {params}."
                 )
         elif isinstance(node, ast.ClassDef):
             doc = ast.get_docstring(node)
@@ -79,11 +99,11 @@ def symbol_summaries(src: str) -> dict[int, str]:
                 one = " ".join(doc.strip().split())
                 if len(one) > 130:
                     one = one[:127] + "..."
-                out[node.lineno] = f"Class `{node.name}`: {one}"
+                out[node.lineno] = f"Class `{node.name}` (what it does): {one}"
             else:
                 out[node.lineno] = (
-                    f"Define class `{node.name}`: groups methods/attributes for one concept; "
-                    "see methods in the indented block."
+                    f"Class `{node.name}` (what it does): defines an object blueprint "
+                    "(attributes + methods); read the indented block to see each part."
                 )
     return out
 
@@ -97,12 +117,18 @@ def describe(stripped: str, line_no: int | None = None, summaries: dict[int, str
     if s.endswith(":") and (s.startswith("def ") or s.startswith("async def ")):
         name = re.search(r"def\s+(\w+)\s*\(", s)
         nm = name.group(1) if name else "function"
-        async_bit = "async " if s.startswith("async ") else ""
-        return f"Define {async_bit}function `{nm}` (starts a new indented block below)."
+        label = "Async function" if s.startswith("async ") else "Function"
+        return (
+            f"{label} `{nm}` (what it does): parser summary unavailable here; "
+            "read the indented body line-by-line for the behavior."
+        )
     if s.endswith(":") and s.startswith("class "):
         m = re.search(r"class\s+(\w+)", s)
         nm = m.group(1) if m else "class"
-        return f"Define class `{nm}` (groups attributes/methods in the block below)."
+        return (
+            f"Class `{nm}` (what it does): parser summary unavailable here; "
+            "read the indented class body for attributes and methods."
+        )
     if s in ("{", "}"):
         return "Part of a dict/set literal layout (syntax grouping)."
     if re.match(r"^\d+\s*:\s*\(", s):
@@ -284,7 +310,7 @@ def describe(stripped: str, line_no: int | None = None, summaries: dict[int, str
     if s.startswith("globals()"):
         return "Access the notebook kernel's global symbol table as a dict-like mapping."
     if s.startswith("locals()"):
-        return "Read the current scope’s local variable mapping (debug/introspection)."
+        return "Read the current scope's local variable mapping (debug/introspection)."
     if s.startswith("len("):
         return "Read a length/count (list size, episodes, steps, etc.)."
     if s.startswith("max("):
@@ -322,6 +348,31 @@ def describe(stripped: str, line_no: int | None = None, summaries: dict[int, str
     return f"Execute: {s}"
 
 
+def _legacy_def_or_class_j_comment(cur: str, nxt: str) -> bool:
+    """True if `cur` looks like an older auto-# line we placed above def/async def/class."""
+    if not cur.lstrip().startswith("#"):
+        return False
+    ns = nxt.strip()
+    if not (
+        ns.startswith("def ")
+        or ns.startswith("async def ")
+        or ns.startswith("class ")
+    ):
+        return False
+    body = cur.strip()[1:].lstrip()
+    if "(what it does):" in body:
+        return False
+    if body.startswith("Define function") or body.startswith("Define async"):
+        return True
+    if body.startswith("Define class"):
+        return True
+    if body.startswith("Function `") or body.startswith("Async function `"):
+        return True
+    if body.startswith("Class `"):
+        return True
+    return False
+
+
 def strip_prior_j_comments(src: str) -> str:
     """Remove a prior J-mode comment line when it matches describe(next line) or legacy patterns."""
     summaries: dict[int, str] = {}
@@ -352,6 +403,9 @@ def strip_prior_j_comments(src: str) -> str:
                 expected_full = f"{indent}# {note_full}"
                 expected_generic = f"{indent}# {note_generic}"
                 if cur.rstrip() in (expected_full.rstrip(), expected_generic.rstrip()):
+                    i += 1
+                    continue
+                if _legacy_def_or_class_j_comment(cur, nxt):
                     i += 1
                     continue
                 if "Assign/update a variable used later" in cur and (
