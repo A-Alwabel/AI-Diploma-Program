@@ -373,6 +373,46 @@ def _legacy_def_or_class_j_comment(cur: str, nxt: str) -> bool:
     return False
 
 
+def _dedupe_stacked_def_headers(lines: list[str]) -> list[str]:
+    """Remove a stale `# Function ... no docstring` line when a richer duplicate follows, then `def`."""
+    out: list[str] = []
+    i = 0
+    while i < len(lines):
+        if i + 2 < len(lines):
+            cur, nxt, nxt2 = lines[i], lines[i + 1], lines[i + 2]
+            c0, c1, c2 = cur.lstrip(), nxt.lstrip(), nxt2.lstrip()
+            if (
+                c0.startswith("#")
+                and c1.startswith("#")
+                and (c2.startswith("def ") or c2.startswith("async def "))
+                and cur.rstrip() == nxt.rstrip()
+            ):
+                out.append(nxt)
+                out.append(nxt2)
+                i += 3
+                continue
+            if (
+                c0.startswith("#")
+                and c1.startswith("#")
+                and (c2.startswith("def ") or c2.startswith("async def "))
+                and "(what it does): no docstring" in cur
+                and "(what it does):" in nxt
+                and "no docstring" not in nxt
+                and "`" in cur
+                and "`" in nxt
+            ):
+                m0 = re.search(r"`(\w+)`", cur)
+                m1 = re.search(r"`(\w+)`", nxt)
+                if m0 and m1 and m0.group(1) == m1.group(1):
+                    out.append(nxt)
+                    out.append(nxt2)
+                    i += 3
+                    continue
+        out.append(lines[i])
+        i += 1
+    return out
+
+
 def strip_prior_j_comments(src: str) -> str:
     """Remove a prior J-mode comment line when it matches describe(next line) or legacy patterns."""
     summaries: dict[int, str] = {}
@@ -381,7 +421,7 @@ def strip_prior_j_comments(src: str) -> str:
         summaries = symbol_summaries(src)
     except SyntaxError:
         summaries = {}
-    lines = src.splitlines()
+    lines = _dedupe_stacked_def_headers(src.splitlines())
     out: list[str] = []
     i = 0
     while i < len(lines):
@@ -408,6 +448,25 @@ def strip_prior_j_comments(src: str) -> str:
                 if _legacy_def_or_class_j_comment(cur, nxt):
                     i += 1
                     continue
+                # Drop stale "(what it does): no docstring…" header when a richer duplicate follows.
+                if i + 2 < len(lines):
+                    nxt2 = lines[i + 2]
+                    c0, c1, c2 = cur.lstrip(), nxt.lstrip(), nxt2.lstrip()
+                    if (
+                        c0.startswith("#")
+                        and c1.startswith("#")
+                        and (c2.startswith("def ") or c2.startswith("async def "))
+                        and "(what it does): no docstring" in cur
+                        and "(what it does):" in nxt
+                        and "no docstring" not in nxt
+                        and "`" in cur
+                        and "`" in nxt
+                    ):
+                        m0 = re.search(r"`(\w+)`", cur)
+                        m1 = re.search(r"`(\w+)`", nxt)
+                        if m0 and m1 and m0.group(1) == m1.group(1):
+                            i += 1
+                            continue
                 if "Assign/update a variable used later" in cur and (
                     nxt.lstrip().startswith('f"')
                     or nxt.lstrip().startswith("f'")
@@ -421,6 +480,13 @@ def strip_prior_j_comments(src: str) -> str:
                     continue
                 rest = cur.strip()[1:].lstrip()
                 if rest.startswith("Execute:") and rest[len("Execute:") :].strip() == nxt.strip():
+                    i += 1
+                    continue
+                # Mistaken header above a triple-quoted docstring line from older annotator runs.
+                if rest.startswith("Execute:") and (
+                    nxt.lstrip().startswith(('"""', "'''"))
+                    or nxt.lstrip().startswith(("r'''", 'r"""', "f'''", 'f"""'))
+                ):
                     i += 1
                     continue
         out.append(cur)
@@ -440,12 +506,24 @@ def annotate_source(src: str, summaries: dict[int, str] | None = None) -> str:
         if raw.lstrip().startswith("#"):
             out_lines.append(raw)
             continue
+        tq = raw.lstrip()
+        if tq.startswith(('"""', "'''")) or tq.startswith(
+            ("r'''", 'r"""', "f'''", 'f"""', "u'''", 'u"""')
+        ):
+            # Docstring / triple-quoted literal line; never insert a # line above it.
+            out_lines.append(raw)
+            continue
         if lineno in skip_inside_string:
             out_lines.append(raw)
             continue
         indent = raw[: len(raw) - len(raw.lstrip())]
         note = describe(raw.strip(), lineno, summaries)
-        out_lines.append(f"{indent}# {note}")
+        desired = f"{indent}# {note}"
+        j = len(out_lines) - 1
+        while j >= 0 and out_lines[j].strip() == "":
+            j -= 1
+        if j < 0 or out_lines[j].rstrip() != desired.rstrip():
+            out_lines.append(desired)
         out_lines.append(raw)
     return "\n".join(out_lines) + "\n"
 
