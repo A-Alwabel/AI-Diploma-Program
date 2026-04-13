@@ -377,6 +377,62 @@ def _legacy_def_or_class_j_comment(cur: str, nxt: str) -> bool:
     return False
 
 
+_SUMMARY_HDR_RE = re.compile(
+    r"^(?P<ind>\s*)#\s*(?P<kind>Function|Async function|Class)\s+`(?P<name>\w+)`\s*\(what it does\):.*$"
+)
+
+
+def _def_or_class_sig(stripped: str) -> tuple[str, str] | None:
+    """Return (kind label, symbol name) for a def / async def / class header line."""
+    if stripped.startswith("async def "):
+        m = re.match(r"async def (\w+)\s*\(", stripped)
+        return ("Async function", m.group(1)) if m else None
+    if stripped.startswith("def "):
+        m = re.match(r"def (\w+)\s*\(", stripped)
+        return ("Function", m.group(1)) if m else None
+    if stripped.startswith("class "):
+        m = re.match(r"class (\w+)\b", stripped)
+        return ("Class", m.group(1)) if m else None
+    return None
+
+
+def _dedupe_adjacent_summary_headers(lines: list[str]) -> list[str]:
+    """
+    Collapse two consecutive '# Function|Class `x` (what it does): ...' lines when they
+    describe the same symbol (e.g. full text + truncated duplicate from re-runs).
+    """
+    changed = True
+    while changed and len(lines) > 1:
+        changed = False
+        out: list[str] = []
+        i = 0
+        while i < len(lines):
+            if i + 1 < len(lines):
+                cur, nxt = lines[i], lines[i + 1]
+                a, b = _SUMMARY_HDR_RE.match(cur), _SUMMARY_HDR_RE.match(nxt)
+                if (
+                    a
+                    and b
+                    and a.group("kind") == b.group("kind")
+                    and a.group("name") == b.group("name")
+                ):
+                    ca, cb = cur.rstrip(), nxt.rstrip()
+                    if ca.endswith("...") and not cb.endswith("..."):
+                        pick = nxt
+                    elif cb.endswith("...") and not ca.endswith("..."):
+                        pick = cur
+                    else:
+                        pick = cur if len(ca) >= len(cb) else nxt
+                    out.append(pick)
+                    i += 2
+                    changed = True
+                    continue
+            out.append(lines[i])
+            i += 1
+        lines = out
+    return lines
+
+
 def _dedupe_stacked_def_headers(lines: list[str]) -> list[str]:
     """Remove a stale `# Function ... no docstring` line when a richer duplicate follows, then `def`."""
     out: list[str] = []
@@ -426,6 +482,7 @@ def strip_prior_j_comments(src: str) -> str:
     except SyntaxError:
         summaries = {}
     lines = _dedupe_stacked_def_headers(src.splitlines())
+    lines = _dedupe_adjacent_summary_headers(lines)
     out: list[str] = []
     i = 0
     while i < len(lines):
@@ -526,7 +583,14 @@ def annotate_source(src: str, summaries: dict[int, str] | None = None) -> str:
         j = len(out_lines) - 1
         while j >= 0 and out_lines[j].strip() == "":
             j -= 1
-        if j < 0 or out_lines[j].rstrip() != desired.rstrip():
+        skip_desired = j >= 0 and out_lines[j].rstrip() == desired.rstrip()
+        if not skip_desired and j >= 0:
+            sig = _def_or_class_sig(raw.strip())
+            if sig:
+                mprev = _SUMMARY_HDR_RE.match(out_lines[j])
+                if mprev and mprev.group("kind") == sig[0] and mprev.group("name") == sig[1]:
+                    skip_desired = True
+        if not skip_desired:
             out_lines.append(desired)
         out_lines.append(raw)
     return "\n".join(out_lines) + "\n"
