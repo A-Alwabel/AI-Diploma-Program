@@ -382,13 +382,16 @@ _SUMMARY_HDR_RE = re.compile(
 )
 
 # Older notebooks may stack two slightly different auto-comments before `ax.*` calls.
+_AXIS_COMMENT_CANON = "Configure a subplot axis (limits, ticks, labels, or artists)."
+_AXIS_COMMENT_FOLLOW = "More on the same axes object (limits, ticks, labels, artists)."
 _AXIS_COMMENT_VARIANTS: frozenset[str] = frozenset(
     {
-        "Configure a subplot axis (limits, ticks, labels, or artists).",
+        _AXIS_COMMENT_CANON,
         "Configure a specific subplot axis (limits, ticks, title, labels, plotting calls).",
     }
 )
-_AXIS_COMMENT_CANON = "Configure a subplot axis (limits, ticks, labels, or artists)."
+# Any of these bodies above an axes/ax line is treated as already-explained context.
+_ALL_AXIS_COMMENT_BODIES: frozenset[str] = _AXIS_COMMENT_VARIANTS | frozenset({_AXIS_COMMENT_FOLLOW})
 
 
 def _hash_comment_body(line: str) -> str | None:
@@ -408,9 +411,9 @@ def _dedupe_axis_comment_stack(lines: list[str]) -> list[str]:
     i = 0
     while i < len(lines):
         body0 = _hash_comment_body(lines[i]) if i < len(lines) else None
-        if body0 in _AXIS_COMMENT_VARIANTS:
+        if body0 in _ALL_AXIS_COMMENT_BODIES:
             j = i
-            while j < len(lines) and _hash_comment_body(lines[j]) in _AXIS_COMMENT_VARIANTS:
+            while j < len(lines) and _hash_comment_body(lines[j]) in _ALL_AXIS_COMMENT_BODIES:
                 j += 1
             if j < len(lines) and _is_axes_or_ax_call_line(lines[j].lstrip()):
                 indent = lines[j][: len(lines[j]) - len(lines[j].lstrip())]
@@ -421,6 +424,26 @@ def _dedupe_axis_comment_stack(lines: list[str]) -> list[str]:
         out.append(lines[i])
         i += 1
     return out
+
+
+def _recent_axis_code_call(out_lines: list[str], max_code: int = 8) -> bool:
+    """True if a prior emitted code line in this cell was an axes/ax API call (same-figure spam guard)."""
+    seen = 0
+    k = len(out_lines) - 1
+    while k >= 0 and seen < max_code:
+        ln = out_lines[k]
+        if not ln.strip():
+            k -= 1
+            continue
+        st = ln.lstrip()
+        if st.startswith("#"):
+            k -= 1
+            continue
+        if _is_axes_or_ax_call_line(st):
+            return True
+        seen += 1
+        k -= 1
+    return False
 
 
 def _def_or_class_sig(stripped: str) -> tuple[str, str] | None:
@@ -545,7 +568,14 @@ def strip_prior_j_comments(src: str) -> str:
                 note_generic = describe(nxt.strip(), None, None)
                 expected_full = f"{indent}# {note_full}"
                 expected_generic = f"{indent}# {note_generic}"
-                if cur.rstrip() in (expected_full.rstrip(), expected_generic.rstrip()):
+                axis_ok = ()
+                if _is_axes_or_ax_call_line(nxt.strip()):
+                    axis_ok = (f"{indent}# {_AXIS_COMMENT_FOLLOW}".rstrip(),)
+                if cur.rstrip() in (
+                    expected_full.rstrip(),
+                    expected_generic.rstrip(),
+                    *axis_ok,
+                ):
                     i += 1
                     continue
                 if _legacy_def_or_class_j_comment(cur, nxt):
@@ -621,6 +651,8 @@ def annotate_source(src: str, summaries: dict[int, str] | None = None) -> str:
             continue
         indent = raw[: len(raw) - len(raw.lstrip())]
         note = describe(raw.strip(), lineno, summaries)
+        if _is_axes_or_ax_call_line(raw.lstrip()) and _recent_axis_code_call(out_lines):
+            note = _AXIS_COMMENT_FOLLOW
         desired = f"{indent}# {note}"
         j = len(out_lines) - 1
         while j >= 0 and out_lines[j].strip() == "":
@@ -632,10 +664,6 @@ def annotate_source(src: str, summaries: dict[int, str] | None = None) -> str:
                 mprev = _SUMMARY_HDR_RE.match(out_lines[j])
                 if mprev and mprev.group("kind") == sig[0] and mprev.group("name") == sig[1]:
                     skip_desired = True
-        if not skip_desired and j >= 0 and _is_axes_or_ax_call_line(raw.lstrip()):
-            prev_body = _hash_comment_body(out_lines[j])
-            if prev_body in _AXIS_COMMENT_VARIANTS:
-                skip_desired = True
         if not skip_desired:
             out_lines.append(desired)
         out_lines.append(raw)
