@@ -381,6 +381,47 @@ _SUMMARY_HDR_RE = re.compile(
     r"^(?P<ind>\s*)#\s*(?P<kind>Function|Async function|Class)\s+`(?P<name>\w+)`\s*\(what it does\):.*$"
 )
 
+# Older notebooks may stack two slightly different auto-comments before `ax.*` calls.
+_AXIS_COMMENT_VARIANTS: frozenset[str] = frozenset(
+    {
+        "Configure a subplot axis (limits, ticks, labels, or artists).",
+        "Configure a specific subplot axis (limits, ticks, title, labels, plotting calls).",
+    }
+)
+_AXIS_COMMENT_CANON = "Configure a subplot axis (limits, ticks, labels, or artists)."
+
+
+def _hash_comment_body(line: str) -> str | None:
+    s = line.lstrip()
+    if not s.startswith("# "):
+        return None
+    return s[2:].rstrip()
+
+
+def _is_axes_or_ax_call_line(stripped: str) -> bool:
+    return stripped.startswith("ax.") or stripped.startswith("axes[")
+
+
+def _dedupe_axis_comment_stack(lines: list[str]) -> list[str]:
+    """Collapse stacked Matplotlib axis teaching comments into one line before each axes/ax call."""
+    out: list[str] = []
+    i = 0
+    while i < len(lines):
+        body0 = _hash_comment_body(lines[i]) if i < len(lines) else None
+        if body0 in _AXIS_COMMENT_VARIANTS:
+            j = i
+            while j < len(lines) and _hash_comment_body(lines[j]) in _AXIS_COMMENT_VARIANTS:
+                j += 1
+            if j < len(lines) and _is_axes_or_ax_call_line(lines[j].lstrip()):
+                indent = lines[j][: len(lines[j]) - len(lines[j].lstrip())]
+                out.append(f"{indent}# {_AXIS_COMMENT_CANON}")
+                out.append(lines[j])
+                i = j + 1
+                continue
+        out.append(lines[i])
+        i += 1
+    return out
+
 
 def _def_or_class_sig(stripped: str) -> tuple[str, str] | None:
     """Return (kind label, symbol name) for a def / async def / class header line."""
@@ -483,6 +524,7 @@ def strip_prior_j_comments(src: str) -> str:
         summaries = {}
     lines = _dedupe_stacked_def_headers(src.splitlines())
     lines = _dedupe_adjacent_summary_headers(lines)
+    lines = _dedupe_axis_comment_stack(lines)
     out: list[str] = []
     i = 0
     while i < len(lines):
@@ -590,6 +632,10 @@ def annotate_source(src: str, summaries: dict[int, str] | None = None) -> str:
                 mprev = _SUMMARY_HDR_RE.match(out_lines[j])
                 if mprev and mprev.group("kind") == sig[0] and mprev.group("name") == sig[1]:
                     skip_desired = True
+        if not skip_desired and j >= 0 and _is_axes_or_ax_call_line(raw.lstrip()):
+            prev_body = _hash_comment_body(out_lines[j])
+            if prev_body in _AXIS_COMMENT_VARIANTS:
+                skip_desired = True
         if not skip_desired:
             out_lines.append(desired)
         out_lines.append(raw)
