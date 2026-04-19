@@ -23,7 +23,7 @@ Install the core packages:
 ```bash
 pip install numpy matplotlib
 pip install torch torchvision
-pip install gymnasium[classic_control]
+pip install gymnasium[classic-control]
 pip install scikit-learn
 ```
 
