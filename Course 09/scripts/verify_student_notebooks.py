@@ -1,7 +1,13 @@
 #!/usr/bin/env python3
 """Execute all student-path Course 09 notebooks (excluding DOCS/) and report status.
 
-Run from repo root or anywhere; uses Course 09 root as anchor.
+Run from repo root (recommended after any Course 09 notebook batch):
+
+    python3 "Course 09/scripts/verify_student_notebooks.py"
+
+Uses Course 09 root as anchor; each notebook runs with ``cwd`` set to its own
+folder so ``course09_step_viz`` parent discovery works. Writes
+``scripts/_last_notebook_verify.log`` (gitignored via ``*.log``).
 """
 
 from __future__ import annotations
