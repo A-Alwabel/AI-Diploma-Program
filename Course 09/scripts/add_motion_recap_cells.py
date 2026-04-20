@@ -18,12 +18,18 @@ MARKER = "MOTION_RECAP_COURSE09"
 
 MD_SOURCE = """## Motion recap (optional)
 
-This short **FrozenLake** rollout connects the ideas in this notebook to **motion on a grid**.
-We use ``is_slippery=False`` so each step matches the tile you expect.
+**Why this cell exists:** many RL ideas are easiest to sanity-check when you can **watch time unfold** — a state changes because an action was taken, then a reward signal arrives.
 
-The policy here is **intentionally simple** (random actions): the goal is to **scrub timesteps**
-with the slider and see how states evolve, not to claim this notebook's full algorithm is
-already solved on this map.
+**FrozenLake here is a shared toy picture** (not the “whole story” of every method in this notebook):
+- Treat it as a **concrete instance** of the vocabulary you already used: **state** = which tile, **action** = move direction, **reward** = goal / hole / step, **episode** = from start until stop.
+
+**Map this picture to your lesson (pick what fits):**
+- **MDPs / value iteration / DP ideas:** ask what a “good tile” should be worth *on the way* to the goal, and what a hole implies for long-horizon returns.
+- **Policy evaluation / Monte Carlo / TD / Q-learning / SARSA:** relate the moves you see to **estimated values or Q(s,a)** and to the **backup** idea you implemented above.
+- **Exploration vs exploitation / UCB / tuning ε:** random moves are a deliberate exaggeration — compare **wide wandering** vs a mostly greedy path, and connect that to the exploration rule you studied in this unit.
+- **Deep RL / training at scale:** use this as a **minimal loop** (observe → act → reward → learn) while remembering real applications change the **observation**, not the basic cycle.
+
+The policy in the next cell is **random on purpose** so the GIF/slider foreground **transitions**, not a claim that this notebook’s full method is already optimal on this map.
 """
 
 CODE_SOURCE = f"""# {MARKER} — shared optional visual (FrozenLake GIF + step slider).
