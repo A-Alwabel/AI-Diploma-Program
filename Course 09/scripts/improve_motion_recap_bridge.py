@@ -29,6 +29,9 @@ NEW_MD = """## Motion recap (optional)
 
 The policy in the next cell is **random on purpose** so the GIF/slider foreground **transitions**, not a claim that this notebook’s full method is already optimal on this map.
 
+### Why the agent may never reach the gift (goal tile `G`)
+The code uses **uniform random actions**. That is **not** trying to “solve” FrozenLake or show a hero run to the goal. The point is to show **typical transitions**: safe tiles, edges, sometimes holes, sometimes lucky progress. **Not reaching `G` is expected** and still useful — read the **sequence** (state → action → next state → reward), not “did it win in 10 seconds?”
+
 ### Quick student check (about 60 seconds)
 - Scroll to **one core code cell above** that carries the main idea of this lesson (policy update, backup, ε-rule, training step, …).
 - In one sentence, name **one symbol or variable** from that cell that lines up with **state**, **action**, or **reward** in the FrozenLake frames.
@@ -80,7 +83,7 @@ def main() -> int:
             psrc = cell_source(prev)
             if "## Motion recap (optional)" not in psrc:
                 continue
-            if "### Quick student check" in psrc:
+            if "### Why the agent may never reach the gift" in psrc:
                 continue
             if psrc.strip() == NEW_MD.strip():
                 continue
