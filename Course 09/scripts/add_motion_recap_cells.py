@@ -30,6 +30,11 @@ MD_SOURCE = """## Motion recap (optional)
 - **Deep RL / training at scale:** use this as a **minimal loop** (observe → act → reward → learn) while remembering real applications change the **observation**, not the basic cycle.
 
 The policy in the next cell is **random on purpose** so the GIF/slider foreground **transitions**, not a claim that this notebook’s full method is already optimal on this map.
+
+### Quick student check (about 60 seconds)
+- Scroll to **one core code cell above** that carries the main idea of this lesson (policy update, backup, ε-rule, training step, …).
+- In one sentence, name **one symbol or variable** from that cell that lines up with **state**, **action**, or **reward** in the FrozenLake frames.
+- If you cannot name a match yet, re-run the main lesson cells once, then return here — the GIF is a **mirror** for vocabulary, not a replacement for the definitions.
 """
 
 CODE_SOURCE = f"""# {MARKER} — shared optional visual (FrozenLake GIF + step slider).

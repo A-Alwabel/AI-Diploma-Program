@@ -13,7 +13,6 @@ from pathlib import Path
 import nbformat
 
 MARKER = "MOTION_RECAP_COURSE09"
-OLD_HEADING = "## Motion recap (optional)"
 
 NEW_MD = """## Motion recap (optional)
 
@@ -29,6 +28,11 @@ NEW_MD = """## Motion recap (optional)
 - **Deep RL / training at scale:** use this as a **minimal loop** (observe → act → reward → learn) while remembering real applications change the **observation**, not the basic cycle.
 
 The policy in the next cell is **random on purpose** so the GIF/slider foreground **transitions**, not a claim that this notebook’s full method is already optimal on this map.
+
+### Quick student check (about 60 seconds)
+- Scroll to **one core code cell above** that carries the main idea of this lesson (policy update, backup, ε-rule, training step, …).
+- In one sentence, name **one symbol or variable** from that cell that lines up with **state**, **action**, or **reward** in the FrozenLake frames.
+- If you cannot name a match yet, re-run the main lesson cells once, then return here — the GIF is a **mirror** for vocabulary, not a replacement for the definitions.
 """
 
 
@@ -74,7 +78,9 @@ def main() -> int:
             if prev.get("cell_type") != "markdown":
                 continue
             psrc = cell_source(prev)
-            if OLD_HEADING not in psrc and "Motion recap" not in psrc:
+            if "## Motion recap (optional)" not in psrc:
+                continue
+            if "### Quick student check" in psrc:
                 continue
             if psrc.strip() == NEW_MD.strip():
                 continue
