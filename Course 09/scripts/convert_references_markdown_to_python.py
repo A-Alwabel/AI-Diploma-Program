@@ -40,13 +40,18 @@ def _make_refs_code_cell(refs_md: str) -> dict:
     body = _soften_reference_markdown(refs_md.strip())
     if '"""' in body:
         raise ValueError("References block contains triple-double-quotes; fix manually.")
-    header = (
+    # One string per line avoids a giant r"""…""" block (easier to diff; no raw ** in the cell).
+    quoted = ",\n".join("        " + json.dumps(line, ensure_ascii=False) for line in body.split("\n"))
+    code = (
         "# References (shown with Markdown inside a Python cell — avoids SyntaxError if a Markdown block is run as code.)\n"
         "from IPython.display import Markdown, display\n\n"
-        "display(Markdown(r\"\"\""
+        "_md_refs = \"\\n\".join(\n"
+        "    [\n"
+        f"{quoted},\n"
+        "    ]\n"
+        ")\n"
+        "display(Markdown(_md_refs))\n"
     )
-    footer = "\"\"\"))\n"
-    code = header + body + "\n" + footer
     lines = code.splitlines(keepends=True)
     return {
         "cell_type": "code",
@@ -80,7 +85,9 @@ def convert_notebook(path: Path) -> bool:
             nxt = nb["cells"][i + 1]
             if nxt.get("cell_type") == "code":
                 ntxt = _cell_text(nxt)
-                if SKIP_PREFIX in ntxt and "display(Markdown(r\"\"\"" in ntxt and MARKER in ntxt:
+                if SKIP_PREFIX in ntxt and MARKER in ntxt and (
+                    "display(Markdown(r\"\"\"" in ntxt or "_md_refs" in ntxt
+                ):
                     i += 1
                     continue
 

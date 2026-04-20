@@ -26,20 +26,27 @@ def _soften_markdown(md: str) -> str:
 
 
 def _patch_code_source(src: str) -> tuple[str, bool]:
-    if OPEN not in src or "## 📚 References" not in src:
+    if "## 📚 References" not in src:
         return src, False
-    i = src.find(OPEN)
-    if i == -1:
-        return src, False
-    start = i + len(OPEN)
-    j = src.find(CLOSE, start)
-    if j == -1:
-        return src, False
-    inner = src[start:j]
-    new_inner = _soften_markdown(inner)
-    if new_inner == inner:
-        return src, False
-    return src[:start] + new_inner + src[j:], True
+    if OPEN in src:
+        i = src.find(OPEN)
+        if i == -1:
+            return src, False
+        start = i + len(OPEN)
+        j = src.find(CLOSE, start)
+        if j == -1:
+            return src, False
+        inner = src[start:j]
+        new_inner = _soften_markdown(inner)
+        if new_inner == inner:
+            return src, False
+        return src[:start] + new_inner + src[j:], True
+    # Join-list References cell (`_md_refs = "\\n".join([...])`): soften bold labels anywhere in the cell.
+    if "_md_refs" in src:
+        new = _soften_markdown(src)
+        if new != src:
+            return new, True
+    return src, False
 
 
 def patch_notebook(path: Path) -> bool:
