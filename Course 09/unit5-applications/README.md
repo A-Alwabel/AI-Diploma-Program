@@ -1,6 +1,10 @@
 # Unit 5: Applications and Advanced Topics
 ## AIAT 123 - Reinforcement Learning
 
+## Bridge from Units 1–4
+
+Units 1–4 built the core stack: formulation, tabular methods, deep RL, and exploration design. Unit 5 **replays that vocabulary in applied settings**: domains, multi-agent coordination, safety and ethics, and extension directions (for example hierarchical, goal-conditioned, and model-based ideas). Treat each application topic as a lens on the same RL loop, not a separate subject.
+
 ## Before You Start
 
 Make sure you have completed Units 1 to 4 and are comfortable with:

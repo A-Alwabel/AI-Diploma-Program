@@ -28,6 +28,7 @@ Students may use these supporting documents when needed:
 - `DOCS/GLOSSARY.md`
 - `DOCS/ALGORITHM_CHEAT_SHEET.md`
 - `DOCS/FINAL_REVIEW_GUIDE.md`
+- `RL_LEARNING_JOURNEY.md` (course narrative across units)
 
 ## Course Learning Outcomes
 
@@ -54,6 +55,10 @@ By the end of the course, students should be able to:
 | Unit 3 | `unit3-deep-rl/` | Deep RL methods and training stability |
 | Unit 4 | `unit4-exploration-exploitation/` | Exploration strategy |
 | Unit 5 | `unit5-applications/` | Applications and advanced integration |
+
+## How the units fit together
+
+Read **[`RL_LEARNING_JOURNEY.md`](RL_LEARNING_JOURNEY.md)** once at the beginning of the course and again before the final project. It is a short narrative map from problem formulation (Unit 1) through classical methods, deep RL, exploration, and applied extensions (Unit 5), so the five units read as **one RL story** rather than isolated topics.
 
 ## Student Workflow
 

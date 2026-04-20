@@ -1,5 +1,9 @@
 # Unit 1: Reinforcement Learning Fundamentals
 
+## Where this unit sits in the course
+
+You are at the **foundation**: MDPs, value-style reasoning, Gym `reset` / `step`, and how to **formulate** states, actions, and rewards before leaning on large learning loops. For how Unit 1 connects to Units 2–5, read [`../RL_LEARNING_JOURNEY.md`](../RL_LEARNING_JOURNEY.md).
+
 ## Before You Start
 
 Make sure you are comfortable with:

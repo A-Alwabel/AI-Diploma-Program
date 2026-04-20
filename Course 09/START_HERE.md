@@ -4,11 +4,12 @@ This course is part of Semester 2 of the AI Diploma Program.
 
 ## Student Quick Start
 
-1. Read `README.md`
+1. Read `README.md` and skim `RL_LEARNING_JOURNEY.md` (how Units 1–5 connect)
 2. Set up the environment
 3. Start `unit1-rl-fundamentals/`
 4. Follow the numbered notebooks in order
 5. Complete the exercise, then the quiz
+6. Re-open `RL_LEARNING_JOURNEY.md` before starting the course project to reconnect the arc
 
 ## Environment Setup
 
@@ -52,7 +53,7 @@ You should already be comfortable with:
 
 ## Recommended Learning Path
 
-1. Read `README.md`
+1. Read `README.md` and skim `RL_LEARNING_JOURNEY.md`
 2. Read the `README.md` inside the current unit
 3. Complete the numbered example notebooks in order
 4. Complete the unit exercise notebook
@@ -96,6 +97,7 @@ If a notebook is not clear:
 - `DOCS/GLOSSARY.md`
 - `DOCS/ALGORITHM_CHEAT_SHEET.md`
 - `DOCS/FINAL_REVIEW_GUIDE.md`
+- `RL_LEARNING_JOURNEY.md` (how Units 1–5 connect)
 
 ## Progress Tracking
 

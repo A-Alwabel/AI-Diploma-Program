@@ -1,6 +1,10 @@
 # Unit 2: Policy and Value-Based Methods
 ## AIAT 123 - Reinforcement Learning
 
+## Bridge from Unit 1
+
+Unit 1 established MDPs, Bellman-style thinking, Gym interaction, and **problem formulation**. Unit 2 uses the same agent–environment loop but focuses on **model-free learning**: sampling trajectories, estimating values from data, and control with methods such as Q-learning and SARSA without assuming a small closed-form world model.
+
 ## Before You Start
 
 Make sure you have completed Unit 1 and can already:

@@ -1,6 +1,10 @@
 # Unit 3: Deep Reinforcement Learning
 ## AIAT 123 - Reinforcement Learning
 
+## Bridge from Unit 2
+
+Unit 2 emphasized **tabular** updates (one entry per state or state–action pair). Unit 3 keeps the same goals—evaluation and control—but uses **function approximation** (typically neural networks) so larger or continuous observation structures stay tractable. Expect the same questions about targets, data, and stability, now in a deep learning setting.
+
 ## Before You Start
 
 Make sure you have completed Unit 2 and are comfortable with:
