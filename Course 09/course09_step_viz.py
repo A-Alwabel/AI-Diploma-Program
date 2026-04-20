@@ -2,6 +2,9 @@
 
 Record rgb_array frames from Gymnasium, show an animated GIF, and optionally
 scrub frames with ipywidgets + matplotlib.
+
+Place this file at the **Course 09** root. Notebooks should add that directory to
+``sys.path`` (walk parents from ``Path.cwd()``) before ``import course09_step_viz``.
 """
 
 from __future__ import annotations
@@ -115,3 +118,5 @@ def display_step_slider(frames: Sequence[np.ndarray], *, title: str = "Frame") -
     slider.observe(on_change, names="value")
     display(widgets.VBox([widgets.HBox([slider, play]), out]))
     draw(0)
+
+
