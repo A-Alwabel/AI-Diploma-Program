@@ -16,6 +16,15 @@ MARKER = "## 📚 References"
 SKIP_PREFIX = "# References (shown with Markdown inside a Python cell"
 
 
+def _soften_reference_markdown(md: str) -> str:
+    """Use ### headings instead of **Labels:** so accidental 'run as code' fails less badly."""
+    out = md
+    out = out.replace("**Books:**", "### Books")
+    out = out.replace("**Papers:**", "### Papers")
+    out = out.replace("**State-of-the-Art:**", "### State-of-the-art")
+    return out
+
+
 def _cell_text(cell: dict) -> str:
     return "".join(cell.get("source", []))
 
@@ -28,7 +37,7 @@ def _set_source(cell: dict, text: str) -> None:
 
 
 def _make_refs_code_cell(refs_md: str) -> dict:
-    body = refs_md.strip()
+    body = _soften_reference_markdown(refs_md.strip())
     if '"""' in body:
         raise ValueError("References block contains triple-double-quotes; fix manually.")
     header = (
