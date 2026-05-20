@@ -1,55 +1,39 @@
-# Unit 5: Production Pipelines and Monitoring | خطوط الإنتاج والمراقبة
-## AIAT 125 - AI Model Deployment
+# Unit 5: Monitoring, Maintenance, and MLOps
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+## Where this unit sits in the course
 
-Before starting this unit, confirm:
+Deployment does not end at launch. This unit covers **living models**: monitoring, drift, retraining, experiments, and safe rollouts.
 
-- [ ] Completed Unit 4: Containers and Orchestration
-- [ ] Understand model lifecycle basics (train → deploy → monitor)
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
+## Prerequisites
 
-### Learning Objectives | أهداف التعلم
+- Units 1–4 complete
+- `mlflow` optional but recommended (`../START_HERE.md`)
 
-By the end of this unit, students will be able to:
-- Build MLOps pipelines
-- Implement model monitoring
-- Track model performance
-- Set up alerting systems
-- Handle model drift
+## Learning goals
 
----
+- Track model performance and set alerts
+- Detect drift and plan retraining
+- Use experiment tracking (MLflow-style patterns)
+- Run A/B tests and canary deployments
+- Keep models reproducible across retrains
 
-## Topics Covered | المواضيع المغطاة
+## Study order (required)
 
-1. **MLOps Pipelines**
-   - CI/CD for ML
-   - Automated training pipelines
-   - Data pipelines
-   - Experiment tracking
+1. `examples/01_model_monitoring.ipynb`
+2. `examples/02_retraining_pipeline.ipynb`
+3. `examples/03_alerting_incident_management.ipynb`
+4. `examples/04_drift_detection.ipynb`
+5. `examples/05_experiment_tracking_mlflow_wandb.ipynb`
+6. `examples/06_model_versioning_reproducibility.ipynb`
+7. `examples/07_ab_testing_canary_deployment.ipynb`
 
-2. **Model Monitoring**
-   - Performance metrics
-   - Prediction monitoring
-   - Data drift detection
-   - Model drift detection
+Reference: `../DOCS/REFERENCE_NOTEBOOKS/unit5-pipelines-monitoring/examples/`
 
-3. **Performance Tracking**
-   - Latency monitoring
-   - Throughput tracking
-   - Resource usage
-   - Cost monitoring
+## Exercise and quiz
 
-4. **Alerting Systems**
-   - Setting up alerts
-   - Anomaly detection
-   - Automated responses
-   - Incident management
+1. `exercises/01_monitoring_exercise.ipynb`
+2. `../QUIZZES/quiz_05.md`
 
----
+Before the final project, re-read [`../DEPLOYMENT_LEARNING_JOURNEY.md`](../DEPLOYMENT_LEARNING_JOURNEY.md).
 
-**Unit Duration:** 2 weeks  
-**Difficulty:** Intermediate-Advanced  
-**Prerequisites:** Units 1-4 completion
-
+**Unit duration:** ~2 weeks | **Difficulty:** Advanced

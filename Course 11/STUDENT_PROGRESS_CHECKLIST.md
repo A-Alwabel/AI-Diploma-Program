@@ -1,56 +1,47 @@
-# Student Progress Checklist | قائمة تقدم الطالب
+# Student Progress Checklist
 ## AIAT 125 - AI Model Deployment
 
-**Note:** Templates in `TEMPLATES/` are instructor-only. Students should follow units and notebooks.
+Track numbered notebooks, exercises, and quizzes. Solutions under `unit*/solutions/` are for instructor review unless your instructor says otherwise.
 
 ---
 
-## 📋 Course Progress | تقدم الدورة
+## Course Progress
 
-### Unit 1: Deployment Basics
+### Unit 1: Deployment Basics (`unit1-deployment-basics/`)
 - [ ] Read Unit 1 README
-- [ ] Complete all examples
-- [ ] Complete all exercises
-- [ ] Review solutions
+- [ ] Complete examples 01–06
+- [ ] Complete `exercises/01_packaging_exercise.ipynb`
 - [ ] Take Quiz 01
-- [ ] Take Unit 1 Test
 
 ### Unit 2: Model Packaging and Serving (`unit2-versioning-serving/`)
 - [ ] Read Unit 2 README
-- [ ] Complete all examples
-- [ ] Complete all exercises
-- [ ] Review solutions
+- [ ] Complete examples 01–07
+- [ ] Complete `exercises/03_api_deployment_exercise.ipynb`
 - [ ] Take Quiz 02
-- [ ] Take Unit 2 Test
 
-### Unit 3: Cloud Deployment and Infrastructure (`unit3-cloud-deployment/`)
+### Unit 3: Cloud Deployment (`unit3-cloud-deployment/`)
 - [ ] Read Unit 3 README
-- [ ] Complete all examples
-- [ ] Complete all exercises
-- [ ] Review solutions
+- [ ] Complete examples 01–06
+- [ ] Complete `exercises/01_cloud_deployment_exercise.ipynb`
 - [ ] Take Quiz 03
-- [ ] Take Unit 3 Test
 
 ### Unit 4: Containers and Orchestration (`unit4-containers-orchestration/`)
 - [ ] Read Unit 4 README
-- [ ] Complete all examples
-- [ ] Complete all exercises
-- [ ] Review solutions
+- [ ] Complete examples 01–04
+- [ ] Complete `exercises/01_docker_and_containerization_exercise.ipynb`
 - [ ] Take Quiz 04
-- [ ] Take Unit 4 Test
 
-### Unit 5: Monitoring, Maintenance, and MLOps (`unit5-pipelines-monitoring/`)
+### Unit 5: Monitoring and MLOps (`unit5-pipelines-monitoring/`)
 - [ ] Read Unit 5 README
-- [ ] Complete all examples
-- [ ] Complete all exercises
-- [ ] Review solutions
+- [ ] Complete examples 01–07
+- [ ] Complete `exercises/01_monitoring_exercise.ipynb`
 - [ ] Take Quiz 05
-- [ ] Take Unit 5 Test
 
-### Projects
-- [ ] Complete Project 01
-- [ ] Complete Project 02 (optional)
+### Capstone
+- [ ] Read [`DEPLOYMENT_LEARNING_JOURNEY.md`](DEPLOYMENT_LEARNING_JOURNEY.md) again
+- [ ] Complete `PROJECTS/ML_Deployment_Pipeline/`
+- [ ] Take `ASSESSMENTS/Final_Exam.md`
 
 ---
 
-**Course Completion:** [ ] Complete
+**Course completion:** [ ] All units, project, and final exam done

@@ -1,0 +1,12 @@
+============================================================
+Part 4: Running RL Simulations
+============================================================
+Starting state: 0
+Step 1: state=0, action=0, next_state=0, reward=0.0, terminated=False, truncated=False
+Step 2: state=0, action=0, next_state=0, reward=0.0, terminated=False, truncated=False
+Step 3: state=0, action=0, next_state=0, reward=0.0, terminated=False, truncated=False
+Step 4: state=0, action=3, next_state=0, reward=0.0, terminated=False, truncated=False
+Step 5: state=0, action=0, next_state=0, reward=0.0, terminated=False, truncated=False
+Step 6: state=0, action=2, next_state=1, reward=0.0, terminated=False, truncated=False
+Step 7: state=1, action=2, next_state=2, reward=0.0, terminated=False, truncated=False
+Step 8: state=2, action=0, next_state=1, reward=0.0, terminated=False, truncated=False

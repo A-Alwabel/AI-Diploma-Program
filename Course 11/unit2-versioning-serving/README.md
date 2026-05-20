@@ -1,55 +1,37 @@
-# Unit 2: Model Versioning and Serving | إصدار النماذج وتقديمها
-## AIAT 125 - AI Model Deployment
+# Unit 2: Model Packaging and Serving
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+## Where this unit sits in the course
 
-Before starting this unit, confirm:
+Unit 1 showed **local** packaging and APIs. Here you deepen **serving**: versioning, multiple frameworks, and batch vs real-time inference.
 
-- [ ] Completed Unit 1: Introduction to AI Model Deployment
-- [ ] Comfortable with APIs and model serialization
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
+## Prerequisites
 
-### Learning Objectives | أهداف التعلم
+- Unit 1 complete
+- FastAPI and Flask installed (`../START_HERE.md`)
 
-By the end of this unit, students will be able to:
-- Implement model versioning systems
-- Use model serving frameworks
-- Set up A/B testing for models
-- Implement rollback strategies
-- Manage model lifecycle
+## Learning goals
 
----
+- Version models and record metadata for rollback
+- Serve with Flask and FastAPI
+- Compare pickle, ONNX, and framework-specific formats
+- Contrast batch and real-time inference paths
+- Understand scaling concepts (Kubernetes intro)
 
-## Topics Covered | المواضيع المغطاة
+## Study order (required)
 
-1. **Model Versioning**
-   - Version control for models
-   - Model registries
-   - Semantic versioning
-   - Model metadata
+1. `examples/01_flask_api_deployment.ipynb`
+2. `examples/02_fastapi_deployment.ipynb`
+3. `examples/03_model_versioning.ipynb`
+4. `examples/04_saving_loading_models_pickle_onnx.ipynb`
+5. `examples/05_tensorflow_serving_torchserve.ipynb`
+6. `examples/06_batch_vs_realtime_inference.ipynb`
+7. `examples/07_kubernetes_scaling.ipynb`
 
-2. **Model Serving**
-   - Model serving frameworks (TensorFlow Serving, TorchServe)
-   - REST API serving
-   - Batch vs real-time serving
-   - Model optimization for serving
+Reference material: `../DOCS/REFERENCE_NOTEBOOKS/unit2-versioning-serving/examples/`
 
-3. **A/B Testing**
-   - Setting up A/B tests
-   - Traffic splitting
-   - Performance comparison
-   - Statistical significance
+## Exercise and quiz
 
-4. **Rollback Strategies**
-   - Version rollback
-   - Canary deployments
-   - Blue-green deployments
-   - Monitoring for issues
+1. `exercises/03_api_deployment_exercise.ipynb`
+2. `../QUIZZES/quiz_02.md`
 
----
-
-**Unit Duration:** 2 weeks  
-**Difficulty:** Intermediate  
-**Prerequisites:** Unit 1 completion
-
+**Unit duration:** ~2 weeks | **Difficulty:** Intermediate

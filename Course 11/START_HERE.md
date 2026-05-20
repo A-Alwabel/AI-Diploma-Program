@@ -1,77 +1,73 @@
-# START HERE! | ابدأ من هنا!
+# START HERE!
 
-## 👋 Welcome! | مرحباً!
+## Welcome
 
 This course is part of Semester 2 of the AI Diploma Program.
 
-**✅ Official Path:** Follow the unit folders in order (Unit 1 → Unit 5).  
-**📚 Official unit structure:** See **README.md** (Unit ↔ Folder mapping) and `../DETAILED_UNIT_DESCRIPTIONS.md` for learning outcomes per unit.
+**Official path:** Follow the unit folders in order (Unit 1 → Unit 5).  
+**Notebook order:** See [`DOCS/EXAMPLES_ORDER.md`](DOCS/EXAMPLES_ORDER.md) and each unit `README.md`.
 
 ---
 
-## 🚀 Student Quick Start (3 steps)
+## Student Quick Start (3 steps)
 
-1. **Read README.md** — Course overview, unit mapping, and what you'll learn.
-2. **Set up your environment** — Install dependencies below. For free GPU: use **Google Colab**.
-3. **Start Unit 1** — Open `unit1-deployment-basics/README.md` and do the example notebooks in file order (01, 02, 03, …).
+1. **Read [`README.md`](README.md)** — Course overview, unit mapping, and outcomes.
+2. **Set up your environment** — Follow **`DOCS/REQUIREMENTS_COURSE_11.md`** (or `pip install -r requirements-course11.txt` from this folder).
+3. **Start Unit 1** — Open `unit1-deployment-basics/README.md` and run example notebooks **01 → 06** in order.
 
-### Required packages
+### Quick install
 
 ```bash
-pip install numpy matplotlib
-pip install torch torchvision        # PyTorch (model serialization and ONNX)
-pip install onnx onnxruntime         # ONNX model export and inference
-pip install fastapi uvicorn          # REST API deployment (Unit 2)
-pip install scikit-learn
+cd "Course 11"
+pip install -r requirements-course11.txt
 ```
 
-For cloud deployment units (Unit 3), additional cloud SDKs may be needed:
-```bash
-pip install boto3                    # AWS (Unit 3 - SageMaker)
-pip install mlflow                   # MLOps tracking (Unit 4)
-```
+See **`DOCS/REQUIREMENTS_COURSE_11.md`** for unit-by-unit optional packages (cloud, Docker, MLflow).
 
 ### Verify setup
 
 ```python
-import torch, onnxruntime, fastapi
+import torch, onnxruntime, fastapi, sklearn
 print("PyTorch:", torch.__version__)
-print("ONNXRuntime:", onnxruntime.__version__)
+print("ONNX Runtime:", onnxruntime.__version__)
+print("FastAPI:", fastapi.__version__)
 ```
 
 ---
 
-## 📋 Prerequisites | المتطلبات الأساسية
+## Prerequisites
 
-**Before starting this course, you must have completed:**
-- All Semester 1 courses (AIAT 111–116)
-- Course 08 — Deep Learning (model training and PyTorch)
-- Course 09 or 10 (recommended background in model development)
+**Before starting this course, you should have completed:**
 
----
-
-## 📚 Learning Path | مسار التعلم
-
-1. **Read README.md** — Understand course overview and goals.
-2. **Review prerequisites** — Make sure you can train a model and save it with PyTorch.
-3. **Start with Unit 1** — Deployment Basics: model serialization (Pickle, ONNX), local testing.
-4. **Unit 2** — Model Packaging and Serving: REST APIs with Flask/FastAPI, gRPC.
-5. **Unit 3** — Cloud Deployment: AWS SageMaker, Lambda, GCP Vertex AI, Azure ML.
-6. **Unit 4** — Containers and Orchestration: Docker, Kubernetes, CI/CD pipelines.
-7. **Unit 5** — Monitoring, Maintenance, and MLOps: drift detection, retraining, A/B testing, MLflow.
-8. **Complete exercises** — Practice what you learn in each unit.
-9. **Take quizzes** — Test your understanding after each unit.
-
-**📌 Notebook order:** In each unit, do the example notebooks in **file order** (01, 02, 03, …). Always use the order shown in each unit's README, not slide numbers.
-
-**❓ If a notebook isn't clear:** Open `DOCS/WHEN_A_NOTEBOOK_IS_NOT_CLEAR.md` (if available) or ask your instructor.
+- Semester 1 courses (AIAT 111–116)
+- **Course 08** — Deep Learning (train and save models with PyTorch)
+- Familiarity with basic Python APIs and the command line
 
 ---
 
-## ✅ Progress Tracking | تتبع التقدم
+## Learning Path
 
-Use `STUDENT_PROGRESS_CHECKLIST.md` to track your progress through all 5 units.
+1. Read [`README.md`](README.md) and skim [`DEPLOYMENT_LEARNING_JOURNEY.md`](DEPLOYMENT_LEARNING_JOURNEY.md).
+2. **Unit 1** — Package models, build APIs, test locally.
+3. **Unit 2** — Versioning, FastAPI/Flask serving, batch vs real-time.
+4. **Unit 3** — Cloud platforms (AWS, Azure, GCP), security, logging.
+5. **Unit 4** — Docker, Kubernetes, CI/CD.
+6. **Unit 5** — Monitoring, drift, retraining, experiment tracking, A/B deploy.
+7. Complete exercises and quizzes per unit.
+8. Finish the course project and final exam.
+
+**Notebook order:** In each unit, follow **numbered** notebooks only (`01`, `02`, …). Do not use long descriptive filenames in `examples/` unless assigned—they are archived under `DOCS/REFERENCE_NOTEBOOKS/`.
+
+**If a notebook runs but still feels confusing:** Open **`DOCS/WHEN_A_NOTEBOOK_IS_NOT_CLEAR.md`**.
+
+Each example notebook ends with a short **Did you understand?** checklist—use it before moving on.
 
 ---
 
-**Ready to begin?** Read the course README.md first!
+## Progress Tracking
+
+Use [`STUDENT_PROGRESS_CHECKLIST.md`](STUDENT_PROGRESS_CHECKLIST.md) to track completion.
+
+---
+
+**Ready?** Open [`unit1-deployment-basics/README.md`](unit1-deployment-basics/README.md) and start with `examples/01_model_serving_api.ipynb`.

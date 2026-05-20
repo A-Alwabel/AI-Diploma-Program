@@ -1,118 +1,99 @@
 # AIAT 125 - AI Model Deployment
-## نشر نماذج الذكاء الاصطناعي
 
-## 🚀 NEW STUDENTS: START HERE! | الطلاب الجدد: ابدأ من هنا!
+## New Students: Start Here
 
-**👉 If you're a new student, read `START_HERE.md` FIRST!**  
-**👉 إذا كنت طالباً جديداً، اقرأ `START_HERE.md` أولاً!**
+Read [`START_HERE.md`](START_HERE.md) first.
 
----
+## Course Overview
 
-**✅ Official Path:** Follow the unit folders in order (Unit 1 → Unit 5).
-
-**📚 Official Unit Content:** See `../DETAILED_UNIT_DESCRIPTIONS.md` for detailed theoretical and practical content per unit.
-
-**Unit ↔ Folder Mapping (aligned with Detailed Unit Descriptions):**
-
-| Detailed Unit | Folder | Topic |
-|---------------|--------|-------|
-| Unit 1 | `unit1-deployment-basics/` | Introduction to AI Model Deployment |
-| Unit 2 | `unit2-versioning-serving/` | Model Packaging and Serving |
-| Unit 3 | `unit3-cloud-deployment/` | Cloud Deployment and Infrastructure |
-| Unit 4 | `unit4-containers-orchestration/` | Containers and Orchestration |
-| Unit 5 | `unit5-pipelines-monitoring/` | Monitoring, Maintenance, and MLOps |
-
-## Course Overview | نظرة عامة على الدورة
-
-This course provides comprehensive training in deploying AI models to production. Students will learn to build scalable, maintainable AI systems using modern deployment tools and practices.
+This course teaches how to deploy AI models to production: packaging artifacts, serving APIs, cloud hosting, containers, CI/CD, and MLOps monitoring.
 
 **Course Code:** AIAT 125  
-**Language:** Bilingual (Arabic/English)
+**Language:** English  
 **Credit Hours:** 4  
 **Lecture Hours:** 2  
 **Practical Hours:** 4  
 **Total Hours:** 96 (32 theoretical + 64 practical)
 
-**Unit Breakdown:**
-- Unit 1: 6 theoretical + 12 practical = 18 hours
-- Unit 2: 6 theoretical + 13 practical = 19 hours
-- Unit 3: 6 theoretical + 13 practical = 19 hours
-- Unit 4: 7 theoretical + 13 practical = 20 hours
-- Unit 5: 7 theoretical + 13 practical = 20 hours
+## Supporting Documents
 
+Students may use these when needed:
 
----
+- [`../docs/COURSE_MAP.md`](../docs/COURSE_MAP.md)
+- [`../docs/SETUP_GUIDE.md`](../docs/SETUP_GUIDE.md)
+- [`DOCS/EXAMPLES_ORDER.md`](DOCS/EXAMPLES_ORDER.md)
+- [`DOCS/REQUIREMENTS_COURSE_11.md`](DOCS/REQUIREMENTS_COURSE_11.md)
+- [`DOCS/WHEN_A_NOTEBOOK_IS_NOT_CLEAR.md`](DOCS/WHEN_A_NOTEBOOK_IS_NOT_CLEAR.md)
+- [`DEPLOYMENT_LEARNING_JOURNEY.md`](DEPLOYMENT_LEARNING_JOURNEY.md) (course narrative across units)
 
+## Course Learning Outcomes
 
----
+By the end of the course, students should be able to:
 
-## Safety Procedures | إجراءات السلامة
+- Explain the AI model deployment lifecycle and key production challenges.
+- Package models for different runtimes (pickle, ONNX, PyTorch artifacts).
+- Build and manage REST APIs for model inference.
+- Use Docker and Kubernetes for reproducible, scalable deployment.
+- Set up CI/CD pipelines for model delivery.
+- Monitor deployed models and respond to drift, bias, and degradation.
 
-**Important:** Please review the safety procedures before starting any lab work or practical exercises.
+## Unit Map
 
-**مهم:** يرجى مراجعة إجراءات السلامة قبل بدء أي عمل مخبري أو تمارين عملية.
+| Unit | Folder | Main Focus |
+| ---- | ------ | ---------- |
+| Unit 1 | `unit1-deployment-basics/` | Serialization, APIs, local deploy, validation |
+| Unit 2 | `unit2-versioning-serving/` | Serving frameworks, versioning, batch vs real-time |
+| Unit 3 | `unit3-cloud-deployment/` | AWS, Azure, GCP, cloud security and logging |
+| Unit 4 | `unit4-containers-orchestration/` | Docker, Kubernetes, CI/CD |
+| Unit 5 | `unit5-pipelines-monitoring/` | Monitoring, drift, retraining, MLOps tooling |
 
-📖 **Full Safety Guide:** See `../DOCS/SAFETY_PROCEDURES.md` for complete safety procedures and requirements.
+## How the units fit together
 
-**Key Safety Rules:**
-- ✅ Maintain clean, organized workspace
-- ✅ Keep food and drinks away from equipment
-- ✅ Know locations of fire extinguishers and first aid tools
-- ✅ Report safety concerns immediately
+Read **[`DEPLOYMENT_LEARNING_JOURNEY.md`](DEPLOYMENT_LEARNING_JOURNEY.md)** once at the start and again before the final project. It connects packaging → serving → cloud → containers → MLOps into one deployment story.
 
----
+## Student Workflow
 
-## Prerequisites | المتطلبات الأساسية
+Follow this pattern in every unit:
 
-**Python Version**: Python 3.8+ required (3.10 or 3.11 recommended)
+1. Read the unit `README.md`
+2. Complete the numbered example notebooks in order (`01`, `02`, `03`, …)
+3. Complete the unit exercise notebook
+4. Take the unit quiz
 
-**Knowledge**: Students should have:
-- Completion of Courses 01-10
-- Understanding of AI/ML models
-- Basic knowledge of software engineering
+For the whole course:
 
----
+1. Start with `START_HERE.md`
+2. Work through Units 1 to 5 in order
+3. Complete the project in `PROJECTS/`
+4. Finish with `ASSESSMENTS/Final_Exam.md`
 
-## Course Learning Outcomes (CLOs) | مخرجات التعلم
+## Important Note on Notebook Naming
 
-**The detailed objectives of the training program are: For the trainee to be able to:**
+Some units previously contained long descriptive notebook filenames alongside numbered lessons.
 
-**CLO1:** Explain key concepts of AI model deployment and the comprehensive deployment process.
+**Student rule:**
 
-**CLO2:** Apply deployment techniques for packaging AI models for deployment in different environments.
+- Only the **numbered notebooks** (`01`, `02`, `03`, …) are the required study path.
+- Long descriptive notebooks are **reference material** under `DOCS/REFERENCE_NOTEBOOKS/` unless your instructor assigns one.
 
-**CLO3:** Implement and manage Application Programming Interfaces (APIs) for serving AI models and creating inference pipelines.
+## Course Structure
 
-**CLO4:** Use containerization techniques (Docker) and orchestration tools (Kubernetes) for deploying scalable models.
-
-**CLO5:** Set up Continuous Integration and Continuous Delivery (CI/CD) pipelines for deploying AI models with minimal downtime.
-
-**CLO6:** Monitor deployed AI models in terms of performance and troubleshoot common issues related to model degradation or bias.
-
----
-
-## 📁 Course Structure | هيكل الدورة
-
-```
+```text
 Course 11/
-│
 ├── README.md
 ├── START_HERE.md
+├── DEPLOYMENT_LEARNING_JOURNEY.md
 ├── STUDENT_PROGRESS_CHECKLIST.md
-│
-├── unit1-deployment-basics/        📚 Unit 1: Introduction to Deployment
-├── unit2-versioning-serving/        📚 Unit 2: Versioning & Serving
-├── unit3-cloud-deployment/          📚 Unit 3: Cloud Deployment
-├── unit4-containers-orchestration/  📚 Unit 4: Containers & Orchestration
-├── unit5-pipelines-monitoring/      📚 Unit 5: Pipelines & Monitoring
-│
+├── unit1-deployment-basics/
+├── unit2-versioning-serving/
+├── unit3-cloud-deployment/
+├── unit4-containers-orchestration/
+├── unit5-pipelines-monitoring/
 ├── PROJECTS/
 ├── QUIZZES/
+├── ASSESSMENTS/
 └── DOCS/
 ```
 
----
-
-**Created for**: AIAT 125 - AI Model Deployment  
-**Last Updated:** 2025-12-10
-
+**Created for:** AIAT 125 - AI Model Deployment  
+**Last Updated:** 2026-05-17
