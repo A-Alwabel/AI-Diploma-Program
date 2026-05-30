@@ -1,0 +1,24 @@
+# ── Stage 1: builder ────────────────────────────────────────────────────────
+# Uses the full image so we have compilers for C extensions
+FROM python:3.10 AS builder
+
+WORKDIR /build
+
+# Install dependencies into a local prefix (not system site-packages)
+COPY requirements.txt .
+RUN pip install --no-cache-dir --prefix=/install -r requirements.txt
+
+# ── Stage 2: runtime ────────────────────────────────────────────────────────
+# slim has no compilers — much smaller
+FROM python:3.10-slim
+
+WORKDIR /app
+
+# Copy only the installed packages from the builder stage
+COPY --from=builder /install /usr/local
+
+# Copy application code and model
+COPY . .
+
+EXPOSE 8000
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]

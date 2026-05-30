@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: iris-api-svc
+spec:
+  type: LoadBalancer          # Cloud provider provisions an external IP
+                              # Use NodePort for bare-metal / local clusters
+  selector:
+    app: iris-api             # Route traffic to pods with this label
+  ports:
+    - protocol: TCP
+      port: 80                # External port clients connect to
+      targetPort: 8000        # Port the container listens on

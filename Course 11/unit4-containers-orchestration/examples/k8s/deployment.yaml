@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: iris-api            # Name of this Deployment object
+  labels:
+    app: iris-api
+spec:
+  replicas: 3               # Run 3 identical pods at all times
+  selector:
+    matchLabels:
+      app: iris-api         # This Deployment manages pods with this label
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1     # At most 1 pod can be down during an update
+      maxSurge: 1           # At most 1 extra pod can exist during an update
+  template:
+    metadata:
+      labels:
+        app: iris-api       # Pods get this label — the selector above matches it
+    spec:
+      containers:
+        - name: iris-api
+          image: iris-api:v1            # Image built in Notebook 01
+          imagePullPolicy: IfNotPresent # Use local image if already pulled
+          ports:
+            - containerPort: 8000
+          resources:
+            requests:
+              cpu: "100m"         # 0.1 CPU cores guaranteed
+              memory: "128Mi"     # 128 MB RAM guaranteed
+            limits:
+              cpu: "500m"         # Cannot exceed 0.5 CPU cores
+              memory: "256Mi"     # Cannot exceed 256 MB RAM
+          livenessProbe:
+            # K8s calls /health every 10s.
+            # If it fails 3 times in a row, the pod is killed and restarted.
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 5   # Wait 5s before first check (let app start)
+            periodSeconds: 10
+            failureThreshold: 3
+          readinessProbe:
+            # K8s calls /health every 5s.
+            # Pod only receives traffic when this passes.
+            # Unlike liveness: a not-ready pod is removed from the load balancer
+            # but NOT restarted — it waits to recover on its own.
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 3
+            periodSeconds: 5
+            failureThreshold: 2

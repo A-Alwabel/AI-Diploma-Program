@@ -1,0 +1,120 @@
+name: ML Model CI/CD
+
+# Trigger: every push to the main branch
+on:
+  push:
+    branches: [main]
+
+env:
+  IMAGE_NAME: iris-api
+  REGISTRY: ghcr.io/${{ github.repository_owner }}
+
+jobs:
+  # ── Job 1: Unit Tests ──────────────────────────────────────────────────
+  test:
+    name: Run unit tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: |
+          pip install -r app/requirements.txt
+          pip install pytest
+
+      - name: Run tests
+        run: pytest tests/ -v
+        # If any test fails, this job fails and downstream jobs are skipped.
+
+  # ── Job 2: Train and Validate ──────────────────────────────────────────
+  train-and-validate:
+    name: Train model and run validation gate
+    needs: test          # Only runs if 'test' job passes
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: pip install -r app/requirements.txt
+
+      - name: Train model
+        run: python app/model_train.py
+        # Saves model artifact to app/model/iris_rf.joblib
+
+      - name: Validate model
+        run: python validate_model.py
+        # Exits with code 1 if accuracy < 0.90 or p95 latency > 100ms
+        # GitHub Actions treats non-zero exit as a failure — blocks deploy
+
+      - name: Upload model artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: trained-model
+          path: app/model/
+          # Share the trained model with the build job below
+
+  # ── Job 3: Build and Push Docker Image ────────────────────────────────
+  build-and-push:
+    name: Build Docker image and push to registry
+    needs: train-and-validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Download model artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: trained-model
+          path: app/model/
+
+      - name: Log in to registry
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+      - name: Build and tag image
+        run: |
+          docker build -t $REGISTRY/$IMAGE_NAME:${{ github.sha }} app/
+          docker tag $REGISTRY/$IMAGE_NAME:${{ github.sha }} $REGISTRY/$IMAGE_NAME:latest
+
+      - name: Push image
+        run: |
+          docker push $REGISTRY/$IMAGE_NAME:${{ github.sha }}
+          docker push $REGISTRY/$IMAGE_NAME:latest
+
+  # ── Job 4: Deploy to Kubernetes ───────────────────────────────────────
+  deploy:
+    name: Deploy to Kubernetes
+    needs: build-and-push
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Configure kubectl
+        run: echo "${{ secrets.KUBECONFIG }}" > /tmp/kubeconfig
+        # KUBECONFIG is a secret stored in GitHub repo settings
+
+      - name: Update image tag in deployment
+        run: |
+          KUBECONFIG=/tmp/kubeconfig kubectl set image \
+            deployment/iris-api \
+            iris-api=$REGISTRY/$IMAGE_NAME:${{ github.sha }}
+
+      - name: Wait for rollout
+        run: |
+          KUBECONFIG=/tmp/kubeconfig kubectl rollout status \
+            deployment/iris-api --timeout=120s
+
+      - name: Run smoke test
+        run: |
+          pip install requests
+          python smoke_test.py
+          # Sends 3 test requests; fails if any returns non-200
