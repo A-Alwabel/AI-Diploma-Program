@@ -3,11 +3,21 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import joblib
 import numpy as np
+import os
+import subprocess
+import sys
 
 app = FastAPI(title="Iris Classifier API")
 
+# The model file (model/iris_rf.joblib) is gitignored, so a fresh clone has
+# no model yet. If it is missing, train it once before loading — this makes
+# `uvicorn main:app` work locally with no separate setup step.
+MODEL_PATH = "model/iris_rf.joblib"
+if not os.path.exists(MODEL_PATH):
+    subprocess.run([sys.executable, "model_train.py"], check=True)
+
 # Load model once at startup — not on every request
-model = joblib.load("model/iris_rf.joblib")
+model = joblib.load(MODEL_PATH)
 CLASSES = ["setosa", "versicolor", "virginica"]
 
 
