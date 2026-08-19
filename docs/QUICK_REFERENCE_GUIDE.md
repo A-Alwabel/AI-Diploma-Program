@@ -26,10 +26,10 @@
 |------|--------|-------|------|------------|
 | **121** | Natural Language Processing | 64 | 10 | Text processing, embeddings, classification, deep learning NLP, transformers |
 | **122** | Deep Learning | 64 | 5 | Neural networks, CNNs, RNNs, transformers, GANs, model deployment |
-| **123** | Reinforcement Learning | 80 | 6 | MDPs, Q-learning, deep RL, exploration strategies, multi-agent RL |
+| **123** | Reinforcement Learning | 96 | 6 | MDPs, Q-learning, deep RL, exploration strategies, multi-agent RL |
 | **124** | Generative AI | 64 | 7 | GANs, VAEs, transformers, text/image generation, ethics |
-| **125** | Deploying AI Models | 80 | 6 | Model packaging, APIs, containers, cloud deployment, MLOps |
-| **126** | Graduation Project | 112 | 5 | Project planning, implementation, evaluation, documentation, presentation |
+| **125** | Deploying AI Models | 96 | 6 | Model packaging, APIs, containers, cloud deployment, MLOps |
+| **126** | Graduation Project | 80 | 5 | Project planning, implementation, evaluation, documentation, presentation |
 
 ---
 
@@ -66,9 +66,8 @@
 ### Course Hours Breakdown
 
 **64-hour courses:** 111, 113, 116, 121, 122, 124  
-**80-hour courses:** 123, 125  
-**96-hour courses:** 112, 114, 115  
-**112-hour course:** 126 (Graduation Project)
+**80-hour course:** 126 (Graduation Project)  
+**96-hour courses:** 112, 114, 115, 123, 125
 
 ---
 
@@ -108,7 +107,6 @@ Unit 5: Projects & Future Trends
 |----------|---------|
 | `COMPLETE_COURSE_STRUCTURE_AND_CLOS.md` | Full course structure, CLOs, unit breakdowns |
 | `DETAILED_UNIT_DESCRIPTIONS.md` | Detailed theory/practical content for each unit |
-| `CURRICULUM_SUMMARY_REPORT.md` | Statistics, analysis, completeness verification |
 | `QUICK_REFERENCE_GUIDE.md` | This file - quick navigation |
 
 ---
@@ -123,12 +121,6 @@ Unit 5: Projects & Future Trends
 → See `DETAILED_UNIT_DESCRIPTIONS.md`  
 → Navigate to "## 📘 COURSE X"  
 → Find "#### 📖 Unit X"
-
-### To find statistics:
-→ See `CURRICULUM_SUMMARY_REPORT.md`  
-→ Check summary tables and breakdowns
-
----
 
 ## 📊 COURSE PROGRESSION PATH
 
@@ -180,6 +172,6 @@ Semester 2 (Advanced)
 
 ---
 
-**Last Updated:** January 7, 2025  
-**Version:** 1.0
+**Last Updated:** 2026-08-19 (hours verified against the official PDF)  
+**Version:** 1.1
 

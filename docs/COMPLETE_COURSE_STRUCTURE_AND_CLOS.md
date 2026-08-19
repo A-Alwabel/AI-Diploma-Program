@@ -1,6 +1,8 @@
 # AI Diploma - Complete Course Structure & CLOs
 # دبلوم مشارك الذكاء الاصطناعي - هيكل الدورات ونواتج التعلم
 
+> ⚠️ INSTRUCTOR-INTERNAL. Hours and unit names verified line-by-line against the official PDF on 2026-08-19; where any other document disagrees, `AI-Diploma-Instructor/OFFICIAL_SPEC.md` wins.
+
 **Source:** دبلوم مشارك الذكاء الاصطناعي (اكاديمية طويق للتدريب) نهائي.pdf  
 **Program:** Associate Diploma in Artificial Intelligence  
 **Duration:** 2 Semesters (16 weeks each)  
@@ -292,7 +294,7 @@ The diploma consists of **12 core courses** plus a **graduation project**, distr
 ### Course 3: AIAT 113 - Mathematics and Probability for Machine Learning
 **الرياضيات والاحتمالات لتعلم الآلة**
 
-**Credit Hours:** 4 | **Theory:** 2 | **Practical:** 4 | **Contact Hours:** 6
+**Credit Hours:** 3 | **Theory:** 2 | **Practical:** 2 | **Contact Hours:** 4
 
 #### Course Learning Outcomes:
 
@@ -415,7 +417,7 @@ The diploma consists of **12 core courses** plus a **graduation project**, distr
 
 #### Unit Structure:
 
-**Unit 1: Regression Algorithms** (6 theory + 6 practical = 12 hours)
+**Unit 1: Regression Algorithms** (6 theory + 12 practical = 18 hours)
 
 **Theoretical Content:**
 - Introduction to Regression (simple, multiple, polynomial)
@@ -431,7 +433,7 @@ The diploma consists of **12 core courses** plus a **graduation project**, distr
 - Comparing regression algorithms on real datasets
 - Visualizing regression results and residuals
 
-**Unit 2: Regression and Model Evaluation** (6 theory + 6 practical = 12 hours)
+**Unit 2: Regression and Model Evaluation** (6 theory + 13 practical = 19 hours)
 
 **Theoretical Content:**
 - Model Evaluation Metrics (MSE, RMSE, MAE, R²)
@@ -955,7 +957,7 @@ This course explores the ethical implications, societal impacts, and responsible
 ### Course 9: AIAT 123 - Reinforcement Learning
 **التعلم التعزيزي**
 
-**Credit Hours:** 3 | **Theory:** 2 | **Practical:** 2 | **Contact Hours:** 4
+**Credit Hours:** 4 | **Theory:** 2 | **Practical:** 4 | **Contact Hours:** 6
 
 #### Course Learning Outcomes:
 
@@ -1025,7 +1027,7 @@ This course explores the ethical implications, societal impacts, and responsible
 - Applications: applying Deep RL in games, robotics, and optimization tasks in simulation environments
 - Handling challenges: working on exploration vs exploitation problems, stability, and experimenting with techniques like intrinsic motivation and curriculum learning
 
-**Unit 4: Exploration and Exploitation Strategies** (7 theory + 7 practical = 14 hours)
+**Unit 4: Exploration and Exploitation Strategies** (7 theory + 13 practical = 20 hours)
 
 **Theoretical Content:**
 - Introduction to Exploration and Exploitation
@@ -1039,7 +1041,7 @@ This course explores the ethical implications, societal impacts, and responsible
 - Comparing performance of different exploration methods
 - Tuning exploration parameters
 
-**Unit 5: Advanced Topics and Applications** (7 theory + 3 practical = 10 hours)
+**Unit 5: Applications and Advanced Topics in RL** (7 theory + 13 practical = 20 hours)
 
 **Theoretical Content:**
 - Multi-Agent RL (cooperative and competitive settings)
@@ -1243,7 +1245,7 @@ This course explores the ethical implications, societal impacts, and responsible
 - Optimizing model performance and resource usage on cloud
 - Implementing security and compliance measures for deployed models
 
-**Unit 4: Containers and Orchestration** (7 theory + 7 practical = 14 hours)
+**Unit 4: Containers and Orchestration** (7 theory + 13 practical = 20 hours)
 
 **Theoretical Content:**
 - Introduction to Containers (Docker basics: images, containers, Dockerfile)
@@ -1258,7 +1260,7 @@ This course explores the ethical implications, societal impacts, and responsible
 - Setting up CI/CD pipelines for automated model deployment
 - Managing containerized model versions and updates
 
-**Unit 5: Monitoring, Maintenance, and MLOps** (7 theory + 3 practical = 10 hours)
+**Unit 5: Monitoring and Maintenance of Deployed AI Models** (7 theory + 13 practical = 20 hours)
 
 **Theoretical Content:**
 - Model Monitoring (performance tracking, drift detection, alerting)
@@ -1279,7 +1281,7 @@ This course explores the ethical implications, societal impacts, and responsible
 ### Course 12: AIAT 126 - Graduation Project
 **مشروع التخرج**
 
-**Credit Hours:** 5 | **Theory:** 1 | **Practical:** 8 | **Contact Hours:** 10
+**Credit Hours:** 3 | **Theory:** 1 | **Practical:** 4 | **Contact Hours:** 5
 
 #### Course Learning Outcomes:
 
@@ -1295,62 +1297,54 @@ This course explores the ethical implications, societal impacts, and responsible
 
 #### Unit Structure:
 
-**Unit 1: Project Planning and Proposal** (3 theory + 11 practical = 14 hours)
+**Unit 1: Project Proposal and Plan (مقترح المشروع وخطته)** (4 theory + 10 practical = 14 hours)
 
 **Theoretical Content:**
-- Identifying Project Scope and Objectives (goals, feasibility, stakeholder analysis)
-- Literature Review and Background Research (research papers, state-of-the-art, gap analysis)
-- Writing Project Proposal (structure, methodology, timeline, risk assessment)
-- Defining Success Metrics (evaluation metrics, success criteria, baseline targets)
+- Principles of problem formulation in AI projects
+- Research methodologies and literature-review techniques
+- Ethical and legal considerations in developing AI projects
 
 **Practical Content:**
-- Selecting and defining a graduation project topic
-- Conducting literature review and compiling relevant research papers
-- Writing a comprehensive project proposal document
-- Creating project timeline and resource allocation plan
-- Defining success metrics and evaluation criteria for the project
-- Presenting project proposal to advisors/peers for feedback
+- Writing a clear problem statement and defining project objectives
+- Conducting a focused literature review and summarizing findings
+- Creating a Gantt chart or timeline for the main project phases
+- Selecting appropriate tools, libraries, and development platforms
+- Completing an ethics approval or risk-assessment checklist (where applicable)
 
-**Unit 2: Data Collection and Preparation** (3 theory + 18 practical = 21 hours)
+**Unit 2: Solution System Design and Architecture (تصميم نظام الحل وهندسته المعمارية)** (3 theory + 12 practical = 15 hours)
 
 **Theoretical Content:**
-- Data Sourcing Strategies (public datasets, APIs, web scraping, legal considerations)
-- Data Cleaning and Preprocessing (missing data, outliers, normalization)
-- Feature Engineering (feature selection/extraction, transformation, domain-specific techniques)
-- Data Validation (quality assessment, train/validation/test splits, bias detection)
+- AI system design principles and architectural patterns
+- Criteria for selecting AI models and algorithms
+- Dataset characteristics and preprocessing theory
 
 **Practical Content:**
-- Collecting and acquiring datasets for the graduation project
-- Performing data cleaning and preprocessing using Python libraries (Pandas, NumPy)
-- Implementing feature engineering techniques
-- Validating data quality and preparing train/validation/test splits
-- Documenting data collection and preprocessing procedures
-- Creating data exploration notebooks with visualizations
+- Drawing system architecture diagrams (data flow, module interconnections)
+- Selecting and justifying AI models (e.g., CNN, RNN, Transformers)
+- Designing data input/output formats and storage schemas
+- Planning for scalability, modularity, and integration
+- Creating a design document identifying key components and dependencies
 
-**Unit 3: Model Development and Training** (3 theory + 25 practical = 28 hours)
+**Unit 3: Implementation and Development of the Project Idea (تنفيذ وتطوير فكرة المشروع)** (3 theory + 14 practical = 17 hours)
 
 **Theoretical Content:**
-- Model Selection and Architecture Design (algorithm selection, NN architectures, transfer learning)
-- Training and Validation (training pipelines, validation strategies, monitoring)
-- Hyperparameter Optimization (understanding hyperparameters, Grid/Random/Bayesian search)
-- Performance Evaluation (evaluation metrics, pipelines, failure analysis)
+- Software development best practices in AI projects
+- Model training principles and optimization techniques
+- Error-handling and debugging strategies in AI systems
 
 **Practical Content:**
-- Implementing model architecture and training pipeline
-- Training models with different hyperparameter configurations
-- Performing hyperparameter optimization using grid search or automated tools
-- Evaluating model performance using appropriate metrics
-- Analyzing model outputs and identifying areas for improvement
-- Iteratively refining the model based on validation results
-- Documenting training procedures and results
+- Preprocessing data and preparing train/validation/test sets
+- Implementing and training the selected AI models using frameworks such as TensorFlow or PyTorch
+- Integrating model components with application interfaces or APIs
+- Using version-control tools (e.g., Git) for collaborative development
+- Performing unit testing and module validation
 
-**Unit 4: Evaluation and Optimization** (3 theory + 25 practical = 28 hours)
+**Unit 4: Evaluation and Refinement (التقييم والتنقيح)** (3 theory + 14 practical = 17 hours)
 
 **Theoretical Content:**
-- Understanding Evaluation Metrics for Different AI Tasks
-- Techniques for Model Optimization and Fine-tuning
-- Addressing Overfitting and Underfitting
-- Comparative Analysis with Baseline Models
+- Evaluation metrics for AI models (e.g., accuracy, F1 score, BLEU)
+- Cross-validation and model robustness
+- Error analysis and model-interpretation techniques
 
 **Practical Content:**
 - Conducting experiments and collecting performance metrics
@@ -1359,19 +1353,19 @@ This course explores the ethical implications, societal impacts, and responsible
 - Visualizing results using graphs, confusion matrices, or heat maps
 - Iteratively improving model parameters or retraining with improved data
 
-**Unit 5: Project Documentation and Final Presentation** (4 theory + 17 practical = 21 hours)
+**Unit 5: Project Documentation and Final Presentation (توثيق المشروع والعرض النهائي)** (3 theory + 14 practical = 17 hours)
 
 **Theoretical Content:**
-- Technical Writing Standards and Report Structure
-- Effective Data Visualization and Storytelling with AI Results
-- Public Speaking Principles and Presentation Design
+- Technical writing standards and report structure
+- Effective data visualization and storytelling with AI results
+- Public speaking principles and presentation design
 
 **Practical Content:**
-- Writing final project report (including summary, methodology, results, discussion)
-- Designing slide decks or posters for presentation
-- Preparing recorded video or live demonstration of project
-- Practicing oral presentation or defense of project
-- Compiling source code, documents, and final submission package
+- Writing the final project report (abstract, methodology, results, discussion)
+- Designing slide decks or posters for the final presentation
+- Preparing a recorded video or live demonstration of the project
+- Practicing the oral presentation or project defense
+- Compiling source code, documents, and the final submission package
 
 ---
 
