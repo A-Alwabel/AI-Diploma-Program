@@ -17,12 +17,8 @@ WORKDIR /app
 # Copy only the installed packages from the builder stage
 COPY --from=builder /install /usr/local
 
-# Copy application code
+# Copy application code and model
 COPY . .
-
-# Train the model at build time so the image is self-contained
-# (model/iris_rf.joblib is gitignored — see the standard Dockerfile note).
-RUN python model_train.py
 
 EXPOSE 8000
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]

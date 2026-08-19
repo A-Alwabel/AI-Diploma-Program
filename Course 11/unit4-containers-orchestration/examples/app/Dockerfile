@@ -10,13 +10,8 @@ COPY requirements.txt .
 # Install Python dependencies (no cache saves image space)
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the rest of the app (main.py, model_train.py)
+# Copy the rest of the app (model files, main.py)
 COPY . .
-
-# Train the model at build time so the image is self-contained.
-# (model/iris_rf.joblib is gitignored, so a fresh clone has no model file —
-#  building it here means `docker build` works with no pre-step.)
-RUN python model_train.py
 
 # Expose the port the app listens on (documentation only — docker run -p maps it)
 EXPOSE 8000
