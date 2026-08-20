@@ -35,23 +35,7 @@ Whatever notebook you open, ask:
 ## Close the loop
 
 - **Per unit:** `README.md` → numbered `examples/` → `exercises/` → `QUIZZES/quiz_0N.md`
-- **Whole course:** [`START_HERE.md`](START_HERE.md) → Units 1–5 → [`PROJECTS/`](PROJECTS/) → [`ASSESSMENTS/Final_Exam.md`](ASSESSMENTS/Final_Exam.md)
+- **Whole course:** [`START_HERE.md`](START_HERE.md) → Units 1–5 → [`final_exercise.ipynb`](final_exercise.ipynb) → [`ASSESSMENTS/Final_Exam.md`](ASSESSMENTS/Final_Exam.md)
 - **Progress:** [`STUDENT_PROGRESS_CHECKLIST.md`](STUDENT_PROGRESS_CHECKLIST.md)
 
-Skim this journey page **once at the start** and **once before the project** so the course feels like one story, not five disconnected folders.
-
-## Automated check (optional, maintainers)
-
-From the repository root:
-
-```bash
-python3 "Course 11/scripts/verify_student_notebooks.py" --syntax-only
-```
-
-For a full execute pass (slow; cloud SDK cells may skip credentials):
-
-```bash
-python3 "Course 11/scripts/verify_student_notebooks.py"
-```
-
-Results land in `Course 11/scripts/_last_notebook_verify.log`.
+Skim this journey page **once at the start** and **once before the final exercise** so the course feels like one story, not five disconnected folders.

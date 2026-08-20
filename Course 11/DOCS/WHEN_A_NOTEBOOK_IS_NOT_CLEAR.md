@@ -6,7 +6,7 @@ Use this page when a Course 11 notebook runs but **you do not understand** what 
 
 1. Open the unit `README.md` and confirm you are on the correct **numbered** notebook.
 2. Run cells **from the top** (or **Restart & Run All** once).
-3. Read the **Lesson Brief** (first cell) and **Closing Takeaway** (near the end).
+3. Read the introduction (first markdown cell) and the **Self-check** section (at the end).
 
 ## Step 2 — Name what you are stuck on
 
@@ -36,4 +36,4 @@ Example: *"In cell 4 I see `uvicorn` but I don't know how a client sends JSON fe
 
 ## Remember
 
-A **clean run** means the code executed. It does **not** mean every production concept is obvious yet. Use the **Did you understand?** section at the end of each example notebook.
+A **clean run** means the code executed. It does **not** mean every production concept is obvious yet. Use the **Self-check** section at the end of each example notebook.

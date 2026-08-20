@@ -15,7 +15,14 @@ Use this as the single reference for **how to run** Course 11 notebooks.
 
 ## Core dependencies (Units 1–2)
 
-Install once before Unit 1:
+Install once before Unit 1 into the repo-root `.venv` (used by the "ai-diploma" Jupyter kernel):
+
+```bash
+cd "Course 11"
+pip install -r requirements-course11.txt
+```
+
+Or install the same packages individually:
 
 ```bash
 pip install numpy matplotlib scikit-learn joblib
@@ -59,9 +66,9 @@ print("sklearn OK")
 
 ## Notebook order
 
-Always follow **numbered** notebooks (`01`, `02`, …) listed in each unit `README.md` and `DOCS/EXAMPLES_ORDER.md`.
+Always follow **numbered** notebooks (`01`, `02`, …) listed in each unit `README.md` and `EXAMPLES_ORDER.md` (this folder).
 
-Do **not** use long descriptive filenames in `DOCS/REFERENCE_NOTEBOOKS/` unless assigned.
+**Kernel note:** `unit2-versioning-serving/examples/05_tensorflow_serving_torchserve.ipynb` imports TensorFlow — run it on the **"tfenv"** kernel. All other notebooks use the "ai-diploma" kernel.
 
 ---
 
@@ -74,4 +81,4 @@ Do **not** use long descriptive filenames in `DOCS/REFERENCE_NOTEBOOKS/` unless 
 | ONNX export fails | Confirm `torch` and `onnx` versions; re-run model training cell |
 | Cloud cell asks for keys | Expected without instructor credentials — read markdown callout; simulation cells still run locally |
 
-See also: `../START_HERE.md`, `DEPLOYMENT_LEARNING_JOURNEY.md`.
+See also: `../START_HERE.md`, `../DEPLOYMENT_LEARNING_JOURNEY.md`.

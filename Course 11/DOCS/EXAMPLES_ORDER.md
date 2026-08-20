@@ -9,7 +9,7 @@ Follow the list in each unit `README.md`, not alphabetical sorting in your file 
 
 ---
 
-## Unit 1: Deployment Basics (`unit1-deployment-basics/examples/`)
+## Unit 1: Introduction to AI Model Deployment (`unit1-deployment-basics/examples/`)
 
 | Step | Notebook | Focus |
 | ---- | -------- | ----- |
@@ -36,11 +36,11 @@ Follow the list in each unit `README.md`, not alphabetical sorting in your file 
 | 6 | `06_batch_vs_realtime_inference.ipynb` | Batch vs streaming |
 | 7 | `07_kubernetes_scaling.ipynb` | Scaling served models |
 
-**Exercise:** `exercises/03_api_deployment_exercise.ipynb` → **Quiz:** `QUIZZES/quiz_02.md`
+**Exercise:** `exercises/01_api_deployment_exercise.ipynb` → **Quiz:** `QUIZZES/quiz_02.md`
 
 ---
 
-## Unit 3: Cloud Deployment (`unit3-cloud-deployment/examples/`)
+## Unit 3: Cloud Deployment and Infrastructure (`unit3-cloud-deployment/examples/`)
 
 | Step | Notebook | Focus |
 | ---- | -------- | ----- |
@@ -68,7 +68,7 @@ Follow the list in each unit `README.md`, not alphabetical sorting in your file 
 
 ---
 
-## Unit 5: Pipelines and Monitoring (`unit5-pipelines-monitoring/examples/`)
+## Unit 5: Monitoring and Maintenance of Deployed AI Models (`unit5-pipelines-monitoring/examples/`)
 
 | Step | Notebook | Focus |
 | ---- | -------- | ----- |
@@ -84,10 +84,6 @@ Follow the list in each unit `README.md`, not alphabetical sorting in your file 
 
 ---
 
-## Reference notebooks (not required)
+## After Unit 5
 
-Long descriptive filenames that duplicated numbered lessons are archived under:
-
-`DOCS/REFERENCE_NOTEBOOKS/`
-
-Use them only if your instructor assigns a specific file.
+Complete the graded course practical `final_exercise.ipynb` (course root), then `ASSESSMENTS/Final_Exam.md`.

@@ -1,4 +1,4 @@
-# AIAT 125 - AI Model Deployment
+# AIAT 125 - Deploying AI Models
 
 ## New Students: Start Here
 
@@ -6,25 +6,26 @@ Read [`START_HERE.md`](START_HERE.md) first.
 
 ## Course Overview
 
-This course teaches how to deploy AI models to production: packaging artifacts, serving APIs, cloud hosting, containers, CI/CD, and MLOps monitoring.
+This course teaches how to deploy AI models to production: packaging artifacts, serving APIs, cloud hosting, containers, CI/CD, and monitoring of deployed models.
 
-**Course Code:** AIAT 125  
-**Language:** English  
-**Credit Hours:** 4  
-**Lecture Hours:** 2  
-**Practical Hours:** 4  
-**Total Hours:** 96 (32 theoretical + 64 practical)
+**Course Code:** AIAT 125
+**Language:** English
+**Credit hours:** 4 · **Contact hours:** 6/week · **Total training hours:** 96 (theory+practical)
 
-## Supporting Documents
+## Prerequisites
 
-Students may use these when needed:
+- Semester 1 (AIAT 111–116)
+- AIAT 122 — Deep Learning (Course 08): train and save models
 
-- [`../docs/COURSE_MAP.md`](../docs/COURSE_MAP.md)
-- [`../docs/SETUP_GUIDE.md`](../docs/SETUP_GUIDE.md)
-- [`DOCS/EXAMPLES_ORDER.md`](DOCS/EXAMPLES_ORDER.md)
-- [`DOCS/REQUIREMENTS_COURSE_11.md`](DOCS/REQUIREMENTS_COURSE_11.md)
-- [`DOCS/WHEN_A_NOTEBOOK_IS_NOT_CLEAR.md`](DOCS/WHEN_A_NOTEBOOK_IS_NOT_CLEAR.md)
-- [`DEPLOYMENT_LEARNING_JOURNEY.md`](DEPLOYMENT_LEARNING_JOURNEY.md) (course narrative across units)
+## Units
+
+| Unit | Official Title | Folder | Hours |
+| ---- | -------------- | ------ | ----- |
+| 1 | Introduction to AI Model Deployment | `unit1-deployment-basics/` | 18 |
+| 2 | Model Packaging and Serving | `unit2-versioning-serving/` | 19 |
+| 3 | Cloud Deployment and Infrastructure | `unit3-cloud-deployment/` | 19 |
+| 4 | Containers and Orchestration | `unit4-containers-orchestration/` | 20 |
+| 5 | Monitoring and Maintenance of Deployed AI Models | `unit5-pipelines-monitoring/` | 20 |
 
 ## Course Learning Outcomes
 
@@ -35,46 +36,37 @@ By the end of the course, students should be able to:
 - Build and manage REST APIs for model inference.
 - Use Docker and Kubernetes for reproducible, scalable deployment.
 - Set up CI/CD pipelines for model delivery.
-- Monitor deployed models and respond to drift, bias, and degradation.
+- Monitor deployed models and respond to drift and degradation.
 
-## Unit Map
-
-| Unit | Folder | Main Focus |
-| ---- | ------ | ---------- |
-| Unit 1 | `unit1-deployment-basics/` | Serialization, APIs, local deploy, validation |
-| Unit 2 | `unit2-versioning-serving/` | Serving frameworks, versioning, batch vs real-time |
-| Unit 3 | `unit3-cloud-deployment/` | AWS, Azure, GCP, cloud security and logging |
-| Unit 4 | `unit4-containers-orchestration/` | Docker, Kubernetes, CI/CD |
-| Unit 5 | `unit5-pipelines-monitoring/` | Monitoring, drift, retraining, MLOps tooling |
-
-## How the units fit together
-
-Read **[`DEPLOYMENT_LEARNING_JOURNEY.md`](DEPLOYMENT_LEARNING_JOURNEY.md)** once at the start and again before the final project. It connects packaging → serving → cloud → containers → MLOps into one deployment story.
-
-## Student Workflow
+## Study Path
 
 Follow this pattern in every unit:
 
 1. Read the unit `README.md`
-2. Complete the numbered example notebooks in order (`01`, `02`, `03`, …)
+2. Complete the numbered example notebooks in file order (`01`, `02`, …)
 3. Complete the unit exercise notebook
-4. Take the unit quiz
+4. Take the unit quiz in `QUIZZES/`
 
 For the whole course:
 
-1. Start with `START_HERE.md`
+1. Start with [`START_HERE.md`](START_HERE.md)
 2. Work through Units 1 to 5 in order
-3. Complete the project in `PROJECTS/`
-4. Finish with `ASSESSMENTS/Final_Exam.md`
+3. Complete [`final_exercise.ipynb`](final_exercise.ipynb) — the graded course practical (100 points, covers all six CLOs). Its solution is released by your instructor.
+4. Finish with [`ASSESSMENTS/Final_Exam.md`](ASSESSMENTS/Final_Exam.md)
 
-## Important Note on Notebook Naming
+`PROJECTS/ML_Deployment_Pipeline/` is used only if your instructor assigns it.
 
-Some units previously contained long descriptive notebook filenames alongside numbered lessons.
+## How the units fit together
 
-**Student rule:**
+Read [`DEPLOYMENT_LEARNING_JOURNEY.md`](DEPLOYMENT_LEARNING_JOURNEY.md) once at the start and again before the final exercise. It connects packaging → serving → cloud → containers → monitoring into one deployment story.
 
-- Only the **numbered notebooks** (`01`, `02`, `03`, …) are the required study path.
-- Long descriptive notebooks are **reference material** under `DOCS/REFERENCE_NOTEBOOKS/` unless your instructor assigns one.
+## Supporting Documents
+
+- [`../docs/SETUP_GUIDE.md`](../docs/SETUP_GUIDE.md) — environment setup for the whole diploma
+- [`DOCS/EXAMPLES_ORDER.md`](DOCS/EXAMPLES_ORDER.md) — notebook order for every unit
+- [`DOCS/REQUIREMENTS_COURSE_11.md`](DOCS/REQUIREMENTS_COURSE_11.md) — packages needed per unit (see also [`requirements-course11.txt`](requirements-course11.txt))
+- [`DOCS/CLOUD_CREDENTIALS_SETUP.md`](DOCS/CLOUD_CREDENTIALS_SETUP.md) — optional cloud accounts for Unit 3 live labs
+- [`DOCS/WHEN_A_NOTEBOOK_IS_NOT_CLEAR.md`](DOCS/WHEN_A_NOTEBOOK_IS_NOT_CLEAR.md) — what to do when a notebook runs but is confusing
 
 ## Course Structure
 
@@ -84,6 +76,8 @@ Course 11/
 ├── START_HERE.md
 ├── DEPLOYMENT_LEARNING_JOURNEY.md
 ├── STUDENT_PROGRESS_CHECKLIST.md
+├── requirements-course11.txt
+├── final_exercise.ipynb        # graded course practical
 ├── unit1-deployment-basics/
 ├── unit2-versioning-serving/
 ├── unit3-cloud-deployment/
@@ -92,8 +86,6 @@ Course 11/
 ├── PROJECTS/
 ├── QUIZZES/
 ├── ASSESSMENTS/
+├── CASE_STUDIES/
 └── DOCS/
 ```
-
-**Created for:** AIAT 125 - AI Model Deployment  
-**Last Updated:** 2026-05-17
