@@ -1,5 +1,5 @@
-# Quiz 01 | اختبار 01
-## AIAT 121 - Natural Language Processing | معالجة اللغة الطبيعية
+# Quiz 01: NLP Fundamentals | اختبار 1: أساسيات معالجة اللغة الطبيعية
+## AIAT 121 - Unit 1
 
 **Time Limit:** 45 minutes  
 **Total Points:** 100 points
@@ -9,84 +9,61 @@
 ## Part 1: Multiple Choice (40 points)
 
 ### Question 1 (10 points)
-[Question about Understand NLP fundamentals]
+What is the purpose of tokenization in NLP?
 
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
+أ) Remove stop words  
+ب) Split text into words or sentences  
+ج) Convert to lowercase  
+د) Remove punctuation
 
-**Answer:** [Answer]
+**Answer:** ب
 
 ---
 
 ### Question 2 (10 points)
-[Question about Apply text processing techniques]
+Stemming and lemmatization both:
 
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
+أ) Remove stop words  
+ب) Reduce words to their root form  
+ج) Remove punctuation  
+د) Convert to lowercase
 
-**Answer:** [Answer]
-
----
-
-### Question 3 (10 points)
-[Question about Implement traditional ML models for NLP]
-
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
-
-**Answer:** [Answer]
-
----
-
-### Question 4 (10 points)
-[Question about Use deep learning techniques]
-
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
-
-**Answer:** [Answer]
+**Answer:** ب
 
 ---
 
 ## Part 2: Code Writing (30 points)
 
-### Question 5 (30 points)
-Write code to [implement a Natural Language Processing concept].
+### Question 3 (30 points)
+Write code to preprocess text: lowercase, remove punctuation, tokenize, and remove stop words.
 
 **Answer Key:**
 ```python
-# Solution code here
+import re
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+
+def preprocess(text):
+    text = text.lower()
+    text = re.sub(r'[^\w\s]', '', text)
+    tokens = word_tokenize(text)
+    stop_words = set(stopwords.words('english'))
+    filtered = [w for w in tokens if w not in stop_words]
+    return filtered
 ```
 
 ---
 
 ## Part 3: Short Answer (30 points)
 
-### Question 6 (15 points)
-Explain [a key concept from Natural Language Processing].
+### Question 4 (15 points)
+Explain the difference between stemming and lemmatization.
 
 **Answer Key:**
-- Key point 1
-- Key point 2
-- Key point 3
-
----
-
-### Question 7 (15 points)
-Describe [an application or technique from Natural Language Processing].
-
-**Answer Key:**
-- Description point 1
-- Description point 2
+- Stemming: Removes suffixes/prefixes, may not result in valid words (faster, less accurate)
+- Lemmatization: Returns root form that is a valid word (slower, more accurate)
 
 ---
 
 **For:** AIAT 121 - Natural Language Processing
+
