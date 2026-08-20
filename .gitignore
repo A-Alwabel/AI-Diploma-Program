@@ -54,20 +54,16 @@ AGENTS.md
 .cursor/hooks/state/
 .cursor/plans/
 # Internal agent verification/planning docs inside course DOCS folders
-**/DOCS/20_MIN_NOTEBOOK_PLAN.md
-**/DOCS/FULL_RE_REVIEW*.md
-**/DOCS/NOTEBOOK_CLARITY*.md
-**/DOCS/NOTEBOOK_RUN*.md
-**/DOCS/OUTPUT_AND_PEDAGOGY*.md
-**/DOCS/PHASES_TO*.md
-**/DOCS/REVIEW_AFTER*.md
-**/DOCS/TEACHING_VERIFICATION*.md
-**/DOCS/notebook_exec*.jsonl
-**/DOCS/notebook_exec*.out
-**/DOCS/fixed28*.jsonl
-**/DOCS/fixed28*.out
 
 # IDE
 .vscode/*
 !.vscode/settings.json
 .idea/
+
+# --- unified during the 2026-08 reorg ---
+.pytest_cache/
+**/solutions/
+**/SOLUTION/
+SOLUTIONS_ALL/
+INSTRUCTOR_MATERIALS/
+*.tflite

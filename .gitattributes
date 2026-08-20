@@ -32,7 +32,6 @@
 *.xls binary
 
 # Python files should use LF
-*.py text eol=lf
 
 # Shell scripts should use LF (works on all Unix-like systems)
 *.sh text eol=lf
@@ -42,10 +41,8 @@
 *.cmd text eol=crlf
 
 # Jupyter notebooks
-*.ipynb text
 
 # Documentation files
-*.md text eol=lf
 *.rst text eol=lf
 
 # Configuration files
@@ -54,7 +51,5 @@
 *.conf text eol=lf
 
 # Data files
-*.csv text eol=lf
 *.tsv text eol=lf
-*.json text eol=lf
 
