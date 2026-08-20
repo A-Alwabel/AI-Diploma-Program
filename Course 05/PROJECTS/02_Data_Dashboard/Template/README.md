@@ -1,6 +1,6 @@
-# Interactive Dashboard Template | قالب لوحة البيانات التفاعلية
+# Interactive Dashboard Template
 
-## How to Use | كيفية الاستخدام
+## How to Use
 
 1. **Copy the template** to your project folder
 2. **Install Dash:** `pip install dash plotly`
@@ -10,7 +10,7 @@
 
 ---
 
-## Implementation Order | ترتيب التنفيذ
+## Implementation Order
 
 1. **Data Loading** - Load your dataset
 2. **Create Charts** - Build Plotly visualizations
@@ -20,7 +20,7 @@
 
 ---
 
-## Tips | نصائح
+## Tips
 
 - Start with simple charts
 - Test interactivity incrementally
@@ -30,4 +30,3 @@
 ---
 
 **Good luck with your project!** 🚀
-

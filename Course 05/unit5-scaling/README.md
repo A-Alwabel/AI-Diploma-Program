@@ -1,64 +1,47 @@
-# Unit: Extending the Scope of Data Science (Scaling and Production)
+# Unit 5: Extending the Scope of Data Science
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+**Unit hours:** 20 (of 96 total training hours)
 
-Before starting this unit, confirm:
+## Prerequisites
 
-- [ ] Completed Units 1-4 in this course
-- [ ] Comfortable with Pandas, visualization, and basic ML
-- [ ] Understand data pipelines and performance basics
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `../../COURSE_MAP.md` if needed
+- Units 1-4 of this course
+- Comfortable with pandas, visualization, and basic scikit-learn ML
 
-### Learning Objectives | أهداف التعلم
+## What This Unit Covers
 
-By the end of this unit, students will be able to:
-- Understand key concepts in scaling and production
-- Apply techniques and methodologies
-- Work with real-world datasets
-- Implement solutions to practical problems
+Scaling data science beyond a single machine and into production: big data concepts, distributed computing with Dask and PySpark, GPU workflows with RAPIDS, production pipelines, performance optimization, large dataset handling, deployment, model monitoring, and pipeline automation.
 
----
+## Examples (run in order)
 
-## Unit Duration | مدة الوحدة
+| # | Notebook | Description |
+|---|----------|-------------|
+| 01 | `examples/01_big_data_theory.ipynb` | Big data characteristics and distributed computing theory |
+| 02 | `examples/02_dask_distributed.ipynb` | Distributed computing with Dask |
+| 03 | `examples/03_pyspark_distributed.ipynb` | Distributed data processing with PySpark (optional dependency) |
+| 04 | `examples/04_rapids_workflows.ipynb` | GPU workflows with RAPIDS (optional GPU) |
+| 05 | `examples/05_production_pipelines.ipynb` | Building production data pipelines |
+| 06 | `examples/06_performance_optimization.ipynb` | Profiling and optimizing data processing performance |
+| 07 | `examples/07_large_datasets.ipynb` | Techniques for handling large datasets |
+| 08 | `examples/08_deployment.ipynb` | Deploying models and pipelines |
+| 09 | `examples/09_model_monitoring.ipynb` | Model monitoring and performance tracking |
+| 10 | `examples/10_data_pipeline_automation.ipynb` | Automating data pipelines |
 
-**Theoretical Hours:** 7 hours  
-**Practical Hours:** 13 hours  
-**Total Hours:** 20 hours
+PySpark and RAPIDS are optional - see `../DOCS/OPTIONAL_DEPENDENCIES.md`. The other files in `examples/` (`large_dataset.csv`, `deployed_model.pkl`, logs, metadata) are inputs/outputs of these notebooks.
 
-**Format:** 7 theoretical + 13 practical hours
+## Exercise
 
----
+- `exercises/exercise_01.ipynb` - scaling and production practice (a script version `exercise_01.py` is also provided)
 
-## Topics Covered | المواضيع المغطاة
+## Quiz
 
-1. **Dask for Distributed Computing**
-2. **RAPIDS Workflows**
-3. **Production Pipelines**
-4. **Performance Optimization**
-5. **Large Dataset Handling**
-6. **Model Deployment**
+- `../QUIZZES/Quiz_05_Scaling_Production.md`
+- Answer keys are released by your instructor.
 
----
+## Learning Path
 
-## Files Structure | هيكل الملفات
+1. Read this README
+2. Run the examples in numeric order
+3. Complete `exercises/exercise_01.ipynb`
+4. Take Quiz 05
 
-- `examples/`: Complete code examples with explanations
-- `exercises/`: Practice problems for students
-- `solutions/`: Instructor-only reference solutions (e.g. `solution_01.ipynb`)
-
-Quiz files are in `QUIZZES/`. Answer keys are instructor-only.
-
----
-
-## Learning Path | مسار التعلم
-
-1. **Start with examples** - Understand concepts through code
-2. **Complete exercises** - Practice what you learned
-3. **Review quiz solutions** - When your instructor provides the answer key
-4. **Take quizzes** - Test your understanding
-
----
-
-**Unit Duration:** 2 weeks  
-**Difficulty:** Intermediate
+**Next:** final exam (`../ASSESSMENTS/Final_Exam.md`) and the capstone project (`../PROJECTS/01_Data_Pipeline/`)

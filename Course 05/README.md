@@ -1,294 +1,111 @@
-# AIAT 115 - Scalable Data Science | علم البيانات القابل للتوسع
+# AIAT 115 - Scalable Data Science
 
-## 🚀 NEW STUDENTS: START HERE! | الطلاب الجدد: ابدأ من هنا!
-
-**👉 If you're a new student, read `START_HERE.md` FIRST!**  
-**👉 إذا كنت طالباً جديداً، اقرأ `START_HERE.md` أولاً!**
-
-The `START_HERE.md` file contains:
-- ✅ Day 1 setup instructions
-- ✅ Step-by-step installation guide
-- ✅ Learning sequence
-- ✅ Progress tracker
-- ✅ Troubleshooting tips
-
-**Don't skip it!** It will save you time and confusion.
-
-**✅ Official Path:** Follow the unit folders in order (Unit 1 → Unit 5).
+**New students: read `START_HERE.md` first.** It walks you through setup and the single numbered learning path for this course.
 
 ---
 
-## Course Overview | نظرة عامة على الدورة
+## Course Overview
 
-This course provides comprehensive training in scalable data science techniques using Python and NVIDIA RAPIDS. Students will learn to process, clean, visualize, and model data at scale through hands-on coding examples and exercises.
+This course trains students to process, clean, visualize, and model data at scale with Python. It covers pandas/NumPy foundations, data cleaning and preparation, visualization with Matplotlib/Seaborn/Plotly, an introduction to machine learning with scikit-learn, and scaling techniques with Dask, PySpark, and NVIDIA RAPIDS.
 
-**Course Code:** AIAT 115  
-**Language:** Bilingual (Arabic/English)
-**Credit Hours:** 4  
-**Lecture Hours:** 2/week  
-**Practical Hours:** 4/week  
-**Total Hours:** 96 (32 theoretical + 64 practical)
+**Course Code:** AIAT 115
+**Credit hours:** 4 · **Contact hours:** 6/week · **Total training hours:** 96 (theory+practical)
 
-**📚 Official Unit Content:** See `../DETAILED_UNIT_DESCRIPTIONS.md` for detailed theoretical and practical content per unit. **This course is fully aligned with that specification:** theory topics, practical activities, and unit structure match the document.
+**Units (official titles):**
 
-**Unit ↔ Folder Mapping (aligned with Detailed Unit Descriptions):**
-
-| Detailed Unit | Folder | Topic |
-|---------------|--------|-------|
-| Unit 1 | `unit1-introduction/` | Introduction to Data Science |
-| Unit 2 | `unit2-cleaning/` | Data Cleaning and Preparation |
-| Unit 3 | `unit3-visualization/` | Data Visualization |
-| Unit 4 | `unit4-ml-intro/` | Introduction to Machine Learning |
-| Unit 5 | `unit5-scaling/` | Extending the Scope of Data Science |
-
-**Unit Breakdown:**
-- Unit 1: 6 theoretical + 12 practical = 18 hours
-- Unit 2: 6 theoretical + 13 practical = 19 hours
-- Unit 3: 6 theoretical + 13 practical = 19 hours
-- Unit 4: 7 theoretical + 13 practical = 20 hours
-- Unit 5: 7 theoretical + 13 practical = 20 hours
+| Unit | Official Title | Folder | Hours |
+|------|----------------|--------|-------|
+| 1 | Introduction to Data Science | `unit1-introduction/` | 18 |
+| 2 | Data Cleaning and Preparation | `unit2-cleaning/` | 19 |
+| 3 | Data Visualization | `unit3-visualization/` | 19 |
+| 4 | Introduction to Machine Learning | `unit4-ml-intro/` | 20 |
+| 5 | Extending the Scope of Data Science | `unit5-scaling/` | 20 |
 
 ---
 
-## Prerequisites | المتطلبات الأساسية
+## Prerequisites
 
-**Python Version**: Python 3.8+ required (3.10 or 3.11 recommended)
-
-**Knowledge**: Students should have:
-- Basic Python programming knowledge (variables, functions, classes)
-- Familiarity with NumPy and Pandas (helpful but will be covered)
-
-**Setup**: See `DOCS/` folder for detailed guides and `../requirements.txt` for dependencies
+- **AIAT 112 - Python for AI** (Course 02) or equivalent Python fundamentals (variables, functions, data structures)
+- Familiarity with NumPy and pandas helps but is reviewed in Unit 1
+- **Python 3.10+** via the repository root virtual environment (see Setup)
 
 ---
 
-## 📁 Clean Folder Structure | هيكل المجلد النظيف
+## Setup
+
+All notebooks in this course run on the repository root virtual environment (`.venv`) with the **"ai-diploma"** Jupyter kernel.
+
+1. From the repository root, install dependencies into `.venv` (see `DOCS/SETUP_INSTRUCTIONS.md`)
+2. In Jupyter, select the **ai-diploma** kernel before running a notebook
+3. GPU (cuDF/RAPIDS) and PySpark sections are optional - see `DOCS/OPTIONAL_DEPENDENCIES.md` and `DOCS/COLAB_SETUP.md`
+
+---
+
+## Folder Structure
 
 ```
-📦 Course Root
-│
-├── 📄 README.md                        📖 This file
-├── 📄 START_HERE.md                    ⭐ READ THIS FIRST!
-├── 📄 STUDENT_PROGRESS_CHECKLIST.md    ✅ Track progress
-├── 📄 ../requirements.txt              📦 Dependencies (in root directory)
-│
-├── 📂 unit1-introduction/              📚 Unit 1 (9 examples)
-├── 📂 unit2-cleaning/                  📚 Unit 2 (8 examples)
-├── 📂 unit3-visualization/             📚 Unit 3 (8 notebooks + HTML exports)
-├── 📂 unit4-ml-intro/                  📚 Unit 4 (12 examples)
-├── 📂 unit5-scaling/                   📚 Unit 5 (10 examples)
-└── 📖 DOCS/                            📄 Documentation
+Course 05/
+├── README.md                        This file
+├── START_HERE.md                    Day 1 guide and learning path
+├── STUDENT_PROGRESS_CHECKLIST.md    Progress tracker
+├── unit1-introduction/              Unit 1: Introduction to Data Science
+├── unit2-cleaning/                  Unit 2: Data Cleaning and Preparation
+├── unit3-visualization/             Unit 3: Data Visualization
+├── unit4-ml-intro/                  Unit 4: Introduction to Machine Learning
+├── unit5-scaling/                   Unit 5: Extending the Scope of Data Science
+├── QUIZZES/                         One quiz per unit
+├── ASSESSMENTS/                     Final exam
+├── PROJECTS/                        Capstone (01_Data_Pipeline) + optional projects
+├── CASE_STUDIES/                    Case study analysis
+├── PRESENTATIONS/SLIDES/            Lecture slide decks
+└── DOCS/                            Setup and dependency guides
 ```
 
----
-
-## Quick Start | البدء السريع
-
-1. **Read:** `START_HERE.md`
-2. **Install:** Libraries (see `DOCS/SETUP_INSTRUCTIONS.md`)
-3. **Start:** `unit1-introduction/examples/01_data_science_intro.ipynb`
-4. **Track:** Use `STUDENT_PROGRESS_CHECKLIST.md`
+Each unit folder contains `examples/` (numbered notebooks) and `exercises/` (practice work).
 
 ---
 
-## Course Learning Outcomes (CLOs) | مخرجات التعلم
+## Learning Path
 
-**Per `DETAILED_UNIT_DESCRIPTIONS.md`, by the end of this course the trainee will be able to:**
+Follow the units in order; each builds on the previous one. Within each unit: read the unit `README.md`, run the `examples/` notebooks in numeric order, complete the exercise, then take the unit quiz in `QUIZZES/`.
 
-1. **CLO1:** Demonstrate ability to analyze and visualize data using Python with confidence in various contexts  
-2. **CLO2:** Identify and implement strategies to scale data processing tasks effectively  
-3. **CLO3:** Clean and prepare raw datasets to make them suitable for analysis and modeling  
-4. **CLO4:** Build, evaluate, and deploy machine learning models using Python in scalable environments  
-5. **CLO5:** Complete a data science project that includes large-scale data and models
-
----
-
-## 📚 Course Content | محتوى الدورة
-
-### Unit 1: Introduction to Data Science | مقدمة في علم البيانات
-**Folder**: `unit1-introduction/`
-
-**Topics Covered:**
-- Data science lifecycle
-- Pandas DataFrame operations
-- NumPy array operations
-- cuDF introduction (GPU-accelerated DataFrame)
-- Basic data exploration and statistics
-
-**Start Here**: `unit1-introduction/examples/01_data_science_intro.ipynb`
+1. `unit1-introduction/` -> Quiz 01
+2. `unit2-cleaning/` -> Quiz 02
+3. `unit3-visualization/` -> Quiz 03
+4. `unit4-ml-intro/` -> Quiz 04
+5. `unit5-scaling/` -> Quiz 05
+6. Final exam: `ASSESSMENTS/Final_Exam.md`
+7. Capstone project: `PROJECTS/01_Data_Pipeline/`
 
 ---
 
-### Unit 2: Data Cleaning and Preparation | تنظيف البيانات وتحضيرها
-**Folder**: `unit2-cleaning/`
+## Assessment
 
-**Topics Covered:**
-- Advanced data loading techniques
-- Missing value handling strategies
-- Duplicate detection and removal
-- Outlier detection and treatment
-- Data transformation and normalization
+- **Quizzes:** one per unit in `QUIZZES/` (see `QUIZZES/README.md`)
+- **Final exam:** `ASSESSMENTS/Final_Exam.md` (see `ASSESSMENTS/README.md`)
+- **Capstone project:** `PROJECTS/01_Data_Pipeline/` - end-to-end scalable data pipeline; Projects 02 and 03 are optional extensions
+- **Case study:** `CASE_STUDIES/case_study_01_scalable_data_processing.md`
+- **Exercises:** each unit's `exercises/` folder
 
----
-
-### Unit 3: Data Visualization | تصوير البيانات
-**Folder**: `unit3-visualization/`
-
-**Topics Covered:**
-- Matplotlib basics and customization
-- Seaborn statistical visualizations
-- Plotly interactive visualizations
-- Dashboard creation
-- 3D visualizations
+Answer keys and reference solutions are released by your instructor.
 
 ---
 
-### Unit 4: Machine Learning Introduction | مقدمة في تعلم الآلة
-**Folder**: `unit4-ml-intro/`
+## Required Libraries
 
-**Topics Covered:**
-- Linear regression
-- Classification algorithms
-- Model evaluation metrics
-- CPU vs GPU performance comparison
-- Learning curves
-
----
-
-### Unit 5: Extending the Scope of Data Science | توسيع نطاق علم البيانات
-**Folder**: `unit5-scaling/`
-
-**Topics Covered:**
-- Dask for distributed computing
-- NVIDIA RAPIDS workflows
-- Production pipelines
-- Performance optimization
-- Large dataset handling
-- Model deployment
-
----
-
-## Learning Path | مسار التعلم
-
-```
-Python Basics (Prerequisites)
-    ↓
-Unit 1: Introduction to Data Science
-    ↓
-Unit 2: Data Cleaning and Preparation
-    ↓
-Unit 3: Data Visualization
-    ↓
-Unit 4: Machine Learning Introduction
-    ↓
-Unit 5: Extending the Scope of Data Science
-    ↓
-Advanced Topics (Deep Learning, NLP, etc.)
-```
-
----
-
-## 📖 Documentation | التوثيق
-
-All documentation is in the `DOCS/` folder:
-- **SETUP_INSTRUCTIONS.md** - Installation and setup guide (local + troubleshooting)
-- **COLAB_SETUP.md** - Google Colab and GPU setup
-- **SOLUTIONS/** - Quiz solutions (instructor-only)
-
-**Deep dive reports** (input/output audit, spec alignment):
-- **Unit 1:** `unit1-introduction/UNIT1_DEEP_DIVE.md`
-- **Units 2–5:** `DEEP_DIVE_UNITS_2_5.md`
-
-**Scoring:** `SCORING_RUBRIC_AND_SCORECARD.md` – rubric (0–25 per criterion × 4) and unit/course scores.
-
----
-
-## 📄 Course Summary | ملخص الدورة
-
-**Quick Reference:** If present, `COURSE_SUMMARY.md` contains a text summary of course materials (PDFs/PPTX).  
-**مرجع سريع:** إن وُجد، يحتوي `COURSE_SUMMARY.md` على ملخص نصي لمواد الدورة (ملفات PDF/PPTX).
-
-You can use it to read content, search materials, review concepts, and study—when available.
-
----
-
-## 📝 Assessment | التقييم
-
-- **Quizzes:** `QUIZZES/` folder (all quizzes centralized)
-- **Quizzes:** Each unit has a quiz in `QUIZZES/`
-- **Exercises:** Practice problems in each unit's `exercises/` folder
-
----
-
-## 🆘 Need Help? | تحتاج مساعدة?
-
-- **Installation issues?** → Check `DOCS/` folder
-- **Questions?** → See `START_HERE.md` troubleshooting section
-- **Progress tracking?** → Use `STUDENT_PROGRESS_CHECKLIST.md`
-
----
-
-## 📦 Required Libraries | المكتبات المطلوبة
-
-- **Data Processing:** pandas, numpy
-- **Machine Learning:** scikit-learn
+- **Data processing:** pandas, numpy
+- **Machine learning:** scikit-learn
 - **Visualization:** matplotlib, seaborn, plotly
-- **Distributed Computing:** dask
-- **Utilities:** jupyter, ipython
-- **GPU Acceleration (Optional):** cuDF, RAPIDS (requires NVIDIA GPU)
+- **Distributed computing:** dask (PySpark optional)
+- **GPU acceleration (optional):** cuDF/cuML (RAPIDS, requires NVIDIA GPU)
 
-See `../requirements.txt` for complete list with versions.
-
----
-
-## 🖥️ GPU Requirements | متطلبات GPU
-
-**Important:** This course works perfectly **WITHOUT a GPU**!
-
-- **GPU is OPTIONAL** - All notebooks have pandas fallbacks
-- **NVIDIA GPU recommended** for best performance with large datasets
-- **CPU works fine** - You can complete the entire course using pandas (CPU)
-- **cuDF/RAPIDS** are optional enhancements, not requirements
-
-**If you don't have NVIDIA GPU:**
-- ✅ Course works perfectly with pandas (CPU)
-- ✅ **Use Google Colab for free GPU access!** (See `DOCS/COLAB_SETUP.md`)
-- ✅ All concepts are taught the same way
-- ✅ You'll learn GPU benefits even without GPU hardware
-- ✅ Performance will be slower on large datasets, but functionality is identical
-
-**If you have NVIDIA GPU:**
-- ✅ Install RAPIDS for GPU acceleration
-- ✅ See 10-100x speedup on large datasets
-- ✅ Experience production-level performance
-
-**Installation Options:**
-
-**Option 1: Local Installation (if you have NVIDIA GPU)**
-```bash
-conda install -c rapidsai -c conda-forge cudf cuml
-```
-
-**Option 2: Google Colab (Free GPU - Recommended for students without GPU)**
-1. Open notebook in Google Colab: https://colab.research.google.com/
-2. Enable GPU: Runtime → Change runtime type → GPU
-3. Run the Colab setup cell at the beginning of GPU notebooks
-4. See `DOCS/COLAB_SETUP.md` for detailed instructions
+See the repository root `requirements.txt` for versions.
 
 ---
 
-## 📊 Course Status | حالة الدورة
+## GPU Notes
 
-**Status:** ✅ Complete
+A GPU is **not required**. All core notebooks run on CPU with pandas/scikit-learn; cuDF/RAPIDS sections are optional demonstrations of GPU acceleration.
 
-- ✅ All 5 units present with examples and exercises
-- ✅ All documentation complete
-- ✅ All assessment materials ready
-- ✅ Clean folder structure
-
----
-
-**Created for**: AIAT 115 - Scalable Data Science  
-**Language Support**: Arabic & English  
-**Last Updated**: 2025
-
+- No NVIDIA GPU: run everything on CPU, or use Google Colab's free GPU (`DOCS/COLAB_SETUP.md`)
+- NVIDIA GPU available: install RAPIDS locally (`DOCS/OPTIONAL_DEPENDENCIES.md`)

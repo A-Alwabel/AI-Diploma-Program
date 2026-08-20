@@ -1,6 +1,6 @@
-# Project 02: Interactive Data Dashboard | المشروع 02: لوحة بيانات تفاعلية
+# Project 02: Interactive Data Dashboard
 
-## Overview | نظرة عامة
+## Overview
 
 Create an interactive dashboard using Plotly and Dash for exploring and visualizing large datasets.
 
@@ -13,7 +13,7 @@ Create an interactive dashboard using Plotly and Dash for exploring and visualiz
 
 ---
 
-## Requirements | المتطلبات
+## Requirements
 
 ### Functional Requirements
 1. **Data Loading**
@@ -41,7 +41,7 @@ Create an interactive dashboard using Plotly and Dash for exploring and visualiz
 
 ---
 
-## Deliverables | المخرجات
+## Deliverables
 
 1. **Source Code**
    - `dashboard.py` - Main dashboard application
@@ -64,4 +64,3 @@ Create an interactive dashboard using Plotly and Dash for exploring and visualiz
 
 **Created**: 2025  
 **For**: Scalable Data Science - AIAT 115
-

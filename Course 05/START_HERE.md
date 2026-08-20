@@ -1,240 +1,88 @@
-# 🎓 START HERE - Welcome Students! | ابدأ من هنا - مرحباً بالطلاب!
+# START HERE - AIAT 115 Scalable Data Science
 
-## 👋 Welcome to Scalable Data Science Course | مرحباً بك في دورة علم البيانات القابل للتوسع
+Welcome. This file tells you what to do on Day 1 and gives the single numbered path through the course.
 
-**If you're a new student, READ THIS FIRST!**  
-**إذا كنت طالباً جديداً، اقرأ هذا أولاً!**
-
-This file tells you exactly what to do on **Day 1** and how to navigate this course.  
-هذا الملف يخبرك بالضبط ماذا تفعل في **اليوم الأول** وكيف تتنقل في هذه الدورة.
-
-**✅ Official Path:** Follow the unit folders in order (Unit 1 → Unit 5).  
-**📚 Official unit structure:** See `../DETAILED_UNIT_DESCRIPTIONS.md` and `README.md` (Unit ↔ Folder mapping).
+**Course facts:** Credit hours: 4 · Contact hours: 6/week · Total training hours: 96 (theory+practical)
 
 ---
 
-## ✅ Day 1 Checklist | قائمة اليوم الأول
+## Day 1 Setup
 
-Follow these steps in order. Don't skip any!  
-اتبع هذه الخطوات بالترتيب. لا تتخطى أي خطوة!
+### Step 1: Check prerequisites
 
-### Step 1: Check Prerequisites | الخطوة 1: تحقق من المتطلبات الأساسية
+- **AIAT 112 - Python for AI** (Course 02) or equivalent Python fundamentals
+- Comfortable with variables, functions, lists, and dictionaries (NumPy/pandas are reviewed in Unit 1)
 
-**Before starting this course, you should have:**
-- [ ] **Python 3.8 or higher** (Python 3.10 or 3.11 recommended)
-- [ ] **Basic Python programming knowledge**: Variables, data types, functions, classes
-- [ ] **Familiarity with NumPy and Pandas** (will be covered, but prior knowledge helps)
+### Step 2: Set up the environment
 
-**If you're new to Python:**  
-⚠️ Complete a Python basics course first! This course assumes you know Python fundamentals.
+This course uses the **repository root virtual environment** (`.venv`) and the **"ai-diploma"** Jupyter kernel.
 
-**If you don't have Python or have an old version:**  
-Install Python 3.10 or 3.11 from [python.org](https://www.python.org/downloads/)
+1. Follow `DOCS/SETUP_INSTRUCTIONS.md` to install dependencies into the root `.venv`
+2. Start Jupyter and select the **ai-diploma** kernel for every notebook
+3. Verify the basics work:
 
----
+   ```python
+   import pandas, numpy, matplotlib, seaborn, sklearn
+   print("OK")
+   ```
 
-### Step 2: Check Python Version | الخطوة 2: تحقق من إصدار بايثون
+GPU (cuDF/RAPIDS) and PySpark content is optional - see `DOCS/OPTIONAL_DEPENDENCIES.md`, and `DOCS/COLAB_SETUP.md` for free GPU access on Google Colab.
 
-Open your terminal/command prompt and type:
+### Step 3: Read the course overview
 
-```bash
-python --version
-```
-
-**You need:** Python 3.8 or higher (3.10 or 3.11 recommended)
-
-**If you don't have Python or have an old version:**  
-Install Python 3.10 or 3.11 from [python.org](https://www.python.org/downloads/)
+Read `README.md` for the unit table, hours, and assessment overview.
 
 ---
 
-### Step 3: Install Libraries | الخطوة 3: تثبيت المكتبات
+## The Learning Path
 
-**Follow the installation guide:** See `DOCS/` folder for detailed instructions.
+Follow this order. Within each unit: read the unit `README.md`, run the `examples/` notebooks in numeric order, complete the exercise, then take the unit quiz.
 
-**Quick method (if you're comfortable with terminal):**
+1. **Unit 1 - Introduction to Data Science** (`unit1-introduction/`)
+   - Examples 01-09 -> `exercises/exercise_01.ipynb` -> `QUIZZES/Quiz_01_Introduction_Data_Science.md`
+2. **Unit 2 - Data Cleaning and Preparation** (`unit2-cleaning/`)
+   - Examples 01-08 -> `exercises/exercise_01.ipynb` -> `QUIZZES/Quiz_02_Data_Cleaning.md`
+3. **Unit 3 - Data Visualization** (`unit3-visualization/`)
+   - Examples 01-08 -> `exercises/exercise_01.ipynb` -> `QUIZZES/Quiz_03_Data_Visualization.md`
+4. **Unit 4 - Introduction to Machine Learning** (`unit4-ml-intro/`)
+   - Examples 01-12 -> `exercises/exercise_01.ipynb` -> `QUIZZES/Quiz_04_ML_Introduction.md`
+5. **Unit 5 - Extending the Scope of Data Science** (`unit5-scaling/`)
+   - Examples 01-10 -> `exercises/exercise_01.ipynb` -> `QUIZZES/Quiz_05_Scaling_Production.md`
+6. **Final exam** - `ASSESSMENTS/Final_Exam.md` (after all five units; see `ASSESSMENTS/README.md`)
+7. **Capstone project** - `PROJECTS/01_Data_Pipeline/` (end-to-end scalable data pipeline; Projects 02 and 03 in `PROJECTS/` are optional extensions)
 
-```bash
-# 1. Create virtual environment (recommended)
-python -m venv venv
+Each unit builds on the previous one - do not skip ahead. Quiz answer keys are released by your instructor.
 
-# 2. Activate virtual environment
-# On Windows:
-venv\Scripts\activate
-# On macOS/Linux:
-source venv/bin/activate
+**Lecture slides:** `PRESENTATIONS/SLIDES/` contains the slide decks used in class; the numbered notebooks remain the canonical study path.
 
-# 3. Upgrade pip
-pip install --upgrade pip
-
-# 4. Install all libraries
-pip install -r ../requirements.txt
-
-# 5. Verify installation
-pip check
-```
-
-**🖥️ GPU Installation (OPTIONAL):**
-- **GPU is NOT required** - Course works perfectly on CPU!
-- **🌐 Use Google Colab for free GPU!** (See `DOCS/COLAB_SETUP.md`)
-- If you have NVIDIA GPU locally:
-  ```bash
-  conda install -c rapidsai -c conda-forge cudf cuml
-  ```
-- All notebooks have pandas fallbacks - you can complete the course without GPU
-- GPU notebooks include Colab setup cells - just run them in Colab!
-
-**If you see errors:** Read `DOCS/SETUP_INSTRUCTIONS.md` for troubleshooting.
+**Track your progress:** `STUDENT_PROGRESS_CHECKLIST.md`
 
 ---
 
-### Step 4: Read the Course Overview | الخطوة 4: اقرأ نظرة عامة على الدورة
+## File Guide
 
-**Open and read:** `README.md`
-
-This file explains:
-- What this course covers
-- The 5 course units
-- The learning path
-- How units connect to each other
-
-**Don't skip this!** It's only 5-10 minutes to read and will save you hours of confusion later.
-
----
-
-### Step 5: Start with Unit 1 | الخطوة 5: ابدأ بالوحدة الأولى
-
-**Open:** `unit1-introduction/examples/01_data_science_intro.ipynb`
-
-**Why this unit FIRST?**
-- All other units use pandas and NumPy extensively
-- You need to learn these libraries BEFORE learning data cleaning/visualization
-- This unit teaches you the tools you'll use in all other units
-
-**Don't jump ahead!** Each unit builds on the previous one.
+| File/Folder | Purpose |
+|-------------|---------|
+| `START_HERE.md` | This file - Day 1 guide and learning path |
+| `README.md` | Course overview, unit table, hours |
+| `STUDENT_PROGRESS_CHECKLIST.md` | Progress tracker |
+| `unit1-introduction/` ... `unit5-scaling/` | Unit materials (examples + exercises) |
+| `QUIZZES/` | One quiz per unit |
+| `ASSESSMENTS/` | Final exam |
+| `PROJECTS/` | Capstone (01_Data_Pipeline) + optional projects |
+| `CASE_STUDIES/` | Case study analysis |
+| `PRESENTATIONS/SLIDES/` | Lecture slide decks |
+| `DOCS/` | Setup, Colab, and optional-dependency guides |
 
 ---
 
-## 📚 Learning Sequence | تسلسل التعلم
+## Troubleshooting
 
-**Follow this exact order:**
-
-```
-1. ✅ Check Prerequisites (Python 3.8+)
-   ↓
-2. ✅ Install Libraries (Step 3 above)
-   ↓
-3. 📓 Unit 1: Introduction to Data Science
-   ↓
-4. 📓 Unit 2: Data Cleaning and Preparation
-   ↓
-5. 📓 Unit 3: Data Visualization
-   ↓
-6. 📓 Unit 4: Introduction to Machine Learning
-   ↓
-7. 📓 Unit 5: Extending the Scope of Data Science
-```
-
-**Important:** Each unit builds on the previous one. Don't skip units! (See `../DETAILED_UNIT_DESCRIPTIONS.md` for official unit scope.)
+- **`No module named 'pandas'`** - dependencies are not installed in the active environment; redo Step 2 and confirm the **ai-diploma** kernel is selected
+- **cuDF/RAPIDS import errors** - GPU libraries are optional; run the CPU (pandas) path or use Colab (`DOCS/COLAB_SETUP.md`)
+- **PySpark errors in Unit 5** - PySpark is optional; see `DOCS/OPTIONAL_DEPENDENCIES.md`
+- **A notebook is confusing** - confirm you completed the earlier units and the unit README first
 
 ---
 
-## 📋 Progress Tracker | متتبع التقدم
-
-Use this checklist to track your progress:
-
-### Setup & Preparation
-- [ ] Python 3.8+ installed and verified
-- [ ] Libraries installed successfully (`pip check` shows no errors)
-- [ ] Read README.md
-- [ ] Read this START_HERE.md file
-
-### Units
-- [ ] **Unit 1**: Introduction to Data Science
-- [ ] **Unit 2**: Data Cleaning and Preparation
-- [ ] **Unit 3**: Data Visualization
-- [ ] **Unit 4**: Introduction to Machine Learning
-- [ ] **Unit 5**: Extending the Scope of Data Science
-
-**For detailed progress tracking, use:** `STUDENT_PROGRESS_CHECKLIST.md`
-
----
-
-## 🆘 Need Help? | تحتاج مساعدة?
-
-### Common Issues:
-
-**Problem:** "No module named 'pandas'" or "No module named 'numpy'"  
-**Solution:** You haven't installed libraries. Go back to Step 3.
-
-**Problem:** "Python version too old"  
-**Solution:** Install Python 3.10 or 3.11 from python.org
-
-**Problem:** "I don't understand the notebook"  
-**Solution:** 
-1. Check if you have Python basics knowledge
-2. Make sure you're doing units in order (1 → 2 → 3...)
-3. Read the README.md in each unit folder
-
-**Problem:** "Libraries conflict with each other"  
-**Solution:** Use virtual environment (see Step 3)
-
----
-
-## 📖 File Guide | دليل الملفات
-
-**What each file/folder is for:**
-
-| File/Folder | Purpose | When to Use |
-|-------------|---------|-------------|
-| `START_HERE.md` | **This file** - First thing to read | **Day 1, before anything else** |
-| `README.md` | Course overview and structure | After reading START_HERE |
-| `STUDENT_PROGRESS_CHECKLIST.md` | Track your progress | Throughout the course |
-| `../requirements.txt` | List of libraries to install | During installation (Step 3) |
-| `unit1-introduction/` | Unit 1 materials | Start here after setup |
-| `unit2-cleaning/` | Unit 2 materials | After completing Unit 1 |
-| `unit3-visualization/` | Unit 3 materials | After completing Unit 2 |
-| `unit4-ml-intro/` | Unit 4 materials | After completing Unit 3 |
-| `unit5-scaling/` | Unit 5 materials | After completing Unit 4 |
-| `DOCS/` | Documentation and guides | When you need help |
-
----
-
-## 🎯 Quick Start Summary | ملخص البدء السريع
-
-**For students who want the shortest path:**
-
-1. ✅ Check Python version (3.8+)
-2. ✅ Install libraries: `pip install -r ../requirements.txt`
-3. ✅ Read `README.md` (5 minutes)
-4. ✅ Open `unit1-introduction/examples/01_data_science_intro.ipynb` and start learning!
-
-**That's it!** Everything else is in the unit folders.
-
----
-
-## 💡 Tips for Success | نصائح للنجاح
-
-1. **Don't rush:** Each unit builds on the previous one
-2. **Practice:** Complete all exercises in each unit
-3. **Experiment:** Try modifying the code examples
-4. **Take notes:** Write down concepts you find difficult
-5. **Review:** Before starting a new unit, review the previous one
-
----
-
-## ✅ Ready to Start? | جاهز للبدء؟
-
-If you've completed all steps above, you're ready!
-
-**Next action:** Open `unit1-introduction/examples/01_data_science_intro.ipynb` and begin your data science journey!
-
-**Good luck!** 🚀  
-**حظاً موفقاً!** 🚀
-
----
-
-**Last Updated:** 2025  
-**Course:** AIAT 115 - Scalable Data Science  
-**Language Support:** Arabic & English
-
+**Next action:** open `unit1-introduction/README.md`, then run `unit1-introduction/examples/01_data_science_intro.ipynb`.

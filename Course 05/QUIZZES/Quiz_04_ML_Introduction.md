@@ -1,5 +1,4 @@
 # Quiz 4: Machine Learning Introduction
-## اختبار 4: مقدمة في تعلم الآلة
 
 **Time Limit:** 30 minutes | **Marks:** 30 points
 
@@ -171,4 +170,3 @@ What are the main evaluation metrics for classification and regression? When wou
 - **70-79% (21-23 points):** Satisfactory
 - **60-69% (18-20 points):** Needs improvement
 - **Below 60% (<18 points):** Requires additional study
-

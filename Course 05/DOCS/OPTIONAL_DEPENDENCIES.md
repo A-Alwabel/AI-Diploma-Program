@@ -1,18 +1,18 @@
-# Optional Dependencies Guide | دليل التبعيات الاختيارية
+# Optional Dependencies Guide
 
-## Overview | نظرة عامة
+## Overview
 
 Some Course 05 notebooks require **optional dependencies** that provide GPU acceleration or distributed computing capabilities. These are **not required** for the core learning objectives, but enhance the learning experience when available.
 
-بعض دفاتر Course 05 تتطلب **تبعيات اختيارية** توفر تسريع GPU أو قدرات الحوسبة الموزعة. هذه **ليست مطلوبة** لأهداف التعلم الأساسية، لكنها تعزز تجربة التعلم عند توفرها.
-
 ---
 
-## GPU-Accelerated Notebooks | دفاتر GPU
+## GPU-Accelerated Notebooks
 
 ### Notebooks Requiring GPU Support:
-1. **`03_cudf_introduction.ipynb`** - Introduction to cuDF (GPU-accelerated DataFrames)
-2. **`13_cpu_vs_gpu_ml.ipynb`** - CPU vs GPU Machine Learning comparison
+1. **`unit1-introduction/examples/03_cudf_introduction.ipynb`** - Introduction to cuDF (GPU-accelerated DataFrames)
+2. **`unit2-cleaning/examples/07_cudf_import_export_gpu.ipynb`** - cuDF import/export and GPU acceleration
+3. **`unit4-ml-intro/examples/12_cpu_vs_gpu_ml.ipynb`** - CPU vs GPU Machine Learning comparison
+4. **`unit5-scaling/examples/04_rapids_workflows.ipynb`** - GPU workflows with RAPIDS
 
 ### What You Need:
 - **NVIDIA GPU** with CUDA support
@@ -44,10 +44,10 @@ pip install cudf-cu11 cuml-cu11
 
 ---
 
-## Distributed Computing Notebooks | دفاتر الحوسبة الموزعة
+## Distributed Computing Notebooks
 
 ### Notebooks Requiring Spark:
-1. **`15_pyspark_distributed.ipynb`** - Distributed Data Processing with PySpark
+1. **`unit5-scaling/examples/03_pyspark_distributed.ipynb`** - Distributed Data Processing with PySpark
 
 ### What You Need:
 - **Apache Spark** installation
@@ -82,11 +82,11 @@ pip install pyspark
 ### What Happens Without Spark?
 - Notebook will show a **clear error message** explaining the requirement
 - You can still **read and understand** distributed computing concepts
-- **Alternative**: Use Dask (covered in Example 14) for similar distributed computing concepts
+- **Alternative**: Use Dask (covered in `unit5-scaling/examples/02_dask_distributed.ipynb`) for similar distributed computing concepts
 
 ---
 
-## Error Handling | معالجة الأخطاء
+## Error Handling
 
 All notebooks with optional dependencies include **graceful error handling**:
 
@@ -109,7 +109,7 @@ This ensures:
 
 ---
 
-## Learning Path Recommendations | توصيات مسار التعلم
+## Learning Path Recommendations
 
 ### For Students Without GPU/Spark Access:
 
@@ -117,7 +117,7 @@ This ensures:
 2. **Focus on the learning objectives** - The core concepts don't require GPU/Spark
 3. **Use alternatives**:
    - For GPU notebooks: Use regular pandas/sklearn (CPU-based)
-   - For Spark notebooks: Use Dask (covered in Example 14)
+   - For Spark notebooks: Use Dask (covered in `unit5-scaling/examples/02_dask_distributed.ipynb`)
 4. **Try cloud platforms**:
    - Google Colab (free GPU access)
    - Kaggle (free GPU access)
@@ -132,19 +132,21 @@ This ensures:
 
 ---
 
-## Summary | الملخص
+## Summary
 
 | Notebook | Dependency | Required? | Alternative |
 |----------|-----------|-----------|-------------|
-| `03_cudf_introduction.ipynb` | cuDF (GPU) | ❌ Optional | Use pandas |
-| `13_cpu_vs_gpu_ml.ipynb` | cuML (GPU) | ❌ Optional | Use sklearn |
-| `15_pyspark_distributed.ipynb` | PySpark | ❌ Optional | Use Dask |
+| `unit1-introduction/examples/03_cudf_introduction.ipynb` | cuDF (GPU) | ❌ Optional | Use pandas |
+| `unit2-cleaning/examples/07_cudf_import_export_gpu.ipynb` | cuDF (GPU) | ❌ Optional | Use pandas |
+| `unit4-ml-intro/examples/12_cpu_vs_gpu_ml.ipynb` | cuML (GPU) | ❌ Optional | Use sklearn |
+| `unit5-scaling/examples/04_rapids_workflows.ipynb` | cuDF/cuML (GPU) | ❌ Optional | Use pandas/sklearn |
+| `unit5-scaling/examples/03_pyspark_distributed.ipynb` | PySpark | ❌ Optional | Use Dask |
 
 **All notebooks are designed to work with or without these dependencies!**
 
 ---
 
-## Questions? | أسئلة؟
+## Questions?
 
 If you encounter issues:
 1. Check the error message - it should guide you

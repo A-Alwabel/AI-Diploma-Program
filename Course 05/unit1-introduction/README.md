@@ -1,63 +1,44 @@
-# Unit: Introduction to Data Science
+# Unit 1: Introduction to Data Science
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+**Unit hours:** 18 (of 96 total training hours)
 
-Before starting this unit, confirm:
+## Prerequisites
 
-- [ ] Completed Course 02 (Python for AI) or equivalent Python basics
-- [ ] Comfortable with NumPy arrays and Pandas DataFrames
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Read `../START_HERE.md`
-- [ ] Reviewed related topics in `../../COURSE_MAP.md` if needed
+- AIAT 112 - Python for AI (Course 02) or equivalent Python fundamentals
+- Environment set up per `../START_HERE.md` (repo root `.venv`, **ai-diploma** kernel)
 
-### Learning Objectives | أهداف التعلم
+## What This Unit Covers
 
-By the end of this unit, students will be able to:
-- Understand key concepts in introduction to data science
-- Apply techniques and methodologies
-- Work with real-world datasets
-- Implement solutions to practical problems
+The data science lifecycle and the core Python toolkit: pandas and NumPy for tabular and array data, Python programming refreshers, Jupyter workflow, and a first look at performance tools (cuDF for GPU DataFrames, Numba for JIT compilation).
 
----
+## Examples (run in order)
 
-## Unit Duration | مدة الوحدة
+| # | Notebook | Description |
+|---|----------|-------------|
+| 01 | `examples/01_data_science_intro.ipynb` | The data science lifecycle and a first end-to-end data exploration |
+| 02 | `examples/02_pandas_numpy_basics.ipynb` | Core pandas DataFrame and NumPy array operations |
+| 03 | `examples/03_cudf_introduction.ipynb` | cuDF GPU-accelerated DataFrames (optional GPU; pandas fallback) |
+| 04 | `examples/04_python_basics_loops_conditions.ipynb` | Python refresher: arithmetic, loops, and conditions |
+| 05 | `examples/05_jupyter_notebooks_best_practices.ipynb` | Working effectively in Jupyter notebooks |
+| 06 | `examples/06_data_structures_lists_dictionaries.ipynb` | Lists and dictionaries for data work |
+| 07 | `examples/07_data_science_applications.ipynb` | Real-world data science application examples |
+| 08 | `examples/08_numba_jit_compilation.ipynb` | Speeding up numeric Python with Numba JIT compilation |
+| 09 | `examples/09_advanced_numpy_operations.ipynb` | Advanced NumPy: broadcasting, vectorization, and array tricks |
 
-**Theoretical Hours:** 6 hours  
-**Practical Hours:** 12 hours  
-**Total Hours:** 18 hours
+## Exercise
 
-**Format:** 6 theoretical + 12 practical hours
+- `exercises/exercise_01.ipynb` - data science fundamentals practice (a script version `exercise_01.py` is also provided)
 
----
+## Quiz
 
-## Topics Covered | المواضيع المغطاة
+- `../QUIZZES/Quiz_01_Introduction_Data_Science.md`
+- Answer keys are released by your instructor.
 
-1. **Data Science Lifecycle**
-2. **Introduction to Pandas and NumPy**
-3. **Data Structures and Types**
-4. **Basic Data Operations**
-5. **Introduction to cuDF**
+## Learning Path
 
----
+1. Read this README
+2. Run the examples in numeric order
+3. Complete `exercises/exercise_01.ipynb`
+4. Take Quiz 01
 
-## Files Structure | هيكل الملفات
-
-- `examples/`: Complete code examples with explanations
-- `exercises/`: Practice problems for students
-- `solutions/`: Instructor-only reference solutions (e.g. `solution_01.ipynb`)
-
-Quiz files are in `QUIZZES/`. Answer keys are instructor-only.
-
----
-
-## Learning Path | مسار التعلم
-
-1. **Start with examples** - Understand concepts through code
-2. **Complete exercises** - Practice what you learned
-3. **Review quiz solutions** - When your instructor provides the answer key
-4. **Take quizzes** - Test your understanding
-
----
-
-**Unit Duration:** 2 weeks  
-**Difficulty:** Intermediate
+**Next unit:** `../unit2-cleaning/`

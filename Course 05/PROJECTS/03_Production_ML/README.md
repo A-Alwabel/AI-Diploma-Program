@@ -1,6 +1,6 @@
-# Project 03: Production ML System | المشروع 03: نظام تعلم الآلة للإنتاج
+# Project 03: Production ML System
 
-## Overview | نظرة عامة
+## Overview
 
 Build a production-ready machine learning system with scalable data processing, model training, and deployment.
 
@@ -13,7 +13,7 @@ Build a production-ready machine learning system with scalable data processing, 
 
 ---
 
-## Requirements | المتطلبات
+## Requirements
 
 ### Functional Requirements
 1. **Data Pipeline**
@@ -42,7 +42,7 @@ Build a production-ready machine learning system with scalable data processing, 
 
 ---
 
-## Deliverables | المخرجات
+## Deliverables
 
 1. **Source Code**
    - `pipeline.py` - Data pipeline
@@ -65,4 +65,3 @@ Build a production-ready machine learning system with scalable data processing, 
 
 **Created**: 2025  
 **For**: Scalable Data Science - AIAT 115
-

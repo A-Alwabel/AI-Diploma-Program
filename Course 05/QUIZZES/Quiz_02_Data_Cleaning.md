@@ -1,5 +1,4 @@
 # Quiz 2: Data Cleaning and Preparation
-## اختبار 2: تنظيف البيانات وتحضيرها
 
 **Time Limit:** 30 minutes | **Marks:** 30 points
 
@@ -157,4 +156,3 @@ What are the main steps in data cleaning? Why is it important?
 - **70-79% (21-23 points):** Satisfactory
 - **60-69% (18-20 points):** Needs improvement
 - **Below 60% (<18 points):** Requires additional study
-

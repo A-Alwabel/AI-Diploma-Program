@@ -1,10 +1,10 @@
-# Self-Assessment Materials | مواد التقييم الذاتي
+# Self-Assessment Materials
 
 This folder contains self-assessment checkpoints to help students track their progress through Course 05.
 
 ---
 
-## Purpose | الغرض
+## Purpose
 
 Self-assessment checkpoints help you:
 - ✅ Verify your understanding after each unit
@@ -15,7 +15,7 @@ Self-assessment checkpoints help you:
 
 ---
 
-## How to Use | كيفية الاستخدام
+## How to Use
 
 1. **After completing each unit:**
    - Complete the relevant checkpoint
@@ -31,13 +31,13 @@ Self-assessment checkpoints help you:
 
 ---
 
-## Available Checkpoints | نقاط التقييم المتاحة
+## Available Checkpoints
 
 *Checkpoints will be added here as the course develops.*
 
 ---
 
-## Tips | نصائح
+## Tips
 
 1. **Be Honest:** Don't check boxes you're not sure about
 2. **Review Regularly:** Use checkpoints after each unit

@@ -1,5 +1,4 @@
 # Quiz 5: Extending the Scope of Data Science (Scaling and Production)
-## اختبار 5: توسيع نطاق علم البيانات (التوسع والإنتاج)
 
 **Time Limit:** 30 minutes | **Marks:** 30 points
 
@@ -150,4 +149,3 @@ What are the main challenges when scaling data science workflows? How can they b
 - **70-79% (21-23 points):** Satisfactory
 - **60-69% (18-20 points):** Needs improvement
 - **Below 60% (<18 points):** Requires additional study
-
