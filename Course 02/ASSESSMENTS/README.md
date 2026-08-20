@@ -86,14 +86,10 @@ See `Notebook_Assessment_Rubric.md` for detailed criteria.
 
 ---
 
-## Answer Keys | مفاتيح الإجابات
+## Grading
 
-All quizzes include answer keys at the end of each file.
-
-**For Instructors:**
-- Answer keys are included in quiz files
-- Review before administering
-- May need to adjust based on specific implementations
+Answer keys and rubrics are released by your instructor — they are not
+distributed with the student materials.
 
 ---
 
