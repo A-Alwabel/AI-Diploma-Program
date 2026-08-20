@@ -1,62 +1,41 @@
-# Unit: Bias and Justice
-## Bias and Justice
+# Unit 2: Bias, Fairness, and Discrimination in AI
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+Unit hours: 12 (theory+practical)
 
-Before starting this unit, confirm:
+This unit covers how bias enters machine learning systems and how to measure and reduce it: fairness metrics (demographic parity, equalized odds), pre-/in-/post-processing mitigation techniques, fair representation learning, real-world bias case studies, and practices for developing fair AI systems.
 
-- [ ] Completed Unit 1: Foundations of AI Ethics
-- [ ] Understand bias, fairness, and basic evaluation metrics
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
+## Prerequisites
 
-### Learning Objectives | أهداف التعلم
+- Unit 1: Foundations of AI Ethics ([../unit1-ethics-foundations/README.md](../unit1-ethics-foundations/README.md))
+- Setup from [../START_HERE.md](../START_HERE.md) (root `.venv` + **ai-diploma** kernel)
 
-By the end of this unit, students will be able to:
-- Understand key concepts in bias and justice
-- Apply ethical frameworks and methodologies
-- Analyze real-world case studies
-- Implement ethical AI solutions
+## Learning Objectives
 
----
+By the end of this unit, you will be able to:
 
-## Unit Duration | مدة الوحدة
+- Detect bias in ML models using group fairness metrics
+- Apply bias mitigation techniques and compare their trade-offs
+- Analyze documented cases of biased AI systems (hiring, credit, facial recognition, policing)
+- Apply fair-AI development practices such as human-in-the-loop review
 
-**Theoretical Hours:** 6 hours  
-**Practical Hours:** 6 hours  
-**Total Hours:** 12 hours
+## Examples (work in this order)
 
-**Format:** 6 theoretical + 6 practical hours
+1. [examples/01_bias_detection.ipynb](examples/01_bias_detection.ipynb) — Detecting bias in ML models with fairness metrics such as demographic parity and equalized odds.
+2. [examples/02_bias_mitigation.ipynb](examples/02_bias_mitigation.ipynb) — Bias mitigation techniques applied before, during, and after model training.
+3. [examples/03_fair_representation.ipynb](examples/03_fair_representation.ipynb) — Fair representation learning: transforming features to reduce encoded bias.
+4. [examples/04_bias_case_studies.ipynb](examples/04_bias_case_studies.ipynb) — Case studies of biased AI: hiring, credit scoring, facial recognition, predictive policing.
+5. [examples/05_fair_ai_development.ipynb](examples/05_fair_ai_development.ipynb) — Building fairness into the development workflow, including human-in-the-loop review.
 
----
+## Exercise
 
-## Topics Covered | المواضيع المغطاة
+- [exercises/exercise_01.ipynb](exercises/exercise_01.ipynb)
 
-1. **Bias Detection**
-2. **Bias Mitigation Techniques**
-3. **Fair Representation**
-4. **Bias Case Studies**
-5. **Fair AI Development**
+Solutions are released by your instructor.
 
----
+## Quiz
 
-## Files Structure | هيكل الملفات
+- [../QUIZZES/Quiz_02_Bias_Justice.md](../QUIZZES/Quiz_02_Bias_Justice.md)
 
-- `examples/`: Complete code examples with explanations
-- `exercises/`: Practice problems for students
-- `solutions/`: Complete solutions to exercises
-- `tests/`: Unit tests
+## Next
 
----
-
-## Learning Path | مسار التعلم
-
-1. **Start with examples** - Understand concepts through code
-2. **Complete exercises** - Practice what you learned
-3. **Review solutions** - Check your work
-4. **Take quizzes** - Test your understanding
-
----
-
-**Unit Duration:** 2 weeks  
-**Difficulty:** Intermediate
+Continue to [Unit 3: Privacy, Security, and Data Protection](../unit3-privacy-security/README.md).

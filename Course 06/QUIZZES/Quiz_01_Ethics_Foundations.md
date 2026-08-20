@@ -1,5 +1,4 @@
 # Quiz 1: Foundations of AI Ethics
-## اختبار 1: أسس أخلاقيات الذكاء الاصطناعي
 
 **Time Limit:** 30 minutes | **Marks:** 30 points
 
@@ -141,4 +140,3 @@ What are the key principles that should guide ethical AI development?
 - **70-79% (21-23 points):** Satisfactory
 - **60-69% (18-20 points):** Needs improvement
 - **Below 60% (<18 points):** Requires additional study
-

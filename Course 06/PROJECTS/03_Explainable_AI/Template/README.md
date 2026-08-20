@@ -1,6 +1,6 @@
-# Explainable AI Tool Template | قالب أداة الذكاء الاصطناعي القابل للتفسير
+# Explainable AI Tool Template
 
-## How to Use | كيفية الاستخدام
+## How to Use
 
 1. **Copy the template** to your project folder
 2. **Install SHAP and LIME:** `pip install shap lime`
@@ -10,7 +10,7 @@
 
 ---
 
-## Implementation Order | ترتيب التنفيذ
+## Implementation Order
 
 1. **Train Model** - Train a model to explain
 2. **SHAP Explanations** - Implement global explanations
@@ -20,7 +20,7 @@
 
 ---
 
-## Tips | نصائح
+## Tips
 
 - Start with tree-based models (SHAP works best)
 - Use SHAP for global, LIME for local explanations
@@ -30,4 +30,3 @@
 ---
 
 **Good luck with your project!** 🚀
-

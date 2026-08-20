@@ -1,11 +1,10 @@
 # Course 06: Quizzes Summary
-## ملخص اختبارات الدورة 06
 
 This course contains quizzes for each unit. All quizzes are located in their respective unit folders.
 
 ---
 
-## Available Quizzes | الاختبارات المتاحة
+## Available Quizzes
 
 ### Unit 1: Foundations of AI Ethics
 **Location:** `unit1-ethics-foundations/quizzes/quiz_01.md`
@@ -50,4 +49,3 @@ Each quiz follows this structure:
 ---
 
 **Note:** This is a summary file. Individual quizzes are in each unit's `quizzes/` folder.
-

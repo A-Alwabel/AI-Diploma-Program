@@ -1,5 +1,4 @@
 # Quiz 4: Transparency and Accountability
-## اختبار 4: الشفافية والمساءلة
 
 **Time Limit:** 30 minutes | **Marks:** 30 points
 

@@ -1,268 +1,82 @@
-# AIAT 116 - Ethics of Artificial Intelligence
-## أخلاقيات الذكاء الاصطناعي
+# AIAT 116 — Artificial Intelligence Ethics
 
-## 🚀 NEW STUDENTS: START HERE! | الطلاب الجدد: ابدأ من هنا!
+Course 06 of the AI Diploma. This course covers the ethical dimensions of building and deploying AI systems: ethical frameworks, bias and fairness, privacy and data protection, interpretability and accountability, and AI governance and regulation.
 
-**👉 If you're a new student, read `START_HERE.md` FIRST!**  
-**👉 إذا كنت طالباً جديداً، اقرأ `START_HERE.md` أولاً!**
+**Course code:** AIAT 116
+**Course title:** Artificial Intelligence Ethics
+Credit hours: 3 · Contact hours: 4/week · Total training hours: 64 (theory+practical)
 
-The `START_HERE.md` file contains:
-- ✅ Day 1 setup instructions
-- ✅ Step-by-step installation guide
-- ✅ Learning sequence
-- ✅ Progress tracker
-- ✅ Troubleshooting tips
-
-**Don't skip it!** It will save you time and confusion.
-
-**✅ Official Path:** Follow the unit folders in order (Unit 1 → Unit 5).
+New students: read [START_HERE.md](START_HERE.md) first.
 
 ---
 
-## Course Overview | نظرة عامة على الدورة
+## Units
 
-This course delves into the ethical implications and responsibilities associated with Artificial Intelligence (AI). Students will explore critical issues of bias, justice, privacy, transparency, accountability, and governance in AI systems.
-
-**Course Code:** AIAT 116  
-**Course Name:** أخلاقيات الذكاء الاصطناعي (Ethics of Artificial Intelligence)  
-**Language:** Bilingual (Arabic/English)
-**Credit Hours:** 3  
-**Lecture Hours:** 2  
-**Practical Hours:** 2  
-**Total Hours:** 64 (32 theoretical + 32 practical)
-
-**📚 Official Unit Content:** See `../DETAILED_UNIT_DESCRIPTIONS.md` for detailed theoretical and practical content per unit.
-
-**Unit ↔ Folder Mapping (aligned with Detailed Unit Descriptions):**
-
-| Detailed Unit | Folder | Topic |
-|---------------|--------|-------|
-| Unit 1 | `unit1-ethics-foundations/` | Foundations of AI Ethics |
-| Unit 2 | `unit2-bias-justice/` | Bias, Fairness, and Discrimination in AI |
-| Unit 3 | `unit3-privacy-security/` | Privacy, Security, and Data Protection |
-| Unit 4 | `unit4-transparency-accountability/` | Interpretability, Transparency, and Accountability |
-| Unit 5 | `unit5-governance-regulations/` | AI Governance, Regulations, and Future Challenges |
-
-**Unit Breakdown:**
-- Unit 1: 6 theoretical + 6 practical = 12 hours
-- Unit 2: 6 theoretical + 6 practical = 12 hours
-- Unit 3: 6 theoretical + 6 practical = 12 hours
-- Unit 4: 7 theoretical + 7 practical = 14 hours
-- Unit 5: 7 theoretical + 7 practical = 14 hours
+| Unit | Official title | Folder | Hours |
+|------|----------------|--------|-------|
+| 1 | Foundations of AI Ethics | [unit1-ethics-foundations/](unit1-ethics-foundations/README.md) | 12 |
+| 2 | Bias, Fairness, and Discrimination in AI | [unit2-bias-fairness/](unit2-bias-fairness/README.md) | 12 |
+| 3 | Privacy, Security, and Data Protection | [unit3-privacy-security/](unit3-privacy-security/README.md) | 12 |
+| 4 | Interpretability, Transparency, and Accountability | [unit4-transparency-accountability/](unit4-transparency-accountability/README.md) | 14 |
+| 5 | AI Governance, Regulations, and Future Challenges | [unit5-governance-regulations/](unit5-governance-regulations/README.md) | 14 |
 
 ---
 
-## Prerequisites | المتطلبات الأساسية
+## Learning Path
 
-**Python Version**: Python 3.8+ required (3.10 or 3.11 recommended)
+Follow one numbered path:
 
-**Knowledge Required:**
-- Basic Python programming knowledge (variables, functions, classes)
-- Understanding of AI/ML concepts (helpful but not required)
-- Interest in ethical considerations of technology
+1. [START_HERE.md](START_HERE.md) — setup and orientation
+2. Units 1 → 5, in order. In each unit: read the unit README, work through `examples/` notebooks in file order, do the `exercises/` notebook(s), then take the unit quiz in [QUIZZES/](QUIZZES/README.md)
+3. [ASSESSMENTS/](ASSESSMENTS/README.md) — final exam
 
-**Setup**: See `DOCS/INSTALLATION_GUIDE.md` for detailed library installation instructions
+Track yourself with [STUDENT_PROGRESS_CHECKLIST.md](STUDENT_PROGRESS_CHECKLIST.md).
 
 ---
 
-## 📁 Clean Folder Structure | هيكل المجلد النظيف
+## Prerequisites
+
+- Earlier Semester 1 courses (AIAT 111–115), in particular basic Python programming and introductory ML concepts.
+
+## Setup
+
+- Use the shared environment at the repository root: the `.venv` virtual environment.
+- Open notebooks with the **ai-diploma** Jupyter kernel.
+
+---
+
+## Folder Structure
 
 ```
-📦 Course Root
-│
-├── 📄 README.md                        📖 This file
-├── 📄 START_HERE.md                    ⭐ READ THIS FIRST!
-├── 📄 STUDENT_PROGRESS_CHECKLIST.md    ✅ Track progress
-├── 📄 ../requirements.txt              📦 Dependencies (in root directory)
-│
-├── 📓 unit1-ethics-foundations/        📚 Unit 1: Foundations
-├── 📓 unit2-bias-justice/              📚 Unit 2: Bias & Justice
-├── 📓 unit3-privacy-security/           📚 Unit 3: Privacy & Security
-├── 📓 unit4-transparency-accountability/ 📚 Unit 4: Transparency
-├── 📓 unit5-governance-regulations/     📚 Unit 5: Governance
-│
-├── 📖 DOCS/                             📄 Documentation
-├── 🛠️ SCRIPTS/                          🔧 Utility scripts
-└── 📊 META/                             📈 Course metadata
+Course 06/
+├── README.md                        # This file
+├── START_HERE.md                    # Read first
+├── STUDENT_PROGRESS_CHECKLIST.md    # Progress tracker
+├── unit1-ethics-foundations/        # Unit 1 (examples/ + exercises/)
+├── unit2-bias-fairness/             # Unit 2 (examples/ + exercises/)
+├── unit3-privacy-security/          # Unit 3 (examples/ + exercises/)
+├── unit4-transparency-accountability/  # Unit 4 (examples/ + exercises/)
+├── unit5-governance-regulations/    # Unit 5 (examples/ + exercises/)
+├── QUIZZES/                         # One quiz per unit
+├── ASSESSMENTS/                     # Final exam
+├── PROJECTS/                        # Three applied projects
+├── CASE_STUDIES/                    # Case study material
+└── PRESENTATIONS/SLIDES/            # 14 lecture slide decks
 ```
 
 ---
 
-## Quick Start | البدء السريع
+## Assessment Materials
 
-1. **Read:** `START_HERE.md`
-2. **Install:** Libraries (see `DOCS/INSTALLATION_GUIDE.md`)
-3. **Start:** `unit1-ethics-foundations/examples/01_ethical_frameworks.ipynb`
-4. **Track:** Use `STUDENT_PROGRESS_CHECKLIST.md`
+- **Quizzes:** one per unit in [QUIZZES/](QUIZZES/README.md)
+- **Final exam:** [ASSESSMENTS/Final_Exam.md](ASSESSMENTS/Final_Exam.md)
+- **Projects:** three applied projects in [PROJECTS/](PROJECTS/README.md)
+- **Case study:** [CASE_STUDIES/case_study_01_ai_ethics_in_healthcare.md](CASE_STUDIES/case_study_01_ai_ethics_in_healthcare.md)
 
----
-
-## Course Learning Outcomes (CLOs) | مخرجات التعلم
-
-**The detailed objectives of the training program are: For the trainee to be able to:**
-
-**CLO1:** Explain ethical frameworks (e.g., utilitarianism, deontology, virtue ethics) and their relevance to AI development; analyze case studies of AI ethics violations.
-
-**CLO2:** Identify and analyze bias, fairness, and discrimination in AI systems; apply bias detection and mitigation techniques and fairness metrics.
-
-**CLO3:** Assess privacy, security, and data protection risks in AI applications; apply relevant regulations (e.g., GDPR, CCPA) and privacy-preserving techniques.
-
-**CLO4:** Evaluate transparency, interpretability, and accountability in AI systems; apply XAI techniques (e.g., LIME, SHAP) and accountability frameworks.
-
-**CLO5:** Analyze AI governance, regulations, and future challenges; formulate ethics policies and comply with legal frameworks.
-
-*(Aligned with [DETAILED_UNIT_DESCRIPTIONS.md](../DETAILED_UNIT_DESCRIPTIONS.md) and [COMPLETE_COURSE_STRUCTURE_AND_CLOS.md](../COMPLETE_COURSE_STRUCTURE_AND_CLOS.md).)*
+Answer keys and exercise solutions are released by your instructor.
 
 ---
 
-## 📚 Course Content | محتوى الدورة
+## Libraries Used
 
-### Unit 1: Foundations of AI Ethics | أسس أخلاقيات الذكاء الاصطناعي
-**Location**: `unit1-ethics-foundations/`
-
-**Topics Covered:**
-- Ethical frameworks (utilitarianism, deontology, virtue ethics)
-- Ethical decision-making frameworks
-- Historical case studies (COMPAS, etc.)
-- Key ethical principles and values
-
-**Files:**
-- `examples/` - Code examples and case studies
-- `exercises/` - Practice problems
-- `tests/` - Unit tests
-
----
-
-### Unit 2: Bias, Justice, and Discrimination in AI | التحيز والعدالة والتمييز في الذكاء الاصطناعي
-**Location**: `unit2-bias-justice/`
-
-**Topics Covered:**
-- Bias detection with fairness metrics
-- Bias mitigation techniques
-- Fair representation learning
-- Case studies of biased AI systems
-
----
-
-### Unit 3: Privacy and Security in AI | الخصوصية والأمان في الذكاء الاصطناعي
-**Location**: `unit3-privacy-security/`
-
-**Topics Covered:**
-- Data protection principles
-- Privacy-preserving technologies
-- Differential privacy
-- GDPR compliance
-- Secure AI development
-
----
-
-### Unit 4: Transparency and Accountability | الشفافية والمساءلة
-**Location**: `unit4-transparency-accountability/`
-
-**Topics Covered:**
-- Explainable AI (XAI)
-- Model interpretability (SHAP, LIME)
-- Accountability frameworks
-- Algorithmic transparency
-
----
-
-### Unit 5: Governance and Regulations | الحوكمة واللوائح
-**Location**: `unit5-governance-regulations/`
-
-**Topics Covered:**
-- Global AI regulations
-- Industry-specific regulations
-- Governance frameworks
-- Legal challenges in AI
-
----
-
-## Learning Path | مسار التعلم
-
-```
-Unit 1: Foundations of AI Ethics
-    ↓
-Unit 2: Bias, Justice, and Discrimination
-    ↓
-Unit 3: Privacy and Security
-    ↓
-Unit 4: Transparency and Accountability
-    ↓
-Unit 5: Governance and Regulations
-    ↓
-Apply Ethical Principles to AI Projects!
-```
-
----
-
-## 📖 Documentation | التوثيق
-
-All documentation is in the `DOCS/` folder:
-- **INSTALLATION_GUIDE.md** - Detailed installation instructions
-- **INSTRUCTOR_GUIDE.md** - Teaching guide
-- **ASSESSMENT_GUIDE.md** - Assessment guidelines
-- **FAQ.md** - Frequently asked questions
-- **QUICK_REFERENCE.md** - Quick reference guide
-
----
-
-## 📄 Course Summary | ملخص الدورة
-
-**Quick Reference:** `COURSE_SUMMARY.md` contains a comprehensive text summary of all course materials (PDFs/PPTX files).  
-**مرجع سريع:** يحتوي `COURSE_SUMMARY.md` على ملخص نصي شامل لجميع مواد الدورة (ملفات PDF/PPTX).
-
-This summary allows you to:
-- Read course content without opening PDF/PPTX files
-- Search through all materials quickly
-- Review key concepts in text format
-- Use as a study guide
-
----
-
-## 📝 Assessment | التقييم
-
-- **Quizzes:** `QUIZZES/` folder (all quizzes centralized)
-- **Tests:** Each unit contains tests
-- **Exercises:** Practice problems in each unit's `exercises/` folder
-
----
-
-## 🆘 Need Help? | تحتاج مساعدة?
-
-- **Installation issues?** → `DOCS/INSTALLATION_GUIDE.md`
-- **Questions?** → `DOCS/FAQ.md`
-- **Quick reference?** → `DOCS/QUICK_REFERENCE.md`
-- **Progress tracking?** → Use `STUDENT_PROGRESS_CHECKLIST.md`
-
----
-
-## 📦 Required Libraries | المكتبات المطلوبة
-
-- **Data Processing:** pandas, numpy
-- **Machine Learning:** scikit-learn
-- **Visualization:** matplotlib, seaborn, plotly
-- **AI Fairness:** fairlearn, aif360
-- **Explainable AI:** shap, lime
-- **Privacy:** diffprivlib
-- **Cryptography:** cryptography
-
-See `../requirements.txt` for complete list with versions.
-
----
-
-## 📊 Course Status | حالة الدورة
-
-**Status:** ✅ Complete
-
-- ✅ All 5 units present with examples and exercises
-- ✅ All documentation complete
-- ✅ All assessment materials ready
-- ✅ Clean folder structure
-
----
-
-**Created for**: AIAT 116 - Ethics of Artificial Intelligence  
-**Language Support**: Arabic & English  
-**Last Updated**: 2025
-
+The notebooks use the scientific Python stack (numpy, pandas, scikit-learn, matplotlib, seaborn) plus fairness and explainability libraries: fairlearn (Unit 2), cryptography (Unit 3), shap and lime (Unit 4). All are installed in the repository root `.venv`.

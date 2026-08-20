@@ -1,6 +1,6 @@
-# Bias Audit Tool Template | قالب أداة تدقيق التحيز
+# Bias Audit Tool Template
 
-## How to Use | كيفية الاستخدام
+## How to Use
 
 1. **Copy the template** to your project folder
 2. **Install fairlearn:** `pip install fairlearn`
@@ -10,7 +10,7 @@
 
 ---
 
-## Implementation Order | ترتيب التنفيذ
+## Implementation Order
 
 1. **Bias Detection** - Calculate fairness metrics
 2. **Visualization** - Create bias charts
@@ -19,7 +19,7 @@
 
 ---
 
-## Tips | نصائح
+## Tips
 
 - Use fairlearn library for fairness metrics
 - Test with synthetic data first
@@ -29,4 +29,3 @@
 ---
 
 **Good luck with your project!** 🚀
-

@@ -1,5 +1,4 @@
 # Quiz 2: Bias, Justice, and Discrimination in AI
-## اختبار 2: التحيز والعدالة والتمييز في الذكاء الاصطناعي
 
 **Time Limit:** 30 minutes | **Marks:** 30 points
 

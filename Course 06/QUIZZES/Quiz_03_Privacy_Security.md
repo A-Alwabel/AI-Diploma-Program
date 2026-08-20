@@ -1,5 +1,4 @@
 # Quiz 3: Privacy, Security, and Data Protection
-## اختبار 3: الخصوصية والأمان وحماية البيانات
 
 **Time Limit:** 30 minutes | **Marks:** 30 points
 

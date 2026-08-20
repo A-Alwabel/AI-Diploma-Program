@@ -1,5 +1,4 @@
 # Quiz 5: Governance and Regulations
-## اختبار 5: الحوكمة واللوائح
 
 **Time Limit:** 30 minutes | **Marks:** 30 points
 

@@ -1,6 +1,6 @@
-# Project 03: Explainable AI Tool | المشروع 03: أداة الذكاء الاصطناعي القابل للتفسير
+# Project 03: Explainable AI Tool
 
-## Overview | نظرة عامة
+## Overview
 
 Create a tool for explaining AI model decisions using SHAP, LIME, and other interpretability techniques.
 
@@ -13,7 +13,7 @@ Create a tool for explaining AI model decisions using SHAP, LIME, and other inte
 
 ---
 
-## Requirements | المتطلبات
+## Requirements
 
 ### Functional Requirements
 1. **Explanation Methods**
@@ -36,7 +36,7 @@ Create a tool for explaining AI model decisions using SHAP, LIME, and other inte
 
 ---
 
-## Deliverables | المخرجات
+## Deliverables
 
 1. **Source Code**
    - `explainer.py` - Explanation methods
@@ -57,5 +57,4 @@ Create a tool for explaining AI model decisions using SHAP, LIME, and other inte
 ---
 
 **Created**: 2025  
-**For**: Ethics of Artificial Intelligence - AIAT 116
-
+**For**: AIAT 116 — Artificial Intelligence Ethics
