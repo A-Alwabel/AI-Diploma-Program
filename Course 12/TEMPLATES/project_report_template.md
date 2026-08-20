@@ -1,17 +1,15 @@
-# Project Report Template | قالب تقرير المشروع
-## AIAT 126 - Capstone Project
+# Project Report Template
+## AIAT 126 - Graduation Project
 
 ---
 
-## 1. Executive Summary | الملخص التنفيذي
+## 1. Executive Summary
 
 [Brief overview of the project, problem solved, and key results]
 
-[نظرة عامة موجزة على المشروع والمشكلة التي تم حلها والنتائج الرئيسية]
-
 ---
 
-## 2. Introduction | المقدمة
+## 2. Introduction
 
 ### 2.1 Problem Statement
 [Describe the problem you're solving]
@@ -24,13 +22,13 @@
 
 ---
 
-## 3. Literature Review | المراجعة الأدبية
+## 3. Literature Review
 
 [Review relevant research and existing solutions]
 
 ---
 
-## 4. Methodology | المنهجية
+## 4. Methodology
 
 ### 4.1 Data Collection
 [Describe your data]
@@ -46,7 +44,7 @@
 
 ---
 
-## 5. Results | النتائج
+## 5. Results
 
 ### 5.1 Model Performance
 [Performance metrics and results]
@@ -59,35 +57,34 @@
 
 ---
 
-## 6. Deployment | النشر
+## 6. Deployment
 
 [Deployment details and system architecture]
 
 ---
 
-## 7. Challenges and Solutions | التحديات والحلول
+## 7. Challenges and Solutions
 
 [Challenges faced and how you solved them]
 
 ---
 
-## 8. Future Work | العمل المستقبلي
+## 8. Future Work
 
 [Future improvements and extensions]
 
 ---
 
-## 9. Conclusion | الخلاصة
+## 9. Conclusion
 
 [Summary and conclusions]
 
 ---
 
-## 10. References | المراجع
+## 10. References
 
 [List of references]
 
 ---
 
-**For:** AIAT 126 - Capstone Project
-
+**For:** AIAT 126 - Graduation Project

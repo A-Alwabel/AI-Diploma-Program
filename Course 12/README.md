@@ -1,177 +1,112 @@
-# AIAT 126 - Capstone Project
-## مشروع التخرج
+# AIAT 126 - Graduation Project
 
-## 🚀 START HERE! | ابدأ من هنا!
+The final course of the AI Diploma. You plan, design, build, evaluate, document, and present one complete AI project of your own, applying what you learned across the program.
 
-**👉 Read `START_HERE.md` FIRST!**  
-**👉 اقرأ `START_HERE.md` أولاً!**
+**New here? Read [START_HERE.md](START_HERE.md) first.**
 
 ---
 
-**✅ Official Path:** Follow the unit folders in order (Unit 1 → Unit 5).
+## Course Facts
 
-**📚 Official Unit Content:** See `../DETAILED_UNIT_DESCRIPTIONS.md` for detailed theoretical and practical content per unit.
+- **Course code:** AIAT 126
+- **Course name:** Graduation Project
+- Credit hours: 3 · Contact hours: 5/week · Total training hours: 80 (theory+practical)
 
-**Unit ↔ Folder Mapping (aligned with Detailed Unit Descriptions):**
+## Prerequisites
 
-| Detailed Unit | Folder | Topic |
-|---------------|--------|-------|
-| Unit 1 | `unit1-project-planning/` | Project Planning and Proposal |
-| Unit 2 | `unit2-data-collection/` | Data Collection and Preparation |
-| Unit 3 | `unit3-model-development/` | Model Development and Training |
-| Unit 4 | `unit4-evaluation-optimization/` | Evaluation and Optimization |
-| Unit 5 | `unit5-documentation-presentation/` | Project Documentation and Final Presentation |
-
-## Course Overview | نظرة عامة على الدورة
-
-This is the capstone project course where students apply all knowledge gained throughout the AI Diploma Program to solve a real-world problem. Students will design, implement, and deploy a complete AI system.
-
-**Course Code:** AIAT 126  
-**Language:** Bilingual (Arabic/English)
-**Credit Hours:** 3  
-**Lecture Hours:** 1  
-**Practical Hours:** 4  
-**Total Hours:** 80 (16 theoretical + 64 practical)
-
-**Unit Breakdown:**
-- Unit 1: 4 theoretical + 10 practical = 14 hours
-- Unit 2: 3 theoretical + 12 practical = 15 hours
-- Unit 3: 3 theoretical + 14 practical = 17 hours
-- Unit 4: 3 theoretical + 14 practical = 17 hours
-- Unit 5: 3 theoretical + 14 practical = 17 hours
-
+- Semester 1 (AIAT 111-116)
+- Semester 2 (AIAT 121-125)
 
 ---
 
+## Units
+
+| Unit | Official title | Folder | Hours (theory + practical) |
+|------|----------------|--------|----------------------------|
+| 1 | Project Proposal and Plan | [unit1-project-planning/](unit1-project-planning/README.md) | 14 (4 + 10) |
+| 2 | Solution System Design and Architecture | [unit2-system-design-architecture/](unit2-system-design-architecture/README.md) | 15 (3 + 12) |
+| 3 | Implementation and Development of the Project Idea | [unit3-model-development/](unit3-model-development/README.md) | 17 (3 + 14) |
+| 4 | Evaluation and Refinement | [unit4-evaluation-optimization/](unit4-evaluation-optimization/README.md) | 17 (3 + 14) |
+| 5 | Project Documentation and Final Presentation | [unit5-documentation-presentation/](unit5-documentation-presentation/README.md) | 17 (3 + 14) |
+
+Note: the Unit 2 lesson notebook is currently a placeholder that outlines the planned content; see the Unit 2 README.
 
 ---
 
-## Safety Procedures | إجراءات السلامة
+## Learning Path
 
-**Important:** Please review the safety procedures before starting any lab work or practical exercises.
+Follow one numbered path. In each unit: read the unit README, work through the example notebooks in file order, do the exercise (Units 1-3), then take the unit quiz.
 
-**مهم:** يرجى مراجعة إجراءات السلامة قبل بدء أي عمل مخبري أو تمارين عملية.
+1. [START_HERE.md](START_HERE.md)
+2. [Unit 1: Project Proposal and Plan](unit1-project-planning/README.md) → [Quiz 1](QUIZZES/quiz_01.md)
+3. [Unit 2: Solution System Design and Architecture](unit2-system-design-architecture/README.md) → [Quiz 2](QUIZZES/quiz_02.md)
+4. [Unit 3: Implementation and Development of the Project Idea](unit3-model-development/README.md) → [Quiz 3](QUIZZES/quiz_03.md)
+5. [Unit 4: Evaluation and Refinement](unit4-evaluation-optimization/README.md) → [Quiz 4](QUIZZES/quiz_04.md)
+6. [Unit 5: Project Documentation and Final Presentation](unit5-documentation-presentation/README.md) → [Quiz 5](QUIZZES/quiz_05.md)
+7. [ASSESSMENTS](ASSESSMENTS/README.md) - final project evaluation
 
-📖 **Full Safety Guide:** See `../DOCS/SAFETY_PROCEDURES.md` for complete safety procedures and requirements.
-
-**Key Safety Rules:**
-- ✅ Maintain clean, organized workspace
-- ✅ Keep food and drinks away from equipment
-- ✅ Know locations of fire extinguishers and first aid tools
-- ✅ Report safety concerns immediately
-
----
-
-## Prerequisites | المتطلبات الأساسية
-
-**Completion**: Students must have completed:
-- All Semester 1 courses (AIAT 111-116)
-- All Semester 2 courses (AIAT 121-125)
+Track your progress in [STUDENT_PROGRESS_CHECKLIST.md](STUDENT_PROGRESS_CHECKLIST.md).
 
 ---
 
-## Course Learning Outcomes (CLOs) | مخرجات التعلم
+## Setup
 
-**The detailed objectives of the training program are: For the trainee to be able to:**
+Use the shared environment at the repository root:
 
-*Note: Detailed CLOs for Course 12 (Capstone Project) are not explicitly listed in the PDF extraction. Based on the course description, students should be able to:*
+```bash
+cd ..            # repo root
+source .venv/bin/activate
+jupyter lab
+```
 
-**CLO1:** Design and develop a comprehensive AI solution to address a specific real-world problem.
-
-**CLO2:** Integrate knowledge from different AI subfields into a coherent and practical system.
-
-**CLO3:** Conduct critical evaluation of implemented solution performance using relevant metrics.
-
-**CLO4:** Effectively communicate project goals, processes, results, and impacts through technical documentation.
-
-**CLO5:** Identify and analyze ethical, legal, and social considerations relevant to the AI solution.
+Open notebooks with the **ai-diploma** Jupyter kernel.
 
 ---
 
-## 📁 Course Structure | هيكل الدورة
+## Your Project
+
+- **Requirements and deliverables:** [PROJECT_GUIDELINES.md](PROJECT_GUIDELINES.md)
+- **Templates (for students):** [TEMPLATES/](TEMPLATES/) - proposal, report, and presentation templates
+- **Workspace:** [PROJECTS/](PROJECTS/README.md)
+
+**Deliverables:** project proposal, progress reports, working system with source code, final project report, and a presentation with demo.
+
+**Success criteria:** the project solves a real problem, applies multiple AI techniques from the program, includes complete documentation, and is presented clearly with a working demo.
+
+---
+
+## Course Structure
 
 ```
 Course 12/
-│
 ├── README.md
 ├── START_HERE.md
+├── STUDENT_PROGRESS_CHECKLIST.md
 ├── PROJECT_GUIDELINES.md
-├── TEMPLATES/
+├── TEMPLATES/                          # 3 project templates (for students)
 │   ├── project_proposal_template.md
 │   ├── project_report_template.md
 │   └── presentation_template.md
-│
-├── EXAMPLES/
-│   └── (Sample capstone projects)
-│
-└── RESOURCES/
-    └── (Additional resources)
+├── unit1-project-planning/             # Unit 1: Project Proposal and Plan
+│   ├── README.md
+│   ├── examples/
+│   └── exercises/
+├── unit2-system-design-architecture/   # Unit 2: Solution System Design and Architecture
+│   ├── README.md
+│   ├── examples/
+│   └── exercises/
+├── unit3-model-development/            # Unit 3: Implementation and Development
+│   ├── README.md
+│   ├── examples/
+│   └── exercises/
+├── unit4-evaluation-optimization/      # Unit 4: Evaluation and Refinement
+│   ├── README.md
+│   └── examples/
+├── unit5-documentation-presentation/   # Unit 5: Documentation and Final Presentation
+│   ├── README.md
+│   └── examples/
+├── QUIZZES/                            # quiz_01.md ... quiz_05.md
+├── ASSESSMENTS/                        # Final_Exam.md (project evaluation)
+├── PROJECTS/                           # project workspace
+└── CASE_STUDIES/                       # worked case study
 ```
-
----
-
-## 🎯 Project Requirements | متطلبات المشروع
-
-### Project Scope
-- **Duration:** 8-12 weeks
-- **Team Size:** Individual or team (2-3 members)
-- **Complexity:** Must demonstrate mastery of multiple AI concepts
-
-### Deliverables
-1. **Project Proposal** (Week 1-2)
-2. **Progress Reports** (Bi-weekly)
-3. **Final Project** (Working system)
-4. **Project Report** (Comprehensive documentation)
-5. **Presentation** (Technical demo)
-
-### Evaluation Criteria
-- Problem complexity and relevance
-- Technical implementation quality
-- Code quality and documentation
-- Deployment and usability
-- Presentation and communication
-
----
-
-## 📚 Project Ideas | أفكار المشاريع
-
-### Category 1: Computer Vision
-- Medical image analysis system
-- Autonomous vehicle perception
-- Quality control automation
-
-### Category 2: Natural Language Processing
-- Multi-language translation system
-- Intelligent document processing
-- Conversational AI assistant
-
-### Category 3: Predictive Analytics
-- Demand forecasting system
-- Fraud detection system
-- Predictive maintenance
-
-### Category 4: Generative AI
-- Content generation system
-- Image synthesis application
-- Creative AI tool
-
-### Category 5: Reinforcement Learning
-- Game-playing agent
-- Robotics control system
-- Resource optimization
-
----
-
-## ✅ Success Criteria | معايير النجاح
-
-- [ ] Project solves a real-world problem
-- [ ] Demonstrates multiple AI techniques
-- [ ] Includes complete documentation
-- [ ] Successfully deployed to production
-- [ ] Clear presentation and demo
-
----
-
-**Created for**: AIAT 126 - Capstone Project  
-**Last Updated:** 2025-12-10
-

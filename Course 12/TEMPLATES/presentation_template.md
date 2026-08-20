@@ -1,18 +1,18 @@
-# Presentation Template | قالب العرض
-## AIAT 126 - Capstone Project
+# Presentation Template
+## AIAT 126 - Graduation Project
 
 ---
 
-## Slide 1: Title Slide | الشريحة 1: شريحة العنوان
+## Slide 1: Title Slide
 
 **Project Title:** [Your project title]  
 **Student Name(s):** [Your name(s)]  
-**Course:** AIAT 126 - Capstone Project  
+**Course:** AIAT 126 - Graduation Project  
 **Date:** [Date]
 
 ---
 
-## Slide 2: Problem Statement | الشريحة 2: بيان المشكلة
+## Slide 2: Problem Statement
 
 - [Problem description]
 - [Why is it important?]
@@ -20,7 +20,7 @@
 
 ---
 
-## Slide 3: Objectives | الشريحة 3: الأهداف
+## Slide 3: Objectives
 
 - [Objective 1]
 - [Objective 2]
@@ -28,7 +28,7 @@
 
 ---
 
-## Slide 4: Methodology | الشريحة 4: المنهجية
+## Slide 4: Methodology
 
 - [Approach overview]
 - [Technologies used]
@@ -36,13 +36,13 @@
 
 ---
 
-## Slide 5: System Architecture | الشريحة 5: هندسة النظام
+## Slide 5: System Architecture
 
 [Diagram or description of system architecture]
 
 ---
 
-## Slide 6: Implementation | الشريحة 6: التنفيذ
+## Slide 6: Implementation
 
 - [Key components]
 - [Challenges faced]
@@ -50,7 +50,7 @@
 
 ---
 
-## Slide 7: Results | الشريحة 7: النتائج
+## Slide 7: Results
 
 - [Performance metrics]
 - [Visualizations]
@@ -58,13 +58,13 @@
 
 ---
 
-## Slide 8: Demo | الشريحة 8: العرض التوضيحي
+## Slide 8: Demo
 
 [Live demo or video demonstration]
 
 ---
 
-## Slide 9: Future Work | الشريحة 9: العمل المستقبلي
+## Slide 9: Future Work
 
 - [Potential improvements]
 - [Extensions]
@@ -72,12 +72,11 @@
 
 ---
 
-## Slide 10: Q&A | الشريحة 10: الأسئلة والأجوبة
+## Slide 10: Q&A
 
 **Thank you!**  
 **Questions?**
 
 ---
 
-**For:** AIAT 126 - Capstone Project
-
+**For:** AIAT 126 - Graduation Project

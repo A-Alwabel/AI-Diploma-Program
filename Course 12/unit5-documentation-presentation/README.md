@@ -1,61 +1,28 @@
 # Unit 5: Project Documentation and Final Presentation
-## توثيق المشروع والعرض النهائي
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+Unit hours: 17 total (3 theory + 14 practical)
 
-Before starting this unit, confirm:
+You write the final project report, prepare your presentation and demo, and assemble the complete submission package.
 
-- [ ] Completed Unit 4: Evaluation and Optimization
-- [ ] Have results and artifacts ready for reporting
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed presentation templates in `Course 12/TEMPLATES/`
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
+## Prerequisites
 
-### Learning Objectives | أهداف التعلم
+- Unit 4: Evaluation and Refinement (evaluation results and refined project artifacts)
 
-By the end of this unit, students will be able to:
-- Write final project report (summary, methodology, results, discussion)
-- Design slide decks or posters for presentation
-- Prepare recorded video or live demonstration
-- Practice oral presentation or defense
-- Compile source code, documents, and final submission package
+## Examples (work through in order)
 
----
+1. [examples/01_project_documentation_presentation.ipynb](examples/01_project_documentation_presentation.ipynb) - Writing the final report (summary, methodology, results, discussion), designing slide decks, preparing a live or recorded demo, and compiling the submission package.
 
-## Unit Duration | مدة الوحدة
+## Exercise
 
-**Theoretical Hours:** 4 hours  
-**Practical Hours:** 17 hours  
-**Total Hours:** 21 hours
+This unit has no separate exercise notebook; the practical work is documenting and presenting your own project. Use the templates:
 
-**Format:** 4 theoretical + 17 practical hours
+- [../TEMPLATES/project_report_template.md](../TEMPLATES/project_report_template.md)
+- [../TEMPLATES/presentation_template.md](../TEMPLATES/presentation_template.md)
 
----
+## Quiz
 
-## Topics Covered | المواضيع المغطاة
+- [../QUIZZES/quiz_05.md](../QUIZZES/quiz_05.md)
 
-1. **Technical Writing Standards**
-2. **Effective Data Visualization and Storytelling**
-3. **Public Speaking Principles**
-4. **Presentation Design**
+## Next
 
----
-
-## Files Structure | هيكل الملفات
-
-- `examples/`: Complete code examples with explanations
-- Templates available in `../TEMPLATES/`
-
----
-
-## Learning Path | مسار التعلم
-
-1. **Start with examples** - Understand documentation standards
-2. **Use templates** - Follow project report template
-3. **Create presentation** - Design slides or posters
-4. **Practice presentation** - Prepare for defense
-
----
-
-**Unit Duration:** 3 weeks  
-**Difficulty:** Advanced
+Finish with the final evaluation: [../ASSESSMENTS/README.md](../ASSESSMENTS/README.md)

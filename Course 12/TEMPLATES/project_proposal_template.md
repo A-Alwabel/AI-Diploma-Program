@@ -1,26 +1,24 @@
-# Project Proposal Template | قالب اقتراح المشروع
-## AIAT 126 - Capstone Project
+# Project Proposal Template
+## AIAT 126 - Graduation Project
 
 ---
 
-## 1. Project Information | معلومات المشروع
+## 1. Project Information
 
 **Project Title:** [Your project title here]  
 **Student Name(s):** [Your name(s)]  
 **Date:** [Date]  
-**Course:** AIAT 126 - Capstone Project
+**Course:** AIAT 126 - Graduation Project
 
 ---
 
-## 2. Problem Statement | بيان المشكلة
+## 2. Problem Statement
 
 [Describe the problem you want to solve. Why is it important?]
 
-[صف المشكلة التي تريد حلها. لماذا هي مهمة؟]
-
 ---
 
-## 3. Objectives | الأهداف
+## 3. Objectives
 
 ### Primary Objectives:
 1. [Objective 1]
@@ -33,7 +31,7 @@
 
 ---
 
-## 4. Dataset | مجموعة البيانات
+## 4. Dataset
 
 **Dataset Name:** [Name]  
 **Source:** [Where you'll get the data]  
@@ -42,7 +40,7 @@
 
 ---
 
-## 5. Methodology | المنهجية
+## 5. Methodology
 
 ### Approach:
 [Describe your approach to solving the problem]
@@ -58,15 +56,13 @@
 
 ---
 
-## 6. Expected Outcomes | النتائج المتوقعة
+## 6. Expected Outcomes
 
 [What do you expect to achieve?]
 
-[ماذا تتوقع تحقيقه؟]
-
 ---
 
-## 7. Timeline | الجدول الزمني
+## 7. Timeline
 
 | Week | Tasks |
 |------|-------|
@@ -79,7 +75,7 @@
 
 ---
 
-## 8. Resources Needed | الموارد المطلوبة
+## 8. Resources Needed
 
 - [Resource 1]
 - [Resource 2]
@@ -87,4 +83,4 @@
 
 ---
 
-**For:** AIAT 126 - Capstone Project
+**For:** AIAT 126 - Graduation Project
