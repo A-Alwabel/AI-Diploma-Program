@@ -1,213 +1,87 @@
-# 🎓 START HERE - Welcome Students! | ابدأ من هنا - مرحباً بالطلاب!
+# START HERE - AIAT 113
 
-## 👋 Welcome to Mathematics and Probabilities for Machine Learning | مرحباً بك في دورة الرياضيات والاحتمالات لتعلم الآلة
+## Welcome to Mathematics and Probability for Machine Learning
 
-**If you're a new student, READ THIS FIRST!**  
-**إذا كنت طالباً جديداً، اقرأ هذا أولاً!**
+This file tells you what to do on Day 1 and how to navigate the course.
 
-This file tells you exactly what to do on **Day 1** and how to navigate this course.  
-هذا الملف يخبرك بالضبط ماذا تفعل في **اليوم الأول** وكيف تتنقل في هذه الدورة.
-
-**✅ Official Path:** This course follows the **modules/** structure.  
-**ℹ️ Note:** The `unit*` folders are **legacy mirrors** and optional reference only.  
-**📚 Unit ↔ Module mapping:** See `README.md` and `../DETAILED_UNIT_DESCRIPTIONS.md` for official unit scope.
+**Credit hours:** 3 · **Contact hours:** 4/week · **Total training hours:** 64 (theory+practical)
 
 ---
 
-## ✅ Day 1 Checklist | قائمة اليوم الأول
+## Day 1 Checklist
 
-Follow these steps in order. Don't skip any!  
-اتبع هذه الخطوات بالترتيب. لا تتخطى أي خطوة!
+### Step 1: Check Prerequisites
 
-### Step 1: Check Prerequisites | الخطوة 1: تحقق من المتطلبات الأساسية
+- [ ] Semester 1 courses: Course 01 (AIAT 111) and Course 02 (AIAT 112), or equivalent Python skills
+- [ ] Comfortable with high school algebra
+- [ ] Able to open and run a Jupyter notebook
 
-**Before starting this course, you should have:**
-- [ ] **Basic Python knowledge**: Variables, data types, functions, loops
-- [ ] **Basic mathematics**: High school algebra and calculus
-- [ ] **Python 3.8+** installed on your computer
+### Step 2: Set Up Your Environment
 
-**If you're new to Python:**  
-⚠️ Complete a Python basics course first!
-
----
-
-### Step 2: Check Python Version | الخطوة 2: تحقق من إصدار بايثون
-
-Open your terminal/command prompt and type:
+This repo uses a single shared virtual environment at the repo root:
 
 ```bash
-python --version
+# From the repo root (one level above this folder)
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
 ```
 
-**You need:** Python 3.8 or higher (3.10 or 3.11 recommended)
+When you open any notebook, select the **ai-diploma** Jupyter kernel.
 
-**If you don't have Python or have an old version:**  
-Install Python 3.10 or 3.11 from [python.org](https://www.python.org/downloads/)
-
----
-
-### Step 3: Install Libraries | الخطوة 3: تثبيت المكتبات
-
-**Follow the installation guide:** Open `docs/INSTALLATION_GUIDE.md` and follow the instructions.
-
-**Quick method (if you're comfortable with terminal):**
+### Step 3: Verify Your Installation
 
 ```bash
-# 1. Create virtual environment (recommended)
-python -m venv venv
-
-# 2. Activate virtual environment
-# On Windows:
-venv\Scripts\activate
-# On macOS/Linux:
-source venv/bin/activate
-
-# 3. Upgrade pip
-pip install --upgrade pip
-
-# 4. Install all libraries
-pip install -r ../requirements.txt
-
-# 5. Verify installation
-pip check
+python "Course 03/TESTING/verify_installation.py"
 ```
 
-**If you see errors:** Read `docs/INSTALLATION_GUIDE.md` for troubleshooting.
+If it reports missing libraries, install them from the repo root: `pip install -r requirements.txt`.
+
+### Step 4: Read the Course Overview
+
+Open `README.md` in this folder. It lists the five units, their official titles and hours, and the assessment plan.
+
+### Step 5: Start Unit 1
+
+Open `unit1-linear-algebra/examples/00_why_how_after.ipynb`. Every unit starts with a `00_why_how_after.ipynb` overview notebook that explains why the unit matters, how it works, and what comes after.
+
+### Step 6: Track Your Progress
+
+Use `STUDENT_PROGRESS_CHECKLIST.md` to mark off notebooks, exercises, and quizzes as you complete them.
 
 ---
 
-### Step 4: Read the Course Overview | الخطوة 4: اقرأ نظرة عامة على الدورة
-
-**Open and read:** `README.md`
-
-This file explains:
-- What this course covers
-- The learning path
-- What each module teaches
-- How modules connect to each other
-
-**Don't skip this!** It's only 5-10 minutes to read and will save you hours of confusion later.
-
----
-
-### Step 5: Start with Module 01 | الخطوة 5: ابدأ بالوحدة 01
-
-**Open:** `modules/module_01/notebook_01_why_how_after.ipynb`
-
-**Why this module FIRST?**
-- Linear algebra is the foundation of all ML mathematics
-- All other modules build on these concepts
-- You need to understand vectors and matrices before learning gradients, optimization, etc.
-
-**What you'll learn:**
-- How data is represented as vectors and matrices
-- Matrix operations used in neural networks
-- Eigenvalues and eigenvectors for dimensionality reduction
-- Linear transformations for data manipulation
-
----
-
-### Step 6: Track Your Progress | الخطوة 6: تتبع تقدمك
-
-**Open:** `STUDENT_PROGRESS_CHECKLIST.md`
-
-Use this checklist to:
-- Track which modules you've completed
-- Mark exercises as done
-- Track quizzes and tests
-- See your overall progress
-
-**Update it regularly!** It helps you stay organized.
-
----
-
-## 📚 Course Structure | هيكل الدورة
-
-### Modules (in order):
-
-1. **Module 01**: Linear Algebra for Machine Learning
-   - Vectors, matrices, eigenvalues, linear transformations
-
-2. **Module 02**: Calculus and Multivariable Calculus
-   - Derivatives, gradients, chain rule, gradient descent
-
-3. **Module 03**: Optimization and Statistical Foundations
-   - Optimizers (SGD, Adam), loss functions, regularization
-
-4. **Module 04**: Dimensionality Reduction
-   - PCA, curse of dimensionality, feature selection
-
-5. **Module 05**: Probabilities and Statistical Inference
-   - Probability distributions, hypothesis testing, Bayesian inference
-
----
-
-## 🎯 Learning Path | مسار التعلم
+## Learning Path
 
 ```
-Module 01 (Linear Algebra)
+START_HERE.md
     ↓
-Module 02 (Calculus)
+Unit 1: Linear Algebra for ML and Data Transformations        (12 h)
     ↓
-Module 03 (Optimization & Statistics)
+Unit 2: Calculus and Multivariate Calculus for ML             (12 h)
     ↓
-Module 04 (Dimensionality Reduction)
+Unit 3: Optimization and Statistical Foundations for ML       (12 h)
     ↓
-Module 05 (Probabilities & Inference)
+Unit 4: Dimensionality Reduction and Data Representation      (14 h)
     ↓
-Apply to Real ML Projects!
+Unit 5: Probability, Sampling, and Statistical Inference      (14 h)
+    ↓
+ASSESSMENTS/Final_Exam.md
 ```
 
-**Important:** Don't skip modules! Each builds on the previous one.
+Don't skip units — each builds on the previous one.
 
 ---
 
-## 📖 How to Use This Course | كيفية استخدام هذه الدورة
+## How to Work Through Each Unit
 
-### For Each Module:
-
-1. **Read the main notebook** (`notebook_XX_why_how_after.ipynb`)
-   - Understand WHY the concept matters
-   - Learn HOW to implement it
-   - See what happens AFTER (results and implications)
-
-2. **Work through examples** (`examples/` folder)
-   - 3 detailed examples per module
-   - Run code and understand implementations
-
-3. **Complete exercises** (`exercises/` folder)
-   - Practice what you learned
-   - Check solutions when needed
-
-4. **Take assessments**
-   - Complete module quiz
-   - Take module test
-   - Review answer keys
+1. **Read the unit README** — objectives, notebook list, pointers.
+2. **Run the examples in file order** — `00_why_how_after.ipynb` first, then `01_...`, `02_...`, and so on.
+3. **Complete the exercises** — in the unit's `exercises/` folder. Solutions are released by your instructor.
+4. **Take the unit quiz** — in `QUIZZES/`. Answer keys are released by your instructor.
 
 ---
 
-## 🆘 Need Help? | تحتاج مساعدة?
+## Need Help?
 
-- **Installation issues?** → `docs/INSTALLATION_GUIDE.md`
-- **Questions?** → `docs/FAQ.md`
-- **Quick reference?** → `docs/QUICK_REFERENCE.md`
-
----
-
-## ✅ Next Steps | الخطوات التالية
-
-1. ✅ Complete Day 1 checklist above
-2. ✅ Start Module 01
-3. ✅ Update your progress checklist
-4. ✅ Join discussions and ask questions
-
----
-
-**Good luck with your learning journey!** 🚀  
-**حظاً موفقاً في رحلتك التعليمية!**
-
----
-
-*Created for: 113 AIAT - Mathematics and Probabilities for Machine Learning*  
-*Language Support: Arabic & English*
-
+- **Setup problems?** Run `TESTING/verify_installation.py` and read its output.
+- **Lost?** Re-read `README.md` for the course map.
+- **Progress tracking?** Use `STUDENT_PROGRESS_CHECKLIST.md`.

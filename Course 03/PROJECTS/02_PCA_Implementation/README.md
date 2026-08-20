@@ -1,6 +1,6 @@
-# Project 02: PCA Implementation and Visualization | المشروع 02: تنفيذ PCA والتصور
+# Project 02: PCA Implementation and Visualization
 
-## Overview | نظرة عامة
+## Overview
 
 Implement Principal Component Analysis from scratch and create visualizations of the process.
 
@@ -13,7 +13,7 @@ Implement Principal Component Analysis from scratch and create visualizations of
 
 ---
 
-## Requirements | المتطلبات
+## Requirements
 
 ### Functional Requirements
 1. **PCA Implementation**
@@ -38,7 +38,7 @@ Implement Principal Component Analysis from scratch and create visualizations of
 
 ---
 
-## Deliverables | المخرجات
+## Deliverables
 
 1. **Source Code**
    - `pca_implementation.py` - PCA from scratch
@@ -58,6 +58,4 @@ Implement Principal Component Analysis from scratch and create visualizations of
 
 ---
 
-**Created**: 2025  
-**For**: Mathematics and Probabilities for Machine Learning - 113 AIAT
-
+**For**: AIAT 113 - Mathematics and Probability for Machine Learning

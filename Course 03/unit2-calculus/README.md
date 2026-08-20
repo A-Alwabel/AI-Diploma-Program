@@ -1,63 +1,55 @@
-# Unit 2: Calculus and Multivariate Calculus for Machine Learning
-## التفاضل والتكامل متعدد المتغيرات لتعلم الآلة
+# Unit 2: Calculus and Multivariate Calculus for ML
 
-**Note:** This unit is a legacy mirror. The official path is in `modules/module_02/`.
+**Official hours:** 12 (theory+practical)
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+Training a machine learning model means minimizing a loss function, and calculus is the tool that makes that possible. This unit covers derivatives, gradients, gradient descent, and backpropagation — the math that powers model training.
 
-Before starting this unit, confirm:
+---
 
-- [ ] Completed Unit 1: Linear Algebra for Machine Learning
-- [ ] Comfortable with basic algebra and functions
-- [ ] Familiar with NumPy arrays and vector notation
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
+## Prerequisites
 
-### Learning Objectives | أهداف التعلم
+- Unit 1: Linear Algebra for ML and Data Transformations
+- Comfortable with functions and basic algebra
+- Repo-root `.venv` active and the **ai-diploma** Jupyter kernel selected
 
-By the end of this unit, students will be able to:
+---
+
+## Learning Objectives
+
+By the end of this unit, you will be able to:
+
 - Use calculus and multivariate calculus for optimization in ML
-- Solve differentiation problems using symbolic computation tools
-- Implement gradient computations for multivariate functions
-- Program backpropagation in neural networks
-- Apply function approximation on real-world ML models
+- Solve differentiation problems, including with symbolic computation (SymPy)
+- Compute gradients of multivariate functions
+- Program backpropagation for a simple neural network
+- Apply function approximation to real-world ML models
 
 ---
 
-## Unit Duration | مدة الوحدة
+## Notebooks (work through in order)
 
-**Theoretical Hours:** 6 hours  
-**Practical Hours:** 6 hours  
-**Total Hours:** 12 hours
-
-**Format:** 6 theoretical + 6 practical hours
-
----
-
-## Topics Covered | المواضيع المغطاة
-
-1. **Calculus Fundamentals**
-2. **Multivariate Calculus**
-3. **Calculus in Neural Networks**
-4. **Power Series and Function Approximations**
+1. `examples/00_why_how_after.ipynb` — Unit overview: why calculus matters for ML, how it is used, what comes after
+2. `examples/01_derivatives_basics.ipynb` — Derivatives and their role in loss functions
+3. `examples/02_gradients_multivariable.ipynb` — Gradients and multivariable calculus
+4. `examples/03_gradient_descent.ipynb` — Implementing gradient descent
+5. `examples/04_backpropagation_neural_networks.ipynb` — Programming backpropagation in neural networks
+6. `examples/05_function_approximation_ml.ipynb` — Applying function approximation to real-world ML models
 
 ---
 
-## Files Structure | هيكل الملفات
+## Exercises
 
-- `examples/`: Complete code examples with explanations
-- `exercises/`: Practice problems for students
+- `exercises/exercise_01.ipynb`
+- `exercises/exercise_02.ipynb`
 
----
-
-## Learning Path | مسار التعلم
-
-1. **Start with examples** - Understand concepts through code
-2. **Complete exercises** - Practice what you learned
-3. **Review solutions** - Check your work
-4. **Take quizzes** - Test your understanding
+Solutions are released by your instructor.
 
 ---
 
-**Unit Duration:** 2 weeks  
-**Difficulty:** Intermediate
+## Quiz
+
+Take [Quiz 02: Calculus](../QUIZZES/Quiz_02_Calculus.md) after finishing the exercises. Answer keys are released by your instructor.
+
+---
+
+**Next:** [Unit 3: Optimization and Statistical Foundations for ML](../unit3-optimization/README.md)

@@ -1,5 +1,4 @@
 # Quiz 03: Optimization and Statistics
-## اختبار 03: التحسين والإحصاء
 
 **Time Limit:** 45 minutes | **Marks:** 100 points
 
@@ -271,4 +270,3 @@ Explain the bias-variance tradeoff and its relationship to optimization and stat
 
 **Created:** 2025  
 **For:** 113 AIAT - Mathematics and Probabilities for Machine Learning
-

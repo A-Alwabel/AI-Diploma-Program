@@ -1,6 +1,6 @@
-# ML Algorithms from Scratch Template | قالب خوارزميات تعلم الآلة من الصفر
+# ML Algorithms from Scratch Template
 
-## How to Use | كيفية الاستخدام
+## How to Use
 
 1. **Copy the template** to your project folder
 2. **Use only NumPy** - no scikit-learn for implementations
@@ -10,7 +10,7 @@
 
 ---
 
-## Implementation Order | ترتيب التنفيذ
+## Implementation Order
 
 1. **Linear Regression** - Start with simplest algorithm
 2. **Logistic Regression** - Add sigmoid activation
@@ -19,7 +19,7 @@
 
 ---
 
-## Tips | نصائح
+## Tips
 
 - Use only NumPy (no scikit-learn for core algorithms)
 - Test with small datasets first
@@ -29,4 +29,3 @@
 ---
 
 **Good luck with your project!** 🚀
-

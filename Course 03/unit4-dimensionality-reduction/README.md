@@ -1,64 +1,56 @@
-# Unit 4: Dimensionality Reduction
-## تقليل الأبعاد
+# Unit 4: Dimensionality Reduction and Data Representation Techniques
 
-**Note:** This unit is a legacy mirror. The official path is in `modules/module_04/`.
+**Official hours:** 14 (theory+practical)
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
-
-Before starting this unit, confirm:
-
-- [ ] Completed Unit 1: Linear Algebra for Machine Learning
-- [ ] Completed Unit 3: Optimization and Statistical Foundations
-- [ ] Comfortable with matrix operations and eigenvalues
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
-
-### Learning Objectives | أهداف التعلم
-
-By the end of this unit, students will be able to:
-- Implement dimensionality reduction techniques (PCA, SVD, t-SNE)
-- Understand the curse of dimensionality
-- Apply feature selection techniques
-- Implement PCA using Python for dimensionality reduction
-- Apply dimensionality reduction techniques on real-world datasets
+Real datasets often have hundreds or thousands of features. This unit covers the techniques that compress them into useful low-dimensional representations — PCA, SVD, feature selection, and t-SNE — and applies them to real image and text data.
 
 ---
 
-## Unit Duration | مدة الوحدة
+## Prerequisites
 
-**Theoretical Hours:** 6 hours  
-**Practical Hours:** 6 hours  
-**Total Hours:** 12 hours
-
-**Format:** 6 theoretical + 6 practical hours
+- Unit 1: Linear Algebra for ML and Data Transformations (matrix operations, eigenvalues)
+- Unit 3: Optimization and Statistical Foundations for ML
+- Repo-root `.venv` active and the **ai-diploma** Jupyter kernel selected
 
 ---
 
-## Topics Covered | المواضيع المغطاة
+## Learning Objectives
 
-1. **Principal Component Analysis (PCA)**
-2. **Curse of Dimensionality**
-3. **Feature Selection**
-4. **Singular Value Decomposition (SVD)**
-5. **t-SNE Visualization**
+By the end of this unit, you will be able to:
 
----
-
-## Files Structure | هيكل الملفات
-
-- `examples/`: Complete code examples with explanations
-- `exercises/`: Practice problems for students
+- Explain the curse of dimensionality and its impact on ML models
+- Implement PCA in Python for dimensionality reduction
+- Apply feature selection and extraction techniques
+- Implement Singular Value Decomposition (SVD)
+- Use t-SNE for non-linear dimensionality reduction and visualization
+- Apply dimensionality reduction to real-world datasets (images and text)
 
 ---
 
-## Learning Path | مسار التعلم
+## Notebooks (work through in order)
 
-1. **Start with examples** - Understand concepts through code
-2. **Complete exercises** - Practice what you learned
-3. **Review solutions** - Check your work
-4. **Take quizzes** - Test your understanding
+1. `examples/00_why_how_after.ipynb` — Unit overview: why dimensionality reduction matters, how it works, what comes after
+2. `examples/01_pca_implementation.ipynb` — Principal Component Analysis (PCA)
+3. `examples/02_curse_dimensionality.ipynb` — The curse of dimensionality
+4. `examples/03_feature_selection.ipynb` — Feature selection and extraction
+5. `examples/04_svd_implementation.ipynb` — Singular Value Decomposition (SVD) implementation
+6. `examples/05_tsne_visualization.ipynb` — t-SNE for non-linear dimensionality reduction and visualization
+7. `examples/06_dimensionality_reduction_real_world_datasets.ipynb` — Applying dimensionality reduction to real-world datasets (images and text)
 
 ---
 
-**Unit Duration:** 2 weeks  
-**Difficulty:** Intermediate
+## Exercises
+
+- `exercises/exercise_01.ipynb`
+
+Solutions are released by your instructor.
+
+---
+
+## Quiz
+
+Take [Quiz 04: Dimensionality Reduction](../QUIZZES/Quiz_04_Dimensionality_Reduction.md) after finishing the exercise. Answer keys are released by your instructor.
+
+---
+
+**Next:** [Unit 5: Probability, Sampling, and Statistical Inference](../unit5-probability/README.md)

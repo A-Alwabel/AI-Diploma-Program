@@ -1,5 +1,4 @@
 # Quiz 01: Linear Algebra for Machine Learning
-## اختبار 01: الجبر الخطي لتعلم الآلة
 
 **Time Limit:** 45 minutes | **Marks:** 100 points
 
@@ -87,7 +86,6 @@ B = [[5, 6],
 ```
 
 Show your calculation.
-
 
       = [[5 + 14,  6 + 16],
          [15 + 28, 18 + 32]]
@@ -242,4 +240,3 @@ What is the dot product? How is it used in machine learning?
 
 **Created:** 2025  
 **For:** 113 AIAT - Mathematics and Probabilities for Machine Learning
-

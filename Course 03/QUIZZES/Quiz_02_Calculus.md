@@ -1,5 +1,4 @@
 # Quiz 02: Calculus for Machine Learning
-## اختبار 02: التفاضل لتعلم الآلة
 
 **Time Limit:** 45 minutes | **Marks:** 100 points
 
@@ -37,7 +36,6 @@ What is the derivative of f(x) = x²?
 ### Question 4 (10 points)
 Calculate the derivative of f(x) = 3x³ + 2x² - 5x + 1
 
-
 f'(x) = d/dx(3x³) + d/dx(2x²) - d/dx(5x) + d/dx(1)
      = 3(3x²) + 2(2x) - 5(1) + 0
      = 9x² + 4x - 5
@@ -66,7 +64,6 @@ What does the gradient point toward?
 
 ### Question 7 (10 points)
 For the function f(x, y) = x² + 2xy + y², calculate the gradient ∇f.
-
 
 ∂f/∂x = 2x + 2y
 ∂f/∂y = 2x + 2y
@@ -237,4 +234,3 @@ In linear regression: J(θ) = (1/2m)Σ(y - θᵀx)²
 
 **Created:** 2025  
 **For:** 113 AIAT - Mathematics and Probabilities for Machine Learning
-

@@ -1,5 +1,4 @@
 # Quiz 05: Probabilities and Statistical Inference
-## اختبار 05: الاحتمالات والاستدلال الإحصائي
 
 **Time Limit:** 45 minutes | **Marks:** 100 points
 
@@ -349,4 +348,3 @@ Explain maximum likelihood estimation (MLE) and maximum a posteriori (MAP) estim
 
 **Created:** 2025  
 **For:** 113 AIAT - Mathematics and Probabilities for Machine Learning
-

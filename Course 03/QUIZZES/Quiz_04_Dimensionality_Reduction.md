@@ -1,5 +1,4 @@
 # Quiz 04: Dimensionality Reduction
-## اختبار 04: تقليل الأبعاد
 
 **Time Limit:** 45 minutes | **Marks:** 100 points
 
@@ -293,4 +292,3 @@ What are the limitations of PCA? When might you choose an alternative method?
 
 **Created:** 2025  
 **For:** 113 AIAT - Mathematics and Probabilities for Machine Learning
-
