@@ -2,11 +2,11 @@
 
 **Course:** AIAT 111 · **Unit hours:** 14 (7 theory + 7 practical)
 
-Generative models and how they differ from discriminative ones (GANs, Transformers, LLMs), an applied binary-classification project — a feedforward neural network for diabetes prediction with EDA and preprocessing — and a summary that ties the whole course together.
+Generative models and how they differ from discriminative ones (GANs, Transformers, LLMs), an applied binary-classification project — a feedforward neural network for diabetes prediction with EDA and preprocessing — a hands-on GAN training experiment, and a summary that ties the whole course together.
 
 **Prerequisites:** Unit 4 (`../unit4-neural-networks-basics/README.md`).
 
-**Kernels:** notebooks 01, 02, and 04 run on the `ai-diploma` kernel; notebook 03 uses TensorFlow/Keras and runs on the `tfenv` kernel (see `../START_HERE.md`).
+**Kernels:** notebooks 01, 02, and 05 run on the `ai-diploma` kernel; notebooks 03 and 04 use TensorFlow/Keras and run on the `tfenv` kernel (see `../START_HERE.md`).
 
 ---
 
@@ -17,7 +17,8 @@ Generative models and how they differ from discriminative ones (GANs, Transforme
 | 01 | `examples/01_generative_ai_introduction.ipynb` | What generative AI is; overview of model families and applications |
 | 02 | `examples/02_generative_vs_discriminative.ipynb` | Generative vs discriminative models |
 | 03 | `examples/03_diabetes_classification_ffnn.ipynb` | Diabetes classification with a feedforward neural network: EDA, preprocessing, training, evaluation (`tfenv` kernel) |
-| 04 | `examples/04_course_summary.ipynb` | Course summary and integration of all units |
+| 04 | `examples/04_simple_gan_experiment.ipynb` | Training a simple GAN to generate the two-moons dataset (`tfenv` kernel) |
+| 05 | `examples/05_course_summary.ipynb` | Course summary and integration of all units |
 
 ---
 

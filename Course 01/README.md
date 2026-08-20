@@ -32,7 +32,7 @@ An introduction to Artificial Intelligence: what AI is, intelligent agents, sear
 One numbered path through the course:
 
 1. `START_HERE.md` — setup and orientation
-2. Unit 1 → Unit 5, in order. Within each unit: read the unit `README.md`, run the notebooks in `examples/` in file order, complete the exercise in `exercises/` (Unit 4's exercise is being authored), then take the quiz in `quizzes/`
+2. Unit 1 → Unit 5, in order. Within each unit: read the unit `README.md`, run the notebooks in `examples/` in file order, complete the exercise in `exercises/`, then take the quiz in `quizzes/`
 3. `ASSESSMENTS/` — final exam
 
 Track yourself with `STUDENT_PROGRESS_CHECKLIST.md`.
@@ -49,7 +49,7 @@ Course 01/
 ├── unit1-ai-foundations/           Unit 1 (examples, exercises, quizzes)
 ├── unit2-ai-concepts/              Unit 2 (examples, exercises, quizzes)
 ├── unit3-ml-basics/                Unit 3 (examples, exercises, quizzes)
-├── unit4-neural-networks-basics/   Unit 4 (examples, quizzes)
+├── unit4-neural-networks-basics/   Unit 4 (examples, exercises, quizzes)
 ├── unit5-generative-ai-intro/      Unit 5 (examples, exercises, quizzes)
 ├── QUIZZES/                        Index of the five unit quizzes
 ├── ASSESSMENTS/                    Final exam

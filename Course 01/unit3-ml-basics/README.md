@@ -2,11 +2,11 @@
 
 **Course:** AIAT 111 · **Unit hours:** 12 (6 theory + 6 practical)
 
-Core machine learning concepts continued: regression vs classification, then the neuron and perceptron, the XOR problem, and solving it with a small neural network in Keras.
+Core machine learning concepts continued: regression vs classification, then the neuron and perceptron, the XOR problem, solving it with a small neural network in Keras, how models actually learn (gradient descent and loss functions), and explaining model predictions with SHAP and LIME.
 
 **Prerequisites:** Unit 2 (`../unit2-ai-concepts/README.md`).
 
-**Kernels:** notebook 01 runs on the `ai-diploma` kernel; notebooks 02 and 03 use TensorFlow/Keras and run on the `tfenv` kernel (see `../START_HERE.md`).
+**Kernels:** notebooks 01, 04, and 05 run on the `ai-diploma` kernel; notebooks 02 and 03 use TensorFlow/Keras and run on the `tfenv` kernel (see `../START_HERE.md`).
 
 ---
 
@@ -17,6 +17,8 @@ Core machine learning concepts continued: regression vs classification, then the
 | 01 | `examples/01_regression_classification.ipynb` | Regression vs classification |
 | 02 | `examples/02_perceptron_xor.ipynb` | The neuron, the perceptron, and why XOR is hard (`tfenv` kernel) |
 | 03 | `examples/03_solving_xor_keras.ipynb` | Solving XOR with a neural network in Keras (`tfenv` kernel) |
+| 04 | `examples/04_gradient_descent_loss_functions.ipynb` | How models learn: loss functions and gradient descent, implemented from scratch |
+| 05 | `examples/05_model_interpretability_shap_lime.ipynb` | Explaining model predictions with SHAP and LIME |
 
 ---
 

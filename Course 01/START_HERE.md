@@ -26,11 +26,11 @@ Do the units in order. Within each unit: read the unit `README.md`, run the note
 2. **Unit 2 — AI Concepts, Terminology, and Application Domains** (12 hours: 6 theory + 6 practical)
    `unit2-ai-concepts/` — README, examples 01–08, `exercises/exercise_01.ipynb`, `quizzes/quiz_02.md`
 3. **Unit 3 — AI Concepts, Terminology, and Application Domains Part 2** (12 hours: 6 theory + 6 practical)
-   `unit3-ml-basics/` — README, examples 01–03, `exercises/exercise_01.ipynb`, `quizzes/quiz_03.md`
+   `unit3-ml-basics/` — README, examples 01–05, `exercises/exercise_01.ipynb`, `quizzes/quiz_03.md`
 4. **Unit 4 — Neural Networks Fundamentals** (14 hours: 7 theory + 7 practical)
-   `unit4-neural-networks-basics/` — README, examples 01–02, `quizzes/quiz_04.md` (the unit exercise is being authored)
+   `unit4-neural-networks-basics/` — README, examples 01–07, `exercises/exercise_01.ipynb`, `quizzes/quiz_04.md`
 5. **Unit 5 — Introduction to Generative AI and Course Summary** (14 hours: 7 theory + 7 practical)
-   `unit5-generative-ai-intro/` — README, examples 01–04, `exercises/01_generative_ai_exercise.ipynb`, `quizzes/quiz_05.md`
+   `unit5-generative-ai-intro/` — README, examples 01–05, `exercises/01_generative_ai_exercise.ipynb`, `quizzes/quiz_05.md`
 6. **Assessments** — final exam in `ASSESSMENTS/Final_Exam.md`
 
 Alongside the units:
