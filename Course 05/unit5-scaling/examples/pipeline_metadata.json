@@ -1,11 +1,11 @@
 {
   "pipeline_version": "1.0",
-  "created_at": "2026-01-26T18:28:37.492529",
+  "created_at": "2026-08-20T15:18:10.098918",
   "train_samples": 800,
   "test_samples": 200,
   "metrics": {
     "mse": 1.0701927459620182,
-    "r2": -0.032670003559198024
+    "r2": -0.032670003559198246
   },
   "features": [
     "feature1",
