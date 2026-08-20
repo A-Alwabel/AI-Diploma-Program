@@ -82,4 +82,4 @@ class Perceptron:
 
 ---
 
-**For:** AIAT 111 - Introduction to AI Applications and Concepts
+**For:** AIAT 111 - Introduction to Artificial Intelligence and Applications

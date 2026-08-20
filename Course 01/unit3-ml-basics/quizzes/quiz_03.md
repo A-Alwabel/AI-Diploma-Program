@@ -74,4 +74,4 @@ def find_siblings(graph, person):
 
 ---
 
-**For:** AIAT 111 - Introduction to AI Applications and Concepts
+**For:** AIAT 111 - Introduction to Artificial Intelligence and Applications
