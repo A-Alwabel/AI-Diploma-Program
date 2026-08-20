@@ -13,10 +13,15 @@ Usage:
   python tools/verify/run_notebooks.py --files a.ipynb b.ipynb
 """
 import argparse
+import os
 import subprocess
 import sys
 import time
 from pathlib import Path
+
+# Headless-safe SDL for gymnasium/pygame rendering: avoids intermittent
+# crashes from the homebrew-vs-bundled libSDL2 double load on macOS.
+ENV = {**os.environ, "SDL_VIDEODRIVER": "dummy", "SDL_AUDIODRIVER": "dummy"}
 
 REPO = Path(__file__).resolve().parents[2]
 PY = sys.executable
@@ -37,7 +42,7 @@ def run_one(nb: Path, timeout: int, inplace: bool, kernel: str | None = None) ->
     t0 = time.time()
     try:
         r = subprocess.run(args, cwd=nb.parent, capture_output=True, text=True,
-                           timeout=timeout + 60)
+                           timeout=timeout + 60, env=ENV)
         ok = r.returncode == 0
         msg = "" if ok else (r.stderr.strip().splitlines()[-1] if r.stderr.strip() else "nonzero exit")
     except subprocess.TimeoutExpired:
