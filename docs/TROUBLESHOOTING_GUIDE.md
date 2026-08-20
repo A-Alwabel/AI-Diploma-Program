@@ -1,522 +1,252 @@
-# Troubleshooting Guide | دليل حل المشاكل
-## Common Issues and Solutions Across All Courses
+# Troubleshooting Guide
 
-**Last Updated:** January 2025
+Common issues and solutions across all courses.
+
+**Last Updated:** 2026-08
 
 ---
 
-## 🔧 Installation Issues | مشاكل التثبيت
+## Installation Issues
 
-### Problem: "No module named 'X'"
+### "No module named 'X'"
 
-**Symptoms:**
 ```
 ModuleNotFoundError: No module named 'pandas'
-ImportError: No module named 'numpy'
 ```
 
-**Solutions:**
+1. **Check the virtual environment is active**
 
-1. **Check Virtual Environment**
    ```bash
-   # Make sure virtual environment is activated
-   # Windows:
-   venv\Scripts\activate
-   # macOS/Linux:
-   source venv/bin/activate
+   source .venv/bin/activate      # macOS/Linux
+   .venv\Scripts\activate         # Windows
    ```
 
-2. **Install Missing Library**
+2. **Install the requirements**
+
    ```bash
-   pip install pandas numpy matplotlib seaborn
-   # Or install all at once:
    pip install -r requirements.txt
    ```
 
-3. **Verify Installation**
+3. **Verify**
+
    ```bash
-   pip list | grep pandas
-   python -c "import pandas; print('✅ pandas installed')"
+   python -c "import pandas; print('pandas OK')"
    ```
 
----
+### "No module named 'tensorflow'"
 
-### Problem: "Python version too old"
+This is expected on the main `ai-diploma` kernel — TensorFlow lives in the
+separate **tfenv** environment (Python 3.13). Switch the notebook's kernel to
+**Python (tfenv-TF)**: Kernel → Change Kernel. See
+[SETUP_GUIDE.md](SETUP_GUIDE.md) for how to create the tfenv environment.
 
-**Symptoms:**
-```
-Python 3.7 or older
-SyntaxError: invalid syntax (on newer Python features)
-```
+### Dependency conflicts
 
-**Solutions:**
-
-1. **Install Python 3.10 or 3.11**
-   - Download from: https://www.python.org/downloads/
-   - Check "Add Python to PATH" during installation
-
-2. **Verify Version**
-   ```bash
-   python --version
-   # Should show: Python 3.10.x or 3.11.x
-   ```
-
-3. **Update pip**
-   ```bash
-   python -m pip install --upgrade pip
-   ```
-
----
-
-### Problem: "Libraries conflict with each other"
-
-**Symptoms:**
 ```
 ERROR: pip's dependency resolver does not currently take into account...
-Conflicting dependencies
 ```
 
-**Solutions:**
-
-1. **Use Virtual Environment** (Recommended)
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # or venv\Scripts\activate on Windows
-   pip install -r requirements.txt
-   ```
-
-2. **Update All Libraries**
-   ```bash
-   pip install --upgrade pip
-   pip install --upgrade pandas numpy matplotlib seaborn scikit-learn
-   ```
-
-3. **Check for Conflicts**
-   ```bash
-   pip check
-   ```
+1. Use a fresh virtual environment (never install into the system Python)
+2. Re-install from the baseline: `pip install -r requirements.txt`
+3. Check: `pip check`
 
 ---
 
-## 📓 Notebook Issues | مشاكل الدفاتر
+## Notebook Issues
 
-### Problem: "Notebook won't run"
+### Notebook won't run / kernel dies
 
-**Symptoms:**
-- Cells don't execute
-- Kernel keeps restarting
-- "Kernel died" error
+1. **Check the kernel** — select **AI Diploma** (or **Python (tfenv-TF)** for
+   TensorFlow notebooks in Courses 01 and 08)
+2. **Restart the kernel** — Kernel → Restart
+3. **Run cells in order** from the top (Shift+Enter); later cells depend on
+   earlier ones
+4. **Clear and restart** — Kernel → Restart & Clear Output, then run again
 
-**Solutions:**
+### Notebook is slow
 
-1. **Restart Kernel**
-   - Jupyter: Kernel → Restart
-   - Colab: Runtime → Restart runtime
+1. Reduce dataset size while experimenting
+2. For Courses 05/08/10, use Google Colab with a GPU
+   (each has `DOCS/COLAB_SETUP.md`)
+3. Prefer vectorized NumPy/pandas operations over Python loops
 
-2. **Check Python Kernel**
-   - Make sure Python 3 kernel is selected
-   - Jupyter: Kernel → Change kernel → Python 3
+### Code looks right but errors anyway
 
-3. **Run Cells in Order**
-   - Start from the first cell
-   - Run cells sequentially (Shift+Enter)
-
-4. **Clear Output and Restart**
-   - Cell → All Output → Clear
-   - Kernel → Restart & Clear Output
+1. Check for missing colons, parentheses, or wrong indentation
+2. Verify variables are defined — run the earlier cells first
+3. Confirm imports at the top of the notebook actually succeeded
 
 ---
 
-### Problem: "Notebook is slow"
+## GPU Issues
 
-**Symptoms:**
-- Cells take very long to execute
-- System becomes unresponsive
+### "CUDA out of memory"
 
-**Solutions:**
+1. Reduce the batch size (e.g. 64 → 16 or 8)
+2. Clear GPU memory:
 
-1. **Check Dataset Size**
-   - Use smaller datasets for testing
-   - Reduce number of rows/columns
-
-2. **Enable GPU (if applicable)**
-   - Course 05/08/10: Use Google Colab with GPU
-   - See course-specific Colab setup guides
-
-3. **Optimize Code**
-   - Use vectorized operations (NumPy/Pandas)
-   - Avoid loops when possible
-   - Use appropriate data types
-
----
-
-### Problem: "Notebook shows errors but code looks correct"
-
-**Solutions:**
-
-1. **Check for Syntax Errors**
-   - Look for missing colons, parentheses, quotes
-   - Check indentation
-
-2. **Verify Variable Names**
-   - Check for typos in variable names
-   - Ensure variables are defined before use
-
-3. **Check Import Statements**
-   - Verify all imports are at the top
-   - Check library names are correct
-
----
-
-## 🖥️ GPU Issues | مشاكل GPU
-
-### Problem: "CUDA out of memory"
-
-**Symptoms:**
-```
-RuntimeError: CUDA out of memory
-```
-
-**Solutions:**
-
-1. **Reduce Batch Size**
-   ```python
-   # Change from:
-   batch_size = 64
-   # To:
-   batch_size = 16  # or 8, or 4
-   ```
-
-2. **Clear GPU Memory**
    ```python
    import torch
    torch.cuda.empty_cache()
    ```
 
-3. **Use Smaller Models**
-   - Use smaller model architectures
-   - Reduce model complexity
+3. Use a smaller model
+4. Restart the runtime/kernel
 
-4. **Restart Runtime**
-   - Colab: Runtime → Restart runtime
-   - Local: Restart Python kernel
+### GPU not detected
 
----
+1. **Colab:** Runtime → Change runtime type → GPU
+2. Verify access:
 
-### Problem: "GPU not detected"
-
-**Symptoms:**
-- Code runs on CPU instead of GPU
-- No speedup from GPU
-
-**Solutions:**
-
-1. **Check GPU is Enabled (Colab)**
-   - Runtime → Change runtime type → GPU
-   - Verify: Runtime → Change runtime type shows "GPU"
-
-2. **Verify GPU Access**
    ```python
    import torch
-   print(torch.cuda.is_available())  # Should be True
-   print(torch.cuda.get_device_name(0))  # Should show GPU name
+   print(torch.cuda.is_available())
    ```
 
-3. **Install GPU Libraries**
-   - Colab: Run Colab setup cell
-   - Local: Install CUDA and GPU libraries
+3. **Local:** check drivers with `nvidia-smi`; install the CUDA-enabled build
+   of your framework
 
-4. **Check CUDA Version**
-   ```bash
-   nvidia-smi  # Check CUDA version
-   ```
+### RAPIDS/cuDF installation fails (Course 05)
+
+1. **Use Google Colab** — see `Course 05/DOCS/COLAB_SETUP.md`
+2. RAPIDS requires specific CUDA versions: <https://rapids.ai/>
+3. All Course 05 cuDF notebooks have a pandas (CPU) fallback — you can complete
+   the course without a GPU
 
 ---
 
-### Problem: "RAPIDS/cuDF installation fails"
+## Data Issues
 
-**Solutions:**
+### "File not found"
 
-1. **Use Google Colab** (Recommended)
-   - Colab has pre-configured GPU environment
-   - Run Colab setup cell in notebook
+1. Check your working directory:
 
-2. **Check CUDA Compatibility**
-   - RAPIDS requires specific CUDA versions
-   - See: https://rapids.ai/start.html
-
-3. **Install via Conda** (Local)
-   ```bash
-   conda install -c rapidsai -c conda-forge cudf cuml
-   ```
-
----
-
-## 📊 Data Issues | مشاكل البيانات
-
-### Problem: "File not found" or "Dataset not found"
-
-**Solutions:**
-
-1. **Check File Path**
    ```python
    import os
-   print(os.getcwd())  # Check current directory
-   print(os.listdir('.'))  # List files in current directory
+   print(os.getcwd())
+   print(os.listdir('.'))
    ```
 
-2. **Use Correct Path**
+2. Notebook paths are relative to the notebook's own folder — launch Jupyter
+   from the repository root and open the notebook in place
+3. Some notebooks download data on first run — check the setup cell
+
+### Memory errors with large datasets
+
+1. Load in chunks:
+
    ```python
-   # Relative path:
-   df = pd.read_csv('data/sample_data.csv')
-   # Absolute path:
-   df = pd.read_csv('/full/path/to/data.csv')
+   chunks = pd.read_csv('large_file.csv', chunksize=10_000)
+   df = pd.concat(chunks, ignore_index=True)
    ```
 
-3. **Download Dataset**
-   - Check if dataset needs to be downloaded
-   - Follow dataset download instructions in notebook
+2. Course 05 covers Dask for out-of-core dataframes — see
+   `Course 05/unit5-scaling/examples/02_dask_distributed.ipynb`
 
 ---
 
-### Problem: "Memory error when loading large dataset"
+## Course-Specific Issues
 
-**Solutions:**
+### Course 01 and Course 08 (TensorFlow notebooks)
 
-1. **Load Data in Chunks**
-   ```python
-   # Instead of:
-   df = pd.read_csv('large_file.csv')
-   # Use:
-   chunk_list = []
-   for chunk in pd.read_csv('large_file.csv', chunksize=10000):
-       chunk_list.append(chunk)
-   df = pd.concat(chunk_list, ignore_index=True)
-   ```
+- **"No module named tensorflow"** → switch to the `tfenv` kernel (see above)
+- **Training very slow (Course 08)** → use Colab with GPU:
+  `Course 08/DOCS/COLAB_SETUP.md`
 
-2. **Use Dask or PySpark**
-   - Course 05: Use Dask for large datasets
-   - See: `Course 05/unit5-scaling/examples/14_dask_distributed.ipynb`
+### Course 05 (Scalable Data Science)
 
-3. **Use GPU (if available)**
-   - Course 05: Use cuDF for GPU-accelerated loading
-   - See: `Course 05/unit2-cleaning/examples/07_cudf_import_export_gpu.ipynb`
+- **cuDF not available** → use Colab (`Course 05/DOCS/COLAB_SETUP.md`) or the
+  pandas fallback built into every cuDF notebook
+- **PySpark issues** → PySpark needs Java; the notebook's setup cell explains
 
----
+### Course 09 (Reinforcement Learning)
 
-## 🔗 Course-Specific Issues | مشاكل خاصة بالدورات
+- **Rendering fails** → the environments use `gymnasium[classic-control]` with
+  pygame; re-run `pip install -r requirements.txt`
 
-### Course 05 (Scalable Data Science):
+### Course 10 (Generative AI)
 
-**Problem:** "cuDF not available"
-- **Solution:** Use Google Colab - See `Course 05/DOCS/COLAB_SETUP.md`
-- **Alternative:** Use pandas (CPU) - all notebooks have fallbacks
+- **GAN/VAE training extremely slow on CPU** → use Colab with GPU:
+  `Course 10/DOCS/COLAB_SETUP.md`
+- **Out of memory** → smaller model, lower image resolution, smaller batch
 
-**Problem:** "Dask/PySpark not working"
-- **Solution:** Install Dask: `pip install dask`
-- **Note:** PySpark requires Java - see notebook for setup
+### Course 11 (Deploying AI Models)
+
+- **Docker labs** → Docker is installed separately from Python; the course
+  marks Docker steps as optional where a local alternative exists
+- **Cloud labs** → credentials setup in `Course 11/DOCS/CLOUD_CREDENTIALS_SETUP.md`
 
 ---
 
-### Course 08 (Deep Learning):
+## Colab-Specific Issues
 
-**Problem:** "TensorFlow/PyTorch training very slow"
-- **Solution:** Use Google Colab with GPU - See `Course 08/DOCS/COLAB_SETUP.md`
-- **Note:** Training on CPU is 10-100x slower
+### Session disconnected
 
-**Problem:** "Model training fails"
-- **Solution:** 
-  1. Reduce batch size
-  2. Use smaller model
-  3. Check GPU memory
+1. Save frequently (File → Save) and download important outputs
+2. Mount Google Drive to persist work
+3. Runtime → Reconnect, then re-run the setup cells
 
----
+### GPU quota exceeded
 
-### Course 10 (Generative AI):
-
-**Problem:** "GAN/VAE training extremely slow"
-- **Solution:** Use Google Colab with GPU - See `Course 10/DOCS/COLAB_SETUP.md`
-- **Warning:** Training on CPU can take days/weeks
-
-**Problem:** "Stable Diffusion out of memory"
-- **Solution:**
-  1. Use smaller model
-  2. Reduce image resolution
-  3. Use Colab Pro (more GPU memory)
+1. Free tier resets daily — wait and retry
+2. Switch to CPU temporarily for non-training cells
+3. Colab Pro offers more GPU time if you need it
 
 ---
 
-## 🌐 Colab-Specific Issues | مشاكل خاصة بـ Colab
+## System-Specific Issues
 
-### Problem: "Colab session disconnected"
+### Windows
 
-**Solutions:**
+- **`pip` not found** → use `python -m pip`
+- **Permission denied** → activate the venv; avoid installing system-wide
+- **Paths with spaces** → quote them: `cd "Course 04"`
 
-1. **Save Work Frequently**
-   - File → Save
-   - Download important outputs
+### macOS
 
-2. **Use Google Drive**
-   - Mount Google Drive
-   - Save notebooks to Drive
+- **`python` not found** → use `python3`
+- **SSL certificate errors** → run
+  `/Applications/Python 3.x/Install Certificates.command`
 
-3. **Reconnect**
-   - Runtime → Reconnect
-   - Re-run setup cells
+### Linux
 
----
-
-### Problem: "Colab GPU quota exceeded"
-
-**Solutions:**
-
-1. **Wait for Reset**
-   - Free tier: Resets daily (~12 hours/day)
-   - Check: Runtime → Change runtime type → GPU availability
-
-2. **Use CPU Temporarily**
-   - Switch to CPU runtime
-   - Continue learning (slower but functional)
-
-3. **Consider Colab Pro**
-   - More GPU hours
-   - Better GPUs (T4, V100, A100)
+- **Permission denied** → use a virtual environment; never `sudo pip`
 
 ---
 
-## 💻 System-Specific Issues | مشاكل خاصة بالنظام
+## Learning Issues
 
-### Windows:
+### "I don't understand the notebook"
 
-**Problem:** "pip command not found"
-- **Solution:** Use `python -m pip` instead of `pip`
-- **Or:** Add Python to PATH during installation
+1. Check the unit README and course prerequisites
+2. Re-run the earlier numbered examples in the unit — they build up to it
+3. Follow the sequence: units 1 → 5, examples 01 → NN
 
-**Problem:** "Permission denied"
-- **Solution:** Run terminal as Administrator
-- **Or:** Use `--user` flag: `pip install --user package_name`
+### "The exercise is too difficult"
 
----
-
-### macOS:
-
-**Problem:** "Command not found: python"
-- **Solution:** Use `python3` instead of `python`
-- **Or:** Create alias: `alias python=python3`
-
-**Problem:** "SSL certificate errors"
-- **Solution:**
-  ```bash
-  /Applications/Python\ 3.x/Install\ Certificates.command
-  ```
+1. Re-study the unit's examples and modify them first
+2. Break the exercise into the smallest possible steps
+3. Attempt it fully, then compare with the solution **when your instructor
+   releases it**
+4. Ask your instructor or study group — see
+   [COMMUNITY_RESOURCES.md](COMMUNITY_RESOURCES.md)
 
 ---
 
-### Linux:
+## Before Reporting an Issue
 
-**Problem:** "Permission denied"
-- **Solution:** Use `sudo` or install with `--user` flag
-- **Better:** Use virtual environment (no sudo needed)
-
----
-
-## 📚 Learning Issues | مشاكل التعلم
-
-### Problem: "I don't understand the notebook"
-
-**Solutions:**
-
-1. **Check Prerequisites**
-   - Review course README for prerequisites
-   - Complete previous courses/units if needed
-
-2. **Read Documentation**
-   - Read unit README files
-   - Review course documentation
-
-3. **Follow Sequence**
-   - Complete units in order (1 → 5)
-   - Don't skip ahead
-
-4. **Practice Basics**
-   - Review Python basics
-   - Practice with simple examples first
+- [ ] Read the relevant section of this guide
+- [ ] Verified the virtual environment is active
+- [ ] Verified the correct kernel (`ai-diploma` / `tfenv`)
+- [ ] Ran `pip check`
+- [ ] Restarted the kernel and ran cells from the top
+- [ ] Checked file paths and working directory
 
 ---
 
-### Problem: "Exercises are too difficult"
+## Additional Resources
 
-**Solutions:**
-
-1. **Review Examples**
-   - Re-read example notebooks
-   - Understand code step-by-step
-
-2. **Start Simple**
-   - Modify examples first
-   - Build up to exercises gradually
-
-3. **Check Solutions**
-   - Review solutions after attempting
-   - Learn from solution approaches
-
-4. **Ask for Help**
-   - Consult course documentation
-   - Ask instructors/peers
-
----
-
-## ✅ Verification Checklist | قائمة التحقق
-
-### Before Reporting Issues:
-
-- [ ] Read this troubleshooting guide
-- [ ] Checked course-specific documentation
-- [ ] Verified Python version (3.8+)
-- [ ] Verified libraries are installed
-- [ ] Tried restarting kernel/runtime
-- [ ] Checked for syntax errors
-- [ ] Verified file paths are correct
-- [ ] Checked GPU is enabled (if needed)
-
----
-
-## 🔗 Additional Resources | موارد إضافية
-
-### Documentation:
-- **Course-Specific:** Each course has `START_HERE.md` and `README.md`
-- **Setup Guide:** `SETUP_GUIDE.md`
-- **Student Guide:** `STUDENT_GUIDE.md`
-- **GPU Guide:** `GPU_REQUIREMENTS_SUMMARY.md`
-
-### Online Resources:
-- **Python Docs:** https://docs.python.org/
-- **Pandas Docs:** https://pandas.pydata.org/docs/
-- **NumPy Docs:** https://numpy.org/doc/
-- **Colab Help:** https://colab.research.google.com/notebooks/intro.ipynb
-
----
-
-## 🆘 Still Need Help? | لا تزال تحتاج مساعدة؟
-
-1. **Check Course Documentation**
-   - Read `START_HERE.md` in course directory
-   - Review `README.md` for course-specific help
-
-2. **Review Examples**
-   - Re-read example notebooks
-   - Check for similar code patterns
-
-3. **Search Documentation**
-   - Use search in documentation files
-   - Check troubleshooting sections
-
-4. **Contact Support**
-   - Consult with instructors
-   - Ask peers in study groups
-   - Check course forums (if available)
-
----
-
-**Last Updated:** January 2025  
-**Status:** Comprehensive Troubleshooting Guide
+- [SETUP_GUIDE.md](SETUP_GUIDE.md) — environment and kernels
+- [STUDENT_GUIDE.md](STUDENT_GUIDE.md) — how to work through the program
+- [GPU_REQUIREMENTS_SUMMARY.md](GPU_REQUIREMENTS_SUMMARY.md) — GPU and Colab
+- Python docs: <https://docs.python.org/> · pandas: <https://pandas.pydata.org/docs/> · NumPy: <https://numpy.org/doc/>

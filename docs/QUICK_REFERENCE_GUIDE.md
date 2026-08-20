@@ -1,39 +1,36 @@
 # AI Diploma - Quick Reference Guide
-# دبلوم مشارك الذكاء الاصطناعي - دليل المرجع السريع
 
-**Quick Navigation Guide for Instructors and Students**
+Quick navigation for instructors and students.
 
 ---
 
-## 📋 COURSE QUICK REFERENCE
+## COURSE QUICK REFERENCE
 
-### Semester 1 - الفصل الدراسي الأول
+### Semester 1
 
 | Code | Course | Hours | CLOs | Key Topics |
 |------|--------|-------|------|------------|
-| **111** | Introduction to AI & Applications | 64 | 8 | AI history, search algorithms, neural networks, generative AI intro |
-| **112** | Python for AI | 96 | 5 | Python programming, AI algorithms, knowledge representation, optimization |
-| **113** | Mathematics & Probability for ML | 64 | 6 | Linear algebra, calculus, probability, statistics, dimensionality reduction |
-| **114** | ML Algorithms & Applications | 96 | 7 | Regression, classification, clustering, model selection, boosting |
-| **115** | Scalable Data Science | 96 | 5 | Data cleaning, visualization, ML pipelines, big data, GPU acceleration |
-| **116** | AI Ethics | 64 | 5 | Bias, fairness, privacy, transparency, AI governance |
+| **AIAT 111** | Introduction to Artificial Intelligence and Applications | 64 | 8 | AI history, search algorithms, neural networks, generative AI intro |
+| **AIAT 112** | Python for Artificial Intelligence | 96 | 5 | Python programming, AI algorithms, knowledge representation, optimization |
+| **AIAT 113** | Mathematics and Probability for Machine Learning | 64 | 6 | Linear algebra, calculus, probability, statistics, dimensionality reduction |
+| **AIAT 114** | Machine Learning Algorithms and Applications | 96 | 7 | Regression, classification, clustering, model selection, boosting |
+| **AIAT 115** | Scalable Data Science | 96 | 5 | Data cleaning, visualization, ML pipelines, big data, GPU acceleration |
+| **AIAT 116** | Artificial Intelligence Ethics | 64 | 5 | Bias, fairness, privacy, transparency, AI governance |
 
----
-
-### Semester 2 - الفصل الدراسي الثاني
+### Semester 2
 
 | Code | Course | Hours | CLOs | Key Topics |
 |------|--------|-------|------|------------|
-| **121** | Natural Language Processing | 64 | 10 | Text processing, embeddings, classification, deep learning NLP, transformers |
-| **122** | Deep Learning | 64 | 5 | Neural networks, CNNs, RNNs, transformers, GANs, model deployment |
-| **123** | Reinforcement Learning | 96 | 6 | MDPs, Q-learning, deep RL, exploration strategies, multi-agent RL |
-| **124** | Generative AI | 64 | 7 | GANs, VAEs, transformers, text/image generation, ethics |
-| **125** | Deploying AI Models | 96 | 6 | Model packaging, APIs, containers, cloud deployment, MLOps |
-| **126** | Graduation Project | 80 | 5 | Project planning, implementation, evaluation, documentation, presentation |
+| **AIAT 121** | Natural Language Processing | 64 | 10 | Text processing, embeddings, classification, deep learning NLP, transformers |
+| **AIAT 122** | Deep Learning | 64 | 5 | Neural networks, CNNs, RNNs, transformers, GANs, model deployment |
+| **AIAT 123** | Reinforcement Learning | 96 | 6 | MDPs, Q-learning, deep RL, exploration strategies, multi-agent RL |
+| **AIAT 124** | Generative Artificial Intelligence | 64 | 7 | GANs, VAEs, transformers, text/image generation, ethics |
+| **AIAT 125** | Deploying AI Models | 96 | 6 | Model packaging, APIs, containers, cloud deployment, MLOps |
+| **AIAT 126** | Graduation Project | 80 | 5 | Project planning, implementation, evaluation, documentation, presentation |
 
 ---
 
-## 🎯 CLO SUMMARY BY COURSE
+## CLO SUMMARY BY COURSE
 
 | Course | CLOs |
 |--------|------|
@@ -53,7 +50,7 @@
 
 ---
 
-## ⏱️ TIME ALLOCATION QUICK REFERENCE
+## TIME ALLOCATION QUICK REFERENCE
 
 ### Theory vs Practical Hours
 
@@ -65,102 +62,73 @@
 
 ### Course Hours Breakdown
 
-**64-hour courses:** 111, 113, 116, 121, 122, 124  
-**80-hour course:** 126 (Graduation Project)  
-**96-hour courses:** 112, 114, 115, 123, 125
+**64-hour courses:** AIAT 111, 113, 116, 121, 122, 124
+**80-hour course:** AIAT 126 (Graduation Project)
+**96-hour courses:** AIAT 112, 114, 115, 123, 125
 
 ---
 
-## 📚 STANDARD UNIT STRUCTURE
+## STANDARD UNIT STRUCTURE
 
-Every course follows this 5-unit structure:
+Every course has 5 units, each with theoretical and practical content:
 
 ```
 Unit 1: Introduction & Fundamentals
-├── Theoretical Content
-└── Practical Content
-
 Unit 2: Core Techniques
-├── Theoretical Content
-└── Practical Content
-
 Unit 3: Advanced Topics
-├── Theoretical Content
-└── Practical Content
-
 Unit 4: Integration & Optimization
-├── Theoretical Content
-└── Practical Content
-
 Unit 5: Projects & Future Trends
-├── Theoretical Content
-└── Practical Content
 ```
 
 **Total:** 5 units × 12 courses = **60 units**
 
----
-
-## 📖 KEY DOCUMENTS
-
-| Document | Use For |
-|----------|---------|
-| `COMPLETE_COURSE_STRUCTURE_AND_CLOS.md` | Full course structure, CLOs, unit breakdowns |
-| `DETAILED_UNIT_DESCRIPTIONS.md` | Detailed theory/practical content for each unit |
-| `QUICK_REFERENCE_GUIDE.md` | This file - quick navigation |
+In the repository, each unit maps to a `unitN-…/` folder with numbered
+`examples/` and `exercises/`, followed by a quiz and the course assessment.
 
 ---
 
-## 🔍 FINDING INFORMATION
+## KEY DOCUMENTS
 
-### To find course information:
-→ See `COMPLETE_COURSE_STRUCTURE_AND_CLOS.md`  
-→ Scroll to "### Course X: AIAT XXX"
+| Document | Audience | Use For |
+|----------|----------|---------|
+| `QUICK_REFERENCE_GUIDE.md` | Everyone | This file — quick navigation |
+| [STUDENT_GUIDE.md](STUDENT_GUIDE.md) | Students | Working through the program |
+| [COURSE_NAVIGATION.md](COURSE_NAVIGATION.md) | Students | Prerequisites and course connections |
+| `COMPLETE_COURSE_STRUCTURE_AND_CLOS.md` | **Instructor reference** | Full course structure, CLOs, unit breakdowns |
+| `DETAILED_UNIT_DESCRIPTIONS.md` | **Instructor reference** | Detailed theory/practical content per unit |
 
-### To find detailed unit content:
-→ See `DETAILED_UNIT_DESCRIPTIONS.md`  
-→ Navigate to "## 📘 COURSE X"  
-→ Find "#### 📖 Unit X"
+Students do not need the instructor-reference documents — each course's
+`START_HERE.md` and unit READMEs contain everything on the student path.
 
-## 📊 COURSE PROGRESSION PATH
+---
+
+## COURSE PROGRESSION PATH
 
 ```
 Semester 1 (Foundation)
 ┌─────────────────────────────────────┐
-│ 111: Intro to AI                    │
-│ 112: Python for AI                  │
-│ 113: Math & Probability             │
-│ 114: ML Algorithms                  │
-│ 115: Data Science                   │
-│ 116: AI Ethics                      │
+│ AIAT 111: Intro to AI               │
+│ AIAT 112: Python for AI             │
+│ AIAT 113: Math & Probability        │
+│ AIAT 114: ML Algorithms             │
+│ AIAT 115: Scalable Data Science     │
+│ AIAT 116: AI Ethics                 │
 └─────────────────────────────────────┘
                 ↓
 Semester 2 (Advanced)
 ┌─────────────────────────────────────┐
-│ 121: NLP                            │
-│ 122: Deep Learning                  │
-│ 123: Reinforcement Learning         │
-│ 124: Generative AI                  │
-│ 125: Deploying AI Models            │
-│ 126: Graduation Project             │
+│ AIAT 121: NLP                       │
+│ AIAT 122: Deep Learning             │
+│ AIAT 123: Reinforcement Learning    │
+│ AIAT 124: Generative AI             │
+│ AIAT 125: Deploying AI Models       │
+│ AIAT 126: Graduation Project        │
 └─────────────────────────────────────┘
 ```
 
 ---
 
-## ✅ COMPLETENESS CHECKLIST
-
-- [x] All 12 courses documented
-- [x] All 60 units structured
-- [x] Theory/Practical sections complete
-- [x] All 75 CLOs defined
-- [x] Time allocations specified
-- [x] Bilingual support (English/Arabic)
-- [x] Ready for implementation
-
----
-
-## 📞 QUICK STATS
+## QUICK STATS
 
 - **Total Courses:** 12
 - **Total Units:** 60
@@ -168,10 +136,8 @@ Semester 2 (Advanced)
 - **Total Hours:** 944
 - **Theory Hours:** 368 (39%)
 - **Practical Hours:** 576 (61%)
-- **Documentation Status:** ✅ 100% Complete
 
 ---
 
-**Last Updated:** 2026-08-19 (hours verified against the official PDF)  
-**Version:** 1.1
-
+**Last Updated:** 2026-08-20 (hours verified against the official PDF)
+**Version:** 1.2

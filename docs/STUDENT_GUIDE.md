@@ -1,373 +1,170 @@
-# Complete Student Guide | دليل الطالب الشامل
-## Your Complete Guide to the AI Diploma Program
+# Student Guide
 
-**Welcome to the AI Diploma Program!** This guide will help you navigate the entire program successfully.
+Your guide to working through the AI Diploma program.
 
----
-
-## 🚀 Getting Started | البدء
-
-### Step 1: Understand the Program Structure
-
-**Program Overview:**
-- **12 Courses** + Graduation Project
-- **9 Months** total duration
-- **944 Hours** of training (368 theory + 576 practical)
-- **75 Course Learning Outcomes (CLOs)**
-
-**Quick Navigation:**
-1. Read **[QUICK_REFERENCE_GUIDE.md](QUICK_REFERENCE_GUIDE.md)** - One-page overview
-2. Review **[TEACHING_TIMELINE.md](TIMELINE/TEACHING_TIMELINE.md)** - Complete schedule
-3. Check **[GPU_REQUIREMENTS_SUMMARY.md](GPU_REQUIREMENTS_SUMMARY.md)** - GPU needs
-
-### Step 2: Choose Your Starting Course
-
-**If you're a complete beginner:**
-- Start with **Course 01: Introduction to AI**
-- Follow the course sequence (01 → 02 → 03...)
-
-**If you have Python experience:**
-- You can start with **Course 02: Python for AI**
-- Review Course 01 materials if needed
-
-**If you have ML experience:**
-- You can start with **Course 04: ML Algorithms**
-- Ensure you have prerequisites from Courses 01-03
-
-### Step 3: Course Setup
-
-**For each course:**
-1. Navigate to course directory (e.g., `Course 01/`)
-2. **Read `START_HERE.md` FIRST** - Critical setup instructions
-3. Read `README.md` - Course overview
-4. Follow installation steps
-5. Begin with Unit 1
-
-**Note for Students:** The `TEMPLATES/` folder is for instructors only.  
-You should follow course units and notebooks, not templates.
+**Last Updated:** 2026-08
 
 ---
 
-## 📚 Course Progression | تقدم الدورات
+## Program Overview
+
+- **12 courses** (AIAT 111–126), taken in order 01 → 12
+- **944 training hours** across **2 official semesters**
+- Semester 1: Courses 01–06 (AIAT 111–116)
+- Semester 2: Courses 07–12 (AIAT 121–126), ending with the Graduation Project
+
+Start with these documents:
+
+1. [QUICK_REFERENCE_GUIDE.md](QUICK_REFERENCE_GUIDE.md) — courses, hours, and CLOs at a glance
+2. [SETUP_GUIDE.md](SETUP_GUIDE.md) — set up your environment
+3. [COURSE_NAVIGATION.md](COURSE_NAVIGATION.md) — how the courses connect
+
+---
+
+## The Learning Path
+
+Every course follows the **same numbered path**. Follow it in order — there is
+exactly one path per course:
+
+```
+START_HERE.md
+   → unit1 examples (01_…, 02_…, … in order)
+   → unit1 exercise
+   → unit1 quiz
+   → unit2 … unit5 (same pattern)
+   → course assessment (ASSESSMENTS/)
+```
+
+For each course:
+
+1. **Open `START_HERE.md`** in the course folder. It gives the setup steps and
+   the exact order of everything in the course. Always start there.
+2. **Study the examples.** Each unit's `examples/` folder contains numbered
+   notebooks (`01_…`, `02_…`, …). Run them in order — later notebooks build on
+   earlier ones.
+3. **Do the exercise.** Each unit's `exercises/` folder has practice work with
+   TODOs for you to complete.
+4. **Take the quiz** for the unit before moving on.
+5. **Finish with the assessment** in the course's `ASSESSMENTS/` folder.
+
+**Solutions and answer keys are released by your instructor** during the
+course — they are not included in this repository. Attempt every exercise and
+quiz honestly first; that is where the learning happens.
+
+---
+
+## Course Progression
 
 ### Semester 1 (Foundation)
+
 ```
-Course 01: Introduction to AI
-    ↓
-Course 02: Python for AI
-    ↓
-Course 03: Mathematics & Probability
-    ↓
-Course 04: ML Algorithms
-    ↓
+Course 01: Introduction to Artificial Intelligence and Applications
+Course 02: Python for Artificial Intelligence
+Course 03: Mathematics and Probability for Machine Learning
+Course 04: Machine Learning Algorithms and Applications
 Course 05: Scalable Data Science
-    ↓
-Course 06: AI Ethics
+Course 06: Artificial Intelligence Ethics
 ```
 
 ### Semester 2 (Advanced)
+
 ```
 Course 07: Natural Language Processing
-    ↓
 Course 08: Deep Learning
-    ↓
 Course 09: Reinforcement Learning
-    ↓
-Course 10: Generative AI
-    ↓
+Course 10: Generative Artificial Intelligence
 Course 11: Deploying AI Models
-    ↓
 Course 12: Graduation Project
 ```
 
-**Important:** Each course builds on previous ones. Don't skip courses!
+**Do not skip courses.** Each one assumes everything before it — see
+[COURSE_NAVIGATION.md](COURSE_NAVIGATION.md) for the exact dependencies.
 
 ---
 
-## 🖥️ Hardware Requirements | متطلبات الأجهزة
+## Environment Setup
 
-### Required for All Courses:
-- **Computer:** Any modern computer (Windows, macOS, or Linux)
-- **Python:** 3.8+ (3.10 or 3.11 recommended)
-- **RAM:** 8GB minimum (16GB recommended)
-- **Storage:** 10GB+ free space
-- **Internet:** For downloading libraries and datasets
+Follow [SETUP_GUIDE.md](SETUP_GUIDE.md). In short:
 
-### GPU Requirements:
+```bash
+cd "/path/to/AI Diploma"
+python3 -m venv .venv
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
+pip install --upgrade pip
+pip install -r requirements.txt
+python -m ipykernel install --user --name ai-diploma --display-name "AI Diploma"
+```
 
-**✅ Course 05 (Scalable Data Science):**
-- GPU required for cuDF/RAPIDS features
-- **Solution:** Use Google Colab (free GPU) - See `Course 05/DOCS/COLAB_SETUP.md`
+Notebooks run on the **AI Diploma** kernel, except the TensorFlow notebooks in
+Courses 01 and 08, which use the separate **tfenv** kernel (Python 3.13 +
+TensorFlow) — see the Setup Guide for how to create it.
 
-**⚠️ Course 08 (Deep Learning):**
-- GPU strongly recommended (10-100x faster training)
-- **Solution:** Use Google Colab (free GPU) - See `Course 08/DOCS/COLAB_SETUP.md`
-
-**⚠️ Course 10 (Generative AI):**
-- GPU strongly recommended (training very slow on CPU)
-- **Solution:** Use Google Colab (free GPU) - See `Course 10/DOCS/COLAB_SETUP.md`
-
-**❌ Other Courses (01-04, 06-07, 09, 11-12):**
-- No GPU needed - work perfectly on CPU
-
-**See [GPU_REQUIREMENTS_SUMMARY.md](GPU_REQUIREMENTS_SUMMARY.md) for details.**
+**Note:** the `docs/TEMPLATES/` folder is for instructors preparing materials.
+As a student, follow the course units and notebooks, not the templates.
 
 ---
 
-## 🛠️ Setup Instructions | تعليمات الإعداد
+## Hardware and GPU
 
-### Quick Setup (All Courses):
-
-1. **Install Python 3.8+**
-   - Download from: https://www.python.org/downloads/
-   - Verify: `python --version` or `python3 --version`
-
-2. **Create Virtual Environment (Recommended)**
-   ```bash
-   python -m venv venv
-   # Windows:
-   venv\Scripts\activate
-   # macOS/Linux:
-   source venv/bin/activate
-   ```
-
-3. **Install Libraries**
-   ```bash
-   pip install --upgrade pip
-   pip install -r requirements.txt
-   ```
-
-4. **Verify Installation**
-   ```bash
-   pip check
-   python -c "import pandas, numpy, sklearn; print('✅ All libraries installed!')"
-   ```
-
-**For detailed setup:** See `SETUP_GUIDE.md` or course-specific `START_HERE.md`
+- **Any modern computer** (Windows, macOS, or Linux) with 8 GB+ RAM works for
+  the whole program.
+- **GPU is optional.** Courses 05, 08, and 10 have notebooks that benefit from
+  one; each of those courses ships a Google Colab guide
+  (`Course XX/DOCS/COLAB_SETUP.md`) so you can use a free cloud GPU instead.
+- Details: [GPU_REQUIREMENTS_SUMMARY.md](GPU_REQUIREMENTS_SUMMARY.md)
 
 ---
 
-## 📖 Learning Path | مسار التعلم
+## Tracking Your Progress
 
-### For Each Course:
+Each course has a `STUDENT_PROGRESS_CHECKLIST.md` — use it to mark completed
+examples, exercises, quizzes, and the assessment.
 
-1. **Read Course README.md**
-   - Understand course objectives
-   - Review prerequisites
-   - Check course structure
+Program level:
 
-2. **Read START_HERE.md**
-   - Follow setup instructions
-   - Understand learning sequence
-   - Review progress tracker
+**Semester 1**
 
-3. **Complete Units in Order**
-   - Start with Unit 1
-   - Complete all examples
-   - Do exercises
-   - Take quizzes
+- [ ] Course 01 — Introduction to AI and Applications
+- [ ] Course 02 — Python for AI
+- [ ] Course 03 — Mathematics and Probability for ML
+- [ ] Course 04 — ML Algorithms and Applications
+- [ ] Course 05 — Scalable Data Science
+- [ ] Course 06 — AI Ethics
 
-4. **Track Your Progress**
-   - Use `STUDENT_PROGRESS_CHECKLIST.md`
-   - Mark completed units
-   - Review regularly
+**Semester 2**
 
----
-
-## 🆘 Troubleshooting | حل المشاكل
-
-### Common Issues:
-
-**Problem:** "No module named 'pandas'" or similar
-- **Solution:** Install libraries: `pip install -r requirements.txt`
-- **Check:** Verify virtual environment is activated
-
-**Problem:** "Python version too old"
-- **Solution:** Install Python 3.10 or 3.11
-- **Verify:** `python --version` should show 3.8+
-
-**Problem:** "Notebook won't run"
-- **Solution:** 
-  1. Check Python kernel is selected
-  2. Restart kernel: Kernel → Restart
-  3. Run cells in order
-
-**Problem:** "GPU not working"
-- **Solution:** 
-  1. For Course 05/08/10: Use Google Colab (see Colab setup guides)
-  2. Check GPU is enabled in Colab: Runtime → Change runtime type → GPU
-  3. Verify GPU access in notebook
-
-**Problem:** "Libraries conflict"
-- **Solution:** Use virtual environment (see setup instructions)
-
-**Problem:** "I don't understand the content"
-- **Solution:**
-  1. Check prerequisites in course README
-  2. Review previous courses if needed
-  3. Read unit README files
-  4. Complete examples in order
+- [ ] Course 07 — Natural Language Processing
+- [ ] Course 08 — Deep Learning
+- [ ] Course 09 — Reinforcement Learning
+- [ ] Course 10 — Generative AI
+- [ ] Course 11 — Deploying AI Models
+- [ ] Course 12 — Graduation Project
 
 ---
 
-## 💡 Best Practices | أفضل الممارسات
+## When You Get Stuck
 
-### Study Tips:
-
-1. **Follow the Sequence**
-   - Complete courses in order (01 → 12)
-   - Complete units in order (1 → 5)
-   - Don't skip ahead
-
-2. **Practice Regularly**
-   - Run all example notebooks
-   - Complete all exercises
-   - Try variations and experiments
-
-3. **Track Your Progress**
-   - Use progress checklists
-   - Mark completed items
-   - Review regularly
-
-4. **Ask for Help**
-   - Check troubleshooting guides
-   - Review course documentation
-   - Consult with instructors/peers
-
-5. **Save Your Work**
-   - Commit code regularly
-   - Save notebook outputs
-   - Backup important files
-
-### Code Quality:
-
-1. **Read Comments**
-   - All notebooks have detailed comments
-   - Comments explain concepts
-   - Learn from code examples
-
-2. **Experiment**
-   - Modify code examples
-   - Try different parameters
-   - Test edge cases
-
-3. **Document Your Learning**
-   - Take notes
-   - Write summaries
-   - Create your own examples
+1. **Environment or install problems** → [TROUBLESHOOTING_GUIDE.md](TROUBLESHOOTING_GUIDE.md)
+2. **"I don't understand this notebook"** → check the unit README and the
+   course's prerequisites; re-run the earlier numbered examples.
+3. **"The exercise is too hard"** → go back to the unit's examples and modify
+   them before attempting the exercise again.
+4. **Still stuck** → ask your instructor or study group
+   (see [COMMUNITY_RESOURCES.md](COMMUNITY_RESOURCES.md)).
 
 ---
 
-## 📊 Progress Tracking | تتبع التقدم
+## Study Tips
 
-### Course-Level Tracking:
-
-Each course has:
-- `STUDENT_PROGRESS_CHECKLIST.md` - Detailed checklist
-- Unit-level progress tracking
-- Exercise completion tracking
-
-### Program-Level Tracking:
-
-**Semester 1 Progress:**
-- [ ] Course 01: Introduction to AI
-- [ ] Course 02: Python for AI
-- [ ] Course 03: Mathematics & Probability
-- [ ] Course 04: ML Algorithms
-- [ ] Course 05: Scalable Data Science
-- [ ] Course 06: AI Ethics
-
-**Semester 2 Progress:**
-- [ ] Course 07: Natural Language Processing
-- [ ] Course 08: Deep Learning
-- [ ] Course 09: Reinforcement Learning
-- [ ] Course 10: Generative AI
-- [ ] Course 11: Deploying AI Models
-- [ ] Course 12: Graduation Project
+1. **Follow the sequence** — courses 01 → 12, units 1 → 5, examples 01 → NN.
+2. **Run everything.** Don't just read notebooks — execute them, change
+   parameters, break things, and fix them.
+3. **Practice daily.** Even one hour a day beats a weekend marathon.
+4. **Attempt before asking.** Try each exercise seriously before the instructor
+   releases the solution — then compare your approach with it.
+5. **Keep notes** and save your modified notebooks; they become your personal
+   reference for the graduation project.
 
 ---
 
-## 🎯 Course-Specific Guides | أدلة خاصة بالدورات
-
-### GPU Courses (Use Colab):
-- **Course 05:** `Course 05/DOCS/COLAB_SETUP.md`
-- **Course 08:** `Course 08/DOCS/COLAB_SETUP.md`
-- **Course 10:** `Course 10/DOCS/COLAB_SETUP.md`
-
-### Setup Guides:
-- **General Setup:** `SETUP_GUIDE.md`
-- **Course-Specific:** Each course has `START_HERE.md`
-
-### Reference Documents:
-- **Quick Reference:** `QUICK_REFERENCE_GUIDE.md`
-- **Complete Structure:** `COMPLETE_COURSE_STRUCTURE_AND_CLOS.md`
-- **Detailed Content:** `DETAILED_UNIT_DESCRIPTIONS.md`
-- **Timeline:** `TIMELINE/TEACHING_TIMELINE.md`
-
----
-
-## 🔗 Quick Links | روابط سريعة
-
-### Essential Documents:
-- [QUICK_REFERENCE_GUIDE.md](QUICK_REFERENCE_GUIDE.md) - Quick overview
-- [TEACHING_TIMELINE.md](TIMELINE/TEACHING_TIMELINE.md) - Complete schedule
-- [GPU_REQUIREMENTS_SUMMARY.md](GPU_REQUIREMENTS_SUMMARY.md) - GPU needs
-- [SETUP_GUIDE.md](SETUP_GUIDE.md) - Setup instructions
-
-### Course Directories:
-- `Course 01/` - Introduction to AI
-- `Course 02/` - Python for AI
-- `Course 03/` - Mathematics & Probability
-- `Course 04/` - ML Algorithms
-- `Course 05/` - Scalable Data Science
-- `Course 06/` - AI Ethics
-- `Course 07/` - Natural Language Processing
-- `Course 08/` - Deep Learning
-- `Course 09/` - Reinforcement Learning
-- `Course 10/` - Generative AI
-- `Course 11/` - Deploying AI Models
-- `Course 12/` - Graduation Project
-
----
-
-## ✅ Success Checklist | قائمة النجاح
-
-### Before Starting:
-- [ ] Read this guide completely
-- [ ] Reviewed program structure
-- [ ] Understood course progression
-- [ ] Checked hardware requirements
-- [ ] Set up Python environment
-
-### During Learning:
-- [ ] Following course sequence
-- [ ] Completing all examples
-- [ ] Doing all exercises
-- [ ] Tracking progress
-- [ ] Asking questions when stuck
-
-### After Each Course:
-- [ ] Completed all units
-- [ ] Completed all exercises
-- [ ] Taken quizzes/assessments
-- [ ] Reviewed key concepts
-- [ ] Ready for next course
-
----
-
-## 🎓 Final Tips | نصائح نهائية
-
-1. **Be Patient** - Learning AI takes time
-2. **Practice Regularly** - Code every day
-3. **Don't Skip** - Each course builds on previous
-4. **Ask Questions** - Use documentation and support
-5. **Track Progress** - Use checklists
-6. **Experiment** - Try variations and modifications
-7. **Save Work** - Commit code regularly
-8. **Stay Organized** - Keep notes and summaries
-
----
-
-**Last Updated:** January 2025  
-**Status:** Complete Student Guide  
-**For Course-Specific Help:** See individual course `START_HERE.md` files
+**For course-specific help, always start with that course's `START_HERE.md`.**

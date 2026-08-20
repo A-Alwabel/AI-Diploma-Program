@@ -27,6 +27,7 @@ wandb/
 *.pkl
 *.joblib
 *.onnx
+*.onnx.data
 *.h5
 *.pb
 model_*.zip
@@ -67,3 +68,6 @@ AGENTS.md
 SOLUTIONS_ALL/
 INSTRUCTOR_MATERIALS/
 *.tflite
+
+# runtime artifact written by 10_python_basics_for_ai.ipynb
+Course 01/unit1-ai-foundations/examples/ai_topics.txt

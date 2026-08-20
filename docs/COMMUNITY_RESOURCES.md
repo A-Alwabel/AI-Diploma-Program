@@ -1,365 +1,147 @@
-# Community Resources | موارد المجتمع
-## Study Groups, Forums, and Support Channels
+# Community Resources
 
-**Last Updated:** January 2025
+Study groups, forums, support channels, and external learning resources.
 
----
-
-## 👥 Study Groups | مجموعات الدراسة
-
-### Benefits of Study Groups
-
-- **Collaborative Learning**: Learn from peers
-- **Problem Solving**: Get help with difficult concepts
-- **Motivation**: Stay on track with others
-- **Networking**: Build connections with fellow students
-
-### How to Form a Study Group
-
-1. **Find Members**
-   - Post in course forums
-   - Reach out to classmates
-   - Use social media groups
-
-2. **Set Schedule**
-   - Weekly meetings (2-3 hours)
-   - Regular check-ins
-   - Flexible timing
-
-3. **Define Goals**
-   - Complete assignments together
-   - Review course materials
-   - Prepare for exams
-
-4. **Choose Platform**
-   - Discord/Slack for chat
-   - Zoom/Meet for video calls
-   - GitHub for code sharing
-
-### Study Group Best Practices
-
-**Structure:**
-- Review previous week's material
-- Discuss current topics
-- Work on exercises together
-- Plan next week's study
-
-**Communication:**
-- Be respectful and inclusive
-- Share resources and notes
-- Ask questions freely
-- Help others when you can
+**Last Updated:** 2026-08
 
 ---
 
-## 💬 Forums and Discussion | المنتديات والمناقشة
+## Study Groups
 
-### Recommended Platforms
+### Why join one
 
-**GitHub Discussions:**
-- Course-specific discussions
-- Code sharing and review
-- Q&A with instructors
-- Project collaboration
+- **Collaborative learning** — learn from peers
+- **Problem solving** — get help with difficult concepts
+- **Motivation** — stay on track with others
+- **Networking** — build connections with fellow students
 
-**Discord/Slack:**
-- Real-time chat
-- Quick questions
-- Study group coordination
-- Resource sharing
+### How to form a study group
 
-**Reddit:**
-- r/MachineLearning
-- r/learnmachinelearning
-- r/datascience
-- r/artificial
+1. **Find members** — classmates, course forums, social groups
+2. **Set a schedule** — weekly meetings (2–3 hours) with regular check-ins
+3. **Define goals** — work through the same course units together, review
+   before quizzes and assessments
+4. **Choose a platform** — Discord/Slack for chat, Zoom/Meet for calls,
+   GitHub for sharing code
 
-**Stack Overflow:**
-- Technical questions
-- Code debugging
-- Best practices
-- Error solutions
+### Study group best practices
 
-### Forum Etiquette
-
-**Do:**
-- ✅ Search before posting
-- ✅ Provide context
-- ✅ Be clear and concise
-- ✅ Thank helpers
-- ✅ Share solutions after solving
-
-**Don't:**
-- ❌ Post homework questions directly
-- ❌ Be rude or dismissive
-- ❌ Spam or off-topic posts
-- ❌ Ignore previous answers
+- Review the previous week's material, then work the current unit's exercise
+  together
+- Explain concepts to each other — teaching is the fastest way to learn
+- Be respectful; share resources and notes; ask questions freely
+- **Attempt exercises individually first** — solutions are released by your
+  instructor, and comparing honest attempts is where group discussion pays off
 
 ---
 
-## 🆘 Support Channels | قنوات الدعم
+## Forums and Discussion
 
-### Course Support
+### Recommended platforms
 
-**Instructor Support:**
-- Office hours (if available)
-- Email for questions
-- Scheduled consultations
-- Course forums
+- **Stack Overflow** — technical questions and debugging
+- **Reddit** — r/MachineLearning, r/learnmachinelearning, r/datascience
+- **Discord/Slack** — real-time chat and study-group coordination
+- **Kaggle forums** — datasets, competitions, applied ML discussion
 
-**Peer Support:**
-- Study groups
-- Discussion forums
-- Code review sessions
-- Pair programming
+### Forum etiquette
 
-### Technical Support
+**Do:** search before posting, provide context and error messages, thank
+helpers, share what solved your problem.
 
-**Documentation:**
-- Course `START_HERE.md` files
-- `TROUBLESHOOTING_GUIDE.md`
-- Course-specific `DOCS/` folders
-- README files
-
-**Online Resources:**
-- Official library documentation
-- Tutorial websites
-- Video courses
-- Community wikis
-
-### When to Ask for Help
-
-**Try these first:**
-1. Check documentation
-2. Search forums/Stack Overflow
-3. Review course materials
-4. Try troubleshooting guide
-
-**Then ask for help:**
-- After trying solutions
-- With specific error messages
-- With code examples
-- With clear question
+**Don't:** post assessment questions for others to answer, be dismissive, spam.
 
 ---
 
-## 📚 Learning Resources | موارد التعلم
+## Support Channels
 
-### Online Courses
+### Course support
 
-**Free Courses:**
-- Coursera (audit mode)
-- edX (audit mode)
-- YouTube tutorials
-- Khan Academy
+- **Your instructor** — office hours, email, scheduled consultations; also the
+  source of released exercise and quiz solutions
+- **Peers** — study groups, code review sessions, pair programming
 
-**Paid Courses:**
-- Coursera (certificates)
-- Udemy
-- Pluralsight
-- DataCamp
+### Technical support (in order)
+
+1. The course's `START_HERE.md` and `README.md`
+2. [TROUBLESHOOTING_GUIDE.md](TROUBLESHOOTING_GUIDE.md)
+3. The course's `DOCS/` folder (where present)
+4. Official library documentation (links below)
+
+### When to ask for help
+
+Try first: documentation → troubleshooting guide → searching the error message.
+Then ask — with the exact error message, the code that caused it, and what you
+already tried.
+
+---
+
+## Learning Resources
 
 ### Documentation
 
-**Essential Docs:**
-- Python: https://docs.python.org/
-- NumPy: https://numpy.org/doc/
-- Pandas: https://pandas.pydata.org/docs/
-- Scikit-learn: https://scikit-learn.org/stable/
-- TensorFlow: https://www.tensorflow.org/api_docs
-- PyTorch: https://pytorch.org/docs/
+- Python: <https://docs.python.org/>
+- NumPy: <https://numpy.org/doc/>
+- pandas: <https://pandas.pydata.org/docs/>
+- scikit-learn: <https://scikit-learn.org/stable/>
+- PyTorch: <https://pytorch.org/docs/>
+- TensorFlow: <https://www.tensorflow.org/api_docs>
+- Hugging Face: <https://huggingface.co/docs>
 
-### Books
+### Recommended books
 
-**Recommended Books:**
-- "Hands-On Machine Learning" by Aurélien Géron
-- "Deep Learning" by Ian Goodfellow
-- "Pattern Recognition and Machine Learning" by Christopher Bishop
-- "Introduction to Statistical Learning" by James et al.
+- *Hands-On Machine Learning* — Aurélien Géron
+- *Deep Learning* — Ian Goodfellow, Yoshua Bengio, Aaron Courville
+- *An Introduction to Statistical Learning* — James, Witten, Hastie, Tibshirani
+- *Pattern Recognition and Machine Learning* — Christopher Bishop
 
----
+### Video channels
 
-## 🎯 Project Collaboration | التعاون في المشاريع
+- 3Blue1Brown (math intuition)
+- StatQuest (statistics and ML)
+- Two Minute Papers (research highlights)
 
-### GitHub Collaboration
+### Practice platforms
 
-**Best Practices:**
-- Use branches for features
-- Write clear commit messages
-- Review code before merging
-- Document your code
-- Use issues for tracking
-
-**Workflow:**
-1. Fork repository
-2. Create feature branch
-3. Make changes
-4. Commit with clear messages
-5. Push to your fork
-6. Create pull request
-7. Address review comments
-8. Merge after approval
-
-### Code Review
-
-**What to Review:**
-- Code correctness
-- Style and conventions
-- Documentation quality
-- Test coverage
-- Performance considerations
-
-**How to Review:**
-- Be constructive
-- Explain suggestions
-- Acknowledge good work
-- Ask clarifying questions
-- Approve when ready
+- Kaggle (datasets, competitions, free courses)
+- LeetCode / HackerRank (programming practice)
+- UCI ML Repository and Google Dataset Search (datasets)
 
 ---
 
-## 🌐 Online Communities | المجتمعات الإلكترونية
+## Project Collaboration
 
-### AI/ML Communities
+### GitHub workflow
 
-**Reddit:**
-- r/MachineLearning
-- r/learnmachinelearning
-- r/datascience
-- r/artificial
-- r/deeplearning
+1. Fork or branch
+2. Make changes with clear commit messages
+3. Open a pull request
+4. Address review comments, then merge
 
-**Discord Servers:**
-- AI/ML Study Groups
-- Data Science Community
-- Python Programming
-- TensorFlow Community
+### Code review practices
 
-**LinkedIn:**
-- AI/ML Groups
-- Data Science Networks
-- Professional connections
-- Job opportunities
+- Review for correctness, clarity, and documentation
+- Be constructive; explain suggestions; acknowledge good work
 
-### Social Media
-
-**Twitter/X:**
-- Follow AI researchers
-- Join #MachineLearning discussions
-- Share projects
-- Learn from experts
-
-**YouTube Channels:**
-- 3Blue1Brown (Math/ML)
-- Sentdex (Python/ML)
-- StatQuest (Statistics)
-- Two Minute Papers (Research)
+These habits matter most in **Course 12 (Graduation Project)** — treat your
+project repository the way a professional team would.
 
 ---
 
-## 📖 Study Resources | موارد الدراسة
+## Getting Started Checklist
 
-### Practice Platforms
-
-**Coding Practice:**
-- LeetCode (algorithms)
-- HackerRank (programming)
-- Kaggle (ML competitions)
-- Codewars (coding challenges)
-
-**ML Practice:**
-- Kaggle Learn
-- Google Colab tutorials
-- Fast.ai courses
-- Andrew Ng's courses
-
-### Tools and Platforms
-
-**Development:**
-- Jupyter Notebooks
-- Google Colab
-- VS Code
-- PyCharm
-
-**Data:**
-- Kaggle Datasets
-- UCI ML Repository
-- Google Dataset Search
-- AWS Open Data
+1. **Join** one forum or community relevant to your current course
+2. **Form or join** a study group with a fixed weekly time
+3. **Contribute** — answer one question for every question you ask
+4. **Build your portfolio** — share completed projects (not assessment answers)
 
 ---
 
-## ✅ Getting Started | البدء
+## Quick Links
 
-### Step 1: Join Communities
+### Program documents
 
-1. **Find relevant forums**
-   - Course-specific forums
-   - General AI/ML communities
-   - Study groups
-
-2. **Introduce yourself**
-   - Share your goals
-   - Ask for study partners
-   - Offer to help others
-
-3. **Participate actively**
-   - Ask questions
-   - Answer questions
-   - Share resources
-
-### Step 2: Form Study Groups
-
-1. **Reach out to classmates**
-   - Post in forums
-   - Use social media
-   - Attend virtual meetups
-
-2. **Set up communication**
-   - Choose platform (Discord/Slack)
-   - Schedule meetings
-   - Define goals
-
-3. **Start studying together**
-   - Review materials
-   - Work on exercises
-   - Prepare for exams
-
-### Step 3: Contribute
-
-1. **Share knowledge**
-   - Write blog posts
-   - Create tutorials
-   - Answer questions
-
-2. **Help others**
-   - Review code
-   - Explain concepts
-   - Provide resources
-
-3. **Build portfolio**
-   - Share projects
-   - Contribute to open source
-   - Write documentation
-
----
-
-## 🔗 Quick Links | روابط سريعة
-
-### Course Resources:
-- [STUDENT_GUIDE.md](STUDENT_GUIDE.md) - Complete student guide
-- [TROUBLESHOOTING_GUIDE.md](TROUBLESHOOTING_GUIDE.md) - Problem solving
-- [COURSE_NAVIGATION.md](COURSE_NAVIGATION.md) - Course connections
-
-### External Resources:
-- **Python Docs**: https://docs.python.org/
-- **NumPy Docs**: https://numpy.org/doc/
-- **Pandas Docs**: https://pandas.pydata.org/docs/
-- **Scikit-learn Docs**: https://scikit-learn.org/stable/
-- **Kaggle**: https://www.kaggle.com/
-- **Stack Overflow**: https://stackoverflow.com/
-
----
-
-**Last Updated:** January 2025  
-**Status:** Complete Community Resources Guide
+- [STUDENT_GUIDE.md](STUDENT_GUIDE.md) — working through the program
+- [STUDENT_HANDBOOK.md](STUDENT_HANDBOOK.md) — study habits and workflows
+- [TROUBLESHOOTING_GUIDE.md](TROUBLESHOOTING_GUIDE.md) — problem solving
+- [COURSE_NAVIGATION.md](COURSE_NAVIGATION.md) — course connections

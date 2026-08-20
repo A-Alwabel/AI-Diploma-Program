@@ -1,151 +1,156 @@
 # AI Diploma Program
-### برنامج دبلوم الذكاء الاصطناعي
 
-A comprehensive, hands-on AI curriculum covering Deep Learning, Reinforcement Learning, Generative AI, and Production Deployment — built with PyTorch and real-world industry examples.
-
----
-
-## 📚 Courses
-
-| # | Course | Topics |
-|---|--------|--------|
-| 01 | Foundations of AI | Python, math, ML basics |
-| 02 | Supervised Learning | Regression, classification, evaluation |
-| 03 | Unsupervised Learning | Clustering, dimensionality reduction |
-| 04 | Advanced ML | Ensemble methods, feature engineering |
-| 05 | NLP Fundamentals | Text processing, classical NLP |
-| 06 | Applied ML Projects | End-to-end pipelines |
-| 07 | Introduction to Deep Learning | Perceptrons, activation functions |
-| **08** | **Deep Learning** | CNNs, RNNs, Transformers, Deployment |
-| **09** | **Reinforcement Learning** | MDPs, DQN, PPO, Multi-agent RL |
-| **10** | **Generative AI** | GANs, VAEs, Diffusion Models, LLMs |
-| **11** | **AI Deployment & MLOps** | APIs, Docker, Cloud, CI/CD, Monitoring |
-| 12 | Capstone Project | Full AI system from idea to production |
-
-> Courses 08–11 are fully developed with examples, exercises, quizzes, and assessments.
+A hands-on, notebook-based curriculum for the Artificial Intelligence Technology diploma
+(AIAT track): 12 courses, 944 training hours, delivered over 2 official semesters.
 
 ---
 
-## 🚀 Quick Start
+## Courses
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/A-Alwabel/AI-Diploma-Program.git
-cd AI-Diploma-Program
-```
+### Semester 1 (AIAT 111–116)
 
-### 2. Set up the environment
+| # | Code | Course | Hours |
+|---|------|--------|-------|
+| 01 | AIAT 111 | Introduction to Artificial Intelligence and Applications | 64 |
+| 02 | AIAT 112 | Python for Artificial Intelligence | 96 |
+| 03 | AIAT 113 | Mathematics and Probability for Machine Learning | 64 |
+| 04 | AIAT 114 | Machine Learning Algorithms and Applications | 96 |
+| 05 | AIAT 115 | Scalable Data Science | 96 |
+| 06 | AIAT 116 | Artificial Intelligence Ethics | 64 |
+
+### Semester 2 (AIAT 121–126)
+
+| # | Code | Course | Hours |
+|---|------|--------|-------|
+| 07 | AIAT 121 | Natural Language Processing | 64 |
+| 08 | AIAT 122 | Deep Learning | 64 |
+| 09 | AIAT 123 | Reinforcement Learning | 96 |
+| 10 | AIAT 124 | Generative Artificial Intelligence | 64 |
+| 11 | AIAT 125 | Deploying AI Models | 96 |
+| 12 | AIAT 126 | Graduation Project | 80 |
+
+**Total: 944 training hours** across 2 semesters. Courses are taken in order, 01 through 12.
+
+---
+
+## Quick Start
+
+### 1. Set up the environment
+
 ```bash
+cd "AI Diploma"
 python3 -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### 3. Register the Jupyter kernel
+### 2. Register the Jupyter kernel
+
 ```bash
 python -m ipykernel install --user --name ai-diploma --display-name "AI Diploma"
 ```
 
-### 4. Launch JupyterLab
+Most notebooks in this repository use the `ai-diploma` kernel.
+
+> **TensorFlow note:** TensorFlow does not ship a wheel for this venv's Python.
+> The TensorFlow/Keras notebooks in **Course 01** and **Course 08** run on a separate
+> kernel named `tfenv` (a Python 3.13 environment with TensorFlow installed).
+> See [docs/SETUP_GUIDE.md](docs/SETUP_GUIDE.md) for how to create it.
+
+### 3. Launch Jupyter and open the first course
+
 ```bash
 jupyter lab
 ```
 
-Navigate to the course folder you want and open `START_HERE.md` first.
+Open `Course 01/START_HERE.md` and follow it.
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
-AI-Diploma-Program/
-├── Course 08/                    # Deep Learning
-│   ├── START_HERE.md             ← Start here every course
-│   ├── unit1-deep-learning-basics/
-│   │   ├── examples/             ← Worked examples with real-world code
-│   │   └── exercises/            ← Hands-on practice (TODOs to complete)
-│   ├── unit2-cnns/
-│   ├── unit3-rnns-transformers/
-│   ├── unit4-advanced-dl/
-│   ├── unit5-deployment/
-│   ├── QUIZZES/                  ← 5 unit quizzes
-│   ├── ASSESSMENTS/              ← Final exam
+AI Diploma/
+├── Course 01/ … Course 12/       # One folder per course (AIAT 111–126)
+│   ├── START_HERE.md             # Read this first in every course
+│   ├── README.md                 # Course overview and unit map
+│   ├── unit1-…/ … unit5-…/       # Units, each with:
+│   │   ├── examples/             #   numbered notebooks (01_…, 02_…, …)
+│   │   └── exercises/            #   practice exercises
+│   ├── QUIZZES/                  # Unit quizzes
+│   ├── ASSESSMENTS/              # Final exam / course assessment
+│   ├── PROJECTS/                 # Course projects
+│   ├── CASE_STUDIES/             # Applied case studies
+│   ├── PRESENTATIONS/            # Unit slide decks
+│   ├── DOCS/                     # Extra docs (Colab setup, FAQ) — some courses
 │   └── STUDENT_PROGRESS_CHECKLIST.md
-│
-├── Course 09/                    # Reinforcement Learning
-├── Course 10/                    # Generative AI
-├── Course 11/                    # AI Deployment & MLOps
-│
-├── SOLUTIONS_ALL/                # Reference solutions (Courses 01–06)
-├── docs/                         # Curriculum documentation
-│   ├── STUDENT_GUIDE.md
-│   ├── SETUP_GUIDE.md
-│   ├── COURSE_MAP.md
-│   ├── TROUBLESHOOTING_GUIDE.md
-│   └── ...
-└── requirements.txt
+├── docs/                         # Program-level guides (setup, navigation, troubleshooting)
+├── tools/                        # Maintenance and verification scripts
+├── requirements.txt              # Student environment baseline
+└── README.md                     # This file
 ```
 
 ---
 
-## 🗺️ Learning Path
+## Learning Path
 
-Each course follows the same pattern:
+Every course follows the same numbered path:
 
 ```
-START_HERE.md → examples/ (study) → exercises/ (practice) → QUIZZES/ → ASSESSMENTS/
+START_HERE.md → numbered examples (01 → NN) → exercise → quiz → assessment
 ```
 
-Every example notebook includes:
-- 📖 **Theory** — concept explanation with visuals
-- 💻 **Code** — complete, runnable PyTorch implementation
-- 🌍 **Real-World Example** — same concept applied to industry data
-- 📚 **References** — papers, docs, further reading
-- 📝 **Summary** — key takeaways
+1. **START_HERE.md** — course setup and the exact order to follow.
+2. **Examples** — study and run the numbered notebooks in each unit, in order.
+3. **Exercises** — complete the practice notebooks in each unit's `exercises/` folder.
+4. **Quizzes** — take the unit quiz before moving to the next unit.
+5. **Assessment** — finish with the course assessment in `ASSESSMENTS/`.
+
+Solutions and answer keys are **released by your instructor** — they are not part of
+this repository.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-| Category | Tools |
-|---|---|
-| Deep Learning | PyTorch, torchvision |
-| RL Environments | Gymnasium (OpenAI Gym) |
-| Deployment | FastAPI, ONNX, Docker |
-| Experiment Tracking | MLflow |
-| Visualization | Matplotlib, Seaborn |
-| Data | NumPy, Pandas, Scikit-learn |
-
-> All notebooks are tested on Python 3.9+ (macOS, Linux, Windows).
-
----
-
-## 📋 Prerequisites
-
-- Python 3.9 or higher
-- Basic Python programming
-- Linear algebra fundamentals (vectors, matrices)
-- Calculus basics (derivatives, chain rule)
+| Area | Tools | Where |
+|---|---|---|
+| Core (all courses) | NumPy, pandas, Matplotlib, Seaborn, scikit-learn | Courses 01–12 |
+| Deep learning | TensorFlow + Keras **and** PyTorch | Course 08 (TF also in Course 01 intros) |
+| NLP | NLTK, spaCy, Hugging Face Transformers | Course 07 |
+| Reinforcement learning | Gymnasium | Course 09 |
+| Scalable data science | Dask, Plotly | Course 05 |
+| Generative AI | PyTorch | Course 10 |
+| Deployment / MLOps | MLflow, FastAPI, Docker, PyTorch, ONNX | Course 11 |
 
 ---
 
-## 📖 Documentation
+## Prerequisites
+
+- A computer running Windows, macOS, or Linux (8 GB RAM minimum)
+- Python 3 (see [docs/SETUP_GUIDE.md](docs/SETUP_GUIDE.md) for versions)
+- No prior AI experience required — Course 01 starts from the beginning
+
+GPU is optional: the courses that benefit from one (05, 08, 10) include Google Colab
+instructions. See [docs/GPU_REQUIREMENTS_SUMMARY.md](docs/GPU_REQUIREMENTS_SUMMARY.md).
+
+---
+
+## Documentation
 
 | Document | Description |
 |---|---|
-| [Student Guide](docs/STUDENT_GUIDE.md) | How to navigate the curriculum |
-| [Setup Guide](docs/SETUP_GUIDE.md) | Detailed installation instructions |
-| [Course Map](docs/COURSE_MAP.md) | Visual overview of all 12 courses |
+| [Student Guide](docs/STUDENT_GUIDE.md) | How to work through the program |
+| [Student Handbook](docs/STUDENT_HANDBOOK.md) | Study habits, notebooks, progress tracking |
+| [Setup Guide](docs/SETUP_GUIDE.md) | Environment installation, kernels, smoke test |
+| [Course Navigation](docs/COURSE_NAVIGATION.md) | How courses connect; prerequisites by AIAT code |
+| [Quick Reference](docs/QUICK_REFERENCE_GUIDE.md) | Courses, hours, and CLOs at a glance |
 | [Troubleshooting](docs/TROUBLESHOOTING_GUIDE.md) | Common errors and fixes |
-| [GPU Requirements](docs/GPU_REQUIREMENTS_SUMMARY.md) | Hardware recommendations |
-| [Community Resources](docs/COMMUNITY_RESOURCES.md) | Datasets, papers, tools |
+| [Cross-Platform Guide](docs/CROSS_PLATFORM_GUIDE.md) | Windows / macOS / Linux notes |
+| [GPU Requirements](docs/GPU_REQUIREMENTS_SUMMARY.md) | Which courses use a GPU, Colab options |
+| [Community Resources](docs/COMMUNITY_RESOURCES.md) | Study groups, forums, external resources |
 
 ---
 
-## 📄 License
-
-This curriculum is provided for educational purposes.
-
----
-
-*Built with ❤️ for AI learners*
+*Last updated: 2026-08*
