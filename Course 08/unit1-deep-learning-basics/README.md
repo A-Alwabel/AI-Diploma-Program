@@ -1,87 +1,39 @@
-# Unit 1: Deep Learning Basics
+# Unit 1 — Introduction to Deep Learning and Neural Networks
+## AIAT 122 — Deep Learning
 
-## ✅ Prerequisites Checklist
+Unit training hours: 12 (of 64 total)
 
-Before starting this unit, confirm:
+## Prerequisites
 
-- [ ] Completed Course 03 Units 1-2 (Linear Algebra & Calculus)
-- [ ] Completed Course 04 (Machine Learning) recommended
-- [ ] Comfortable with Python and NumPy
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics (see course README and DOCS/EXAMPLES_ORDER.md; COURSE_MAP if available in your repo)
+- Semester 1 (AIAT 111–116), including machine learning fundamentals.
+- Comfortable with Python and NumPy.
+- Environment set up (see `../START_HERE.md`): "ai-diploma" kernel for PyTorch notebooks, "tfenv" kernel for TensorFlow notebooks.
 
-### Learning Objectives
+## What this unit teaches
 
-By the end of this unit, students will be able to:
-- Understand deep learning fundamentals
-- Build neural networks using TensorFlow/Keras
-- Understand backpropagation
-- Train and evaluate deep learning models
-- Apply deep learning to classification problems
+What deep learning is and how it differs from traditional ML; the structure of neural networks (perceptron, MLP, layers, activation functions); how training works (loss, forward and backward propagation, backpropagation, optimizers); building and evaluating first models in TensorFlow/Keras and PyTorch.
 
----
+## Examples (do in file order)
 
-## Topics Covered
+Run the notebooks in `examples/` in this order:
 
-1. **Deep Learning Introduction**
-   - What is deep learning?
-   - Neural network architecture
-   - Layers and neurons
-   - Activation functions
+1. `01_deep_learning_fundamentals_compared_to_traditional_ml.ipynb` — what deep learning is and when it beats (or loses to) traditional ML.
+2. `02_simple_neural_network.ipynb` — build and train your first neural network; layers, fit, loss and accuracy curves.
+3. `03_perceptron_mlp_tensorflow_pytorch_setup.ipynb` — perceptron and MLP; setting up and comparing TensorFlow and PyTorch.
+4. `04_activation_functions_and_optimization_algorithms.ipynb` — sigmoid/ReLU/tanh and how optimizers update weights.
+5. `05_backpropagation_detailed.ipynb` — gradients and the chain rule, step by step.
+6. `06_optimization_techniques.ipynb` — SGD, momentum, Adam; learning-rate effects.
+7. `07_image_processing_feature_extraction.ipynb` — image data as arrays; basic preprocessing and feature extraction.
+8. `08_forward_and_backward_propagation.ipynb` — the full forward and backward pass through a network.
 
-2. **Building Neural Networks**
-   - Using TensorFlow/Keras
-   - Sequential models
-   - Dense layers
-   - Model compilation
+## Exercise
 
-3. **Training Neural Networks**
-   - Loss functions
-   - Optimizers
-   - Training process
-   - Validation
+- `exercises/01_neural_network_exercise.ipynb` — build, train, and evaluate a neural network classifier. Solutions are released by your instructor.
 
-4. **Model Evaluation**
-   - Metrics (accuracy, loss)
-   - Overfitting and underfitting
-   - Model improvement
+## Quiz
 
----
+- `../QUIZZES/quiz_01.md`
 
-## Recommended order (examples)
+## Next
 
-**Do notebooks in this number order: 01 → 02 → 03 → 04 → 05 → 06.** (Slide numbers 08, 01, 02, etc. are topic IDs only—do **not** use them to decide order.) Full table: `DOCS/EXAMPLES_ORDER.md`.
-
-1. `01_deep_learning_fundamentals_compared_to_traditional_ml.ipynb`  
-2. `02_simple_neural_network.ipynb`  
-3. `03_perceptron_mlp_tensorflow_pytorch_setup.ipynb`  
-4. `04_activation_functions_and_optimization_algorithms.ipynb`  
-5. `05_backpropagation_detailed.ipynb`  
-6. `06_optimization_techniques.ipynb`  
-
-*Optional (do after the core 01–06; order between them doesn't matter):* `07_image_processing_feature_extraction.ipynb`, `08_forward_and_backward_propagation.ipynb`  
-
----
-
-## Exercises
-
-Complete the exercise in `unit1-deep-learning-basics/exercises/`:
-
-1. **`01_neural_network_exercise.ipynb`** – Medical image classification (data preprocessing, model architecture, training). Aligns with examples `01_deep_learning_fundamentals_*`, `02_simple_neural_network.ipynb`.
-
-**Solutions:** See `DOCS/SOLUTIONS/exercises/` (instructor-only; do not distribute before deadline).
-
----
-
-## Teaching note (instructors)
-
-- **Suggested time:** Core examples 01–06: ~2 hours total in lab; optional 07–08: +30 min. Theory (slides): ~6 hours.
-- **Demo notebook:** `02_simple_neural_network.ipynb` – run training cell and show loss/accuracy curve and sample predictions.
-- **Common stumbling block:** TensorFlow `charset_normalizer` / `md__mypyc` error on import – see `DOCS/COLAB_SETUP.md` (pip upgrade + restart kernel).
-- **Exercise alignment:** `01_neural_network_exercise` builds on 01_deep_learning_fundamentals and 02_simple_neural_network.
-
----
-
-**Unit Duration:** 2 weeks  
-**Difficulty:** Advanced  
-**Prerequisites:** Completion of Semester 1 courses, understanding of neural networks basics
+Unit 2: `../unit2-cnns/README.md`

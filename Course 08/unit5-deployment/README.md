@@ -1,129 +1,39 @@
-# Unit 5: Deploying Deep Learning Models
-## AIAT 122 - Deep Learning
+# Unit 5 — Model Optimization and Deployment
+## AIAT 122 — Deep Learning
 
-## ✅ Prerequisites Checklist
+Unit training hours: 14 (of 64 total)
 
-Before starting this unit, confirm:
+## Prerequisites
 
-- [ ] Completed Units 1-4 in this course
-- [ ] Comfortable with model evaluation and saving models
-- [ ] Recommended: Course 11 (Deployment) for full coverage
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics (see course README and DOCS/EXAMPLES_ORDER.md; COURSE_MAP if available in your repo)
+- Units 1–4 (training and evaluating models; saving/loading models).
+- Environment set up (see `../START_HERE.md`): "ai-diploma" kernel for PyTorch notebooks, "tfenv" kernel for TensorFlow notebooks.
 
-### Learning Objectives
+## What this unit teaches
 
-By the end of this unit, students will be able to:
-- Optimize deep learning models for deployment
-- Convert models to production-ready formats
-- Deploy models using various frameworks
-- Monitor and maintain deployed models
-- Implement model versioning and updates
+Making trained models smaller, faster, and servable: quantization, pruning, and knowledge distillation; exporting to interchange formats (ONNX); and serving models behind an API (TensorFlow Serving concepts, Flask/FastAPI).
 
----
+## Examples (do in file order)
 
-## Topics Covered
+Run the notebooks in `examples/` in this order:
 
-Based on official curriculum (AIAT 122), this unit covers:
+1. `01_model_optimization.ipynb` — why and how to optimize models for deployment; overview of the techniques.
+2. `02_tensorflow_serving.ipynb` — model-server concepts: export a model and serve predictions.
+3. `03_onnx_conversion.ipynb` — convert a model to ONNX and run it with ONNX Runtime.
+4. `04_model_pruning.ipynb` — remove low-importance weights and measure the size/accuracy trade-off.
+5. `05_model_distillation.ipynb` — train a small student model from a large teacher.
+6. `06_flask_fastapi_deployment.ipynb` — wrap a model in a REST API with Flask/FastAPI.
+7. `07_model_optimization_quantization.ipynb` — quantize a model and compare size, speed, and accuracy.
 
-1. **Model Optimization**
-   - Model quantization
-   - Pruning techniques
-   - Knowledge distillation
-   - Model compression
-   - ONNX conversion
+The `simple_model.onnx` / `simple_model.onnx.data` files in `examples/` are sample artifacts used by the ONNX notebooks.
 
-2. **Deployment Strategies**
-   - Batch inference
-   - Real-time inference
-   - Edge deployment
-   - Cloud deployment
-   - Hybrid approaches
+## Exercise
 
-3. **Deployment Frameworks**
-   - TensorFlow Serving
-   - TorchServe
-   - ONNX Runtime
-   - TensorRT
-   - CoreML (for iOS)
+- `exercises/01_deep_learning_model_deployment_exercise.ipynb` — optimize and deploy a trained model (export and/or API). `exercises/app.py` is a supporting API script for this exercise. Solutions are released by your instructor.
 
-4. **Model Serving**
-   - REST APIs for models
-   - gRPC for model serving
-   - Model caching
-   - Load balancing
-   - Auto-scaling
+## Quiz
 
-5. **Monitoring and Maintenance**
-   - Model performance monitoring
-   - Drift detection
-   - A/B testing
-   - Model versioning
-   - Continuous integration
+- `../QUIZZES/quiz_05.md`
 
----
+## Next
 
-## Recommended order (examples)
-
-**Do notebooks in this number order: 01 → 02 → 03 → … → 07.** (Unit 5 has no slides; order is by file number only.) Full table: `DOCS/EXAMPLES_ORDER.md`.
-
-1. `01_model_optimization.ipynb`  
-2. `02_tensorflow_serving.ipynb`  
-3. `03_onnx_conversion.ipynb`  
-4. `04_model_pruning.ipynb`  
-5. `05_model_distillation.ipynb`  
-6. `06_flask_fastapi_deployment.ipynb`  
-7. `07_model_optimization_quantization.ipynb`  
-
----
-
-## Exercises
-
-Complete the exercise in `unit5-deployment/exercises/`:
-
-1. **`01_deep_learning_model_deployment_exercise.ipynb`** – Deploy a model (e.g. API or export). Aligns with `01_model_optimization.ipynb`, `06_flask_fastapi_deployment.ipynb`.
-
-**Solutions:** See `DOCS/SOLUTIONS/exercises/` (instructor-only; do not distribute before deadline).
-
----
-
-## Teaching note (instructors)
-
-- **Suggested time:** Examples 01–07: ~2–2.5 hours. Unit 5 has no institution slides; use notebooks only (~7 theory + 13 practical hours).
-- **Demo notebook:** `06_flask_fastapi_deployment.ipynb` – show defining the API and a test request.
-- **Common stumbling block:** TensorFlow Serving / Docker if not familiar; focus on 01, 03, 06, 07 for core optimization + API.
-- **Exercise alignment:** Deployment exercise with 01_model_optimization and 06_flask_fastapi_deployment.
-
----
-
-## Unit Breakdown
-
-**Theoretical Hours:** 7  
-**Practical Hours:** 13  
-**Total Hours:** 20
-
-### Theoretical Content
-
-- Model optimization techniques
-- Deployment architectures
-- Serving frameworks comparison
-- Monitoring strategies
-- Production best practices
-
-### Practical Content
-
-- Quantizing a TensorFlow model
-- Deploying with TensorFlow Serving
-- Creating REST API for model inference
-- Setting up model monitoring
-- Implementing model versioning
-
----
-
-**Unit Duration:** 3 weeks  
-**Difficulty:** Advanced  
-**Prerequisites:** Units 1-4 completion
-
-**Created for:** AIAT 122 - Deep Learning  
-**Last Updated:** 2025-01-10
-
+Course assessments: `../ASSESSMENTS/README.md`

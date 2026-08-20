@@ -47,11 +47,11 @@ Course 08 uses **both** where relevant. Many examples are in **TensorFlow/Keras*
 
 ### Why is Unit 5 not in the institution slides?
 
-The 23 institution slides cover Units 1–4. **Unit 5 (deployment)** is only in the course materials (notebooks, README). Teach Unit 5 from the Unit 5 notebooks and README. See `DOCS/INSTITUTION_SLIDES_COMPATIBILITY.md`.
+The mapped institution slides cover Units 1–4. **Unit 5 (deployment)** is only in the course materials (notebooks, README). Teach Unit 5 from the Unit 5 notebooks and README. Slide decks: `../PRESENTATIONS/SLIDES/`; slide ↔ notebook map: `EXAMPLES_ORDER.md` (this folder).
 
 ### Where do students get a GPU?
 
-**Google Colab** (free tier) is the main option; see `DOCS/COLAB_SETUP.md`. Kaggle notebooks also offer free GPU. Local GPU requires NVIDIA + CUDA and appropriate TensorFlow/PyTorch installs.
+**Google Colab** (free tier) is the main option; see `COLAB_SETUP.md` (this folder). Kaggle notebooks also offer free GPU. Local GPU requires NVIDIA + CUDA and appropriate TensorFlow/PyTorch installs.
 
 ### Can students use a different dataset for the project?
 
@@ -61,20 +61,18 @@ Yes, as long as it is **allowed** (public, no license violations) and fits the t
 
 This is an environment issue. Have students run:  
 `pip install --upgrade charset-normalizer requests`  
-Then **restart the Jupyter/Colab kernel** and run the imports again. See `DOCS/COLAB_SETUP.md`.
+Then **restart the Jupyter/Colab kernel** and run the imports again. See `COLAB_SETUP.md` (this folder).
 
 ### Where are quiz and exercise solutions?
 
-- **Quiz solutions:** `DOCS/SOLUTIONS/quizzes/` (instructor use; do not post before quiz deadline).  
-- **Exercise solutions:** `DOCS/SOLUTIONS/exercises/` (instructor use; do not distribute before exercise deadline).  
-See `DOCS/INSTRUCTOR_RUNBOOK.md`.
+Quiz and exercise solutions are released by your instructor.
 
 ### How do I grade the case study and project?
 
 Use the rubrics:  
-- **Case study:** `CASE_STUDIES/case_study_01_rubric.md`.  
-- **Project 01:** `PROJECTS/Image_Classification_System/RUBRIC.md`.  
-Model answers: case study in `DOCS/SOLUTIONS/case_study_01_sample_solution.md`; project expectations in project README.
+- **Case study:** grading criteria are in `../CASE_STUDIES/case_study_01_deep_learning_deployment.md` itself.  
+- **Project 01:** `../PROJECTS/Image_Classification_System/RUBRIC.md`.  
+Model answers are released by your instructor; project expectations are in each project README.
 
 ---
 

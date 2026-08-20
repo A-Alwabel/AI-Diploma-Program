@@ -1,92 +1,39 @@
-# Unit 2: CNNs for Images
-## AIAT 122 - Deep Learning
+# Unit 2 — Convolutional Neural Networks (CNNs) for Computer Vision
+## AIAT 122 — Deep Learning
 
-## ✅ Prerequisites Checklist
+Unit training hours: 12 (of 64 total)
 
-Before starting this unit, confirm:
+## Prerequisites
 
-- [ ] Completed Unit 1: Introduction to Deep Learning and Neural Networks
-- [ ] Comfortable with tensors and activation functions
-- [ ] Understand basic image data formats
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics (see course README and DOCS/EXAMPLES_ORDER.md; COURSE_MAP if available in your repo)
+- Unit 1 (neural networks, activation functions, training basics).
+- Environment set up (see `../START_HERE.md`): "ai-diploma" kernel for PyTorch notebooks, "tfenv" kernel for TensorFlow notebooks.
 
-### Learning Objectives
+## What this unit teaches
 
-By the end of this unit, students will be able to:
-- Understand Convolutional Neural Networks
-- Build CNNs for image classification
-- Apply transfer learning
-- Understand CNN architectures (LeNet, AlexNet, ResNet)
-- Deploy CNN models
+How CNNs process images: convolution, pooling, and feature maps; classic and advanced architectures (LeNet, AlexNet, ResNet); transfer learning with pretrained models; object detection basics; training CNNs on real image datasets with augmentation.
 
----
+## Examples (do in file order)
 
-## Topics Covered
+Run the notebooks in `examples/` in this order:
 
-1. **CNN Fundamentals**
-   - Convolution operation
-   - Pooling layers
-   - Feature maps
-   - CNN architecture
+1. `01_cnn_architecture.ipynb` — convolution, pooling, and fully connected layers; a first CNN.
+2. `02_image_processing_fundamentals_and_feature_extraction.ipynb` — pixels, channels, normalization, and augmentation.
+3. `03_cnn_advanced_architectures.ipynb` — classic architectures (LeNet, AlexNet) and what changed between them.
+4. `04_transfer_learning_object_detection.ipynb` — object detection concepts (Faster R-CNN, SSD, YOLO) with pretrained backbones.
+5. `05_transfer_learning_cnns.ipynb` — reuse a pretrained CNN: freeze layers and fine-tune.
+6. `06_pretrained_cnn_architectures.ipynb` — compare pretrained architectures (VGG, ResNet, MobileNet).
+7. `07_training_cnn_image_datasets.ipynb` — train a CNN from scratch on CIFAR-10; full pipeline.
 
-2. **Image Classification**
-   - Building CNN models
-   - Training on image datasets
-   - Data augmentation
-   - Model evaluation
+Note: notebooks 04, 05, and 07 involve downloads and training runs that can take tens of minutes on CPU — use a GPU (e.g. Colab, see `../DOCS/COLAB_SETUP.md`) or reduce epochs/data for a quicker pass.
 
-3. **Transfer Learning**
-   - Using pre-trained models
-   - Fine-tuning
-   - Feature extraction
-   - Popular architectures (VGG, ResNet, MobileNet)
+## Exercise
 
-4. **Advanced CNN Topics**
-   - Object detection basics
-   - Semantic segmentation introduction
-   - CNN visualization
+- `exercises/01_cnn_exercise.ipynb` — build a CNN image classifier (from scratch or via transfer learning). Solutions are released by your instructor.
 
----
+## Quiz
 
-## Recommended order (examples)
+- `../QUIZZES/quiz_02.md`
 
-**Do notebooks in this number order: 01 → 02 → 03 → … → 07.** (Slide numbers are topic IDs only—do **not** use them to decide order.) Full table: `DOCS/EXAMPLES_ORDER.md`.
+## Next
 
-1. `01_cnn_architecture.ipynb`  
-2. `02_image_processing_fundamentals_and_feature_extraction.ipynb`  
-3. `03_cnn_advanced_architectures.ipynb`  
-4. `04_transfer_learning_object_detection.ipynb`  
-5. `05_transfer_learning_cnns.ipynb`  
-6. `06_pretrained_cnn_architectures.ipynb`  
-7. `07_training_cnn_image_datasets.ipynb`  
-
-**Why is 07 last?** We do transfer learning (05, 06) before the full "train from scratch" pipeline (07) so you see how to reuse pretrained models first; 07 then shows training a CNN from scratch on CIFAR-10.
-
-**⏱ Long run:** Notebooks **04**, **05**, and **07** can take **10–40+ minutes** to run (downloads, transfer learning, or full training). Use a GPU (e.g. Colab) and a smaller subset or fewer epochs if you need a quicker demo.
-
----
-
-## Exercises
-
-Complete the exercise in `unit2-cnns/exercises/`:
-
-1. **`01_cnn_exercise.ipynb`** – CNN for image classification. Aligns with `01_cnn_architecture.ipynb`, `05_transfer_learning_cnns.ipynb`, `07_training_cnn_image_datasets.ipynb`.
-
-**Solutions:** See `DOCS/SOLUTIONS/exercises/` (instructor-only; do not distribute before deadline).
-
----
-
-## Teaching note (instructors)
-
-- **Suggested time:** Examples 01–07: ~2.5–3 hours in lab. Theory (slides): ~6 hours.
-- **Demo notebook:** `01_cnn_architecture.ipynb` or `05_transfer_learning_cnns.ipynb` – show conv/pool structure or transfer learning flow.
-- **Common stumbling block:** GPU memory on full CIFAR-10/ImageNet; use subset or smaller batch size; recommend Colab GPU (see `DOCS/COLAB_SETUP.md`).
-- **Exercise alignment:** `01_cnn_exercise` builds on 01_cnn_architecture and transfer learning examples.
-
----
-
-**Unit Duration:** 3 weeks  
-**Difficulty:** Advanced  
-**Prerequisites:** Unit 1 completion, understanding of neural networks
-
+Unit 3: `../unit3-rnns-transformers/README.md`
