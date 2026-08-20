@@ -116,11 +116,4 @@ What is the difference between simple and multiple linear regression?
 
 ---
 
-## Answer Key | مفتاح الإجابات
-
-
----
-
-**Good luck!** 🍀  
-**حظاً موفقاً!**
-
+> Answers and rubric: released by your instructor.

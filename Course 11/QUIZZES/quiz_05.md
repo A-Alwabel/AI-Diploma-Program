@@ -62,7 +62,7 @@ Write Python code using **MLflow** to track a model training experiment:
 - Log a model artifact using mlflow.sklearn.log_model or mlflow.pytorch.log_model.
 - End the run and print the run_id.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_05_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -71,14 +71,14 @@ Write Python code using **MLflow** to track a model training experiment:
 ### Question 6 (15 points)
 What is **data drift** vs **concept drift**? Give a concrete example of each in a real-world AI system (e.g., fraud detection, recommendation).
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_05_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
 ### Question 7 (15 points)
 Describe a **model retraining strategy** for a production system. What triggers retraining (performance threshold, scheduled), and how do you ensure the new model is safe before replacing the old one?
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_05_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -87,7 +87,7 @@ Describe a **model retraining strategy** for a production system. What triggers 
 ### Question 8 (10 points)
 A production recommendation model's click-through rate dropped from 8% to 4% over 6 months. Describe a **systematic diagnosis**: what monitoring data to check first, how to determine if it's data drift or model degradation, and what retraining strategy to apply.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_05_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 

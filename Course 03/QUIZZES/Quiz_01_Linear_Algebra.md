@@ -88,10 +88,6 @@ B = [[5, 6],
 
 Show your calculation.
 
-**Answer:**
-```
-A × B = [[1×5 + 2×7,  1×6 + 2×8],
-         [3×5 + 4×7,  3×6 + 4×8]]
 
       = [[5 + 14,  6 + 16],
          [15 + 28, 18 + 32]]
@@ -231,34 +227,6 @@ What is the dot product? How is it used in machine learning?
 3. **Neural Networks:** Each neuron computes dot product of inputs and weights
 4. **Kernel Methods:** Many kernels use dot products
 5. **Recommendation Systems:** User-item similarity
-
----
-
-## Answer Key
-
-**Part 1:**
-1. B) An ordered collection of numbers (1D array)
-2. C) A 2D array of numbers arranged in rows and columns
-3. B) (3, 4)
-4. Code with correct NumPy operations - 10 points
-
-**Part 2:**
-5. A) Adding corresponding elements
-6. C) When number of columns in first equals number of rows in second
-7. Correct matrix multiplication result - 10 points
-8. Complete code with all operations - 10 points
-
-**Part 3:**
-9. B) A scalar that represents how a vector is scaled by a transformation
-10. B) A vector that doesn't change direction under transformation
-11. B) They help in dimensionality reduction (PCA) and understanding transformations
-12. Correct NumPy eig code - 10 points
-
-**Part 4:**
-13. Multiple applications explained - 10 points
-14. Dot product explained with ML applications - 10 points
-
-**Total: 100 points**
 
 ---
 

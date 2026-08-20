@@ -22,7 +22,6 @@ What is the main difference between supervised and unsupervised learning?
 - C) There is no difference
 - D) Supervised learning is faster
 
-**Answer:** A
 
 ---
 
@@ -33,7 +32,6 @@ What does K-Means clustering try to minimize?
 - C) The number of features
 - D) The distance between clusters
 
-**Answer:** B
 
 ---
 
@@ -44,7 +42,6 @@ How do you choose the optimal number of clusters (K) in K-Means?
 - C) Use the number of features
 - D) Use the number of samples
 
-**Answer:** B
 
 ---
 
@@ -55,7 +52,6 @@ What is the main purpose of PCA (Principal Component Analysis)?
 - C) To remove outliers
 - D) To handle missing values
 
-**Answer:** B
 
 ---
 
@@ -66,7 +62,6 @@ What does "explained variance" represent in PCA?
 - C) The number of features
 - D) The number of samples
 
-**Answer:** B
 
 ---
 
@@ -143,7 +138,6 @@ X, y = make_classification(
 ### Question 8 (5 points)
 Explain the difference between K-Means and Hierarchical clustering. When would you use each?
 
-**Answer:**
 - **K-Means:**
   - Requires specifying K beforehand
   - Faster for large datasets
@@ -163,7 +157,6 @@ Explain the difference between K-Means and Hierarchical clustering. When would y
 ### Question 9 (5 points)
 You apply PCA to a dataset with 10 features and find that the first 3 principal components explain 85% of the variance. Should you use all 10 features or just the 3 principal components? Explain your reasoning.
 
-**Answer:**
 - **Recommendation:** Use 3 principal components
 - **Reasoning:**
   1. 85% variance is typically sufficient (common threshold is 80-95%)
@@ -178,7 +171,6 @@ You apply PCA to a dataset with 10 features and find that the first 3 principal 
 ### Question 10 (5 points)
 What is the Silhouette Score, and what does it measure? What is a good Silhouette Score?
 
-**Answer:**
 - **Definition:** Measures how similar an object is to its own cluster compared to other clusters
 - **Range:** -1 to 1
 - **Interpretation:**

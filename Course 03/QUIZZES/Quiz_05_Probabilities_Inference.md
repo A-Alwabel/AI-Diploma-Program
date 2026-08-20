@@ -337,32 +337,6 @@ Explain maximum likelihood estimation (MLE) and maximum a posteriori (MAP) estim
 
 ---
 
-## Answer Key
-
-**Part 1:**
-1. B) A function that describes the probability of different outcomes
-2. B) Discrete has countable outcomes, continuous has uncountable outcomes
-3. B) A bell-shaped distribution with mean μ and variance σ²
-4. Three distributions with ML uses - 15 points
-
-**Part 2:**
-5. B) Drawing conclusions about populations from samples
-6. B) A range of values that likely contains the true parameter
-7. Hypothesis testing explained with ML applications - 15 points
-
-**Part 3:**
-8. B) Updating beliefs using both prior knowledge and observed data
-9. A) P(A|B) = P(B|A) × P(A) / P(B)
-10. Bayesian vs frequentist with ML example - 15 points
-
-**Part 4:**
-11. Multiple probability applications in ML - 10 points
-12. MLE vs MAP explained with use cases - 10 points
-
-**Total: 100 points**
-
----
-
 ## Grading Rubric
 
 - **90-100 points:** Excellent understanding

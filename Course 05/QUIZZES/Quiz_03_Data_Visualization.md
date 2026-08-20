@@ -126,37 +126,6 @@ Explain when to use different types of visualizations. Give examples.
 ### Question 9 (5 points)
 What are the key principles of effective data visualization?
 
-**Key Principles:**
-1. **Clarity**: Clear labels, titles, and legends
-2. **Simplicity**: Avoid clutter, focus on the message
-3. **Appropriate Scale**: Use scales that don't mislead
-4. **Color Choice**: Use color meaningfully, consider colorblind-friendly palettes
-5. **Context**: Provide necessary context and annotations
-6. **Consistency**: Use consistent styling across related plots
-7. **Accessibility**: Ensure readability for all audiences
-8. **Purpose**: Each visualization should have a clear purpose
-
----
-
-## Answer Key
-
-**Part 1:**
-1. C) Seaborn
-2. B) Interactive visualizations
-3. B) A histogram showing distribution
-4. B) Scatter plot
-5. B) A figure and axes objects
-
-**Part 2:**
-6. Complete line plot with labels - 5 points
-7. Scatter plot with hue - 5 points
-
-**Part 3:**
-8. Multiple visualization types with examples - 5 points
-9. Clear principles explained - 5 points
-
-**Total: 30 points**
-
 ---
 
 ## Grading Rubric

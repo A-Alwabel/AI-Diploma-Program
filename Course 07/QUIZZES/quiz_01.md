@@ -16,7 +16,6 @@ What is the purpose of tokenization in NLP?
 ج) Convert to lowercase  
 د) Remove punctuation
 
-**Answer:** ب
 
 ---
 
@@ -28,7 +27,6 @@ Stemming and lemmatization both:
 ج) Remove punctuation  
 د) Convert to lowercase
 
-**Answer:** ب
 
 ---
 
@@ -37,31 +35,12 @@ Stemming and lemmatization both:
 ### Question 3 (30 points)
 Write code to preprocess text: lowercase, remove punctuation, tokenize, and remove stop words.
 
-**Answer Key:**
-```python
-import re
-from nltk.tokenize import word_tokenize
-from nltk.corpus import stopwords
-
-def preprocess(text):
-    text = text.lower()
-    text = re.sub(r'[^\w\s]', '', text)
-    tokens = word_tokenize(text)
-    stop_words = set(stopwords.words('english'))
-    filtered = [w for w in tokens if w not in stop_words]
-    return filtered
-```
-
 ---
 
 ## Part 3: Short Answer (30 points)
 
 ### Question 4 (15 points)
 Explain the difference between stemming and lemmatization.
-
-**Answer Key:**
-- Stemming: Removes suffixes/prefixes, may not result in valid words (faster, less accurate)
-- Lemmatization: Returns root form that is a valid word (slower, more accurate)
 
 ---
 

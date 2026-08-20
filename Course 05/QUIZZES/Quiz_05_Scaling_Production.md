@@ -143,27 +143,6 @@ What are the main challenges when scaling data science workflows? How can they b
 
 ---
 
-## Answer Key
-
-**Part 1:**
-1. B) Distributed computing and parallel processing
-2. B) A GPU-accelerated data science library
-3. B) Parallel processing of many operations simultaneously
-4. B) An automated system that processes data and makes predictions
-5. B) Making a model available for use in production
-
-**Part 2:**
-6. Dask DataFrame operations - 5 points
-7. Model save/load - 5 points
-
-**Part 3:**
-8. Multiple considerations explained - 5 points
-9. Challenges and solutions - 5 points
-
-**Total: 30 points**
-
----
-
 ## Grading Rubric
 
 - **90-100% (27-30 points):** Excellent understanding

@@ -17,7 +17,6 @@ What is a perceptron?
 ج) A search algorithm  
 د) A knowledge representation method
 
-**Answer:** ب
 
 ---
 
@@ -29,7 +28,6 @@ What does ReLU stand for?
 ج) Recursive Linear Unit  
 د) Regular Linear Unit
 
-**Answer:** أ
 
 ---
 
@@ -41,7 +39,6 @@ What is the purpose of an activation function?
 ج) To reduce memory usage  
 د) To speed up computation
 
-**Answer:** ب
 
 ---
 
@@ -53,7 +50,6 @@ A single perceptron can solve which type of problems?
 ج) Both linear and non-linear  
 د) No problems
 
-**Answer:** أ
 
 ---
 
@@ -65,21 +61,12 @@ Explain the difference between a perceptron and a multi-layer perceptron.
 
 اشرح الفرق بين البيرسبترون والشبكة العصبية متعددة الطبقات.
 
-**Answer Key:**
-- Perceptron: Single layer, can only solve linearly separable problems
-- Multi-layer perceptron: Multiple layers with hidden layers, can solve non-linear problems
-
 ---
 
 ### Question 6 (15 points)
 What is forward propagation in a neural network?
 
 ما هو الانتشار الأمامي في الشبكة العصبية؟
-
-**Answer Key:**
-- Process of passing input data through the network layers
-- Each layer applies weights and activation function
-- Produces output at the final layer
 
 ---
 
@@ -91,9 +78,6 @@ Implement a simple perceptron that can classify AND gate inputs.
 
 نفذ بيرسبترون بسيط يمكنه تصنيف مدخلات بوابة AND.
 
-**Sample Answer:**
-```python
-import numpy as np
 
 class Perceptron:
     def __init__(self):

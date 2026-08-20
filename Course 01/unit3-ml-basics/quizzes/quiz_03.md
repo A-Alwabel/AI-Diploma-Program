@@ -17,7 +17,6 @@ What is a knowledge graph?
 ج) A search algorithm  
 د) An activation function
 
-**Answer:** ب
 
 ---
 
@@ -29,7 +28,6 @@ In a rule-based system, what does "IF-THEN" represent?
 ج) A data structure  
 د) An algorithm
 
-**Answer:** ب
 
 ---
 
@@ -41,7 +39,6 @@ What is forward chaining?
 ج) A type of search algorithm  
 د) A neural network training method
 
-**Answer:** أ
 
 ---
 
@@ -53,7 +50,6 @@ Which is NOT a knowledge representation method?
 ج) Binary search  
 د) Frames
 
-**Answer:** ج
 
 ---
 
@@ -65,22 +61,12 @@ Explain what a knowledge base is and give an example.
 
 اشرح ما هي قاعدة المعرفة وأعط مثالاً.
 
-**Answer Key:**
-- Knowledge base: Collection of facts and rules about a domain
-- Example: Medical diagnosis system, expert system for troubleshooting
-
 ---
 
 ### Question 6 (15 points)
 What are the main components of an expert system?
 
 ما هي المكونات الرئيسية لنظام خبير؟
-
-**Answer Key:**
-- Knowledge base
-- Inference engine
-- User interface
-- Explanation facility
 
 ---
 
@@ -92,14 +78,6 @@ Create a simple knowledge graph for a family and write a function to find all si
 
 أنشئ رسم بياني بسيط للمعرفة لعائلة واكتب دالة للعثور على جميع الأشقاء لشخص ما.
 
-**Sample Answer:**
-```python
-family_graph = {
-    'Ahmed': {'children': ['Sara', 'Omar']},
-    'Fatima': {'children': ['Sara', 'Omar']},
-    'Sara': {'siblings': ['Omar']},
-    'Omar': {'siblings': ['Sara']}
-}
 
 def find_siblings(graph, person):
     return graph.get(person, {}).get('siblings', [])

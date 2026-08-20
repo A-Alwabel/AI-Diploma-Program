@@ -60,7 +60,7 @@ Write PyTorch code to define a **simple GAN** for MNIST-like images (28x28 = 784
 - Write the generator loss expression: binary cross-entropy with all-ones labels (generator wants discriminator to output 1).
 - Write the discriminator loss expression: real samples target 1, fake samples target 0.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_01_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -69,14 +69,14 @@ Write PyTorch code to define a **simple GAN** for MNIST-like images (28x28 = 784
 ### Question 6 (15 points)
 Explain **mode collapse** in GANs: what it is, why it happens, and one technique to mitigate it.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_01_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
 ### Question 7 (15 points)
 Describe the **VAE loss function (ELBO)**. What are its two components, and what does each one enforce?
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_01_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -85,7 +85,7 @@ Describe the **VAE loss function (ELBO)**. What are its two components, and what
 ### Question 8 (10 points)
 A GAN trained on medical images produces sharp images but has a high FID score. What does this suggest, and what would you investigate?
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_01_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 

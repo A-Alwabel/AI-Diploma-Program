@@ -259,34 +259,6 @@ Explain the bias-variance tradeoff and its relationship to optimization and stat
 
 ---
 
-## Answer Key
-
-**Part 1:**
-1. B) Adam adapts learning rate per parameter, SGD uses fixed learning rate
-2. B) A technique that uses past gradients to accelerate convergence
-3. B) It adapts learning rates automatically and handles sparse gradients well
-4. Clear explanation of all three types - 10 points
-
-**Part 2:**
-5. B) A function that measures the difference between predictions and actual values
-6. B) For regression problems
-7. B) For classification problems
-8. Good comparison with use cases - 10 points
-
-**Part 3:**
-9. B) The average value
-10. B) A measure of how spread out the data is
-11. B) Population uses all data, sample uses subset; sample uses n-1 for variance
-12. Variance explained with n-1 justification - 10 points
-
-**Part 4:**
-13. Integration of optimization and statistics explained - 10 points
-14. Comprehensive explanation of bias-variance tradeoff - 15 points
-
-**Total: 100 points**
-
----
-
 ## Grading Rubric
 
 - **90-100 points:** Excellent understanding

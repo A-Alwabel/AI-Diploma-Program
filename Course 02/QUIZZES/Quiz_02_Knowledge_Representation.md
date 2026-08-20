@@ -37,7 +37,6 @@ In a knowledge graph, edges represent:
 ### Question 4 (10 points)
 Create a simple knowledge graph with 3 entities and 2 relationships. Draw it.
 
-**Sample Answer:**
 - Entities: Person (John), City (Riyadh), Country (Saudi Arabia)
 - Relationships: John lives_in Riyadh, Riyadh located_in Saudi Arabia
 
@@ -141,13 +140,6 @@ G.add_______("Person", "City", relation="lives_in")
 ### Question 15 (10 points)
 Write code to represent a simple rule: "IF temperature > 30 THEN it is hot"
 
-**Sample Answer:**
-```python
-def check_temperature(temp):
-    if temp > 30:
-        return "it is hot"
-    return None
-```
 
 ---
 

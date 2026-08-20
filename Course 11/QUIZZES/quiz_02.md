@@ -60,7 +60,7 @@ Write Python code to **export a PyTorch model to ONNX** and run inference:
 - Load with onnxruntime.InferenceSession("model.onnx").
 - Run inference with np.random.randn(1, 4).astype(np.float32) and print the output.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_02_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -69,14 +69,14 @@ Write Python code to **export a PyTorch model to ONNX** and run inference:
 ### Question 6 (15 points)
 Explain the difference between **REST** and **gRPC** for model serving. When would you choose gRPC over REST?
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_02_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
 ### Question 7 (15 points)
 What is **load balancing** in model serving, and why is it needed when serving a model to many concurrent users?
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_02_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -85,7 +85,7 @@ What is **load balancing** in model serving, and why is it needed when serving a
 ### Question 8 (10 points)
 A deployed model API has 3-second response time, but the business requirement is 200ms. Name **three** concrete optimizations (e.g., quantization, caching, batching, async inference) and the trade-off for each.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_02_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 

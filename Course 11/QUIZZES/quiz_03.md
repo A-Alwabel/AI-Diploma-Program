@@ -65,7 +65,7 @@ Step 5: Invoke endpoint with sample input and print prediction.
 
 Note: Structured pseudocode with correct step order is sufficient; exact boto3 syntax not required.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_03_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -74,14 +74,14 @@ Note: Structured pseudocode with correct step order is sufficient; exact boto3 s
 ### Question 6 (15 points)
 Compare **IaaS, PaaS, and SaaS** cloud service models. Which is most commonly used for deploying custom AI models, and why?
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_03_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
 ### Question 7 (15 points)
 What is **edge AI deployment**, and when would you deploy a model on-device rather than in the cloud? Give one real-world example.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_03_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -90,7 +90,7 @@ What is **edge AI deployment**, and when would you deploy a model on-device rath
 ### Question 8 (10 points)
 A startup deploys a fraud detection model on AWS. During peak hours, requests jump from 100/min to 10,000/min. Describe how you would architect this using **auto-scaling, load balancing**, and appropriate AWS services.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_03_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 

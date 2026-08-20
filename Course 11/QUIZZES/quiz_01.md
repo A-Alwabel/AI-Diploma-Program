@@ -61,7 +61,7 @@ Write a minimal **FastAPI** application to serve an ML model:
 - Include app = FastAPI() and the correct uvicorn run command.
 - Show how you would test this with a requests.post() call.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_01_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -70,14 +70,14 @@ Write a minimal **FastAPI** application to serve an ML model:
 ### Question 6 (15 points)
 Describe the **AI model deployment lifecycle**. Name the four key stages and explain what happens at each.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_01_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
 ### Question 7 (15 points)
 What is **model drift**, and why is it a concern? Give one example of data drift and one example of concept drift.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_01_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -86,7 +86,7 @@ What is **model drift**, and why is it a concern? Give one example of data drift
 ### Question 8 (10 points)
 A data scientist trains a model locally (95% accuracy) but when deployed to a colleague's machine it fails with ModuleNotFoundError. What is the root cause, and how does Docker solve this problem?
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_01_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 

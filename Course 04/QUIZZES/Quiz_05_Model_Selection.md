@@ -114,11 +114,4 @@ What is stacking?
 
 ---
 
-## Answer Key | مفتاح الإجابات
-
-
----
-
-**Good luck!** 🍀  
-**حظاً موفقاً!**
-
+> Answers and rubric: released by your instructor.

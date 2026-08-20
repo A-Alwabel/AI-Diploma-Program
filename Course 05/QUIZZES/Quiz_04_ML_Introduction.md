@@ -164,27 +164,6 @@ What are the main evaluation metrics for classification and regression? When wou
 
 ---
 
-## Answer Key
-
-**Part 1:**
-1. A) Supervised uses labels, unsupervised doesn't
-2. A) The proportion of correct predictions
-3. A) Model performs well on training but poorly on test data
-4. B) To evaluate model performance on unseen data
-5. B) True positives, false positives, true negatives, false negatives
-
-**Part 2:**
-6. Complete regression pipeline - 5 points
-7. Complete classification pipeline with evaluation - 5 points
-
-**Part 3:**
-8. Clear explanation of bias-variance tradeoff - 5 points
-9. Multiple metrics with use cases - 5 points
-
-**Total: 30 points**
-
----
-
 ## Grading Rubric
 
 - **90-100% (27-30 points):** Excellent understanding

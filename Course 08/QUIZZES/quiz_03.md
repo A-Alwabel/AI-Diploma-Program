@@ -59,7 +59,7 @@ Write code to build a **simple LSTM** in **PyTorch** for sequence classification
 - Take the last hidden state and pass through `nn.Linear(32, 1)` with sigmoid for binary output.
 - Show the full `nn.Module` class with `__init__` and `forward` methods. Input is integer sequences of shape `(batch, seq_len=100)`.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_03_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -68,14 +68,14 @@ Write code to build a **simple LSTM** in **PyTorch** for sequence classification
 ### Question 6 (15 points)
 What problem does **attention** solve that RNNs/LSTMs struggle with (e.g. long sequences), and how does it help?
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_03_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
 ### Question 7 (15 points)
 In one or two sentences, what is the main difference between **BERT** (encoder) and **GPT** (decoder) in terms of how they are typically used?
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_03_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -84,7 +84,7 @@ In one or two sentences, what is the main difference between **BERT** (encoder) 
 ### Question 8 (10 points)
 A **sentiment model** performs well on short reviews but poorly on **long documents**. What might be the cause (e.g. architecture or sequence length), and how could **attention** or a different model choice help?
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_03_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 

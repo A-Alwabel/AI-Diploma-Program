@@ -114,11 +114,4 @@ What is the advantage of using cross-validation over a simple train-test split?
 
 ---
 
-## Answer Key | مفتاح الإجابات
-
-
----
-
-**Good luck!** 🍀  
-**حظاً موفقاً!**
-
+> Answers and rubric: released by your instructor.

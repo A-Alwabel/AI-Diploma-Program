@@ -152,27 +152,6 @@ What are the key metrics used to measure fairness in AI systems? Explain each.
 
 ---
 
-## Answer Key
-
-**Part 1:**
-1. B) Equal positive prediction rates across groups
-2. B) Equal true positive and false positive rates across groups
-3. B) Biased training data
-4. A) Removing protected attributes from data
-5. B) Protected attributes can be inferred from other features (proxy discrimination)
-
-**Part 2:**
-6. Clear explanation of both metrics with use cases - 5 points
-7. Three techniques with examples - 5 points
-
-**Part 3:**
-8. Identified issues and provided solutions - 5 points
-9. Explained multiple fairness metrics - 5 points
-
-**Total: 30 points**
-
----
-
 ## Grading Rubric
 
 - **90-100% (27-30 points):** Excellent understanding

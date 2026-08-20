@@ -29,7 +29,6 @@ What is an objective function?
 ### Question 3 (10 points)
 Give an example of an optimization problem (real-world or mathematical).
 
-**Sample Answer:**
 - Minimizing cost while maximizing profit
 - Finding shortest path
 - Minimizing error in machine learning

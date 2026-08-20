@@ -258,27 +258,6 @@ What are the main challenges in implementing AI governance? How can organization
 
 ---
 
-## Answer Key
-
-**Part 1:**
-1. B) Framework of policies, processes, and controls for responsible AI development and deployment
-2. B) A comprehensive regulation for AI systems in the European Union
-3. B) AI systems that could cause harm to health, safety, or fundamental rights
-4. B) A committee that oversees ethical AI development and deployment
-5. B) To evaluate potential impacts of AI systems before deployment
-
-**Part 2:**
-6. Key principles with risk categories explained - 5 points
-7. Main components of governance framework - 5 points
-
-**Part 3:**
-8. Comprehensive governance measures - 5 points
-9. Challenges and solutions - 5 points
-
-**Total: 30 points**
-
----
-
 ## Grading Rubric
 
 - **90-100% (27-30 points):** Excellent understanding

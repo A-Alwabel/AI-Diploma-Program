@@ -16,7 +16,6 @@
 ج) Option C  
 د) Option D
 
-**Answer:** [Answer]
 
 ---
 
@@ -28,7 +27,6 @@
 ج) Option C  
 د) Option D
 
-**Answer:** [Answer]
 
 ---
 
@@ -40,7 +38,6 @@
 ج) Option C  
 د) Option D
 
-**Answer:** [Answer]
 
 ---
 
@@ -52,7 +49,6 @@
 ج) Option C  
 د) Option D
 
-**Answer:** [Answer]
 
 ---
 
@@ -61,11 +57,6 @@
 ### Question 5 (30 points)
 Write code to [implement a Capstone Project concept].
 
-**Answer Key:**
-```python
-# Solution code here
-```
-
 ---
 
 ## Part 3: Short Answer (30 points)
@@ -73,19 +64,10 @@ Write code to [implement a Capstone Project concept].
 ### Question 6 (15 points)
 Explain [a key concept from Capstone Project].
 
-**Answer Key:**
-- Key point 1
-- Key point 2
-- Key point 3
-
 ---
 
 ### Question 7 (15 points)
 Describe [an application or technique from Capstone Project].
-
-**Answer Key:**
-- Description point 1
-- Description point 2
 
 ---
 

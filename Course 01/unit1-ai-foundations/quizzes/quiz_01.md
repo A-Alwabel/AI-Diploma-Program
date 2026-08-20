@@ -17,7 +17,6 @@ What is the main goal of Artificial Intelligence?
 ج) To create robots only  
 د) To eliminate human decision-making
 
-**Answer:** ب
 
 ---
 
@@ -29,7 +28,6 @@ Which type of AI is currently achievable?
 ج) Narrow AI  
 د) Self-aware AI
 
-**Answer:** ج
 
 ---
 
@@ -41,7 +39,6 @@ What marked the "birth" of AI as a field?
 ج) Deep Blue victory (1997)  
 د) ChatGPT release (2022)
 
-**Answer:** ب
 
 ---
 
@@ -53,7 +50,6 @@ Which is NOT an application of AI?
 ج) Making coffee manually  
 د) Fraud detection
 
-**Answer:** ج
 
 ---
 
@@ -65,23 +61,12 @@ Explain the difference between Narrow AI and General AI. Give one example of eac
 
 اشرح الفرق بين الذكاء الاصطناعي الضيق والعام. أعط مثالاً واحداً لكل منهما.
 
-**Answer Key:**
-- Narrow AI: Designed for specific tasks, currently achievable (e.g., Siri, image recognition)
-- General AI: Human-level intelligence across all domains, not yet achieved
-
 ---
 
 ### Question 6 (15 points)
 List three factors that contributed to the modern AI renaissance (2010s-present).
 
 اذكر ثلاثة عوامل ساهمت في نهضة الذكاء الاصطناعي الحديثة.
-
-**Answer Key:**
-- Big Data availability
-- Increased computational power (GPUs)
-- Improved algorithms (Deep Learning)
-- Open source frameworks
-- Cloud computing
 
 ---
 
@@ -99,40 +84,7 @@ Write a simple rule-based AI system that recommends a study schedule based on:
 - صعوبة المادة (سهلة، متوسطة، صعبة)
 - مستوى الطاقة (منخفض، متوسط، عالي)
 
-**Sample Answer:**
-```python
-def recommend_study_schedule(time_available, difficulty, energy_level):
-    if time_available == "1-2":
-        if difficulty == "easy" and energy_level in ["medium", "high"]:
-            return "Focus on one easy topic"
-        else:
-            return "Take a break, study later"
-    elif time_available == "3-4":
-        if energy_level == "high":
-            return "Study hard topics"
-        elif energy_level == "medium":
-            return "Study medium difficulty topics"
-        else:
-            return "Review easy topics"
-    else:  # 5+ hours
-        if energy_level == "high":
-            return "Full study day - mix of all topics"
-        else:
-            return "Break into sessions with rest"
-```
 
 ---
 
-## Answer Key | مفتاح الإجابات
-
-1. ب  
-2. ج  
-3. ب  
-4. ج  
-5. See answer key above  
-6. See answer key above  
-7. See sample code above
-
----
-
-**For:** AIAT 111 - Introduction to AI Applications and Concepts
+> Answers and rubric: released by your instructor.

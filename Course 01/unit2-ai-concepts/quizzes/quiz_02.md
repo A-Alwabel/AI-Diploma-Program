@@ -17,7 +17,6 @@ What data structure does BFS use?
 ج) Priority Queue  
 د) Hash Table
 
-**Answer:** ب
 
 ---
 
@@ -29,7 +28,6 @@ What is the main advantage of DFS over BFS?
 ج) Faster execution  
 د) More accurate
 
-**Answer:** ب
 
 ---
 
@@ -41,7 +39,6 @@ What makes A* algorithm optimal?
 ج) It always finds the shortest path  
 د) It's faster than BFS
 
-**Answer:** ج
 
 ---
 
@@ -53,7 +50,6 @@ Which algorithm guarantees finding the shortest path in an unweighted graph?
 ج) Both  
 د) Neither
 
-**Answer:** ب
 
 ---
 
@@ -65,23 +61,12 @@ Explain the difference between BFS and DFS. When would you use each?
 
 اشرح الفرق بين BFS و DFS. متى تستخدم كل منهما؟
 
-**Answer Key:**
-- BFS: Uses queue, explores level by level, finds shortest path, uses more memory
-- DFS: Uses stack, explores deep first, uses less memory, may not find shortest path
-- Use BFS when shortest path is needed
-- Use DFS when memory is limited or any path is sufficient
-
 ---
 
 ### Question 6 (15 points)
 What is a heuristic function in A* algorithm? Give an example.
 
 ما هي الدالة الاستدلالية في خوارزمية A*؟ أعط مثالاً.
-
-**Answer Key:**
-- Heuristic: Estimates distance from current node to goal
-- Example: Manhattan distance, Euclidean distance
-- Must be admissible (never overestimate)
 
 ---
 
@@ -93,9 +78,6 @@ Implement a BFS function that finds the shortest path in a graph.
 
 نفذ دالة BFS تجد أقصر مسار في رسم بياني.
 
-**Sample Answer:**
-```python
-from collections import deque
 
 def bfs_shortest_path(graph, start, goal):
     queue = deque([(start, [start])])
@@ -117,16 +99,4 @@ def bfs_shortest_path(graph, start, goal):
 
 ---
 
-## Answer Key | مفتاح الإجابات
-
-1. ب  
-2. ب  
-3. ج  
-4. ب  
-5. See answer key above  
-6. See answer key above  
-7. See sample code above
-
----
-
-**For:** AIAT 111 - Introduction to AI Applications and Concepts
+> Answers and rubric: released by your instructor.

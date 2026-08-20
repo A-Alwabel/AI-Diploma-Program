@@ -239,27 +239,6 @@ What are the challenges in achieving transparency and accountability in AI syste
 
 ---
 
-## Answer Key
-
-**Part 1:**
-1. B) AI systems that can explain their decisions in understandable terms
-2. B) SHapley Additive exPlanations
-3. B) Explaining individual predictions locally
-4. B) Making algorithms understandable and explainable
-5. B) Clear responsibility for AI decisions and outcomes
-
-**Part 2:**
-6. Clear distinction with techniques and examples - 5 points
-7. Key components explained - 5 points
-
-**Part 3:**
-8. Comprehensive system design - 5 points
-9. Challenges and solutions - 5 points
-
-**Total: 30 points**
-
----
-
 ## Grading Rubric
 
 - **90-100% (27-30 points):** Excellent understanding

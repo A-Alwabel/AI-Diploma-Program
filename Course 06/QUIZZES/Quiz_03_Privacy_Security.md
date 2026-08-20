@@ -225,27 +225,6 @@ What are the main security threats to AI systems? How can they be mitigated?
 
 ---
 
-## Answer Key
-
-**Part 1:**
-1. B) A technique that adds noise to protect individual privacy while preserving statistical properties
-2. B) Individuals have rights over their personal data
-3. B) Replacing identifying information with pseudonyms
-4. A) Encryption that allows computation on encrypted data
-5. B) Technology that protects individual privacy while allowing useful analysis
-
-**Part 2:**
-6. Key principles explained with AI applications - 5 points
-7. Three technologies with examples - 5 points
-
-**Part 3:**
-8. Multiple strategies for healthcare AI - 5 points
-9. Security threats and mitigations - 5 points
-
-**Total: 30 points**
-
----
-
 ## Grading Rubric
 
 - **90-100% (27-30 points):** Excellent understanding
