@@ -1,6 +1,6 @@
-# Quiz 03: Learning under Uncertainty | اختبار 03: التعلم في ظل عدم اليقين
+# Quiz 03: Learning under Uncertainty
 
-## Instructions | التعليمات
+## Instructions
 - **Time Limit**: 40 minutes
 - **Total Points**: 100 points
 - **Format**: Multiple choice, short answer, calculations
@@ -17,7 +17,6 @@ What is the range of probability values?
 - C) -1 to 1
 - D) 0 to 100
 
-
 ### Question 2 (5 points)
 If P(A) = 0.3, what is P(not A)?
 - A) 0.3
@@ -25,10 +24,8 @@ If P(A) = 0.3, what is P(not A)?
 - C) 1.3
 - D) 0
 
-
 ### Question 3 (10 points)
 Calculate: If you flip a coin twice, what is the probability of getting two heads?
-
 
 ### Question 4 (5 points)
 What does P(A and B) represent?
@@ -36,7 +33,6 @@ What does P(A and B) represent?
 - B) Probability of both A and B happening
 - C) Probability of A given B
 - D) Probability of not A
-
 
 ---
 
@@ -49,7 +45,6 @@ Bayes' theorem is used for:
 - C) Finding averages
 - D) Sorting data
 
-
 ### Question 6 (10 points)
 Given:
 - P(Rain) = 0.3
@@ -58,7 +53,6 @@ Given:
 
 Calculate P(Rain | Cloudy) using Bayes' theorem.
 
-
 ### Question 7 (5 points)
 What is the prior probability in Bayesian inference?
 - A) Probability after seeing evidence
@@ -66,10 +60,8 @@ What is the prior probability in Bayesian inference?
 - C) Conditional probability
 - D) Joint probability
 
-
 ### Question 8 (10 points)
 Explain in one sentence: What does Bayesian inference allow us to do?
-
 
 ---
 
@@ -81,7 +73,6 @@ Decision making under uncertainty means:
 - B) Making decisions with incomplete or uncertain information
 - C) Making random decisions
 - D) Not making decisions
-
 
 ### Question 10 (10 points)
 Given two options:
@@ -101,7 +92,6 @@ What is expected value?
 - C) The maximum outcome
 - D) The minimum outcome
 
-
 ---
 
 ## Part 4: Monte Carlo Simulation (20 points)
@@ -113,7 +103,6 @@ Monte Carlo simulation:
 - C) Only works for small problems
 - D) Doesn't use randomness
 
-
 ### Question 13 (10 points)
 Why is Monte Carlo simulation useful?
 - A) It's always faster
@@ -121,14 +110,12 @@ Why is Monte Carlo simulation useful?
 - C) It's always accurate
 - D) It doesn't need computers
 
-
 ### Question 14 (5 points)
 In Monte Carlo simulation, more samples generally lead to:
 - A) Less accurate results
 - B) More accurate results
 - C) Same accuracy
 - D) Slower computation
-
 
 ---
 
@@ -146,4 +133,3 @@ In Monte Carlo simulation, more samples generally lead to:
 
 **Created**: 2025  
 **For**: Python for AI Course - 112 AIAT
-

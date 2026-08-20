@@ -1,6 +1,6 @@
-# Quiz 04: Optimization Techniques | اختبار 04: تقنيات التحسين
+# Quiz 04: Optimization Techniques
 
-## Instructions | التعليمات
+## Instructions
 - **Time Limit**: 45 minutes
 - **Total Points**: 100 points
 - **Format**: Multiple choice, short answer, algorithm understanding
@@ -17,14 +17,12 @@ What is optimization?
 - C) Sorting data
 - D) Visualizing data
 
-
 ### Question 2 (5 points)
 What is an objective function?
 - A) A function to minimize or maximize
 - B) A constraint
 - C) A variable
 - D) A parameter
-
 
 ### Question 3 (10 points)
 Give an example of an optimization problem (real-world or mathematical).
@@ -44,14 +42,12 @@ Gradient descent is used to:
 - C) Sort data
 - D) Visualize functions
 
-
 ### Question 5 (5 points)
 What is a learning rate in gradient descent?
 - A) How fast the algorithm learns
 - B) The step size for each iteration
 - C) The number of iterations
 - D) The initial value
-
 
 ### Question 6 (10 points)
 If learning rate is too high in gradient descent, what happens?
@@ -60,14 +56,12 @@ If learning rate is too high in gradient descent, what happens?
 - C) Algorithm stops working
 - D) Nothing changes
 
-
 ### Question 7 (10 points)
 What does the gradient represent?
 - A) The direction of steepest ascent
 - B) The direction of steepest descent
 - C) The current value
 - D) The final value
-
 
 ---
 
@@ -80,7 +74,6 @@ Genetic algorithms are inspired by:
 - C) Mathematics
 - D) Chemistry
 
-
 ### Question 9 (5 points)
 In genetic algorithms, what is a chromosome?
 - A) A solution representation
@@ -88,14 +81,12 @@ In genetic algorithms, what is a chromosome?
 - C) A function
 - D) A parameter
 
-
 ### Question 10 (5 points)
 What is crossover in genetic algorithms?
 - A) Combining parts of two solutions
 - B) Mutating a solution
 - C) Selecting best solutions
 - D) Initializing population
-
 
 ### Question 11 (10 points)
 List the main steps of a genetic algorithm.
@@ -118,7 +109,6 @@ Simulated annealing is inspired by:
 - C) Mathematics
 - D) Chemistry
 
-
 ### Question 13 (5 points)
 What is the temperature parameter in simulated annealing?
 - A) Controls how often we accept worse solutions
@@ -126,14 +116,12 @@ What is the temperature parameter in simulated annealing?
 - C) The best solution value
 - D) The number of iterations
 
-
 ### Question 14 (5 points)
 As temperature decreases in simulated annealing:
 - A) Algorithm accepts more worse solutions
 - B) Algorithm accepts fewer worse solutions
 - C) Nothing changes
 - D) Algorithm stops
-
 
 ---
 
@@ -146,14 +134,12 @@ Which SciPy module is used for optimization?
 - C) `scipy.linalg`
 - D) `scipy.spatial`
 
-
 ### Question 16 (5 points)
 What is the advantage of using SciPy's optimization functions?
 - A) They're always faster
 - B) They're well-tested and production-ready
 - C) They're easier to understand
 - D) They don't need parameters
-
 
 ---
 
@@ -171,4 +157,3 @@ What is the advantage of using SciPy's optimization functions?
 
 **Created**: 2025  
 **For**: Python for AI Course - 112 AIAT
-

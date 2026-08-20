@@ -1,6 +1,6 @@
-# Quiz 05: AI-based Learning Models | اختبار 05: نماذج التعلم المعتمدة على الذكاء الاصطناعي
+# Quiz 05: AI-based Learning Models
 
-## Instructions | التعليمات
+## Instructions
 - **Time Limit**: 50 minutes
 - **Total Points**: 100 points
 - **Format**: Multiple choice, short answer, code completion
@@ -17,14 +17,12 @@ What is supervised learning?
 - C) Learning from rewards
 - D) Learning randomly
 
-
 ### Question 2 (5 points)
 What is the difference between classification and regression?
 - A) Classification predicts categories, regression predicts numbers
 - B) Classification predicts numbers, regression predicts categories
 - C) They're the same
 - D) Classification is faster
-
 
 ### Question 3 (10 points)
 What is the purpose of splitting data into training and testing sets?
@@ -44,7 +42,6 @@ Linear regression is used for:
 - C) Clustering
 - D) Visualization
 
-
 ### Question 5 (10 points)
 Complete the code to train a linear regression model:
 
@@ -55,14 +52,12 @@ model.______(X_train, y_train)
 predictions = model.______(X_test)
 ```
 
-
 ### Question 6 (5 points)
 What does the coefficient in linear regression represent?
 - A) The intercept
 - B) The slope (how much y changes for each unit change in x)
 - C) The error
 - D) The prediction
-
 
 ---
 
@@ -75,7 +70,6 @@ Logistic regression is used for:
 - C) Clustering
 - D) Visualization
 
-
 ### Question 8 (5 points)
 What is the output range of logistic regression?
 - A) -∞ to +∞
@@ -83,14 +77,12 @@ What is the output range of logistic regression?
 - C) 0 to 100
 - D) -1 to 1
 
-
 ### Question 9 (5 points)
 What is the sigmoid function used for in logistic regression?
 - A) To make predictions linear
 - B) To convert outputs to probabilities between 0 and 1
 - C) To calculate errors
 - D) To visualize data
-
 
 ---
 
@@ -103,7 +95,6 @@ Decision trees split data based on:
 - C) The first feature
 - D) The last feature
 
-
 ### Question 11 (5 points)
 What is a leaf node in a decision tree?
 - A) The root
@@ -111,14 +102,12 @@ What is a leaf node in a decision tree?
 - C) A split point
 - D) A feature
 
-
 ### Question 12 (5 points)
 What is overfitting in decision trees?
 - A) Model is too simple
 - B) Model memorizes training data and doesn't generalize
 - C) Model is too slow
 - D) Model doesn't work
-
 
 ---
 
@@ -131,7 +120,6 @@ KNN classifies based on:
 - C) Random neighbors
 - D) All neighbors equally
 
-
 ### Question 14 (5 points)
 What does k represent in KNN?
 - A) The number of features
@@ -139,14 +127,12 @@ What does k represent in KNN?
 - C) The number of classes
 - D) The number of samples
 
-
 ### Question 15 (5 points)
 If k is too small in KNN, what happens?
 - A) Model is more robust
 - B) Model is sensitive to noise
 - C) Model is slower
 - D) Nothing changes
-
 
 ---
 
@@ -159,7 +145,6 @@ What is accuracy?
 - C) Number of predictions
 - D) Training time
 
-
 ### Question 17 (5 points)
 What is the purpose of a confusion matrix?
 - A) To visualize classification performance
@@ -167,14 +152,12 @@ What is the purpose of a confusion matrix?
 - C) To train models
 - D) To split data
 
-
 ### Question 18 (5 points)
 What is cross-validation used for?
 - A) To train models
 - B) To better estimate model performance
 - C) To visualize data
 - D) To split data once
-
 
 ---
 
@@ -192,4 +175,3 @@ What is cross-validation used for?
 
 **Created**: 2025  
 **For**: Python for AI Course - 112 AIAT
-

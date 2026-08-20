@@ -1,6 +1,6 @@
-# ML Classifier Template | قالب مصنف التعلم الآلي
+# ML Classifier Template
 
-## How to Use | كيفية الاستخدام
+## How to Use
 
 1. **Copy the template** to your project folder
 2. **Read the comments** - they explain what to implement
@@ -10,7 +10,7 @@
 
 ---
 
-## Template Structure | هيكل القالب
+## Template Structure
 
 The template includes:
 - ✅ Data loading function
@@ -20,11 +20,11 @@ The template includes:
 - ✅ Training function
 - ✅ Evaluation function
 - ✅ Visualization function
-- ✅ Complete pipeline in main()
+- ✅ Pipeline skeleton in main()
 
 ---
 
-## Implementation Order | ترتيب التنفيذ
+## Implementation Order
 
 1. **Load Data** - Start with built-in dataset (Iris) for simplicity
 2. **Preprocess** - Handle missing values, encoding, scaling
@@ -36,7 +36,7 @@ The template includes:
 
 ---
 
-## Tips | نصائح
+## Tips
 
 - Start with Iris dataset (built-in, no file needed)
 - Test each function individually
@@ -47,4 +47,3 @@ The template includes:
 ---
 
 **Good luck with your project!** 🚀
-

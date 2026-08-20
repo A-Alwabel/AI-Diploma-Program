@@ -1,6 +1,6 @@
-# Self-Assessment Checkpoint: After Notebook 00 | نقطة التقييم الذاتي: بعد الدفتر 00
+# Self-Assessment Checkpoint: After Notebook 00
 
-## Instructions | التعليمات
+## Instructions
 
 Complete this self-assessment after finishing Notebook 00: Python Libraries for AI.
 
@@ -8,7 +8,7 @@ Complete this self-assessment after finishing Notebook 00: Python Libraries for 
 
 ---
 
-## Knowledge Check | فحص المعرفة
+## Knowledge Check
 
 ### NumPy
 - [ ] I can create NumPy arrays
@@ -56,7 +56,7 @@ Complete this self-assessment after finishing Notebook 00: Python Libraries for 
 
 ---
 
-## Code Practice | ممارسة الكود
+## Code Practice
 
 ### Can you write code to:
 - [ ] Create a NumPy array and calculate its mean?
@@ -69,7 +69,7 @@ Complete this self-assessment after finishing Notebook 00: Python Libraries for 
 
 ---
 
-## Understanding Check | فحص الفهم
+## Understanding Check
 
 ### Answer these questions (to yourself):
 
@@ -89,7 +89,7 @@ Complete this self-assessment after finishing Notebook 00: Python Libraries for 
 
 ---
 
-## Readiness for Notebook 01 | الاستعداد للدفتر 01
+## Readiness for Notebook 01
 
 ### Prerequisites Check:
 - [ ] I completed Python PE1 & PE2 courses
@@ -104,7 +104,7 @@ Complete this self-assessment after finishing Notebook 00: Python Libraries for 
 
 ---
 
-## Action Items | عناصر العمل
+## Action Items
 
 Based on your self-assessment, what do you need to do?
 
@@ -118,7 +118,7 @@ Based on your self-assessment, what do you need to do?
 
 ---
 
-## Notes | الملاحظات
+## Notes
 
 Write down any concepts you found difficult:
 
@@ -130,4 +130,3 @@ Write down any concepts you found difficult:
 
 **Created**: 2025  
 **For**: Python for AI Course - 112 AIAT
-

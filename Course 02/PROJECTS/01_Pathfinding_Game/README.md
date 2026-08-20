@@ -1,6 +1,6 @@
-# Project 01: Pathfinding Game | المشروع 01: لعبة البحث عن المسار
+# Project 01: Pathfinding Game
 
-## Overview | نظرة عامة
+## Overview
 
 Build a pathfinding game where players navigate through a maze using AI search algorithms.
 
@@ -11,7 +11,7 @@ Build a pathfinding game where players navigate through a maze using AI search a
 
 ---
 
-## Requirements | المتطلبات
+## Requirements
 
 ### Functional Requirements
 1. **Maze Generation**
@@ -46,7 +46,7 @@ Build a pathfinding game where players navigate through a maze using AI search a
 
 ---
 
-## Deliverables | المخرجات
+## Deliverables
 
 1. **Source Code**
    - `maze_generator.py` - Maze generation
@@ -65,7 +65,7 @@ Build a pathfinding game where players navigate through a maze using AI search a
 
 ---
 
-## Project Structure | هيكل المشروع
+## Project Structure
 
 ```
 project_01_pathfinding/
@@ -79,7 +79,7 @@ project_01_pathfinding/
 
 ---
 
-## Evaluation Criteria | معايير التقييم
+## Evaluation Criteria
 
 See `../../ASSESSMENTS/Project_Rubric.md` for detailed rubric.
 
@@ -92,7 +92,7 @@ See `../../ASSESSMENTS/Project_Rubric.md` for detailed rubric.
 
 ---
 
-## Bonus Features | ميزات إضافية
+## Bonus Features
 
 - [ ] Allow user to draw custom mazes
 - [ ] Add more algorithms (Dijkstra, Greedy Best-First)
@@ -102,7 +102,7 @@ See `../../ASSESSMENTS/Project_Rubric.md` for detailed rubric.
 
 ---
 
-## Resources | الموارد
+## Resources
 
 - Notebook 01: Introduction & Search Algorithms
 - NetworkX documentation for graph visualization
@@ -110,7 +110,7 @@ See `../../ASSESSMENTS/Project_Rubric.md` for detailed rubric.
 
 ---
 
-## Submission | التسليم
+## Submission
 
 Submit:
 1. All source code files
@@ -124,4 +124,3 @@ Submit:
 
 **Created**: 2025  
 **For**: Python for AI Course - 112 AIAT
-

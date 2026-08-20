@@ -1,289 +1,95 @@
-# Python for AI - Course Materials | بايثون للذكاء الاصطناعي - المواد التعليمية
+# AIAT 112 - Python for Artificial Intelligence
 
-## 🚀 NEW STUDENTS: START HERE! | الطلاب الجدد: ابدأ من هنا!
+**Course 02 of the AI Diploma.**
+Credit hours: 4 · Contact hours: 6/week · Total training hours: 96 (theory+practical)
 
-**👉 If you're a new student, read `START_HERE.md` FIRST!**  
-**👉 إذا كنت طالباً جديداً، اقرأ `START_HERE.md` أولاً!**
-
-The `START_HERE.md` file contains:
-- ✅ Day 1 setup instructions
-- ✅ Step-by-step installation guide
-- ✅ Learning sequence
-- ✅ Progress tracker
-- ✅ Troubleshooting tips
-
-**Don't skip it!** It will save you time and confusion.
+New students: read `START_HERE.md` first. It walks you through setup and the learning path.
 
 ---
 
-## Course Overview | نظرة عامة على الدورة
+## Course Overview
 
-This course connects Python programming fundamentals with core AI concepts. Each notebook demonstrates how Python's features enable AI implementations.
+This course connects Python programming with core AI techniques. You implement
+search algorithms, logic-based knowledge representation, probabilistic reasoning,
+optimization methods, and classic machine learning models in Jupyter notebooks.
 
-**Course Code:** AIAT 112  
-**Credit Hours:** 4  
-**Lecture Hours:** 2  
-**Practical Hours:** 4
-
-**✅ Official Path:** Follow the notebooks in `NOTEBOOKS/` (00 → 05).
-**Note:** This course uses a **notebook-based structure** as the official learning path.
-The `unit*` folders are **supplemental mirrors** and optional reference only.
+**Prerequisites:** AIAT 111 - Introduction to AI Applications and Concepts (Course 01),
+plus basic Python (variables, lists, dictionaries, functions, classes).
 
 ---
 
-## Prerequisites | المتطلبات الأساسية
+## Learning Path
 
-**Python Version**: Python 3.9+ required (3.10 or 3.11 recommended)
+Follow the units in order. Inside each unit: read the unit `README.md`, work through
+the notebooks in `examples/` in file order, do the exercise in `exercises/`, then take
+the unit quiz in `QUIZZES/`.
 
-**Courses**: Students should complete:
-- [Python Essentials - Part 1 (Basics)](https://edube.org/study/pe1)
-- [Python Essentials - Part 2 (Intermediate)](https://edube.org/study/pe2)
+1. `unit1-search-algorithms/` - Course Introduction and Search Algorithms (18 hours: 6 theory + 12 practical)
+2. `unit2-knowledge-representation/` - Knowledge Representation (19 hours: 6 theory + 13 practical)
+3. `unit3-learning-under-uncertainty/` - Learning Under Uncertainty (19 hours: 6 theory + 13 practical)
+4. `unit4-optimization-techniques/` - Optimization Techniques (20 hours: 7 theory + 13 practical)
+5. `unit5-ai-learning-models/` - AI-Based Learning Models (20 hours: 7 theory + 13 practical)
 
-**Setup**: See `DOCS/INSTALLATION_GUIDE.md` for detailed library installation instructions
+After the units: complete at least one project from `PROJECTS/` and review
+`ASSESSMENTS/` for the final exam and grading rubrics.
 
 ---
 
-## 📁 Clean Folder Structure | هيكل المجلد النظيف
+## Folder Structure
 
 ```
-📦 Course Root
-│
-├── 📄 README.md                        📖 This file
-├── 📄 START_HERE.md                    ⭐ READ THIS FIRST!
-├── 📄 STUDENT_PROGRESS_CHECKLIST.md    ✅ Track progress
-├── 📄 ../requirements.txt              📦 Dependencies (in root directory)
-│
-├── 📓 NOTEBOOKS/                        📚 All Course Notebooks (6)
-├── 📖 DOCS/                             📄 Documentation (10 files)
-├── 📊 ASSESSMENTS/                      📋 Rubrics
-├── 📝 QUIZZES/                          ✅ Quizzes (6)
-├── 🎯 PROJECTS/                         💼 Projects (3 organized)
-├── ✅ SELF_ASSESSMENT/                  🔍 Checkpoints
-├── 💡 SOLUTIONS/                        🔑 Solutions
-├── 🛠️ TESTING/                          🧪 Testing Tools
-└── 📊 META/                             📈 Course Metadata
-```
-
-**See `META/FOLDER_STRUCTURE.md` for complete structure details.**
-
----
-
-## Quick Start | البدء السريع
-
-1. **Read:** `START_HERE.md`
-2. **Install:** Libraries (see `DOCS/INSTALLATION_GUIDE.md`)
-3. **Start:** `NOTEBOOKS/00_Python_Libraries_for_AI.ipynb`
-4. **Track:** Use `STUDENT_PROGRESS_CHECKLIST.md`
-
----
-
-## Course Learning Outcomes (CLOs) | مخرجات التعلم
-
-**The detailed objectives of the training program are: For the trainee to be able to:**
-
-**CLO1:** Implement and demonstrate at least three major AI algorithms (such as A* search algorithm, k-nearest neighbors, and decision trees) using Python.
-
-**CLO2:** Complete a practical project that applies machine learning techniques to a real problem, demonstrating their ability to integrate AI concepts into a practical application.
-
-**CLO3:** Evaluate AI model performance using appropriate metrics (such as accuracy, precision, recall, F1 score) and be able to discuss the implications of these metrics in the context of their projects.
-
-**CLO4:** Analyze case studies of AI applications, identifying the algorithms used and evaluating their effectiveness in solving specific problems.
-
-**CLO5:** Design and implement a prototype intelligent system that includes at least two different AI techniques (such as natural language processing and machine learning), demonstrating creativity and technical competence.
-
----
-
-## 📚 Course Content | محتوى الدورة
-
-**📚 Official Unit Content:** See `../DETAILED_UNIT_DESCRIPTIONS.md` for detailed theoretical and practical content per unit.
-
-### 🔁 Unit ↔ Notebook Mapping (for Detailed Unit Descriptions)
-
-The official path uses notebooks, but the detailed curriculum describes **Units 1–5**. Use this mapping:
-
-| Detailed Unit | Official Notebook | Topic |
-|---|---|---|
-| Unit 1 | `NOTEBOOKS/01_Introduction_Search_Algorithms.ipynb` | Search algorithms |
-| Unit 2 | `NOTEBOOKS/02_Knowledge_Representation.ipynb` | Knowledge representation |
-| Unit 3 | `NOTEBOOKS/03_Learning_Under_Uncertainty.ipynb` | Learning under uncertainty |
-| Unit 4 | `NOTEBOOKS/04_Optimization_Techniques.ipynb` | Optimization techniques |
-| Unit 5 | `NOTEBOOKS/05_AI_Learning_Models.ipynb` | AI learning models |
-
-**Note:** `NOTEBOOKS/00_Python_Libraries_for_AI.ipynb` is a prerequisite foundation for all units.
-
-### Notebooks (in NOTEBOOKS/ folder)
-
-#### 00. Python Libraries for AI | مكتبات بايثون للذكاء الاصطناعي
-**File**: `NOTEBOOKS/00_Python_Libraries_for_AI.ipynb`
-
-**Why This Notebook FIRST?**
-- All AI notebooks use Python libraries extensively
-- Understanding libraries before AI concepts = less confusion
-- Students need to know NumPy, Matplotlib, NetworkX, etc. before starting Notebook 1
-
-**Topics Covered**:
-- NumPy: Fast numerical computing (arrays, math)
-- Matplotlib: Visualization (graphs, charts)
-- Collections & heapq: Efficient data structures (queues, priority queues)
-- NetworkX: Graph operations (knowledge graphs)
-- SciPy: Scientific computing (stats, optimization)
-- Scikit-learn: Machine learning basics
-
----
-
-#### 01. Introduction & Search Algorithms | مقدمة الدورة و خوارزميات البحث
-**File**: `NOTEBOOKS/01_Introduction_Search_Algorithms.ipynb`
-
-**Topics Covered**:
-- Python data structures (lists, dicts, sets) for graph representation
-- Object-oriented programming for modeling AI concepts
-- Breadth-First Search (BFS)
-- Depth-First Search (DFS)
-- A* Search Algorithm
-- Dijkstra's Algorithm (weighted graphs)
-- Real-world applications (maze solving)
-
----
-
-#### 02. Knowledge Representation | تمثيل المعرفة
-**File**: `NOTEBOOKS/02_Knowledge_Representation.ipynb`
-
-**Topics Covered**:
-- Representing facts and rules using Python classes
-- Knowledge graphs with NetworkX
-- Rule-based systems and forward chaining
-- Semantic networks with inheritance
-
----
-
-#### 03. Learning under Uncertainty | التعلم في ظل عدم اليقين
-**File**: `NOTEBOOKS/03_Learning_Under_Uncertainty.ipynb`
-
-**Topics Covered**:
-- Basic probability with NumPy
-- Probability distributions (binomial)
-- Bayesian inference implementation
-- Decision making under uncertainty
-- Monte Carlo simulation
-
----
-
-#### 04. Optimization Techniques | تقنيات التحسين
-**File**: `NOTEBOOKS/04_Optimization_Techniques.ipynb`
-
-**⚠️ Math Prerequisites:**
-Before starting this notebook, it's **highly recommended** to complete:
-- **Course 03 Unit 1:** Linear Algebra (vectors, matrices, transformations)
-- **Course 03 Unit 2:** Calculus (derivatives, gradients, multivariate calculus)
-
-**Why?** Optimization techniques like gradient descent require understanding of:
-- How gradients work (calculus)
-- How to compute derivatives (calculus)
-- Vector operations (linear algebra)
-
-**Topics Covered**:
-- Gradient descent implementation
-- Genetic algorithms
-- Simulated annealing
-- Using SciPy optimize functions
-
----
-
-#### 05. AI-based Learning Models | نماذج التعلم المعتمدة على الذكاء الاصطناعي
-**File**: `NOTEBOOKS/05_AI_Learning_Models.ipynb`
-
-**Topics Covered**:
-- Linear regression with Scikit-learn
-- Logistic regression for binary classification
-- Decision trees for classification
-- K-Nearest Neighbors (KNN)
-- Neural networks from scratch
-- Model evaluation and comparison
-
----
-
-## 📄 Course Summary | ملخص الدورة
-
-**Quick Reference:** `COURSE_SUMMARY.md` contains a comprehensive text summary of all course materials (PDFs/PPTX files).  
-**مرجع سريع:** يحتوي `COURSE_SUMMARY.md` على ملخص نصي شامل لجميع مواد الدورة (ملفات PDF/PPTX).
-
-This summary allows you to:
-- Read course content without opening PDF/PPTX files
-- Search through all materials quickly
-- Review key concepts in text format
-- Use as a study guide
-
----
-
-## Learning Path | مسار التعلم
-
-```
-Python Basics (Edube PE1 & PE2)
-    ↓
-NOTEBOOKS/00. Python Libraries for AI
-    ↓
-NOTEBOOKS/01. Introduction & Search Algorithms
-    ↓
-NOTEBOOKS/02. Knowledge Representation
-    ↓
-NOTEBOOKS/03. Learning under Uncertainty
-    ↓
-NOTEBOOKS/04. Optimization Techniques
-    ↓
-NOTEBOOKS/05. AI-based Learning Models
-    ↓
-Advanced Topics (Deep Learning, NLP, Computer Vision)
+Course 02/
+├── README.md                        This file
+├── START_HERE.md                    Day-1 setup and learning path
+├── STUDENT_PROGRESS_CHECKLIST.md    Track your progress
+├── unit1-search-algorithms/         Unit 1: notebooks + exercise
+├── unit2-knowledge-representation/  Unit 2: notebooks + exercise
+├── unit3-learning-under-uncertainty/ Unit 3: notebooks + exercise
+├── unit4-optimization-techniques/   Unit 4: notebook + exercise
+├── unit5-ai-learning-models/        Unit 5: notebook + exercise
+├── QUIZZES/                         Six quizzes (Quiz_00 .. Quiz_05)
+├── PROJECTS/                        Three course projects with templates
+├── ASSESSMENTS/                     Final exam and grading rubrics
+├── SELF_ASSESSMENT/                 Self-check checkpoints
+├── CASE_STUDIES/                    Case study material
+├── PRESENTATIONS/                   Presentation template
+├── DOCS/                            Installation guide, FAQ, references
+└── TESTING/                         verify_installation.py
 ```
 
 ---
 
-## 📖 Documentation | التوثيق
+## Setup
 
-All documentation is in the `DOCS/` folder:
+1. Use the shared virtual environment at the repository root (`../.venv`),
+   installed from `../requirements.txt`.
+2. In Jupyter, select the **ai-diploma** kernel.
+3. Verify your setup with `TESTING/verify_installation.py`.
 
-- **INSTALLATION_GUIDE.md** - Detailed installation instructions
-- **QUICK_REFERENCE.md** - One-page quick reference
-- **ADDITIONAL_RESOURCES.md** - Videos, datasets, communities
-- **PRACTICE_PROBLEMS.md** - 18+ practice problems
-- **COURSE_SCHEDULE.md** - 12-week timeline
-- **INSTRUCTOR_GUIDE.md** - Teaching guide
-- **FAQ.md** - Frequently asked questions
-- **CERTIFICATE_TEMPLATE.md** - Certificate template
-
-See `DOCS/README.md` for complete list.
+For step-by-step instructions and troubleshooting, see `DOCS/INSTALLATION_GUIDE.md`.
 
 ---
 
-## 📝 Assessment | التقييم
+## Assessment
 
-- **Quizzes:** `QUIZZES/` folder (6 quizzes, one per notebook)
-- **Projects:** `PROJECTS/` folder (3 projects with guides)
-- **Rubrics:** `ASSESSMENTS/` folder
-- **Self-Assessment:** `SELF_ASSESSMENT/` folder
+- **Quizzes:** `QUIZZES/` - six quizzes (Quiz_00 after the Python-libraries notebook,
+  then Quiz_01 .. Quiz_05, one per unit).
+- **Projects:** `PROJECTS/` - three projects; complete at least one.
+- **Final exam:** `ASSESSMENTS/Final_Exam.md`.
+- **Rubrics:** `ASSESSMENTS/` - notebook and project rubrics.
+- **Self-assessment:** `SELF_ASSESSMENT/` - optional checkpoints.
 
----
-
-## 🆘 Need Help? | تحتاج مساعدة?
-
-- **Installation issues?** → `DOCS/INSTALLATION_GUIDE.md`
-- **Questions?** → `DOCS/FAQ.md`
-- **Quick reference?** → `DOCS/QUICK_REFERENCE.md`
-- **Practice problems?** → `DOCS/PRACTICE_PROBLEMS.md`
+Solutions and answer keys are released by your instructor.
 
 ---
 
-## 📊 Course Status | حالة الدورة
+## Documentation
 
-**Status:** ✅ Complete (10/10)
+In `DOCS/`:
 
-- ✅ All notebooks present
-- ✅ All documentation complete
-- ✅ All assessment materials ready
-- ✅ All projects organized
-- ✅ Clean folder structure
-
----
-
-**Created for**: 112 AIAT - Python for AI Course  
-**Language Support**: Arabic & English  
-**Last Updated**: 2025
+- `INSTALLATION_GUIDE.md` - installation instructions and troubleshooting
+- `QUICK_REFERENCE.md` - one-page quick reference
+- `ADDITIONAL_RESOURCES.md` - videos, datasets, communities
+- `PRACTICE_PROBLEMS.md` - extra practice problems
+- `COURSE_SCHEDULE.md` - suggested pacing
+- `FAQ.md` - frequently asked questions

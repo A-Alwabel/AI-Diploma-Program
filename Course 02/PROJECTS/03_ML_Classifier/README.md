@@ -1,6 +1,6 @@
-# Project 03: Machine Learning Classifier | المشروع 03: مصنف التعلم الآلي
+# Project 03: Machine Learning Classifier
 
-## Overview | نظرة عامة
+## Overview
 
 Build a complete machine learning pipeline: load data, preprocess, train multiple models, evaluate, and compare performance.
 
@@ -12,7 +12,7 @@ Build a complete machine learning pipeline: load data, preprocess, train multipl
 
 ---
 
-## Requirements | المتطلبات
+## Requirements
 
 ### Functional Requirements
 1. **Data Loading & Preprocessing**
@@ -51,7 +51,7 @@ Build a complete machine learning pipeline: load data, preprocess, train multipl
 
 ---
 
-## Deliverables | المخرجات
+## Deliverables
 
 1. **Source Code**
    - `data_loader.py` - Data loading and preprocessing
@@ -73,7 +73,7 @@ Build a complete machine learning pipeline: load data, preprocess, train multipl
 
 ---
 
-## Project Structure | هيكل المشروع
+## Project Structure
 
 ```
 project_03_ml_classifier/
@@ -91,7 +91,7 @@ project_03_ml_classifier/
 
 ---
 
-## Example: Iris Classification | مثال: تصنيف زهرة السوسن
+## Example: Iris Classification
 
 **Dataset:** Iris (3 classes: setosa, versicolor, virginica)
 **Features:** Sepal length, sepal width, petal length, petal width
@@ -104,7 +104,7 @@ project_03_ml_classifier/
 
 ---
 
-## Evaluation Criteria | معايير التقييم
+## Evaluation Criteria
 
 See `../../ASSESSMENTS/Project_Rubric.md` for detailed rubric.
 
@@ -117,7 +117,7 @@ See `../../ASSESSMENTS/Project_Rubric.md` for detailed rubric.
 
 ---
 
-## Bonus Features | ميزات إضافية
+## Bonus Features
 
 - [ ] Feature engineering
 - [ ] Hyperparameter tuning
@@ -128,7 +128,7 @@ See `../../ASSESSMENTS/Project_Rubric.md` for detailed rubric.
 
 ---
 
-## Resources | الموارد
+## Resources
 
 - Notebook 05: AI-based Learning Models
 - Scikit-learn documentation
@@ -137,7 +137,7 @@ See `../../ASSESSMENTS/Project_Rubric.md` for detailed rubric.
 
 ---
 
-## Submission | التسليم
+## Submission
 
 Submit:
 1. All source code files
@@ -151,4 +151,3 @@ Submit:
 
 **Created**: 2025  
 **For**: Python for AI Course - 112 AIAT
-

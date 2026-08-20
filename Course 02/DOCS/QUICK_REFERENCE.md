@@ -1,11 +1,10 @@
-# ⚡ Quick Reference Card | بطاقة المرجع السريع
+# ⚡ Quick Reference Card
 
 A quick guide for students - print this or keep it open!  
-دليل سريع للطلاب - اطبع هذا أو ابقه مفتوحاً!
 
 ---
 
-## 🚀 Getting Started | البدء السريع
+## 🚀 Getting Started
 
 ```bash
 # 1. Check Python version
@@ -22,7 +21,7 @@ pip check
 
 ---
 
-## 📓 Notebook Order | ترتيب الدفاتر
+## 📓 Notebook Order
 
 **Follow this exact order:**
 
@@ -34,7 +33,7 @@ pip check
 
 ---
 
-## 📚 What Each Notebook Teaches | ما يدرسه كل دفتر
+## 📚 What Each Notebook Teaches
 
 | Notebook | Topic | Key Libraries |
 |----------|-------|---------------|
@@ -47,7 +46,7 @@ pip check
 
 ---
 
-## 🛠️ Common Commands | الأوامر الشائعة
+## 🛠️ Common Commands
 
 ### Installation
 ```bash
@@ -74,7 +73,7 @@ jupyter notebook
 
 ---
 
-## 🆘 Quick Troubleshooting | حل المشاكل السريع
+## 🆘 Quick Troubleshooting
 
 | Problem | Solution |
 |---------|----------|
@@ -85,7 +84,7 @@ jupyter notebook
 
 ---
 
-## 📖 File Quick Guide | دليل الملفات السريع
+## 📖 File Quick Guide
 
 | File | When to Use |
 |------|-------------|
@@ -97,7 +96,7 @@ jupyter notebook
 
 ---
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+## ✅ Prerequisites Checklist
 
 Before starting, make sure you have:
 - [ ] Python 3.9+ installed
@@ -107,7 +106,7 @@ Before starting, make sure you have:
 
 ---
 
-## 🎯 Learning Path | مسار التعلم
+## 🎯 Learning Path
 
 ```
 Python Basics (PE1 & PE2)
@@ -127,7 +126,7 @@ Python Basics (PE1 & PE2)
 
 ---
 
-## 💡 Tips | نصائح
+## 💡 Tips
 
 1. **Read prerequisites** in each notebook before starting
 2. **Don't rush** - each notebook builds on the previous
@@ -137,7 +136,7 @@ Python Basics (PE1 & PE2)
 
 ---
 
-## 📞 Need Help? | تحتاج مساعدة؟
+## 📞 Need Help?
 
 1. Check `INSTALLATION_GUIDE.md` for installation issues
 2. Check prerequisites section in each notebook
@@ -147,5 +146,3 @@ Python Basics (PE1 & PE2)
 ---
 
 **Keep this file open while learning!** 📌  
-**ابق هذا الملف مفتوحاً أثناء التعلم!** 📌
-

@@ -1,6 +1,6 @@
-# Project 02: Expert System | المشروع 02: نظام خبير
+# Project 02: Expert System
 
-## Overview | نظرة عامة
+## Overview
 
 Build a simple expert system that uses knowledge representation and rule-based reasoning to answer questions or make recommendations.
 
@@ -12,7 +12,7 @@ Build a simple expert system that uses knowledge representation and rule-based r
 
 ---
 
-## Requirements | المتطلبات
+## Requirements
 
 ### Functional Requirements
 1. **Knowledge Base**
@@ -45,7 +45,7 @@ Build a simple expert system that uses knowledge representation and rule-based r
 
 ---
 
-## Deliverables | المخرجات
+## Deliverables
 
 1. **Source Code**
    - `knowledge_base.py` - Knowledge representation
@@ -66,7 +66,7 @@ Build a simple expert system that uses knowledge representation and rule-based r
 
 ---
 
-## Project Structure | هيكل المشروع
+## Project Structure
 
 ```
 project_02_expert_system/
@@ -81,7 +81,7 @@ project_02_expert_system/
 
 ---
 
-## Example Domain: Medical Diagnosis | مثال: التشخيص الطبي
+## Example Domain: Medical Diagnosis
 
 **Entities:**
 - Symptoms: fever, cough, headache
@@ -98,7 +98,7 @@ project_02_expert_system/
 
 ---
 
-## Evaluation Criteria | معايير التقييم
+## Evaluation Criteria
 
 See `../../ASSESSMENTS/Project_Rubric.md` for detailed rubric.
 
@@ -111,7 +111,7 @@ See `../../ASSESSMENTS/Project_Rubric.md` for detailed rubric.
 
 ---
 
-## Bonus Features | ميزات إضافية
+## Bonus Features
 
 - [ ] Handle uncertainty/probabilities
 - [ ] Visualize knowledge graph
@@ -121,7 +121,7 @@ See `../../ASSESSMENTS/Project_Rubric.md` for detailed rubric.
 
 ---
 
-## Resources | الموارد
+## Resources
 
 - Notebook 02: Knowledge Representation
 - NetworkX documentation
@@ -129,7 +129,7 @@ See `../../ASSESSMENTS/Project_Rubric.md` for detailed rubric.
 
 ---
 
-## Submission | التسليم
+## Submission
 
 Submit:
 1. All source code files
@@ -143,4 +143,3 @@ Submit:
 
 **Created**: 2025  
 **For**: Python for AI Course - 112 AIAT
-

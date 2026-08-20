@@ -1,15 +1,20 @@
-# Course Schedule | الجدول الزمني للدورة
+# Course Schedule
 
-## 12-Week Course Timeline | الجدول الزمني لدورة 12 أسبوع
+## Suggested Pacing
 
-**Total Duration:** 12 weeks (3 months)  
-**Hours per week:** 6-8 hours (2-3 hours class + 4-5 hours self-study)
+This is a suggested pacing only. Official course load (AIAT 112):
+Credit hours: 4 · Contact hours: 6/week · Total training hours: 96 (theory+practical).
+Your instructor sets the actual schedule and assessment weights.
+
+**Note:** "Notebook 00-05" below refers to the course notebooks in the unit
+folders (`unit1-search-algorithms/` through `unit5-ai-learning-models/`), in
+the order given in the unit READMEs.
 
 ---
 
-## Week-by-Week Breakdown | التفصيل الأسبوعي
+## Week-by-Week Breakdown
 
-### **Week 1: Setup & Python Libraries** | الأسبوع الأول: الإعداد ومكتبات بايثون
+### **Week 1: Setup & Python Libraries**
 
 **Learning Objectives:**
 - Set up development environment
@@ -31,7 +36,7 @@
 
 ---
 
-### **Week 2: Search Algorithms** | الأسبوع الثاني: خوارزميات البحث
+### **Week 2: Search Algorithms**
 
 **Learning Objectives:**
 - Understand graph concepts
@@ -53,7 +58,7 @@
 
 ---
 
-### **Week 3: Knowledge Representation** | الأسبوع الثالث: تمثيل المعرفة
+### **Week 3: Knowledge Representation**
 
 **Learning Objectives:**
 - Create knowledge graphs
@@ -75,7 +80,7 @@
 
 ---
 
-### **Week 4: Uncertainty & Probability** | الأسبوع الرابع: عدم اليقين والاحتمالية
+### **Week 4: Uncertainty & Probability**
 
 **Learning Objectives:**
 - Understand probability basics
@@ -97,7 +102,7 @@
 
 ---
 
-### **Week 5: Optimization Techniques** | الأسبوع الخامس: تقنيات التحسين
+### **Week 5: Optimization Techniques**
 
 **Learning Objectives:**
 - Implement gradient descent
@@ -119,7 +124,7 @@
 
 ---
 
-### **Week 6: Machine Learning Models** | الأسبوع السادس: نماذج التعلم الآلي
+### **Week 6: Machine Learning Models**
 
 **Learning Objectives:**
 - Train ML models (regression, classification)
@@ -141,7 +146,7 @@
 
 ---
 
-### **Week 7-8: Project Development** | الأسبوع السابع والثامن: تطوير المشروع
+### **Week 7-8: Project Development**
 
 **Learning Objectives:**
 - Apply all learned concepts
@@ -169,7 +174,7 @@
 
 ---
 
-### **Week 9: Review & Catch-up** | الأسبوع التاسع: المراجعة والتعويض
+### **Week 9: Review & Catch-up**
 
 **Learning Objectives:**
 - Review all concepts
@@ -188,7 +193,7 @@
 
 ---
 
-### **Week 10: Advanced Topics (Optional)** | الأسبوع العاشر: مواضيع متقدمة (اختياري)
+### **Week 10: Advanced Topics (Optional)**
 
 **Learning Objectives:**
 - Explore advanced AI topics
@@ -204,7 +209,7 @@
 
 ---
 
-### **Week 11: Portfolio & Presentation** | الأسبوع الحادي عشر: المحفظة والعرض
+### **Week 11: Portfolio & Presentation**
 
 **Learning Objectives:**
 - Create portfolio of work
@@ -223,7 +228,7 @@
 
 ---
 
-### **Week 12: Final Assessment & Wrap-up** | الأسبوع الثاني عشر: التقييم النهائي والختام
+### **Week 12: Final Assessment & Wrap-up**
 
 **Learning Objectives:**
 - Complete final assessment
@@ -243,7 +248,7 @@
 
 ---
 
-## Time Allocation | توزيع الوقت
+## Time Allocation
 
 ### Per Week:
 - **Class Time:** 2-3 hours
@@ -258,7 +263,7 @@
 
 ---
 
-## Milestones | المعالم
+## Milestones
 
 | Week | Milestone | Deliverable |
 |------|-----------|-------------|
@@ -273,7 +278,7 @@
 
 ---
 
-## Assessment Timeline | جدول التقييم
+## Assessment Timeline
 
 | Week | Assessment | Weight |
 |------|------------|--------|
@@ -289,7 +294,7 @@
 
 ---
 
-## Flexible Schedule Options | خيارات الجدول المرن
+## Flexible Schedule Options
 
 ### **Accelerated (8 weeks):**
 - Combine weeks 1-2
@@ -311,7 +316,7 @@
 
 ---
 
-## Important Dates | التواريخ المهمة
+## Important Dates
 
 - **Week 1, Day 1:** Course starts
 - **Week 1, Day 7:** Quiz 00
@@ -322,7 +327,7 @@
 
 ---
 
-## Study Tips | نصائح الدراسة
+## Study Tips
 
 1. **Stay on Schedule:** Don't fall behind
 2. **Practice Daily:** Code every day
@@ -335,4 +340,3 @@
 **Created**: 2025  
 **For**: Python for AI Course - 112 AIAT  
 **Duration**: 12 weeks (adjustable)
-

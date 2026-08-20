@@ -1,6 +1,6 @@
-# Pathfinding Game Template | قالب لعبة البحث عن المسار
+# Pathfinding Game Template
 
-## How to Use | كيفية الاستخدام
+## How to Use
 
 1. **Copy the template** to your project folder
 2. **Read the comments** - they explain what to implement
@@ -10,7 +10,7 @@
 
 ---
 
-## Template Structure | هيكل القالب
+## Template Structure
 
 The template includes:
 - ✅ Function signatures (what to implement)
@@ -20,7 +20,7 @@ The template includes:
 
 ---
 
-## Implementation Order | ترتيب التنفيذ
+## Implementation Order
 
 1. **Maze class** - Start here, implement basic maze structure
 2. **BFS** - Easiest algorithm to implement
@@ -30,7 +30,7 @@ The template includes:
 
 ---
 
-## Tips | نصائح
+## Tips
 
 - Don't try to implement everything at once
 - Test each function individually

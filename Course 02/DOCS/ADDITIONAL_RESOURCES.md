@@ -1,10 +1,10 @@
-# Additional Resources | موارد إضافية
+# Additional Resources
 
 Curated resources to enhance your learning experience.
 
 ---
 
-## 📹 Video Resources | الموارد المرئية
+## 📹 Video Resources
 
 ### Python Fundamentals
 - **Python for Beginners** (Python.org)
@@ -39,7 +39,7 @@ Curated resources to enhance your learning experience.
 
 ---
 
-## 📊 Datasets for Practice | مجموعات البيانات للممارسة
+## 📊 Datasets for Practice
 
 ### Beginner-Friendly Datasets
 
@@ -93,7 +93,7 @@ Curated resources to enhance your learning experience.
 
 ---
 
-## 📚 Books & Reading | الكتب والقراءة
+## 📚 Books & Reading
 
 ### Essential Reading
 
@@ -121,7 +121,7 @@ Curated resources to enhance your learning experience.
 
 ---
 
-## 🌐 Online Courses | الدورات عبر الإنترنت
+## 🌐 Online Courses
 
 ### Free Courses
 
@@ -152,7 +152,7 @@ Curated resources to enhance your learning experience.
 
 ---
 
-## 💬 Community & Forums | المجتمع والمنتديات
+## 💬 Community & Forums
 
 ### Q&A Platforms
 
@@ -170,7 +170,7 @@ Curated resources to enhance your learning experience.
    - Python Discord: https://discord.gg/python
    - Data Science communities
 
-### Arabic Resources | الموارد العربية
+### Arabic Resources
 
 4. **Arabic AI Communities**
    - Search for Arabic AI groups on Facebook
@@ -179,7 +179,7 @@ Curated resources to enhance your learning experience.
 
 ---
 
-## 🛠️ Tools & Platforms | الأدوات والمنصات
+## 🛠️ Tools & Platforms
 
 ### Development Environments
 
@@ -212,7 +212,7 @@ Curated resources to enhance your learning experience.
 
 ---
 
-## 📖 Documentation | التوثيق
+## 📖 Documentation
 
 ### Official Documentation
 
@@ -242,7 +242,7 @@ Curated resources to enhance your learning experience.
 
 ---
 
-## 🎯 Practice Platforms | منصات الممارسة
+## 🎯 Practice Platforms
 
 ### Coding Practice
 
@@ -275,7 +275,7 @@ Curated resources to enhance your learning experience.
 
 ---
 
-## 🔬 Research & Papers | البحث والأوراق العلمية
+## 🔬 Research & Papers
 
 ### Important Papers
 
@@ -293,7 +293,7 @@ Curated resources to enhance your learning experience.
 
 ---
 
-## 📱 Mobile Apps | التطبيقات المحمولة
+## 📱 Mobile Apps
 
 ### Learning Apps
 
@@ -307,7 +307,7 @@ Curated resources to enhance your learning experience.
 
 ---
 
-## 🎓 Certifications | الشهادات
+## 🎓 Certifications
 
 ### Free Certifications
 
@@ -321,7 +321,7 @@ Curated resources to enhance your learning experience.
 
 ---
 
-## 💡 Tips for Using Resources | نصائح لاستخدام الموارد
+## 💡 Tips for Using Resources
 
 1. **Start with Official Documentation**
    - Most accurate and up-to-date
@@ -344,7 +344,7 @@ Curated resources to enhance your learning experience.
 
 ---
 
-## 🔄 Keep Updated | ابق محدثاً
+## 🔄 Keep Updated
 
 ### Newsletters
 
@@ -366,4 +366,3 @@ Curated resources to enhance your learning experience.
 **For**: Python for AI Course - 112 AIAT
 
 **Note:** URLs and resources may change. Always verify links are current.
-

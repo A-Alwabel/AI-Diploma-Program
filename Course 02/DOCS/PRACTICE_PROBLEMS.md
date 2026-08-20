@@ -1,10 +1,10 @@
-# Additional Practice Problems | مسائل تدريبية إضافية
+# Additional Practice Problems
 
 Extra practice problems beyond the notebooks to reinforce learning.
 
 ---
 
-## Practice Problems by Topic | المسائل حسب الموضوع
+## Practice Problems by Topic
 
 ### Topic 1: Python Libraries (NumPy, Matplotlib)
 
@@ -243,7 +243,7 @@ f(x) = -x² + 10x (for x = 0 to 10)
 
 ---
 
-## Difficulty Levels | مستويات الصعوبة
+## Difficulty Levels
 
 ### Beginner (⭐)
 - Basic implementation
@@ -262,7 +262,7 @@ f(x) = -x² + 10x (for x = 0 to 10)
 
 ---
 
-## How to Use | كيفية الاستخدام
+## How to Use
 
 1. **Start with Beginner problems** - Build confidence
 2. **Progress to Intermediate** - Apply knowledge
@@ -276,9 +276,9 @@ f(x) = -x² + 10x (for x = 0 to 10)
 
 ---
 
-## Solutions | الحلول
+## Solutions
 
-Solutions will be provided in `SOLUTIONS/` folder.
+Solutions are released by your instructor.
 
 **Remember:** Try problems yourself first! Solutions are for checking your work, not copying.
 
@@ -286,4 +286,3 @@ Solutions will be provided in `SOLUTIONS/` folder.
 
 **Created**: 2025  
 **For**: Python for AI Course - 112 AIAT
-

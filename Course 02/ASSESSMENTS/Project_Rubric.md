@@ -1,12 +1,12 @@
-# Project Evaluation Rubric | معايير تقييم المشروع
+# Project Evaluation Rubric
 
-## General Rubric for All Projects | معايير عامة لجميع المشاريع
+## General Rubric for All Projects
 
 **Total Points: 100**
 
 ---
 
-## 1. Functionality (40 points) | الوظائف (40 نقطة)
+## 1. Functionality (40 points)
 
 ### Excellent (36-40 points)
 - ✅ All required features implemented and working
@@ -31,7 +31,7 @@
 
 ---
 
-## 2. Code Quality (20 points) | جودة الكود (20 نقطة)
+## 2. Code Quality (20 points)
 
 ### Excellent (18-20 points)
 - ✅ Clean, readable code
@@ -58,7 +58,7 @@
 
 ---
 
-## 3. Documentation (15 points) | التوثيق (15 نقطة)
+## 3. Documentation (15 points)
 
 ### Excellent (14-15 points)
 - ✅ Comprehensive README.md
@@ -85,7 +85,7 @@
 
 ---
 
-## 4. Testing & Validation (10 points) | الاختبار والتحقق (10 نقاط)
+## 4. Testing & Validation (10 points)
 
 ### Excellent (9-10 points)
 - ✅ Tests included
@@ -108,7 +108,7 @@
 
 ---
 
-## 5. Creativity & Extras (15 points) | الإبداع والإضافات (15 نقطة)
+## 5. Creativity & Extras (15 points)
 
 ### Excellent (14-15 points)
 - ✅ Creative approach or unique features
@@ -131,7 +131,7 @@
 
 ---
 
-## Project-Specific Criteria | معايير خاصة بكل مشروع
+## Project-Specific Criteria
 
 ### Project 01: Pathfinding Game
 **Additional Points (10 points):**
@@ -150,7 +150,7 @@
 
 ---
 
-## Grading Scale | مقياس الدرجات
+## Grading Scale
 
 | Points | Grade | Description |
 |--------|-------|-------------|
@@ -162,7 +162,7 @@
 
 ---
 
-## Feedback Template | قالب التعليقات
+## Feedback Template
 
 **Strengths:**
 - [List what student did well]
@@ -180,4 +180,3 @@
 
 **Created**: 2025  
 **For**: Python for AI Course - 112 AIAT
-
