@@ -1,65 +1,59 @@
-# Unit 1: Linear Algebra for Machine Learning
-## الرياضيات الخطية لتعلم الآلة
+# Unit 1: Linear Algebra for ML and Data Transformations
 
-**Note:** This unit is a legacy mirror. The official path is in `modules/module_01/`.
+**Official hours:** 12 (theory+practical)
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+Linear algebra is how machine learning represents data and models: datasets are matrices, model parameters are vectors, and training is matrix computation. This unit builds those foundations with NumPy.
 
-Before starting this unit, confirm:
+---
 
-- [ ] Comfortable with basic algebra (equations, variables)
-- [ ] Comfortable with Python basics and NumPy arrays
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed the course overview in `Course 03/START_HERE.md`
-- [ ] Skimmed `COURSE_MAP.md` to see where math is used
+## Prerequisites
 
-### Learning Objectives | أهداف التعلم
+- Semester 1 (AIAT 111–116) entry level: Course 02 (AIAT 112) Python skills
+- High school algebra
+- Repo-root `.venv` active and the **ai-diploma** Jupyter kernel selected
 
-By the end of this unit, students will be able to:
-- Apply linear algebra concepts (vectors, matrices, transformations) to machine learning problems
-- Perform vector and matrix operations using Python/NumPy
+---
+
+## Learning Objectives
+
+By the end of this unit, you will be able to:
+
+- Apply vectors, matrices, and transformations to machine learning problems
+- Perform matrix operations with NumPy
 - Solve linear equations using substitution and elimination
 - Compute determinants and inverse matrices
-- Apply transformation matrices and compute orthogonal basis sets
-- Solve eigenvalue problems programmatically
+- Apply transformation matrices and construct orthogonal basis sets
+- Solve eigenvalue problems programmatically, including on large matrices
 
 ---
 
-## Unit Duration | مدة الوحدة
+## Notebooks (work through in order)
 
-**Theoretical Hours:** 6 hours  
-**Practical Hours:** 6 hours  
-**Total Hours:** 12 hours
-
-**Format:** 6 theoretical + 6 practical hours
-
----
-
-## Topics Covered | المواضيع المغطاة
-
-1. **Machine Learning and Linear Algebra Fundamentals**
-2. **Vector Operations and Linear Algebra Fundamentals**
-3. **Matrix Operations and Transformations**
-4. **Matrices as Factors and Basis Transformations**
-5. **Eigenvectors and Eigenvalues**
+1. `examples/00_why_how_after.ipynb` — Unit overview: why linear algebra matters for ML, how it is used, what comes after
+2. `examples/01_vectors_matrices_basics.ipynb` — Vectors and matrices basics with NumPy
+3. `examples/02_matrix_operations.ipynb` — Matrix operations used in ML (products, transposes, norms)
+4. `examples/03_eigenvalues_eigenvectors.ipynb` — Eigenvalues and eigenvectors
+5. `examples/04_substitution_elimination_linear_equations.ipynb` — Solving linear equations by substitution and elimination
+6. `examples/05_determinants_inverse_matrices.ipynb` — Computing determinants and inverse matrices
+7. `examples/06_transformation_matrices_orthogonal_basis.ipynb` — Transformation matrices and orthogonal basis sets
+8. `examples/07_eigenvalue_analysis_large_matrices.ipynb` — Eigenvalue analysis on large-dimensional matrices
+9. `examples/08_ml_parameter_experiments.ipynb` — Experimenting with ML model parameters
 
 ---
 
-## Files Structure | هيكل الملفات
+## Exercises
 
-- `examples/`: Complete code examples with explanations
-- `exercises/`: Practice problems for students
+- `exercises/exercise_01.ipynb`
+- `exercises/exercise_02.ipynb`
 
----
-
-## Learning Path | مسار التعلم
-
-1. **Start with examples** - Understand concepts through code
-2. **Complete exercises** - Practice what you learned
-3. **Review solutions** - Check your work
-4. **Take quizzes** - Test your understanding
+Solutions are released by your instructor.
 
 ---
 
-**Unit Duration:** 2 weeks  
-**Difficulty:** Intermediate
+## Quiz
+
+Take [Quiz 01: Linear Algebra](../QUIZZES/Quiz_01_Linear_Algebra.md) after finishing the exercises. Answer keys are released by your instructor.
+
+---
+
+**Next:** [Unit 2: Calculus and Multivariate Calculus for ML](../unit2-calculus/README.md)

@@ -1,5 +1,4 @@
 # Test 3: Classification Techniques
-## امتحان 3: تقنيات التصنيف
 
 **Time Limit:** 90 minutes | **Marks:** 50 points
 
@@ -22,7 +21,6 @@ What is the main difference between regression and classification?
 - C) There is no difference
 - D) Regression uses neural networks, classification uses trees
 
-
 ---
 
 ### Question 2 (3 points)
@@ -31,7 +29,6 @@ Which algorithm uses a sigmoid function to output probabilities?
 - B) Logistic Regression
 - C) K-Nearest Neighbors
 - D) Support Vector Machine
-
 
 ---
 
@@ -42,7 +39,6 @@ What does precision measure?
 - C) The proportion of actual positives that are correctly identified
 - D) The harmonic mean of precision and recall
 
-
 ---
 
 ### Question 4 (3 points)
@@ -52,7 +48,6 @@ What does recall measure?
 - C) The proportion of actual positives that are correctly identified
 - D) The harmonic mean of precision and recall
 
-
 ---
 
 ### Question 5 (3 points)
@@ -61,7 +56,6 @@ In a confusion matrix, what does True Positive (TP) represent?
 - B) Correctly predicted positive cases
 - C) Incorrectly predicted negative cases
 - D) Incorrectly predicted positive cases
-
 
 ---
 
@@ -193,5 +187,3 @@ Compare Decision Trees and Random Forest. What are the advantages and disadvanta
 **Total: 50 points**
 
 **Good luck!** 🍀  
-**حظاً موفقاً!**
-

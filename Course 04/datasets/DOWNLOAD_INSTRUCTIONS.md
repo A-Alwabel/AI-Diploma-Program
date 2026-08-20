@@ -1,5 +1,4 @@
 # Dataset Download Instructions
-## تعليمات تحميل مجموعات البيانات
 
 This document provides instructions for downloading all datasets used in Course 04 notebooks.
 
@@ -228,4 +227,3 @@ for filename, name in files.items():
 ---
 
 **Last Updated**: Current Session
-

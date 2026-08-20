@@ -1,5 +1,4 @@
 # Kaggle Dataset Download Guide
-## دليل تحميل مجموعات بيانات Kaggle
 
 **Note**: Currently we have **2 confirmed Kaggle datasets**. If other required datasets are also available on Kaggle, they will be added here for easier download from one platform.
 

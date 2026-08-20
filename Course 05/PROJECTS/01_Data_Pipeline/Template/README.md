@@ -1,6 +1,6 @@
-# Scalable Data Pipeline Template | قالب خط أنابيب البيانات القابل للتوسع
+# Scalable Data Pipeline Template
 
-## How to Use | كيفية الاستخدام
+## How to Use
 
 1. **Copy the template** to your project folder
 2. **Read the comments** - they explain what to implement
@@ -10,7 +10,7 @@
 
 ---
 
-## Implementation Order | ترتيب التنفيذ
+## Implementation Order
 
 1. **Data Loading** - Start with chunked loading
 2. **Basic Processing** - Test with pandas first
@@ -20,7 +20,7 @@
 
 ---
 
-## Tips | نصائح
+## Tips
 
 - Start with small datasets for testing
 - Use Dask for datasets > 1GB
@@ -30,4 +30,3 @@
 ---
 
 **Good luck with your project!** 🚀
-

@@ -1,21 +1,23 @@
-# Capstone Project
-## Course 12
+# Graduation Project Workspace
+## Course 12 (AIAT 126)
 
-Complete capstone project
+Workspace for your graduation project. Organize your work here as you progress through Units 1-5.
 
-## Project Structure
+## Suggested Structure
 
-- `notebooks/` - Implementation notebooks
-- `data/` - Project data
-- `models/` - Trained models
-- `docs/` - Documentation
+Create these folders as you need them:
+
+- `notebooks/` - implementation notebooks
+- `data/` - project data
+- `models/` - trained models
+- `docs/` - documentation
 
 ## Getting Started
 
-1. Review project requirements
-2. Set up environment
-3. Follow implementation guide
+1. Review the requirements in [../../PROJECT_GUIDELINES.md](../../PROJECT_GUIDELINES.md)
+2. Set up the environment (repo root `.venv`, **ai-diploma** kernel)
+3. Follow the unit path in [../../START_HERE.md](../../START_HERE.md)
 
 ## Submission
 
-Submit all deliverables by [due date]
+Submit all deliverables by the deadlines announced by your instructor.

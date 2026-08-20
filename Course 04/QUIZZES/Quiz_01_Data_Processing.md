@@ -1,6 +1,6 @@
-# Quiz 01: Data Processing Basics | اختبار 01: أساسيات معالجة البيانات
+# Quiz 01: Data Processing Basics
 
-## Instructions | التعليمات
+## Instructions
 - **Time Limit**: 30 minutes
 - **Total Points**: 50 points
 - **Format**: Multiple choice, short answer, code completion
@@ -17,7 +17,6 @@ What does `df.info()` display?
 - C) Data types, non-null counts, and memory usage
 - D) Last 5 rows of the DataFrame
 
-
 ---
 
 ### Question 2 (5 points)
@@ -27,7 +26,6 @@ Which method is used to read a CSV file in pandas?
 - C) `pd.read_json()`
 - D) `pd.load_csv()`
 
-
 ---
 
 ### Question 3 (5 points)
@@ -36,7 +34,6 @@ What does `df.describe()` return?
 - B) Statistical summary (mean, std, min, max, etc.) for numerical columns
 - C) Number of missing values
 - D) Column names
-
 
 ---
 
@@ -49,7 +46,6 @@ How do you check for missing values in a DataFrame?
 - C) `df.find_na()`
 - D) `df.check_null()`
 
-
 ---
 
 ### Question 5 (5 points)
@@ -59,7 +55,6 @@ What method removes duplicate rows from a DataFrame?
 - C) `df.unique()`
 - D) `df.deduplicate()`
 
-
 ---
 
 ### Question 6 (5 points)
@@ -68,7 +63,6 @@ Which method fills missing values with a specific value?
 - B) `df.fillna()`
 - C) `df.update()`
 - D) `df.set_value()`
-
 
 ---
 
@@ -81,7 +75,6 @@ What is the purpose of StandardScaler?
 - C) To remove outliers
 - D) To handle missing values
 
-
 ---
 
 ### Question 8 (5 points)
@@ -90,7 +83,6 @@ Which encoding method creates binary columns for each category?
 - B) One-Hot Encoding
 - C) Ordinal Encoding
 - D) Binary Encoding
-
 
 ---
 
@@ -103,7 +95,6 @@ In linear regression, what does the coefficient represent?
 - C) The error term
 - D) The correlation coefficient
 
-
 ---
 
 ### Question 10 (5 points)
@@ -113,14 +104,6 @@ What is the difference between simple and multiple linear regression?
 - C) There is no difference
 - D) Simple is for classification, multiple is for regression
 
-
 ---
 
-## Answer Key | مفتاح الإجابات
-
-
----
-
-**Good luck!** 🍀  
-**حظاً موفقاً!**
-
+> Answers and rubric: released by your instructor.

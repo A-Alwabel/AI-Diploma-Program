@@ -1,10 +1,10 @@
-# Testing Tools | أدوات الاختبار
+# Testing Tools
 
 This folder contains testing utilities and tools for Course 05.
 
 ---
 
-## Purpose | الغرض
+## Purpose
 
 Testing tools help:
 - ✅ Verify notebook execution
@@ -14,7 +14,7 @@ Testing tools help:
 
 ---
 
-## Available Tools | الأدوات المتاحة
+## Available Tools
 
 *Testing tools will be added here as needed.*
 

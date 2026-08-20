@@ -1,14 +1,12 @@
 # Complete Project Guide: 02 Knowledge Based System
-## دليل المشروع الكامل
 
 ---
 
-## 🎯 Real-World Application | التطبيق في الحياة الواقعية
+## 🎯 Real-World Application
 
 ---
 
 ## 🚀 Quick Start (For Experienced Students)
-## البدء السريع (للطلاب ذوي الخبرة)
 
 > 💡 **New to this project?** Skip to [Complete Tutorial](#-complete-tutorial-for-beginners) section below.
 
@@ -17,7 +15,6 @@ See Complete Tutorial section below for detailed instructions.
 ---
 
 ## 📚 Complete Tutorial (For Beginners)
-## دليل كامل للمبتدئين
 
 > 💡 **Already familiar with this?** See [Quick Start](#-quick-start-for-experienced-students) section above.
 
@@ -328,7 +325,7 @@ if __name__ == "__main__":
 
 ---
 
-## 🔧 Troubleshooting | حل المشاكل
+## 🔧 Troubleshooting
 
 **Problem:** No conclusions reached  
 **Solution:** Check if facts match rule conditions

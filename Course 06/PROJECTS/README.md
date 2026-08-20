@@ -1,10 +1,10 @@
-# Projects Overview | نظرة عامة على المشاريع
+# Projects Overview
 
-This folder contains all project materials for the Ethics of Artificial Intelligence course.
+This folder contains all project materials for AIAT 116 — Artificial Intelligence Ethics.
 
 ---
 
-## 🎯 Available Projects | المشاريع المتاحة
+## Available Projects
 
 ### Project 01: AI Bias Audit Tool
 **Topic:** Bias Detection and Mitigation  
@@ -42,6 +42,4 @@ Create a tool for explaining AI model decisions using SHAP, LIME, and other inte
 
 ---
 
-**Created**: 2025  
-**For**: Ethics of Artificial Intelligence - AIAT 116
-
+**For**: AIAT 116 — Artificial Intelligence Ethics

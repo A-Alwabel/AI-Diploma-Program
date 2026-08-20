@@ -1,12 +1,12 @@
-# Installation Guide | دليل التثبيت
+# Installation Guide
 
-## ⚠️ IMPORTANT: Avoid Library Conflicts | مهم: تجنب تعارض المكتبات
+## ⚠️ IMPORTANT: Avoid Library Conflicts
 
 This guide ensures you install all libraries **without conflicts** that could cause errors.
 
 ---
 
-## ✅ Recommended: Use Virtual Environment | بيئة افتراضية (موصى بها)
+## ✅ Recommended: Use Virtual Environment
 
 **WHY?** Virtual environments prevent conflicts with other Python projects on your computer.
 
@@ -88,7 +88,7 @@ pip install jupyter notebook ipykernel
 
 ---
 
-## ⚠️ Known Compatibility Notes | ملاحظات التوافق
+## ⚠️ Known Compatibility Notes
 
 ### ✅ Compatible Versions:
 - **Python 3.9, 3.10, 3.11**: All supported
@@ -108,7 +108,7 @@ Use versions in `../../requirements.txt` - they're all tested together!
 
 ---
 
-## 🐛 Troubleshooting | حل المشاكل
+## 🐛 Troubleshooting
 
 ### Problem 1: "No module named 'numpy'"
 **Solution**: Install NumPy first:
@@ -142,7 +142,7 @@ pip install networkx matplotlib
 
 ---
 
-## ✅ Verify Installation | التحقق من التثبيت
+## ✅ Verify Installation
 
 ### Method 1: Using pip check (Quick Check)
 
@@ -201,7 +201,7 @@ print(f"Seaborn version: {sns.__version__}")
 
 ---
 
-## 📚 Installation Order Matters | ترتيب التثبيت مهم
+## 📚 Installation Order Matters
 
 **Correct order** (prevents conflicts):
 1. NumPy (base for everything)
@@ -214,7 +214,7 @@ print(f"Seaborn version: {sns.__version__}")
 
 ---
 
-## 🎯 Quick Start | البدء السريع
+## 🎯 Quick Start
 
 **Easiest method (recommended):**
 
@@ -242,7 +242,7 @@ jupyter notebook
 
 ---
 
-## 💡 Tips | نصائح
+## 💡 Tips
 
 1. **Always use virtual environment** for Python projects
 2. **Use `pip check`** after installation to find conflicts
@@ -252,7 +252,7 @@ jupyter notebook
 
 ---
 
-## 📞 Need Help? | تحتاج مساعدة؟
+## 📞 Need Help?
 
 If you encounter issues:
 1. Check Python version: `python --version` (should be 3.9+)
@@ -264,4 +264,3 @@ If you encounter issues:
 
 **Last Updated**: 2025
 **Tested on**: Python 3.9, 3.10, 3.11 | Windows, macOS, Linux
-

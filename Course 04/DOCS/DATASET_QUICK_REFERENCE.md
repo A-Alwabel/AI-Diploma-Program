@@ -1,5 +1,4 @@
 # Dataset Quick Reference Guide
-## دليل مرجعي سريع لمجموعات البيانات
 
 Quick code snippets to load diverse real-world datasets for each unit.
 
@@ -307,7 +306,7 @@ df['performance_score'] = np.clip(df['performance_score'], 0, 100)
 
 ---
 
-## 🔄 Utility Functions | دوال مساعدة
+## 🔄 Utility Functions
 
 ### Function to Load Any sklearn Dataset
 ```python
@@ -380,6 +379,4 @@ def load_dataset_from_url(url, filename, cache_dir='data', **kwargs):
 | Loan Default | Finance | Generate | 10K | Model Selection |
 
 ---
-
-*See `REAL_WORLD_DATASETS_PLAN.md` for complete implementation strategy.*
 

@@ -1,117 +1,45 @@
-# Unit 3: Recurrent Neural Networks (RNNs) and Transformers
-## AIAT 122 - Deep Learning
+# Unit 3 — Recurrent Neural Networks (RNNs) and Transformers for Sequential Data
+## AIAT 122 — Deep Learning
 
-**Unit content** aligns with curriculum (see course README and DOCS/EXAMPLES_ORDER.md; DETAILED_UNIT_DESCRIPTIONS if available in your repo). Topic: RNNs and Transformers for Sequential Data.
+Unit training hours: 12 (of 64 total)
 
-## ✅ Prerequisites Checklist
+## Prerequisites
 
-Before starting this unit, confirm:
+- Units 1–2 (neural network training; comfortable building models).
+- Environment set up (see `../START_HERE.md`): "ai-diploma" kernel for PyTorch notebooks, "tfenv" kernel for TensorFlow notebooks.
 
-- [ ] Completed Unit 2: Convolutional Neural Networks (CNNs) for Computer Vision
-- [ ] Understand deep learning fundamentals (Unit 1)
-- [ ] Comfortable with neural network architectures
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics (see course README and DOCS/EXAMPLES_ORDER.md; COURSE_MAP if available in your repo)
+## What this unit teaches
 
-### Learning Objectives
+Sequential data (time series, text, audio) and why feedforward networks fall short; RNNs and their vanishing/exploding gradient challenges; LSTM and GRU; attention and the Transformer architecture; using pretrained models (BERT, GPT) for NLP tasks such as sentiment analysis, translation, and text generation.
 
-By the end of this unit, students will be able to:
-- Understand sequential data and time series prediction
-- Implement RNN, LSTM, and GRU architectures
-- Understand attention mechanisms and Transformer architecture
-- Use pre-trained Transformer models (BERT, GPT)
-- Apply RNNs and Transformers to NLP tasks
-- Perform sentiment analysis, machine translation, and speech recognition
+## Examples (do in file order)
 
----
+Run the notebooks in `examples/` in this order:
 
-## Topics Covered
+1. `01_understanding_sequential_data_and_time_series_prediction.ipynb` — what makes data sequential; a first time-series prediction.
+2. `02_rnn_basics.ipynb` — how RNNs work; vanishing and exploding gradients.
+3. `03_lstm_advanced.ipynb` — LSTM (and GRU) gates and why they help with long sequences.
+4. `04_transformer_attention.ipynb` — attention from scratch: queries, keys, values; self-attention.
+5. `05_bert_finetuning.ipynb` — fine-tune a pretrained BERT model for text classification.
+6. `06_gpt_text_generation.ipynb` — generate text with a pretrained GPT model.
+7. `07_sequence_to_sequence.ipynb` — encoder–decoder (Seq2Seq) models for tasks like translation.
+8. `08_text_generation_rnn_lstm_gru.ipynb` — character/word-level text generation with RNN/LSTM/GRU.
+9. `09_transformer_models_bert_gpt_nlp.ipynb` — survey of Transformer models (BERT, GPT) across NLP tasks.
+10. `10_sentiment_analysis_translation_speech.ipynb` — applied NLP: sentiment analysis, translation, and speech-related tasks.
 
-Based on official curriculum (AIAT 122), this unit covers:
-
-1. **Understanding Sequential Data**
-   - Temporal, audio, and textual data
-   - Difference between feedforward networks and recurrent networks
-
-2. **Recurrent Neural Networks (RNNs)**
-   - How RNNs work
-   - Challenges: vanishing and exploding gradients
-
-3. **LSTM and GRU Networks**
-   - Structure and benefits of LSTM and GRU
-   - Applications in text generation and speech recognition
-
-4. **Attention Mechanism and Transformers**
-   - Introduction to attention mechanism
-   - Transformer architecture (self-attention, multi-head attention)
-   - BERT and GPT and their applications in NLP
-
-5. **NLP Models**
-   - Sentiment analysis and text classification
-   - Machine translation using Seq2Seq models
-
----
-
-## Recommended order (examples)
-
-**Do notebooks in this number order: 01 → 02 → 03 → 04 → 05**, then optional 06–10. (Slide numbers are topic IDs only—do **not** use them to decide order.) Full table: `DOCS/EXAMPLES_ORDER.md`.
-
-1. `01_understanding_sequential_data_and_time_series_prediction.ipynb`  
-2. `02_rnn_basics.ipynb`  
-3. `03_lstm_advanced.ipynb`  
-4. `04_transformer_attention.ipynb`  
-5. `05_bert_finetuning.ipynb`  
-
-*Optional (do after the core 01–05; order among these doesn't matter):* `06_gpt_text_generation.ipynb`, `07_sequence_to_sequence.ipynb`, `08_text_generation_rnn_lstm_gru.ipynb`, `09_transformer_models_bert_gpt_nlp.ipynb`, `10_sentiment_analysis_translation_speech.ipynb`
-
-**⏱ Long run:** Notebooks **05** (BERT fine-tuning), **06** (GPT), and **09–10** can take **5–15+ minutes** (downloads, model load, training). Use Colab GPU and a small batch/subset for quicker runs.
-
----
+Note: notebooks that load pretrained models (05, 06, 09, 10) download weights and can take several minutes; a GPU (e.g. Colab, see `../DOCS/COLAB_SETUP.md`) and small batch sizes help.
 
 ## Exercises
 
-Complete the exercises in `unit3-rnns-transformers/exercises/`:
+- `exercises/01_rnn_exercise.ipynb` — RNN/LSTM for a sequence or text task (pairs with examples 02–03).
+- `exercises/02_transformer_exercise.ipynb` — attention/Transformer usage (pairs with examples 04–05).
 
-1. **`01_rnn_exercise.ipynb`** – RNN/LSTM for sequence or text. Aligns with `02_rnn_basics.ipynb`, `03_lstm_advanced.ipynb`.
-2. **`01_transformer_exercise.ipynb`** – Transformer/BERT usage. Aligns with `04_transformer_attention.ipynb`, `05_bert_finetuning.ipynb`.
+Solutions are released by your instructor.
 
-**Solutions:** See `DOCS/SOLUTIONS/exercises/` (instructor-only; do not distribute before deadline).
+## Quiz
 
----
+- `../QUIZZES/quiz_03.md`
 
-## Teaching note (instructors)
+## Next
 
-- **Suggested time:** Core examples 01–05: ~2 hours; optional 06–10: +1–1.5 hours. Theory (slides): ~6 hours.
-- **Demo notebook:** `04_transformer_attention.ipynb` or `05_bert_finetuning.ipynb` – show attention or BERT fine-tuning.
-- **Common stumbling block:** GPU for BERT/GPT; long runtimes on CPU; recommend Colab GPU and small batch size (see `DOCS/COLAB_SETUP.md`).
-- **Exercise alignment:** RNN exercise with 02, 03; Transformer exercise with 04, 05.
-
----
-
-## Unit Breakdown
-
-**Theoretical Hours:** 6  
-**Practical Hours:** 13  
-**Total Hours:** 19
-
-### Theoretical Content
-
-- Understanding sequential data and time series prediction
-- RNN structure and challenges (vanishing gradients problem)
-- Advanced architectures: LSTM, GRU, Transformers, attention mechanism
-- Applications in NLP
-
-### Practical Content
-
-- Implementing RNN, LSTM, and GRU for text generation
-- Using Transformer models like BERT and GPT for NLP tasks
-- Performing sentiment analysis, machine translation, and speech recognition
-
----
-
-**Unit Duration:** 2 weeks  
-**Difficulty:** Advanced  
-**Prerequisites:** Units 1-2 completion
-
-**Created for:** AIAT 122 - Deep Learning  
-**Last Updated:** 2025-01-24 (reorganized: Transformers merged from Unit 4 to match DETAILED_UNIT_DESCRIPTIONS)
+Unit 4: `../unit4-advanced-dl/README.md`

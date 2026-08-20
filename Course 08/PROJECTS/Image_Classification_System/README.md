@@ -105,7 +105,7 @@ Image_Classification_System/
 
 - **Suggested timeline:** 2 weeks for implementation; 1 week for report and optional presentation.
 - **Common issues:** GPU access (suggest Colab); dataset size (allow CIFAR or small subsets); export format (SavedModel/ONNX) for deployment part.
-- **Grading:** Use `RUBRIC.md` in this folder. Exercise solutions and runbook: see `DOCS/INSTRUCTOR_RUNBOOK.md` and `DOCS/SOLUTIONS/`.
+- **Grading:** Use `RUBRIC.md` in this folder. Solutions and model answers are released by your instructor.
 
 ---
 

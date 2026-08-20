@@ -1,6 +1,6 @@
-# Classification System Template | قالب نظام التصنيف
+# Classification System Template
 
-## How to Use | كيفية الاستخدام
+## How to Use
 
 1. **Copy the template** to your project folder
 2. **Read the comments** - they explain what to implement
@@ -10,7 +10,7 @@
 
 ---
 
-## Template Structure | هيكل القالب
+## Template Structure
 
 The template includes:
 - ✅ Function signatures (what to implement)
@@ -20,7 +20,7 @@ The template includes:
 
 ---
 
-## Implementation Order | ترتيب التنفيذ
+## Implementation Order
 
 1. **Data Preparation** - Load and preprocess data
 2. **Logistic Regression** - Start with simplest model
@@ -30,7 +30,7 @@ The template includes:
 
 ---
 
-## Tips | نصائح
+## Tips
 
 - Start with a small dataset for testing
 - Test each model individually
@@ -40,4 +40,3 @@ The template includes:
 ---
 
 **Good luck with your project!** 🚀
-

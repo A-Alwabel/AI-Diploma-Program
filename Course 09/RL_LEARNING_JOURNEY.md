@@ -41,13 +41,3 @@ If you can answer these for a toy environment, you are practicing the same skill
 - **Progress:** [`STUDENT_PROGRESS_CHECKLIST.md`](STUDENT_PROGRESS_CHECKLIST.md)
 
 Skim this journey page **once at the start** and **once before the project** so the course feels like one story, not five disconnected folders.
-
-## Automated check (optional, maintainers)
-
-From the repository root:
-
-```bash
-python3 "Course 09/scripts/verify_student_notebooks.py"
-```
-
-This executes student-path notebooks under `Course 09/unit*/` (long run). Results land in `Course 09/scripts/_last_notebook_verify.log`.

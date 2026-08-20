@@ -1,5 +1,4 @@
 # Quiz 1: Introduction to Data Science
-## اختبار 1: مقدمة في علم البيانات
 
 **Time Limit:** 30 minutes | **Marks:** 30 points
 
@@ -144,27 +143,6 @@ What are the key differences between pandas and NumPy? When would you use each?
 
 ---
 
-## Answer Key
-
-**Part 1:**
-1. B) Built-in data manipulation and analysis tools
-2. B) The first 5 rows
-3. B) A GPU-accelerated DataFrame library
-4. B) Summary statistics (count, mean, std, min, max, etc.)
-5. A) `np.zeros()`
-
-**Part 2:**
-6. Full code with DataFrame creation and statistics - 5 points
-7. Correct NumPy operations - 5 points
-
-**Part 3:**
-8. Clear explanation of lifecycle stages - 5 points
-9. Good comparison with use cases - 5 points
-
-**Total: 30 points**
-
----
-
 ## Grading Rubric
 
 - **90-100% (27-30 points):** Excellent understanding
@@ -172,4 +150,3 @@ What are the key differences between pandas and NumPy? When would you use each?
 - **70-79% (21-23 points):** Satisfactory
 - **60-69% (18-20 points):** Needs improvement
 - **Below 60% (<18 points):** Requires additional study
-

@@ -1,53 +1,30 @@
-# Unit 2: Tokenization and Morphology | التقطيع والصرف
-## AIAT 121 - Natural Language Processing
+# Unit 2: Text Representation and Feature Engineering
+## AIAT 121 — Natural Language Processing
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+Unit hours: 12 (theory+practical)
 
-Before starting this unit, confirm:
+**Official unit title: Text Representation and Feature Engineering.** The folder keeps its original slug (`unit2-tokenization-morphology/`).
 
-- [ ] Completed Unit 1: NLP Fundamentals
-- [ ] Comfortable with text preprocessing basics
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
+## What This Unit Teaches
 
-### Learning Objectives | أهداف التعلم
+How to turn text into features that models can use: advanced tokenization strategies (word, sentence, subword/BPE-style), handling morphologically rich languages, and dense word representations trained with Word2Vec.
 
-By the end of this unit, students will be able to:
-- Understand different tokenization methods
-- Implement word and sentence tokenization
-- Understand morphological analysis
-- Work with stemming and lemmatization
-- Handle different languages and scripts
+## Examples (run in order)
 
----
+1. `examples/01_advanced_tokenization.ipynb` — Advanced tokenization (subword, BPE-style), handling morphologically rich languages, and choosing a tokenization strategy for a given model.
+2. `examples/02_word_embeddings_word2vec.ipynb` — Train Word2Vec embeddings with gensim, explore word similarity, and visualize the embedding space.
 
-## Topics Covered | المواضيع المغطاة
+## Exercise
 
-1. **Tokenization Methods**
-   - Word tokenization
-   - Sentence tokenization
-   - Subword tokenization
-   - Character-level tokenization
+- `exercises/01_tokenization_exercise.ipynb` — Multi-language text processing with NLTK.
 
-2. **Morphological Analysis**
-   - What is morphology?
-   - Root words and affixes
-   - Morphological rules
+## Quiz
 
-3. **Stemming and Lemmatization**
-   - Porter Stemmer
-   - Snowball Stemmer
-   - Lemmatization with NLTK/spaCy
-   - When to use each
+- `../QUIZZES/quiz_02.md` — placeholder being authored.
 
-4. **Language-Specific Considerations**
-   - Arabic tokenization challenges
-   - English tokenization
-   - Handling special characters
+Solutions and answer keys are released by your instructor.
 
----
+## Prerequisites
 
-**Unit Duration:** 2 weeks  
-**Difficulty:** Intermediate  
-**Prerequisites:** Unit 1 completion
-
+- Unit 1: Introduction to NLP
+- Notebooks run on the **ai-diploma** Jupyter kernel (repository root `.venv`)

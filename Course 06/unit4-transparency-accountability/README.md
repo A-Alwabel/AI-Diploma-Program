@@ -1,62 +1,44 @@
-# Unit: Transparency and Accountability
-## Transparency and Accountability
+# Unit 4: Interpretability, Transparency, and Accountability
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+Unit hours: 14 (theory+practical)
 
-Before starting this unit, confirm:
+This unit covers explaining and auditing AI decisions: SHAP and LIME explanations, counterfactual analysis, accountability frameworks and audit trails, human-in-the-loop approaches, and transparency tooling.
 
-- [ ] Completed Unit 3: Privacy, Security, and Data Protection
-- [ ] Understand model evaluation and interpretability basics
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
+## Prerequisites
 
-### Learning Objectives | أهداف التعلم
+- Unit 3: Privacy, Security, and Data Protection ([../unit3-privacy-security/README.md](../unit3-privacy-security/README.md))
+- Setup from [../START_HERE.md](../START_HERE.md) (root `.venv` + **ai-diploma** kernel)
 
-By the end of this unit, students will be able to:
-- Understand key concepts in transparency and accountability
-- Apply ethical frameworks and methodologies
-- Analyze real-world case studies
-- Implement ethical AI solutions
+## Learning Objectives
 
----
+By the end of this unit, you will be able to:
 
-## Unit Duration | مدة الوحدة
+- Explain model predictions with SHAP and LIME
+- Generate counterfactual explanations for individual decisions
+- Apply accountability frameworks, audit trails, and stakeholder mapping
+- Design human-in-the-loop oversight and choose appropriate transparency tools
 
-**Theoretical Hours:** 7 hours  
-**Practical Hours:** 7 hours  
-**Total Hours:** 14 hours
+## Examples (work in this order)
 
-**Format:** 7 theoretical + 7 practical hours
+1. [examples/01_shap_explanations.ipynb](examples/01_shap_explanations.ipynb) — SHAP values: global and local explanations with summary, waterfall, and dependence plots.
+2. [examples/02_lime_explanations.ipynb](examples/02_lime_explanations.ipynb) — LIME: local surrogate explanations for individual predictions.
+3. [examples/03_counterfactual_analysis.ipynb](examples/03_counterfactual_analysis.ipynb) — Counterfactual ("what-if") analysis of model decisions.
+4. [examples/04_accountability_frameworks.ipynb](examples/04_accountability_frameworks.ipynb) — Accountability frameworks, audit timelines, and stakeholder responsibilities.
+5. [examples/05_hitl_approaches.ipynb](examples/05_hitl_approaches.ipynb) — Human-in-the-loop approaches and when to use each.
+6. [examples/06_transparency_tools.ipynb](examples/06_transparency_tools.ipynb) — Comparing transparency tools for model reporting and disclosure.
+7. [examples/07_explainable_ai_techniques.ipynb](examples/07_explainable_ai_techniques.ipynb) — Implementing explainable-AI techniques (SHAP, LIME) end to end.
 
----
+## Exercises
 
-## Topics Covered | المواضيع المغطاة
+- [exercises/exercise_01.ipynb](exercises/exercise_01.ipynb)
+- [exercises/exercise_02.ipynb](exercises/exercise_02.ipynb) — Explainable AI in practice
 
-1. **Explainable AI**
-2. **Model Interpretability**
-3. **Accountability Frameworks**
-4. **Audit Trails**
-5. **Responsible AI Practices**
+Solutions are released by your instructor.
 
----
+## Quiz
 
-## Files Structure | هيكل الملفات
+- [../QUIZZES/Quiz_04_Transparency_Accountability.md](../QUIZZES/Quiz_04_Transparency_Accountability.md)
 
-- `examples/`: Complete code examples with explanations
-- `exercises/`: Practice problems for students
-- `solutions/`: Complete solutions to exercises
-- `tests/`: Unit tests
+## Next
 
----
-
-## Learning Path | مسار التعلم
-
-1. **Start with examples** - Understand concepts through code
-2. **Complete exercises** - Practice what you learned
-3. **Review solutions** - Check your work
-4. **Take quizzes** - Test your understanding
-
----
-
-**Unit Duration:** 2 weeks  
-**Difficulty:** Intermediate
+Continue to [Unit 5: AI Governance, Regulations, and Future Challenges](../unit5-governance-regulations/README.md).

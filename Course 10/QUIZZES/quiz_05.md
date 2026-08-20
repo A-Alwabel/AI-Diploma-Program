@@ -5,7 +5,7 @@
 **Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)
 **Covers:** Unit 5 (multimodal AI, CLIP, advanced models, creative applications, future challenges).
 **Concepts from:** Unit 5 examples (generative AI applications, music generation, future trends) and related slides.
-**Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -62,7 +62,7 @@ Write Python code demonstrating a **simple multimodal similarity search**:
 - Print the index and similarity score.
 Use: torch.nn.functional.cosine_similarity or manual computation.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_05_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -71,14 +71,14 @@ Use: torch.nn.functional.cosine_similarity or manual computation.
 ### Question 6 (15 points)
 What is **Retrieval-Augmented Generation (RAG)**? Describe how it combines a retrieval system with a generative model to produce more accurate, up-to-date responses.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_05_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
 ### Question 7 (15 points)
 Name **three** industries being transformed by generative AI and give a **concrete application** for each (e.g., healthcare, entertainment, education).
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_05_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -87,7 +87,7 @@ Name **three** industries being transformed by generative AI and give a **concre
 ### Question 8 (10 points)
 A company uses generative AI to create personalized educational exercises for each student. Identify: (1) the technique you would use, (2) one ethical concern, (3) how you would evaluate quality of generated content.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_05_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 

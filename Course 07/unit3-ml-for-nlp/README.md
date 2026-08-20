@@ -1,53 +1,29 @@
-# Unit 3: Machine Learning for NLP | تعلم الآلة لمعالجة اللغة الطبيعية
-## AIAT 121 - Natural Language Processing
+# Unit 3: Machine Learning for NLP
+## AIAT 121 — Natural Language Processing
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+Unit hours: 12 (theory+practical)
 
-Before starting this unit, confirm:
+## What This Unit Teaches
 
-- [ ] Completed Unit 2: Tokenization and Morphology
-- [ ] Comfortable with basic ML (classification, evaluation metrics)
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
+Applying classical machine learning to text: extracting features (Bag of Words, TF-IDF), training and evaluating text classifiers with scikit-learn, and using spaCy for named entity recognition and part-of-speech tagging.
 
-### Learning Objectives | أهداف التعلم
+## Examples (run in order)
 
-By the end of this unit, students will be able to:
-- Apply machine learning algorithms to text data
-- Extract features from text
-- Build text classification models
-- Perform text clustering
-- Evaluate ML models for NLP tasks
+1. `examples/01_text_classification.ipynb` — Build and evaluate text classifiers with scikit-learn using Bag-of-Words/TF-IDF features.
+2. `examples/02_named_entity_recognition.ipynb` — Named entity recognition and POS tagging with spaCy.
 
----
+## Exercise
 
-## Topics Covered | المواضيع المغطاة
+- `exercises/01_sentiment_classification_exercise.ipynb` — Product review sentiment analysis with pandas and scikit-learn.
 
-1. **Feature Extraction**
-   - Bag of Words (BoW)
-   - TF-IDF
-   - Word embeddings (Word2Vec, GloVe)
-   - Feature engineering
+## Quiz
 
-2. **Text Classification**
-   - Naive Bayes for text
-   - Logistic Regression
-   - Support Vector Machines (SVM)
-   - Evaluation metrics
+- `../QUIZZES/quiz_03.md` — placeholder being authored.
 
-3. **Text Clustering**
-   - K-means for text
-   - Hierarchical clustering
-   - Topic modeling basics
+Solutions and answer keys are released by your instructor.
 
-4. **Practical Applications**
-   - Sentiment analysis
-   - Spam detection
-   - Document classification
+## Prerequisites
 
----
-
-**Unit Duration:** 2 weeks  
-**Difficulty:** Intermediate  
-**Prerequisites:** Units 1-2 completion, ML basics
-
+- Units 1–2 of this course
+- Machine learning basics (classification, evaluation metrics) from Semester 1 (AIAT 111–116)
+- Notebooks run on the **ai-diploma** Jupyter kernel (repository root `.venv`)

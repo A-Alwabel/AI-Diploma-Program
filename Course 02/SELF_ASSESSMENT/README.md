@@ -1,10 +1,10 @@
-# Self-Assessment Materials | مواد التقييم الذاتي
+# Self-Assessment Materials
 
 This folder contains self-assessment checkpoints to help students track their progress.
 
 ---
 
-## Available Checkpoints | نقاط التقييم المتاحة
+## Available Checkpoints
 
 ### Checkpoint 00: After Notebook 00
 **File:** `Checkpoint_After_Notebook_00.md`
@@ -30,7 +30,7 @@ Complete after finishing all notebooks (final checkpoint).
 
 ---
 
-## How to Use | كيفية الاستخدام
+## How to Use
 
 ### For Students:
 
@@ -53,7 +53,7 @@ Complete after finishing all notebooks (final checkpoint).
 
 ---
 
-## Benefits | الفوائد
+## Benefits
 
 ### For Students:
 - ✅ Identify weak areas early
@@ -70,7 +70,7 @@ Complete after finishing all notebooks (final checkpoint).
 
 ---
 
-## Tips | نصائح
+## Tips
 
 1. **Be Honest:**
    - Don't check boxes you're not sure about
@@ -91,7 +91,7 @@ Complete after finishing all notebooks (final checkpoint).
 
 ---
 
-## Additional Self-Assessment | تقييم ذاتي إضافي
+## Additional Self-Assessment
 
 ### Practice Quizzes:
 - Take quizzes in `../QUIZZES/` folder
@@ -109,4 +109,3 @@ Complete after finishing all notebooks (final checkpoint).
 
 **Created**: 2025  
 **For**: Python for AI Course - 112 AIAT
-

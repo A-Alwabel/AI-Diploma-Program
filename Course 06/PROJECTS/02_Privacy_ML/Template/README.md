@@ -1,6 +1,6 @@
-# Privacy-Preserving ML Template | قالب نظام تعلم الآلة الحافظ للخصوصية
+# Privacy-Preserving ML Template
 
-## How to Use | كيفية الاستخدام
+## How to Use
 
 1. **Copy the template** to your project folder
 2. **Install diffprivlib:** `pip install diffprivlib`
@@ -10,7 +10,7 @@
 
 ---
 
-## Implementation Order | ترتيب التنفيذ
+## Implementation Order
 
 1. **Data Anonymization** - Anonymize sensitive data
 2. **Differential Privacy** - Implement DP mechanisms
@@ -19,7 +19,7 @@
 
 ---
 
-## Tips | نصائح
+## Tips
 
 - Balance privacy (epsilon) with utility
 - Document all privacy-preserving steps
@@ -29,4 +29,3 @@
 ---
 
 **Good luck with your project!** 🚀
-

@@ -1,9 +1,8 @@
 # Complete Project Guide: Explainable AI Tool
-## دليل المشروع الكامل: أداة الذكاء الاصطناعي القابل للتفسير
 
 ---
 
-## 🎯 Real-World Application | التطبيق في الحياة الواقعية
+## 🎯 Real-World Application
 
 ### Example: Loan Approval Explanation System
 **Imagine you're building a system for banks to explain why loan applications are approved or rejected, like systems used by financial institutions.**
@@ -36,7 +35,6 @@
 ---
 
 ## 🚀 Quick Start (For Experienced Students)
-## البدء السريع (للطلاب ذوي الخبرة)
 
 > 💡 **New to explainable AI?** Skip to [Complete Tutorial](#-complete-tutorial-for-beginners) section below.
 
@@ -88,7 +86,6 @@ def generate_explanation_report(explanation, instance, prediction):
 ---
 
 ## 📚 Complete Tutorial (For Beginners)
-## دليل كامل للمبتدئين
 
 > 💡 **Already familiar with explainable AI?** See [Quick Start](#-quick-start-for-experienced-students) section above.
 
@@ -507,7 +504,6 @@ if __name__ == "__main__":
 ---
 
 ## 🔗 Course Content Connections
-## روابط محتوى الدورة
 
 ### How This Project Connects to Course Content
 
@@ -521,7 +517,6 @@ if __name__ == "__main__":
 ---
 
 ## 🐛 Troubleshooting
-## حل المشاكل
 
 ### Problem: SHAP too slow
 **Error:** SHAP calculations take too long  
@@ -542,7 +537,6 @@ if __name__ == "__main__":
 ---
 
 ## 🎓 Learning Checklist
-## قائمة التعلم
 
 - [ ] Day 1: Understand explainable AI
 - [ ] Day 2-3: Implement SHAP explanations
@@ -555,7 +549,6 @@ if __name__ == "__main__":
 ---
 
 ## 💡 Tips for Success
-## نصائح للنجاح
 
 1. **Start Simple:** Use tree models (easier to explain)
 2. **Use SHAP for Global:** Better for overall understanding

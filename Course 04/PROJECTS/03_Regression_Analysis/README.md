@@ -1,6 +1,6 @@
-# Project 03: Advanced Regression Analysis | المشروع 03: تحليل الانحدار المتقدم
+# Project 03: Advanced Regression Analysis
 
-## Overview | نظرة عامة
+## Overview
 
 Implement and compare different regression techniques with proper hyperparameter tuning, cross-validation, and performance evaluation.
 
@@ -13,7 +13,7 @@ Implement and compare different regression techniques with proper hyperparameter
 
 ---
 
-## Requirements | المتطلبات
+## Requirements
 
 ### Functional Requirements
 1. **Data Preparation**
@@ -55,7 +55,7 @@ Implement and compare different regression techniques with proper hyperparameter
 
 ---
 
-## Deliverables | المخرجات
+## Deliverables
 
 1. **Source Code**
    - `regression_models.py` - All regression implementations
@@ -76,7 +76,7 @@ Implement and compare different regression techniques with proper hyperparameter
 
 ---
 
-## Dataset Suggestions | اقتراحات مجموعات البيانات
+## Dataset Suggestions
 
 - `datasets/raw/us_accidents.csv` — Traffic Management (predict severity/duration proxy)
 - `datasets/raw/creditcard_fraud.csv` — Financial risk scoring (use continuous proxy)
@@ -87,7 +87,7 @@ Use `random_state=73` for all splits/models to keep runs reproducible.
 
 ---
 
-## Evaluation Criteria | معايير التقييم
+## Evaluation Criteria
 
 - Model implementation (30%)
 - Performance metrics (25%)
@@ -99,4 +99,3 @@ Use `random_state=73` for all splits/models to keep runs reproducible.
 
 **Created**: 2025  
 **For**: Machine Learning Algorithms and Applications - AIAT 114
-

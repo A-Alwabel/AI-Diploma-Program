@@ -1,9 +1,8 @@
 # Complete Project Guide: Privacy-Preserving ML System
-## دليل المشروع الكامل: نظام تعلم الآلة الحافظ للخصوصية
 
 ---
 
-## 🎯 Real-World Application | التطبيق في الحياة الواقعية
+## 🎯 Real-World Application
 
 ### Example: Healthcare Data Analysis with Privacy
 **Imagine you're building an ML system for hospitals to analyze patient data while protecting privacy, like systems used for medical research.**
@@ -36,7 +35,6 @@
 ---
 
 ## 🚀 Quick Start (For Experienced Students)
-## البدء السريع (للطلاب ذوي الخبرة)
 
 > 💡 **New to privacy-preserving ML?** Skip to [Complete Tutorial](#-complete-tutorial-for-beginners) section below.
 
@@ -97,7 +95,6 @@ class GDPRCompliance:
 ---
 
 ## 📚 Complete Tutorial (For Beginners)
-## دليل كامل للمبتدئين
 
 > 💡 **Already familiar with privacy-preserving ML?** See [Quick Start](#-quick-start-for-experienced-students) section above.
 
@@ -569,7 +566,6 @@ if __name__ == "__main__":
 ---
 
 ## 🔗 Course Content Connections
-## روابط محتوى الدورة
 
 ### How This Project Connects to Course Content
 
@@ -583,7 +579,6 @@ if __name__ == "__main__":
 ---
 
 ## 🐛 Troubleshooting
-## حل المشاكل
 
 ### Problem: Model accuracy too low
 **Error:** Private model performs poorly  
@@ -604,7 +599,6 @@ if __name__ == "__main__":
 ---
 
 ## 🎓 Learning Checklist
-## قائمة التعلم
 
 - [ ] Day 1: Understand privacy in ML
 - [ ] Day 2-3: Implement differential privacy
@@ -618,7 +612,6 @@ if __name__ == "__main__":
 ---
 
 ## 💡 Tips for Success
-## نصائح للنجاح
 
 1. **Start with High Epsilon:** Begin with epsilon=5.0, then reduce
 2. **Balance Privacy and Utility:** Find sweet spot for your use case

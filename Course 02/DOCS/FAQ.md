@@ -1,10 +1,10 @@
-# Frequently Asked Questions (FAQ) | الأسئلة الشائعة
+# Frequently Asked Questions (FAQ)
 
 Common questions and answers for students and instructors.
 
 ---
 
-## General Questions | الأسئلة العامة
+## General Questions
 
 ### Q1: What is this course about?
 **A:** This course teaches Python programming with a focus on AI applications. You'll learn how to use Python libraries to implement AI concepts like search algorithms, knowledge representation, machine learning, and more.
@@ -28,11 +28,12 @@ python --version
 ---
 
 ### Q4: How long does the course take?
-**A:** The course is designed for 12 weeks with 6-8 hours per week. See `COURSE_SCHEDULE.md` for detailed timeline.
+**A:** The official course load is 96 total training hours at 6 contact hours
+per week. See `COURSE_SCHEDULE.md` for a suggested pacing.
 
 ---
 
-## Installation & Setup | التثبيت والإعداد
+## Installation & Setup
 
 ### Q5: How do I install the required libraries?
 **A:** Follow `DOCS/INSTALLATION_GUIDE.md`. Quick method:
@@ -80,15 +81,15 @@ pip check
 
 ---
 
-## Course Content | محتوى الدورة
+## Course Content
 
 ### Q10: Which notebook should I start with?
-**A:** Always start with `NOTEBOOKS/00_Python_Libraries_for_AI.ipynb`. It teaches the libraries you'll need for all other notebooks. Don't skip it!
+**A:** Always start with `unit1-search-algorithms/examples/01_python_libraries_for_ai.ipynb`. It teaches the libraries you'll need for all other notebooks. Don't skip it!
 
 ---
 
 ### Q11: Can I skip notebooks?
-**A:** No! Each notebook builds on the previous one. Skipping will cause confusion later. Follow the sequence: 00 → 01 → 02 → 03 → 04 → 05
+**A:** No! Each notebook builds on the previous one. Skipping will cause confusion later. Follow the units in order (unit1 → unit5) and the notebooks inside each unit in file order.
 
 ---
 
@@ -108,28 +109,22 @@ pip check
 ---
 
 ### Q14: Are there solutions to exercises?
-**A:** Solutions structure is in `SOLUTIONS/` folder. Try exercises yourself first, then check solutions. Remember: understanding is more important than copying!
+**A:** Solutions are released by your instructor. Try exercises yourself first, then check solutions. Remember: understanding is more important than copying!
 
 ---
 
-## Assessment & Grading | التقييم والدرجات
+## Assessment & Grading
 
 ### Q15: How is the course graded?
-**A:** 
-- Quizzes (60%): 6 quizzes, 5-15% each
-- Project (30%): One project from Weeks 7-8
-- Participation (10%): Class participation, questions, helping others
+**A:** Assessment includes six quizzes, at least one project, notebook work,
+and a final exam. Grade weights and the schedule are set by your instructor.
 
 ---
 
 ### Q16: When are quizzes?
-**A:** After completing each notebook (see `COURSE_SCHEDULE.md`):
-- Week 1: Quiz 00
-- Week 2: Quiz 01
-- Week 3: Quiz 02
-- Week 4: Quiz 03
-- Week 5: Quiz 04
-- Week 6: Quiz 05
+**A:** After completing the corresponding notebooks and exercise - see
+`../QUIZZES/README.md` for the mapping, and `COURSE_SCHEDULE.md` for a
+suggested pacing.
 
 ---
 
@@ -156,7 +151,7 @@ pip check
 
 ---
 
-## Technical Questions | الأسئلة التقنية
+## Technical Questions
 
 ### Q20: My code doesn't work. What should I do?
 **A:** 
@@ -195,7 +190,7 @@ pip check
 
 ---
 
-## Resources & Help | الموارد والمساعدة
+## Resources & Help
 
 ### Q24: Where can I get more help?
 **A:** 
@@ -222,15 +217,17 @@ pip check
 
 ---
 
-## Projects | المشاريع
+## Projects
 
 ### Q27: When do projects start?
-**A:** Projects start in Week 7. You'll have 2 weeks (Weeks 7-8) to complete your project.
+**A:** Typically after the five units are finished; your instructor sets the
+project timeline. See `COURSE_SCHEDULE.md` for a suggested pacing.
 
 ---
 
 ### Q28: Can I use project templates?
-**A:** Yes! Templates are in `PROJECTS/Project_Templates/`. They provide starter code and structure. Fill in the TODO sections.
+**A:** Yes! Each project folder has a `Template/` subfolder (e.g.
+`PROJECTS/01_Pathfinding_Game/Template/`). Templates provide starter code and structure. Fill in the TODO sections.
 
 ---
 
@@ -253,7 +250,7 @@ pip check
 
 ---
 
-## Course Completion | إتمام الدورة
+## Course Completion
 
 ### Q31: What do I get after completing the course?
 **A:** 
@@ -273,13 +270,12 @@ pip check
 
 ---
 
-## For Instructors | للمدرسين
+## For Instructors
 
 ### Q33: How do I use the assessment materials?
 **A:** 
-- Quizzes: Administer after each notebook, use answer keys provided
+- Quizzes: Administer after each unit; answer keys are released by your instructor
 - Projects: Use `ASSESSMENTS/Project_Rubric.md` for evaluation
-- See `INSTRUCTOR_GUIDE.md` for detailed guidance
 
 ---
 
@@ -301,7 +297,7 @@ pip check
 
 ---
 
-## Still Have Questions? | لا تزال لديك أسئلة؟
+## Still Have Questions?
 
 **Contact:**
 - Your course instructor
@@ -314,4 +310,3 @@ pip check
 
 **Last Updated**: 2025  
 **For**: Python for AI Course - 112 AIAT
-

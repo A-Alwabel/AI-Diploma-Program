@@ -1,9 +1,9 @@
-# Project 01: Simple AI Agent | مشروع 1: وكيل ذكاء اصطناعي بسيط
-## AIAT 111 - Introduction to AI Applications and Concepts
+# Project 01: Simple AI Agent
+## AIAT 111 - Introduction to Artificial Intelligence and Applications
 
 ---
 
-## 🎯 Real-World Application | التطبيق في الحياة الواقعية
+## 🎯 Real-World Application
 
 **Example: Delivery Route Optimizer**
 
@@ -23,13 +23,13 @@ This project helps you build a system like those used by:
 
 ---
 
-## Project Overview | نظرة عامة على المشروع
+## Project Overview
 
 Build a simple AI agent that uses search algorithms to solve problems and represents knowledge using basic structures.
 
 ---
 
-## Learning Objectives | أهداف التعلم
+## Learning Objectives
 
 - Apply search algorithms (BFS/DFS/A*) to real problems
 - Implement knowledge representation
@@ -37,7 +37,7 @@ Build a simple AI agent that uses search algorithms to solve problems and repres
 
 ---
 
-## Requirements | المتطلبات
+## Requirements
 
 ### Functional Requirements
 - Agent can navigate a problem space
@@ -53,7 +53,7 @@ Build a simple AI agent that uses search algorithms to solve problems and repres
 
 ---
 
-## Deliverables | المخرجات
+## Deliverables
 
 1. Source code with comments
 2. README explaining the agent
@@ -62,5 +62,4 @@ Build a simple AI agent that uses search algorithms to solve problems and repres
 
 ---
 
-**For**: AIAT 111 - Introduction to AI Applications and Concepts
-
+**For**: AIAT 111 - Introduction to Artificial Intelligence and Applications

@@ -1,4 +1,4 @@
-# Setup Instructions | تعليمات الإعداد
+# Setup Instructions
 ## AIAT 115 - Scalable Data Science
 
 This guide covers **local installation** and **troubleshooting**. For **Google Colab** (free GPU), see [COLAB_SETUP.md](COLAB_SETUP.md).
@@ -17,20 +17,25 @@ python --version
 
 ---
 
-## 2. Virtual environment (recommended)
+## 2. Virtual environment
+
+This course uses the **repository root virtual environment** (`.venv`) shared by all courses, exposed in Jupyter as the **"ai-diploma"** kernel.
 
 ```bash
-# Create
-python -m venv venv
+# From the repository root:
+python -m venv .venv
 
 # Activate
 # macOS/Linux:
-source venv/bin/activate
+source .venv/bin/activate
 # Windows:
-venv\Scripts\activate
+.venv\Scripts\activate
 
 # Upgrade pip
 pip install --upgrade pip
+
+# Register the Jupyter kernel (once)
+python -m ipykernel install --user --name ai-diploma
 ```
 
 ---
@@ -73,9 +78,9 @@ print("OK")
 
 ## 6. Run notebooks
 
-1. Install Jupyter: `pip install jupyter`
-2. Start Jupyter: `jupyter notebook` or `jupyter lab`
-3. Open `unit1-introduction/examples/01_data_science_intro.ipynb`
+1. Start Jupyter from the repository root: `jupyter notebook` or `jupyter lab`
+2. Open `unit1-introduction/examples/01_data_science_intro.ipynb`
+3. Select the **ai-diploma** kernel (Kernel -> Change Kernel)
 
 ---
 

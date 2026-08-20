@@ -1,279 +1,101 @@
-# 🎓 START HERE - Welcome Students! | ابدأ من هنا - مرحباً بالطلاب!
+# START HERE - AIAT 112: Python for Artificial Intelligence
 
-## 👋 Welcome to Python for AI Course | مرحباً بك في دورة بايثون للذكاء الاصطناعي
+Welcome to Course 02. This file tells you what to do on day 1 and how to work
+through the course.
 
-**If you're a new student, READ THIS FIRST!**  
-**إذا كنت طالباً جديداً، اقرأ هذا أولاً!**
-
-This file tells you exactly what to do on **Day 1** and how to navigate this course.  
-هذا الملف يخبرك بالضبط ماذا تفعل في **اليوم الأول** وكيف تتنقل في هذه الدورة.
-
-**✅ Official Path:** Follow the notebooks in `NOTEBOOKS/` (00 → 05).  
-**ℹ️ Note:** The `unit*` folders are **supplemental mirrors** and optional reference only.  
-**📚 Unit ↔ Notebook mapping:** See `README.md` and `../DETAILED_UNIT_DESCRIPTIONS.md` for official unit scope.
+Credit hours: 4 · Contact hours: 6/week · Total training hours: 96 (theory+practical)
 
 ---
 
-## ✅ Day 1 Checklist | قائمة اليوم الأول
+## Day 1 Checklist
 
-Follow these steps in order. Don't skip any!  
-اتبع هذه الخطوات بالترتيب. لا تتخطى أي خطوة!
+### Step 1: Check prerequisites
 
-### Step 1: Check Prerequisites | الخطوة 1: تحقق من المتطلبات الأساسية
+- Completed Semester 1 entry requirements; this course is taken alongside the
+  other Semester 1 courses (AIAT 111-116).
+- Completed or currently taking **AIAT 111 - Introduction to AI Applications
+  and Concepts (Course 01)**.
+- Comfortable with basic Python: variables, lists, dictionaries, loops,
+  functions, classes.
 
-**Before starting this course, you should have completed:**
+If your Python is weak, review Python basics before Unit 1 - the whole course
+is hands-on Python.
 
-- [ ] **Python Essentials - Part 1 (Basics)**: Variables, data types, lists, dictionaries, loops
-- [ ] **Python Essentials - Part 2 (Intermediate)**: Functions, classes, modules, file handling
+### Step 2: Set up your environment
 
-**Links:**
-- [Python Essentials - Part 1](https://edube.org/study/pe1)
-- [Python Essentials - Part 2](https://edube.org/study/pe2)
-
-**If you haven't completed these courses:**  
-⚠️ You will struggle with this course. Complete them first!
-
----
-
-### Step 2: Check Python Version | الخطوة 2: تحقق من إصدار بايثون
-
-Open your terminal/command prompt and type:
+This repository uses one shared virtual environment at the repository root:
 
 ```bash
-python --version
+# from the repository root (one level above this folder)
+python -m venv .venv          # only if .venv does not exist yet
+source .venv/bin/activate     # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
 ```
 
-**You need:** Python 3.9 or higher (3.10 or 3.11 recommended)
+In Jupyter, select the **ai-diploma** kernel when opening notebooks.
 
-**If you don't have Python or have an old version:**  
-Install Python 3.10 or 3.11 from [python.org](https://www.python.org/downloads/)
-
----
-
-### Step 3: Install Libraries | الخطوة 3: تثبيت المكتبات
-
-**Follow the installation guide:** Open `DOCS/INSTALLATION_GUIDE.md` and follow the instructions.
-
-**Quick method (if you're comfortable with terminal):**
+Verify your setup:
 
 ```bash
-# 1. Create virtual environment (recommended)
-python -m venv venv
-
-# 2. Activate virtual environment
-# On Windows:
-venv\Scripts\activate
-# On macOS/Linux:
-source venv/bin/activate
-
-# 3. Upgrade pip
-pip install --upgrade pip
-
-# 4. Install all libraries
-pip install -r ../requirements.txt
-
-# 5. Verify installation
-pip check
+python "Course 02/TESTING/verify_installation.py"
 ```
 
-**If you see errors:** Read `DOCS/INSTALLATION_GUIDE.md` for troubleshooting.
+If you hit problems, see `DOCS/INSTALLATION_GUIDE.md`.
+
+### Step 3: Read the course overview
+
+Open `README.md` for the course structure, unit list, and hours.
+
+### Step 4: Start Unit 1
+
+Open `unit1-search-algorithms/README.md`, then work through its notebooks in
+order, starting with `unit1-search-algorithms/examples/01_python_libraries_for_ai.ipynb`.
 
 ---
 
-### Step 4: Read the Course Overview | الخطوة 4: اقرأ نظرة عامة على الدورة
+## Learning Path
 
-**Open and read:** `README.md`
+Work through the units in order. In each unit:
 
-This file explains:
-- What this course covers
-- The learning path
-- What each notebook teaches
-- How notebooks connect to each other
-
-**Don't skip this!** It's only 5-10 minutes to read and will save you hours of confusion later.
-
----
-
-### Step 5: Start with Notebook 00 | الخطوة 5: ابدأ بالدفتر 00
-
-**Open:** `NOTEBOOKS/00_Python_Libraries_for_AI.ipynb`
-
-**Why this notebook FIRST?**
-- All other notebooks use Python libraries (NumPy, Matplotlib, etc.)
-- You need to learn these libraries BEFORE learning AI concepts
-- This notebook teaches you the tools you'll use in all other notebooks
-
-**Don't jump ahead to Notebook 01!** You'll be confused without the library knowledge.
-
----
-
-## 📚 Learning Sequence | تسلسل التعلم
-
-**Follow this exact order:**
+1. Read the unit `README.md`.
+2. Work through the notebooks in `examples/` in numeric file order.
+3. Do the exercise in `exercises/`.
+4. Take the unit quiz in `QUIZZES/`.
 
 ```
-1. ✅ Complete Prerequisites (Python PE1 & PE2)
-   ↓
-2. ✅ Install Libraries (Step 3 above)
-   ↓
-3. 📓 Notebook 00: Python Libraries for AI
-   ↓
-4. 📓 Notebook 01: Introduction & Search Algorithms
-   ↓
-5. 📓 Notebook 02: Knowledge Representation
-   ↓
-6. 📓 Notebook 03: Learning under Uncertainty
-   ↓
-7. ⚠️ **IMPORTANT:** Before Notebook 04, complete Course 03 (Mathematics) Units 1-2
-   - Course 03 Unit 1: Linear Algebra
-   - Course 03 Unit 2: Calculus
-   - **Why?** Optimization requires understanding of calculus and gradients
-   ↓
-8. 📓 Notebook 04: Optimization Techniques
-   - **Prerequisites:** Course 03 Units 1-2 (Linear Algebra & Calculus)
-   ↓
-9. 📓 Notebook 05: AI-based Learning Models
+Unit 1: Course Introduction and Search Algorithms
+   examples 01-02 -> exercise 01 -> Quiz_00 + Quiz_01
+Unit 2: Knowledge Representation
+   examples 01-04 -> exercise 02 -> Quiz_02
+Unit 3: Learning Under Uncertainty
+   examples 01-04 -> exercise 03 -> Quiz_03
+Unit 4: Optimization Techniques
+   example 01 -> exercise 04 -> Quiz_04
+Unit 5: AI-Based Learning Models
+   example 01 -> exercise 05 -> Quiz_05
+Then: one project from PROJECTS/ and the final exam (ASSESSMENTS/)
 ```
 
-**Important:** Each notebook builds on the previous one. Don't skip notebooks!
+Each unit builds on the previous one - do not skip ahead.
 
-**⚠️ Math Prerequisite for Notebook 04:**
-Before starting Notebook 04 (Optimization Techniques), it's **highly recommended** to complete Course 03 (Mathematics for AI) Units 1-2:
-- **Unit 1:** Linear Algebra (vectors, matrices, transformations)
-- **Unit 2:** Calculus (derivatives, gradients, multivariate calculus)
-
-**Why?** Optimization techniques like gradient descent require understanding of:
-- How gradients work (calculus)
-- How to compute derivatives (calculus)
-- Vector operations (linear algebra)
-
-**Options:**
-1. **Complete Course 03 first** (recommended for best understanding)
-2. **Complete Course 03 Units 1-2** before Notebook 04 (minimum requirement)
-3. **Continue but review** Course 03 materials when you encounter math concepts
+**Math note for Unit 4:** Optimization uses gradients and vector operations.
+If you need a refresher, review Course 03 (AIAT 113) `unit1-linear-algebra`
+and `unit2-calculus`.
 
 ---
 
-## 📋 Progress Tracker | متتبع التقدم
+## Tracking Progress
 
-Use this checklist to track your progress:
-
-### Setup & Preparation
-- [ ] Completed Python PE1 & PE2 prerequisites
-- [ ] Python 3.9+ installed and verified
-- [ ] Libraries installed successfully (`pip check` shows no errors)
-- [ ] Read README.md
-- [ ] Read this START_HERE.md file
-
-### Notebooks
-- [ ] **Notebook 00**: Python Libraries for AI
-- [ ] **Notebook 01**: Introduction & Search Algorithms
-- [ ] **Notebook 02**: Knowledge Representation
-- [ ] **Notebook 03**: Learning under Uncertainty
-- [ ] **Notebook 04**: Optimization Techniques
-- [ ] **Notebook 05**: AI-based Learning Models
+Use `STUDENT_PROGRESS_CHECKLIST.md` to track every notebook, exercise, and quiz.
 
 ---
 
-## 🆘 Need Help? | تحتاج مساعدة؟
+## Need Help?
 
-### Common Issues:
+- Installation problems -> `DOCS/INSTALLATION_GUIDE.md`
+- Common questions -> `DOCS/FAQ.md`
+- Quick syntax/library reference -> `DOCS/QUICK_REFERENCE.md`
+- Extra practice -> `DOCS/PRACTICE_PROBLEMS.md`
+- Anything else -> ask your instructor
 
-**Problem:** "No module named 'numpy'"  
-**Solution:** You haven't installed libraries. Go back to Step 3.
-
-**Problem:** "Python version too old"  
-**Solution:** Install Python 3.10 or 3.11 from python.org
-
-**Problem:** "I don't understand the notebook"  
-**Solution:** 
-1. Check if you completed prerequisites (Step 1)
-2. Make sure you're doing notebooks in order (00 → 01 → 02...)
-3. Read the prerequisites section at the top of each notebook
-
-**Problem:** "Libraries conflict with each other"  
-**Solution:** Use virtual environment (see `DOCS/INSTALLATION_GUIDE.md`)
-
----
-
-## 🔗 Navigating Related Topics | التنقل بين المواضيع ذات الصلة
-
-**You may notice that some topics (like BFS, Linear Regression) appear in multiple courses. This is intentional!**
-
-**📖 For a complete guide to understanding duplications and navigating between courses:**
-- Read `../COURSE_MAP.md` in the root directory
-
-**📍 File Location:** `/AI Diploma/COURSE_MAP.md`
-- This document explains:
-  - Why topics appear in multiple courses
-  - Which course to use for each topic
-  - How courses connect to each other
-  - Learning paths based on your background
-
-**Quick Reference:**
-- **BFS/DFS/A* Algorithms**: Also covered in `Course 01/unit2-search-algorithms/` (simpler examples)
-- **Linear Regression**: Also covered in `Course 04/unit1-data-processing/examples/04_linear_regression.ipynb` (full implementation)
-- **Gradient Descent**: Also covered in `Course 03/modules/module_02/` (mathematical foundations)
-
-**💡 Tip:** If you're confused about which resource to use, check `COURSE_MAP.md` for guidance!
-
----
-
-## 📖 File Guide | دليل الملفات
-
-**What each file is for:**
-
-| File | Purpose | When to Use |
-|------|---------|-------------|
-| `START_HERE.md` | **This file** - First thing to read | **Day 1, before anything else** |
-| `README.md` | Course overview and structure | After reading START_HERE |
-| `DOCS/INSTALLATION_GUIDE.md` | Detailed installation instructions | When installing libraries |
-| `../requirements.txt` | List of libraries to install | During installation (Step 3) |
-| `NOTEBOOKS/00_Python_Libraries_for_AI.ipynb` | Learn Python libraries | **First notebook to open** |
-| `NOTEBOOKS/01_Introduction_Search_Algorithms.ipynb` | Search algorithms | After completing Notebook 00 |
-| `NOTEBOOKS/02_Knowledge_Representation.ipynb` | Knowledge systems | After completing Notebook 01 |
-| `NOTEBOOKS/03_Learning_Under_Uncertainty.ipynb` | Probability & uncertainty | After completing Notebook 02 |
-| `NOTEBOOKS/04_Optimization_Techniques.ipynb` | Optimization methods | After completing Notebook 03 |
-| `NOTEBOOKS/05_AI_Learning_Models.ipynb` | Machine learning models | After completing Notebook 04 |
-
----
-
-## 🎯 Quick Start Summary | ملخص البدء السريع
-
-**For students who want the shortest path:**
-
-1. ✅ Check prerequisites (Python PE1 & PE2 completed)
-2. ✅ Install Python 3.10+ if needed
-3. ✅ Install libraries: `pip install -r ../requirements.txt`
-4. ✅ Read `README.md` (5 minutes)
-5. ✅ Open `00_Python_Libraries_for_AI.ipynb` and start learning!
-
-**That's it!** Everything else is in the notebooks.
-
----
-
-## 💡 Tips for Success | نصائح للنجاح
-
-1. **Don't rush:** Each notebook builds on the previous one
-2. **Practice:** Try modifying the code examples
-3. **Ask questions:** If something is unclear, ask your instructor
-4. **Take notes:** Write down concepts you find difficult
-5. **Review:** Before starting a new notebook, review the previous one
-
----
-
-## ✅ Ready to Start? | جاهز للبدء؟
-
-If you've completed all steps above, you're ready!
-
-**Next action:** Open `NOTEBOOKS/00_Python_Libraries_for_AI.ipynb` and begin your AI journey!
-
-**Good luck!** 🚀  
-**حظاً موفقاً!** 🚀
-
----
-
-**Last Updated:** 2025  
-**Course:** Python for AI - 112 AIAT  
-**Language Support:** Arabic & English
-
+Solutions and answer keys are released by your instructor.

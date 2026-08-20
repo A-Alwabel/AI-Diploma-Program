@@ -1,5 +1,4 @@
 # Quick Download Guide - Cybersecurity Datasets
-## دليل التحميل السريع - مجموعات بيانات الأمن السيبراني
 
 ---
 
@@ -58,4 +57,3 @@ Both files should be in: `Course 04/datasets/raw/`
 ---
 
 **Last Updated**: Current Session
-

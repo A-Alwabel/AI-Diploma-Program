@@ -1,9 +1,19 @@
-# Unit 2: Policy and Value-Based Methods
+# Unit 2: Prediction and Control without a Model
+
 ## AIAT 123 - Reinforcement Learning
+
+**Unit training hours:** 19 (of 96 total)
+
+This folder is named `unit2-policy-value`; the official unit title is
+**Prediction and Control without a Model**.
 
 ## Bridge from Unit 1
 
-Unit 1 established MDPs, Bellman-style thinking, Gym interaction, and **problem formulation**. Unit 2 uses the same agent–environment loop but focuses on **model-free learning**: sampling trajectories, estimating values from data, and control with methods such as Q-learning and SARSA without assuming a small closed-form world model.
+Unit 1 established MDPs, Bellman-style thinking, Gymnasium interaction, and
+problem formulation. Unit 2 uses the same agent–environment loop but focuses on
+model-free learning: sampling trajectories, estimating values from data, and
+control with methods such as Q-learning and SARSA without assuming a small
+closed-form world model.
 
 ## Before You Start
 
@@ -12,107 +22,43 @@ Make sure you have completed Unit 1 and can already:
 - define an MDP
 - explain states, actions, rewards, and policies
 - interpret value functions
-- work through simple Gym examples
+- work through simple Gymnasium examples
 
 ## Learning Objectives
 
 By the end of this unit, you should be able to:
-- Understand why model-free methods are needed when the environment model is unknown
-- Work with Dynamic Programming foundations and understand their limits
-- Implement Monte Carlo and Temporal Difference (TD) methods
-- Implement Q-learning and SARSA
-- Compare policy iteration and value iteration in small environments
 
----
-
-## Topics Covered
-
-Based on the instructor unit materials and the notebooks included in this
-folder, this unit focuses on model-free prediction and control:
-
-1. **Dynamic Programming Foundations**
-   - Bellman equations
-   - Policy evaluation
-   - Policy iteration
-   - Value iteration
-   - Why DP becomes impractical in large or unknown environments
-
-2. **Monte Carlo Methods**
-   - First-visit vs every-visit estimation
-   - Monte Carlo prediction
-   - Monte Carlo control
-   - Sampling-based value estimation
-
-3. **Temporal Difference (TD) Learning**
-   - TD(0)
-   - n-step TD methods
-   - TD vs Monte Carlo
-   - Bootstrapping and online updates
-
-4. **Q-Learning**
-   - Off-policy learning
-   - Q-table updates
-   - Temporal difference target
-   - Convergence behavior in simple environments
-
-5. **SARSA**
-   - On-policy learning
-   - SARSA update rule
-   - Comparison with Q-learning
-   - Exploration-aware learning behavior
-
-6. **Policy Iteration vs Value Iteration**
-   - Convergence comparison
-   - Computational trade-offs
-   - Small environment experiments
-
-### Note
-
-This folder also includes a short `policy_gradient` notebook as supplemental material.
-The main policy-gradient treatment belongs to `unit3-deep-rl/`.
-
----
+- explain why model-free methods are needed when the environment model is
+  unknown
+- implement Monte Carlo and Temporal Difference (TD) methods for prediction
+- implement Q-learning and SARSA for control
+- compare on-policy and off-policy learning behavior
+- compare policy iteration and value iteration in small environments
 
 ## Study Order
 
-Follow these notebooks in order:
+The notebooks are numbered in study order — follow the numbers:
 
-1. `examples/04_monte_carlo_value_estimation.ipynb`
-2. `examples/05_td_algorithms_td0_nstep.ipynb`
-3. `examples/01_q_learning.ipynb`
-4. `examples/02_sarsa_algorithm.ipynb`
-5. `examples/06_policy_vs_value_iteration_comparison.ipynb`
-
-Why this order:
-
-- Monte Carlo and TD build the model-free prediction ideas first.
-- Q-learning and SARSA then make more sense as control methods built on that
-  intuition.
-- The final comparison notebook helps students connect the control view back to
-  policy/value iteration thinking from smaller environments.
-
-### Supplemental notebooks
-
-You may also see longer descriptive notebook filenames and
-`examples/03_policy_gradient_basics.ipynb`. Treat those as supplemental while
-studying this unit. The core policy-gradient path belongs to Unit 3.
-
-The longer descriptive notebooks are preserved as source/reference notebooks.
-They are not the primary student-facing lessons for this unit and are archived
-under `../DOCS/REFERENCE_NOTEBOOKS/`.
-
-Student rule:
-
-- The required path in this unit is the numbered notebooks listed above.
-- Treat `examples/03_policy_gradient_basics.ipynb` and any
-  long descriptive filenames as supplemental.
+1. `examples/01_monte_carlo_value_estimation.ipynb` — Monte Carlo methods for
+   estimating value functions from sampled episodes
+2. `examples/02_td_algorithms_td0_nstep.ipynb` — TD(0) and n-step TD:
+   bootstrapping and online updates
+3. `examples/03_q_learning.ipynb` — Q-learning: off-policy control with a
+   Q-table
+4. `examples/04_sarsa_algorithm.ipynb` — SARSA: on-policy control and how it
+   differs from Q-learning
+5. `examples/05_policy_vs_value_iteration_comparison.ipynb` — comparing policy
+   iteration and value iteration in small environments
 
 ## Exercise and Quiz
 
 1. Complete `exercises/01_q_learning_exercise.ipynb`
 2. Take `../QUIZZES/quiz_02.md`
 
-**Unit Duration:** 2 weeks  
-**Difficulty:** Advanced  
-**Prerequisites:** Unit 1 completion
+Solutions are released by your instructor.
 
+## Prerequisites
+
+Unit 1 completion.
+
+Next: `../unit3-deep-rl/README.md`

@@ -1,5 +1,4 @@
 # Quiz 04: Dimensionality Reduction
-## اختبار 04: تقليل الأبعاد
 
 **Time Limit:** 45 minutes | **Marks:** 100 points
 
@@ -281,32 +280,6 @@ What are the limitations of PCA? When might you choose an alternative method?
 
 ---
 
-## Answer Key
-
-**Part 1:**
-1. A) Principal Component Analysis
-2. B) Reduce dimensionality while preserving maximum variance
-3. B) New orthogonal directions that capture maximum variance
-4. Complete step-by-step explanation - 15 points
-
-**Part 2:**
-5. B) Problems that arise when working with high-dimensional data
-6. B) All points become approximately equidistant
-7. Problems and solutions explained - 15 points
-
-**Part 3:**
-8. B) Choosing a subset of relevant features
-9. B) Selection keeps original features, extraction creates new features
-10. Three methods with use cases - 15 points
-
-**Part 4:**
-11. Three applications with explanations - 10 points
-12. Limitations and alternatives - 10 points
-
-**Total: 100 points**
-
----
-
 ## Grading Rubric
 
 - **90-100 points:** Excellent understanding
@@ -319,4 +292,3 @@ What are the limitations of PCA? When might you choose an alternative method?
 
 **Created:** 2025  
 **For:** 113 AIAT - Mathematics and Probabilities for Machine Learning
-

@@ -1,293 +1,99 @@
 # AIAT 114 - Machine Learning Algorithms and Applications
-## خوارزميات تعلم الآلة والتطبيقات
 
-## 🚀 NEW STUDENTS: START HERE! | الطلاب الجدد: ابدأ من هنا!
+Course 04 of the AI Diploma. Supervised and unsupervised machine learning with scikit-learn: regression, classification, clustering, dimensionality reduction, model selection, and boosting.
 
-**👉 If you're a new student, read `START_HERE.md` FIRST!**  
-**👉 إذا كنت طالباً جديداً، اقرأ `START_HERE.md` أولاً!**
+**Credit hours: 4 · Contact hours: 6/week · Total training hours: 96 (theory+practical)**
 
-The `START_HERE.md` file contains:
-- ✅ Day 1 setup instructions
-- ✅ Step-by-step installation guide
-- ✅ Learning sequence
-- ✅ Progress tracker
-- ✅ Troubleshooting tips
-
-**Don't skip it!** It will save you time and confusion.
-
-**✅ Official Path:** Follow the unit folders in order (Unit 1 → Unit 5).
+New students: read `START_HERE.md` first.
 
 ---
 
-## Course Overview | نظرة عامة على الدورة
+## Units
 
-This course provides comprehensive training in machine learning algorithms using Python. Students will learn to apply ML techniques to real-world problems through hands-on coding examples and exercises.
+Follow the units in order. Each unit folder has a `README.md`, an `examples/` folder (numbered notebooks), an `exercises/` folder, and a `tests/` folder with the unit test.
 
-**Course Code:** AIAT 114  
-**Language:** Bilingual (Arabic/English)
-**Credit Hours:** 4  
-**Lecture Hours:** 2  
-**Practical Hours:** 4  
-**Total Hours:** 64 (32 theoretical + 32 practical)
+| Unit | Folder | Official title | Hours |
+|------|--------|----------------|-------|
+| 1 | `unit1-regression-algorithms/` | Regression Algorithms | 18 |
+| 2 | `unit2-regression-model-evaluation/` | Regression and Model Evaluation | 19 |
+| 3 | `unit3-classification/` | Classification Algorithms | 19 |
+| 4 | `unit4-clustering/` | Clustering and Dimensionality Reduction | 20 |
+| 5 | `unit5-model-selection/` | Model Selection and Boosting | 20 |
 
-**📚 Official Unit Content:** See `../DETAILED_UNIT_DESCRIPTIONS.md` for detailed theoretical and practical content per unit.
-
-**Unit ↔ Folder Mapping (aligned with Detailed Unit Descriptions):**
-
-| Detailed Unit | Folder | Topic |
-|---------------|--------|-------|
-| Unit 1 | `unit1-data-processing/` | Regression Algorithms |
-| Unit 2 | `unit2-regression/` | Regression and Model Evaluation |
-| Unit 3 | `unit3-classification/` | Classification Algorithms |
-| Unit 4 | `unit4-clustering/` | Clustering and Dimensionality Reduction |
-| Unit 5 | `unit5-model-selection/` | Model Selection and Boosting |
-
-**Unit Breakdown:**
-- Unit 1: 6 theoretical + 6 practical = 12 hours
-- Unit 2: 6 theoretical + 6 practical = 12 hours
-- Unit 3: 6 theoretical + 6 practical = 12 hours
-- Unit 4: 6 theoretical + 6 practical = 12 hours
-- Unit 5: 7 theoretical + 7 practical = 14 hours
+Unit 1 opens with a three-notebook data-processing preflight (loading, cleaning, preprocessing) before the regression notebooks.
 
 ---
 
-
----
-
-## Safety Procedures | إجراءات السلامة
-
-**Important:** Please review the safety procedures before starting any lab work or practical exercises.
-
-**مهم:** يرجى مراجعة إجراءات السلامة قبل بدء أي عمل مخبري أو تمارين عملية.
-
-📖 **Full Safety Guide:** See `../DOCS/SAFETY_PROCEDURES.md` for complete safety procedures and requirements.
-
-**Key Safety Rules:**
-- ✅ Maintain clean, organized workspace
-- ✅ Keep food and drinks away from equipment
-- ✅ Know locations of fire extinguishers and first aid tools
-- ✅ Report safety concerns immediately
-
----
-
-## Prerequisites | المتطلبات الأساسية
-
-**Python Version**: Python 3.8+ required (3.10 or 3.11 recommended)
-
-**Knowledge**: Students should have:
-- Basic Python programming knowledge (variables, functions, classes)
-- Familiarity with NumPy and Pandas (helpful but will be covered)
-
-**Setup**: See `DOCS/` folder for detailed guides and `requirements.txt` for dependencies
-
----
-
-## 📁 Clean Folder Structure | هيكل المجلد النظيف
+## Learning Path
 
 ```
-📦 Course Root
-│
-├── 📄 README.md                        📖 This file
-├── 📄 START_HERE.md                    ⭐ READ THIS FIRST!
-├── 📄 STUDENT_PROGRESS_CHECKLIST.md    ✅ Track progress
-├── 📄 ../requirements.txt              📦 Dependencies (in root directory)
-│
-├── 📓 unit1-data-processing/           📚 Unit 1: Data Processing & Regression
-├── 📓 unit2-regression/                📚 Unit 2: Advanced Regression
-├── 📓 unit3-classification/            📚 Unit 3: Classification Techniques
-├── 📓 unit4-clustering/                📚 Unit 4: Clustering & Dimensionality
-├── 📓 unit5-model-selection/           📚 Unit 5: Model Selection & Boosting
-│
-├── 📖 DOCS/                            📄 Documentation & Guides
-├── 📊 ASSESSMENTS/                     📋 Assessment Rubrics
-├── 📝 QUIZZES/                         ✅ Quizzes
-├── ✅ SELF_ASSESSMENT/                 🔍 Self-Assessment
-├── 🛠️ TESTING/                         🧪 Testing Tools
-└── 📊 META/                            📈 Course Metadata
+START_HERE.md
+    -> Unit 1: Regression Algorithms
+    -> Unit 2: Regression and Model Evaluation
+    -> Unit 3: Classification Algorithms
+    -> Unit 4: Clustering and Dimensionality Reduction
+    -> Unit 5: Model Selection and Boosting
+    -> ASSESSMENTS/ (final exam)
 ```
 
----
-
-## Quick Start | البدء السريع
-
-1. **Read:** `START_HERE.md`
-2. **Install:** Libraries (see `../requirements.txt` and `DOCS/`)
-3. **Start:** `unit1-data-processing/examples/01_data_loading_exploration.ipynb`
-4. **Track:** Use `STUDENT_PROGRESS_CHECKLIST.md`
+Within each unit: read the unit `README.md`, work through `examples/` in numeric order, do the exercises, take the quiz for that unit in `QUIZZES/`, then the unit test in the unit's `tests/` folder.
 
 ---
 
-## 📚 Course Content | محتوى الدورة
+## Prerequisites
 
-### Unit 1: Basic Data Processing Methods and Regression | أساليب معالجة البيانات الأساسية والانحدار
-**Folder**: `unit1-data-processing/`
-
-**Topics Covered**:
-- Data loading and exploration
-- Data cleaning techniques
-- Data preprocessing
-- Linear regression
-- Polynomial regression
-
-**Start Here**: `unit1-data-processing/examples/01_data_loading_exploration.ipynb`
+- AIAT 112 - Python for Artificial Intelligence (Course 02)
+- AIAT 113 - Mathematics and Probability for Machine Learning (Course 03)
+- Comfortable with Python, NumPy, and Pandas
 
 ---
 
-### Unit 2: Advanced Regression Techniques and Model Evaluation | تقنيات الانحدار المتقدمة وتقييم النماذج
-**Folder**: `unit2-regression/`
+## Setup
 
-**Topics Covered**:
-- Ridge regression
-- Lasso regression
-- Cross-validation techniques
-- Model evaluation metrics
+1. Use the repo root virtual environment: `.venv` at the repository root (install with `pip install -r ../requirements.txt` if not already set up).
+2. In Jupyter, select the **ai-diploma** kernel for all notebooks in this course.
+3. Some notebooks use datasets in `datasets/raw/`. Small files are included; for the large CSVs follow `datasets/DOWNLOAD_INSTRUCTIONS.md`.
 
----
-
-### Unit 3: Advanced Classification Techniques and Model Evaluation | تقنيات التصنيف المتقدمة وتقييم النماذج
-**Folder**: `unit3-classification/`
-
-**Topics Covered**:
-- Logistic regression
-- Decision trees
-- Support Vector Machines (SVM)
-- Classification evaluation metrics
+Main libraries: pandas, numpy, scikit-learn, matplotlib, seaborn, xgboost, lightgbm.
 
 ---
 
-### Unit 4: Clustering and Dimensionality Reduction | التجميع وتقليل الأبعاد
-**Folder**: `unit4-clustering/`
+## Course Learning Outcomes (CLOs)
 
-**Topics Covered**:
-- K-means clustering
-- Hierarchical clustering
-- Principal Component Analysis (PCA)
-- Dimensionality reduction techniques
-
----
-
-### Unit 5: Model Selection and Boosting | اختيار النموذج والتعزيز
-**Folder**: `unit5-model-selection/`
-
-**Topics Covered**:
-- Grid search for hyperparameter tuning
-- Boosting algorithms (XGBoost, LightGBM)
-- Model selection strategies
-- Ensemble methods
+- **CLO1:** Apply data processing methodologies (missing data, categorical variables, feature scaling) in machine learning systems.
+- **CLO2:** Demonstrate proficiency in linear and polynomial regression, including interpreting coefficients and assumptions.
+- **CLO3:** Evaluate advanced regression algorithms (Ridge, Lasso, SVR) and select appropriate models for a use case.
+- **CLO4:** Build and evaluate classification models (logistic regression, decision trees, SVM, random forests) using diverse performance metrics.
+- **CLO5:** Implement clustering (K-Means, hierarchical) and dimensionality reduction (PCA) for exploratory data analysis.
+- **CLO6:** Employ model selection strategies (cross-validation, grid search) and boosting (AdaBoost, XGBoost) to improve performance.
+- **CLO7:** Analyze and interpret machine learning results and present recommendations.
 
 ---
 
-## Course Learning Outcomes (CLOs) | مخرجات التعلم
+## Assessment
 
-**The detailed objectives of the training program are: For the trainee to be able to:**
+- **Quizzes:** `QUIZZES/` - one quiz per unit (Quiz 01-05).
+- **Unit tests:** `unit*/tests/` - one written test per unit.
+- **Final exam:** `ASSESSMENTS/Final_Exam.md`.
+- **Projects:** `PROJECTS/` - applied projects with starter templates.
+- **Case study:** `CASE_STUDIES/01_ml_model_selection_case_study.md`.
 
-**CLO1:** Apply data processing methodologies (handling missing data, categorical variables, and feature scaling) effectively in machine learning systems.
-
-**CLO2:** Demonstrate proficiency in linear and polynomial regression models, including interpreting model coefficients and understanding basic assumptions.
-
-**CLO3:** Evaluate advanced regression algorithms (such as Ridge, Lasso, SVR) and select appropriate models based on use cases.
-
-**CLO4:** Build and evaluate classification models (such as logistic regression, decision trees, SVM, random forests) using diverse performance metrics.
-
-**CLO5:** Implement clustering techniques (such as K-means, hierarchical clustering) and dimensionality reduction (PCA, LDA) for exploratory data analysis.
-
-**CLO6:** Employ model selection strategies (such as cross-validation, grid search) and boosting techniques (such as AdaBoost, XGBoost) to improve model performance.
-
-**CLO7:** Analyze and interpret machine learning results, effectively presenting recommendations in business or research contexts.
+Solutions and answer keys are released by your instructor.
 
 ---
 
-## 📄 Course Summary | ملخص الدورة
+## Folder Guide
 
-**Quick Reference:** `COURSE_SUMMARY.md` contains a comprehensive text summary of all course materials (PDFs/PPTX files).  
-**مرجع سريع:** يحتوي `COURSE_SUMMARY.md` على ملخص نصي شامل لجميع مواد الدورة (ملفات PDF/PPTX).
+| Folder | Contents |
+|--------|----------|
+| `unit1-...` to `unit5-...` | Unit notebooks, exercises, and tests |
+| `QUIZZES/` | Unit quizzes |
+| `ASSESSMENTS/` | Final exam |
+| `PROJECTS/` | Course projects and templates |
+| `CASE_STUDIES/` | Case study material |
+| `PRESENTATIONS/SLIDES/` | Official lecture decks (01-15) |
+| `DOCS/` | Dataset quick reference, visualization guide, notebook-PDF mapping |
+| `datasets/` | Datasets and download scripts (see `datasets/DOWNLOAD_INSTRUCTIONS.md`) |
+| `SELF_ASSESSMENT/` | Self-assessment notes |
 
-This summary allows you to:
-- Read course content without opening PDF/PPTX files
-- Search through all materials quickly
-- Review key concepts in text format
-- Use as a study guide
-
----
-
-## Learning Path | مسار التعلم
-
-```
-Python Basics (Prerequisites)
-    ↓
-Unit 1: Data Processing & Regression
-    ↓
-Unit 2: Advanced Regression
-    ↓
-Unit 3: Classification Techniques
-    ↓
-Unit 4: Clustering & Dimensionality Reduction
-    ↓
-Unit 5: Model Selection & Boosting
-    ↓
-Advanced Topics (Deep Learning, NLP, etc.)
-```
-
----
-
-## 📖 Documentation | التوثيق
-
-All documentation is in the `DOCS/` folder:
-- **ASSESSMENT_GUIDE.md** - Assessment guidelines
-- **INSTRUCTOR_GUIDE.md** - Teaching guide
-- **VISUALIZATIONS_GUIDE.md** - Visualization best practices
-- **REAL_WORLD_DATASETS_PLAN.md** - Comprehensive plan for diverse real-world datasets from multiple fields (Finance, Healthcare, E-Commerce, Education, Transportation, etc.)
-- **DATASET_QUICK_REFERENCE.md** - Quick code snippets to load datasets for each unit
-
----
-
-## 📝 Assessment | التقييم
-
-- **Quizzes:** `QUIZZES/` folder
-- **Exercises:** Each unit contains exercises with solutions
-- **Rubrics:** `ASSESSMENTS/` folder
-- **Self-Assessment:** `SELF_ASSESSMENT/` folder
-
----
-
-## 🆘 Need Help? | تحتاج مساعدة?
-
-- **Installation issues?** → Check `DOCS/` folder
-- **Questions?** → See `START_HERE.md` troubleshooting section
-- **Progress tracking?** → Use `STUDENT_PROGRESS_CHECKLIST.md`
-
----
-
-## 📦 Required Libraries | المكتبات المطلوبة
-
-- **Data Processing:** pandas, numpy
-- **Machine Learning:** scikit-learn
-- **Visualization:** matplotlib, seaborn
-- **Advanced ML:** xgboost, lightgbm
-- **Utilities:** jupyter, ipython
-
-See `../requirements.txt` for complete list with versions.
-
----
-
-## 📊 Course Status | حالة الدورة
-
-**Status:** ✅ Complete
-
-- ✅ All 5 units present with examples and exercises
-- ✅ All documentation complete
-- ✅ All assessment materials ready
-- ✅ Clean folder structure
-
----
-
-## 📄 License | الترخيص
-
-Educational use - Tuwaiq Academy
-
----
-
-**Created for**: AIAT 114 - Machine Learning Algorithms and Applications  
-**Language Support**: Arabic & English  
-**Last Updated**: 2025
-
+Track your progress with `STUDENT_PROGRESS_CHECKLIST.md`.

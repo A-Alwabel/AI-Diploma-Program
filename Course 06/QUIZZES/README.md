@@ -1,53 +1,25 @@
 # Course 06 Quizzes
-## اختبارات الدورة 06
 
-This folder contains all course quizzes, organized by unit.
+One quiz per unit. Take each quiz after finishing that unit's examples and exercises.
 
----
+## Quizzes
 
-## Available Quizzes
+| Unit | Quiz file | Topics |
+|------|-----------|--------|
+| 1 | [Quiz_01_Ethics_Foundations.md](Quiz_01_Ethics_Foundations.md) | Ethical frameworks, ethical decision-making, case studies |
+| 2 | [Quiz_02_Bias_Justice.md](Quiz_02_Bias_Justice.md) | Bias detection, fairness metrics, mitigation techniques |
+| 3 | [Quiz_03_Privacy_Security.md](Quiz_03_Privacy_Security.md) | GDPR, differential privacy, privacy-enhancing technologies |
+| 4 | [Quiz_04_Transparency_Accountability.md](Quiz_04_Transparency_Accountability.md) | Explainable AI, SHAP, LIME, accountability frameworks |
+| 5 | [Quiz_05_Governance_Regulations.md](Quiz_05_Governance_Regulations.md) | EU AI Act, AI governance, regulatory compliance |
 
-- **Quiz 01: Foundations of AI Ethics**
-  - File: `Quiz_01_Ethics_Foundations.md`
-  - Topics: Ethical frameworks, ethical decision-making, case studies
+## Format
 
-- **Quiz 02: Bias, Justice, and Discrimination in AI**
-  - File: `Quiz_02_Bias_Justice.md`
-  - Topics: Bias detection, fairness metrics, bias mitigation techniques
-
-- **Quiz 03: Privacy, Security, and Data Protection**
-  - File: `Quiz_03_Privacy_Security.md`
-  - Topics: GDPR, differential privacy, privacy-preserving technologies
-
-- **Quiz 04: Transparency and Accountability**
-  - File: `Quiz_04_Transparency_Accountability.md`
-  - Topics: Explainable AI, SHAP, LIME, accountability frameworks
-
-- **Quiz 05: Governance and Regulations**
-  - File: `Quiz_05_Governance_Regulations.md`
-  - Topics: EU AI Act, AI governance, regulatory compliance
-
----
-
-## Quiz Format
-
-Each quiz follows this structure:
-- **Time Limit:** 30 minutes
-- **Total Points:** 30 points
-- **Format:** Multiple choice, short answer, case analysis
-- **Language:** Bilingual (Arabic/English)
-
----
+Each quiz states its own time limit and points (currently 30 minutes, 30 points) and mixes multiple choice, short answer, and case analysis.
 
 ## How to Use
 
-1. Complete the unit materials and examples first
-2. Review the unit content
-3. Take the quiz without referring to materials
-4. Check your answers using the answer key
-5. Review areas where you scored low
+1. Finish the unit's examples and exercise(s) first.
+2. Take the quiz without referring to the materials.
+3. Review the unit sections for any questions you missed.
 
----
-
-**Last Updated:** 2025
-
+Answer keys are released by your instructor.

@@ -1,5 +1,5 @@
 # Recommended Order for Example Notebooks
-## Aligned with institution slides (Content folder)
+## Aligned with the institution slides in `../PRESENTATIONS/SLIDES/`
 
 Use this order so **examples** match the **slide sequence** you use in class.
 
@@ -8,7 +8,7 @@ Use this order so **examples** match the **slide sequence** you use in class.
 ## ⚠️ Order rule (avoids "it's not connected")
 
 **Always do notebooks in file number order: 01 → 02 → 03 → …** in each unit.  
-**Slide numbers** (08, 01, 02, 06, 19, 23, etc.) are **topic IDs** for which lecture slide a notebook matches—they are **not** the order to follow. So the first notebook in Unit 1 is always `01_deep_learning_fundamentals_…` (which covers slide **08**), then `02_simple_neural_network` (slide **01**), and so on. If students say "it's not connected," point them to this rule: **follow notebook numbers, ignore slide numbers for order.** Optional notebooks (e.g. 07, 08) are done after the core sequence.
+**Slide numbers** (08, 01, 02, 06, 19, 23, etc.) are **topic IDs** for which lecture slide a notebook matches—they are **not** the order to follow. So the first notebook in Unit 1 is always `01_deep_learning_fundamentals_…` (which covers slide **08**), then `02_simple_neural_network` (slide **01**), and so on. If students say "it's not connected," point them to this rule: **follow notebook numbers, ignore slide numbers for order.** Notebooks with no slide counterpart (e.g. Unit 1's 07 and 08) are still part of the numbered path — do every notebook in file order.
 
 ---
 
@@ -21,9 +21,9 @@ Use this order so **examples** match the **slide sequence** you use in class.
 
 ---
 
-## Why 23 slides but a different number of examples?
+## Why 23 mapped slides but a different number of examples?
 
-- **The 23 slides** are lecture slides (theory/topics). They are numbered 01–23 but **presented in a different order** in class (e.g. Unit 1: 08 → 01 → 02 → 06 → 19 → 23). Slide numbers are IDs, not sequence.
+- **The 23 mapped slides** are lecture slides (theory/topics). They are numbered 01–23 but **presented in a different order** in class (e.g. Unit 1: 08 → 01 → 02 → 06 → 19 → 23). Slide numbers are IDs, not sequence. (`../PRESENTATIONS/SLIDES/` holds 27 decks in total; decks 24–27 are additional unmapped decks — see the README there.)
 - **One slide can cover more than one topic** (e.g. Slide 01: "Anatomy of NN, TensorFlow, layers, fit(), loss"). We often use **one notebook per slide** (or per main topic), but not always 1:1.
 - **Sometimes one notebook is used for two slides** (e.g. Slide 04 AutoEncoders + Slide 09 GANs → same notebook `01_gans_and_autoencoders_vaes`; Slide 14 + 15 both Object Detection → `04_transfer_learning_object_detection`). So we can have **fewer** notebooks than slides for that unit.
 - **Sometimes one slide maps to two notebooks** (e.g. Slide 20 Transfer Learning → `05_transfer_learning_cnns` and `06_pretrained_cnn_architectures`). So we can have **more** notebooks than slides.
@@ -52,8 +52,10 @@ Use this order so **examples** match the **slide sequence** you use in class.
 4. `04_activation_functions_and_optimization_algorithms.ipynb`  
 5. `05_backpropagation_detailed.ipynb`  
 6. `06_optimization_techniques.ipynb`  
+7. `07_image_processing_feature_extraction.ipynb`  
+8. `08_forward_and_backward_propagation.ipynb`  
 
-*Then (optional):* `07_image_processing_feature_extraction.ipynb`, `08_forward_and_backward_propagation.ipynb`
+Notebooks 07 and 08 have no slide counterpart but are part of the unit path — 08 (forward and backward propagation) is core material for the unit.
 
 ---
 
@@ -100,8 +102,13 @@ Use this order so **examples** match the **slide sequence** you use in class.
 3. `03_lstm_advanced.ipynb`  
 4. `04_transformer_attention.ipynb`  
 5. `05_bert_finetuning.ipynb`  
+6. `06_gpt_text_generation.ipynb`  
+7. `07_sequence_to_sequence.ipynb`  
+8. `08_text_generation_rnn_lstm_gru.ipynb`  
+9. `09_transformer_models_bert_gpt_nlp.ipynb`  
+10. `10_sentiment_analysis_translation_speech.ipynb`  
 
-*Then (optional; do after 01–05; order among these doesn't matter):* `06_gpt_text_generation.ipynb`, `07_sequence_to_sequence.ipynb`, `08_text_generation_rnn_lstm_gru.ipynb`, `09_transformer_models_bert_gpt_nlp.ipynb`, `10_sentiment_analysis_translation_speech.ipynb`
+Notebooks 06–10 have no single slide counterpart; continue in file order after 01–05.
 
 ---
 
@@ -142,10 +149,10 @@ Use this order so **examples** match the **slide sequence** you use in class.
 
 | Unit | Slide order | Example order (01_, 02_, … = file order) |
 |------|-------------|--------------------------------------------|
-| 1 | 08→01→02→06→19→23 | 01_deep_learning_fundamentals → 02_simple_nn → 03_perceptron_mlp → 04_activation_functions → 05_backprop → 06_optimization |
+| 1 | 08→01→02→06→19→23 | 01_deep_learning_fundamentals → 02_simple_nn → 03_perceptron_mlp → 04_activation_functions → 05_backprop → 06_optimization → 07_image_processing → 08_forward_backward |
 | 2 | 05→10→16→14→15→11→20 | 01_cnn → 02_image_processing → 03_cnn_advanced → 04_object_detection → 05_transfer → 06_pretrained → 07_training |
-| 3 | 21→17→12→03→13 | 01_understanding_sequential → 02_rnn → 03_lstm → 04_transformer_attention → 05_bert |
+| 3 | 21→17→12→03→13 | 01_understanding_sequential → 02_rnn → 03_lstm → 04_transformer_attention → 05_bert → 06–10 in file order |
 | 4 | 04→09→22→18→07 | 01_gans_vaes → 02_vae_anomaly → 03_reinforcement_learning → 04_ethical_concerns |
 | 5 | *(no slides)* | 01 → 02 → 03 → 04 → 05 → 06 → 07 (by file number) |
 
-See also: `INSTITUTION_SLIDES_COMPATIBILITY.md` for full slide ↔ unit mapping.
+The slide decks themselves are in `../PRESENTATIONS/SLIDES/` (see the README there).

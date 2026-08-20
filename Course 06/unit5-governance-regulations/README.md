@@ -1,62 +1,42 @@
-# Unit: Governance and Regulations
-## Governance and Regulations
+# Unit 5: AI Governance, Regulations, and Future Challenges
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+Unit hours: 14 (theory+practical)
 
-Before starting this unit, confirm:
+This unit covers how AI is regulated and governed: global regulations (including the EU AI Act), industry-specific rules, organizational governance frameworks, legal challenges, and implementing governance and compliance in practice.
 
-- [ ] Completed Unit 4: Interpretability, Transparency, and Accountability
-- [ ] Understand ethics, privacy, and bias topics
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
+## Prerequisites
 
-### Learning Objectives | أهداف التعلم
+- Unit 4: Interpretability, Transparency, and Accountability ([../unit4-transparency-accountability/README.md](../unit4-transparency-accountability/README.md))
+- Setup from [../START_HERE.md](../START_HERE.md) (root `.venv` + **ai-diploma** kernel)
 
-By the end of this unit, students will be able to:
-- Understand key concepts in governance and regulations
-- Apply ethical frameworks and methodologies
-- Analyze real-world case studies
-- Implement ethical AI solutions
+## Learning Objectives
 
----
+By the end of this unit, you will be able to:
 
-## Unit Duration | مدة الوحدة
+- Compare major AI regulations across jurisdictions
+- Identify industry-specific regulatory requirements for AI systems
+- Apply AI governance frameworks inside an organization
+- Analyze open legal challenges and formulate compliance measures
 
-**Theoretical Hours:** 7 hours  
-**Practical Hours:** 7 hours  
-**Total Hours:** 14 hours
+## Examples (work in this order)
 
-**Format:** 7 theoretical + 7 practical hours
+1. [examples/01_global_regulations.ipynb](examples/01_global_regulations.ipynb) — Global AI regulations compared, with a regulatory timeline.
+2. [examples/02_industry_regulations.ipynb](examples/02_industry_regulations.ipynb) — Industry-specific AI regulations (healthcare, finance, and others).
+3. [examples/03_governance_frameworks.ipynb](examples/03_governance_frameworks.ipynb) — AI governance frameworks and their components.
+4. [examples/04_legal_challenges.ipynb](examples/04_legal_challenges.ipynb) — Legal challenges in AI governance: liability, IP, and accountability gaps.
+5. [examples/05_ai_governance_frameworks.ipynb](examples/05_ai_governance_frameworks.ipynb) — Implementing AI governance frameworks and compliance checks in code.
 
----
+## Exercises
 
-## Topics Covered | المواضيع المغطاة
+- [exercises/exercise_01.ipynb](exercises/exercise_01.ipynb)
+- [exercises/exercise_02.ipynb](exercises/exercise_02.ipynb) — Regulations in practice
 
-1. **AI Governance Frameworks**
-2. **Regulatory Compliance**
-3. **Industry Standards**
-4. **Risk Management**
-5. **Ethical AI Policies**
+Solutions are released by your instructor.
 
----
+## Quiz
 
-## Files Structure | هيكل الملفات
+- [../QUIZZES/Quiz_05_Governance_Regulations.md](../QUIZZES/Quiz_05_Governance_Regulations.md)
 
-- `examples/`: Complete code examples with explanations
-- `exercises/`: Practice problems for students
-- `solutions/`: Complete solutions to exercises
-- `tests/`: Unit tests
+## Next
 
----
-
-## Learning Path | مسار التعلم
-
-1. **Start with examples** - Understand concepts through code
-2. **Complete exercises** - Practice what you learned
-3. **Review solutions** - Check your work
-4. **Take quizzes** - Test your understanding
-
----
-
-**Unit Duration:** 2 weeks  
-**Difficulty:** Intermediate
+You have finished the units. Continue to the final exam: [../ASSESSMENTS/README.md](../ASSESSMENTS/README.md).

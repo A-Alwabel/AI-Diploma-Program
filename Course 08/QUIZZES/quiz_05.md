@@ -5,7 +5,7 @@
 **Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)  
 **Covers:** Unit 5 (quantization, pruning, distillation, ONNX, serving, Flask/FastAPI).  
 **Concepts from:** Unit 5 examples 01 (optimization), 03 (ONNX), 06 (Flask/FastAPI), 07 (quantization). Unit 5 has no slides; concepts are from the notebooks.  
-**Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -56,7 +56,7 @@ d) To replace the need for a database
 ### Question 5 (30 points)
 Write a **minimal FastAPI** application that: (1) defines a POST endpoint `/predict` that accepts a JSON body with a list of numbers (e.g. `{"features": [0.1, 0.2, 0.3]}`), (2) uses a dummy predictor (e.g. return the sum of the list or a fixed class) and returns a JSON response (e.g. `{"prediction": 0}`). No need to load a real model file.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_05_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -65,14 +65,14 @@ Write a **minimal FastAPI** application that: (1) defines a POST endpoint `/pred
 ### Question 6 (15 points)
 Give **two** trade-offs when deploying a model (e.g. latency vs accuracy, model size vs performance, batch vs real-time).
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_05_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
 ### Question 7 (15 points)
 What is **model pruning**, and what is one benefit and one risk?
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_05_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -81,7 +81,7 @@ What is **model pruning**, and what is one benefit and one risk?
 ### Question 8 (10 points)
 A team deploys a model with **2 s latency** but the product requirement is **200 ms**. Name **two** concrete optimization strategies (e.g. quantization, smaller model, batching) and **one** trade-off to consider.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_05_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 

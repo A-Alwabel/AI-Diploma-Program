@@ -1,6 +1,6 @@
-# PCA Implementation Template | قالب تطبيق PCA
+# PCA Implementation Template
 
-## How to Use | كيفية الاستخدام
+## How to Use
 
 1. **Copy the template** to your project folder
 2. **Use NumPy** for PCA implementation
@@ -10,7 +10,7 @@
 
 ---
 
-## Implementation Order | ترتيب التنفيذ
+## Implementation Order
 
 1. **PCA Core** - Implement PCA algorithm
 2. **Visualization** - Create plots
@@ -19,7 +19,7 @@
 
 ---
 
-## Tips | نصائح
+## Tips
 
 - Understand eigenvalues and eigenvectors
 - Visualize variance explained
@@ -29,4 +29,3 @@
 ---
 
 **Good luck with your project!** 🚀
-

@@ -1,9 +1,8 @@
 # Complete Project Guide: ML Pipeline
-## دليل المشروع الكامل: خط أنابيب تعلم الآلة
 
 ---
 
-## 🎯 Real-World Application | التطبيق في الحياة الواقعية
+## 🎯 Real-World Application
 
 ### Example: House Price Prediction System
 **Imagine you're building a system like Zillow or Redfin that predicts house prices.**
@@ -36,7 +35,6 @@
 ---
 
 ## 🚀 Quick Start (For Experienced Students)
-## البدء السريع (للطلاب ذوي الخبرة)
 
 > 💡 **New to ML pipelines?** Skip to [Complete Tutorial](#-complete-tutorial-for-beginners) section below.
 
@@ -129,7 +127,6 @@ class MLPipeline:
 ---
 
 ## 📚 Complete Tutorial (For Beginners)
-## دليل كامل للمبتدئين
 
 > 💡 **Already familiar with ML pipelines?** See [Quick Start](#-quick-start-for-experienced-students) section above.
 
@@ -549,7 +546,6 @@ if __name__ == "__main__":
 ---
 
 ## 🔗 Course Content Connections
-## روابط محتوى الدورة
 
 ### How This Project Connects to Course Content
 
@@ -570,7 +566,6 @@ if __name__ == "__main__":
 ---
 
 ## 🐛 Troubleshooting
-## حل المشاكل
 
 ### Problem: Data Loading Fails
 **Error:** `FileNotFoundError` or `UnicodeDecodeError`  
@@ -611,7 +606,6 @@ if __name__ == "__main__":
 ---
 
 ## 🎓 Learning Checklist
-## قائمة التعلم
 
 ### Week 1: Foundation
 - [ ] Day 1: Understand ML pipeline concept
@@ -634,7 +628,6 @@ if __name__ == "__main__":
 ---
 
 ## 📊 Evaluation Criteria
-## معايير التقييم
 
 ### Functionality (30%)
 - Pipeline processes data correctly
@@ -669,7 +662,6 @@ if __name__ == "__main__":
 ---
 
 ## 💡 Tips for Success
-## نصائح للنجاح
 
 1. **Start Simple:** Begin with small dataset
 2. **Test Often:** Test each step as you build
@@ -680,7 +672,6 @@ if __name__ == "__main__":
 ---
 
 ## 📖 Resources
-## الموارد
 
 ### Course Content
 - Unit 1: Data Processing & Regression
@@ -696,4 +687,3 @@ if __name__ == "__main__":
 ---
 
 **Good luck building your ML pipeline!** 🚀
-

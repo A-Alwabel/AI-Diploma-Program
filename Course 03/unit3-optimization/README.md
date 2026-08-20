@@ -1,63 +1,55 @@
-# Unit 3: Optimization and Statistical Foundations for Machine Learning
-## التحسين والأسس الإحصائية لتعلم الآلة
+# Unit 3: Optimization and Statistical Foundations for ML
 
-**Note:** This unit is a legacy mirror. The official path is in `modules/module_03/`.
+**Official hours:** 12 (theory+practical)
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+This unit turns the calculus of Unit 2 into practical model training: optimizers, loss functions, regularization, and regression on real datasets — plus the statistical measures and vector similarity math that ML evaluation relies on.
 
-Before starting this unit, confirm:
+---
 
-- [ ] Completed Unit 2: Calculus and Multivariate Calculus
-- [ ] Understand derivatives and gradients
-- [ ] Comfortable with NumPy arrays and vector notation
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
+## Prerequisites
 
-### Learning Objectives | أهداف التعلم
+- Unit 2: Calculus and Multivariate Calculus for ML (derivatives and gradients)
+- Comfortable with NumPy arrays and vector notation
+- Repo-root `.venv` active and the **ai-diploma** Jupyter kernel selected
 
-By the end of this unit, students will be able to:
-- Implement gradient descent for optimization problems
-- Apply regression techniques to fit models on real datasets
+---
+
+## Learning Objectives
+
+By the end of this unit, you will be able to:
+
+- Compare optimizers (SGD, Adam, and variants) on optimization problems
+- Choose and implement loss functions and regularization
 - Compute basic statistical properties of datasets
-- Implement projection and dimensionality reduction techniques in ML
-- Represent images as vectors and compute angles and distances
+- Apply regression techniques to fit models on real datasets
+- Represent images as vectors and compute angles and distances between them
 
 ---
 
-## Unit Duration | مدة الوحدة
+## Notebooks (work through in order)
 
-**Theoretical Hours:** 6 hours  
-**Practical Hours:** 6 hours  
-**Total Hours:** 12 hours
-
-**Format:** 6 theoretical + 6 practical hours
-
----
-
-## Topics Covered | المواضيع المغطاة
-
-1. **Gradient Descent and Model Optimization**
-2. **Regression and Model Fitting**
-3. **Statistical Foundations**
-4. **Image Similarity and Distance Measures**
+1. `examples/00_why_how_after.ipynb` — Unit overview: why optimization and statistics matter for ML, how they are used, what comes after
+2. `examples/01_optimizers_comparison.ipynb` — Comparing optimizers: SGD, Adam, and more
+3. `examples/02_loss_functions.ipynb` — Loss functions and regularization
+4. `examples/03_statistical_measures.ipynb` — Statistical measures for ML
+5. `examples/04_regression_real_datasets.ipynb` — Applying regression techniques to fit models on real datasets
+6. `examples/05_image_similarity_measures.ipynb` — Representing images as vectors and computing angles and distances
 
 ---
 
-## Files Structure | هيكل الملفات
+## Exercises
 
-- `examples/`: Complete code examples with explanations
-- `exercises/`: Practice problems for students
+- `exercises/exercise_01.ipynb`
+- `exercises/exercise_02.ipynb`
 
----
-
-## Learning Path | مسار التعلم
-
-1. **Start with examples** - Understand concepts through code
-2. **Complete exercises** - Practice what you learned
-3. **Review solutions** - Check your work
-4. **Take quizzes** - Test your understanding
+Solutions are released by your instructor.
 
 ---
 
-**Unit Duration:** 2 weeks  
-**Difficulty:** Intermediate
+## Quiz
+
+Take [Quiz 03: Optimization and Statistics](../QUIZZES/Quiz_03_Optimization_Statistics.md) after finishing the exercises. Answer keys are released by your instructor.
+
+---
+
+**Next:** [Unit 4: Dimensionality Reduction and Data Representation Techniques](../unit4-dimensionality-reduction/README.md)

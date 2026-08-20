@@ -125,5 +125,4 @@ These notebooks work much better with GPU:
 
 ---
 
-**Last Updated:** January 2025  
-**Status:** Ready for use
+**For:** Course 08 — AIAT 122

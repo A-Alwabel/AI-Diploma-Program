@@ -1,6 +1,6 @@
-# Expert System Template | قالب نظام خبير
+# Expert System Template
 
-## How to Use | كيفية الاستخدام
+## How to Use
 
 1. **Copy the template** to your project folder
 2. **Read the comments** - they explain what to implement
@@ -10,7 +10,7 @@
 
 ---
 
-## Template Structure | هيكل القالب
+## Template Structure
 
 The template includes:
 - ✅ Rule class - For IF-THEN rules
@@ -21,7 +21,7 @@ The template includes:
 
 ---
 
-## Implementation Order | ترتيب التنفيذ
+## Implementation Order
 
 1. **KnowledgeBase** - Start here, implement basic structure
 2. **Rule class** - Implement rule representation
@@ -31,7 +31,7 @@ The template includes:
 
 ---
 
-## Tips | نصائح
+## Tips
 
 - Choose a simple domain first (weather, medical diagnosis)
 - Start with a few facts and rules
@@ -41,4 +41,3 @@ The template includes:
 ---
 
 **Good luck with your project!** 🚀
-

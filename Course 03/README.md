@@ -1,283 +1,102 @@
-# 113 AIAT - Mathematics and Probabilities for Machine Learning
-## الرياضيات والاحتمالات لتعلم الآلة
+# AIAT 113 - Mathematics and Probability for Machine Learning
 
-## 🚀 NEW STUDENTS: START HERE! | الطلاب الجدد: ابدأ من هنا!
-
-**👉 If you're a new student, read `START_HERE.md` FIRST!**  
-**👉 إذا كنت طالباً جديداً، اقرأ `START_HERE.md` أولاً!**
-
-The `START_HERE.md` file contains:
-- ✅ Day 1 setup instructions
-- ✅ Step-by-step installation guide
-- ✅ Learning sequence
-- ✅ Progress tracker
-- ✅ Troubleshooting tips
-
-**Don't skip it!** It will save you time and confusion.
+**New students: read `START_HERE.md` first.** It walks you through setup and the learning path.
 
 ---
 
-## Course Overview | نظرة عامة على الدورة
+## Course Overview
 
-This course provides a fundamental understanding of the mathematics required for Artificial Intelligence and Machine Learning, with a focus on linear algebra and probabilities. It covers key concepts such as matrices, vectors, eigenvalues, and probability theory.
+This course covers the mathematics behind machine learning: linear algebra, calculus, optimization, dimensionality reduction, and probability with statistical inference. Every unit pairs the theory with runnable Python notebooks.
 
-**Course Code:** 113 AIAT  
-**Language:** Bilingual (Arabic/English)
-**Credit Hours:** 3  
-**Lecture Hours:** 2  
-**Practical Hours:** 2
-
-**✅ Official Path:** Follow the modules in `modules/` (Module 01 → Module 05).
-**Note:** This course uses a **module-based structure** as the official learning path.
-The `unit*` folders in this course are **legacy mirrors** of module content for reference only.
+**Course Code:** AIAT 113
+**Credit hours:** 3 · **Contact hours:** 4/week · **Total training hours:** 64 (theory+practical)
 
 ---
 
+## Prerequisites
 
----
+- Semester 1 program (AIAT 111–116); this course assumes:
+  - Course 01 (AIAT 111) — basic AI concepts
+  - Course 02 (AIAT 112) — Python programming (variables, functions, NumPy basics)
+- High school algebra; prior exposure to calculus helps but is reviewed in Unit 2
 
-## Safety Procedures | إجراءات السلامة
+**Setup:** use the repo-root virtual environment (`.venv`) and select the **ai-diploma** Jupyter kernel when opening notebooks. Verify your setup with:
 
-**Important:** Please review the safety procedures before starting any lab work or practical exercises.
-
-**مهم:** يرجى مراجعة إجراءات السلامة قبل بدء أي عمل مخبري أو تمارين عملية.
-
-📖 **Full Safety Guide:** See `../DOCS/SAFETY_PROCEDURES.md` for complete safety procedures and requirements.
-
-**Key Safety Rules:**
-- ✅ Maintain clean, organized workspace
-- ✅ Keep food and drinks away from equipment
-- ✅ Know locations of fire extinguishers and first aid tools
-- ✅ Report safety concerns immediately
-
----
-
-## Prerequisites | المتطلبات الأساسية
-
-**Python Version**: Python 3.8+ required (3.10 or 3.11 recommended)
-
-**Knowledge**: Students should have:
-- Basic Python programming knowledge (variables, functions, classes)
-- Basic mathematics: High school algebra and calculus
-- Completion of Course 01 recommended (but not required)
-- **Important:** This course should be taken before Course 02 Unit 4 (Optimization Techniques)
-
-**Setup**: See `docs/INSTALLATION_GUIDE.md` for detailed library installation instructions
-
----
-
-## Course Learning Outcomes (CLOs) | مخرجات التعلم
-
-**The detailed objectives of the training program are: For the trainee to be able to:**
-
-**CLO1:** Demonstrate comprehensive understanding of basic mathematical concepts, including linear algebra and probabilities, and their applications in artificial intelligence and machine learning.
-
-**CLO2:** Apply mathematical techniques such as matrix operations, eigenvalue analysis, and multivariable calculus to solve complex problems in machine learning.
-
-**CLO3:** Evaluate and interpret data using statistical methods, including hypothesis testing and confidence intervals, to make informed decisions.
-
-**CLO4:** Use dimensionality reduction techniques such as PCA, SVD, and t-SNE effectively to analyze and visualize high-dimensional datasets.
-
-**CLO5:** Formulate, implement, and optimize machine learning models using gradient descent and other optimization techniques.
-
-**CLO6:** Implement mathematical and statistical algorithms relevant to machine learning, including regression, inner products, and projections using Python libraries.
-
----
-
-## 📁 Course Structure | هيكل الدورة
-
-```
-📦 Course Root
-│
-├── 📄 README.md                        📖 This file
-├── 📄 START_HERE.md                    ⭐ READ THIS FIRST!
-├── 📄 STUDENT_PROGRESS_CHECKLIST.md    ✅ Track progress
-├── 📄 ../requirements.txt              📦 Dependencies (in root directory)
-│
-├── 📓 modules/                          📚 Course Modules (5 modules)
-│   ├── module_01/                      Linear Algebra
-│   ├── module_02/                      Calculus
-│   ├── module_03/                      Optimization & Statistics
-│   ├── module_04/                      Dimensionality Reduction
-│   └── module_05/                      Probabilities & Inference
-│
-├── 📖 docs/                             📄 Documentation
-├── 📊 ASSESSMENTS/                      📋 Assessment Materials
-├── 📝 QUIZZES/                          ✅ Quizzes (5 quizzes)
-├── 🎯 PROJECTS/                         💼 Projects
-├── ✅ SELF_ASSESSMENT/                  🔍 Self-Assessment
-└── 🛠️ TESTING/                          🧪 Testing Tools
+```bash
+python TESTING/verify_installation.py
 ```
 
 ---
 
-## Quick Start | البدء السريع
+## Course Learning Outcomes (CLOs)
 
-1. **Read:** `START_HERE.md`
-2. **Install:** Libraries (see `docs/INSTALLATION_GUIDE.md`)
-3. **Start:** `modules/module_01/notebook_01_why_how_after.ipynb`
-4. **Track:** Use `STUDENT_PROGRESS_CHECKLIST.md`
+By the end of this course, the trainee will be able to:
 
----
-
-## 📚 Course Content | محتوى الدورة
-
-**📚 Official Unit Content:** See `../DETAILED_UNIT_DESCRIPTIONS.md` for detailed theoretical and practical content per unit.
-
-### 🔁 Unit ↔ Module Mapping (for Detailed Unit Descriptions)
-
-The official path uses modules, but the detailed curriculum describes **Units 1–5**. Use this mapping:
-
-| Detailed Unit | Official Module | Topic |
-|---|---|---|
-| Unit 1 | `modules/module_01/` | Linear Algebra |
-| Unit 2 | `modules/module_02/` | Calculus and Multivariable Calculus |
-| Unit 3 | `modules/module_03/` | Optimization & Statistics |
-| Unit 4 | `modules/module_04/` | Dimensionality Reduction |
-| Unit 5 | `modules/module_05/` | Probabilities & Inference |
-
-### Module 01: Linear Algebra for Machine Learning | الجبر الخطي لتعلم الآلة
-**Location**: `modules/module_01/`
-
-**Topics Covered:**
-- Vectors and matrices
-- Matrix operations
-- Eigenvalues and eigenvectors
-- Linear transformations
-
-**Start Here**: `modules/module_01/notebook_01_why_how_after.ipynb`
+1. Demonstrate understanding of basic mathematical concepts, including linear algebra and probability, and their applications in AI and machine learning.
+2. Apply mathematical techniques such as matrix operations, eigenvalue analysis, and multivariate calculus to machine learning problems.
+3. Evaluate and interpret data using statistical methods, including hypothesis testing and confidence intervals.
+4. Use dimensionality reduction techniques such as PCA, SVD, and t-SNE to analyze and visualize high-dimensional datasets.
+5. Formulate, implement, and optimize machine learning models using gradient descent and other optimization techniques.
+6. Implement mathematical and statistical algorithms relevant to machine learning in Python.
 
 ---
 
-### Module 02: Calculus and Multivariable Calculus | التفاضل والتفاضل المتعدد المتغيرات
-**Location**: `modules/module_02/`
+## Units
 
-**Topics Covered:**
-- Derivatives and gradients
-- Chain rule
-- Gradient descent
-- Multivariable optimization
+Follow the units in order; each starts with a `00_why_how_after.ipynb` overview notebook.
 
----
-
-### Module 03: Optimization and Statistical Foundations | التحسين والأسس الإحصائية
-**Location**: `modules/module_03/`
-
-**Topics Covered:**
-- Optimizers (SGD, Adam)
-- Loss functions
-- Regularization
-- Statistical measures
+| Unit | Official Title | Hours | Folder |
+|---|---|---|---|
+| 1 | Linear Algebra for ML and Data Transformations | 12 | [unit1-linear-algebra/](unit1-linear-algebra/README.md) |
+| 2 | Calculus and Multivariate Calculus for ML | 12 | [unit2-calculus/](unit2-calculus/README.md) |
+| 3 | Optimization and Statistical Foundations for ML | 12 | [unit3-optimization/](unit3-optimization/README.md) |
+| 4 | Dimensionality Reduction and Data Representation Techniques | 14 | [unit4-dimensionality-reduction/](unit4-dimensionality-reduction/README.md) |
+| 5 | Probability, Sampling, and Statistical Inference | 14 | [unit5-probability/](unit5-probability/README.md) |
 
 ---
 
-### Module 04: Dimensionality Reduction Techniques | تقنيات تقليص الأبعاد
-**Location**: `modules/module_04/`
-
-**Topics Covered:**
-- Principal Component Analysis (PCA)
-- Curse of dimensionality
-- Feature selection
-- Data representation
-
----
-
-### Module 05: Probabilities and Statistical Inference | الاحتمالات والاستدلال الإحصائي
-**Location**: `modules/module_05/`
-
-**Topics Covered:**
-- Probability distributions
-- Statistical inference
-- Bayesian inference
-- Hypothesis testing
-
----
-
-## 📄 Course Summary | ملخص الدورة
-
-**Quick Reference:** `COURSE_SUMMARY.md` contains a comprehensive text summary of all course materials (PDFs/PPTX files).  
-**مرجع سريع:** يحتوي `COURSE_SUMMARY.md` على ملخص نصي شامل لجميع مواد الدورة (ملفات PDF/PPTX).
-
-This summary allows you to:
-- Read course content without opening PDF/PPTX files
-- Search through all materials quickly
-- Review key concepts in text format
-- Use as a study guide
-
----
-
-## Learning Path | مسار التعلم
+## Course Structure
 
 ```
-Module 01 (Linear Algebra)
-    ↓
-Module 02 (Calculus)
-    ↓
-Module 03 (Optimization & Statistics)
-    ↓
-Module 04 (Dimensionality Reduction)
-    ↓
-Module 05 (Probabilities & Inference)
-    ↓
-Apply to Real ML Projects!
+Course 03/
+├── README.md                        This file
+├── START_HERE.md                    Day 1 guide - read first
+├── STUDENT_PROGRESS_CHECKLIST.md    Track your progress
+├── unit1-linear-algebra/            Unit 1: examples/ + exercises/
+├── unit2-calculus/                  Unit 2: examples/ + exercises/
+├── unit3-optimization/              Unit 3: examples/ + exercises/
+├── unit4-dimensionality-reduction/  Unit 4: examples/ + exercises/
+├── unit5-probability/               Unit 5: examples/ + exercises/
+├── QUIZZES/                         One quiz per unit
+├── ASSESSMENTS/                     Final exam
+├── PROJECTS/                        Three applied projects
+├── CASE_STUDIES/                    Mathematical modeling case study
+├── PRESENTATIONS/                   Lecture slides
+├── SELF_ASSESSMENT/                 Self-check materials
+└── TESTING/                         verify_installation.py
 ```
 
-**Important:** Don't skip modules! Each builds on the previous one.
+---
+
+## Learning Path
+
+`START_HERE.md` → Unit 1 → Unit 2 → Unit 3 → Unit 4 → Unit 5 → `ASSESSMENTS/`
+
+Within each unit: read the unit README → run the examples in numeric order → do the exercises → take the unit quiz. Don't skip units; each builds on the previous one.
 
 ---
 
-## 📖 Documentation | التوثيق
+## Assessment
 
-All documentation is in the `docs/` folder:
-- **INSTALLATION_GUIDE.md** - Detailed installation instructions
-- **QUICK_REFERENCE.md** - One-page quick reference
-- **FAQ.md** - Frequently asked questions
-- **README.md** - Documentation overview
+- **Quizzes:** one per unit in [QUIZZES/](QUIZZES/README.md)
+- **Exercises:** in each unit's `exercises/` folder
+- **Projects:** three applied projects in [PROJECTS/](PROJECTS/README.md)
+- **Final exam:** [ASSESSMENTS/Final_Exam.md](ASSESSMENTS/Final_Exam.md)
 
----
-
-## 📝 Assessment | التقييم
-
-- **Quizzes:** `QUIZZES/` folder (5 quizzes, one per module)
-- **Tests:** Each module contains tests
-- **Exercises:** Practice problems in each module's `exercises/` folder
-- **Final Exam:** Comprehensive exam covering all modules
+Answer keys and exercise solutions are released by your instructor.
 
 ---
 
-## 🆘 Need Help? | تحتاج مساعدة?
+## Required Libraries
 
-- **Installation issues?** → `docs/INSTALLATION_GUIDE.md`
-- **Questions?** → `docs/FAQ.md`
-- **Quick reference?** → `docs/QUICK_REFERENCE.md`
-- **Progress tracking?** → Use `STUDENT_PROGRESS_CHECKLIST.md`
-
----
-
-## 📦 Required Libraries | المكتبات المطلوبة
-
-- **Mathematics:** numpy, scipy, sympy
-- **Statistics:** statsmodels
-- **Machine Learning:** scikit-learn
-- **Visualization:** matplotlib, seaborn
-- **Jupyter:** jupyter, ipython, ipywidgets
-
-See `../requirements.txt` for complete list with versions.
-
----
-
-## 📊 Course Status | حالة الدورة
-
-**Status:** ✅ Complete
-
-- ✅ All 5 modules present with examples and exercises
-- ✅ All documentation complete
-- ✅ All assessment materials ready
-- ✅ Clean folder structure
-
----
-
-**Created for**: 113 AIAT - Mathematics and Probabilities for Machine Learning  
-**Language Support**: Arabic & English  
-**Last Updated**: 2025
-
+numpy, scipy, sympy, statsmodels, scikit-learn, matplotlib, seaborn, jupyter — all installed in the repo-root `.venv` (see `../requirements.txt`).

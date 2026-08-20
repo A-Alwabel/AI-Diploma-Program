@@ -1,6 +1,6 @@
-# Project 01: Implement ML Algorithms from Scratch | المشروع 01: تنفيذ خوارزميات تعلم الآلة من الصفر
+# Project 01: Implement ML Algorithms from Scratch
 
-## Overview | نظرة عامة
+## Overview
 
 Implement core machine learning algorithms from scratch using only NumPy, demonstrating understanding of the mathematical foundations.
 
@@ -13,7 +13,7 @@ Implement core machine learning algorithms from scratch using only NumPy, demons
 
 ---
 
-## Requirements | المتطلبات
+## Requirements
 
 ### Functional Requirements
 1. **Linear Regression**
@@ -38,7 +38,7 @@ Implement core machine learning algorithms from scratch using only NumPy, demons
 
 ---
 
-## Deliverables | المخرجات
+## Deliverables
 
 1. **Source Code**
    - `linear_regression.py` - Linear regression
@@ -59,6 +59,4 @@ Implement core machine learning algorithms from scratch using only NumPy, demons
 
 ---
 
-**Created**: 2025  
-**For**: Mathematics and Probabilities for Machine Learning - 113 AIAT
-
+**For**: AIAT 113 - Mathematics and Probability for Machine Learning

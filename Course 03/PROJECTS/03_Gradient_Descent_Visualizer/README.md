@@ -1,6 +1,6 @@
-# Project 03: Gradient Descent Visualizer | المشروع 03: مصور نزول التدرج
+# Project 03: Gradient Descent Visualizer
 
-## Overview | نظرة عامة
+## Overview
 
 Create an interactive visualization tool for understanding gradient descent and optimization algorithms.
 
@@ -13,7 +13,7 @@ Create an interactive visualization tool for understanding gradient descent and 
 
 ---
 
-## Requirements | المتطلبات
+## Requirements
 
 ### Functional Requirements
 1. **Visualization**
@@ -38,7 +38,7 @@ Create an interactive visualization tool for understanding gradient descent and 
 
 ---
 
-## Deliverables | المخرجات
+## Deliverables
 
 1. **Source Code**
    - `optimizer.py` - Optimizer implementations
@@ -58,6 +58,4 @@ Create an interactive visualization tool for understanding gradient descent and 
 
 ---
 
-**Created**: 2025  
-**For**: Mathematics and Probabilities for Machine Learning - 113 AIAT
-
+**For**: AIAT 113 - Mathematics and Probability for Machine Learning

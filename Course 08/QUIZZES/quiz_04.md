@@ -5,7 +5,7 @@
 **Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)  
 **Covers:** Unit 4 (GANs, VAEs, reinforcement learning, ethics: bias, fairness, interpretability).  
 **Concepts from:** Unit 4 examples 01 (GANs/VAEs), 02 (VAE anomaly), 03 (RL), 04 (ethics) and related slides.  
-**Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -56,7 +56,7 @@ d) Only for image models
 ### Question 5 (30 points)
 Outline or write the key steps (in code or pseudocode) to **fine-tune a pre-trained model** for a new classification task: load a pre-trained model (e.g. ResNet or BERT), add or replace the head for your number of classes, and run training for a few epochs. You may use Keras/TF or PyTorch.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_04_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -65,14 +65,14 @@ Outline or write the key steps (in code or pseudocode) to **fine-tune a pre-trai
 ### Question 6 (15 points)
 Explain **one** ethical concern when deploying a deep learning model (e.g. bias, fairness, or interpretability) and why it matters.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_04_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
 ### Question 7 (15 points)
 What is **interpretability** in the context of deep learning, and name one reason we might need it (e.g. regulation, debugging, user trust).
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_04_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -81,7 +81,7 @@ What is **interpretability** in the context of deep learning, and name one reaso
 ### Question 8 (10 points)
 A hospital deploys a **skin lesion classifier** that works well overall but has **much lower recall for one skin type**. What ethical and technical steps would you recommend (e.g. evaluation, data, or fairness metrics)?
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_04_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 

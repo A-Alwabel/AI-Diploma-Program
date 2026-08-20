@@ -1,52 +1,30 @@
-# Unit 1: NLP Fundamentals | أساسيات معالجة اللغة الطبيعية
+# Unit 1: Introduction to NLP
+## AIAT 121 — Natural Language Processing
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+Unit hours: 12 (theory+practical)
 
-Before starting this unit, confirm:
+## What This Unit Teaches
 
-- [ ] Completed Semester 1 courses (01-06)
-- [ ] Comfortable with Python and basic ML concepts
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Read `Course 07/START_HERE.md`
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
+An introduction to Natural Language Processing: what NLP is, where it is used, and the text preprocessing steps that prepare raw text for downstream tasks — cleaning, normalization, tokenization, stop-word handling, and stemming.
 
-### Learning Objectives | أهداف التعلم
+This unit currently has one example notebook; additional content is being authored.
 
-By the end of this unit, students will be able to:
-- Understand what Natural Language Processing is
-- Perform text preprocessing (tokenization, normalization)
-- Understand word embeddings basics
-- Work with text data in Python
-- Apply basic NLP techniques
+## Examples (run in order)
 
----
+1. `examples/01_text_preprocessing.ipynb` — Clean and normalize text (lowercasing, punctuation, whitespace) and build a basic preprocessing pipeline using Python's `re` and `string` modules.
 
-## Topics Covered | المواضيع المغطاة
+## Exercise
 
-1. **Introduction to NLP**
-   - What is NLP?
-   - NLP applications
-   - Challenges in NLP
+- `exercises/01_text_preprocessing_exercise.ipynb` — Apply the preprocessing pipeline to raw text yourself.
 
-2. **Text Preprocessing**
-   - Tokenization
-   - Lowercasing
-   - Removing punctuation
-   - Stop word removal
-   - Stemming and Lemmatization
+## Quiz
 
-3. **Text Representation**
-   - Bag of Words
-   - TF-IDF
-   - Word embeddings introduction
+- `../QUIZZES/quiz_01.md` — Unit 1 quiz (45 minutes, 100 points).
 
-4. **Basic NLP Tasks**
-   - Text classification basics
-   - Sentiment analysis introduction
-   - Language detection
+Solutions and answer keys are released by your instructor.
 
----
+## Prerequisites
 
-**Unit Duration:** 2 weeks  
-**Difficulty:** Intermediate  
-**Prerequisites:** Completion of Semester 1 courses
+- Semester 1 (AIAT 111–116)
+- Python programming basics
+- Notebooks run on the **ai-diploma** Jupyter kernel (repository root `.venv`)

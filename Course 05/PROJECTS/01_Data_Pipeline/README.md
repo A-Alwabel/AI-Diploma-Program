@@ -1,6 +1,6 @@
-# Project 01: Scalable Data Pipeline | المشروع 01: خط أنابيب البيانات القابل للتوسع
+# Project 01: Scalable Data Pipeline
 
-## Overview | نظرة عامة
+## Overview
 
 Build a scalable data processing pipeline that can handle large datasets using pandas, Dask, and RAPIDS (cuDF).
 
@@ -13,7 +13,7 @@ Build a scalable data processing pipeline that can handle large datasets using p
 
 ---
 
-## Requirements | المتطلبات
+## Requirements
 
 ### Functional Requirements
 1. **Data Loading**
@@ -43,7 +43,7 @@ Build a scalable data processing pipeline that can handle large datasets using p
 
 ---
 
-## Deliverables | المخرجات
+## Deliverables
 
 1. **Source Code**
    - `data_loader.py` - Large data loading
@@ -66,4 +66,3 @@ Build a scalable data processing pipeline that can handle large datasets using p
 
 **Created**: 2025  
 **For**: Scalable Data Science - AIAT 115
-

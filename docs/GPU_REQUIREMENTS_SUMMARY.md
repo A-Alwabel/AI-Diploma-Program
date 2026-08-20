@@ -1,158 +1,96 @@
-# GPU Requirements Summary Across All Courses
-## ملخص متطلبات GPU عبر جميع الدورات
+# GPU Requirements Summary
 
-**Last Updated:** January 2025
+Which courses use a GPU, and how to get one for free with Google Colab.
 
----
-
-## 📊 Quick Summary
-
-| Course | GPU Required? | Colab Support | Notes |
-|--------|---------------|---------------|-------|
-| **Course 05** | ✅ **Yes** | ✅ Yes | cuDF, RAPIDS, GPU-accelerated ML |
-| **Course 08** | ⚠️ **Strongly Recommended** | ✅ Yes | Deep Learning training (10-100x faster) |
-| **Course 10** | ⚠️ **Strongly Recommended** | ✅ Yes | Generative AI (GANs, VAEs, Stable Diffusion) |
-| **Courses 01-04, 06-07, 09, 11-12** | ❌ **No** | N/A | Work perfectly on CPU |
+**Last Updated:** 2026-08
 
 ---
 
-## 🎯 Detailed Breakdown
+## Quick Summary
 
-### ✅ Course 05: Scalable Data Science
-**GPU Required:** Yes (for cuDF/RAPIDS features)
+| Course | GPU needed? | Colab guide | Notes |
+|--------|-------------|-------------|-------|
+| **Course 05** | For the cuDF/RAPIDS notebooks only | `Course 05/DOCS/COLAB_SETUP.md` | Every GPU notebook has a pandas CPU fallback |
+| **Course 08** | Strongly recommended | `Course 08/DOCS/COLAB_SETUP.md` | Deep learning training is 10–100x faster on GPU |
+| **Course 10** | Strongly recommended | `Course 10/DOCS/COLAB_SETUP.md` | GAN/VAE/diffusion training is impractical on CPU |
+| **All other courses** | No | — | Run fine on any CPU |
 
-**GPU Notebooks:**
-- `03_cudf_introduction.ipynb` - cuDF (GPU DataFrames)
-- `07_cudf_import_export_gpu.ipynb` - cuDF import/export
-- `13_cpu_vs_gpu_ml.ipynb` - GPU machine learning
-- `16_rapids_workflows.ipynb` - RAPIDS workflows
-
-**Colab Support:** ✅ Complete
-- Setup guide: `Course 05/DOCS/COLAB_SETUP.md`
-- Auto-setup cells in all GPU notebooks
-- Automatic RAPIDS installation
-
-**Fallback:** All notebooks work on CPU with pandas (slower but functional)
+**Bottom line:** you can complete the entire program without owning a GPU —
+use Google Colab for the notebooks that need one.
 
 ---
 
-### ⚠️ Course 08: Deep Learning
-**GPU Required:** Strongly Recommended (training is 10-100x faster)
+## Detailed Breakdown
 
-**GPU-Beneficial Notebooks:**
-- `04_perceptron_mlp_tensorflow_pytorch_setup.ipynb` - Framework setup
-- `03_gpt_text_generation.ipynb` - GPT/Transformers
-- All CNN notebooks - Image classification training
-- All RNN notebooks - Sequence modeling training
-- All Transformer notebooks - Attention mechanisms
+### Course 05: Scalable Data Science
 
-**Colab Support:** ✅ Complete
-- Setup guide: `Course 08/DOCS/COLAB_SETUP.md`
-- Auto-setup cells in key notebooks
-- TensorFlow/PyTorch with GPU support
+**GPU used by:** the cuDF/RAPIDS notebooks, including:
 
-**Fallback:** Works on CPU but training is very slow (hours/days instead of minutes)
+- `unit1-introduction/examples/03_cudf_introduction.ipynb`
+- `unit2-cleaning/examples/07_cudf_import_export_gpu.ipynb`
+- `unit5-scaling/examples/04_rapids_workflows.ipynb`
 
----
+**Fallback:** every cuDF notebook falls back to pandas on CPU — slower, but the
+whole course is completable without a GPU. Dask notebooks are CPU-based.
 
-### ⚠️ Course 10: Generative AI
-**GPU Required:** Strongly Recommended (training is extremely slow on CPU)
+### Course 08: Deep Learning
 
-**GPU-Beneficial Notebooks:**
-- `02_image_generation_advanced.ipynb` - Stable Diffusion
-- All GAN notebooks - GAN training
-- All VAE notebooks - VAE training
-- Text generation notebooks - Large language models
+**GPU helps with:** training CNNs, RNNs, and transformers. All notebooks run on
+CPU, but training-heavy ones take much longer.
 
-**Colab Support:** ✅ Complete
-- Setup guide: `Course 10/DOCS/COLAB_SETUP.md`
-- Auto-setup cells in key notebooks
-- Diffusers, Transformers with GPU support
+**Local note:** on this repository's reference setup, TensorFlow notebooks run
+on the separate `tfenv` kernel (see [SETUP_GUIDE.md](SETUP_GUIDE.md)); PyTorch
+notebooks run on the main `ai-diploma` kernel. On Colab, both frameworks are
+preinstalled with GPU support.
 
-**Fallback:** Works on CPU but training can take days/weeks (not practical)
+### Course 10: Generative AI
 
----
+**GPU helps with:** GAN and VAE training, diffusion models, and larger
+language-model examples. CPU training of these models can take days — use Colab.
 
-### ❌ Courses 01-04, 06-07, 09, 11-12
-**GPU Required:** No
+### All other courses (01–04, 06, 07, 09, 11, 12)
 
-**Status:** 
-- ✅ Work perfectly on CPU
-- ✅ No GPU libraries needed
-- ✅ No Colab setup required
-
-**Notes:**
-- These courses use standard Python libraries (NumPy, Pandas, scikit-learn)
-- No GPU acceleration needed
-- All notebooks run smoothly on any computer
+- Standard scientific Python (NumPy, pandas, scikit-learn, etc.)
+- No GPU needed; everything runs on a normal laptop
+- Course 09's RL environments (`gymnasium` classic-control) are CPU-friendly
 
 ---
 
-## 🚀 How to Use Google Colab
+## Using Google Colab
 
-### For Course 05 (RAPIDS/cuDF):
-1. Open notebook in Colab
-2. Enable GPU: Runtime → Change runtime type → GPU
-3. Run Colab setup cell (auto-installs RAPIDS)
-4. Restart runtime and run notebook
+1. Upload or open the notebook in [Colab](https://colab.research.google.com/)
+2. Enable GPU: **Runtime → Change runtime type → GPU**
+3. Run the course's Colab setup cell (each GPU course's
+   `DOCS/COLAB_SETUP.md` explains what to install)
+4. Run the notebook top to bottom
 
-### For Course 08 (Deep Learning):
-1. Open notebook in Colab
-2. Enable GPU: Runtime → Change runtime type → GPU
-3. Run Colab setup cell (installs TensorFlow/PyTorch)
-4. Restart runtime and run notebook
+**Free-tier tips:**
 
-### For Course 10 (Generative AI):
-1. Open notebook in Colab
-2. Enable GPU: Runtime → Change runtime type → GPU
-3. Run Colab setup cell (installs diffusers/transformers)
-4. Restart runtime and run notebook
+- GPU time is limited and resets daily — save your work often
+- Mount Google Drive to keep outputs between sessions
+- If quota runs out, switch to CPU for reading/small cells and come back later
 
 ---
 
-## 💡 Recommendations
+## For Students With a Local NVIDIA GPU
 
-### For Students Without GPU:
-1. **Use Google Colab** - Free GPU access (12 hours/day)
-2. **Follow setup guides** - Each course has `DOCS/COLAB_SETUP.md`
-3. **Enable GPU first** - Before running notebooks
-4. **Save work frequently** - Colab sessions can timeout
+1. Install the CUDA-enabled build of PyTorch
+   ([pytorch.org](https://pytorch.org/get-started/locally/))
+2. Verify:
 
-### For Students With GPU:
-1. **Local installation** - Follow course-specific setup guides
-2. **Verify GPU access** - Check CUDA/GPU detection
-3. **Monitor GPU usage** - Use `nvidia-smi` or similar tools
-4. **Optimize batch sizes** - Based on GPU memory
+   ```python
+   import torch
+   print(torch.cuda.is_available())
+   ```
 
----
-
-## 📚 Setup Guides
-
-- **Course 05:** `Course 05/DOCS/COLAB_SETUP.md`
-- **Course 08:** `Course 08/DOCS/COLAB_SETUP.md`
-- **Course 10:** `Course 10/DOCS/COLAB_SETUP.md`
+3. Monitor memory with `nvidia-smi`; lower batch sizes if you hit
+   out-of-memory errors
+4. RAPIDS/cuDF (Course 05) requires a supported CUDA version — see
+   <https://rapids.ai/>
 
 ---
 
-## ✅ Summary
+## Related Documents
 
-**Only 3 courses need GPU:**
-- ✅ **Course 05** - Required (cuDF/RAPIDS)
-- ⚠️ **Course 08** - Strongly recommended (Deep Learning)
-- ⚠️ **Course 10** - Strongly recommended (Generative AI)
-
-**All 3 courses now have:**
-- ✅ Colab setup guides
-- ✅ Auto-setup cells in notebooks
-- ✅ Clear GPU instructions
-- ✅ CPU fallback options (where possible)
-
-**Other 9 courses:**
-- ✅ No GPU needed
-- ✅ Work perfectly on CPU
-- ✅ Standard Python libraries only
-
----
-
-**Last Updated:** January 2025  
-**Status:** Complete - All GPU courses have Colab support
+- [SETUP_GUIDE.md](SETUP_GUIDE.md) — environment setup, kernels
+- [TROUBLESHOOTING_GUIDE.md](TROUBLESHOOTING_GUIDE.md) — GPU errors and fixes

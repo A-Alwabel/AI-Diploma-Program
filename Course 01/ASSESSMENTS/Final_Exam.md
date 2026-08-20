@@ -1,4 +1,4 @@
-# Final Exam: Introduction to AI Applications and Concepts
+# Final Exam: Introduction to Artificial Intelligence and Applications
 ## AIAT 111
 
 **Time Limit:** 2 hours  

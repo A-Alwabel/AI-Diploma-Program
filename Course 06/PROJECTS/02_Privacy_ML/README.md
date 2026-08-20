@@ -1,6 +1,6 @@
-# Project 02: Privacy-Preserving ML System | المشروع 02: نظام تعلم الآلة الحافظ للخصوصية
+# Project 02: Privacy-Preserving ML System
 
-## Overview | نظرة عامة
+## Overview
 
 Implement a machine learning system with privacy-preserving techniques including differential privacy.
 
@@ -13,7 +13,7 @@ Implement a machine learning system with privacy-preserving techniques including
 
 ---
 
-## Requirements | المتطلبات
+## Requirements
 
 ### Functional Requirements
 1. **Privacy Techniques**
@@ -36,7 +36,7 @@ Implement a machine learning system with privacy-preserving techniques including
 
 ---
 
-## Deliverables | المخرجات
+## Deliverables
 
 1. **Source Code**
    - `privacy_techniques.py` - Privacy implementations
@@ -57,5 +57,4 @@ Implement a machine learning system with privacy-preserving techniques including
 ---
 
 **Created**: 2025  
-**For**: Ethics of Artificial Intelligence - AIAT 116
-
+**For**: AIAT 116 — Artificial Intelligence Ethics

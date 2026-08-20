@@ -1,5 +1,4 @@
 # Course 04 Datasets
-## مجموعات بيانات الدورة 04
 
 This directory contains all datasets used in Course 04 notebooks.
 
@@ -10,12 +9,10 @@ This directory contains all datasets used in Course 04 notebooks.
 ```
 datasets/
 ├── raw/              # Original downloaded datasets
-├── processed/        # Processed/cleaned datasets (if needed)
 ├── download_datasets.py      # Automated download script (direct URLs)
 ├── download_kaggle_datasets.py  # Automated Kaggle download script
 ├── DOWNLOAD_INSTRUCTIONS.md  # Manual download instructions
 ├── KAGGLE_DOWNLOAD_GUIDE.md  # Kaggle-specific download guide
-├── CRIME_DATASET_ALTERNATIVES.md  # Crime dataset alternatives
 └── README.md         # This file
 ```
 
@@ -155,8 +152,6 @@ For other datasets (GTD, UNSW-NB15, CICIDS2017, 911 Calls, Border Data), see `DO
 
 - **[DOWNLOAD_INSTRUCTIONS.md](DOWNLOAD_INSTRUCTIONS.md)** - Complete download instructions for all datasets
 - **[KAGGLE_DOWNLOAD_GUIDE.md](KAGGLE_DOWNLOAD_GUIDE.md)** - Detailed Kaggle download guide with URLs
-- **[CRIME_DATASET_ALTERNATIVES.md](CRIME_DATASET_ALTERNATIVES.md)** - Crime dataset alternatives documentation
-- **[Dataset Research](../DOCS/DEEP_DATASET_RESEARCH_INTERNATIONAL.md)** - Full research documentation
 
 ---
 

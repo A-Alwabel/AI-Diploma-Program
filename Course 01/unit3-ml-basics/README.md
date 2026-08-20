@@ -1,14 +1,28 @@
 # Unit 3: AI Concepts, Terminology, and Application Domains Part 2
-## الوحدة 3: مفاهيم الذكاء الاصطناعي والمصطلحات ومجالات التطبيق (الجزء 2)
 
-**Canonical Unit 3 folder** (aligned with [DETAILED_UNIT_DESCRIPTIONS.md](../../DETAILED_UNIT_DESCRIPTIONS.md)).
+**Course:** AIAT 111 · **Unit hours:** 12 (6 theory + 6 practical)
 
-Topics: Regression vs classification, prediction vs explanation, hypothesis space, loss functions, optimization, deep learning intro, perceptron, XOR, Keras.
+Core machine learning concepts continued: regression vs classification, then the neuron and perceptron, the XOR problem, and solving it with a small neural network in Keras.
+
+**Prerequisites:** Unit 2 (`../unit2-ai-concepts/README.md`).
+
+**Kernels:** notebook 01 runs on the `ai-diploma` kernel; notebooks 02 and 03 use TensorFlow/Keras and run on the `tfenv` kernel (see `../START_HERE.md`).
 
 ---
 
-**المواضيع:** الانحدار مقابل التصنيف، التنبؤ مقابل التفسير، فضاء الفرضيات، دوال الخسارة، التحسين، مقدمة التعلم العميق، البِرسِپترون، XOR، Keras.
+## Notebooks (run in order)
 
-**Examples:** `examples/` — regression/classification, perceptron, XOR with Keras.
+| # | Notebook | What it covers |
+|---|----------|----------------|
+| 01 | `examples/01_regression_classification.ipynb` | Regression vs classification |
+| 02 | `examples/02_perceptron_xor.ipynb` | The neuron, the perceptron, and why XOR is hard (`tfenv` kernel) |
+| 03 | `examples/03_solving_xor_keras.ipynb` | Solving XOR with a neural network in Keras (`tfenv` kernel) |
 
-Follow **`../START_HERE.md`** for the learning sequence.
+---
+
+## After the Notebooks
+
+1. **Exercise:** `exercises/exercise_01.ipynb`. Solutions are released by your instructor.
+2. **Quiz:** `quizzes/quiz_03.md`
+
+Then continue to Unit 4: `../unit4-neural-networks-basics/README.md`.

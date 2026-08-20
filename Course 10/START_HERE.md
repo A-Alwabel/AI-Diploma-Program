@@ -1,71 +1,62 @@
-# START HERE! | ابدأ من هنا!
+# START HERE
 
-## 👋 Welcome! | مرحباً!
+Welcome to AIAT 124 — Generative Artificial Intelligence (Semester 2 of the
+AI Diploma).
 
-This course is part of Semester 2 of the AI Diploma Program.
+Credit hours: 3 · Contact hours: 4/week · Total training hours: 64 (theory+practical)
 
-**✅ Official Path:** Follow the unit folders in order (Unit 1 → Unit 5).  
-**📚 Official unit structure:** See **README.md** (Unit ↔ Folder mapping) and `../DETAILED_UNIT_DESCRIPTIONS.md` for learning outcomes per unit.
+## Prerequisites
 
----
+- Semester 1 (AIAT 111–116)
+- AIAT 122 — Deep Learning (Course 08): PyTorch, CNNs, training loops
 
-## 🚀 Student Quick Start (3 steps)
+## Setup
 
-1. **Read README.md** — Course overview, unit mapping, and what you'll learn.
-2. **Set up your environment** — Install dependencies below. For free GPU: use **Google Colab**.
-3. **Start Unit 1** — Open `unit1-generative-fundamentals/README.md` and do the example notebooks in file order (01, 02, 03, …).
-
-### Required packages
+Use the repo root virtual environment and the **ai-diploma** Jupyter kernel:
 
 ```bash
-pip install numpy matplotlib
-pip install torch torchvision        # PyTorch (all notebooks)
-pip install scikit-learn
+cd "AI Diploma"                      # repo root
+source .venv/bin/activate
+jupyter lab                          # select the "ai-diploma" kernel in notebooks
 ```
 
-### Verify setup
+Required packages:
+
+```bash
+pip install numpy pandas matplotlib scikit-learn
+pip install torch torchvision
+pip install transformers             # used in Unit 2 (fine-tuning lesson)
+```
+
+Optional: `pip install openai` — only if you want to run the OpenAI API parts
+of the Unit 2 prompt-engineering lesson (an API key is required; the lesson
+also works with Hugging Face Transformers).
+
+Verify:
 
 ```python
-import torch, torchvision, numpy
+import numpy, pandas, sklearn, torch, torchvision, transformers
 print("PyTorch:", torch.__version__)
-print("torchvision:", torchvision.__version__)
 ```
 
-> **Note:** This course does NOT require TensorFlow, Hugging Face `diffusers`, or `transformers`. All notebooks use pure PyTorch.
+**GPU:** GAN/VAE/diffusion training is slow on CPU. If you have no local GPU,
+use Google Colab — see `DOCS/COLAB_SETUP.md`.
 
----
+## Learning Path
 
-## 📋 Prerequisites | المتطلبات الأساسية
+1. Read `README.md` — course overview, units, and CLOs.
+2. Work the units in order. In each unit:
+   1. Read the unit `README.md`.
+   2. Do the `examples/` notebooks in file order (01, 02, 03, ...).
+   3. Do the `exercises/` notebook.
+   4. Take the unit quiz in `QUIZZES/`.
+3. Units, in order:
+   - `unit1-generative-fundamentals/` — Introduction to Generative AI
+   - `unit2-text-generation/` — Text and Language Generation
+   - `unit3-image-generation/` — Image and Visual Generation
+   - `unit4-ethics-regulations/` — Ethical and Regulatory Considerations
+   - `unit5-future-trends/` — Future Trends and Research in Generative AI
+4. Finish with the final exam in `ASSESSMENTS/`.
 
-**Before starting this course, you must have completed:**
-- All Semester 1 courses (AIAT 111–116)
-- Course 08 — Deep Learning (especially CNNs and PyTorch)
-- Course 09 — Reinforcement Learning (helpful but not strictly required)
-
----
-
-## 📚 Learning Path | مسار التعلم
-
-1. **Read README.md** — Understand course overview and goals.
-2. **Review prerequisites** — Make sure you're comfortable with PyTorch and deep learning.
-3. **Start with Unit 1** — Generative Fundamentals: GANs, VAEs, latent spaces, evaluation metrics.
-4. **Unit 2** — Text and Language Generation: language models, GPT-style generation, BLEU/perplexity.
-5. **Unit 3** — Image and Visual Generation: advanced image generation, DDPM, diffusion concepts.
-6. **Unit 4** — Ethical and Regulatory Considerations: bias, fairness, deepfakes, regulations.
-7. **Unit 5** — Future Trends and Research: multimodal models, emerging architectures.
-8. **Complete exercises** — Practice what you learn in each unit.
-9. **Take quizzes** — Test your understanding after each unit.
-
-**📌 Notebook order:** In each unit, do the example notebooks in **file order** (01, 02, 03, …). Always use the order shown in each unit's README, not slide numbers.
-
-**❓ If a notebook isn't clear:** Open `DOCS/WHEN_A_NOTEBOOK_IS_NOT_CLEAR.md` (if available) or ask your instructor.
-
----
-
-## ✅ Progress Tracking | تتبع التقدم
-
-Use `STUDENT_PROGRESS_CHECKLIST.md` to track your progress through all 5 units.
-
----
-
-**Ready to begin?** Read the course README.md first!
+Track your progress in `STUDENT_PROGRESS_CHECKLIST.md`.
+Solutions and answer keys are released by your instructor.

@@ -1,57 +1,64 @@
 # Student Progress Checklist
+
 ## AIAT 115 - Scalable Data Science
 
-**Note:** Templates in `TEMPLATES/` are instructor-only. Students should follow units and notebooks.
+Check items off as you complete them, in order.
 
 ---
 
-## 📋 Course Progress
+## Setup
 
-### Unit 1: Introduction to Data Science
-- [ ] Read Unit 1 README
-- [ ] Complete all examples
-- [ ] Complete all exercises
-- [ ] Review solutions
-- [ ] Take Quiz 01
+- [ ] Environment set up: repo root `.venv` installed, **ai-diploma** Jupyter kernel selected (see `DOCS/SETUP_INSTRUCTIONS.md`)
+- [ ] Read `START_HERE.md`
+- [ ] Read `README.md`
 
-### Unit 2: Data Cleaning and Preparation
-- [ ] Read Unit 2 README
-- [ ] Complete all examples
-- [ ] Complete all exercises
-- [ ] Review solutions
-- [ ] Take Quiz 02
+## Unit 1: Introduction to Data Science
 
-### Unit 3: Data Visualization
-- [ ] Read Unit 3 README
-- [ ] Complete all examples
-- [ ] Complete all exercises
-- [ ] Review solutions
-- [ ] Take Quiz 03
+- [ ] Read `unit1-introduction/README.md`
+- [ ] Run examples 01-09 in `unit1-introduction/examples/`
+- [ ] Complete `unit1-introduction/exercises/exercise_01.ipynb`
+- [ ] Take `QUIZZES/Quiz_01_Introduction_Data_Science.md`
 
-### Unit 4: Machine Learning Introduction
-- [ ] Read Unit 4 README
-- [ ] Complete all examples
-- [ ] Complete all exercises
-- [ ] Review solutions
-- [ ] Take Quiz 04
+## Unit 2: Data Cleaning and Preparation
 
-### Unit 5: Extending the Scope of Data Science
-- [ ] Read Unit 5 README
-- [ ] Complete all examples
-- [ ] Complete all exercises
-- [ ] Review solutions
-- [ ] Take Quiz 05
+- [ ] Read `unit2-cleaning/README.md`
+- [ ] Run examples 01-08 in `unit2-cleaning/examples/`
+- [ ] Complete `unit2-cleaning/exercises/exercise_01.ipynb`
+- [ ] Take `QUIZZES/Quiz_02_Data_Cleaning.md`
 
-### Projects
-- [ ] Complete Project 01
-- [ ] Complete Project 02 (optional)
+## Unit 3: Data Visualization
 
-### Final Assessment
-- [ ] Review all units
-- [ ] Complete final exam
-- [ ] Submit all projects
+- [ ] Read `unit3-visualization/README.md`
+- [ ] Run examples 01-08 in `unit3-visualization/examples/`
+- [ ] Complete `unit3-visualization/exercises/exercise_01.ipynb`
+- [ ] Take `QUIZZES/Quiz_03_Data_Visualization.md`
+
+## Unit 4: Introduction to Machine Learning
+
+- [ ] Read `unit4-ml-intro/README.md`
+- [ ] Run examples 01-12 in `unit4-ml-intro/examples/`
+- [ ] Complete `unit4-ml-intro/exercises/exercise_01.ipynb`
+- [ ] Take `QUIZZES/Quiz_04_ML_Introduction.md`
+
+## Unit 5: Extending the Scope of Data Science
+
+- [ ] Read `unit5-scaling/README.md`
+- [ ] Run examples 01-10 in `unit5-scaling/examples/`
+- [ ] Complete `unit5-scaling/exercises/exercise_01.ipynb`
+- [ ] Take `QUIZZES/Quiz_05_Scaling_Production.md`
+
+## Final Assessment
+
+- [ ] Review all five units
+- [ ] Complete the final exam: `ASSESSMENTS/Final_Exam.md`
+
+## Projects
+
+- [ ] Capstone: `PROJECTS/01_Data_Pipeline/`
+- [ ] Optional: `PROJECTS/02_Data_Dashboard/`
+- [ ] Optional: `PROJECTS/03_Production_ML/`
+- [ ] Optional: `CASE_STUDIES/case_study_01_scalable_data_processing.md`
 
 ---
 
-**Course Completion:** [ ] Complete
-
+Quiz and exam answer keys are released by your instructor.

@@ -1,11 +1,11 @@
-# Capstone Project Guidelines | إرشادات مشروع التخرج
+# Graduation Project Guidelines
 ## AIAT 126
 
 ---
 
-## 📋 Project Requirements | متطلبات المشروع
+## 📋 Project Requirements
 
-### 1. Project Selection | اختيار المشروع
+### 1. Project Selection
 
 **Choose ONE of the following categories:**
 
@@ -41,7 +41,7 @@
 
 ---
 
-## 📝 Project Deliverables | مخرجات المشروع
+## 📝 Project Deliverables
 
 ### 1. Project Proposal (Week 1-2)
 **Due:** End of Week 2
@@ -110,7 +110,7 @@
 
 ---
 
-## ✅ Evaluation Criteria | معايير التقييم
+## ✅ Evaluation Criteria
 
 ### Technical Implementation (40%)
 - Code quality and organization
@@ -143,7 +143,7 @@
 
 ---
 
-## 📅 Timeline | الجدول الزمني
+## 📅 Timeline
 
 | Week | Milestone | Deliverable |
 |------|-----------|-------------|
@@ -156,16 +156,15 @@
 
 ---
 
-## 🎯 Success Criteria | معايير النجاح
+## 🎯 Success Criteria
 
 Your project must demonstrate:
-- ✅ Application of multiple AI/ML techniques
-- ✅ Real-world problem solving
-- ✅ Complete end-to-end system
-- ✅ Professional code quality
-- ✅ Successful deployment
-- ✅ Clear documentation
+- Application of multiple AI/ML techniques
+- Real-world problem solving
+- Complete end-to-end system
+- Professional code quality
+- Clear documentation
 
 ---
 
-**For:** AIAT 126 - Capstone Project
+**For:** AIAT 126 - Graduation Project

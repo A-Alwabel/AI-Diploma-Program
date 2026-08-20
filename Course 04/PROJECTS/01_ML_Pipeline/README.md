@@ -1,6 +1,6 @@
-# Project 01: Complete ML Pipeline | المشروع 01: خط أنابيب تعلم الآلة الكامل
+# Project 01: Complete ML Pipeline
 
-## 🎯 Real-World Application | التطبيق في الحياة الواقعية
+## 🎯 Real-World Application
 
 **GDI Example: Financial Transaction Risk Scoring**
 
@@ -18,7 +18,7 @@ Build a pipeline that ingests transactions and flags risky behavior to support:
 
 ---
 
-## Overview | نظرة عامة
+## Overview
 
 Build a complete end-to-end machine learning pipeline that takes raw data through preprocessing, feature engineering, model training, evaluation, and deployment preparation.
 
@@ -31,7 +31,7 @@ Build a complete end-to-end machine learning pipeline that takes raw data throug
 
 ---
 
-## Requirements | المتطلبات
+## Requirements
 
 ### Functional Requirements
 1. **Data Loading and Exploration**
@@ -82,7 +82,7 @@ Build a complete end-to-end machine learning pipeline that takes raw data throug
 
 ---
 
-## Deliverables | المخرجات
+## Deliverables
 
 1. **Source Code**
    - `data_loader.py` - Data loading and exploration
@@ -107,7 +107,7 @@ Build a complete end-to-end machine learning pipeline that takes raw data throug
 
 ---
 
-## Project Structure | هيكل المشروع
+## Project Structure
 
 ```
 project_01_ml_pipeline/
@@ -126,7 +126,7 @@ project_01_ml_pipeline/
 
 ---
 
-## Dataset Suggestions | اقتراحات مجموعات البيانات
+## Dataset Suggestions
 
 Use provided GDI datasets (under `Course 04/datasets/raw/`):
 
@@ -139,9 +139,9 @@ Set `random_state=73` everywhere for reproducibility.
 
 ---
 
-## Evaluation Criteria | معايير التقييم
+## Evaluation Criteria
 
-See `../../ASSESSMENTS/Project_Rubric.md` for detailed rubric.
+Grading weights below; the detailed rubric is released by your instructor.
 
 **Key Areas:**
 - Pipeline completeness (30%)
@@ -152,7 +152,7 @@ See `../../ASSESSMENTS/Project_Rubric.md` for detailed rubric.
 
 ---
 
-## Bonus Features | ميزات إضافية
+## Bonus Features
 
 - [ ] Implement automated feature selection
 - [ ] Add model interpretability (SHAP, LIME)
@@ -165,7 +165,7 @@ See `../../ASSESSMENTS/Project_Rubric.md` for detailed rubric.
 
 ---
 
-## Resources | الموارد
+## Resources
 
 - Unit 1: Data Processing & Regression
 - Unit 2: Advanced Regression
@@ -176,7 +176,7 @@ See `../../ASSESSMENTS/Project_Rubric.md` for detailed rubric.
 
 ---
 
-## Submission | التسليم
+## Submission
 
 Submit:
 1. All source code files
@@ -190,4 +190,3 @@ Submit:
 
 **Created**: 2025  
 **For**: Machine Learning Algorithms and Applications - AIAT 114
-

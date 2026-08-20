@@ -1,35 +1,30 @@
-# START HERE! | ابدأ من هنا!
+# START HERE — AIAT 121 Natural Language Processing
 
-## 👋 Welcome! | مرحباً!
+Credit hours: 3 · Contact hours: 4/week · Total training hours: 64 (theory+practical)
 
-This course is part of Semester 2 of the AI Diploma Program.
+## Prerequisites
 
-**✅ Official Path:** Follow the unit folders in order (Unit 1 → Unit 5).  
-**📚 Official unit structure:** See `../DETAILED_UNIT_DESCRIPTIONS.md` and `README.md` (Unit ↔ Folder mapping).
+- Semester 1 (AIAT 111–116)
 
----
+## Setup
 
-## 📋 Prerequisites | المتطلبات الأساسية
+1. Use the repository root `.venv` and select the **ai-diploma** Jupyter kernel.
+2. For the TensorFlow notebooks in Unit 4 (`02_bert_advanced_usage.ipynb`, `03_seq2seq_attention_translation.ipynb`), select the **tfenv** kernel.
 
-**Before starting this course, you must have completed:**
-- All Semester 1 courses (AIAT 111-116)
+## The Path
 
----
+Follow this order. In each unit: read the README, run the example notebooks in file order, complete the exercise, then take the quiz.
 
-## 📚 Learning Path | مسار التعلم
+1. Read `README.md` (course overview, CLOs, unit map).
+2. **Unit 1 — Introduction to NLP:** `unit1-nlp-fundamentals/README.md` → examples → exercise → `QUIZZES/quiz_01.md`.
+3. **Unit 2 — Text Representation and Feature Engineering:** `unit2-tokenization-morphology/README.md` → examples → exercise → `QUIZZES/quiz_02.md` (placeholder being authored).
+4. **Unit 3 — Machine Learning for NLP:** `unit3-ml-for-nlp/README.md` → examples → exercise → `QUIZZES/quiz_03.md` (placeholder being authored).
+5. **Unit 4 — Deep Learning for NLP:** `unit4-deep-learning-nlp/README.md` → examples → exercise → `QUIZZES/quiz_04.md` (placeholder being authored).
+6. **Unit 5 — NLP Applications and Ethics Standards:** `unit5-applications-ethics/README.md` → examples → exercise → `QUIZZES/quiz_05.md` (placeholder being authored).
+7. **Assessments:** `ASSESSMENTS/Final_Exam.md`, plus the course project in `PROJECTS/`.
 
-1. **Read README.md** - Understand course overview
-2. **Review prerequisites** - Ensure you have required knowledge
-3. **Start with Unit 1** - Follow unit README files
-4. **Complete exercises** - Practice what you learn
-5. **Take quizzes** - Test your understanding
-
----
-
-## ✅ Progress Tracking | تتبع التقدم
+## Progress Tracking
 
 Use `STUDENT_PROGRESS_CHECKLIST.md` to track your progress.
 
----
-
-**Ready to begin?** Read the course README.md first!
+Solutions and answer keys are released by your instructor.

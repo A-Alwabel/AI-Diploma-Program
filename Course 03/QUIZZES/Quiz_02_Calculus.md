@@ -1,5 +1,4 @@
 # Quiz 02: Calculus for Machine Learning
-## اختبار 02: التفاضل لتعلم الآلة
 
 **Time Limit:** 45 minutes | **Marks:** 100 points
 
@@ -37,9 +36,6 @@ What is the derivative of f(x) = x²?
 ### Question 4 (10 points)
 Calculate the derivative of f(x) = 3x³ + 2x² - 5x + 1
 
-**Answer:**
-Using power rule: d/dx(xⁿ) = nxⁿ⁻¹
-
 f'(x) = d/dx(3x³) + d/dx(2x²) - d/dx(5x) + d/dx(1)
      = 3(3x²) + 2(2x) - 5(1) + 0
      = 9x² + 4x - 5
@@ -68,9 +64,6 @@ What does the gradient point toward?
 
 ### Question 7 (10 points)
 For the function f(x, y) = x² + 2xy + y², calculate the gradient ∇f.
-
-**Answer:**
-∇f = [∂f/∂x, ∂f/∂y]
 
 ∂f/∂x = 2x + 2y
 ∂f/∂y = 2x + 2y
@@ -229,34 +222,6 @@ In linear regression: J(θ) = (1/2m)Σ(y - θᵀx)²
 
 ---
 
-## Answer Key
-
-**Part 1:**
-1. B) The rate of change of a function with respect to a variable
-2. B) The slope of the tangent line at point x
-3. B) 2x
-4. Correct derivative calculation - 10 points
-
-**Part 2:**
-5. B) A vector of partial derivatives
-6. B) The direction of steepest ascent
-7. Correct gradient calculation - 10 points
-8. Chain rule explained with neural network example - 10 points
-
-**Part 3:**
-9. B) An optimization algorithm that finds the minimum by following the negative gradient
-10. B) The step size used when updating parameters
-11. B) The algorithm may overshoot and fail to converge
-12. Correct gradient descent algorithm - 10 points
-
-**Part 4:**
-13. Multiple applications explained - 10 points
-14. Relationship between gradients and optimization explained - 10 points
-
-**Total: 100 points**
-
----
-
 ## Grading Rubric
 
 - **90-100 points:** Excellent understanding
@@ -269,4 +234,3 @@ In linear regression: J(θ) = (1/2m)Σ(y - θᵀx)²
 
 **Created:** 2025  
 **For:** 113 AIAT - Mathematics and Probabilities for Machine Learning
-

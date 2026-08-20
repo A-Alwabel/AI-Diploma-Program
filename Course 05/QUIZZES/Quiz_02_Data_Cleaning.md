@@ -1,5 +1,4 @@
 # Quiz 2: Data Cleaning and Preparation
-## اختبار 2: تنظيف البيانات وتحضيرها
 
 **Time Limit:** 30 minutes | **Marks:** 30 points
 
@@ -150,27 +149,6 @@ What are the main steps in data cleaning? Why is it important?
 
 ---
 
-## Answer Key
-
-**Part 1:**
-1. C) Depends on the data and context
-2. B) A boolean Series indicating duplicate rows
-3. B) A data point that significantly differs from other observations
-4. A) IQR (Interquartile Range) method
-5. B) Scales data to a specific range (usually 0-1)
-
-**Part 2:**
-6. Complete cleaning pipeline - 5 points
-7. Correct IQR outlier detection - 5 points
-
-**Part 3:**
-8. Multiple strategies with use cases - 5 points
-9. Steps and importance explained - 5 points
-
-**Total: 30 points**
-
----
-
 ## Grading Rubric
 
 - **90-100% (27-30 points):** Excellent understanding
@@ -178,4 +156,3 @@ What are the main steps in data cleaning? Why is it important?
 - **70-79% (21-23 points):** Satisfactory
 - **60-69% (18-20 points):** Needs improvement
 - **Below 60% (<18 points):** Requires additional study
-

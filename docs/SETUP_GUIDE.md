@@ -1,293 +1,210 @@
-# 🚀 AI Diploma Curriculum - Setup Guide
+# AI Diploma - Setup Guide
 
-Complete setup instructions for the AI Diploma curriculum.
+Complete environment setup for the AI Diploma program.
+
+**Last Updated:** 2026-08
 
 ---
 
-## 📋 Prerequisites
+## Prerequisites
 
 ### System Requirements
-- **Operating System**: Windows 10+, macOS 10.14+, or Linux (Ubuntu 18.04+)
-- **Python Version**: Python 3.8 or higher
-- **RAM**: Minimum 8GB (16GB recommended for deep learning)
-- **Storage**: At least 10GB free space
-- **GPU**: Optional but recommended for deep learning courses (NVIDIA GPU with CUDA support)
+
+- **Operating System:** Windows 10+, macOS, or Linux (Ubuntu 20.04+)
+- **Python:** a recent Python 3 (the reference environment uses Python 3.14 for
+  the main venv and Python 3.13 for the TensorFlow environment)
+- **RAM:** 8 GB minimum (16 GB recommended for deep learning)
+- **Storage:** at least 10 GB free
+- **GPU:** optional — see [GPU_REQUIREMENTS_SUMMARY.md](GPU_REQUIREMENTS_SUMMARY.md)
 
 ### Required Knowledge
-- Basic Python programming
-- Command line/terminal usage
-- Basic understanding of machine learning concepts (for advanced courses)
+
+- Basic command line / terminal usage
+- No programming experience needed for Course 01
 
 ---
 
-## 🔧 Installation Steps
+## Installation Steps
 
 ### Step 1: Install Python
 
 **Windows:**
-1. Download Python 3.8+ from [python.org](https://www.python.org/downloads/)
-2. Run installer, check "Add Python to PATH"
-3. Verify: Open Command Prompt, type `python --version`
+
+1. Download Python 3 from [python.org](https://www.python.org/downloads/)
+2. Run the installer and check "Add Python to PATH"
+3. Verify: open Command Prompt and run `python --version`
 
 **macOS:**
-```bash
-# Using Homebrew (recommended)
-brew install python@3.10
 
-# Or download from python.org
-# Verify installation
+```bash
+brew install python
 python3 --version
 ```
 
 **Linux:**
+
 ```bash
 sudo apt update
 sudo apt install python3 python3-pip python3-venv
 python3 --version
 ```
 
-### Step 2: Create Virtual Environment (Recommended)
+### Step 2: Create the virtual environment
 
-**Windows:**
-```cmd
-python -m venv ai_diploma_env
-ai_diploma_env\Scripts\activate
-```
-
-**macOS/Linux:**
-```bash
-python3 -m venv ai_diploma_env
-source ai_diploma_env/bin/activate
-```
-
-### Step 3: Install Dependencies
+From the repository root:
 
 ```bash
-# Navigate to project directory
 cd "/path/to/AI Diploma"
+python3 -m venv .venv
 
-# Upgrade pip
+# Activate it:
+source .venv/bin/activate        # macOS/Linux
+.venv\Scripts\activate           # Windows
+```
+
+### Step 3: Install dependencies
+
+```bash
 pip install --upgrade pip
-
-# Install all requirements
 pip install -r requirements.txt
-
-# Verify installation
 pip check
 ```
 
-**Quick validate:** Run a minimal check to confirm core libs work:
-```bash
-python -c "import numpy, pandas, sklearn; print('✅ Core libs OK')"
-```
-Optional: run one notebook (e.g. `Course 01/unit1-ai-foundations/examples/01_ai_introduction.ipynb`) to confirm Jupyter + deps.
-
-### Step 4: Install Jupyter Notebook
+### Step 4: Register the Jupyter kernel
 
 ```bash
-pip install jupyter notebook ipykernel
-
-# Add kernel to Jupyter
-python -m ipykernel install --user --name=ai_diploma_env
+python -m ipykernel install --user --name ai-diploma --display-name "AI Diploma"
 ```
 
-### Step 5: Install Additional Course-Specific Tools
+All notebooks except the TensorFlow ones (see below) use this `ai-diploma` kernel.
 
-**For Course 05 (Data Science with GPU):**
+### Step 5: Smoke test
+
+Confirm the core libraries import:
+
 ```bash
-# Optional: NVIDIA RAPIDS (requires NVIDIA GPU)
-# Follow instructions at: https://rapids.ai/start.html
+python -c "import numpy, pandas, sklearn, matplotlib; print('Core libs OK')"
 ```
 
-**For Course 08 (Deep Learning):**
+Then run one real notebook end-to-end:
+
 ```bash
-# TensorFlow GPU support (if you have NVIDIA GPU)
-# Note: TensorFlow 2.x includes GPU support automatically
-# Just install tensorflow (already in requirements.txt)
-# Make sure you have CUDA and cuDNN installed for GPU support
-# See: https://www.tensorflow.org/install/gpu
-
-# PyTorch GPU (if you have NVIDIA GPU)
-# Visit: https://pytorch.org/get-started/locally/
+jupyter lab "Course 01/unit1-ai-foundations/examples/01_ai_introduction.ipynb"
 ```
 
-**For Course 09 (Reinforcement Learning):**
-```bash
-pip install gym[atari] stable-baselines3
-```
-
-**For Course 10 (Generative AI):**
-```bash
-# OpenAI API (requires API key)
-pip install openai
-
-# Hugging Face Transformers
-pip install transformers accelerate
-```
+Select the **AI Diploma** kernel and run all cells. If it completes without
+errors, your environment is ready.
 
 ---
 
-## 📚 Course-Specific Setup
+## The TensorFlow environment ("tfenv")
 
-### Course 01: Introduction to AI
-- **Required**: NumPy, basic Python libraries
-- **Setup**: `pip install numpy matplotlib`
+TensorFlow does not publish a wheel for the main venv's Python version, so the
+TensorFlow/Keras notebooks in **Course 01** and **Course 08** use a second,
+separate environment on **Python 3.13** registered as the `tfenv` kernel:
 
-### Course 02: Python for AI
-- **Required**: NumPy, Pandas, scikit-learn
-- **Setup**: Already in requirements.txt
+```bash
+# Requires a Python 3.13 interpreter installed on your system
+python3.13 -m venv ~/venvs/ai-diploma-tf
+source ~/venvs/ai-diploma-tf/bin/activate
+pip install --upgrade pip
+pip install tensorflow ipykernel numpy pandas matplotlib scikit-learn
+python -m ipykernel install --user --name tfenv --display-name "Python (tfenv-TF)"
+deactivate
+```
 
-### Course 03: Mathematics & Probability ✅
-- **Required**: NumPy, SciPy, Matplotlib
-- **Setup**: Core libraries included
+When a notebook imports `tensorflow`, switch its kernel to **Python (tfenv-TF)**
+(Jupyter: Kernel → Change Kernel). All other notebooks stay on `ai-diploma`.
 
-### Course 04: Machine Learning
-- **Required**: scikit-learn, Pandas, NumPy
-- **Setup**: Core libraries included
+---
 
-### Course 05: Data Science
-- **Required**: Pandas, NumPy, Matplotlib, Seaborn, Plotly
-- **Optional**: cuDF (GPU acceleration)
-- **Setup**: Core libraries included
+## Course-Specific Notes
 
-### Course 06: AI Ethics
-- **Required**: scikit-learn, SHAP, LIME
-- **Setup**: `pip install shap lime`
+Most courses need nothing beyond `requirements.txt`. Exceptions and extras:
+
+### Course 01 and Course 08 (TensorFlow notebooks)
+
+- Use the `tfenv` kernel described above for notebooks that import TensorFlow.
+- PyTorch notebooks in Course 08 run on the main `ai-diploma` kernel.
+
+### Course 05: Scalable Data Science
+
+- Dask and Plotly are already in `requirements.txt`.
+- The cuDF/RAPIDS notebooks need an NVIDIA GPU — use Google Colab
+  (see `Course 05/DOCS/COLAB_SETUP.md`). All of them have a pandas CPU fallback.
 
 ### Course 07: Natural Language Processing
-- **Required**: NLTK, spaCy, Transformers
-- **Setup**: 
+
+- NLTK and spaCy are in `requirements.txt`; download their models once:
+
 ```bash
-pip install nltk spacy transformers
 python -m spacy download en_core_web_sm
 python -c "import nltk; nltk.download('punkt')"
 ```
 
-### Course 08: Deep Learning
-- **Required**: TensorFlow/Keras, PyTorch
-- **Setup**: Core libraries included
-
 ### Course 09: Reinforcement Learning
-- **Required**: OpenAI Gym, Stable-Baselines3
-- **Setup**: Core libraries included
 
-### Course 10: Generative AI
-- **Required**: Transformers, OpenAI API (optional)
-- **Setup**: Core libraries included
+- Uses `gymnasium[classic-control]` (already in `requirements.txt`), plus
+  pygame and imageio for rendering. No Atari extras are required.
 
 ### Course 11: Deploying AI Models
-- **Required**: Flask, FastAPI, Docker (optional)
-- **Setup**: Core libraries included
 
-### Course 12: Graduation Project
-- **Required**: All previous course libraries
-- **Setup**: Use requirements.txt
+- FastAPI, Flask, MLflow, ONNX, and boto3 are in `requirements.txt`.
+- Docker is optional and installed separately: [docker.com](https://www.docker.com/)
+- Cloud labs: see `Course 11/DOCS/CLOUD_CREDENTIALS_SETUP.md`.
 
 ---
 
-## 🧪 Verify Installation
+## Verify Installation
 
-Run this verification script:
+Run this quick check (TensorFlow is intentionally not included — it lives in
+`tfenv`):
 
 ```python
-# verify_installation.py
 import sys
+print("Python:", sys.version)
 
 libraries = [
-    'numpy', 'pandas', 'matplotlib', 'seaborn', 'sklearn',
-    'tensorflow', 'torch', 'transformers', 'nltk', 'spacy',
-    'plotly', 'gym', 'flask', 'fastapi', 'shap', 'lime'
+    "numpy", "pandas", "matplotlib", "seaborn", "sklearn",
+    "torch", "transformers", "nltk", "spacy",
+    "plotly", "gymnasium", "flask", "fastapi", "shap", "lime", "mlflow",
 ]
-
-print("Python version:", sys.version)
-print("\nChecking libraries...")
 
 missing = []
 for lib in libraries:
     try:
         __import__(lib)
-        print(f"✅ {lib}")
+        print("OK  ", lib)
     except ImportError:
-        print(f"❌ {lib} - MISSING")
+        print("MISS", lib)
         missing.append(lib)
 
-if missing:
-    print(f"\n⚠️  Missing libraries: {', '.join(missing)}")
-    print("Install with: pip install " + " ".join(missing))
-else:
-    print("\n✅ All core libraries installed successfully!")
+print("\nAll good!" if not missing else f"\nMissing: {', '.join(missing)}")
 ```
 
 ---
 
-## 🐳 Docker Setup (Alternative)
+## Troubleshooting
 
-If you prefer Docker:
+**`pip` not found** — use `python -m pip` (or `pip3`).
 
-```dockerfile
-# Dockerfile
-FROM python:3.10-slim
+**Permission errors** — make sure the virtual environment is activated; never
+use `sudo pip`.
 
-WORKDIR /app
+**Import errors inside notebooks** — the notebook is probably on the wrong
+kernel. Select **AI Diploma** (or **Python (tfenv-TF)** for TensorFlow
+notebooks) via Kernel → Change Kernel, then re-run.
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+**`No module named tensorflow`** — you are on the `ai-diploma` kernel; switch
+to `tfenv` (see above).
 
-COPY . .
-
-CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root"]
-```
-
-Build and run:
-```bash
-docker build -t ai-diploma .
-docker run -p 8888:8888 -v $(pwd):/app ai-diploma
-```
+For everything else, see [TROUBLESHOOTING_GUIDE.md](TROUBLESHOOTING_GUIDE.md).
 
 ---
 
-## 🔍 Troubleshooting
+## Next Steps
 
-### Common Issues
-
-**Issue**: `pip` command not found
-- **Solution**: Use `pip3` instead, or ensure Python is in PATH
-
-**Issue**: Permission denied errors
-- **Solution**: Use `pip install --user` or activate virtual environment
-
-**Issue**: CUDA/GPU not working
-- **Solution**: Install CUDA toolkit separately, verify GPU drivers
-
-**Issue**: Import errors in notebooks
-- **Solution**: Ensure kernel is using correct environment: `python -m ipykernel install --user --name=ai_diploma_env`
-
-**Issue**: Memory errors with large datasets
-- **Solution**: Use smaller datasets, enable GPU, or increase system RAM
-
-**Issue**: Some notebooks fail (missing packages, syntax)
-- **Solution**: Run `pip check` and quick-validate (Step 3). See [artifacts/NOTEBOOK_TRIAGE.md](artifacts/NOTEBOOK_TRIAGE.md) for env vs code triage and optional/advanced markers.
-
----
-
-## 📖 Next Steps
-
-1. ✅ Complete setup verification
-2. 📚 Read `START_HERE.md` in each course directory
-3. 📝 Review `MASTER_NOTEBOOK_INDEX.md` for navigation
-4. 🎯 Start with Course 01, Unit 1
-5. 📊 Track progress using course checklists
-
----
-
-## 🆘 Getting Help
-
-- Check course-specific README files
-- Review notebook documentation
-- Consult `DETAILED_UNIT_DESCRIPTIONS.md` for course structure
-- Check `MASTER_NOTEBOOK_INDEX.md` for notebook locations
-
----
-
-**Last Updated**: Session completion date
-**Status**: Ready for use
+1. Complete the smoke test above
+2. Open `Course 01/START_HERE.md` and follow it
+3. Work through each course in order (01 → 12)
+4. Track your progress with each course's `STUDENT_PROGRESS_CHECKLIST.md`

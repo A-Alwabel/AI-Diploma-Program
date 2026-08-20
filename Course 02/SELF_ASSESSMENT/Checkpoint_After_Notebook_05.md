@@ -1,6 +1,6 @@
-# Self-Assessment Checkpoint: After Notebook 05 | نقطة التقييم الذاتي: بعد الدفتر 05
+# Self-Assessment Checkpoint: After Notebook 05
 
-## Instructions | التعليمات
+## Instructions
 
 Complete this self-assessment after finishing Notebook 05: AI-based Learning Models.
 
@@ -8,7 +8,7 @@ This is your **final checkpoint** before the project!
 
 ---
 
-## Overall Course Knowledge | المعرفة العامة للدورة
+## Overall Course Knowledge
 
 ### Can you explain:
 - [ ] What search algorithms are and when to use each (BFS, DFS, A*)
@@ -21,7 +21,7 @@ This is your **final checkpoint** before the project!
 
 ---
 
-## Machine Learning Check | فحص التعلم الآلي
+## Machine Learning Check
 
 ### Understanding:
 - [ ] I understand the difference between classification and regression
@@ -43,7 +43,7 @@ This is your **final checkpoint** before the project!
 
 ---
 
-## Complete Skills Checklist | قائمة المهارات الكاملة
+## Complete Skills Checklist
 
 ### Python Libraries:
 - [ ] NumPy - arrays and operations
@@ -75,7 +75,7 @@ This is your **final checkpoint** before the project!
 
 ---
 
-## Project Readiness | الاستعداد للمشروع
+## Project Readiness
 
 ### Before starting a project, you should be able to:
 - [ ] Write Python code independently
@@ -90,7 +90,7 @@ This is your **final checkpoint** before the project!
 
 ---
 
-## Final Self-Evaluation | التقييم الذاتي النهائي
+## Final Self-Evaluation
 
 ### Rate yourself (1-5 scale):
 
@@ -132,7 +132,7 @@ This is your **final checkpoint** before the project!
 
 ---
 
-## Action Plan | خطة العمل
+## Action Plan
 
 Based on your assessment:
 
@@ -160,7 +160,7 @@ Based on your assessment:
 
 ---
 
-## Course Reflection | تأمل الدورة
+## Course Reflection
 
 ### What did you learn?
 ```
@@ -184,7 +184,7 @@ Based on your assessment:
 
 ---
 
-## Next Steps | الخطوات التالية
+## Next Steps
 
 - [ ] Review weak areas identified above
 - [ ] Complete any missing exercises
@@ -196,4 +196,3 @@ Based on your assessment:
 
 **Created**: 2025  
 **For**: Python for AI Course - 112 AIAT
-

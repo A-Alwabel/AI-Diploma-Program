@@ -5,7 +5,7 @@
 **Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)
 **Covers:** Unit 2 (language models, GPT, text generation, fine-tuning, BLEU/perplexity).
 **Concepts from:** Unit 2 examples 04 (text generation GPT), 07 (text-to-text), 08 (creative text), 09 (BLEU/perplexity) and related slides.
-**Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -59,7 +59,7 @@ Write PyTorch code to define a **character-level LSTM language model**:
 - Write a generate(seed_text, max_length=50) function that produces characters one at a time using argmax selection.
 - Show the CrossEntropyLoss used for training (input: logits of shape [batch, seq, vocab]; target: next character indices).
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_02_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -68,14 +68,14 @@ Write PyTorch code to define a **character-level LSTM language model**:
 ### Question 6 (15 points)
 Explain **beam search** for text generation. How does it differ from greedy decoding, and what trade-off does it introduce?
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_02_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
 ### Question 7 (15 points)
 What is **few-shot prompting** in LLMs? Give one concrete example showing a few-shot prompt for sentiment classification.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_02_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -84,7 +84,7 @@ What is **few-shot prompting** in LLMs? Give one concrete example showing a few-
 ### Question 8 (10 points)
 A text generation model produces coherent but very repetitive outputs for different prompts. What would you change in the generation strategy (e.g., temperature, top-k, top-p sampling) to increase diversity?
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_02_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 

@@ -1,5 +1,5 @@
-# Quiz 05 | اختبار 05
-## AIAT 126 - Capstone Project | مشروع التخرج
+# Quiz 05
+## AIAT 126 - Capstone Project
 
 **Time Limit:** 45 minutes  
 **Total Points:** 100 points
@@ -11,48 +11,40 @@
 ### Question 1 (10 points)
 [Question about Design comprehensive solution]
 
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
-
-**Answer:** [Answer]
+A) Option A  
+B) Option B  
+C) Option C  
+D) Option D
 
 ---
 
 ### Question 2 (10 points)
 [Question about Integrate knowledge]
 
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
-
-**Answer:** [Answer]
+A) Option A  
+B) Option B  
+C) Option C  
+D) Option D
 
 ---
 
 ### Question 3 (10 points)
 [Question about Evaluate performance]
 
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
-
-**Answer:** [Answer]
+A) Option A  
+B) Option B  
+C) Option C  
+D) Option D
 
 ---
 
 ### Question 4 (10 points)
 [Question about Communicate effectively]
 
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
-
-**Answer:** [Answer]
+A) Option A  
+B) Option B  
+C) Option C  
+D) Option D
 
 ---
 
@@ -61,11 +53,6 @@
 ### Question 5 (30 points)
 Write code to [implement a Capstone Project concept].
 
-**Answer Key:**
-```python
-# Solution code here
-```
-
 ---
 
 ## Part 3: Short Answer (30 points)
@@ -73,19 +60,10 @@ Write code to [implement a Capstone Project concept].
 ### Question 6 (15 points)
 Explain [a key concept from Capstone Project].
 
-**Answer Key:**
-- Key point 1
-- Key point 2
-- Key point 3
-
 ---
 
 ### Question 7 (15 points)
 Describe [an application or technique from Capstone Project].
-
-**Answer Key:**
-- Description point 1
-- Description point 2
 
 ---
 

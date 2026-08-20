@@ -1,6 +1,6 @@
-# Quiz 01: Introduction & Search Algorithms | اختبار 01: مقدمة الدورة و خوارزميات البحث
+# Quiz 01: Introduction & Search Algorithms
 
-## Instructions | التعليمات
+## Instructions
 - **Time Limit**: 45 minutes
 - **Total Points**: 100 points
 - **Format**: Multiple choice, short answer, code completion, algorithm tracing
@@ -17,7 +17,6 @@ What is a node in a graph?
 - C) A path through the graph
 - D) A weight on an edge
 
-
 ### Question 2 (5 points)
 What is an edge in a graph?
 - A) A node
@@ -25,13 +24,11 @@ What is an edge in a graph?
 - C) A path
 - D) A weight
 
-
 ### Question 3 (10 points)
 Draw a simple graph with 4 nodes (A, B, C, D) where:
 - A is connected to B and C
 - B is connected to D
 - C is connected to D
-
 
 ---
 
@@ -44,14 +41,12 @@ What data structure does BFS use?
 - C) Priority Queue
 - D) List
 
-
 ### Question 5 (5 points)
 BFS finds:
 - A) The deepest path first
 - B) The shortest path (in unweighted graphs)
 - C) The longest path
 - D) Any path
-
 
 ### Question 6 (10 points)
 Trace BFS on the following graph starting from node A:
@@ -62,14 +57,12 @@ C -- D
 ```
 Show the order nodes are visited.
 
-
 ### Question 7 (5 points)
 What is the time complexity of BFS?
 - A) O(V)
 - B) O(V + E)
 - C) O(V²)
 - D) O(E)
-
 
 ---
 
@@ -82,14 +75,12 @@ What data structure does DFS use?
 - C) Priority Queue
 - D) List
 
-
 ### Question 9 (5 points)
 DFS explores:
 - A) Level by level
 - B) As deep as possible first
 - C) Randomly
 - D) Shortest paths first
-
 
 ### Question 10 (10 points)
 Trace DFS on the following graph starting from node A:
@@ -99,7 +90,6 @@ A -- B
 C -- D
 ```
 Show the order nodes are visited (assume alphabetical order for neighbors).
-
 
 ---
 
@@ -112,14 +102,12 @@ What makes A* different from Dijkstra's algorithm?
 - C) It doesn't use a priority queue
 - D) It's slower
 
-
 ### Question 12 (5 points)
 The A* algorithm uses which formula for node evaluation?
 - A) f(n) = g(n)
 - B) f(n) = h(n)
 - C) f(n) = g(n) + h(n)
 - D) f(n) = g(n) - h(n)
-
 
 ### Question 13 (5 points)
 What does g(n) represent in A*?
@@ -128,14 +116,12 @@ What does g(n) represent in A*?
 - C) Estimated cost to goal
 - D) Total cost
 
-
 ### Question 14 (5 points)
 What does h(n) represent in A*?
 - A) Actual cost from start
 - B) Estimated cost from node n to goal
 - C) Total cost
 - D) Path length
-
 
 ---
 
@@ -148,7 +134,6 @@ Dijkstra's algorithm finds:
 - C) Longest path
 - D) Any path
 
-
 ### Question 16 (5 points)
 What data structure does Dijkstra's algorithm use?
 - A) Stack
@@ -156,14 +141,12 @@ What data structure does Dijkstra's algorithm use?
 - C) Priority Queue
 - D) List
 
-
 ### Question 17 (5 points)
 Dijkstra's algorithm works on:
 - A) Only unweighted graphs
 - B) Only weighted graphs with non-negative weights
 - C) Any graph
 - D) Only directed graphs
-
 
 ---
 
@@ -181,4 +164,3 @@ Dijkstra's algorithm works on:
 
 **Created**: 2025  
 **For**: Python for AI Course - 112 AIAT
-

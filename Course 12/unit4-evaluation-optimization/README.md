@@ -1,60 +1,25 @@
-# Unit 4: Evaluation and Optimization
-## التقييم والتحسين
+# Unit 4: Evaluation and Refinement
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+Unit hours: 17 total (3 theory + 14 practical)
 
-Before starting this unit, confirm:
+You evaluate your project systematically and refine it: run experiments, compare against baselines, analyze failure cases, and iterate on models and data.
 
-- [ ] Completed Unit 3: Model Development and Training
-- [ ] Understand evaluation metrics and error analysis
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
+## Prerequisites
 
-### Learning Objectives | أهداف التعلم
+- Unit 3: Implementation and Development of the Project Idea (a first working version of your project)
 
-By the end of this unit, students will be able to:
-- Conduct experiments and collect performance metrics
-- Compare results with baseline or standard models
-- Analyze failure cases and identify weaknesses
-- Visualize results using graphs, confusion matrices, or heat maps
-- Iteratively improve model parameters or retrain with improved data
+## Examples (work through in order)
 
----
+1. [examples/01_model_evaluation_optimization.ipynb](examples/01_model_evaluation_optimization.ipynb) - Running experiments and collecting metrics, comparing against baseline models, analyzing failure cases, visualizing results (confusion matrices, curves), and iterative improvement.
 
-## Unit Duration | مدة الوحدة
+## Exercise
 
-**Theoretical Hours:** 3 hours  
-**Practical Hours:** 25 hours  
-**Total Hours:** 28 hours
+This unit has no separate exercise notebook; the practical work is evaluating and refining your own project. Course exercises live in Units 1-3.
 
-**Format:** 3 theoretical + 25 practical hours
+## Quiz
 
----
+- [../QUIZZES/quiz_04.md](../QUIZZES/quiz_04.md)
 
-## Topics Covered | المواضيع المغطاة
+## Next
 
-1. **Understanding Evaluation Metrics**
-2. **Techniques for Model Optimization**
-3. **Addressing Overfitting and Underfitting**
-4. **Comparative Analysis with Baseline Models**
-
----
-
-## Files Structure | هيكل الملفات
-
-- `examples/`: Complete code examples with explanations
-- `exercises/`: Practice problems for students
-
----
-
-## Learning Path | مسار التعلم
-
-1. **Start with examples** - Understand evaluation methods
-2. **Complete exercises** - Practice evaluation techniques
-3. **Apply to your project** - Evaluate and optimize your model
-4. **Iterate** - Continuously improve based on results
-
----
-
-**Unit Duration:** 4 weeks  
-**Difficulty:** Advanced
+[Unit 5: Project Documentation and Final Presentation](../unit5-documentation-presentation/README.md)

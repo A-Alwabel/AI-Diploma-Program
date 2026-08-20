@@ -62,4 +62,4 @@ That gives the instructor exactly what to clarify.
 
 ---
 
-**Instructors:** See **DOCS/NOTEBOOK_CLARITY_FOR_INSTRUCTORS.md** for which notebooks are often reported unclear and how to make them clearer (recaps, "If this is unclear" hints, key takeaway).
+**Still stuck?** Ask your instructor using the sentence above — naming the notebook and the exact part is what makes help fast.

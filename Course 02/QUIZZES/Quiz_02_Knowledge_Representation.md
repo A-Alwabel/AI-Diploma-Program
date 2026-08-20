@@ -1,6 +1,6 @@
-# Quiz 02: Knowledge Representation | اختبار 02: تمثيل المعرفة
+# Quiz 02: Knowledge Representation
 
-## Instructions | التعليمات
+## Instructions
 - **Time Limit**: 40 minutes
 - **Total Points**: 100 points
 - **Format**: Multiple choice, short answer, code completion
@@ -17,14 +17,12 @@ What is a knowledge graph?
 - C) A database
 - D) A search algorithm
 
-
 ### Question 2 (5 points)
 In a knowledge graph, nodes represent:
 - A) Relationships
 - B) Entities or concepts
 - C) Rules
 - D) Facts
-
 
 ### Question 3 (5 points)
 In a knowledge graph, edges represent:
@@ -33,11 +31,9 @@ In a knowledge graph, edges represent:
 - C) Rules
 - D) Facts
 
-
 ### Question 4 (10 points)
 Create a simple knowledge graph with 3 entities and 2 relationships. Draw it.
 
-**Sample Answer:**
 - Entities: Person (John), City (Riyadh), Country (Saudi Arabia)
 - Relationships: John lives_in Riyadh, Riyadh located_in Saudi Arabia
 
@@ -47,7 +43,6 @@ Which library is commonly used for knowledge graphs in Python?
 - B) Matplotlib
 - C) NetworkX
 - D) SciPy
-
 
 ---
 
@@ -60,14 +55,12 @@ What is a rule in a rule-based system?
 - C) A node
 - D) An edge
 
-
 ### Question 7 (5 points)
 Forward chaining:
 - A) Starts from goals and works backward
 - B) Starts from facts and applies rules forward
 - C) Works randomly
 - D) Doesn't use rules
-
 
 ### Question 8 (5 points)
 Backward chaining:
@@ -76,7 +69,6 @@ Backward chaining:
 - C) Works randomly
 - D) Doesn't use rules
 
-
 ### Question 9 (10 points)
 Given the rules:
 - IF it is raining THEN take umbrella
@@ -84,7 +76,6 @@ Given the rules:
 
 And the fact: "it is raining"
 What can we conclude?
-
 
 ---
 
@@ -97,14 +88,12 @@ What is a semantic network?
 - C) A neural network
 - D) A database
 
-
 ### Question 11 (5 points)
 In semantic networks, inheritance means:
 - A) Passing properties from parent to child
 - B) Creating new nodes
 - C) Deleting nodes
 - D) Changing relationships
-
 
 ### Question 12 (10 points)
 Draw a semantic network showing:
@@ -113,14 +102,12 @@ Draw a semantic network showing:
 - Cat (child of Animal)
 - Has property: "has fur"
 
-
 ### Question 13 (5 points)
 What Python concept is similar to inheritance in semantic networks?
 - A) Lists
 - B) Classes and inheritance
 - C) Functions
 - D) Dictionaries
-
 
 ---
 
@@ -137,17 +124,8 @@ G.add_______("City")
 G.add_______("Person", "City", relation="lives_in")
 ```
 
-
 ### Question 15 (10 points)
 Write code to represent a simple rule: "IF temperature > 30 THEN it is hot"
-
-**Sample Answer:**
-```python
-def check_temperature(temp):
-    if temp > 30:
-        return "it is hot"
-    return None
-```
 
 ---
 
@@ -165,4 +143,3 @@ def check_temperature(temp):
 
 **Created**: 2025  
 **For**: Python for AI Course - 112 AIAT
-

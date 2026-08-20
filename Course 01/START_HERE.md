@@ -1,95 +1,53 @@
-# START HERE! | ابدأ من هنا!
-## AIAT 111 - Introduction to AI Applications and Concepts
+# START HERE
+## AIAT 111 - Introduction to Artificial Intelligence and Applications
+
+Welcome to the first course of the AI Diploma (Semester 1, AIAT 111–116). Work through this page, then follow the numbered path below.
+
+**Credit hours:** 3 · **Contact hours:** 4/week · **Total training hours:** 64 (32 theory + 32 practical)
 
 ---
 
-## 👋 Welcome! | مرحباً!
+## Step 1: Set Up Your Environment
 
-This is your **first course** in the AI Diploma Program. Follow these steps to get started.
+The whole repository shares one environment at the repo root.
 
-**✅ Official Path:** Follow the unit folders in order (Unit 1 → Unit 5).  
-**📚 Official unit structure:** See `../DETAILED_UNIT_DESCRIPTIONS.md` and `README.md` (Unit ↔ Folder mapping).
-
----
-
-## 📋 Day 1 Checklist | قائمة اليوم الأول
-
-### Step 1: Install Python
-- [ ] Download Python 3.10 or 3.11 from [python.org](https://www.python.org/downloads/)
-- [ ] Install Python (check "Add Python to PATH" on Windows)
-- [ ] Verify installation: Open terminal and type `python --version`
-
-### Step 2: Install Required Libraries
-```bash
-# Navigate to repository root
-cd "/path/to/AI Diploma"
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-### Step 3: Verify Installation
-```python
-# Test in Python
-python
->>> import numpy
->>> import matplotlib
->>> print("All libraries installed successfully!")
-```
+1. Follow `../README.md` (or `../docs/SETUP_GUIDE.md`) to create the root `.venv` and install `../requirements.txt`.
+2. Register the `ai-diploma` Jupyter kernel and select it when opening notebooks.
+3. TensorFlow notebooks in this course (Units 3, 4, and 5) run on the separate `tfenv` kernel instead — see the TensorFlow note in `../README.md`.
 
 ---
 
-## 📚 Learning Sequence | تسلسل التعلم
+## Step 2: Follow the Learning Path
 
-### Week 1-2: Unit 1 - Introduction to AI and Applications
-1. Read `unit1-ai-foundations/README.md`
-2. Study examples in `unit1-ai-foundations/examples/`
-3. Complete exercises in `unit1-ai-foundations/exercises/`
-4. Take quiz: `unit1-ai-foundations/quizzes/quiz_01.md`
+Do the units in order. Within each unit: read the unit `README.md`, run the notebooks in `examples/` in file order, complete the exercise, then take the quiz.
 
-### Week 3-4: Unit 2 - AI Concepts, Terminology, and Application Domains
-1. Read `unit2-ai-concepts/README.md`
-2. Study examples in `unit2-ai-concepts/examples/`
-3. Complete exercises (if any)
-4. Take quiz
+1. **Unit 1 — Introduction to AI and Applications** (12 hours: 6 theory + 6 practical)
+   `unit1-ai-foundations/` — README, examples 01–12, `exercises/exercise_01.ipynb`, `quizzes/quiz_01.md`
+2. **Unit 2 — AI Concepts, Terminology, and Application Domains** (12 hours: 6 theory + 6 practical)
+   `unit2-ai-concepts/` — README, examples 01–08, `exercises/exercise_01.ipynb`, `quizzes/quiz_02.md`
+3. **Unit 3 — AI Concepts, Terminology, and Application Domains Part 2** (12 hours: 6 theory + 6 practical)
+   `unit3-ml-basics/` — README, examples 01–03, `exercises/exercise_01.ipynb`, `quizzes/quiz_03.md`
+4. **Unit 4 — Neural Networks Fundamentals** (14 hours: 7 theory + 7 practical)
+   `unit4-neural-networks-basics/` — README, examples 01–02, `quizzes/quiz_04.md` (the unit exercise is being authored)
+5. **Unit 5 — Introduction to Generative AI and Course Summary** (14 hours: 7 theory + 7 practical)
+   `unit5-generative-ai-intro/` — README, examples 01–04, `exercises/01_generative_ai_exercise.ipynb`, `quizzes/quiz_05.md`
+6. **Assessments** — final exam in `ASSESSMENTS/Final_Exam.md`
 
-### Week 5-6: Unit 3 - AI Concepts Part 2
-1. Read `unit3-ml-basics/README.md`
-2. Study examples in `unit3-ml-basics/examples/`
-3. Complete exercises (if any)
-4. Take quiz
+Alongside the units:
 
-### Week 7-8: Unit 4 - Neural Networks Fundamentals
-1. Read `unit4-neural-networks-basics/README.md`
-2. Study examples
-3. Complete exercises
-4. Take quiz
-
-### Week 9-10: Unit 5 - Introduction to Generative AI and Course Summary
-1. Read `unit5-generative-ai-intro/README.md`
-2. Study examples
-3. Complete exercises
-4. Take quiz (if available)
-
-### Projects
-- Complete at least one project from `PROJECTS/` folder
+- **Projects:** complete at least one project from `PROJECTS/`
+- **Case study:** `CASE_STUDIES/01_ai_system_design_case_study.md`
+- **Slides:** lecture PDFs in `PRESENTATIONS/SLIDES/`
 
 ---
 
-## ✅ Progress Tracking | تتبع التقدم
+## Step 3: Track Your Progress
 
-Use `STUDENT_PROGRESS_CHECKLIST.md` to track your progress.
-
----
-
-## 🆘 Need Help? | تحتاج مساعدة؟
-
-1. Check `DOCS/` folder for guides
-2. Review examples in each unit
-3. Check solutions if stuck
-4. Read troubleshooting section in README.md
+Use `STUDENT_PROGRESS_CHECKLIST.md` to tick off each item as you finish it.
 
 ---
 
-**Course:** AIAT 111 - Introduction to AI Applications and Concepts  
-**Ready to begin?** Start with Unit 1!
+## Notes
+
+- Exercise solutions and quiz answer keys are released by your instructor.
+- If a notebook fails to run, first check that the correct kernel is selected (`ai-diploma`, or `tfenv` for TensorFlow notebooks).

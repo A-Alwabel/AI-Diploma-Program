@@ -1,17 +1,23 @@
-# Unit 1: Reinforcement Learning Fundamentals
+# Unit 1: Introduction to Reinforcement Learning
+
+## AIAT 123 - Reinforcement Learning
+
+**Unit training hours:** 18 (of 96 total)
 
 ## Where this unit sits in the course
 
-You are at the **foundation**: MDPs, value-style reasoning, Gym `reset` / `step`, and how to **formulate** states, actions, and rewards before leaning on large learning loops. For how Unit 1 connects to Units 2–5, read [`../RL_LEARNING_JOURNEY.md`](../RL_LEARNING_JOURNEY.md).
+You are at the foundation: MDPs, value-style reasoning, Gymnasium
+`reset`/`step`, and how to formulate states, actions, and rewards before
+leaning on large learning loops. For how Unit 1 connects to Units 2–5, read
+[`../RL_LEARNING_JOURNEY.md`](../RL_LEARNING_JOURNEY.md).
 
 ## Before You Start
 
 Make sure you are comfortable with:
 
-- Python basics
-- Probability basics
+- Python basics and probability basics (Semester 1, AIAT 111–116)
 - Markov process intuition
-- The environment setup from `Course 09/START_HERE.md`
+- The environment setup from `../START_HERE.md`
 
 ## Learning Goals
 
@@ -24,42 +30,24 @@ By the end of this unit, you should be able to:
 - use value and policy iteration at an introductory level
 - formulate simple RL problems before moving to larger algorithms
 
-## Unit Topics
-
-1. Introduction to reinforcement learning
-2. Markov Decision Processes (MDPs)
-3. States, actions, rewards, and policies
-4. Value functions and Bellman equations
-5. Policy evaluation, policy iteration, and value iteration
-6. Gym basics and simple RL problem setup
-
 ## Study Order
 
-Follow these notebooks in order:
+Complete the example notebooks in file order:
 
-1. `examples/01_mdp_example.ipynb`
-2. `examples/02_mdp_solving.ipynb`
-3. `examples/03_value_iteration.ipynb`
-4. `examples/04_openai_gym_setup.ipynb`
-5. `examples/05_exploration_strategies_epsilon_greedy.ipynb`
-6. `examples/06_solving_rl_problems_states_actions_rewards.ipynb`
-7. `examples/07_mini_projects_cartpole_frozenlake_qlearning_dqn.ipynb`
-
-### Supplemental notebooks
-
-This folder also contains long descriptive notebook filenames that overlap with
-some numbered notebooks. Treat those as supplemental unless your instructor asks
-you to use them.
-
-These long descriptive notebooks are preserved as source/reference material.
-They are not the main teaching path for students and have been archived under
-`../DOCS/REFERENCE_NOTEBOOKS/`.
-
-Student rule:
-
-- The required path in this unit is the numbered notebooks only.
-- Ignore long descriptive notebook filenames unless your
-  instructor explicitly assigns them.
+1. `examples/01_mdp_example.ipynb` — the MDP framework: states, actions,
+   rewards, and transitions in a small worked example
+2. `examples/02_mdp_solving.ipynb` — solving a small MDP with policy
+   evaluation and improvement
+3. `examples/03_value_iteration.ipynb` — the value iteration algorithm and
+   Bellman updates in practice
+4. `examples/04_openai_gym_setup.ipynb` — setting up Gymnasium environments
+   and the `reset`/`step` interaction loop
+5. `examples/05_exploration_strategies_epsilon_greedy.ipynb` — epsilon-greedy
+   action selection as a first exploration strategy
+6. `examples/06_solving_rl_problems_states_actions_rewards.ipynb` — how to
+   define states, actions, and rewards for new RL problems
+7. `examples/07_mini_projects_cartpole_frozenlake_qlearning_dqn.ipynb` — mini
+   projects on CartPole and FrozenLake previewing Q-learning and DQN
 
 ## Exercise and Quiz
 
@@ -68,11 +56,12 @@ After the examples:
 1. Complete `exercises/01_rl_fundamentals_and_mdps_exercise.ipynb`
 2. Take `../QUIZZES/quiz_01.md`
 
+Solutions are released by your instructor.
+
 ## Expected Outcome
 
 After Unit 1, you should be able to read a simple RL problem, define its MDP,
-reason about rewards and policies, and follow a basic Gym workflow without
-guessing what each step is doing.
+reason about rewards and policies, and follow a basic Gymnasium workflow
+without guessing what each step is doing.
 
-**Unit Duration:** 2 weeks  
-**Difficulty:** Foundational to intermediate
+Next: `../unit2-policy-value/README.md`

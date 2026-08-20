@@ -1,5 +1,4 @@
 # Cybersecurity Datasets - Download URLs
-## مجموعات بيانات الأمن السيبراني - روابط التحميل
 
 **Status**: ⚠️ These datasets are **NOT on Kaggle**, but available from original sources
 
@@ -113,4 +112,3 @@ Move files to: `Course 04/datasets/raw/`
 ---
 
 **Last Updated**: Current Session
-

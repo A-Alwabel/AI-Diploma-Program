@@ -1,12 +1,12 @@
-# Notebook Assessment Rubric | معايير تقييم الدفاتر
+# Notebook Assessment Rubric
 
-## General Assessment Criteria | معايير التقييم العامة
+## General Assessment Criteria
 
 **Total Points: 100 per notebook**
 
 ---
 
-## 1. Understanding (40 points) | الفهم (40 نقطة)
+## 1. Understanding (40 points)
 
 ### Excellent (36-40 points)
 - ✅ Demonstrates deep understanding of concepts
@@ -31,7 +31,7 @@
 
 ---
 
-## 2. Code Implementation (30 points) | تنفيذ الكود (30 نقطة)
+## 2. Code Implementation (30 points)
 
 ### Excellent (27-30 points)
 - ✅ All code examples completed correctly
@@ -56,7 +56,7 @@
 
 ---
 
-## 3. Exercises & Practice (20 points) | التمارين والممارسة (20 نقطة)
+## 3. Exercises & Practice (20 points)
 
 ### Excellent (18-20 points)
 - ✅ All exercises completed
@@ -79,7 +79,7 @@
 
 ---
 
-## 4. Participation & Engagement (10 points) | المشاركة والتفاعل (10 نقاط)
+## 4. Participation & Engagement (10 points)
 
 ### Excellent (9-10 points)
 - ✅ Actively engaged in learning
@@ -103,7 +103,7 @@
 
 ---
 
-## Notebook-Specific Criteria | معايير خاصة بكل دفتر
+## Notebook-Specific Criteria
 
 ### Notebook 00: Python Libraries
 **Focus Areas:**
@@ -143,7 +143,7 @@
 
 ---
 
-## Grading Scale | مقياس الدرجات
+## Grading Scale
 
 | Points | Grade | Description |
 |--------|-------|-------------|
@@ -155,7 +155,7 @@
 
 ---
 
-## Assessment Methods | طرق التقييم
+## Assessment Methods
 
 1. **Quizzes** (30% of notebook grade)
    - See QUIZZES folder
@@ -175,7 +175,7 @@
 
 ---
 
-## Feedback Template | قالب التعليقات
+## Feedback Template
 
 **Notebook: [Number and Name]**
 
@@ -198,4 +198,3 @@
 
 **Created**: 2025  
 **For**: Python for AI Course - 112 AIAT
-

@@ -5,7 +5,7 @@
 **Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)  
 **Covers:** Unit 2 (CNN architecture, convolution, pooling, transfer learning, image processing).  
 **Concepts from:** Unit 2 examples 01 (CNN architecture), 02 (image processing), 05–07 (transfer learning, training) and related slides.  
-**Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -60,7 +60,7 @@ Write code to build a **small CNN** in **PyTorch** for image classification with
 - Input shape suitable for 28×28 grayscale images (e.g. MNIST).
 - Show the full `nn.Module` class with `__init__` and `forward` methods.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_02_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -69,14 +69,14 @@ Write code to build a **small CNN** in **PyTorch** for image classification with
 ### Question 6 (15 points)
 Why do we use **convolutional layers** instead of only **fully connected (dense) layers** for images? Give two reasons.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_02_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
 ### Question 7 (15 points)
 What is **fine-tuning** in transfer learning, and when would you freeze some layers instead of training all of them?
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_02_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -85,7 +85,7 @@ What is **fine-tuning** in transfer learning, and when would you freeze some lay
 ### Question 8 (10 points)
 You train a CNN on **500 images** and get high training accuracy, but the model fails on new images with **different lighting or background**. What is likely going on, and what would you add or change (e.g. data, augmentation, or regularization)?
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_02_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 

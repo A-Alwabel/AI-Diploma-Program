@@ -1,14 +1,12 @@
-# Notebook to PDF Mapping | خريطة الدفاتر إلى PDF
+# Notebook to PDF Mapping
 
-## Overview | نظرة عامة
+## Overview
 
 This document maps each notebook to its corresponding PDF in `DOCS/PDFS/`.
 
-هذا المستند يربط كل دفتر مع ملف PDF المقابل في `DOCS/PDFS/`.
-
 ---
 
-## Complete Mapping | الخريطة الكاملة
+## Complete Mapping
 
 | # | Notebook | PDF | Topic |
 |---|----------|-----|-------|
@@ -30,16 +28,16 @@ This document maps each notebook to its corresponding PDF in `DOCS/PDFS/`.
 
 ---
 
-## Verification | التحقق
+## Verification
 
 ✅ **Count Match**: 15 notebooks = 15 PDFs
 
 ✅ **Structure**: All notebooks follow the "how and why" pedagogical method:
-- Prerequisites (المتطلبات)
-- Where This Notebook Fits (مكان هذا الدفتر)
-- The Story (القصة)
-- Why [Topic] Matters (لماذا يهم)
-- Learning Objectives (أهداف التعلم)
+- Prerequisites
+- Where This Notebook Fits
+- The Story
+- Why [Topic] Matters
+- Learning Objectives
 - BEFORE/AFTER statements
 - Detailed "Why" explanations in code cells
 
@@ -47,7 +45,7 @@ This document maps each notebook to its corresponding PDF in `DOCS/PDFS/`.
 
 ---
 
-## Notes | ملاحظات
+## Notes
 
 - The PDFs in `DOCS/PDFS/` are reference materials that correspond to each notebook
 - Students should use notebooks for hands-on learning
@@ -56,8 +54,7 @@ This document maps each notebook to its corresponding PDF in `DOCS/PDFS/`.
 
 ---
 
-## Last Updated | آخر تحديث
+## Last Updated
 
 Created: 2025-01-XX
 Status: ✅ All notebooks verified and aligned with PDFs
-

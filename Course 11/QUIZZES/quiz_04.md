@@ -5,7 +5,7 @@
 **Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)
 **Covers:** Unit 4 (Docker images, Dockerfile, Kubernetes, CI/CD for ML deployment).
 **Concepts from:** Unit 4 examples (Docker, Kubernetes) and related slides.
-**Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -64,7 +64,7 @@ Write a complete **Dockerfile** to containerize a FastAPI model-serving applicat
 
 Write all Dockerfile instructions in the correct order. Then write the docker build and docker run commands to build the image and start the container.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_04_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -73,14 +73,14 @@ Write all Dockerfile instructions in the correct order. Then write the docker bu
 ### Question 6 (15 points)
 Explain the Kubernetes **Deployment** resource. What does it manage, and how does it ensure model-serving Pods are always running?
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_04_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
 ### Question 7 (15 points)
 What is a **GitHub Actions CI/CD workflow** for ML deployment? Describe the key steps: trigger, test, build image, push to registry, deploy.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_04_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -89,7 +89,7 @@ What is a **GitHub Actions CI/CD workflow** for ML deployment? Describe the key 
 ### Question 8 (10 points)
 Your team needs to update a Kubernetes-deployed model **without downtime**. Describe two deployment strategies (rolling update, blue-green, or canary) and recommend one for a critical production model.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_04_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 

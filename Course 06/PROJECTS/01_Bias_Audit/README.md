@@ -1,6 +1,6 @@
-# Project 01: AI Bias Audit Tool | المشروع 01: أداة تدقيق تحيز الذكاء الاصطناعي
+# Project 01: AI Bias Audit Tool
 
-## Overview | نظرة عامة
+## Overview
 
 Build a comprehensive tool to detect, analyze, and mitigate bias in machine learning models.
 
@@ -13,7 +13,7 @@ Build a comprehensive tool to detect, analyze, and mitigate bias in machine lear
 
 ---
 
-## Requirements | المتطلبات
+## Requirements
 
 ### Functional Requirements
 1. **Bias Detection**
@@ -39,7 +39,7 @@ Build a comprehensive tool to detect, analyze, and mitigate bias in machine lear
 
 ---
 
-## Deliverables | المخرجات
+## Deliverables
 
 1. **Source Code**
    - `bias_detector.py` - Bias detection
@@ -61,5 +61,4 @@ Build a comprehensive tool to detect, analyze, and mitigate bias in machine lear
 ---
 
 **Created**: 2025  
-**For**: Ethics of Artificial Intelligence - AIAT 116
-
+**For**: AIAT 116 — Artificial Intelligence Ethics

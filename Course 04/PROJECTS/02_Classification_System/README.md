@@ -1,6 +1,6 @@
-# Project 02: Multi-Class Classification System | المشروع 02: نظام التصنيف متعدد الفئات
+# Project 02: Multi-Class Classification System
 
-## Overview | نظرة عامة
+## Overview
 
 Build a comprehensive classification system that implements and compares multiple classification algorithms on a real-world dataset.
 
@@ -13,7 +13,7 @@ Build a comprehensive classification system that implements and compares multipl
 
 ---
 
-## Requirements | المتطلبات
+## Requirements
 
 ### Functional Requirements
 1. **Data Preparation**
@@ -56,7 +56,7 @@ Build a comprehensive classification system that implements and compares multipl
 
 ---
 
-## Deliverables | المخرجات
+## Deliverables
 
 1. **Source Code**
    - `data_preparation.py` - Data loading and preprocessing
@@ -79,7 +79,7 @@ Build a comprehensive classification system that implements and compares multipl
 
 ---
 
-## Dataset Suggestions | اقتراحات مجموعات البيانات
+## Dataset Suggestions
 
 - `datasets/raw/montgomery_911_calls.csv` (multi-class: EMS/Fire/Traffic) — Emergency Response
 - `datasets/raw/unsw_nb15.csv` (multi-class cyber threats; or collapse to binary threat) — Cyber/Communication
@@ -90,7 +90,7 @@ Use `random_state=73` for all splits/models to keep results reproducible.
 
 ---
 
-## Evaluation Criteria | معايير التقييم
+## Evaluation Criteria
 
 - Algorithm implementation (30%)
 - Model performance (25%)
@@ -102,4 +102,3 @@ Use `random_state=73` for all splits/models to keep results reproducible.
 
 **Created**: 2025  
 **For**: Machine Learning Algorithms and Applications - AIAT 114
-

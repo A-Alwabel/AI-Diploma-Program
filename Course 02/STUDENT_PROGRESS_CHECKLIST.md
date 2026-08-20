@@ -1,129 +1,78 @@
-# 📋 Student Progress Checklist | قائمة تقدم الطالب
+# Student Progress Checklist - AIAT 112
 
-Use this checklist to track your progress through the course.  
-استخدم هذه القائمة لتتبع تقدمك في الدورة.
-
-**Note:** Templates in `TEMPLATES/` are instructor-only. Students should follow notebooks.
+Track your progress through Course 02. Check items off as you finish them.
 
 ---
 
-## ✅ Setup & Preparation | الإعداد والتحضير
+## Setup
 
-### Prerequisites | المتطلبات الأساسية
-- [ ] Completed **Python Essentials - Part 1 (Basics)**
-- [ ] Completed **Python Essentials - Part 2 (Intermediate)**
-- [ ] Python 3.9+ installed on my computer
-- [ ] Verified Python version: `python --version` shows 3.9 or higher
-
-### Installation | التثبيت
-- [ ] Created virtual environment (recommended) OR installed globally
-- [ ] Upgraded pip: `pip install --upgrade pip`
-- [ ] Installed all libraries: `pip install -r requirements.txt`
-- [ ] Verified installation: `pip check` shows no errors
-- [ ] Tested import: Can import numpy, matplotlib, sklearn, etc.
-
-### Documentation | الوثائق
-- [ ] Read `START_HERE.md` completely
-- [ ] Read `README.md` to understand course structure
-- [ ] Read `DOCS/INSTALLATION_GUIDE.md` (if needed for troubleshooting)
+- [ ] Read `START_HERE.md`
+- [ ] Read `README.md`
+- [ ] Repository root `.venv` set up from `../requirements.txt`
+- [ ] **ai-diploma** Jupyter kernel selected
+- [ ] Ran `TESTING/verify_installation.py` without errors
 
 ---
 
-## 📓 Notebook Progress | تقدم الدفاتر
+## Unit 1: Course Introduction and Search Algorithms
 
-### Notebook 00: Python Libraries for AI | مكتبات بايثون للذكاء الاصطناعي
-- [ ] Opened and read the introduction
-- [ ] Completed NumPy section
-- [ ] Completed Matplotlib section
-- [ ] Completed Collections & heapq section
-- [ ] Completed NetworkX section
-- [ ] Completed SciPy section
-- [ ] Completed Scikit-learn section
-- [ ] Completed all practice exercises
-- [ ] **Notebook 00: COMPLETE** ✅
+- [ ] Read `unit1-search-algorithms/README.md`
+- [ ] Notebook: `examples/01_python_libraries_for_ai.ipynb`
+- [ ] Quiz: `QUIZZES/Quiz_00_Python_Libraries.md`
+- [ ] Notebook: `examples/02_search_algorithms.ipynb`
+- [ ] Exercise: `exercises/exercise_01_search_algorithms.ipynb`
+- [ ] Quiz: `QUIZZES/Quiz_01_Search_Algorithms.md`
+- [ ] Optional: `SELF_ASSESSMENT/Checkpoint_After_Notebook_00.md`
 
-### Notebook 01: Introduction & Search Algorithms | مقدمة الدورة و خوارزميات البحث
-- [ ] Read prerequisites section
-- [ ] Completed BFS (Breadth-First Search) section
-- [ ] Completed DFS (Depth-First Search) section
-- [ ] Completed A* Search Algorithm section
-- [ ] Completed Dijkstra's Algorithm section
-- [ ] Completed all practice exercises
-- [ ] **Notebook 01: COMPLETE** ✅
+## Unit 2: Knowledge Representation
 
-### Notebook 02: Knowledge Representation | تمثيل المعرفة
-- [ ] Read prerequisites section
-- [ ] Completed knowledge graphs section
-- [ ] Completed rule-based systems section
-- [ ] Completed semantic networks section
-- [ ] Completed all practice exercises
-- [ ] **Notebook 02: COMPLETE** ✅
+- [ ] Read `unit2-knowledge-representation/README.md`
+- [ ] Notebook: `examples/01_knowledge_representation.ipynb`
+- [ ] Notebook: `examples/02_propositional_logic_truth_tables.ipynb`
+- [ ] Notebook: `examples/03_inference_rules_logical_reasoning.ipynb`
+- [ ] Notebook: `examples/04_first_order_logic_fol.ipynb`
+- [ ] Exercise: `exercises/exercise_02_knowledge_representation.ipynb`
+- [ ] Quiz: `QUIZZES/Quiz_02_Knowledge_Representation.md`
 
-### Notebook 03: Learning under Uncertainty | التعلم في ظل عدم اليقين
-- [ ] Read prerequisites section
-- [ ] Completed probability basics section
-- [ ] Completed Bayesian inference section
-- [ ] Completed decision making section
-- [ ] Completed Monte Carlo simulation section
-- [ ] Completed all practice exercises
-- [ ] **Notebook 03: COMPLETE** ✅
+## Unit 3: Learning Under Uncertainty
 
-### Notebook 04: Optimization Techniques | تقنيات التحسين
-- [ ] Read prerequisites section
-- [ ] Completed gradient descent section
-- [ ] Completed genetic algorithms section
-- [ ] Completed simulated annealing section
-- [ ] Completed SciPy optimization section
-- [ ] Completed all practice exercises
-- [ ] **Notebook 04: COMPLETE** ✅
+- [ ] Read `unit3-learning-under-uncertainty/README.md`
+- [ ] Notebook: `examples/01_learning_under_uncertainty.ipynb`
+- [ ] Notebook: `examples/02_bayesian_networks.ipynb`
+- [ ] Notebook: `examples/03_hmm_viterbi.ipynb`
+- [ ] Notebook: `examples/04_mdp_value_iteration.ipynb`
+- [ ] Exercise: `exercises/exercise_03_probability_and_uncertainty.ipynb`
+- [ ] Quiz: `QUIZZES/Quiz_03_Uncertainty.md`
 
-### Notebook 05: AI-based Learning Models | نماذج التعلم المعتمدة على الذكاء الاصطناعي
-- [ ] Read prerequisites section
-- [ ] Completed linear regression section
-- [ ] Completed logistic regression section
-- [ ] Completed decision trees section
-- [ ] Completed KNN section
-- [ ] Completed neural networks section
-- [ ] Completed model evaluation section
-- [ ] Completed all practice exercises
-- [ ] **Notebook 05: COMPLETE** ✅
+## Unit 4: Optimization Techniques
+
+- [ ] Read `unit4-optimization-techniques/README.md`
+- [ ] Notebook: `examples/01_optimization_techniques.ipynb`
+- [ ] Exercise: `exercises/exercise_04_optimization_techniques.ipynb`
+- [ ] Quiz: `QUIZZES/Quiz_04_Optimization.md`
+
+## Unit 5: AI-Based Learning Models
+
+- [ ] Read `unit5-ai-learning-models/README.md`
+- [ ] Notebook: `examples/01_ai_learning_models.ipynb`
+- [ ] Exercise: `exercises/exercise_05_machine_learning_models.ipynb`
+- [ ] Quiz: `QUIZZES/Quiz_05_ML_Models.md`
+- [ ] Optional: `SELF_ASSESSMENT/Checkpoint_After_Notebook_05.md`
 
 ---
 
-## 🎯 Course Completion | إتمام الدورة
+## Projects and Final Assessment
 
-### Final Checklist | القائمة النهائية
-- [ ] All 6 notebooks completed (00-05)
-- [ ] All practice exercises attempted
-- [ ] Can explain key concepts from each notebook
-- [ ] Can implement basic search algorithms
-- [ ] Can work with NumPy and Pandas
-- [ ] Can create visualizations with Matplotlib
-- [ ] Can build simple ML models with Scikit-learn
-- [ ] **COURSE COMPLETE!** 🎉
+- [ ] Chose a project from `PROJECTS/` (complete at least one)
+  - [ ] `01_Pathfinding_Game/`
+  - [ ] `02_Expert_System/`
+  - [ ] `03_ML_Classifier/`
+- [ ] Reviewed `ASSESSMENTS/Project_Rubric.md` before submitting
+- [ ] Final exam: `ASSESSMENTS/Final_Exam.md`
 
 ---
 
-## 📊 Progress Summary | ملخص التقدم
+## Notes
 
-**Notebooks Completed:** ___ / 6  
-**Overall Progress:** ___%
-
-**Date Started:** _______________  
-**Date Completed:** _______________
-
----
-
-## 📝 Notes & Questions | الملاحظات والأسئلة
-
-Use this space to write down:
-- Concepts you found difficult
-- Questions to ask your instructor
-- Ideas for projects
-- Resources you found helpful
-
----
-
-**Good luck with your learning journey!** 🚀  
-**حظاً موفقاً في رحلة التعلم!** 🚀
-
+Use this space for concepts you found difficult, questions for your
+instructor, and project ideas.

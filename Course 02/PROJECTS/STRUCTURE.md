@@ -1,6 +1,6 @@
-# Projects Folder Structure | هيكل مجلد المشاريع
+# Projects Folder Structure
 
-## New Clean Structure | الهيكل الجديد النظيف
+## New Clean Structure
 
 ```
 PROJECTS/
@@ -9,21 +9,21 @@ PROJECTS/
 │
 ├── 01_Pathfinding_Game/               # Project 01 Folder
 │   ├── README.md                      # Complete project description
-│   ├── Implementation_Guide.md        # Step-by-step implementation guide
+│   ├── PROJECT_GUIDE.md        # Step-by-step implementation guide
 │   └── Template/                      # Starter code
 │       ├── README.md                  # How to use template
 │       └── pathfinding_template.py    # Starter code with TODOs
 │
 ├── 02_Expert_System/                  # Project 02 Folder
 │   ├── README.md                      # Complete project description
-│   ├── Implementation_Guide.md        # Step-by-step implementation guide
+│   ├── PROJECT_GUIDE.md        # Step-by-step implementation guide
 │   └── Template/                      # Starter code
 │       ├── README.md                  # How to use template
 │       └── expert_system_template.py  # Starter code with TODOs
 │
 └── 03_ML_Classifier/                  # Project 03 Folder
     ├── README.md                      # Complete project description
-    ├── Implementation_Guide.md        # Step-by-step implementation guide
+    ├── PROJECT_GUIDE.md        # Step-by-step implementation guide
     └── Template/                      # Starter code
         ├── README.md                  # How to use template
         └── ml_classifier_template.py   # Starter code with TODOs
@@ -31,7 +31,7 @@ PROJECTS/
 
 ---
 
-## What's in Each Project Folder? | ما في كل مجلد مشروع؟
+## What's in Each Project Folder?
 
 ### For Each Project:
 
@@ -43,7 +43,7 @@ PROJECTS/
    - Resources
    - Submission guidelines
 
-2. **Implementation_Guide.md** - Step-by-Step Guide
+2. **PROJECT_GUIDE.md** - Step-by-Step Guide
    - Detailed implementation steps
    - Code structure recommendations
    - Testing guidelines
@@ -58,14 +58,14 @@ PROJECTS/
 
 ---
 
-## Benefits of New Structure | فوائد الهيكل الجديد
+## Benefits of New Structure
 
 ### ✅ Better Organization
 - Each project in its own folder
 - Clear separation of concerns
 - Easy to navigate
 
-### ✅ Complete Materials
+### Materials per Project
 - Project description (README.md)
 - Implementation guide (separate file)
 - Starter code (Template folder)
@@ -82,7 +82,7 @@ PROJECTS/
 
 ---
 
-## How to Use | كيفية الاستخدام
+## How to Use
 
 ### For Students:
 
@@ -92,7 +92,7 @@ PROJECTS/
    - Read project `README.md` for details
 
 2. **Get Started:**
-   - Read `Implementation_Guide.md` for steps
+   - Read `PROJECT_GUIDE.md` for steps
    - Copy template from `Template/` folder
    - Follow the guide step-by-step
 
@@ -115,7 +115,7 @@ PROJECTS/
 
 ---
 
-## File Count | عدد الملفات
+## File Count
 
 - **Total Projects:** 3
 - **Files per Project:** 4 (README, Guide, Template code, Template README)
@@ -125,7 +125,7 @@ PROJECTS/
 
 ---
 
-## Comparison: Before vs After | المقارنة: قبل وبعد
+## Comparison: Before vs After
 
 ### Before (Old Structure):
 ```
@@ -149,15 +149,15 @@ PROJECTS/
 PROJECTS/
 ├── 01_Pathfinding_Game/
 │   ├── README.md
-│   ├── Implementation_Guide.md
+│   ├── PROJECT_GUIDE.md
 │   └── Template/
 ├── 02_Expert_System/
 │   ├── README.md
-│   ├── Implementation_Guide.md
+│   ├── PROJECT_GUIDE.md
 │   └── Template/
 ├── 03_ML_Classifier/
 │   ├── README.md
-│   ├── Implementation_Guide.md
+│   ├── PROJECT_GUIDE.md
 │   └── Template/
 └── README.md
 ```
@@ -169,7 +169,4 @@ PROJECTS/
 
 ---
 
-**Created**: 2025  
-**Last Updated**: 2025  
-**Status**: ✅ Clean and Organized
-
+**Created**: 2025

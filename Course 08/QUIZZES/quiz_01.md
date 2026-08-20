@@ -5,7 +5,7 @@
 **Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)  
 **Covers:** Unit 1 (neural networks, backpropagation, optimization, activation functions).  
 **Concepts from:** Unit 1 examples 02 (simple NN), 05 (backprop), 06 (optimization) and related slides.  
-**Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -60,7 +60,7 @@ Write code to build a **2-layer feedforward neural network** in **PyTorch** for 
 - Output layer with 10 units (logits, no softmax needed here — use `CrossEntropyLoss`).
 - Include `__init__` and `forward` methods. Input size is 784 (flattened 28×28).
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_01_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -69,14 +69,14 @@ Write code to build a **2-layer feedforward neural network** in **PyTorch** for 
 ### Question 6 (15 points)
 Explain what **overfitting** is and name **one** technique to reduce it in deep learning.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_01_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
 ### Question 7 (15 points)
 Describe the **training loop** in one sentence each: what happens in the forward pass, and what happens after the loss is computed (backward pass and update).
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_01_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -85,7 +85,7 @@ Describe the **training loop** in one sentence each: what happens in the forward
 ### Question 8 (10 points)
 A model achieves **99% training accuracy** and **70% validation accuracy**. What is the likely problem, and **one** concrete step you would take to address it?
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_01_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 

@@ -5,7 +5,7 @@
 **Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)
 **Covers:** Unit 3 (diffusion models, StyleGAN, image-to-image translation, style transfer).
 **Concepts from:** Unit 3 examples 02 (image generation advanced) and related slides.
-**Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -60,7 +60,7 @@ Write PyTorch code to implement the **DDPM forward noising process**:
 - Write q_sample(x0, t): returns x_t = sqrt(alphas_cumprod[t]) * x0 + sqrt(1 - alphas_cumprod[t]) * noise.
 - Apply q_sample at t=0, t=500, t=999 and describe what you expect to see.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_03_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -69,14 +69,14 @@ Write PyTorch code to implement the **DDPM forward noising process**:
 ### Question 6 (15 points)
 Explain the difference between **Pix2Pix** (paired) and **CycleGAN** (unpaired) image-to-image translation. When would you use each?
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_03_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
 ### Question 7 (15 points)
 What is a **U-Net** architecture, and why is it well-suited as the denoiser in diffusion models?
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_03_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 
@@ -85,7 +85,7 @@ What is a **U-Net** architecture, and why is it well-suited as the denoiser in d
 ### Question 8 (10 points)
 A team wants to generate realistic medical scan images to augment a small dataset. Compare **GAN vs diffusion model** for this task: quality, training stability, and control trade-offs.
 
-**Answer Key:** See `DOCS/SOLUTIONS/quizzes/quiz_03_solution.md`.
+**Answer key:** released by your instructor.
 
 ---
 

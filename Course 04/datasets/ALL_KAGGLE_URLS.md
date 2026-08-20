@@ -1,5 +1,4 @@
 # All Kaggle Dataset URLs - Complete List
-## جميع روابط مجموعات بيانات Kaggle - القائمة الكاملة
 
 **Updated**: Current Session  
 **Status**: 5 datasets found on Kaggle!
@@ -109,4 +108,3 @@ kaggle datasets download -d mchirico/montcoalert
 ---
 
 **Last Updated**: Current Session
-

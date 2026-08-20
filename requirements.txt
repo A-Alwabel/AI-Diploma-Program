@@ -1,37 +1,67 @@
-# Core deep learning
-torch>=2.0.0
-torchvision>=0.15.0
-torchaudio>=2.0.0
+# AI Diploma - student environment baseline
+#
+# Install into a fresh virtual environment:
+#   python3 -m venv .venv && source .venv/bin/activate
+#   pip install --upgrade pip
+#   pip install -r requirements.txt
+#
+# NOTE: TensorFlow is NOT in this file. TensorFlow has no wheel for this
+# venv's Python, so the TensorFlow/Keras notebooks (Courses 01 and 08) run
+# in a separate Python 3.13 environment registered as the "tfenv" Jupyter
+# kernel. See docs/SETUP_GUIDE.md.
 
-# Scientific computing
-numpy>=1.24.0
-scipy>=1.10.0
-matplotlib>=3.7.0
-seaborn>=0.12.0
-pandas>=2.0.0
+# --- Core scientific stack (used in every course) ---
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
 
-# Machine learning
-scikit-learn>=1.3.0
+# --- Jupyter / notebook tooling ---
+jupyter
+ipykernel
+ipywidgets
+nbformat
+nbconvert
+nbclient
 
-# Reinforcement learning
-gymnasium>=0.29.0
+# --- Data I/O and visualization ---
+openpyxl                      # Excel files (pandas read_excel/to_excel)
+plotly                        # interactive charts (Course 05)
+dask[dataframe]               # scalable dataframes (Course 05)
 
-# Model deployment
-fastapi>=0.100.0
-uvicorn>=0.23.0
-onnx>=1.14.0
-onnxruntime>=1.15.0
+# --- Knowledge representation (Course 01) ---
+SPARQLWrapper
+rdflib
 
-# Experiment tracking
-mlflow>=2.5.0
+# --- Ethics, fairness, explainability (Course 06) ---
+fairlearn
+shap
+lime
+cryptography                  # privacy/security labs (Courses 06, 11)
 
-# Notebook tools
-jupyterlab>=4.0.0
-nbformat>=5.9.0
-nbclient>=0.8.0
-ipykernel>=6.25.0
+# --- Reinforcement learning (Course 09) ---
+gymnasium[classic-control]
+pygame                        # environment rendering
+imageio                       # saving episode frames/GIFs
 
-# Utilities
-tqdm>=4.65.0
-pillow>=10.0.0
-requests>=2.31.0
+# --- Deep learning and NLP (Courses 07, 08, 10, 11) ---
+torch
+torchvision
+transformers                  # Hugging Face (Courses 07, 10)
+nltk                          # classical NLP (Course 07)
+spacy                         # NLP pipelines (Course 07)
+opencv-python                 # image processing (Course 08)
+
+# --- Deployment / MLOps (Course 11) ---
+mlflow
+fastapi
+uvicorn
+flask
+onnx
+onnxruntime
+joblib                        # model persistence
+boto3                         # optional: Course 11 cloud lab (AWS)
+
+# --- Optional extras ---
+xgboost                       # Course 04 boosting lab (notebook falls back to sklearn if missing)

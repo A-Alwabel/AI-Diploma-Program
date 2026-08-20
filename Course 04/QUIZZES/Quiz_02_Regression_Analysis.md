@@ -1,6 +1,6 @@
-# Quiz 02: Advanced Regression Techniques | اختبار 02: تقنيات الانحدار المتقدمة
+# Quiz 02: Advanced Regression Techniques
 
-## Instructions | التعليمات
+## Instructions
 - **Time Limit**: 30 minutes
 - **Total Points**: 50 points
 - **Format**: Multiple choice, short answer, code completion
@@ -17,7 +17,6 @@ What is the main purpose of Ridge Regression (L2 regularization)?
 - C) To increase model complexity
 - D) To handle missing values
 
-
 ---
 
 ### Question 2 (5 points)
@@ -26,7 +25,6 @@ What is the main difference between Ridge and Lasso regression?
 - B) Ridge uses L2 penalty, Lasso uses L1 penalty
 - C) There is no difference
 - D) Ridge is for classification, Lasso is for regression
-
 
 ---
 
@@ -37,7 +35,6 @@ Which regularization technique can set coefficients to exactly zero?
 - C) Both
 - D) Neither
 
-
 ---
 
 ### Question 4 (5 points)
@@ -46,7 +43,6 @@ What does the alpha parameter control in Ridge/Lasso regression?
 - B) The strength of regularization
 - C) The number of iterations
 - D) The number of features
-
 
 ---
 
@@ -59,7 +55,6 @@ Which metric is most sensitive to outliers in regression?
 - C) R² Score
 - D) RMSE (Root Mean Squared Error)
 
-
 ---
 
 ### Question 6 (5 points)
@@ -69,7 +64,6 @@ What does R² (R-squared) measure?
 - C) The mean squared error
 - D) The residual sum of squares
 
-
 ---
 
 ### Question 7 (5 points)
@@ -78,7 +72,6 @@ What is a good R² score?
 - B) Close to 1
 - C) Close to -1
 - D) Any positive value
-
 
 ---
 
@@ -91,7 +84,6 @@ What is the main purpose of cross-validation?
 - C) To speed up training
 - D) To handle missing values
 
-
 ---
 
 ### Question 9 (5 points)
@@ -100,7 +92,6 @@ In K-Fold cross-validation with K=5, how many times is the model trained?
 - B) 5 times
 - C) 10 times
 - D) Depends on the data size
-
 
 ---
 
@@ -111,14 +102,6 @@ What is the advantage of using cross-validation over a simple train-test split?
 - C) It provides multiple performance estimates
 - D) It requires less data
 
-
 ---
 
-## Answer Key | مفتاح الإجابات
-
-
----
-
-**Good luck!** 🍀  
-**حظاً موفقاً!**
-
+> Answers and rubric: released by your instructor.

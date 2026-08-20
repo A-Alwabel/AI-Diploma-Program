@@ -1,11 +1,11 @@
-# Google Colab Setup Guide | دليل إعداد Google Colab
+# Google Colab Setup Guide
 ## Using GPU-Accelerated Notebooks on Google Colab
 
 **For students without NVIDIA GPU:** Use Google Colab for free GPU access!
 
 ---
 
-## 🚀 Quick Start | البدء السريع
+## 🚀 Quick Start
 
 ### Step 1: Open Notebook in Colab
 
@@ -88,7 +88,7 @@ These notebooks work better with GPU:
 
 ---
 
-## 💡 Tips | نصائح
+## 💡 Tips
 
 ### Free GPU Limits
 - **Free tier:** ~12 hours/day of GPU usage

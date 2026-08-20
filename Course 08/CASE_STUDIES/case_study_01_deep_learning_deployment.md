@@ -3,7 +3,7 @@
 
 **Type:** Case Study Analysis  
 **Points:** 100 points  
-**Rubric:** See `CASE_STUDIES/case_study_01_rubric.md`
+**Rubric:** Per-section points are listed below (Tasks 1–5)
 
 ---
 
@@ -111,7 +111,7 @@ The core problem is deploying a chest X-ray classifier so radiologists can get a
 **Solution design (excerpt):**  
 Use a pre-trained ResNet or DenseNet fine-tuned on chest X-rays; export to SavedModel or ONNX. Serve via FastAPI: one endpoint accepts image upload, preprocesses to 224×224 and normalizes, runs inference, runs Grad-CAM to get a heatmap, returns JSON with class, confidence, and heatmap URL or base64. Stack: Python 3.10, TensorFlow or ONNX Runtime, FastAPI, on-prem GPU.
 
-*(Full sample solution for instructors: see `DOCS/SOLUTIONS/case_study_01_sample_solution.md`.)*
+*(A full sample solution is released by your instructor.)*
 
 ---
 

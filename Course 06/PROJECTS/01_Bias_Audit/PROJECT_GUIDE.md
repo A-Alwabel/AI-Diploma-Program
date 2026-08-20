@@ -1,9 +1,8 @@
 # Complete Project Guide: AI Bias Audit Tool
-## دليل المشروع الكامل: أداة تدقيق تحيز الذكاء الاصطناعي
 
 ---
 
-## 🎯 Real-World Application | التطبيق في الحياة الواقعية
+## 🎯 Real-World Application
 
 ### Example: Hiring System Bias Detection
 **Imagine you're building a tool to audit AI systems used in hiring, like those used by companies to screen job applicants.**
@@ -36,7 +35,6 @@
 ---
 
 ## 🚀 Quick Start (For Experienced Students)
-## البدء السريع (للطلاب ذوي الخبرة)
 
 > 💡 **New to bias detection?** Skip to [Complete Tutorial](#-complete-tutorial-for-beginners) section below.
 
@@ -100,7 +98,6 @@ class BiasMitigator:
 ---
 
 ## 📚 Complete Tutorial (For Beginners)
-## دليل كامل للمبتدئين
 
 > 💡 **Already familiar with bias detection?** See [Quick Start](#-quick-start-for-experienced-students) section above.
 
@@ -442,7 +439,6 @@ class BiasReporter:
 ---
 
 ## 🔗 Course Content Connections
-## روابط محتوى الدورة
 
 ### How This Project Connects to Course Content
 
@@ -456,7 +452,6 @@ class BiasReporter:
 ---
 
 ## 🐛 Troubleshooting
-## حل المشاكل
 
 ### Problem: Metrics calculation fails
 **Error:** Division by zero or NaN values  
@@ -473,7 +468,6 @@ class BiasReporter:
 ---
 
 ## 🎓 Learning Checklist
-## قائمة التعلم
 
 - [ ] Day 1: Understand bias in AI
 - [ ] Day 2-3: Implement fairness metrics

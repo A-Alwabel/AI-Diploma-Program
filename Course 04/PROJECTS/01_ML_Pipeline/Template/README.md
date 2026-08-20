@@ -1,6 +1,6 @@
-# ML Pipeline Template | قالب خط أنابيب تعلم الآلة
+# ML Pipeline Template
 
-## How to Use | كيفية الاستخدام
+## How to Use
 
 1. **Copy the template** to your project folder
 2. **Read the comments** - they explain what to implement
@@ -10,7 +10,7 @@
 
 ---
 
-## Implementation Order | ترتيب التنفيذ
+## Implementation Order
 
 1. **Data Loader** - Start with data loading
 2. **Preprocessor** - Handle data cleaning
@@ -20,7 +20,7 @@
 
 ---
 
-## Tips | نصائح
+## Tips
 
 - Test each component independently
 - Use logging to track pipeline steps
@@ -30,4 +30,3 @@
 ---
 
 **Good luck with your project!** 🚀
-

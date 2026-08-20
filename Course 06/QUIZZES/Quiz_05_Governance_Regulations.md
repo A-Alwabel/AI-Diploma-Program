@@ -1,5 +1,4 @@
 # Quiz 5: Governance and Regulations
-## اختبار 5: الحوكمة واللوائح
 
 **Time Limit:** 30 minutes | **Marks:** 30 points
 
@@ -255,27 +254,6 @@ What are the main challenges in implementing AI governance? How can organization
 - **Stakeholder Engagement:** Involve all relevant parties
 - **Continuous Improvement:** Regular review and updates
 - **Industry Collaboration:** Learn from others, share best practices
-
----
-
-## Answer Key
-
-**Part 1:**
-1. B) Framework of policies, processes, and controls for responsible AI development and deployment
-2. B) A comprehensive regulation for AI systems in the European Union
-3. B) AI systems that could cause harm to health, safety, or fundamental rights
-4. B) A committee that oversees ethical AI development and deployment
-5. B) To evaluate potential impacts of AI systems before deployment
-
-**Part 2:**
-6. Key principles with risk categories explained - 5 points
-7. Main components of governance framework - 5 points
-
-**Part 3:**
-8. Comprehensive governance measures - 5 points
-9. Challenges and solutions - 5 points
-
-**Total: 30 points**
 
 ---
 

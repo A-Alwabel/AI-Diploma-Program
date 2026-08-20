@@ -1,62 +1,44 @@
-# Unit: Privacy and Security
-## Privacy and Security
+# Unit 3: Privacy, Security, and Data Protection
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+Unit hours: 12 (theory+practical)
 
-Before starting this unit, confirm:
+This unit covers protecting data and people in AI systems: data protection strategies, privacy-enhancing technologies, differential privacy, GDPR compliance, secure AI development, encryption, and anonymization/pseudonymization techniques.
 
-- [ ] Completed Unit 2: Bias, Fairness, and Discrimination in AI
-- [ ] Understand data collection and privacy basics
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
+## Prerequisites
 
-### Learning Objectives | أهداف التعلم
+- Unit 2: Bias, Fairness, and Discrimination in AI ([../unit2-bias-fairness/README.md](../unit2-bias-fairness/README.md))
+- Setup from [../START_HERE.md](../START_HERE.md) (root `.venv` + **ai-diploma** kernel)
 
-By the end of this unit, students will be able to:
-- Understand key concepts in privacy and security
-- Apply ethical frameworks and methodologies
-- Analyze real-world case studies
-- Implement ethical AI solutions
+## Learning Objectives
 
----
+By the end of this unit, you will be able to:
 
-## Unit Duration | مدة الوحدة
+- Apply data protection strategies and privacy-enhancing technologies
+- Explain and implement basic differential privacy mechanisms
+- Assess an AI system against GDPR principles and data subject rights
+- Apply secure development practices, encryption, and anonymization techniques
 
-**Theoretical Hours:** 6 hours  
-**Practical Hours:** 6 hours  
-**Total Hours:** 12 hours
+## Examples (work in this order)
 
-**Format:** 6 theoretical + 6 practical hours
+1. [examples/01_data_protection.ipynb](examples/01_data_protection.ipynb) — Data protection strategies and how they compare.
+2. [examples/02_privacy_technologies.ipynb](examples/02_privacy_technologies.ipynb) — Privacy-enhancing technologies (PETs) and their trade-offs.
+3. [examples/03_differential_privacy.ipynb](examples/03_differential_privacy.ipynb) — Differential privacy: noise mechanisms and the privacy–utility trade-off.
+4. [examples/04_gdpr_compliance.ipynb](examples/04_gdpr_compliance.ipynb) — GDPR principles, data subject rights, and compliance checks.
+5. [examples/05_secure_development.ipynb](examples/05_secure_development.ipynb) — Secure AI development: common vulnerabilities and secure practices.
+6. [examples/06_data_encryption_techniques.ipynb](examples/06_data_encryption_techniques.ipynb) — Implementing encryption techniques for data protection.
+7. [examples/07_anonymization_pseudonymization.ipynb](examples/07_anonymization_pseudonymization.ipynb) — Applying anonymization and pseudonymization methods.
 
----
+## Exercises
 
-## Topics Covered | المواضيع المغطاة
+- [exercises/exercise_01.ipynb](exercises/exercise_01.ipynb)
+- [exercises/exercise_02.ipynb](exercises/exercise_02.ipynb) — k-anonymity and privacy techniques
 
-1. **Data Protection**
-2. **Privacy Technologies**
-3. **Differential Privacy**
-4. **GDPR Compliance**
-5. **Secure Development**
+Solutions are released by your instructor.
 
----
+## Quiz
 
-## Files Structure | هيكل الملفات
+- [../QUIZZES/Quiz_03_Privacy_Security.md](../QUIZZES/Quiz_03_Privacy_Security.md)
 
-- `examples/`: Complete code examples with explanations
-- `exercises/`: Practice problems for students
-- `solutions/`: Complete solutions to exercises
-- `tests/`: Unit tests
+## Next
 
----
-
-## Learning Path | مسار التعلم
-
-1. **Start with examples** - Understand concepts through code
-2. **Complete exercises** - Practice what you learned
-3. **Review solutions** - Check your work
-4. **Take quizzes** - Test your understanding
-
----
-
-**Unit Duration:** 2 weeks  
-**Difficulty:** Intermediate
+Continue to [Unit 4: Interpretability, Transparency, and Accountability](../unit4-transparency-accountability/README.md).

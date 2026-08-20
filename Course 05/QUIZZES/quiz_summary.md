@@ -1,11 +1,10 @@
 # Course 05: Quizzes Summary
-## ملخص اختبارات الدورة 05
 
 This course contains quizzes for each unit. All quizzes are in the **`QUIZZES/`** folder (this folder).
 
 ---
 
-## Available Quizzes | الاختبارات المتاحة
+## Available Quizzes
 
 ### Unit 1: Introduction to Data Science
 **File:** `Quiz_01_Introduction_Data_Science.md`

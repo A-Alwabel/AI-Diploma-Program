@@ -1,5 +1,4 @@
 # Quiz 1: Foundations of AI Ethics
-## اختبار 1: أسس أخلاقيات الذكاء الاصطناعي
 
 **Time Limit:** 30 minutes | **Marks:** 30 points
 
@@ -132,40 +131,6 @@ You are designing an AI hiring system. What ethical considerations should you ad
 ### Question 9 (5 points)
 What are the key principles that should guide ethical AI development?
 
-**Key Principles:**
-
-1. **Fairness**: Treat all individuals and groups equitably
-2. **Transparency**: Systems should be understandable and explainable
-3. **Accountability**: Clear responsibility for AI decisions and outcomes
-4. **Privacy**: Protect individual data and privacy rights
-5. **Safety**: Ensure AI systems are safe and reliable
-6. **Human Autonomy**: Preserve human decision-making and control
-7. **Beneficence**: AI should benefit humanity and society
-8. **Non-maleficence**: Do no harm, minimize risks
-9. **Justice**: Distribute benefits and burdens fairly
-10. **Respect for Human Dignity**: Maintain human worth and rights
-
----
-
-## Answer Key
-
-**Part 1:**
-1. B) Maximize overall happiness/utility for the greatest number
-2. B) Focus on duties and rules that should be followed
-3. B) It showed racial bias in risk assessment
-4. C) Focus on character and moral virtues
-5. B) It ensures AI systems are fair, just, and respect human values
-
-**Part 2:**
-6. All three frameworks explained with AI applications - 5 points
-7. Case study with problems and lessons - 5 points
-
-**Part 3:**
-8. Multiple ethical considerations addressed - 5 points
-9. Key principles clearly explained - 5 points
-
-**Total: 30 points**
-
 ---
 
 ## Grading Rubric
@@ -175,4 +140,3 @@ What are the key principles that should guide ethical AI development?
 - **70-79% (21-23 points):** Satisfactory
 - **60-69% (18-20 points):** Needs improvement
 - **Below 60% (<18 points):** Requires additional study
-

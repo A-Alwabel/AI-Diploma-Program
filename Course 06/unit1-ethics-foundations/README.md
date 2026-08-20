@@ -1,63 +1,38 @@
-# Unit: Ethics Foundations
-## Ethics Foundations
+# Unit 1: Foundations of AI Ethics
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+Unit hours: 12 (theory+practical)
 
-Before starting this unit, confirm:
+This unit introduces the major ethical frameworks (utilitarianism, deontology, virtue ethics), shows how to apply them to AI decisions with a structured decision-making process, and analyzes a real ethics failure (the COMPAS recidivism algorithm) including its stakeholders.
 
-- [ ] Completed Courses 01-05 or understand basic AI/ML concepts
-- [ ] Comfortable with AI terms (data, model, bias)
-- [ ] Read `Course 06/START_HERE.md`
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
+## Prerequisites
 
-### Learning Objectives | أهداف التعلم
+- Earlier Semester 1 courses (AIAT 111–115): basic Python and introductory ML concepts.
+- Read [../START_HERE.md](../START_HERE.md) and complete the setup there (root `.venv` + **ai-diploma** kernel).
 
-By the end of this unit, students will be able to:
-- Understand key concepts in ethics foundations
-- Apply ethical frameworks and methodologies
-- Analyze real-world case studies
-- Implement ethical AI solutions
+## Learning Objectives
 
----
+By the end of this unit, you will be able to:
 
-## Unit Duration | مدة الوحدة
+- Explain the main ethical frameworks and how they apply to AI systems
+- Apply a structured ethical decision-making process to AI scenarios
+- Analyze a real-world AI ethics case study and identify the stakeholders affected
 
-**Theoretical Hours:** 6 hours  
-**Practical Hours:** 6 hours  
-**Total Hours:** 12 hours
+## Examples (work in this order)
 
-**Format:** 6 theoretical + 6 practical hours
+1. [examples/01_ethical_frameworks.ipynb](examples/01_ethical_frameworks.ipynb) — Utilitarianism, deontology, and virtue ethics, compared and applied to AI scenarios.
+2. [examples/02_ethical_decision_making.ipynb](examples/02_ethical_decision_making.ipynb) — A step-by-step ethical decision-making framework for AI design choices.
+3. [examples/03_case_study_analysis.ipynb](examples/03_case_study_analysis.ipynb) — Case study analysis of the COMPAS recidivism algorithm and its ethical issues.
 
----
+## Exercise
 
-## Topics Covered | المواضيع المغطاة
+- [exercises/exercise_01.ipynb](exercises/exercise_01.ipynb)
 
-1. **Introduction to AI Ethics**
-2. **Ethical Frameworks**
-3. **Ethical Decision Making**
-4. **Case Study Analysis**
-5. **Stakeholder Analysis**
+Solutions are released by your instructor.
 
----
+## Quiz
 
-## Files Structure | هيكل الملفات
+- [../QUIZZES/Quiz_01_Ethics_Foundations.md](../QUIZZES/Quiz_01_Ethics_Foundations.md)
 
-- `examples/`: Complete code examples with explanations
-- `exercises/`: Practice problems for students
-- `solutions/`: Complete solutions to exercises
-- `tests/`: Unit tests
+## Next
 
----
-
-## Learning Path | مسار التعلم
-
-1. **Start with examples** - Understand concepts through code
-2. **Complete exercises** - Practice what you learned
-3. **Review solutions** - Check your work
-4. **Take quizzes** - Test your understanding
-
----
-
-**Unit Duration:** 2 weeks  
-**Difficulty:** Intermediate
+Continue to [Unit 2: Bias, Fairness, and Discrimination in AI](../unit2-bias-fairness/README.md).

@@ -1,33 +1,33 @@
-# Projects Overview | نظرة عامة على المشاريع
+# Projects Overview
 
 This folder contains all project materials for the Python for AI course.
 
 ---
 
-## 📁 Folder Structure | هيكل المجلد
+## 📁 Folder Structure
 
 ```
 PROJECTS/
 ├── README.md (this file)
 ├── 01_Pathfinding_Game/
 │   ├── README.md (project description)
-│   ├── Implementation_Guide.md
+│   ├── PROJECT_GUIDE.md
 │   └── Template/
 │       ├── README.md
 │       └── pathfinding_template.py
 ├── 02_Expert_System/
 │   ├── README.md
-│   ├── Implementation_Guide.md
+│   ├── PROJECT_GUIDE.md
 │   └── Template/
 ├── 03_ML_Classifier/
 │   ├── README.md
-│   ├── Implementation_Guide.md
+│   ├── PROJECT_GUIDE.md
 │   └── Template/
 ```
 
 ---
 
-## 🎯 Available Projects | المشاريع المتاحة
+## 🎯 Available Projects
 
 ### Project 01: Pathfinding Game
 **Topic:** Search Algorithms  
@@ -37,8 +37,6 @@ PROJECTS/
 **Real-World Example:** Game AI (Strategy games, navigation)
 
 Build a pathfinding game using BFS, DFS, and A* algorithms.
-
-📖 **New to programming?** Check out the **[Beginner's Guide](01_Pathfinding_Game/BEGINNER_GUIDE.md)** for step-by-step instructions!
 
 [View Details →](01_Pathfinding_Game/README.md)
 
@@ -53,8 +51,6 @@ Build a pathfinding game using BFS, DFS, and A* algorithms.
 
 Build an expert system with knowledge graphs and rule-based reasoning.
 
-📖 **New to programming?** Check out the **[Beginner's Guide](02_Expert_System/BEGINNER_GUIDE.md)** for step-by-step instructions!
-
 [View Details →](02_Expert_System/README.md)
 
 ---
@@ -68,13 +64,11 @@ Build an expert system with knowledge graphs and rule-based reasoning.
 
 Build a complete ML pipeline with multiple models and evaluation.
 
-📖 **New to machine learning?** Check out the **[Beginner's Guide](03_ML_Classifier/BEGINNER_GUIDE.md)** for step-by-step instructions!
-
 [View Details →](03_ML_Classifier/README.md)
 
 ---
 
-## 📋 Project Selection | اختيار المشروع
+## 📋 Project Selection
 
 Students should complete **at least one project** by the end of the course.
 
@@ -85,7 +79,7 @@ Students should complete **at least one project** by the end of the course.
 
 ---
 
-## 📅 Project Timeline | الجدول الزمني
+## 📅 Project Timeline
 
 | Week | Activity |
 |------|----------|
@@ -95,7 +89,7 @@ Students should complete **at least one project** by the end of the course.
 
 ---
 
-## 📊 Evaluation | التقييم
+## 📊 Evaluation
 
 All projects are evaluated using the rubric in `../ASSESSMENTS/Project_Rubric.md`.
 
@@ -107,7 +101,7 @@ All projects are evaluated using the rubric in `../ASSESSMENTS/Project_Rubric.md
 
 ---
 
-## 🛠️ Getting Started | البدء
+## 🛠️ Getting Started
 
 1. **Choose a Project:**
    - Read project README.md
@@ -115,7 +109,7 @@ All projects are evaluated using the rubric in `../ASSESSMENTS/Project_Rubric.md
    - Check difficulty level
 
 2. **Review Materials:**
-   - Read Implementation_Guide.md
+   - Read PROJECT_GUIDE.md
    - Check Template folder for starter code
    - Review relevant notebooks
 
@@ -131,17 +125,17 @@ All projects are evaluated using the rubric in `../ASSESSMENTS/Project_Rubric.md
 
 ---
 
-## 📖 Getting Help | الحصول على المساعدة
+## 📖 Getting Help
 
 1. Review relevant notebooks
 2. Check project documentation
 3. Ask instructor during office hours
 4. Review code examples in notebooks
-5. Check `../ADDITIONAL_RESOURCES.md`
+5. Check `../DOCS/ADDITIONAL_RESOURCES.md`
 
 ---
 
-## 📤 Submission Guidelines | إرشادات التسليم
+## 📤 Submission Guidelines
 
 1. **Code:** All source files, well-organized
 2. **Documentation:** README.md explaining your project
@@ -154,7 +148,7 @@ All projects are evaluated using the rubric in `../ASSESSMENTS/Project_Rubric.md
 
 ---
 
-## 📁 What's in Each Project Folder? | ما في كل مجلد مشروع؟
+## 📁 What's in Each Project Folder?
 
 Each project folder contains:
 
@@ -165,7 +159,7 @@ Each project folder contains:
   - Evaluation criteria
   - Resources
 
-- **Implementation_Guide.md** - Step-by-step guide
+- **PROJECT_GUIDE.md** - Step-by-step guide
   - Detailed implementation steps
   - Code structure recommendations
   - Testing guidelines
@@ -178,7 +172,7 @@ Each project folder contains:
 
 ---
 
-## 💡 Tips for Success | نصائح للنجاح
+## 💡 Tips for Success
 
 1. **Start Early:** Don't wait until the last week
 2. **Plan First:** Break project into manageable steps

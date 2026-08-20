@@ -1,65 +1,45 @@
-# Unit: Data Cleaning and Preprocessing
+# Unit 2: Data Cleaning and Preparation
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+**Unit hours:** 19 (of 96 total training hours)
 
-Before starting this unit, confirm:
+## Prerequisites
 
-- [ ] Completed Unit 1: Introduction to Data Science
-- [ ] Comfortable with Pandas DataFrames and basic plotting
-- [ ] Understand missing data and data types
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `../../COURSE_MAP.md` if needed
+- Unit 1: Introduction to Data Science (`../unit1-introduction/`)
+- Comfortable with pandas DataFrames and basic NumPy
 
-### Learning Objectives | أهداف التعلم
+## What This Unit Covers
 
-By the end of this unit, students will be able to:
-- Understand key concepts in data cleaning and preprocessing
-- Apply techniques and methodologies
-- Work with real-world datasets
-- Implement solutions to practical problems
+Turning raw data into analysis-ready data: loading from multiple formats, handling missing values and duplicates, detecting and treating outliers, scaling and encoding features, exploratory data analysis (visual and statistical), feature extraction from unstructured data, and GPU-accelerated I/O with cuDF.
 
----
+## Examples (run in order)
 
-## Unit Duration | مدة الوحدة
+| # | Notebook | Description |
+|---|----------|-------------|
+| 01 | `examples/01_data_loading.ipynb` | Loading data from CSV, JSON, and Excel |
+| 02 | `examples/02_missing_values_duplicates.ipynb` | Detecting and handling missing values and duplicates |
+| 03 | `examples/03_outliers_transformation.ipynb` | Outlier detection and data transformation |
+| 04 | `examples/04_feature_transformation_scaling_encoding.ipynb` | Feature scaling and categorical encoding |
+| 05 | `examples/05_eda_visualizations.ipynb` | Visual EDA: distributions and relationships |
+| 06 | `examples/06_statistical_eda.ipynb` | Statistical EDA: summaries, correlations, hypothesis checks |
+| 07 | `examples/07_cudf_import_export_gpu.ipynb` | cuDF import/export and GPU acceleration (optional GPU) |
+| 08 | `examples/08_feature_extraction_unstructured.ipynb` | Extracting features from unstructured data (e.g. text) |
 
-**Theoretical Hours:** 6 hours  
-**Practical Hours:** 13 hours  
-**Total Hours:** 19 hours
+Sample data files (`sample_data.csv/.json/.xlsx`, `large_data.csv`) used by the notebooks live in `examples/`.
 
-**Format:** 6 theoretical + 13 practical hours
+## Exercise
 
----
+- `exercises/exercise_01.ipynb` - data cleaning practice (a script version `exercise_01.py` is also provided)
 
-## Topics Covered | المواضيع المغطاة
+## Quiz
 
-1. **Data Loading**
-2. **Handling Missing Values and Duplicates**
-3. **Outlier Detection and Treatment**
-4. **Data Transformation and Feature Engineering**
-5. **Exploratory Data Analysis (visual and statistical)**
-6. **Feature Extraction from Unstructured Data (text, images)**
-7. **GPU-Accelerated Processing (cuDF import/export)**
+- `../QUIZZES/Quiz_02_Data_Cleaning.md`
+- Answer keys are released by your instructor.
 
----
+## Learning Path
 
-## Files Structure | هيكل الملفات
+1. Read this README
+2. Run the examples in numeric order
+3. Complete `exercises/exercise_01.ipynb`
+4. Take Quiz 02
 
-- `examples/`: Complete code examples with explanations
-- `exercises/`: Practice problems for students
-- `solutions/`: Instructor-only reference solutions (e.g. `solution_01.ipynb`)
-
-Quiz files are in `QUIZZES/`. Answer keys are instructor-only.
-
----
-
-## Learning Path | مسار التعلم
-
-1. **Start with examples** - Understand concepts through code
-2. **Complete exercises** - Practice what you learned
-3. **Review quiz solutions** - When your instructor provides the answer key
-4. **Take quizzes** - Test your understanding
-
----
-
-**Unit Duration:** 2 weeks  
-**Difficulty:** Intermediate
+**Next unit:** `../unit3-visualization/`

@@ -1,10 +1,10 @@
-# Projects Overview | نظرة عامة على المشاريع
+# Projects Overview
 
-This folder contains all project materials for the Mathematics and Probabilities for Machine Learning course.
+This folder contains all project materials for the Mathematics and Probability for Machine Learning course.
 
 ---
 
-## 🎯 Available Projects | المشاريع المتاحة
+## 🎯 Available Projects
 
 ### Project 01: Implement ML Algorithms from Scratch
 **Topic:** Mathematical Foundations  
@@ -15,7 +15,7 @@ This folder contains all project materials for the Mathematics and Probabilities
 
 Implement core ML algorithms (Linear Regression, Logistic Regression, PCA) from scratch using only NumPy.
 
-📖 **New to implementing algorithms?** Check out the **[Beginner's Guide](01_Algorithms_From_Scratch/BEGINNER_GUIDE.md)** for step-by-step instructions!
+See the [project guide](01_Algorithms_From_Scratch/PROJECT_GUIDE.md) for step-by-step instructions.
 
 [View Details →](01_Algorithms_From_Scratch/README.md)
 
@@ -30,7 +30,7 @@ Implement core ML algorithms (Linear Regression, Logistic Regression, PCA) from 
 
 Implement Principal Component Analysis from scratch and create visualizations of the process.
 
-📖 **New to PCA?** Check out the **[Beginner's Guide](02_PCA_Implementation/BEGINNER_GUIDE.md)** for step-by-step instructions!
+See the [project guide](02_PCA_Implementation/PROJECT_GUIDE.md) for step-by-step instructions.
 
 [View Details →](02_PCA_Implementation/README.md)
 
@@ -45,12 +45,10 @@ Implement Principal Component Analysis from scratch and create visualizations of
 
 Create an interactive visualization tool for understanding gradient descent and optimization algorithms.
 
-📖 **New to optimization?** Check out the **[Beginner's Guide](03_Gradient_Descent_Visualizer/BEGINNER_GUIDE.md)** for step-by-step instructions!
+See the [project guide](03_Gradient_Descent_Visualizer/PROJECT_GUIDE.md) for step-by-step instructions.
 
 [View Details →](03_Gradient_Descent_Visualizer/README.md)
 
 ---
 
-**Created**: 2025  
-**For**: Mathematics and Probabilities for Machine Learning - 113 AIAT
-
+**For**: AIAT 113 - Mathematics and Probability for Machine Learning

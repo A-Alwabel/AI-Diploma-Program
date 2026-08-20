@@ -1,6 +1,8 @@
 # 📚 AI Diploma - Detailed Unit Descriptions
 ## Complete Curriculum Extracted from Official PDF
 
+> ⚠️ INSTRUCTOR-INTERNAL. Hours and unit names verified line-by-line against the official PDF on 2026-08-19; where any other document disagrees, `AI-Diploma-Instructor/OFFICIAL_SPEC.md` wins.
+
 ---
 
 # 🎓 SEMESTER 1 - COURSES
@@ -672,7 +674,7 @@ This course provides a comprehensive introduction to fundamental concepts of AI,
 
 ### Unit Structure
 
-#### 📖 Unit 1: Regression Algorithms (12 hours: 6 theory + 6 practical)
+#### 📖 Unit 1: Regression Algorithms (18 hours: 6 theory + 12 practical)
 
 **Theoretical Content:**
 1. Introduction to Regression
@@ -699,7 +701,7 @@ This course provides a comprehensive introduction to fundamental concepts of AI,
 
 ---
 
-#### 📖 Unit 2: Regression and Model Evaluation (12 hours: 6 theory + 6 practical)
+#### 📖 Unit 2: Regression and Model Evaluation (19 hours: 6 theory + 13 practical)
 
 **Theoretical Content:**
 1. Model Evaluation Metrics
@@ -1610,10 +1612,10 @@ This course explores the ethical implications, societal impacts, and responsible
 
 | Info | Details |
 |------|---------|
-| Credit Hours | 3 |
+| Credit Hours | 4 |
 | Lecture Hours | 2/week |
 | Practical Hours | 4/week |
-| Total Training Hours | 80 (32 theory + 48 practical) |
+| Total Training Hours | 96 (32 theory + 64 practical) |
 
 ### Course Learning Outcomes (CLOs)
 1. **CLO1**: Understand RL fundamentals and MDPs
@@ -1733,7 +1735,7 @@ This course explores the ethical implications, societal impacts, and responsible
 
 ---
 
-#### 📖 Unit 4: Exploration and Exploitation Strategies (14 hours: 7 theory + 7 practical)
+#### 📖 Unit 4: Exploration and Exploitation Strategies (20 hours: 7 theory + 13 practical)
 
 **Theoretical Content:**
 1. Introduction to Exploration and Exploitation
@@ -1763,7 +1765,7 @@ This course explores the ethical implications, societal impacts, and responsible
 
 ---
 
-#### 📖 Unit 5: Advanced Topics and Applications (10 hours: 7 theory + 3 practical)
+#### 📖 Unit 5: Applications and Advanced Topics in RL (20 hours: 7 theory + 13 practical)
 
 **Theoretical Content:**
 1. Multi-Agent RL
@@ -1995,10 +1997,10 @@ This course explores the ethical implications, societal impacts, and responsible
 
 | Info | Details |
 |------|---------|
-| Credit Hours | 3 |
+| Credit Hours | 4 |
 | Lecture Hours | 2/week |
 | Practical Hours | 4/week |
-| Total Training Hours | 80 (32 theory + 48 practical) |
+| Total Training Hours | 96 (32 theory + 64 practical) |
 
 ### Course Learning Outcomes (CLOs)
 1. **CLO1**: Understand AI model deployment lifecycle
@@ -2116,7 +2118,7 @@ This course explores the ethical implications, societal impacts, and responsible
 
 ---
 
-#### 📖 Unit 4: Containers and Orchestration (14 hours: 7 theory + 7 practical)
+#### 📖 Unit 4: Containers and Orchestration (20 hours: 7 theory + 13 practical)
 
 **Theoretical Content:**
 1. Introduction to Containers
@@ -2149,7 +2151,7 @@ This course explores the ethical implications, societal impacts, and responsible
 
 ---
 
-#### 📖 Unit 5: Monitoring, Maintenance, and MLOps (10 hours: 7 theory + 3 practical)
+#### 📖 Unit 5: Monitoring and Maintenance of Deployed AI Models (20 hours: 7 theory + 13 practical)
 
 **Theoretical Content:**
 1. Model Monitoring
@@ -2183,8 +2185,8 @@ This course explores the ethical implications, societal impacts, and responsible
 |------|---------|
 | Credit Hours | 3 |
 | Lecture Hours | 1/week |
-| Practical Hours | 6/week |
-| Total Training Hours | 112 (16 theory + 96 practical) |
+| Practical Hours | 4/week |
+| Total Training Hours | 80 (16 theory + 64 practical) |
 
 ### Course Learning Outcomes (CLOs)
 1. **CLO1**: Define and scope an AI project
@@ -2195,112 +2197,60 @@ This course explores the ethical implications, societal impacts, and responsible
 
 ### Unit Structure
 
-#### 📖 Unit 1: Project Planning and Proposal (14 hours: 3 theory + 11 practical)
+#### 📖 Unit 1: Project Proposal and Plan — مقترح المشروع وخطته (14 hours: 4 theory + 10 practical)
 
 **Theoretical Content:**
-1. Identifying Project Scope and Objectives
-   - Defining clear project goals and research questions
-   - Scoping AI projects: scope definition and feasibility analysis
-   - Identifying target problems and use cases
-   - Stakeholder analysis and requirement gathering
-2. Literature Review and Background Research
-   - Conducting comprehensive literature reviews
-   - Identifying relevant research papers and methodologies
-   - Understanding state-of-the-art approaches
-   - Gap analysis: identifying opportunities for contribution
-3. Writing Project Proposal
-   - Project proposal structure and components
-   - Technical approach and methodology
-   - Timeline and resource planning
-   - Risk assessment and mitigation strategies
-4. Defining Success Metrics
-   - Identifying appropriate evaluation metrics for different AI tasks
-   - Defining project success criteria
-   - Establishing baseline performance targets
+1. Principles of problem formulation in AI projects
+2. Research methodologies and literature-review techniques
+3. Ethical and legal considerations in developing AI projects
 
 **Practical Content:**
-- Selecting and defining a graduation project topic
-- Conducting literature review and compiling relevant research papers
-- Writing a comprehensive project proposal document
-- Creating project timeline and resource allocation plan
-- Defining success metrics and evaluation criteria for the project
-- Presenting project proposal to advisors/peers for feedback
+- Writing a clear problem statement and defining project objectives
+- Conducting a focused literature review and summarizing findings
+- Creating a Gantt chart or timeline for the main project phases
+- Selecting appropriate tools, libraries, and development platforms
+- Completing an ethics approval or risk-assessment checklist (where applicable)
 
 ---
 
-#### 📖 Unit 2: Data Collection and Preparation (21 hours: 3 theory + 18 practical)
+#### 📖 Unit 2: Solution System Design and Architecture — تصميم نظام الحل وهندسته المعمارية (15 hours: 3 theory + 12 practical)
 
 **Theoretical Content:**
-1. Data Sourcing Strategies
-   - Identifying relevant data sources (public datasets, APIs, web scraping)
-   - Data acquisition methods and legal considerations
-   - Data collection planning and protocols
-   - Ethical considerations in data collection
-2. Data Cleaning and Preprocessing
-   - Handling missing data and outliers
-   - Data normalization and standardization
-   - Addressing data quality issues
-   - Data validation and verification
-3. Feature Engineering
-   - Feature selection and extraction
-   - Creating meaningful features from raw data
-   - Feature transformation and scaling
-   - Domain-specific feature engineering techniques
-4. Data Validation
-   - Data quality assessment
-   - Splitting data into train/validation/test sets
-   - Ensuring data representativeness and bias detection
+1. AI system design principles and architectural patterns
+2. Criteria for selecting AI models and algorithms
+3. Dataset characteristics and preprocessing theory
 
 **Practical Content:**
-- Collecting and acquiring datasets for the graduation project
-- Performing data cleaning and preprocessing using Python libraries (Pandas, NumPy)
-- Implementing feature engineering techniques
-- Validating data quality and preparing train/validation/test splits
-- Documenting data collection and preprocessing procedures
-- Creating data exploration notebooks with visualizations
+- Drawing system architecture diagrams (data flow, module interconnections)
+- Selecting and justifying AI models (e.g., CNN, RNN, Transformers)
+- Designing data input/output formats and storage schemas
+- Planning for scalability, modularity, and integration
+- Creating a design document identifying key components and dependencies
 
 ---
 
-#### 📖 Unit 3: Model Development and Training (28 hours: 3 theory + 25 practical)
+#### 📖 Unit 3: Implementation and Development of the Project Idea — تنفيذ وتطوير فكرة المشروع (17 hours: 3 theory + 14 practical)
 
 **Theoretical Content:**
-1. Model Selection and Architecture Design
-   - Choosing appropriate algorithms for the problem type
-   - Designing neural network architectures (if applicable)
-   - Understanding model complexity vs performance trade-offs
-   - Selecting pre-trained models and transfer learning opportunities
-2. Training and Validation
-   - Setting up training pipelines
-   - Implementing proper validation strategies
-   - Monitoring training progress and metrics
-   - Handling overfitting and underfitting
-3. Hyperparameter Optimization
-   - Understanding hyperparameters and their impact
-   - Grid search, random search, and Bayesian optimization
-   - Cross-validation for hyperparameter tuning
-   - Automated hyperparameter optimization tools
-4. Performance Evaluation
-   - Selecting appropriate evaluation metrics
-   - Implementing evaluation pipelines
-   - Analyzing model performance and failure cases
-   - Comparing model variants and iterations
+1. Software development best practices in AI projects
+2. Model training principles and optimization techniques
+3. Error-handling and debugging strategies in AI systems
 
 **Practical Content:**
-- Implementing model architecture and training pipeline
-- Training models with different hyperparameter configurations
-- Performing hyperparameter optimization using grid search or automated tools
-- Evaluating model performance using appropriate metrics
-- Analyzing model outputs and identifying areas for improvement
-- Iteratively refining the model based on validation results
-- Documenting training procedures and results
+- Preprocessing data and preparing train/validation/test sets
+- Implementing and training the selected AI models using frameworks such as TensorFlow or PyTorch
+- Integrating model components with application interfaces or APIs
+- Using version-control tools (e.g., Git) for collaborative development
+- Performing unit testing and module validation
 
-#### 📖 Unit 4: Evaluation and Optimization (28 hours: 3 theory + 25 practical)
+---
+
+#### 📖 Unit 4: Evaluation and Refinement — التقييم والتنقيح (17 hours: 3 theory + 14 practical)
 
 **Theoretical Content:**
-- Understanding evaluation metrics for different AI tasks
-- Techniques for model optimization and fine-tuning
-- Addressing overfitting and underfitting
-- Comparative analysis with baseline models
+1. Evaluation metrics for AI models (e.g., accuracy, F1 score, BLEU)
+2. Cross-validation and model robustness
+3. Error analysis and model-interpretation techniques
 
 **Practical Content:**
 - Conducting experiments and collecting performance metrics
@@ -2311,19 +2261,19 @@ This course explores the ethical implications, societal impacts, and responsible
 
 ---
 
-#### 📖 Unit 5: Project Documentation and Final Presentation (21 hours: 4 theory + 17 practical)
+#### 📖 Unit 5: Project Documentation and Final Presentation — توثيق المشروع والعرض النهائي (17 hours: 3 theory + 14 practical)
 
 **Theoretical Content:**
-- Technical writing standards and report structure
-- Effective data visualization and storytelling with AI results
-- Public speaking principles and presentation design
+1. Technical writing standards and report structure
+2. Effective data visualization and storytelling with AI results
+3. Public speaking principles and presentation design
 
 **Practical Content:**
-- Writing final project report (including summary, methodology, results, discussion)
-- Designing slide decks or posters for presentation
-- Preparing recorded video or live demonstration of project
-- Practicing oral presentation or defense of project
-- Compiling source code, documents, and final submission package
+- Writing the final project report (abstract, methodology, results, discussion)
+- Designing slide decks or posters for the final presentation
+- Preparing a recorded video or live demonstration of the project
+- Practicing the oral presentation or project defense
+- Compiling source code, documents, and the final submission package
 
 ---
 
