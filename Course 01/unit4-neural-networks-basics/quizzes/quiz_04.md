@@ -1,83 +1,72 @@
-# Quiz 04: Neural Networks Basics | اختبار 4: أساسيات الشبكات العصبية
+# Quiz 04: Neural Networks Basics
 ## AIAT 111 - Unit 4
 
-**Time Limit:** 30 minutes | **الوقت المحدد:** 30 دقيقة  
-**Total Points:** 100 points | **إجمالي النقاط:** 100 نقطة
+**Time Limit:** 30 minutes
+**Total Points:** 100 points
 
 ---
 
-## Part 1: Multiple Choice | الجزء 1: اختيار من متعدد
-**(40 points | 40 نقطة)**
+## Part 1: Multiple Choice
+**(40 points
 
 ### Question 1 (10 points)
 What is a perceptron?
 
-أ) A type of graph  
-ب) A single-layer neural network  
-ج) A search algorithm  
-د) A knowledge representation method
-
+A) A type of graph  
+B) A single-layer neural network  
+C) A search algorithm  
+D) A knowledge representation method
 
 ---
 
 ### Question 2 (10 points)
 What does ReLU stand for?
 
-أ) Rectified Linear Unit  
-ب) Random Linear Unit  
-ج) Recursive Linear Unit  
-د) Regular Linear Unit
-
+A) Rectified Linear Unit  
+B) Random Linear Unit  
+C) Recursive Linear Unit  
+D) Regular Linear Unit
 
 ---
 
 ### Question 3 (10 points)
 What is the purpose of an activation function?
 
-أ) To add randomness  
-ب) To introduce non-linearity  
-ج) To reduce memory usage  
-د) To speed up computation
-
+A) To add randomness  
+B) To introduce non-linearity  
+C) To reduce memory usage  
+D) To speed up computation
 
 ---
 
 ### Question 4 (10 points)
 A single perceptron can solve which type of problems?
 
-أ) Only linear problems  
-ب) Only non-linear problems  
-ج) Both linear and non-linear  
-د) No problems
-
+A) Only linear problems  
+B) Only non-linear problems  
+C) Both linear and non-linear  
+D) No problems
 
 ---
 
-## Part 2: Short Answer | الجزء 2: إجابة قصيرة
-**(30 points | 30 نقطة)**
+## Part 2: Short Answer
+**(30 points
 
 ### Question 5 (15 points)
 Explain the difference between a perceptron and a multi-layer perceptron.
-
-اشرح الفرق بين البيرسبترون والشبكة العصبية متعددة الطبقات.
 
 ---
 
 ### Question 6 (15 points)
 What is forward propagation in a neural network?
 
-ما هو الانتشار الأمامي في الشبكة العصبية؟
-
 ---
 
-## Part 3: Code Writing | الجزء 3: كتابة الكود
-**(30 points | 30 نقطة)**
+## Part 3: Code Writing
+**(30 points
 
 ### Question 7 (30 points)
 Implement a simple perceptron that can classify AND gate inputs.
-
-نفذ بيرسبترون بسيط يمكنه تصنيف مدخلات بوابة AND.
-
 
 class Perceptron:
     def __init__(self):

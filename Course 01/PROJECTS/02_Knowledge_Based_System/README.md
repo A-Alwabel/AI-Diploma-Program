@@ -1,9 +1,9 @@
-# Project 02: Knowledge-Based System | مشروع 2: نظام قائم على المعرفة
-## AIAT 111 - Introduction to AI Applications and Concepts
+# Project 02: Knowledge-Based System
+## AIAT 111 - Introduction to Artificial Intelligence and Applications
 
 ---
 
-## 🎯 Real-World Application | التطبيق في الحياة الواقعية
+## 🎯 Real-World Application
 
 **Example: Medical Diagnosis Assistant**
 
@@ -24,13 +24,13 @@ This project helps you build systems like:
 
 ---
 
-## Project Overview | نظرة عامة على المشروع
+## Project Overview
 
 Create a knowledge-based system using rule-based reasoning to solve a specific domain problem.
 
 ---
 
-## Learning Objectives | أهداف التعلم
+## Learning Objectives
 
 - Design a knowledge base
 - Implement rule-based reasoning
@@ -39,7 +39,7 @@ Create a knowledge-based system using rule-based reasoning to solve a specific d
 
 ---
 
-## Requirements | المتطلبات
+## Requirements
 
 ### Functional Requirements
 - Knowledge base with facts and rules
@@ -54,7 +54,7 @@ Create a knowledge-based system using rule-based reasoning to solve a specific d
 
 ---
 
-## Deliverables | المخرجات
+## Deliverables
 
 1. Knowledge base implementation
 2. Inference engine code
@@ -63,5 +63,4 @@ Create a knowledge-based system using rule-based reasoning to solve a specific d
 
 ---
 
-**For**: AIAT 111 - Introduction to AI Applications and Concepts
-
+**For**: AIAT 111 - Introduction to Artificial Intelligence and Applications

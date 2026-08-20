@@ -1,14 +1,31 @@
 # Unit 2: AI Concepts, Terminology, and Application Domains
-## الوحدة 2: مفاهيم الذكاء الاصطناعي والمصطلحات ومجالات التطبيق
 
-**Canonical Unit 2 folder** (aligned with [DETAILED_UNIT_DESCRIPTIONS.md](../../DETAILED_UNIT_DESCRIPTIONS.md)).
+**Course:** AIAT 111 · **Unit hours:** 12 (6 theory + 6 practical)
 
-Topics: Python review, expert systems, knowledge representation (RDF, SPARQL), Bayesian reasoning, ML introduction, encoding, data generation process.
+Applied Python review, rule-based expert systems, knowledge graphs with RDF and SPARQL, probabilistic reasoning with Bayes' theorem, and an introduction to machine learning: supervised vs unsupervised models, feature encoding, and the data generation process.
+
+**Prerequisites:** Unit 1 (`../unit1-ai-foundations/README.md`).
 
 ---
 
-**المواضيع:** مراجعة بايثون، الأنظمة الخبيرة، تمثيل المعرفة (RDF، SPARQL)، الاستدلال البايزي، مقدمة تعلم الآلة، الترميز، عملية توليد البيانات.
+## Notebooks (run in order, `ai-diploma` kernel)
 
-**Examples:** `examples/` — applied Python, expert systems, RDF/SPARQL, Bayes, encoding, supervised/unsupervised models.
+| # | Notebook | What it covers |
+|---|----------|----------------|
+| 01 | `examples/01_applied_python_review.ipynb` | Applied review of Python basics for AI data processing |
+| 02 | `examples/02_expert_systems.ipynb` | Rule-based expert systems |
+| 03 | `examples/03_rdf_sparql_knowledge_graph.ipynb` | RDF and SPARQL knowledge-graph queries (uses `examples/university_knowledge_graph.ttl`) |
+| 04 | `examples/04_bayes_theorem.ipynb` | Probabilistic reasoning with Bayes' theorem |
+| 05 | `examples/05_machine_learning_intro.ipynb` | Introduction to machine learning |
+| 06 | `examples/06_supervised_unsupervised_models.ipynb` | Simple supervised and unsupervised learning models |
+| 07 | `examples/07_encoding_categorical_features.ipynb` | Encoding categorical features for ML models |
+| 08 | `examples/08_data_generation_process.ipynb` | Exploring the data generation process with Python and pandas |
 
-Follow **`../START_HERE.md`** for the learning sequence.
+---
+
+## After the Notebooks
+
+1. **Exercise:** `exercises/exercise_01.ipynb` — AI concepts, terminology, and application domains. Solutions are released by your instructor.
+2. **Quiz:** `quizzes/quiz_02.md`
+
+Then continue to Unit 3: `../unit3-ml-basics/README.md`.

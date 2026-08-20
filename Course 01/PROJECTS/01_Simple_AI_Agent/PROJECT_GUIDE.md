@@ -1,9 +1,8 @@
 # Complete Project Guide: Simple AI Agent
-## دليل المشروع الكامل: وكيل ذكاء اصطناعي بسيط
 
 ---
 
-## 🎯 Real-World Application | التطبيق في الحياة الواقعية
+## 🎯 Real-World Application
 
 ### Example: Delivery Route Optimizer
 **Imagine you're building a food delivery app like Uber Eats or DoorDash.**
@@ -29,7 +28,6 @@
 ---
 
 ## 🚀 Quick Start (For Experienced Students)
-## البدء السريع (للطلاب ذوي الخبرة)
 
 > 💡 **New to AI agents or search algorithms?** Skip to [Complete Tutorial](#-complete-tutorial-for-beginners) section below.
 
@@ -93,7 +91,6 @@ class SimpleAgent:
 ---
 
 ## 📚 Complete Tutorial (For Beginners)
-## دليل كامل للمبتدئين
 
 > 💡 **Already familiar with search algorithms?** See [Quick Start](#-quick-start-for-experienced-students) section above.
 
@@ -416,7 +413,6 @@ if __name__ == "__main__":
 ---
 
 ## 🔗 Course Content Connections
-## روابط محتوى الدورة
 
 ### How This Project Connects to Course Content
 
@@ -438,7 +434,6 @@ if __name__ == "__main__":
 ---
 
 ## 🐛 Troubleshooting
-## حل المشاكل
 
 ### Problem: Algorithm returns None
 **Error:** `No path found`  
@@ -463,7 +458,6 @@ if __name__ == "__main__":
 ---
 
 ## 🎓 Learning Checklist
-## قائمة التعلم
 
 - [ ] Day 1: Understand what an AI agent is
 - [ ] Day 2: Set up project files
@@ -479,7 +473,6 @@ if __name__ == "__main__":
 ---
 
 ## 💡 Tips for Success
-## نصائح للنجاح
 
 1. **Start Simple:** Begin with a small map (3-4 locations)
 2. **Test Each Step:** Don't move to next step until current one works
@@ -490,7 +483,6 @@ if __name__ == "__main__":
 ---
 
 ## 📊 Evaluation Criteria
-## معايير التقييم
 
 ### Functionality (30%)
 - Agent can solve problems
@@ -525,7 +517,6 @@ if __name__ == "__main__":
 ---
 
 ## 📖 Resources
-## الموارد
 
 ### Course Content
 - Unit 1: AI Foundations
