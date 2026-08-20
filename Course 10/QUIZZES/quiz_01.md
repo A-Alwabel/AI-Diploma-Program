@@ -5,7 +5,7 @@
 **Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)
 **Covers:** Unit 1 (GANs, VAEs, latent spaces, evaluation metrics: FID, BLEU).
 **Concepts from:** Unit 1 examples 04 (building GAN), 05 (VAE), 07 (training techniques), 08 (evaluating models) and related slides.
-**Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
+**Answer key:** released by your instructor.
 
 ---
 

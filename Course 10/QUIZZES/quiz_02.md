@@ -5,7 +5,7 @@
 **Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)
 **Covers:** Unit 2 (language models, GPT, text generation, fine-tuning, BLEU/perplexity).
 **Concepts from:** Unit 2 examples 04 (text generation GPT), 07 (text-to-text), 08 (creative text), 09 (BLEU/perplexity) and related slides.
-**Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
+**Answer key:** released by your instructor.
 
 ---
 

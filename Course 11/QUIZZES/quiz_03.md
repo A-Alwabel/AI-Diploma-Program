@@ -5,7 +5,7 @@
 **Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)
 **Covers:** Unit 3 (cloud platforms, AWS SageMaker, GCP Vertex AI, Azure ML, security, auto-scaling).
 **Concepts from:** Unit 3 examples (AWS SageMaker) and related slides.
-**Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
+**Answer key:** released by your instructor.
 
 ---
 

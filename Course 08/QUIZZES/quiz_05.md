@@ -5,7 +5,7 @@
 **Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)  
 **Covers:** Unit 5 (quantization, pruning, distillation, ONNX, serving, Flask/FastAPI).  
 **Concepts from:** Unit 5 examples 01 (optimization), 03 (ONNX), 06 (Flask/FastAPI), 07 (quantization). Unit 5 has no slides; concepts are from the notebooks.  
-**Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
+**Answer key:** released by your instructor.
 
 ---
 

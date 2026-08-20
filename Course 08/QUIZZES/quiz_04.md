@@ -5,7 +5,7 @@
 **Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)  
 **Covers:** Unit 4 (GANs, VAEs, reinforcement learning, ethics: bias, fairness, interpretability).  
 **Concepts from:** Unit 4 examples 01 (GANs/VAEs), 02 (VAE anomaly), 03 (RL), 04 (ethics) and related slides.  
-**Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
+**Answer key:** released by your instructor.
 
 ---
 

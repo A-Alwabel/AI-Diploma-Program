@@ -5,7 +5,7 @@
 **Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)
 **Covers:** Unit 5 (multimodal AI, CLIP, advanced models, creative applications, future challenges).
 **Concepts from:** Unit 5 examples (generative AI applications, music generation, future trends) and related slides.
-**Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
+**Answer key:** released by your instructor.
 
 ---
 

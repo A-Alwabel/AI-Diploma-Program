@@ -5,7 +5,7 @@
 **Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)
 **Covers:** Unit 2 (serialization: Pickle, ONNX, Docker, TorchServe, batch vs real-time inference).
 **Concepts from:** Unit 2 examples (saving/loading models, ONNX, serving) and related slides.
-**Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
+**Answer key:** released by your instructor.
 
 ---
 

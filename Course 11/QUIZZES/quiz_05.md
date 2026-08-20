@@ -5,7 +5,7 @@
 **Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)
 **Covers:** Unit 5 (model monitoring, drift detection, MLflow, experiment tracking, retraining strategies).
 **Concepts from:** Unit 5 examples (monitoring, MLflow, pipelines) and related slides.
-**Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
+**Answer key:** released by your instructor.
 
 ---
 

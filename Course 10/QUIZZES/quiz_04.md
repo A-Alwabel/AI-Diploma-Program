@@ -5,7 +5,7 @@
 **Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)
 **Covers:** Unit 4 (bias in generative AI, deepfakes, intellectual property, GDPR/AI Act, responsible AI).
 **Concepts from:** Unit 4 ethics examples and related slides.
-**Answers and rubrics:** Instructor only — see `DOCS/SOLUTIONS/quizzes/`.
+**Answer key:** released by your instructor.
 
 ---
 
