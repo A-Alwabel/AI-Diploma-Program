@@ -1,74 +1,40 @@
-# Unit 3: Image and Visual Generation | توليد الصور والمرئيات
-## AIAT 124 - Generative AI
+# Unit 3: Image and Visual Generation
 
-**Maps to (DETAILED_UNIT_DESCRIPTIONS):** Unit 3 — Image and Visual Generation.
+## AIAT 124 - Generative Artificial Intelligence
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+Unit training hours: 12
 
-Before starting this unit, confirm:
+## What This Unit Teaches
 
-- [ ] Completed Unit 2: Text and Language Generation
-- [ ] Understand GANs and VAEs basics (Unit 1)
-- [ ] Comfortable with image processing and CNNs
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
+Image generation in depth: implementing and applying VAEs for images, advanced
+VAE topics, diffusion-based generation (Stable Diffusion concepts), and modern
+image generators such as StyleGAN and DALL-E. All notebooks use PyTorch. A GPU
+(or Google Colab — see `../DOCS/COLAB_SETUP.md`) is strongly recommended.
 
-### Learning Objectives | أهداف التعلم
+## Prerequisites
 
-By the end of this unit, students will be able to:
-- Generate AI-created images using StyleGAN, DALL-E, or Stable Diffusion
-- Experiment with Deepfake techniques
-- Apply GANs for image synthesis
-- Use diffusion models for image generation
-- Implement image-to-image translation (Pix2Pix, CycleGAN)
-- Apply style transfer techniques
+- Units 1–2 completed (GAN and VAE fundamentals)
+- Comfortable with CNNs and image data in PyTorch
 
----
+## Examples (do in order)
 
-## Topics Covered | المواضيع المغطاة
+1. `examples/01_vae_implementation.ipynb` — Implementing a VAE for images,
+   step by step.
+2. `examples/02_vae_applications.ipynb` — VAE applications: face generation
+   and style transfer.
+3. `examples/03_vae_advanced_topics.ipynb` — Advanced VAE topics and
+   variants.
+4. `examples/04_image_generation_advanced.ipynb` — Advanced image generation:
+   Stable Diffusion and diffusion-model concepts.
+5. `examples/05_generating_ai_images_stylegan_dalle.ipynb` — Generating
+   AI-created images with StyleGAN, DALL-E, or Stable Diffusion.
 
-Based on official curriculum (AIAT 124), this unit covers:
+## Exercise
 
-1. **Image Generation Techniques**
-   - GANs for image synthesis
-   - StyleGAN and variants
-   - Variational Autoencoders (VAEs) for images
+- `exercises/01_vae_exercise.ipynb`
 
-2. **Diffusion Models**
-   - Denoising diffusion probabilistic models
-   - DALL-E and Stable Diffusion
+## Quiz
 
-3. **Image-to-Image Translation**
-   - Pix2Pix and CycleGAN
-   - Style transfer
+- `../QUIZZES/quiz_03.md`
 
----
-
-## Unit Breakdown | تفصيل الوحدة
-
-**Theoretical Hours:** 6  
-**Practical Hours:** 6  
-**Total Hours:** 12
-
-### Theoretical Content | المحتوى النظري
-
-- Image generation techniques (GANs, StyleGAN)
-- Diffusion models (DALL-E, Stable Diffusion)
-- Image-to-image translation (Pix2Pix, CycleGAN)
-- Style transfer
-
-### Practical Content | المحتوى العملي
-
-- Generating AI-created images using StyleGAN, DALL-E, or Stable Diffusion
-- Experimenting with Deepfake techniques
-- Applying image-to-image translation models
-- Implementing style transfer
-
----
-
-**Unit Duration:** 2 weeks  
-**Difficulty:** Advanced  
-**Prerequisites:** Units 1-2 completion
-
-**Created for:** AIAT 124 - Generative AI  
-**Last Updated:** 2025-01-24 (reorganized from unit3-vaes to match DETAILED_UNIT_DESCRIPTIONS)
+Solutions and answer keys are released by your instructor.

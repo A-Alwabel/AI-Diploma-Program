@@ -1,21 +1,24 @@
 # Generative AI Application
-## Course 10
 
-Create generative AI solution
+## AIAT 124 - Course Project
 
-## Project Structure
-
-- `notebooks/` - Implementation notebooks
-- `data/` - Project data
-- `models/` - Trained models
-- `docs/` - Documentation
+Build a generative AI application using GANs, VAEs, or diffusion models.
 
 ## Getting Started
 
-1. Review project requirements
-2. Set up environment
-3. Follow implementation guide
+1. Read `../project_template.md` for requirements, deliverables, and the
+   evaluation rubric.
+2. Pick a problem (image generation, text generation, music generation, style
+   transfer, or another approved topic).
+3. Implement, train, and evaluate your model in notebooks placed in this
+   folder.
+
+## Deliverables
+
+- Code as `.ipynb` notebooks, with generated samples
+- Technical report (model architecture, training process, quality evaluation)
+- Short presentation and demo
 
 ## Submission
 
-Submit all deliverables by [due date]
+Submission dates and format are set by your instructor.

@@ -1,56 +1,49 @@
-# Student Progress Checklist | قائمة تقدم الطالب
-## AIAT 124 - Generative AI
+# Student Progress Checklist
 
-**Note:** Templates in `TEMPLATES/` are instructor-only. Students should follow units and notebooks.
+## AIAT 124 - Generative Artificial Intelligence
 
----
+### Unit 1: Introduction to Generative AI (`unit1-generative-fundamentals/`)
 
-## 📋 Course Progress | تقدم الدورة
+- [ ] Read the unit README
+- [ ] Complete example notebooks 01–12
+- [ ] Complete `exercises/01_generative_models_fundamentals_exercise.ipynb`
+- [ ] Take `QUIZZES/quiz_01.md`
 
-### Unit 1: Generative Fundamentals
-- [ ] Read Unit 1 README
-- [ ] Complete all examples
-- [ ] Complete all exercises
-- [ ] Review solutions
-- [ ] Take Quiz 01
-- [ ] Take Unit 1 Test
+### Unit 2: Text and Language Generation (`unit2-text-generation/`)
 
-### Unit 2: Text and Language Generation
-- [ ] Read Unit 2 README (`unit2-text-generation/`)
-- [ ] Complete all examples
-- [ ] Complete all exercises
-- [ ] Review solutions
-- [ ] Take Quiz 02
-- [ ] Take Unit 2 Test
+- [ ] Read the unit README
+- [ ] Complete example notebooks 01–06
+- [ ] Complete `exercises/01_gan_exercise.ipynb`
+- [ ] Take `QUIZZES/quiz_02.md`
 
-### Unit 3: Image and Visual Generation
-- [ ] Read Unit 3 README (`unit3-image-generation/`)
-- [ ] Complete all examples
-- [ ] Complete all exercises
-- [ ] Review solutions
-- [ ] Take Quiz 03
-- [ ] Take Unit 3 Test
+### Unit 3: Image and Visual Generation (`unit3-image-generation/`)
 
-### Unit 4: Ethical and Regulatory Considerations
-- [ ] Read Unit 4 README (`unit4-ethics-regulations/`)
-- [ ] Complete all examples
-- [ ] Complete all exercises
-- [ ] Review solutions
-- [ ] Take Quiz 04
-- [ ] Take Unit 4 Test
+- [ ] Read the unit README
+- [ ] Complete example notebooks 01–05
+- [ ] Complete `exercises/01_vae_exercise.ipynb`
+- [ ] Take `QUIZZES/quiz_03.md`
 
-### Unit 5: Future Trends and Research
-- [ ] Read Unit 5 README
-- [ ] Complete all examples
-- [ ] Complete all exercises
-- [ ] Review solutions
-- [ ] Take Quiz 05
-- [ ] Take Unit 5 Test
+### Unit 4: Ethical and Regulatory Considerations (`unit4-ethics-regulations/`)
 
-### Projects
-- [ ] Complete Project 01
-- [ ] Complete Project 02 (optional)
+- [ ] Read the unit README
+- [ ] Complete example notebooks 01–04
+- [ ] Read `CASE_STUDIES/01_generative_ai_ethics_case_study.md`
+- [ ] Complete `exercises/01_ai_ethics_exercise.ipynb`
+- [ ] Take `QUIZZES/quiz_04.md`
 
----
+### Unit 5: Future Trends and Research in Generative AI (`unit5-future-trends/`)
 
-**Course Completion:** [ ] Complete
+- [ ] Read the unit README
+- [ ] Complete example notebooks 01–06
+- [ ] Complete `exercises/01_generation_exercise.ipynb`
+- [ ] Take `QUIZZES/quiz_05.md`
+
+### Course Project
+
+- [ ] Complete the project in `PROJECTS/Generative_AI_Application/`
+
+### Final Assessment
+
+- [ ] Take `ASSESSMENTS/Final_Exam.md`
+
+Solutions and answer keys are released by your instructor.

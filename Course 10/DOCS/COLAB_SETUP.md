@@ -1,4 +1,4 @@
-# Google Colab Setup Guide for Generative AI | دليل إعداد Google Colab للذكاء الاصطناعي التوليدي
+# Google Colab Setup Guide for Generative AI
 ## Using GPU-Accelerated Notebooks on Google Colab
 
 **For students without NVIDIA GPU:** Use Google Colab for free GPU access!
@@ -7,14 +7,14 @@
 
 ---
 
-## 🚀 Quick Start | البدء السريع
+## 🚀 Quick Start
 
 ### Step 1: Open Notebook in Colab
 
 1. **Go to Google Colab:** https://colab.research.google.com/
 2. **Upload notebook:**
    - Click "File" → "Upload notebook"
-   - Select the notebook file (e.g., `02_image_generation_advanced.ipynb`)
+   - Select the notebook file (e.g., `unit3-image-generation/examples/04_image_generation_advanced.ipynb`)
    - Or use "File" → "Open notebook" → "GitHub" and paste repository URL
 
 ### Step 2: Enable GPU
@@ -30,14 +30,9 @@
 **Add this cell at the beginning of your notebook (or run the Colab setup cell):**
 
 ```python
-# Install generative AI libraries
-!pip install -q diffusers transformers accelerate torch torchvision
+# Install the libraries this course uses
+!pip install -q torch torchvision transformers numpy pandas matplotlib scikit-learn
 ```
-
-**The setup cell will:**
-- Detect Colab environment
-- Install diffusers, transformers, accelerate
-- Verify GPU access
 
 ### Step 4: Verify GPU Access
 
@@ -59,14 +54,14 @@ else:
 
 These notebooks **strongly require** GPU:
 
-1. **`02_image_generation_advanced.ipynb`** - Stable Diffusion (requires GPU)
+1. **`unit3-image-generation/examples/04_image_generation_advanced.ipynb`** - Stable Diffusion (requires GPU)
 2. **GAN notebooks** - GAN training (very slow on CPU)
 3. **VAE notebooks** - VAE training (benefits greatly from GPU)
 4. **Text generation notebooks** - Large language models (require GPU)
 
 ---
 
-## 💡 Tips | نصائح
+## 💡 Tips
 
 ### Free GPU Limits
 - **Free tier:** ~12 hours/day of GPU usage
@@ -105,7 +100,7 @@ These notebooks **strongly require** GPU:
 1. Go to: https://www.kaggle.com/
 2. Create new notebook
 3. Enable GPU: Settings → Accelerator → GPU
-4. Install libraries: `!pip install diffusers transformers accelerate`
+4. Install libraries: `!pip install torch torchvision transformers`
 
 ---
 
@@ -130,5 +125,4 @@ These notebooks **strongly require** GPU:
 
 ---
 
-**Last Updated:** January 2025  
-**Status:** Ready for use
+**Last Updated:** 2026-08

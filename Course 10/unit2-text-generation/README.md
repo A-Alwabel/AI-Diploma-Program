@@ -1,91 +1,46 @@
-# Unit 2: Text and Language Generation | توليد النص واللغة
-## AIAT 124 - Generative AI
+# Unit 2: Text and Language Generation
 
-**Maps to (DETAILED_UNIT_DESCRIPTIONS):** Unit 2 — Text and Language Generation.
+## AIAT 124 - Generative Artificial Intelligence
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+Unit training hours: 12
 
-Before starting this unit, confirm:
+## What This Unit Teaches
 
-- [ ] Completed Unit 1: Foundations of Generative AI
-- [ ] Understand language models and text processing
-- [ ] Comfortable with Transformer architectures
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
+Generating text with language models: GPT-style autoregressive generation,
+fine-tuning language models, prompt engineering, text-to-text systems,
+creative text generation, and evaluating output quality with BLEU and
+perplexity. Notebook 02 uses Hugging Face `transformers`; the
+prompt-engineering notebook can optionally use the OpenAI API (the `openai`
+package plus an API key), but also works without it.
 
-### Learning Objectives | أهداف التعلم
+## Prerequisites
 
-By the end of this unit, students will be able to:
-- Implement text generation using GPT models
-- Fine-tune language models for specific tasks
-- Practice prompt engineering with OpenAI API or Hugging Face Transformers
-- Build text-to-text generation systems using Transformers
-- Generate creative text (stories, poems) using language models
-- Implement conversational AI or chatbots using generative models
-- Evaluate text generation quality using metrics like BLEU and perplexity
+- Unit 1 completed
+- `transformers` installed (see `../START_HERE.md`)
 
----
+## Examples (do in order)
 
-## Topics Covered | المواضيع المغطاة
+1. `examples/01_text_generation_gpt_models.ipynb` — Implementing text
+   generation with GPT-style models.
+2. `examples/02_fine_tuning_language_models.ipynb` — Fine-tuning a language
+   model for a specific task (uses Hugging Face `transformers`).
+3. `examples/03_prompt_engineering_openai_huggingface.ipynb` — Prompt
+   engineering with the OpenAI API or Hugging Face Transformers (`openai`
+   package optional).
+4. `examples/04_building_text_to_text_generation.ipynb` — Building a
+   text-to-text generation system with Transformers.
+5. `examples/05_generating_creative_text_stories_poems.ipynb` — Generating
+   creative text: stories and poems.
+6. `examples/06_evaluating_text_quality_bleu_perplexity.ipynb` — Evaluating
+   text generation quality with BLEU and perplexity.
 
-Based on official curriculum (AIAT 124), this unit covers:
+## Exercise
 
-1. **Language Models for Text Generation**
-   - N-gram models and their limitations
-   - Neural language models
-   - Recurrent Neural Networks (RNNs) for text generation
+- `exercises/01_gan_exercise.ipynb` — GAN practice exercise (generating
+  realistic faces), reinforcing Unit 1 skills.
 
-2. **Transformer-based Generation**
-   - GPT architecture and self-attention mechanism
-   - Text generation techniques (autoregressive generation)
-   - Beam search and sampling strategies
+## Quiz
 
-3. **Advanced Language Models**
-   - GPT models (GPT-2, GPT-3, GPT-4)
-   - BERT and encoder-decoder models
-   - Text-to-text generation with T5
+- `../QUIZZES/quiz_02.md`
 
-4. **Prompt Engineering**
-   - Effective prompting strategies
-   - Few-shot and zero-shot learning
-   - Controlling generation with prompts
-
-5. **Applications of Text Generation**
-   - Conversational AI and chatbots
-   - Content creation and summarization
-   - Code generation and programming assistance
-
----
-
-## Unit Breakdown | تفصيل الوحدة
-
-**Theoretical Hours:** 6  
-**Practical Hours:** 6  
-**Total Hours:** 12
-
-### Theoretical Content | المحتوى النظري
-
-- Language models for text generation
-- Transformer-based generation
-- Advanced language models (GPT, BERT, T5)
-- Prompt engineering
-- Applications of text generation
-
-### Practical Content | المحتوى العملي
-
-- Implementing text generation using GPT models
-- Fine-tuning language models for specific tasks
-- Practicing prompt engineering with OpenAI API or Hugging Face Transformers
-- Building text-to-text generation systems using Transformers
-- Generating creative text (stories, poems) using language models
-- Implementing conversational AI or chatbots using generative models
-- Evaluating text generation quality using metrics like BLEU and perplexity
-
----
-
-**Unit Duration:** 2 weeks  
-**Difficulty:** Advanced  
-**Prerequisites:** Unit 1 completion
-
-**Created for:** AIAT 124 - Generative AI  
-**Last Updated:** 2025-01-24 (reorganized from unit2-gans to match DETAILED_UNIT_DESCRIPTIONS)
+Solutions and answer keys are released by your instructor.

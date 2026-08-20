@@ -1,125 +1,82 @@
-# AIAT 124 - Generative AI
-## الذكاء الاصطناعي التوليدي
+# AIAT 124 - Generative Artificial Intelligence
 
-## 🚀 NEW STUDENTS: START HERE! | الطلاب الجدد: ابدأ من هنا!
+New students: read `START_HERE.md` first.
 
-**👉 If you're a new student, read `START_HERE.md` FIRST!**  
-**👉 إذا كنت طالباً جديداً، اقرأ `START_HERE.md` أولاً!**
+Credit hours: 3 · Contact hours: 4/week · Total training hours: 64 (theory+practical)
 
----
+## Course Overview
 
-**✅ Official Path:** Follow the unit folders in order (Unit 1 → Unit 5).
+This course covers generative AI: probabilistic generative models, Variational
+Autoencoders (VAEs), Generative Adversarial Networks (GANs), Transformer-based
+text generation, image generation (including diffusion concepts), ethics and
+regulation, and current research directions. All notebooks use PyTorch.
 
-**📚 Official Unit Content:** See `../DETAILED_UNIT_DESCRIPTIONS.md` for detailed theoretical and practical content per unit.
+## Units
 
-**Unit ↔ Folder Mapping (aligned with Detailed Unit Descriptions):**
+| Unit | Folder | Official title | Training hours |
+|------|--------|----------------|----------------|
+| 1 | `unit1-generative-fundamentals/` | Introduction to Generative AI | 12 |
+| 2 | `unit2-text-generation/` | Text and Language Generation | 12 |
+| 3 | `unit3-image-generation/` | Image and Visual Generation | 12 |
+| 4 | `unit4-ethics-regulations/` | Ethical and Regulatory Considerations | 14 |
+| 5 | `unit5-future-trends/` | Future Trends and Research in Generative AI | 14 |
 
-| Detailed Unit | Folder | Topic |
-|---------------|--------|-------|
-| Unit 1 | `unit1-generative-fundamentals/` | Foundations of Generative AI |
-| Unit 2 | `unit2-text-generation/` | Text and Language Generation |
-| Unit 3 | `unit3-image-generation/` | Image and Visual Generation |
-| Unit 4 | `unit4-ethics-regulations/` | Ethical and Regulatory Considerations |
-| Unit 5 | `unit5-future-trends/` | Future Trends and Research in Generative AI |
+## Learning Path
 
-## Course Overview | نظرة عامة على الدورة
+1. `START_HERE.md` — setup and orientation.
+2. Units 1 to 5, in order. In each unit: read the unit `README.md`, work the
+   `examples/` notebooks in file order (01, 02, ...), do the `exercises/`
+   notebook, then take the unit quiz in `QUIZZES/`.
+3. `ASSESSMENTS/` — final exam.
 
-This course provides comprehensive training in Generative AI, covering Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and modern generative models like diffusion models.
+Track your progress with `STUDENT_PROGRESS_CHECKLIST.md`.
 
-**Course Code:** AIAT 124  
-**Language:** Bilingual (Arabic/English)
-**Credit Hours:** 3  
-**Lecture Hours:** 2  
-**Practical Hours:** 2  
-**Total Hours:** 64 (32 theoretical + 32 practical)
+## Prerequisites
 
-**Unit Breakdown:**
-- Unit 1: 6 theoretical + 6 practical = 12 hours
-- Unit 2: 6 theoretical + 6 practical = 12 hours
-- Unit 3: 6 theoretical + 6 practical = 12 hours
-- Unit 4: 7 theoretical + 7 practical = 14 hours
-- Unit 5: 7 theoretical + 7 practical = 14 hours
+- Semester 1 (AIAT 111–116)
+- AIAT 122 — Deep Learning (Course 08): neural networks, CNNs, PyTorch training loops
+- AIAT 123 — Reinforcement Learning (Course 09) is taken in the same semester
+  and is not required for this course
 
+**Hardware:** a GPU is strongly recommended for GAN/VAE/diffusion training;
+CPU-only training is slow. For free GPU access see `DOCS/COLAB_SETUP.md`.
 
----
+## Course Learning Outcomes (CLOs)
 
+1. Explain basic principles of generative AI, including probabilistic modeling,
+   neural network structures, and key concepts.
+2. Apply generative modeling techniques such as VAEs, GANs, and
+   Transformer-based models.
+3. Implement and optimize generative models for tasks such as text generation,
+   image synthesis, and audio creation.
+4. Evaluate generative model performance using quantitative metrics (FID, BLEU,
+   perplexity) and qualitative assessment, addressing challenges such as mode
+   collapse.
+5. Design and develop generative AI solutions for practical applications,
+   including content generation, data augmentation, and creative applications.
+6. Analyze ethical, legal, and social implications of generative AI, including
+   bias, misinformation, intellectual property, and transparency.
+7. Explore emerging trends in generative AI, such as multimodal generation and
+   diffusion models.
 
----
-
-## Safety Procedures | إجراءات السلامة
-
-**Important:** Please review the safety procedures before starting any lab work or practical exercises.
-
-**مهم:** يرجى مراجعة إجراءات السلامة قبل بدء أي عمل مخبري أو تمارين عملية.
-
-📖 **Full Safety Guide:** See `../DOCS/SAFETY_PROCEDURES.md` for complete safety procedures and requirements.
-
-**Key Safety Rules:**
-- ✅ Maintain clean, organized workspace
-- ✅ Keep food and drinks away from equipment
-- ✅ Know locations of fire extinguishers and first aid tools
-- ✅ Report safety concerns immediately
-
----
-
-## Prerequisites | المتطلبات الأساسية
-
-**Python Version**: Python 3.8+ required (3.10 or 3.11 recommended)
-
-**Knowledge**: Students should have:
-- Completion of Courses 01-09
-- Strong understanding of deep learning
-- Familiarity with neural networks
-
-**Hardware**: 
-- **GPU strongly recommended** for generative AI (GANs, VAEs, Stable Diffusion)
-- **Training on CPU is extremely slow** (can take days/weeks)
-- **Use Google Colab for free GPU access!** (See `DOCS/COLAB_SETUP.md`)
-
----
-
-## Course Learning Outcomes (CLOs) | مخرجات التعلم
-
-**The detailed objectives of the training program are: For the trainee to be able to:**
-
-**CLO1:** Explain basic principles of generative AI, including probabilistic modeling, neural network structures, and key concepts.
-
-**CLO2:** Apply generative modeling techniques such as Variational Autoencoders (VAEs), Generative Adversarial Networks (GANs), and Transformer-based models.
-
-**CLO3:** Implement and optimize generative models using frameworks such as TensorFlow and PyTorch for tasks such as text generation, image synthesis, and audio creation.
-
-**CLO4:** Evaluate generative model performance using quantitative metrics (such as FID, BLEU, and perplexity) and qualitative assessments, addressing challenges such as mode collapse.
-
-**CLO5:** Design and develop generative AI-based solutions for practical applications, including automatic content generation, data augmentation, and creative applications.
-
-**CLO6:** Analyze ethical, legal, and social implications of generative AI, including issues related to bias, misinformation, intellectual property rights, and transparency requirements.
-
-**CLO7:** Explore emerging trends and future developments in generative AI, such as multimodal generation, diffusion models, and their impacts.
-
----
-
-## 📁 Course Structure | هيكل الدورة
+## Folder Structure
 
 ```
 Course 10/
-│
 ├── README.md
 ├── START_HERE.md
 ├── STUDENT_PROGRESS_CHECKLIST.md
-│
-├── unit1-generative-fundamentals/   📚 Unit 1: Introduction to Generative AI
-├── unit2-text-generation/          📚 Unit 2: Text and Language Generation
-├── unit3-image-generation/          📚 Unit 3: Image and Visual Generation
-├── unit4-ethics-regulations/        📚 Unit 4: Ethical and Regulatory Considerations
-├── unit5-future-trends/             📚 Unit 5: Future Trends and Research
-│
-├── PROJECTS/
-├── QUIZZES/
-└── DOCS/
+├── unit1-generative-fundamentals/
+├── unit2-text-generation/
+├── unit3-image-generation/
+├── unit4-ethics-regulations/
+├── unit5-future-trends/
+├── QUIZZES/          # one quiz per unit
+├── ASSESSMENTS/      # final exam
+├── PROJECTS/         # course project
+├── CASE_STUDIES/     # ethics case study (used in Unit 4)
+├── PRESENTATIONS/    # presentation template for the course project
+└── DOCS/             # Colab/GPU setup guide
 ```
 
----
-
-**Created for**: AIAT 124 - Generative AI  
-**Last Updated:** 2025-12-10
-
+Solutions and answer keys are released by your instructor.
