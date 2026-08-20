@@ -1,56 +1,31 @@
-# Unit 4: Deep Learning for NLP | التعلم العميق لمعالجة اللغة الطبيعية
-## AIAT 121 - Natural Language Processing
+# Unit 4: Deep Learning for NLP
+## AIAT 121 — Natural Language Processing
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+Unit hours: 14 (theory+practical)
 
-Before starting this unit, confirm:
+## What This Unit Teaches
 
-- [ ] Completed Unit 3: Machine Learning for NLP
-- [ ] Completed Course 08 Unit 1 (Deep Learning Basics) recommended
-- [ ] Comfortable with neural networks and embeddings
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
+Deep learning models for language: recurrent networks (RNNs, LSTMs) for sequence modeling, Transformer-based models (fine-tuning BERT), sequence-to-sequence models with attention for machine translation, and text generation with GPT models via the OpenAI API.
 
-### Learning Objectives | أهداف التعلم
+## Examples (run in order)
 
-By the end of this unit, students will be able to:
-- Understand RNNs and LSTMs for sequences
-- Work with Transformer architecture
-- Use pre-trained language models (BERT, GPT)
-- Build deep learning models for NLP tasks
-- Fine-tune language models
+1. `examples/01_rnn_lstm_nlp.ipynb` — RNNs and LSTMs for sequence modeling, built with NumPy to show the mechanics.
+2. `examples/02_bert_advanced_usage.ipynb` — Fine-tune a BERT model for text classification with Hugging Face Transformers and TensorFlow. *(tfenv kernel)*
+3. `examples/03_seq2seq_attention_translation.ipynb` — Sequence-to-sequence models with attention for machine translation in TensorFlow. *(tfenv kernel)*
+4. `examples/04_gpt_openai_text_generation.ipynb` — Text generation with GPT models through the OpenAI API. *(requires an OpenAI API key)*
 
----
+## Exercise
 
-## Topics Covered | المواضيع المغطاة
+- `exercises/01_ner_exercise.ipynb` — Named entity recognition for news articles with spaCy.
 
-1. **RNNs and LSTMs**
-   - Recurrent Neural Networks
-   - Long Short-Term Memory
-   - Sequence modeling
-   - Applications in NLP
+## Quiz
 
-2. **Transformers**
-   - Attention mechanism
-   - Transformer architecture
-   - Self-attention
-   - Encoder-decoder models
+- `../QUIZZES/quiz_04.md` — placeholder being authored.
 
-3. **Pre-trained Language Models**
-   - BERT (Bidirectional Encoder Representations)
-   - GPT (Generative Pre-trained Transformer)
-   - Using Hugging Face Transformers
-   - Fine-tuning
+Solutions and answer keys are released by your instructor.
 
-4. **Applications**
-   - Text generation
-   - Question answering
-   - Named Entity Recognition
-   - Machine translation basics
+## Prerequisites
 
----
-
-**Unit Duration:** 3 weeks  
-**Difficulty:** Advanced  
-**Prerequisites:** Units 1-3 completion, Deep Learning basics
-
+- Units 1–3 of this course
+- Neural network basics from Semester 1 (AIAT 111–116)
+- Notebooks run on the **ai-diploma** Jupyter kernel (repository root `.venv`); the TensorFlow notebooks (02, 03) run on the **tfenv** kernel

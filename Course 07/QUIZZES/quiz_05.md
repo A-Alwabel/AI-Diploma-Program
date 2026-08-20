@@ -1,5 +1,5 @@
-# Quiz 05 | اختبار 05
-## AIAT 121 - Natural Language Processing | معالجة اللغة الطبيعية
+# Quiz 05
+## AIAT 121 - Natural Language Processing
 
 **Time Limit:** 45 minutes  
 **Total Points:** 100 points
@@ -11,44 +11,40 @@
 ### Question 1 (10 points)
 [Question about Understand NLP fundamentals]
 
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
-
+A) Option A  
+B) Option B  
+C) Option C  
+D) Option D
 
 ---
 
 ### Question 2 (10 points)
 [Question about Apply text processing techniques]
 
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
-
+A) Option A  
+B) Option B  
+C) Option C  
+D) Option D
 
 ---
 
 ### Question 3 (10 points)
 [Question about Implement traditional ML models for NLP]
 
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
-
+A) Option A  
+B) Option B  
+C) Option C  
+D) Option D
 
 ---
 
 ### Question 4 (10 points)
 [Question about Use deep learning techniques]
 
-أ) Option A  
-ب) Option B  
-ج) Option C  
-د) Option D
-
+A) Option A  
+B) Option B  
+C) Option C  
+D) Option D
 
 ---
 

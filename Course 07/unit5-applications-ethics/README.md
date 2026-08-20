@@ -1,56 +1,34 @@
-# Unit 5: Applications and Ethics | التطبيقات والأخلاقيات
-## AIAT 121 - Natural Language Processing
+# Unit 5: NLP Applications and Ethics Standards
+## AIAT 121 — Natural Language Processing
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+Unit hours: 14 (theory+practical)
 
-Before starting this unit, confirm:
+## What This Unit Teaches
 
-- [ ] Completed Unit 4: Deep Learning for NLP
-- [ ] Understand NLP evaluation metrics and applications
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
+Real-world NLP applications and the ethics of deploying them: detecting bias in NLP models and datasets, applying fairness metrics and qualitative analysis, and addressing bias during preprocessing and evaluation.
 
-### Learning Objectives | أهداف التعلم
+This unit currently has one example notebook; additional content is being authored.
 
-By the end of this unit, students will be able to:
-- Build real-world NLP applications
-- Understand ethical considerations in NLP
-- Detect and mitigate bias in NLP systems
-- Implement responsible NLP practices
-- Evaluate NLP systems for fairness
+## Examples (run in order)
 
----
+1. `examples/01_bias_detection.ipynb` — Detect bias in NLP models and datasets using fairness metrics and qualitative analysis, and address it in preprocessing and evaluation.
 
-## Topics Covered | المواضيع المغطاة
+## Exercise
 
-1. **Real-World NLP Applications**
-   - Chatbots and conversational AI
-   - Text summarization
-   - Question answering systems
-   - Machine translation
-   - Information extraction
+- `exercises/01_nlp_applications_ethics_exercise.ipynb` — Analyze NLP applications and their ethical implications.
 
-2. **Ethical Considerations**
-   - Bias in NLP models
-   - Fairness in language processing
-   - Privacy concerns
-   - Misinformation detection
+## Quiz
 
-3. **Bias Detection and Mitigation**
-   - Identifying bias in datasets
-   - Bias in word embeddings
-   - Debiasing techniques
-   - Fairness metrics
+- `../QUIZZES/quiz_05.md` — placeholder being authored.
 
-4. **Responsible NLP Practices**
-   - Transparent model development
-   - Ethical AI guidelines
-   - Testing for bias
-   - Documentation and disclosure
+Solutions and answer keys are released by your instructor.
 
----
+## Related Materials
 
-**Unit Duration:** 2 weeks  
-**Difficulty:** Intermediate-Advanced  
-**Prerequisites:** Units 1-4 completion
+- Case study: `../CASE_STUDIES/01_nlp_application_case_study.md`
+- Course project: `../PROJECTS/Sentiment_Analysis_System/`
 
+## Prerequisites
+
+- Units 1–4 of this course
+- Notebooks run on the **ai-diploma** Jupyter kernel (repository root `.venv`)

@@ -1,4 +1,4 @@
-# Quiz 01: NLP Fundamentals | اختبار 1: أساسيات معالجة اللغة الطبيعية
+# Quiz 01: NLP Fundamentals
 ## AIAT 121 - Unit 1
 
 **Time Limit:** 45 minutes  
@@ -11,22 +11,20 @@
 ### Question 1 (10 points)
 What is the purpose of tokenization in NLP?
 
-أ) Remove stop words  
-ب) Split text into words or sentences  
-ج) Convert to lowercase  
-د) Remove punctuation
-
+A) Remove stop words  
+B) Split text into words or sentences  
+C) Convert to lowercase  
+D) Remove punctuation
 
 ---
 
 ### Question 2 (10 points)
 Stemming and lemmatization both:
 
-أ) Remove stop words  
-ب) Reduce words to their root form  
-ج) Remove punctuation  
-د) Convert to lowercase
-
+A) Remove stop words  
+B) Reduce words to their root form  
+C) Remove punctuation  
+D) Convert to lowercase
 
 ---
 
@@ -45,4 +43,3 @@ Explain the difference between stemming and lemmatization.
 ---
 
 **For:** AIAT 121 - Natural Language Processing
-

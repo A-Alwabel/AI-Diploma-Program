@@ -1,21 +1,22 @@
 # Sentiment Analysis System
-## Course 07
+## Course 07 (AIAT 121)
 
-Build sentiment analysis for customer feedback
+Build a sentiment analysis system for customer feedback.
 
-## Project Structure
+## Suggested Deliverables
 
-- `notebooks/` - Implementation notebooks
-- `data/` - Project data
-- `models/` - Trained models
-- `docs/` - Documentation
+- Implementation notebook(s) covering preprocessing, model training, and evaluation
+- The dataset you used (or a link to it)
+- A short write-up describing your approach and results
+
+Use `../project_template.md` to structure your proposal and documentation.
 
 ## Getting Started
 
-1. Review project requirements
-2. Set up environment
-3. Follow implementation guide
+1. Review the project template and requirements
+2. Set up your environment (repository root `.venv`, **ai-diploma** kernel)
+3. Implement, evaluate, and document your system
 
 ## Submission
 
-Submit all deliverables by [due date]
+Submission details and the due date are provided by your instructor.
