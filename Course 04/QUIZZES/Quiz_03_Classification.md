@@ -1,6 +1,6 @@
-# Quiz 03: Classification Techniques | اختبار 03: تقنيات التصنيف
+# Quiz 03: Classification Techniques
 
-## Instructions | التعليمات
+## Instructions
 - **Time Limit**: 45 minutes
 - **Total Points**: 75 points
 - **Format**: Multiple choice, short answer, code completion
@@ -17,7 +17,6 @@ What is the main difference between regression and classification?
 - C) There is no difference
 - D) Regression uses neural networks, classification uses trees
 
-
 ---
 
 ### Question 2 (5 points)
@@ -26,7 +25,6 @@ Which algorithm uses a sigmoid function to output probabilities?
 - B) Logistic Regression
 - C) K-Nearest Neighbors
 - D) Support Vector Machine
-
 
 ---
 
@@ -37,7 +35,6 @@ What is the main advantage of Decision Trees?
 - C) They work best with large datasets
 - D) They don't require feature scaling
 
-
 ---
 
 ### Question 4 (5 points)
@@ -46,7 +43,6 @@ What does SVM (Support Vector Machine) try to find?
 - B) The most common class
 - C) The average of all features
 - D) The correlation between features
-
 
 ---
 
@@ -57,7 +53,6 @@ What is Random Forest?
 - C) A type of neural network
 - D) A clustering algorithm
 
-
 ---
 
 ### Question 6 (5 points)
@@ -67,7 +62,6 @@ What is the main advantage of Random Forest over a single Decision Tree?
 - C) It's easier to interpret
 - D) It doesn't require any hyperparameters
 
-
 ---
 
 ### Question 7 (5 points)
@@ -76,7 +70,6 @@ How does K-Nearest Neighbors (KNN) classify a new data point?
 - B) It finds the K nearest training examples and predicts the majority class
 - C) It builds a decision tree
 - D) It uses support vectors
-
 
 ---
 
@@ -89,7 +82,6 @@ What does accuracy measure?
 - C) The proportion of actual positives that are correctly identified
 - D) The harmonic mean of precision and recall
 
-
 ---
 
 ### Question 6 (5 points)
@@ -98,7 +90,6 @@ What is precision?
 - B) The proportion of positive predictions that are correct
 - C) The proportion of actual positives that are correctly identified
 - D) The harmonic mean of precision and recall
-
 
 ---
 
@@ -109,7 +100,6 @@ What is recall?
 - C) The proportion of actual positives that are correctly identified
 - D) The harmonic mean of precision and recall
 
-
 ---
 
 ### Question 8 (5 points)
@@ -118,7 +108,6 @@ What does F1-score represent?
 - B) The proportion of positive predictions that are correct
 - C) The proportion of actual positives that are correctly identified
 - D) The harmonic mean of precision and recall
-
 
 ---
 
@@ -131,7 +120,6 @@ In a confusion matrix, what does True Positive (TP) represent?
 - C) Incorrectly predicted negative cases
 - D) Incorrectly predicted positive cases
 
-
 ---
 
 ### Question 10 (5 points)
@@ -140,7 +128,6 @@ What does False Positive (FP) represent in a confusion matrix?
 - B) Model predicted Class 0, but actual is Class 1 (missed detection)
 - C) Model correctly predicted Class 1
 - D) Model correctly predicted Class 0
-
 
 ---
 
@@ -151,7 +138,6 @@ What does False Negative (FN) represent in a confusion matrix?
 - C) Model correctly predicted Class 1
 - D) Model correctly predicted Class 0
 
-
 ---
 
 ### Question 12 (5 points)
@@ -160,7 +146,6 @@ What does AUC (Area Under Curve) measure in ROC analysis?
 - B) The model's ability to distinguish between classes
 - C) The precision of the model
 - D) The recall of the model
-
 
 ---
 
@@ -173,7 +158,6 @@ When are classification metrics (accuracy, precision, recall) calculated?
 - C) After training, on test data
 - D) Before loading the data
 
-
 ---
 
 ### Question 14 (5 points)
@@ -182,7 +166,6 @@ What is the difference between `.predict()` and `.predict_proba()` in logistic r
 - B) `.predict()` returns classes (0 or 1), `.predict_proba()` returns probabilities (0-1)
 - C) They are the same
 - D) `.predict()` is for training, `.predict_proba()` is for testing
-
 
 ---
 
@@ -193,7 +176,6 @@ What is class imbalance in classification?
 - C) When features are imbalanced
 - D) When the model is overfitting
 
-
 ---
 
 ### Question 16 (5 points)
@@ -203,9 +185,6 @@ How can you handle class imbalance in logistic regression?
 - C) Always use accuracy as the metric
 - D) Increase the learning rate
 
-
 ---
 
 **Good luck!** 🍀  
-**حظاً موفقاً!**
-

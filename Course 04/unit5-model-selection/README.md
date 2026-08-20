@@ -1,74 +1,44 @@
 # Unit 5: Model Selection and Boosting
-## اختيار النموذج والتعزيز
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+Official AIAT 114 Unit 5. Unit hours: 20 (of 96 total training hours).
 
-Before starting this unit, confirm:
-
-- [ ] Completed Units 1-4 in this course
-- [ ] Comfortable with regression, classification, and clustering
-- [ ] Understand cross-validation basics
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
-
-### Learning Objectives
-
-By the end of this unit, students will be able to:
-- Use Grid Search and Random Search for hyperparameter tuning
-- Implement Gradient Boosting algorithms
-- Apply ensemble methods
-- Compare different boosting algorithms
-- Optimize model performance
-
----
-
-## Unit Duration | مدة الوحدة
-
-**Theoretical Hours:** 7 hours  
-**Practical Hours:** 7 hours  
-**Total Hours:** 14 hours
-
-**Format:** 7 theoretical + 7 practical hours
-
----
-
-## Topics Covered
-
-1. **Hyperparameter Tuning**
-   - Grid Search
-   - Random Search
-   - Cross-validation for tuning
-   - Learning curves
-
-2. **Boosting Algorithms**
-   - Gradient Boosting
-   - XGBoost
-   - LightGBM
-   - AdaBoost
-
-3. **Ensemble Methods**
-   - Voting Classifiers/Regressors
-   - Bagging vs Boosting
-   - Stacking
-
-4. **Model Optimization**
-   - Feature importance
-   - Model comparison
-   - Performance optimization
-
----
-
-## Files Structure
-
-- `examples/`: Complete code examples with explanations
-- `exercises/`: Practice problems for students
-- `solutions/`: Solutions to exercises
-
----
+The closing unit: systematic hyperparameter tuning with grid/random search and gradient boosting (XGBoost, LightGBM).
 
 ## Prerequisites
 
-- Units 1-4 completion
-- Understanding of all previous algorithms
-- Experience with model evaluation
+- Units 1-4 of this course (regression, evaluation, classification, clustering)
+- Environment set up per `../START_HERE.md` (repo root `.venv`, **ai-diploma** kernel)
 
+## Learning Objectives
+
+By the end of this unit you can:
+
+- Tune hyperparameters with Grid Search and Random Search over cross-validation
+- Train gradient boosting models with XGBoost and LightGBM
+- Compare boosted models against baselines with ROC curves and confusion matrices
+- Select a final model with a defensible, reproducible procedure
+
+## Examples (work in this order)
+
+| # | Notebook | What it covers |
+|---|----------|----------------|
+| 1 | `examples/01_grid_search.ipynb` | Grid Search and Random Search; CV-based tuning; result heatmaps |
+| 2 | `examples/02_boosting.ipynb` | Gradient boosting with XGBoost and LightGBM; learning curves; feature importance |
+
+The `examples/` folder also contains the PNG figures the notebooks produce.
+
+## Exercises
+
+Each exercise exists as a notebook (`.ipynb`) and an equivalent script (`.py`) - use the notebook form on the **ai-diploma** kernel.
+
+1. `exercises/exercise_01.ipynb`
+2. `exercises/exercise_02_boosting.ipynb`
+
+Solutions are released by your instructor.
+
+## Assessment
+
+- Quiz: `../QUIZZES/Quiz_05_Model_Selection.md`
+- Unit test: `tests/test_05.md`
+
+After this unit: the final exam in `../ASSESSMENTS/Final_Exam.md`.

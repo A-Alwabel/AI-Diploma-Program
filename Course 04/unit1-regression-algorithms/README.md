@@ -1,94 +1,54 @@
-# Unit 1: Basic Data Processing Methods and Regression
-## أساليب معالجة البيانات الأساسية والانحدار
+# Unit 1: Regression Algorithms
 
-**Maps to (DETAILED_UNIT_DESCRIPTIONS):** Unit 1 — Regression Algorithms.  
-This folder covers data loading, preprocessing, and regression (simple/multiple/polynomial, Ridge, Lasso) as specified in the official curriculum.
+Official AIAT 114 Unit 1. Unit hours: 18 (of 96 total training hours).
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
-
-Before starting this unit, confirm:
-
-- [ ] Completed Course 03 Units 1-2 (Linear Algebra & Calculus)
-- [ ] Comfortable with Python basics and NumPy/Pandas
-- [ ] Understand train/test split and basic statistics
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
-
-### Learning Objectives
-
-By the end of this unit, students will be able to:
-- Load and explore datasets using pandas
-- Clean and preprocess data (handle missing values, outliers, categorical variables)
-- Perform basic statistical analysis
-- Implement Linear Regression
-- Implement Polynomial Regression
-- Visualize data and regression results
-
----
-
-## Unit Duration | مدة الوحدة
-
-**Theoretical Hours:** 6 hours  
-**Practical Hours:** 6 hours  
-**Total Hours:** 12 hours
-
-**Format:** 6 theoretical + 6 practical hours
-
----
-
-## Topics Covered
-
-1. **Data Loading and Exploration**
-   - Reading CSV, Excel, and JSON files
-   - Basic data inspection (head, info, describe)
-   - Data types and structure
-
-2. **Data Cleaning**
-   - Handling missing values
-   - Removing duplicates
-   - Handling outliers
-   - Data type conversion
-
-3. **Data Preprocessing**
-   - Feature scaling (Standardization, Normalization)
-   - Encoding categorical variables (Label Encoding, One-Hot Encoding)
-   - Feature selection basics
-
-4. **Basic Regression**
-   - Simple Linear Regression
-   - Multiple Linear Regression
-   - Polynomial Regression
-
-5. **Data Visualization**
-   - Scatter plots
-   - Histograms and distributions
-   - Correlation matrices
-   - Regression line plots
-
----
-
-## Files Structure
-
-- `examples/`: Complete code examples with explanations
-- `exercises/`: Practice problems for students
-- `solutions/`: Solutions to exercises
-
----
+The unit opens with a three-notebook data-processing preflight (loading, cleaning, preprocessing), then covers the regression algorithms: linear, polynomial, regularized (Ridge/Lasso), and SVR/tree-based regression.
 
 ## Prerequisites
 
-Before starting, ensure you have:
-- Python 3.8+ installed
-- All packages from `requirements.txt` installed
-- Basic understanding of Python syntax
+- AIAT 112 - Python for Artificial Intelligence (Course 02)
+- AIAT 113 - Mathematics and Probability for Machine Learning (Course 03)
+- Environment set up per `../START_HERE.md` (repo root `.venv`, **ai-diploma** kernel)
 
----
+## Learning Objectives
 
-## How to Use This Unit
+By the end of this unit you can:
 
-1. Start with `examples/` to understand concepts
-2. Run each example and observe the output
-3. Modify examples to experiment
-4. Complete exercises in `exercises/`
-5. Check your solutions against `solutions/`
+- Load, inspect, clean, and preprocess tabular data with pandas
+- Handle missing values, outliers, categorical encoding, and feature scaling
+- Fit and interpret simple and multiple linear regression
+- Fit polynomial regression and recognize overfitting
+- Apply Ridge and Lasso regularization
+- Use SVR and decision-tree regression and compare regressors
 
+## Examples (work in this order)
+
+| # | Notebook | What it covers |
+|---|----------|----------------|
+| 1 | `examples/01_data_loading_exploration.ipynb` | Loading CSVs with pandas; head/info/describe; first exploration plots |
+| 2 | `examples/02_data_cleaning.ipynb` | Missing values, duplicates, outliers, type conversion |
+| 3 | `examples/03_data_preprocessing.ipynb` | Feature scaling, categorical encoding, train/test preparation |
+| 4 | `examples/04_linear_regression.ipynb` | Simple and multiple linear regression; coefficients; residuals |
+| 5 | `examples/05_polynomial_regression.ipynb` | Polynomial features; degree selection; overfitting |
+| 6 | `examples/06_ridge_lasso_regression.ipynb` | L2/L1 regularization; alpha tuning; coefficient shrinkage |
+| 7 | `examples/07_svr_decision_tree_regression.ipynb` | Support Vector Regression and tree-based regression |
+
+The `examples/` folder also contains `sample_housing_data.csv` and the PNG figures the notebooks produce.
+
+## Exercises
+
+Each exercise exists as a notebook (`.ipynb`) and an equivalent script (`.py`) - use the notebook form on the **ai-diploma** kernel.
+
+1. `exercises/exercise_01.ipynb`
+2. `exercises/exercise_02.ipynb`
+3. `exercises/exercise_03_polynomial_regression.ipynb`
+4. `exercises/exercise_04_data_preprocessing.ipynb`
+
+Solutions are released by your instructor.
+
+## Assessment
+
+- Quiz: `../QUIZZES/Quiz_01_Data_Processing.md` (and `../QUIZZES/Quiz_02_Regression_Analysis.md` covers this unit's regression material)
+- Unit test: `tests/test_01_regression.md`
+
+Next unit: `../unit2-regression-model-evaluation/`

@@ -1,6 +1,6 @@
-# Quiz 04: Clustering and Dimensionality Reduction | اختبار 04: التجميع وتقليل الأبعاد
+# Quiz 04: Clustering and Dimensionality Reduction
 
-## Instructions | التعليمات
+## Instructions
 - **Time Limit**: 30 minutes
 - **Total Points**: 50 points
 - **Format**: Multiple choice, short answer, code completion
@@ -17,7 +17,6 @@ What is the main difference between supervised and unsupervised learning?
 - C) There is no difference
 - D) Supervised learning is faster
 
-
 ---
 
 ### Question 2 (5 points)
@@ -26,7 +25,6 @@ What does K-Means clustering try to minimize?
 - B) The within-cluster sum of squares (WCSS)
 - C) The number of features
 - D) The distance between clusters
-
 
 ---
 
@@ -37,7 +35,6 @@ How do you choose the optimal number of clusters (K) in K-Means?
 - C) Use the number of features
 - D) Use the number of samples
 
-
 ---
 
 ### Question 4 (5 points)
@@ -46,7 +43,6 @@ What is the main difference between K-Means and Hierarchical clustering?
 - B) Hierarchical requires specifying K, K-Means doesn't
 - C) There is no difference
 - D) K-Means is for classification, Hierarchical is for regression
-
 
 ---
 
@@ -59,7 +55,6 @@ What is the main purpose of PCA (Principal Component Analysis)?
 - C) To remove outliers
 - D) To handle missing values
 
-
 ---
 
 ### Question 6 (5 points)
@@ -68,7 +63,6 @@ What does "explained variance" represent in PCA?
 - B) The proportion of variance captured by each component
 - C) The number of features
 - D) The number of samples
-
 
 ---
 
@@ -79,7 +73,6 @@ How many principal components can you have at most?
 - C) Always 2
 - D) Always 3
 
-
 ---
 
 ### Question 8 (5 points)
@@ -88,7 +81,6 @@ What is a common rule of thumb for choosing the number of PCA components?
 - B) Use components that explain 80-95% of variance
 - C) Always use 2 components
 - D) Use half the number of features
-
 
 ---
 
@@ -101,7 +93,6 @@ What does the Silhouette Score measure?
 - C) Both cluster compactness and separation
 - D) The number of clusters
 
-
 ---
 
 ### Question 10 (5 points)
@@ -110,7 +101,6 @@ What is a good Silhouette Score range?
 - B) 0 to 1 (closer to 1 is better)
 - C) 0 to 100 (higher is better)
 - D) Any positive value
-
 
 ---
 

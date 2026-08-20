@@ -1,71 +1,52 @@
-# Unit 3: Advanced Classification Techniques and Model Evaluation
-## تقنيات التصنيف المتقدمة وتقييم النماذج
+# Unit 3: Classification Algorithms
 
-## ✅ Prerequisites Checklist | قائمة المتطلبات الأساسية
+Official AIAT 114 Unit 3. Unit hours: 19 (of 96 total training hours).
 
-Before starting this unit, confirm:
-
-- [ ] Completed Unit 2: Regression and Model Evaluation
-- [ ] Understand classification vs regression
-- [ ] Comfortable with train/test split and evaluation metrics
-- [ ] Installed required libraries (`pip check` passes)
-- [ ] Reviewed related topics in `COURSE_MAP.md` if needed
-
-### Learning Objectives
-
-By the end of this unit, students will be able to:
-- Implement Logistic Regression for classification
-- Use Decision Trees and Random Forests
-- Apply Support Vector Machines (SVM)
-- Evaluate classification models using appropriate metrics
-- Create and interpret confusion matrices
-
----
-
-## Unit Duration | مدة الوحدة
-
-**Theoretical Hours:** 6 hours  
-**Practical Hours:** 6 hours  
-**Total Hours:** 12 hours
-
-**Format:** 6 theoretical + 6 practical hours
-
----
-
-## Topics Covered
-
-1. **Classification Algorithms**
-   - Logistic Regression
-   - Decision Trees
-   - Random Forest
-   - Support Vector Machines (SVM)
-   - K-Nearest Neighbors (KNN)
-
-2. **Evaluation Metrics**
-   - Accuracy
-   - Precision and Recall
-   - F1-Score
-   - Confusion Matrix
-   - ROC Curve and AUC
-
-3. **Advanced Topics**
-   - Handling imbalanced datasets
-   - Multi-class classification
-   - Feature importance in tree models
-
----
-
-## Files Structure
-
-- `examples/`: Complete code examples with explanations
-- `exercises/`: Practice problems for students
-- `solutions/`: Solutions to exercises
-
----
+Supervised classification: logistic regression, decision trees and random forests, SVM, KNN, Naive Bayes, and ensemble techniques - with the metrics to evaluate them.
 
 ## Prerequisites
 
-- Unit 1 and Unit 2 completion
-- Understanding of regression concepts
-- Basic knowledge of probability
+- Units 1-2 (regression and model evaluation)
+- Environment set up per `../START_HERE.md` (repo root `.venv`, **ai-diploma** kernel)
 
+## Learning Objectives
+
+By the end of this unit you can:
+
+- Train and interpret logistic regression classifiers
+- Build decision trees and random forests; read feature importances
+- Apply SVM with different kernels and tune C/gamma
+- Use KNN and Naive Bayes and know when each fits
+- Combine models with bagging and boosting
+- Evaluate classifiers with accuracy, precision/recall, F1, confusion matrices, ROC/AUC
+
+## Examples (work in this order)
+
+| # | Notebook | What it covers |
+|---|----------|----------------|
+| 1 | `examples/01_logistic_regression.ipynb` | Logistic regression; confusion matrix, ROC curve, threshold analysis |
+| 2 | `examples/02_decision_trees.ipynb` | Decision trees and random forest; feature importance; tree depth |
+| 3 | `examples/03_svm.ipynb` | SVM kernels; C and gamma effects; support vectors; decision boundaries |
+| 4 | `examples/04_knn.ipynb` | K-Nearest Neighbors; choosing K; distance metrics |
+| 5 | `examples/05_random_forest_naive_bayes.ipynb` | Random forest vs Naive Bayes comparison |
+| 6 | `examples/06_ensemble_methods_bagging_boosting.ipynb` | Bagging and boosting ensembles |
+
+The `examples/` folder also contains the PNG figures the notebooks produce.
+
+## Exercises
+
+Each exercise exists as a notebook (`.ipynb`) and an equivalent script (`.py`) - use the notebook form on the **ai-diploma** kernel.
+
+1. `exercises/exercise_01.ipynb`
+2. `exercises/exercise_02_logistic_regression.ipynb`
+3. `exercises/exercise_03_svm.ipynb`
+4. `exercises/exercise_04_knn.ipynb`
+
+Solutions are released by your instructor.
+
+## Assessment
+
+- Quiz: `../QUIZZES/Quiz_03_Classification.md`
+- Unit test: `tests/test_03.md`
+
+Next unit: `../unit4-clustering/`

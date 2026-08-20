@@ -1,5 +1,4 @@
 # Test 2: Advanced Regression Techniques
-## امتحان 2: تقنيات الانحدار المتقدمة
 
 **Time Limit:** 90 minutes | **Marks:** 50 points
 
@@ -22,7 +21,6 @@ What is the main purpose of Ridge Regression (L2 regularization)?
 - C) To increase model complexity
 - D) To handle missing values
 
-
 ---
 
 ### Question 2 (3 points)
@@ -31,7 +29,6 @@ What is the key difference between Ridge and Lasso regression?
 - B) Ridge uses L2 penalty, Lasso uses L1 penalty
 - C) There is no difference
 - D) Ridge is for classification, Lasso is for regression
-
 
 ---
 
@@ -42,7 +39,6 @@ Which regularization technique can set coefficients to exactly zero?
 - C) Both
 - D) Neither
 
-
 ---
 
 ### Question 4 (3 points)
@@ -52,7 +48,6 @@ What does cross-validation help with?
 - C) Speeding up training
 - D) Handling missing values
 
-
 ---
 
 ### Question 5 (3 points)
@@ -61,7 +56,6 @@ In K-Fold cross-validation with K=5, how many times is the model trained?
 - B) 5 times
 - C) 10 times
 - D) Depends on the data size
-
 
 ---
 
@@ -175,5 +169,3 @@ Explain what happens to Ridge regression coefficients as the alpha parameter inc
 **Total: 50 points**
 
 **Good luck!** 🍀  
-**حظاً موفقاً!**
-

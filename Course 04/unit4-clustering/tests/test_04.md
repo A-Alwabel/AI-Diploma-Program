@@ -1,5 +1,4 @@
 # Test 4: Clustering and Dimensionality Reduction
-## امتحان 4: التجميع وتقليل الأبعاد
 
 **Time Limit:** 90 minutes | **Marks:** 50 points
 
@@ -22,7 +21,6 @@ What is the main difference between supervised and unsupervised learning?
 - C) There is no difference
 - D) Supervised learning is faster
 
-
 ---
 
 ### Question 2 (3 points)
@@ -31,7 +29,6 @@ What does K-Means clustering try to minimize?
 - B) The within-cluster sum of squares (WCSS)
 - C) The number of features
 - D) The distance between clusters
-
 
 ---
 
@@ -42,7 +39,6 @@ How do you choose the optimal number of clusters (K) in K-Means?
 - C) Use the number of features
 - D) Use the number of samples
 
-
 ---
 
 ### Question 4 (3 points)
@@ -52,7 +48,6 @@ What is the main purpose of PCA (Principal Component Analysis)?
 - C) To remove outliers
 - D) To handle missing values
 
-
 ---
 
 ### Question 5 (3 points)
@@ -61,7 +56,6 @@ What does "explained variance" represent in PCA?
 - B) The proportion of variance captured by each component
 - C) The number of features
 - D) The number of samples
-
 
 ---
 
@@ -197,5 +191,3 @@ What is the Silhouette Score, and what does it measure? What is a good Silhouett
 **Total: 50 points**
 
 **Good luck!** 🍀  
-**حظاً موفقاً!**
-

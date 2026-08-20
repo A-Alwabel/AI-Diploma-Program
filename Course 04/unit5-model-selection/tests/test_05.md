@@ -1,5 +1,4 @@
 # Test 5: Model Selection and Boosting
-## امتحان 5: اختيار النموذج والتعزيز
 
 **Time Limit:** 90 minutes | **Marks:** 50 points
 
@@ -22,7 +21,6 @@ What is the main purpose of Grid Search?
 - C) To find the best model architecture
 - D) To find the best dataset
 
-
 ---
 
 ### Question 2 (3 points)
@@ -31,7 +29,6 @@ What is the main advantage of Random Search over Grid Search?
 - B) It's faster and can find good solutions with fewer iterations
 - C) It always finds the best solution
 - D) It doesn't require cross-validation
-
 
 ---
 
@@ -42,7 +39,6 @@ What is the main idea behind boosting?
 - C) To reduce the number of features
 - D) To increase the number of samples
 
-
 ---
 
 ### Question 4 (3 points)
@@ -52,7 +48,6 @@ What is the difference between bagging and boosting?
 - C) There is no difference
 - D) Bagging is for regression, boosting is for classification
 
-
 ---
 
 ### Question 5 (3 points)
@@ -61,7 +56,6 @@ What is XGBoost?
 - B) A type of neural network
 - C) A clustering algorithm
 - D) A dimensionality reduction technique
-
 
 ---
 
@@ -215,5 +209,3 @@ Compare Gradient Boosting and XGBoost. What are the advantages of XGBoost?
 **Total: 50 points**
 
 **Good luck!** 🍀  
-**حظاً موفقاً!**
-

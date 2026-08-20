@@ -1,155 +1,84 @@
-# 📋 Student Progress Checklist | قائمة تقدم الطالب
+# Student Progress Checklist - AIAT 114
 
-Use this checklist to track your progress through the course.  
-استخدم هذه القائمة لتتبع تقدمك في الدورة.
-
-**Note:** Templates in `TEMPLATES/` are instructor-only. Students should follow units and notebooks.
+Track your progress through Course 04. Every item below corresponds to a real file in this course.
 
 ---
 
-## ✅ Setup & Preparation | الإعداد والتحضير
+## Setup
 
-### Prerequisites | المتطلبات الأساسية
-- [ ] Python 3.8+ installed on my computer
-- [ ] Verified Python version: `python --version` shows 3.8 or higher
-- [ ] Basic Python programming knowledge (variables, functions, classes)
-- [ ] Familiarity with NumPy and Pandas (helpful but not required)
-
-### Installation | التثبيت
-- [ ] Created virtual environment (recommended) OR installed globally
-- [ ] Upgraded pip: `pip install --upgrade pip`
-- [ ] Installed all libraries: `pip install -r requirements.txt`
-- [ ] Verified installation: `pip check` shows no errors
-- [ ] Tested import: Can import pandas, numpy, sklearn, matplotlib, etc.
-
-### Documentation | الوثائق
-- [ ] Read `START_HERE.md` completely
-- [ ] Read `README.md` to understand course structure
-- [ ] Reviewed `DOCS/` folder contents
+- [ ] Repo root `.venv` created and `requirements.txt` installed
+- [ ] Jupyter runs notebooks on the **ai-diploma** kernel
+- [ ] Read `START_HERE.md`
+- [ ] Read `README.md`
+- [ ] Downloaded needed datasets per `datasets/DOWNLOAD_INSTRUCTIONS.md`
 
 ---
 
-## 📓 Unit Progress | تقدم الوحدات
+## Unit 1: Regression Algorithms
 
-### Unit 1: Basic Data Processing Methods and Regression | أساليب معالجة البيانات الأساسية والانحدار
-- [ ] Read unit README.md
-- [ ] Completed example: 01_data_loading_exploration
-- [ ] Completed example: 02_data_cleaning
-- [ ] Completed example: 03_data_preprocessing
-- [ ] Completed example: 04_linear_regression
-- [ ] Completed example: 05_polynomial_regression
-- [ ] Completed exercise_01
-- [ ] Completed exercise_02
-- [ ] Reviewed solutions (after attempting exercises)
-- [ ] Completed quiz (if available)
-- [ ] **Unit 1: COMPLETE** ✅
+- [ ] Read `unit1-regression-algorithms/README.md`
+- [ ] Notebook `01_data_loading_exploration.ipynb`
+- [ ] Notebook `02_data_cleaning.ipynb`
+- [ ] Notebook `03_data_preprocessing.ipynb`
+- [ ] Notebook `04_linear_regression.ipynb`
+- [ ] Notebook `05_polynomial_regression.ipynb`
+- [ ] Notebook `06_ridge_lasso_regression.ipynb`
+- [ ] Notebook `07_svr_decision_tree_regression.ipynb`
+- [ ] Exercises 01-04 in `unit1-regression-algorithms/exercises/`
+- [ ] Quiz: `QUIZZES/Quiz_01_Data_Processing.md`
+- [ ] Unit test: `unit1-regression-algorithms/tests/test_01_regression.md`
 
-### Unit 2: Advanced Regression Techniques and Model Evaluation | تقنيات الانحدار المتقدمة وتقييم النماذج
-- [ ] Read unit README.md
-- [ ] Completed example: 01_ridge_lasso_regression
-- [ ] Completed example: 02_cross_validation
-- [ ] Completed exercise_01
-- [ ] Reviewed solutions (after attempting exercises)
-- [ ] Completed quiz (if available)
-- [ ] **Unit 2: COMPLETE** ✅
+## Unit 2: Regression and Model Evaluation
 
-### Unit 3: Advanced Classification Techniques and Model Evaluation | تقنيات التصنيف المتقدمة وتقييم النماذج
-- [ ] Read unit README.md
-- [ ] Completed example: 01_logistic_regression
-- [ ] Completed example: 02_decision_trees
-- [ ] Completed example: 03_svm
-- [ ] Completed exercise_01
-- [ ] Reviewed solutions (after attempting exercises)
-- [ ] Completed quiz (if available)
-- [ ] **Unit 3: COMPLETE** ✅
+- [ ] Read `unit2-regression-model-evaluation/README.md`
+- [ ] Notebook `01_cross_validation.ipynb`
+- [ ] Notebook `02_bias_variance_learning_curves.ipynb`
+- [ ] Exercises 01-02 in `unit2-regression-model-evaluation/exercises/`
+- [ ] Quiz: `QUIZZES/Quiz_02_Regression_Analysis.md`
+- [ ] Unit test: `unit2-regression-model-evaluation/tests/test_02.md`
 
-### Unit 4: Clustering and Dimensionality Reduction | التجميع وتقليل الأبعاد
-- [ ] Read unit README.md
-- [ ] Completed all examples in unit
-- [ ] Completed exercise_01
-- [ ] Reviewed solutions (after attempting exercises)
-- [ ] Completed quiz (if available)
-- [ ] **Unit 4: COMPLETE** ✅
+## Unit 3: Classification Algorithms
 
-### Unit 5: Model Selection and Boosting | اختيار النموذج والتعزيز
-- [ ] Read unit README.md
-- [ ] Completed example: 01_grid_search
-- [ ] Completed example: 02_boosting
-- [ ] Completed exercise_01
-- [ ] Reviewed solutions (after attempting exercises)
-- [ ] Completed quiz (if available)
-- [ ] **Unit 5: COMPLETE** ✅
+- [ ] Read `unit3-classification/README.md`
+- [ ] Notebook `01_logistic_regression.ipynb`
+- [ ] Notebook `02_decision_trees.ipynb`
+- [ ] Notebook `03_svm.ipynb`
+- [ ] Notebook `04_knn.ipynb`
+- [ ] Notebook `05_random_forest_naive_bayes.ipynb`
+- [ ] Notebook `06_ensemble_methods_bagging_boosting.ipynb`
+- [ ] Exercises 01-04 in `unit3-classification/exercises/`
+- [ ] Quiz: `QUIZZES/Quiz_03_Classification.md`
+- [ ] Unit test: `unit3-classification/tests/test_03.md`
 
----
+## Unit 4: Clustering and Dimensionality Reduction
 
-## 🎯 Course Completion | إتمام الدورة
+- [ ] Read `unit4-clustering/README.md`
+- [ ] Notebook `01_kmeans_clustering.ipynb`
+- [ ] Notebook `02_hierarchical_clustering.ipynb`
+- [ ] Notebook `03_pca.ipynb`
+- [ ] Exercises 01-02 in `unit4-clustering/exercises/`
+- [ ] Quiz: `QUIZZES/Quiz_04_Clustering.md`
+- [ ] Unit test: `unit4-clustering/tests/test_04.md`
 
-### Final Checklist | القائمة النهائية
-- [ ] All 5 units completed
-- [ ] All exercises attempted and reviewed
-- [ ] All quizzes completed (if available)
-- [ ] Can explain key concepts from each unit
-- [ ] Can preprocess data using pandas and numpy
-- [ ] Can build regression models (linear, polynomial, ridge, lasso)
-- [ ] Can build classification models (logistic regression, decision trees, SVM)
-- [ ] Can perform clustering and dimensionality reduction
-- [ ] Can use grid search and boosting techniques
-- [ ] Can evaluate models using appropriate metrics
-- [ ] **COURSE COMPLETE!** 🎉
+## Unit 5: Model Selection and Boosting
+
+- [ ] Read `unit5-model-selection/README.md`
+- [ ] Notebook `01_grid_search.ipynb`
+- [ ] Notebook `02_boosting.ipynb`
+- [ ] Exercises 01-02 in `unit5-model-selection/exercises/`
+- [ ] Quiz: `QUIZZES/Quiz_05_Model_Selection.md`
+- [ ] Unit test: `unit5-model-selection/tests/test_05.md`
 
 ---
 
-## 📊 Progress Summary | ملخص التقدم
+## Closing
 
-**Units Completed:** ___ / 5  
-**Exercises Completed:** ___ / ___  
-**Quizzes Completed:** ___ / ___  
-**Overall Progress:** ___%
-
-**Date Started:** _______________  
-**Date Completed:** _______________
+- [ ] One project from `PROJECTS/` (see `PROJECTS/README.md`)
+- [ ] Case study: `CASE_STUDIES/01_ml_model_selection_case_study.md`
+- [ ] Final exam: `ASSESSMENTS/Final_Exam.md`
 
 ---
 
-## 📝 Notes & Questions | الملاحظات والأسئلة
+## Notes
 
-Use this space to write down:
-- Concepts you found difficult
-- Questions to ask your instructor
-- Ideas for projects
-- Resources you found helpful
-- Code snippets or formulas you want to remember
-
----
-
-## 🎓 Skills Acquired | المهارات المكتسبة
-
-### Data Processing
-- [ ] Loading and exploring datasets
-- [ ] Data cleaning and preprocessing
-- [ ] Handling missing values
-- [ ] Feature engineering
-
-### Regression
-- [ ] Simple and multiple linear regression
-- [ ] Polynomial regression
-- [ ] Ridge and Lasso regularization
-- [ ] Cross-validation techniques
-
-### Classification
-- [ ] Logistic regression
-- [ ] Decision trees
-- [ ] Support Vector Machines (SVM)
-- [ ] Model evaluation metrics
-
-### Advanced Techniques
-- [ ] Clustering algorithms
-- [ ] Dimensionality reduction
-- [ ] Grid search for hyperparameter tuning
-- [ ] Boosting algorithms (XGBoost, LightGBM)
-
----
-
-**Good luck with your learning journey!** 🚀  
-**حظاً موفقاً في رحلة التعلم!** 🚀
-
+Space for concepts to review, questions for your instructor, and useful snippets.

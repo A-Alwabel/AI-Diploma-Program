@@ -1,6 +1,6 @@
-# Regression Analysis Template | قالب تحليل الانحدار
+# Regression Analysis Template
 
-## How to Use | كيفية الاستخدام
+## How to Use
 
 1. **Copy the template** to your project folder
 2. **Read the comments** - they explain what to implement
@@ -10,7 +10,7 @@
 
 ---
 
-## Implementation Order | ترتيب التنفيذ
+## Implementation Order
 
 1. **Data Preparation** - Load, explore, handle multicollinearity
 2. **Linear Regression** - Start with baseline model
@@ -20,7 +20,7 @@
 
 ---
 
-## Tips | نصائح
+## Tips
 
 - Always standardize features for Ridge/Lasso
 - Check for multicollinearity before training
@@ -30,4 +30,3 @@
 ---
 
 **Good luck with your project!** 🚀
-

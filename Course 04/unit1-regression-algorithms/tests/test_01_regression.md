@@ -1,5 +1,4 @@
 # Test 1: Regression Analysis
-## امتحان 1: تحليل الانحدار
 
 **Time Limit:** 90 minutes | **Marks:** 50 points
 
@@ -22,7 +21,6 @@ What does R² (R-squared) measure?
 - C) The mean squared error
 - D) The residual sum of squares
 
-
 ---
 
 ### Question 2 (3 points)
@@ -31,7 +29,6 @@ In linear regression, what does the coefficient represent?
 - B) The change in target variable per unit change in feature
 - C) The error term
 - D) The correlation coefficient
-
 
 ---
 
@@ -42,7 +39,6 @@ What is overfitting?
 - C) Model performs well on both training and test data
 - D) Model has too few parameters
 
-
 ---
 
 ### Question 4 (3 points)
@@ -52,7 +48,6 @@ Which evaluation metric is most sensitive to outliers in regression?
 - C) R² Score
 - D) Accuracy
 
-
 ---
 
 ### Question 5 (3 points)
@@ -61,7 +56,6 @@ When would you use polynomial regression instead of linear regression?
 - B) When data shows non-linear relationship
 - C) When you have categorical features
 - D) When you have missing values
-
 
 ---
 
@@ -279,7 +273,6 @@ Explain the difference between:
 
 Give examples of when to use each.
 
-
 1. **Simple Linear Regression:**
    - One feature, one target
    - y = b₀ + b₁x
@@ -315,4 +308,3 @@ Give examples of when to use each.
 - Part 2 (Code): 50 minutes
 - Part 3 (Analysis): 20 minutes
 - Review: 5 minutes
-

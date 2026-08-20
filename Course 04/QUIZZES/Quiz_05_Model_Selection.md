@@ -1,6 +1,6 @@
-# Quiz 05: Model Selection and Boosting | اختبار 05: اختيار النموذج والتعزيز
+# Quiz 05: Model Selection and Boosting
 
-## Instructions | التعليمات
+## Instructions
 - **Time Limit**: 30 minutes
 - **Total Points**: 50 points
 - **Format**: Multiple choice, short answer, code completion
@@ -17,7 +17,6 @@ What is the main purpose of Grid Search?
 - C) To find the best model architecture
 - D) To find the best dataset
 
-
 ---
 
 ### Question 2 (5 points)
@@ -26,7 +25,6 @@ What is the main advantage of Random Search over Grid Search?
 - B) It's faster and can find good solutions with fewer iterations
 - C) It always finds the best solution
 - D) It doesn't require cross-validation
-
 
 ---
 
@@ -37,7 +35,6 @@ What is cross-validation used for in hyperparameter tuning?
 - C) To reduce overfitting
 - D) To handle missing values
 
-
 ---
 
 ### Question 4 (5 points)
@@ -46,7 +43,6 @@ What is a learning curve used for?
 - B) To diagnose overfitting and underfitting
 - C) To choose the best learning rate
 - D) All of the above
-
 
 ---
 
@@ -59,7 +55,6 @@ What is the main idea behind boosting?
 - C) To reduce the number of features
 - D) To increase the number of samples
 
-
 ---
 
 ### Question 6 (5 points)
@@ -68,7 +63,6 @@ What is the difference between bagging and boosting?
 - B) Boosting trains models in parallel, bagging trains sequentially
 - C) There is no difference
 - D) Bagging is for regression, boosting is for classification
-
 
 ---
 
@@ -79,7 +73,6 @@ What is Gradient Boosting?
 - C) A method that uses only decision trees
 - D) A method that doesn't use cross-validation
 
-
 ---
 
 ### Question 8 (5 points)
@@ -88,7 +81,6 @@ What is XGBoost?
 - B) A type of neural network
 - C) A clustering algorithm
 - D) A dimensionality reduction technique
-
 
 ---
 
@@ -101,7 +93,6 @@ What is a Voting Classifier?
 - C) A classifier that doesn't use training data
 - D) A classifier that only works with binary classification
 
-
 ---
 
 ### Question 10 (5 points)
@@ -110,7 +101,6 @@ What is stacking?
 - B) Using a meta-learner to combine predictions from multiple base models
 - C) Using only one model
 - D) Reducing the number of features
-
 
 ---
 

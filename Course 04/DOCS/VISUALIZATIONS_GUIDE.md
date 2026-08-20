@@ -1,5 +1,4 @@
 # 📊 Visualizations Guide - AIAT 114 Curriculum
-## دليل التصورات البصرية - منهج AIAT 114
 
 ### ✅ **YES! The curriculum includes extensive visualizations!**
 
@@ -214,10 +213,8 @@ Every example includes **automatic visualization generation** with plots saved a
 
 ### For Instructors:
 
-1. **Run any example:**
-   ```bash
-   python unit1-data-processing/examples/04_linear_regression.py
-   ```
+1. **Run any example notebook** (on the ai-diploma kernel), e.g.:
+   `unit1-regression-algorithms/examples/04_linear_regression.ipynb`
 
 2. **Visualizations are automatically created:**
    - Files saved in the same directory as the script
