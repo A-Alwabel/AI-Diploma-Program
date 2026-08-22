@@ -65,3 +65,4 @@ boto3                         # optional: Course 11 cloud lab (AWS)
 
 # --- Optional extras ---
 xgboost                       # Course 04 boosting lab (notebook falls back to sklearn if missing)
+pytest
