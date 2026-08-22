@@ -12,9 +12,11 @@ optimizer behavior.
 ## Prerequisites
 
 - Unit 3: Learning Under Uncertainty
-- **Math background:** gradients and vector operations. If you need a
-  refresher, review Course 03 (AIAT 113) `unit1-linear-algebra` and
-  `unit2-calculus`.
+- **Math background:** only the intuition that a function's slope tells you
+  which way is "downhill." No calculus is required — the notebook *measures*
+  slopes numerically. The formal treatment (derivatives, gradients, vector
+  operations) arrives in the NEXT course, Course 03 (AIAT 113)
+  `unit1-linear-algebra` and `unit2-calculus`.
 
 ## Notebook
 

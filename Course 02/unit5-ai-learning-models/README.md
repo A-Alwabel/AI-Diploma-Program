@@ -9,6 +9,10 @@ Building and evaluating common machine learning models in Python, and
 comparing model families and their trade-offs, including deployment
 considerations.
 
+This unit is a first pass over classic ML: Course 04 (AIAT 114) re-teaches
+each of these model families in depth, so treat this as the preview that the
+machine-learning course deepens.
+
 ## Prerequisites
 
 - Unit 4: Optimization Techniques
