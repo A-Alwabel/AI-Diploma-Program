@@ -19,7 +19,7 @@ Training a machine learning model means minimizing a loss function, and calculus
 By the end of this unit, you will be able to:
 
 - Use calculus and multivariate calculus for optimization in ML
-- Solve differentiation problems, including with symbolic computation (SymPy)
+- Solve differentiation problems analytically and check them with numerical differentiation
 - Compute gradients of multivariate functions
 - Program backpropagation for a simple neural network
 - Apply function approximation to real-world ML models
