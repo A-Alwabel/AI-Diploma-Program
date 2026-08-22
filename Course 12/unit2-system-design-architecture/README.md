@@ -14,7 +14,7 @@ You design the system that will implement your proposal: overall architecture, d
 
 ## Exercise
 
-- [exercises/exercise_01_system_design.ipynb](exercises/exercise_01_system_design.ipynb) - Produce the system design and architecture for your own project. Solutions are released by your instructor.
+- [exercises/exercise_01_system_design.ipynb](exercises/exercise_01_system_design.ipynb) - Produce the system design and architecture for your own project. The notebook includes a short design primer and a worked mini-example, so it is doable while the unit lesson is pending. Solutions are released by your instructor.
 
 ## Quiz
 

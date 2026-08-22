@@ -10,8 +10,8 @@ You build your project: collect and prepare the data, implement the system you d
 
 ## Examples (work through in order)
 
-1. [examples/01_model_training_hyperparameter_optimization.ipynb](examples/01_model_training_hyperparameter_optimization.ipynb) - Building a training pipeline, training models under different hyperparameter configurations, and optimizing with grid search and automated tools.
-2. [examples/02_data_collection_preprocessing.ipynb](examples/02_data_collection_preprocessing.ipynb) - Collecting datasets, cleaning and preprocessing, feature engineering, train/validation/test splits, and documenting the data pipeline.
+1. [examples/01_data_collection_preprocessing.ipynb](examples/01_data_collection_preprocessing.ipynb) - Collecting datasets, cleaning and preprocessing, feature engineering, exploratory visualizations, train/validation/test splits, and documenting the data pipeline.
+2. [examples/02_model_training_hyperparameter_optimization.ipynb](examples/02_model_training_hyperparameter_optimization.ipynb) - Building a training pipeline, training models under different hyperparameter configurations, and optimizing with grid search and automated tools.
 
 ## Exercise
 

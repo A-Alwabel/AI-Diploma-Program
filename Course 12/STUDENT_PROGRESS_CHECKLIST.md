@@ -30,8 +30,8 @@ Templates in `TEMPLATES/` are for students - use them for your proposal, report,
 ## Unit 3: Implementation and Development of the Project Idea
 
 - [ ] Read [unit3-model-development/README.md](unit3-model-development/README.md)
-- [ ] Run [01_model_training_hyperparameter_optimization.ipynb](unit3-model-development/examples/01_model_training_hyperparameter_optimization.ipynb)
-- [ ] Run [02_data_collection_preprocessing.ipynb](unit3-model-development/examples/02_data_collection_preprocessing.ipynb)
+- [ ] Run [01_data_collection_preprocessing.ipynb](unit3-model-development/examples/01_data_collection_preprocessing.ipynb)
+- [ ] Run [02_model_training_hyperparameter_optimization.ipynb](unit3-model-development/examples/02_model_training_hyperparameter_optimization.ipynb)
 - [ ] Complete [exercise_01_implementation_planning.ipynb](unit3-model-development/exercises/exercise_01_implementation_planning.ipynb)
 - [ ] Take [Quiz 3](QUIZZES/quiz_03.md)
 
