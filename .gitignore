@@ -69,5 +69,5 @@ SOLUTIONS_ALL/
 INSTRUCTOR_MATERIALS/
 *.tflite
 
-# runtime artifact written by 10_python_basics_for_ai.ipynb
+# runtime artifact written by 03_python_basics_for_ai.ipynb
 Course 01/unit1-ai-foundations/examples/ai_topics.txt

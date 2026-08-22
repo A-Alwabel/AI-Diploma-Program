@@ -14,14 +14,14 @@ What AI is and where it came from; intelligent agents and rationality; the philo
 |---|----------|----------------|
 | 01 | `examples/01_ai_introduction.ipynb` | What AI is; weak vs strong AI; typical intelligent systems |
 | 02 | `examples/02_ai_history.ipynb` | Milestones in AI history |
-| 03 | `examples/03_intelligent_agents_rationality.ipynb` | Intelligent agents, their components, and rationality |
-| 04 | `examples/04_philosophy_turing_test.ipynb` | Philosophy of AI, the Turing Test, and objections to AI |
-| 05 | `examples/05_bfs_algorithm.ipynb` | Breadth-first search (uninformed search) |
-| 06 | `examples/06_dfs_algorithm.ipynb` | Depth-first search (uninformed search) |
-| 07 | `examples/07_astar_algorithm.ipynb` | A* heuristic search |
-| 08 | `examples/08_adversarial_search_minimax.ipynb` | Adversarial search: MiniMax and Alpha-Beta pruning |
-| 09 | `examples/09_knowledge_representation.ipynb` | Knowledge representation and reasoning |
-| 10 | `examples/10_python_basics_for_ai.ipynb` | Python basics for AI: lists, dictionaries, loops, NumPy, file I/O (writes and reads its own `ai_topics.txt`) |
+| 03 | `examples/03_python_basics_for_ai.ipynb` | Python basics for AI: lists, dictionaries, loops, NumPy, file I/O (writes and reads its own `ai_topics.txt`) — the Python the rest of the unit relies on |
+| 04 | `examples/04_intelligent_agents_rationality.ipynb` | Intelligent agents, their components, and rationality |
+| 05 | `examples/05_philosophy_turing_test.ipynb` | Philosophy of AI, the Turing Test, and objections to AI |
+| 06 | `examples/06_bfs_algorithm.ipynb` | Breadth-first search (uninformed search) |
+| 07 | `examples/07_dfs_algorithm.ipynb` | Depth-first search (uninformed search) |
+| 08 | `examples/08_astar_algorithm.ipynb` | A* heuristic search |
+| 09 | `examples/09_adversarial_search_minimax.ipynb` | Adversarial search: MiniMax and Alpha-Beta pruning |
+| 10 | `examples/10_knowledge_representation.ipynb` | Knowledge representation and reasoning |
 | 11 | `examples/11_generative_ai_intro.ipynb` | First look at generative AI frameworks and applications |
 | 12 | `examples/12_case_studies_intelligent_agents.ipynb` | Case studies of intelligent agents and rational decision-making |
 
