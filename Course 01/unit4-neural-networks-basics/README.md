@@ -4,6 +4,8 @@
 
 Neurons and activation functions, the perceptron, multi-layer networks, and an introduction to deep learning architectures: CNNs, RNNs, LSTM/GRU, plus overfitting and regularization.
 
+This unit builds intuition and small working Keras models: the math behind training arrives in Course 03 (AIAT 113), and the full mechanics of these architectures in Course 08 (AIAT 122, Deep Learning).
+
 **Prerequisites:** Unit 3 (`../unit3-ml-basics/README.md`).
 
 **Kernels:** notebook 01 runs on the `ai-diploma` kernel; notebooks 02–07 and the exercise use TensorFlow/Keras and run on the `tfenv` kernel (see `../START_HERE.md`).

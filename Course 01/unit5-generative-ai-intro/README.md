@@ -4,6 +4,8 @@
 
 Generative models and how they differ from discriminative ones (GANs, Transformers, LLMs), an applied binary-classification project — a feedforward neural network for diabetes prediction with EDA and preprocessing — a hands-on GAN training experiment, and a summary that ties the whole course together.
 
+This unit is a first taste: the math behind these models arrives in Course 03 (AIAT 113), the deep-learning mechanics in Course 08 (AIAT 122), and generative AI gets its own full course in Course 10 (AIAT 124).
+
 **Prerequisites:** Unit 4 (`../unit4-neural-networks-basics/README.md`).
 
 **Kernels:** notebooks 01, 02, and 05 run on the `ai-diploma` kernel; notebooks 03 and 04 use TensorFlow/Keras and run on the `tfenv` kernel (see `../START_HERE.md`).
