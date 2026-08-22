@@ -25,10 +25,11 @@ Quizzes 02–05 are placeholders being authored; check the `QUIZZES/` folder for
 
 ## Unit 4: Deep Learning for NLP
 - [ ] Read `unit4-deep-learning-nlp/README.md`
-- [ ] Example: `01_rnn_lstm_nlp.ipynb`
-- [ ] Example: `02_bert_advanced_usage.ipynb`
-- [ ] Example: `03_seq2seq_attention_translation.ipynb`
-- [ ] Example: `04_gpt_openai_text_generation.ipynb`
+- [ ] Example: `01_attention_transformers_bridge.ipynb`
+- [ ] Example: `02_rnn_lstm_nlp.ipynb`
+- [ ] Example: `03_bert_advanced_usage.ipynb`
+- [ ] Example: `04_seq2seq_attention_translation.ipynb`
+- [ ] Example: `05_gpt_openai_text_generation.ipynb`
 - [ ] Exercise: `01_ner_exercise.ipynb`
 - [ ] Quiz: `QUIZZES/quiz_04.md` (placeholder being authored)
 

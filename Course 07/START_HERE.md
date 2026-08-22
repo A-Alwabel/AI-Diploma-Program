@@ -9,7 +9,7 @@ Credit hours: 3 · Contact hours: 4/week · Total training hours: 64 (theory+pra
 ## Setup
 
 1. Use the repository root `.venv` and select the **ai-diploma** Jupyter kernel.
-2. For the TensorFlow notebooks in Unit 4 (`02_bert_advanced_usage.ipynb`, `03_seq2seq_attention_translation.ipynb`), select the **tfenv** kernel.
+2. For the TensorFlow notebook in Unit 4 (`04_seq2seq_attention_translation.ipynb`), select the **tfenv** kernel. All other notebooks (including the Hugging Face ones, which run on PyTorch) use **ai-diploma**.
 
 ## The Path
 

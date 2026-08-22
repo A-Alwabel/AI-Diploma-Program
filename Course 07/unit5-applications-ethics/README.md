@@ -11,7 +11,7 @@ This unit currently has one example notebook; additional content is being author
 
 ## Examples (run in order)
 
-1. `examples/01_bias_detection.ipynb` — Detect bias in NLP models and datasets using fairness metrics and qualitative analysis, and address it in preprocessing and evaluation.
+1. `examples/01_bias_detection.ipynb` — The logic of a bias audit walked through on simulated association scores (disclosed as simulated), plus mitigation strategies and a responsible-NLP checklist; measuring bias on real data is the exercise's design task.
 
 ## Exercise
 

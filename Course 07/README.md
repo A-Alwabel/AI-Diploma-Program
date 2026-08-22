@@ -6,7 +6,7 @@ Credit hours: 3 · Contact hours: 4/week · Total training hours: 64 (theory+pra
 
 ## Course Overview
 
-This course covers Natural Language Processing (NLP) with Python: text preprocessing and representation, classical machine learning for text, deep learning models (RNNs, LSTMs, Transformers), and the ethics of NLP systems. Hands-on work uses NLTK, spaCy, scikit-learn, gensim, and Hugging Face Transformers.
+This course covers Natural Language Processing (NLP) with Python: text preprocessing and representation, classical machine learning for text, deep learning models (RNNs, LSTMs, Transformers), and the ethics of NLP systems. Hands-on work uses NLTK, spaCy, scikit-learn, and Hugging Face Transformers (the Word2Vec notebook implements skip-gram in NumPy and shows the gensim API as a reference).
 
 Note: several units currently have only one or two example notebooks; additional content is being authored. Each unit README lists exactly what exists today.
 
@@ -30,8 +30,8 @@ The Unit 2 folder keeps its original slug (`unit2-tokenization-morphology/`); th
 ## Setup
 
 - Use the repository root `.venv` and select the **ai-diploma** Jupyter kernel for notebooks.
-- Unit 4 notebooks `02_bert_advanced_usage.ipynb` and `03_seq2seq_attention_translation.ipynb` use TensorFlow — run those on the **tfenv** kernel.
-- `unit4-deep-learning-nlp/examples/04_gpt_openai_text_generation.ipynb` calls the OpenAI API and requires an API key.
+- Unit 4 notebook `04_seq2seq_attention_translation.ipynb` uses TensorFlow — run it on the **tfenv** kernel. The Hugging Face notebooks (BERT, GPT-2) run on the **ai-diploma** kernel via PyTorch.
+- `unit4-deep-learning-nlp/examples/05_gpt_openai_text_generation.ipynb` generates text with a local GPT-2 model; its OpenAI API section is a non-executed walkthrough, so no API key is needed.
 
 ## Course Learning Outcomes (CLOs)
 

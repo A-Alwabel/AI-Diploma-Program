@@ -12,7 +12,7 @@ How to turn text into features that models can use: advanced tokenization strate
 ## Examples (run in order)
 
 1. `examples/01_advanced_tokenization.ipynb` — Advanced tokenization (subword, BPE-style), handling morphologically rich languages, and choosing a tokenization strategy for a given model.
-2. `examples/02_word_embeddings_word2vec.ipynb` — Train Word2Vec embeddings with gensim, explore word similarity, and visualize the embedding space.
+2. `examples/02_word_embeddings_word2vec.ipynb` — Train Word2Vec-style skip-gram embeddings from scratch in NumPy, explore word similarity, and visualize the embedding space with PCA/t-SNE (the gensim API is shown as a reference recipe).
 
 ## Exercise
 
