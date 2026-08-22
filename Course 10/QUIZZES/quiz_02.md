@@ -4,7 +4,7 @@
 **Time Limit:** 45 minutes
 **Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)
 **Covers:** Unit 2 (language models, GPT, text generation, fine-tuning, BLEU/perplexity).
-**Concepts from:** Unit 2 examples 04 (text generation GPT), 07 (text-to-text), 08 (creative text), 09 (BLEU/perplexity) and related slides.
+**Concepts from:** Unit 2 examples 01 (GPT-style text generation), 02 (fine-tuning), 04 (text-to-text), 05 (creative text), 06 (BLEU/perplexity) and related slides.
 **Answer key:** released by your instructor.
 
 ---

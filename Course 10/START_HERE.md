@@ -25,22 +25,25 @@ Required packages:
 ```bash
 pip install numpy pandas matplotlib scikit-learn
 pip install torch torchvision
-pip install transformers             # used in Unit 2 (fine-tuning lesson)
+pip install nltk                     # BLEU metrics (Units 1-2 evaluation)
 ```
 
-Optional: `pip install openai` — only if you want to run the OpenAI API parts
-of the Unit 2 prompt-engineering lesson (an API key is required; the lesson
-also works with Hugging Face Transformers).
+Optional: `pip install transformers` and `pip install openai` — only if you
+want to run the clearly labeled *reference* workflows in the Unit 2
+fine-tuning and prompt-engineering lessons (a model download or an API key is
+required; every lesson runs fully without them).
 
 Verify:
 
 ```python
-import numpy, pandas, sklearn, torch, torchvision, transformers
+import numpy, pandas, sklearn, torch, torchvision, nltk
 print("PyTorch:", torch.__version__)
 ```
 
-**GPU:** GAN/VAE/diffusion training is slow on CPU. If you have no local GPU,
-use Google Colab — see `DOCS/COLAB_SETUP.md`.
+**GPU:** not required — every notebook trains classroom-sized models on CPU
+in seconds to ~1 minute. A GPU (or Google Colab — see `DOCS/COLAB_SETUP.md`)
+is only needed to try the full-size systems referenced in Unit 3
+(Stable Diffusion, StyleGAN).
 
 ## Learning Path
 

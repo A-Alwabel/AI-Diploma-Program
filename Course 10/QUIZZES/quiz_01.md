@@ -4,7 +4,7 @@
 **Time Limit:** 45 minutes
 **Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)
 **Covers:** Unit 1 (GANs, VAEs, latent spaces, evaluation metrics: FID, BLEU).
-**Concepts from:** Unit 1 examples 04 (building GAN), 05 (VAE), 07 (training techniques), 08 (evaluating models) and related slides.
+**Concepts from:** Unit 1 examples 04 (implementing a VAE), 05 (building a GAN), 08 (training techniques), 10 (evaluating models: FID/BLEU), 12 (latent spaces) and related slides.
 **Answer key:** released by your instructor.
 
 ---

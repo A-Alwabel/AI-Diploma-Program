@@ -24,7 +24,8 @@ Copilot).
    and open problems in generative AI.
 3. `examples/03_music_generation.ipynb` — AI music generation.
 4. `examples/04_experimenting_advanced_generative_models.ipynb` —
-   Experimenting with advanced models: StyleGAN, Stable Diffusion, DALL-E.
+   Advanced image models compared (StyleGAN, Stable Diffusion, DALL-E),
+   grounded with a small GAN trained locally.
 5. `examples/05_audio_voice_synthesis_wavenet_jukebox.ipynb` — Audio and
    voice synthesis with WaveNet- and Jukebox-style approaches.
 6. `examples/06_code_generation_openai_codex_copilot.ipynb` — Code generation

@@ -7,9 +7,11 @@ Unit training hours: 12
 ## What This Unit Teaches
 
 Image generation in depth: implementing and applying VAEs for images, advanced
-VAE topics, diffusion-based generation (Stable Diffusion concepts), and modern
-image generators such as StyleGAN and DALL-E. All notebooks use PyTorch. A GPU
-(or Google Colab — see `../DOCS/COLAB_SETUP.md`) is strongly recommended.
+VAE topics, diffusion-based generation (a full DDPM you train and sample), and
+how modern generators (StyleGAN, DALL-E, Stable Diffusion) build on those
+foundations. All notebooks use PyTorch and run on CPU at classroom scale; a
+GPU (or Google Colab — see `../DOCS/COLAB_SETUP.md`) is only needed to try the
+full-size systems referenced in examples 04–05.
 
 ## Prerequisites
 
@@ -20,14 +22,15 @@ image generators such as StyleGAN and DALL-E. All notebooks use PyTorch. A GPU
 
 1. `examples/01_vae_implementation.ipynb` — Implementing a VAE for images,
    step by step.
-2. `examples/02_vae_applications.ipynb` — VAE applications: face generation
-   and style transfer.
-3. `examples/03_vae_advanced_topics.ipynb` — Advanced VAE topics and
-   variants.
+2. `examples/02_vae_applications.ipynb` — VAE applications: denoising and
+   anomaly detection hands-on, plus face-generation and style-transfer
+   recipes.
+3. `examples/03_vae_advanced_topics.ipynb` — Advanced VAE topics: conditional
+   VAE, latent interpolation, and a β-VAE experiment.
 4. `examples/04_image_generation_advanced.ipynb` — Advanced image generation:
-   Stable Diffusion and diffusion-model concepts.
-5. `examples/05_generating_ai_images_stylegan_dalle.ipynb` — Generating
-   AI-created images with StyleGAN, DALL-E, or Stable Diffusion.
+   train and sample a DDPM diffusion model (Stable Diffusion's core).
+5. `examples/05_generating_ai_images_stylegan_dalle.ipynb` — How StyleGAN,
+   DALL-E, and Stable Diffusion work, mapped to the models you built.
 
 ## Exercise
 

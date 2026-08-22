@@ -8,8 +8,9 @@ Credit hours: 3 · Contact hours: 4/week · Total training hours: 64 (theory+pra
 
 This course covers generative AI: probabilistic generative models, Variational
 Autoencoders (VAEs), Generative Adversarial Networks (GANs), Transformer-based
-text generation, image generation (including diffusion concepts), ethics and
-regulation, and current research directions. All notebooks use PyTorch.
+text generation, image generation (including a diffusion model you train),
+ethics and regulation, and current research directions. Most notebooks use
+PyTorch; a few use NumPy/scikit-learn only.
 
 ## Units
 
@@ -38,8 +39,10 @@ Track your progress with `STUDENT_PROGRESS_CHECKLIST.md`.
 - AIAT 123 — Reinforcement Learning (Course 09) is taken in the same semester
   and is not required for this course
 
-**Hardware:** a GPU is strongly recommended for GAN/VAE/diffusion training;
-CPU-only training is slow. For free GPU access see `DOCS/COLAB_SETUP.md`.
+**Hardware:** no GPU needed — the notebooks train classroom-sized GAN/VAE/
+diffusion models on CPU in seconds to about a minute. A GPU (free via Colab —
+see `DOCS/COLAB_SETUP.md`) is only needed to try the full-size systems
+referenced in Unit 3.
 
 ## Course Learning Outcomes (CLOs)
 

@@ -9,8 +9,9 @@ Unit training hours: 12
 Foundations of generative modeling: how generative models differ from
 discriminative ones, probabilistic generative models, and the two core deep
 generative architectures — VAEs and GANs — including training techniques,
-evaluation metrics, and latent-space exploration. All notebooks use PyTorch;
-several train on the MNIST data included in `examples/data/`.
+evaluation metrics, and latent-space exploration. Most notebooks use PyTorch
+(examples 02, 03, and 10 use NumPy/scikit-learn instead); several train on the
+MNIST data included in `examples/data/`.
 
 ## Prerequisites
 

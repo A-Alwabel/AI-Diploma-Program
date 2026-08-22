@@ -4,7 +4,7 @@
 **Time Limit:** 45 minutes
 **Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)
 **Covers:** Unit 3 (diffusion models, StyleGAN, image-to-image translation, style transfer).
-**Concepts from:** Unit 3 examples 02 (image generation advanced) and related slides.
+**Concepts from:** Unit 3 examples 04 (advanced image generation: diffusion) and 05 (StyleGAN, DALL-E, Stable Diffusion) and related slides.
 **Answer key:** released by your instructor.
 
 ---
