@@ -44,7 +44,7 @@ Follow this order. Within each unit: read the unit `README.md`, run the `example
    - Examples 01-08 -> `exercises/exercise_01.ipynb` -> `QUIZZES/Quiz_02_Data_Cleaning.md`
 3. **Unit 3 - Data Visualization** (`unit3-visualization/`)
    - Examples 01-08 -> `exercises/exercise_01.ipynb` -> `QUIZZES/Quiz_03_Data_Visualization.md`
-4. **Unit 4 - Introduction to Machine Learning** (`unit4-ml-intro/`)
+4. **Unit 4 - Introduction to Machine Learning** (`unit4-ml-intro/`) — ML at scale: a deliberate recap that reinforces Course 04 (AIAT 114), focused on workflow and training cost
    - Examples 01-12 -> `exercises/exercise_01.ipynb` -> `QUIZZES/Quiz_04_ML_Introduction.md`
 5. **Unit 5 - Extending the Scope of Data Science** (`unit5-scaling/`)
    - Examples 01-10 -> `exercises/exercise_01.ipynb` -> `QUIZZES/Quiz_05_Scaling_Production.md`

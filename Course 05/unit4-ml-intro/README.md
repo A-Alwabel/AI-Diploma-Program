@@ -6,11 +6,11 @@
 
 - Unit 3: Data Visualization (`../unit3-visualization/`)
 - Comfortable with pandas data manipulation
-- AIAT 114 - Machine Learning Algorithms and Applications (Course 04) covers these topics in more depth
+- AIAT 114 - Machine Learning Algorithms and Applications (Course 04), where these algorithms were first taught
 
 ## What This Unit Covers
 
-The machine learning workflow with scikit-learn: preparing data for ML, regression and classification models, model evaluation, hyperparameter tuning, unsupervised learning with K-means, applying ML to real-world problems, and comparing CPU vs GPU training.
+**ML at scale — a recap that reinforces AIAT 114.** Course 04 already taught these algorithms in depth; this unit deliberately revisits them from the data-science-workflow angle rather than re-teaching them from scratch. The focus here is: preparing real data for ML, running the scikit-learn workflow end to end (regression, classification, evaluation, hyperparameter tuning, K-means), applying it to a complete real-world problem, and — the part that is new — what happens to training and evaluation **cost** as data grows, leading into CPU-vs-GPU training and Unit 5's scaling tools. If an algorithm feels familiar, that is by design: treat it as reinforcement and focus on the workflow and cost measurements.
 
 ## Examples (run in order)
 
