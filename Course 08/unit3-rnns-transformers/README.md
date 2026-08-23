@@ -20,7 +20,7 @@ Run the notebooks in `examples/` in this order:
 2. `02_rnn_basics.ipynb` — how RNNs work; vanishing and exploding gradients.
 3. `03_lstm_advanced.ipynb` — LSTM (and GRU) gates and why they help with long sequences.
 4. `04_transformer_attention.ipynb` — attention from scratch: queries, keys, values; self-attention.
-5. `05_bert_finetuning.ipynb` — fine-tune a pretrained BERT model for text classification.
+5. `05_bert_finetuning.ipynb` — the BERT fine-tuning pattern (encoder + classification head), demonstrated hands-on with a from-scratch LSTM stand-in; real pretrained BERT appears in `09`.
 6. `06_gpt_text_generation.ipynb` — generate text with a pretrained GPT model.
 7. `07_sequence_to_sequence.ipynb` — encoder–decoder (Seq2Seq) models for tasks like translation.
 8. `08_text_generation_rnn_lstm_gru.ipynb` — character/word-level text generation with RNN/LSTM/GRU.

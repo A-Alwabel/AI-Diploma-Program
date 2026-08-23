@@ -46,7 +46,7 @@ These often need a bit more time or a recap in class. It’s normal to find them
 
 - **Unit 1:** `05_backpropagation_detailed` (gradients, chain rule), `06_optimization_techniques` (SGD vs Adam math)
 - **Unit 2:** Transfer learning notebooks (05, 06) if you haven’t seen "freeze layers" before
-- **Unit 3:** `04_transformer_attention` (Q/K/V, attention), `05_bert_finetuning` (loading a big model)
+- **Unit 3:** `04_transformer_attention` (Q/K/V, attention), `05_bert_finetuning` (the encoder + head fine-tuning pattern)
 - **Unit 4:** `03_reinforcement_learning_...` (reward, policy), GANs/VAEs if the idea of generator/discriminator is new
 - **Unit 5:** ONNX/TFLite if you haven’t seen "export" before
 
