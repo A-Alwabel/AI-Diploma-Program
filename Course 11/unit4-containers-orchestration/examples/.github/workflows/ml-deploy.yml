@@ -1,3 +1,6 @@
+# WHAT: write the GitHub Actions workflow — four jobs chained by `needs:`.
+# WHY: the chain IS the safety mechanism: tests gate training, validation gates
+# the image build, and only a pushed image can be deployed.
 name: ML Model CI/CD
 
 # Trigger: every push to the main branch

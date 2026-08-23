@@ -1,3 +1,6 @@
+# WHAT: write smoke_test.py — post-deployment checks against the LIVE endpoint.
+# WHY: validation tested the model file; the smoke test checks the deployed
+# SYSTEM — network, container, server — with three known-answer requests.
 """Smoke test for the deployed iris-api endpoint.
 
 Runs after deployment in CI/CD.
@@ -19,6 +22,7 @@ except ImportError:
     print("[SKIP] requests library not installed. Run: pip install requests")
     sys.exit(0)
 
+# The endpoint URL is a flag so the same script tests staging or production.
 parser = argparse.ArgumentParser()
 parser.add_argument("--url", default="http://localhost:8000",
                     help="Base URL of the deployed API")
@@ -27,6 +31,7 @@ args = parser.parse_args()
 BASE_URL = args.url
 
 # Three representative Iris samples (one per class)
+# Known-answer requests: one flower per class, with the expected label.
 TEST_CASES = [
     {"sepal_length": 5.1, "sepal_width": 3.5, "petal_length": 1.4, "petal_width": 0.2},  # setosa
     {"sepal_length": 6.4, "sepal_width": 3.2, "petal_length": 4.5, "petal_width": 1.5},  # versicolor

@@ -1,3 +1,6 @@
+# WHAT: write the training script into app/ — it saves model/iris_rf.joblib.
+# WHY: the container will COPY this folder, so the model must be created inside
+# app/ first; read the docstring's note about relative paths carefully.
 """Train a RandomForest on Iris and save it.
 
 This script lives inside app/ and is meant to run from there (or at /app

@@ -1,3 +1,6 @@
+# WHAT: write the Dockerfile — the build recipe for the image.
+# WHY: the ORDER of lines is deliberate: requirements are copied and installed
+# before the code so Docker's layer cache skips reinstalling deps on code edits.
 # Base image: official Python 3.10, slim variant (no unnecessary OS packages)
 FROM python:3.10-slim
 

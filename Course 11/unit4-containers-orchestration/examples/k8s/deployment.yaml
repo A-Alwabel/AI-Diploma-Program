@@ -1,3 +1,7 @@
+# WHAT: write the Deployment manifest — 3 replicas of the iris-api image with
+# resource limits and health probes.
+# WHY: read the two probes closely: liveness RESTARTS a stuck pod, readiness
+# only PAUSES its traffic — confusing them causes restart storms in production.
 apiVersion: apps/v1
 kind: Deployment
 metadata:

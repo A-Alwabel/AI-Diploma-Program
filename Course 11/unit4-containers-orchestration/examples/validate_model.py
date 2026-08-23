@@ -1,3 +1,6 @@
+# WHAT: write validate_model.py — the accuracy + latency gate as a standalone script.
+# WHY: a gate must be a script, not a notebook: CI runs it headless and its
+# sys.exit code decides whether the Docker build ever happens.
 """Model validation gate for CI/CD.
 
 Checks:
@@ -22,6 +25,7 @@ N_LATENCY_SAMPLES  = 200    # number of predictions for latency measurement
 MODEL_PATH         = "app/model/iris_rf.joblib"
 
 
+# Gate 1: holdout accuracy against the fixed threshold.
 def check_accuracy(model, X_test, y_test):
     predictions = model.predict(X_test)
     acc = accuracy_score(y_test, predictions)
@@ -30,6 +34,7 @@ def check_accuracy(model, X_test, y_test):
     return acc >= ACCURACY_THRESHOLD
 
 
+# Gate 2: p95 of single-sample predictions against the latency budget.
 def check_latency(model, X_test):
     samples = X_test[:N_LATENCY_SAMPLES]
     latencies = []
@@ -43,6 +48,7 @@ def check_latency(model, X_test):
     return p95 < LATENCY_P95_MS
 
 
+# Load artifact, run both gates, and exit 0 (pass) or 1 (block deploy).
 def main():
     print("=== Model Validation Gate ===")
 

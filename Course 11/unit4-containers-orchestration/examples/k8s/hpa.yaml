@@ -1,3 +1,6 @@
+# WHAT: write the HorizontalPodAutoscaler — 2 to 10 pods, targeting 70% CPU.
+# WHY: min protects availability, max caps cost, and the CPU target is the
+# knob that decides how aggressively new pods appear under load.
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:

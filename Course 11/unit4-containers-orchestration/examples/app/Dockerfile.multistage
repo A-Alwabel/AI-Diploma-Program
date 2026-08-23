@@ -1,3 +1,6 @@
+# WHAT: write a multi-stage Dockerfile: build with the full image, run on slim.
+# WHY: compilers and build tools are needed to INSTALL packages but not to RUN
+# them — copying only the installed packages into slim shrinks the image.
 # ── Stage 1: builder ────────────────────────────────────────────────────────
 # Uses the full image so we have compilers for C extensions
 FROM python:3.10 AS builder

@@ -1,3 +1,6 @@
+# WHAT: write the FastAPI inference server that the container will run.
+# WHY: note the relative model path — it works because the Dockerfile sets
+# WORKDIR /app, the same directory this file lives in.
 """FastAPI inference server for the Iris RandomForest model."""
 from fastapi import FastAPI
 from pydantic import BaseModel
