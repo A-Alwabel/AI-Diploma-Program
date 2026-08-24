@@ -7,8 +7,7 @@
 ---
 
 ## Part 1: Multiple Choice
-**(40 points
-
+**(40 points)**
 ### Question 1 (10 points)
 What data structure does BFS use?
 
@@ -50,8 +49,7 @@ D) Neither
 ---
 
 ## Part 2: Short Answer
-**(30 points
-
+**(30 points)**
 ### Question 5 (15 points)
 Explain the difference between BFS and DFS. When would you use each?
 
@@ -63,28 +61,9 @@ What is a heuristic function in A* algorithm? Give an example.
 ---
 
 ## Part 3: Code Writing
-**(30 points
-
+**(30 points)**
 ### Question 7 (30 points)
 Implement a BFS function that finds the shortest path in a graph.
-
-def bfs_shortest_path(graph, start, goal):
-    queue = deque([(start, [start])])
-    visited = set([start])
-    
-    while queue:
-        current, path = queue.popleft()
-        
-        if current == goal:
-            return path
-        
-        for neighbor in graph.get(current, []):
-            if neighbor not in visited:
-                visited.add(neighbor)
-                queue.append((neighbor, path + [neighbor]))
-    
-    return None
-```
 
 ---
 

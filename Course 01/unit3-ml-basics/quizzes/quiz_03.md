@@ -7,8 +7,7 @@
 ---
 
 ## Part 1: Multiple Choice
-**(40 points
-
+**(40 points)**
 ### Question 1 (10 points)
 What is a knowledge graph?
 
@@ -50,8 +49,7 @@ D) Frames
 ---
 
 ## Part 2: Short Answer
-**(30 points
-
+**(30 points)**
 ### Question 5 (15 points)
 Explain what a knowledge base is and give an example.
 
@@ -63,14 +61,9 @@ What are the main components of an expert system?
 ---
 
 ## Part 3: Code Writing
-**(30 points
-
+**(30 points)**
 ### Question 7 (30 points)
 Create a simple knowledge graph for a family and write a function to find all siblings of a person.
-
-def find_siblings(graph, person):
-    return graph.get(person, {}).get('siblings', [])
-```
 
 ---
 

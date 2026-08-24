@@ -156,12 +156,6 @@ Write code to:
 2. Calculate the mean of the array
 3. Plot the array values
 
-arr = np.array([1, 2, 3, 4, 5])
-mean = np.mean(arr)
-plt.plot(arr)
-plt.show()
-```
-
 ---
 
 ---

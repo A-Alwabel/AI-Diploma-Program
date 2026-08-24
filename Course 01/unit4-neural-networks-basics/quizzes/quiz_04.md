@@ -7,8 +7,7 @@
 ---
 
 ## Part 1: Multiple Choice
-**(40 points
-
+**(40 points)**
 ### Question 1 (10 points)
 What is a perceptron?
 
@@ -50,8 +49,7 @@ D) No problems
 ---
 
 ## Part 2: Short Answer
-**(30 points
-
+**(30 points)**
 ### Question 5 (15 points)
 Explain the difference between a perceptron and a multi-layer perceptron.
 
@@ -63,22 +61,9 @@ What is forward propagation in a neural network?
 ---
 
 ## Part 3: Code Writing
-**(30 points
-
+**(30 points)**
 ### Question 7 (30 points)
 Implement a simple perceptron that can classify AND gate inputs.
-
-class Perceptron:
-    def __init__(self):
-        self.weights = np.zeros(2)
-        self.bias = 0
-    
-    def activation(self, x):
-        return 1 if x >= 0 else 0
-    
-    def predict(self, X):
-        return [self.activation(np.dot(x, self.weights) + self.bias) for x in X]
-```
 
 ---
 

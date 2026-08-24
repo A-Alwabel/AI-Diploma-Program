@@ -7,8 +7,7 @@
 ---
 
 ## Part 1: Multiple Choice
-**(40 points
-
+**(40 points)**
 ### Question 1 (10 points)
 What is the main goal of Artificial Intelligence?
 
@@ -50,8 +49,7 @@ D) Fraud detection
 ---
 
 ## Part 2: Short Answer
-**(30 points
-
+**(30 points)**
 ### Question 5 (15 points)
 Explain the difference between Narrow AI and General AI. Give one example of each.
 
@@ -63,8 +61,7 @@ List three factors that contributed to the modern AI renaissance (2010s-present)
 ---
 
 ## Part 3: Code Writing
-**(30 points
-
+**(30 points)**
 ### Question 7 (30 points)
 Write a simple rule-based AI system that recommends a study schedule based on:
 - Time available (hours: 1-2, 3-4, 5+)
