@@ -4,7 +4,7 @@
 
 Also part of the course assessment:
 
-- Quizzes: `../QUIZZES/` (quiz_01 available; quizzes 02–05 are placeholders being authored)
+- Quizzes: `../QUIZZES/` (quizzes 01–05 available, one per unit — 45 minutes, 110 points each)
 - Project: `../PROJECTS/Sentiment_Analysis_System/`
 - Case study: `../CASE_STUDIES/01_nlp_application_case_study.md`
 

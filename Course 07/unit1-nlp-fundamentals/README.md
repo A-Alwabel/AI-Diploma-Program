@@ -19,7 +19,7 @@ This unit currently has one example notebook; additional content is being author
 
 ## Quiz
 
-- `../QUIZZES/quiz_01.md` — Unit 1 quiz (45 minutes, 100 points).
+- `../QUIZZES/quiz_01.md` — Unit 1 quiz (45 minutes, 110 points; 100 required).
 
 Solutions and answer keys are released by your instructor.
 

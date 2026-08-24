@@ -20,7 +20,7 @@ How to turn text into features that models can use: advanced tokenization strate
 
 ## Quiz
 
-- `../QUIZZES/quiz_02.md` — placeholder being authored.
+- `../QUIZZES/quiz_02.md` — Unit 2 quiz (45 minutes, 110 points; 100 required).
 
 Solutions and answer keys are released by your instructor.
 

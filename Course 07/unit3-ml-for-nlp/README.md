@@ -18,7 +18,7 @@ Applying classical machine learning to text: extracting features (Bag of Words, 
 
 ## Quiz
 
-- `../QUIZZES/quiz_03.md` — placeholder being authored.
+- `../QUIZZES/quiz_03.md` — Unit 3 quiz (45 minutes, 110 points; 100 required).
 
 Solutions and answer keys are released by your instructor.
 

@@ -89,6 +89,6 @@ A GAN trained on medical images produces sharp images but has a high FID score. 
 
 ---
 
-**Mapping:** CLO1, CLO6; notebooks: 04_building_training_simple_gan, 05_implementing_vae_image_generation, 08_evaluating_generative_models_fid_bleu.
+**Mapping:** CLO1, CLO6; notebooks: 05_building_training_simple_gan, 04_implementing_vae_image_generation, 10_evaluating_generative_models_fid_bleu.
 
 **For:** AIAT 124 - Generative AI

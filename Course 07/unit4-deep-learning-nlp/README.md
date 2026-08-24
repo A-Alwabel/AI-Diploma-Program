@@ -23,7 +23,7 @@ Deep learning models for language, used as **pretrained building blocks**: what 
 
 ## Quiz
 
-- `../QUIZZES/quiz_04.md` — placeholder being authored.
+- `../QUIZZES/quiz_04.md` — Unit 4 quiz (45 minutes, 110 points; 100 required).
 
 Solutions and answer keys are released by your instructor.
 

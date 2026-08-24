@@ -32,10 +32,10 @@ d) It requires less data
 ---
 
 ### Question 3 (10 points)
-**AlphaFold** is an example of generative AI applied to:
+**WaveNet** is an example of generative AI applied to:
 
-a) Music composition
-b) Protein structure prediction — generating 3D protein structures from amino acid sequences
+a) Music playlist recommendation
+b) Raw audio synthesis — generating a waveform one sample at a time with an autoregressive model
 c) Video generation
 d) Text translation
 
@@ -69,7 +69,7 @@ Use: torch.nn.functional.cosine_similarity or manual computation.
 ## Part 3: Short Answer (30 points)
 
 ### Question 6 (15 points)
-What is **Retrieval-Augmented Generation (RAG)**? Describe how it combines a retrieval system with a generative model to produce more accurate, up-to-date responses.
+Unit example 02 maps **five research directions** shaping generative AI (the "Five Directions to Watch" table). Name at least four of the five directions and briefly explain two of them, giving one tool or model that each of those two directions already powers.
 
 **Answer key:** released by your instructor.
 

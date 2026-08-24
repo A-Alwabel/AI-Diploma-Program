@@ -42,10 +42,10 @@ d) It does not support text conditioning
 ---
 
 ### Question 4 (10 points)
-**Neural style transfer** works by:
+**Style transfer via latent blending** with a VAE (unit example 02) works by:
 
 a) Training a GAN to copy painting styles
-b) Optimizing an input image to match the content of one image and the style (Gram matrix statistics) of another
+b) Encoding two images into latent vectors, interpolating (blending) between the two codes, and decoding the blend into an image with mixed attributes
 c) Using a classifier to identify art styles
 d) Fine-tuning a ResNet
 
@@ -89,6 +89,6 @@ A team wants to generate realistic medical scan images to augment a small datase
 
 ---
 
-**Mapping:** CLO3; notebooks: 02_image_generation_advanced.
+**Mapping:** CLO3; notebooks: 04_image_generation_advanced.
 
 **For:** AIAT 124 - Generative AI

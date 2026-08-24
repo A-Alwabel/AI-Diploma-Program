@@ -66,7 +66,7 @@ Write PyTorch code to define a **character-level LSTM language model**:
 ## Part 3: Short Answer (30 points)
 
 ### Question 6 (15 points)
-Explain **beam search** for text generation. How does it differ from greedy decoding, and what trade-off does it introduce?
+Explain **greedy (argmax) decoding** versus **temperature sampling** for text generation. How does each method choose the next token, and what trade-off does the temperature value control?
 
 **Answer key:** released by your instructor.
 
@@ -88,6 +88,6 @@ A text generation model produces coherent but very repetitive outputs for differ
 
 ---
 
-**Mapping:** CLO2, CLO6; notebooks: 04_text_generation_gpt_models, 07_building_text_to_text_generation, 09_evaluating_text_quality_bleu_perplexity.
+**Mapping:** CLO2, CLO6; notebooks: 01_text_generation_gpt_models, 04_building_text_to_text_generation, 06_evaluating_text_quality_bleu_perplexity.
 
 **For:** AIAT 124 - Generative AI

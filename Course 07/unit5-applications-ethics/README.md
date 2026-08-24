@@ -19,7 +19,7 @@ This unit currently has one example notebook; additional content is being author
 
 ## Quiz
 
-- `../QUIZZES/quiz_05.md` — placeholder being authored.
+- `../QUIZZES/quiz_05.md` — Unit 5 quiz (45 minutes, 110 points; 100 required).
 
 Solutions and answer keys are released by your instructor.
 
