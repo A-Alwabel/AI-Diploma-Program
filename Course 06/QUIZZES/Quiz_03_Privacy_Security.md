@@ -19,8 +19,8 @@ What is differential privacy?
 ### Question 2 (2 points)
 
 What is the main principle of GDPR?
-- A) Companies can use data freely
-- B) Individuals have rights over their personal data
+- A) Individuals have rights over their personal data
+- B) Companies can use data freely
 - C) Data should be public
 - D) No data protection needed
 
@@ -30,8 +30,8 @@ What is the main principle of GDPR?
 
 What is pseudonymization?
 - A) Complete data removal
-- B) Replacing identifying information with pseudonyms
-- C) Data encryption
+- B) Data encryption
+- C) Replacing identifying information with pseudonyms
 - D) Data aggregation
 
 ---
@@ -39,10 +39,10 @@ What is pseudonymization?
 ### Question 4 (2 points)
 
 What is homomorphic encryption?
-- A) Encryption that allows computation on encrypted data
+- A) Data deletion
 - B) Simple data encryption
 - C) Data anonymization
-- D) Data deletion
+- D) Encryption that allows computation on encrypted data
 
 ---
 
@@ -50,8 +50,8 @@ What is homomorphic encryption?
 
 What is a privacy-preserving technology?
 - A) Technology that completely removes data
-- B) Technology that protects individual privacy while allowing useful analysis
-- C) Technology that makes data public
+- B) Technology that makes data public
+- C) Technology that protects individual privacy while allowing useful analysis
 - D) Technology that ignores privacy
 
 ---

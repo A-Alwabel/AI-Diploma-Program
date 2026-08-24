@@ -24,23 +24,23 @@ D) It only works for images
 What is the main purpose of backpropagation?
 
 A) To increase dataset size  
-B) To compute gradients used to update model weights  
+B) To deploy the model
 C) To remove hidden layers  
-D) To deploy the model
+D) To compute gradients used to update model weights  
 
 ### Question 3
 Which technique is commonly used to reduce overfitting in neural networks?
 
-A) Dropout  
+A) Removing the loss function  
 B) Increasing noise in labels  
-C) Removing the loss function  
+C) Dropout  
 D) Using only one epoch
 
 ### Question 4
 Why are CNNs effective for image tasks?
 
-A) They ignore spatial structure  
-B) They use convolutions to detect local visual patterns  
+A) They use convolutions to detect local visual patterns  
+B) They ignore spatial structure  
 C) They only work on text  
 D) They do not need training
 
@@ -48,8 +48,8 @@ D) They do not need training
 What is transfer learning?
 
 A) Training a model from scratch on a new dataset only  
-B) Reusing a pre-trained model for a related task  
-C) Converting a model to ONNX  
+B) Converting a model to ONNX  
+C) Reusing a pre-trained model for a related task  
 D) Replacing labels with features
 
 ### Question 6
@@ -63,17 +63,17 @@ D) They do not use hidden states
 ### Question 7
 What does self-attention allow a Transformer to do?
 
-A) Focus on relevant tokens in the sequence when processing each token  
+A) Eliminate the need for optimization
 B) Replace all training data  
 C) Work only on images  
-D) Eliminate the need for optimization
+D) Focus on relevant tokens in the sequence when processing each token  
 
 ### Question 8
 Which model is most closely associated with learning a compressed
 latent representation and reconstructing the input?
 
-A) CNN  
-B) VAE  
+A) VAE  
+B) CNN  
 C) DQN  
 D) FastAPI
 
@@ -81,9 +81,9 @@ D) FastAPI
 In reinforcement learning, what guides the agent toward better actions?
 
 A) Random labels  
-B) Reward signals from the environment  
+B) Batch normalization only
 C) Convolution kernels only  
-D) Batch normalization only
+D) Reward signals from the environment  
 
 ### Question 10
 Which statement about responsible AI is correct?

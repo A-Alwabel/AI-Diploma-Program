@@ -11,8 +11,8 @@
 ### Question 1 (10 points)
 What data structure does BFS use?
 
-A) Stack  
-B) Queue  
+A) Queue  
+B) Stack  
 C) Priority Queue  
 D) Hash Table
 
@@ -22,9 +22,9 @@ D) Hash Table
 What is the main advantage of DFS over BFS?
 
 A) Always finds shortest path  
-B) Uses less memory  
+B) More accurate
 C) Faster execution  
-D) More accurate
+D) Uses less memory  
 
 ---
 
@@ -32,8 +32,8 @@ D) More accurate
 What makes A* algorithm optimal?
 
 A) It uses a stack  
-B) It uses heuristics  
-C) It always finds the shortest path  
+B) It always finds the shortest path  
+C) It uses heuristics  
 D) It's faster than BFS
 
 ---

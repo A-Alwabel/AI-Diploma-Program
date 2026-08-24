@@ -28,8 +28,8 @@ d) There is no difference
 In a **Markov Decision Process (MDP)**, the Markov property states that:
 
 a) Future states depend on all past states
-b) The next state depends only on the current state and action, not on history
-c) The reward depends only on the initial state
+b) The reward depends only on the initial state
+c) The next state depends only on the current state and action, not on history
 d) Actions have no effect on future states
 
 ---
@@ -38,19 +38,19 @@ d) Actions have no effect on future states
 What is the role of the **discount factor (gamma)** in RL?
 
 a) It speeds up training
-b) It balances the importance of immediate vs future rewards
-   (`0` = only immediate, `1` = equal future weight)
+b) It controls the learning rate
 c) It determines the number of training episodes
-d) It controls the learning rate
+d) It balances the importance of immediate vs future rewards
+   (`0` = only immediate, `1` = equal future weight)
 
 ---
 
 ### Question 4 (10 points)
 In the **epsilon-greedy** exploration strategy:
 
-a) The agent always picks the action with the highest known reward
-b) With probability epsilon the agent picks a random action (explore);
+a) With probability epsilon the agent picks a random action (explore);
    otherwise it picks the greedy best action (exploit)
+b) The agent always picks the action with the highest known reward
 c) Epsilon controls the learning rate
 d) The agent never explores once training begins
 

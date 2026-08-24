@@ -10,9 +10,9 @@
 
 What is Explainable AI (XAI)?
 - A) AI that is faster
-- B) AI systems that can explain their decisions in understandable terms
+- B) AI that is cheaper
 - C) AI that uses less data
-- D) AI that is cheaper
+- D) AI systems that can explain their decisions in understandable terms
 
 ---
 
@@ -30,8 +30,8 @@ What does SHAP stand for?
 
 What is LIME used for?
 - A) Data cleaning
-- B) Explaining individual predictions locally
-- C) Model training
+- B) Model training
+- C) Explaining individual predictions locally
 - D) Data visualization
 
 ---
@@ -39,8 +39,8 @@ What is LIME used for?
 ### Question 4 (2 points)
 
 What is algorithmic transparency?
-- A) Making algorithms public
-- B) Making algorithms understandable and explainable
+- A) Making algorithms understandable and explainable
+- B) Making algorithms public
 - C) Making algorithms faster
 - D) Making algorithms cheaper
 
@@ -50,8 +50,8 @@ What is algorithmic transparency?
 
 What is accountability in AI?
 - A) Making models faster
-- B) Clear responsibility for AI decisions and outcomes
-- C) Using more data
+- B) Using more data
+- C) Clear responsibility for AI decisions and outcomes
 - D) Improving accuracy
 
 ---
@@ -60,7 +60,7 @@ What is accountability in AI?
 
 ### Question 6 (5 points)
 
-Explain the difference between global and local interpretability. Give examples of techniques for each.
+Explain the difference between global and local interpretability. For each, give two examples of techniques used in this unit.
 
 ---
 

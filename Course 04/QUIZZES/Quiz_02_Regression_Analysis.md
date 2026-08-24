@@ -22,16 +22,16 @@ What is the main purpose of Ridge Regression (L2 regularization)?
 ### Question 2 (5 points)
 What is the main difference between Ridge and Lasso regression?
 - A) Ridge uses L1 penalty, Lasso uses L2 penalty
-- B) Ridge uses L2 penalty, Lasso uses L1 penalty
+- B) Ridge is for classification, Lasso is for regression
 - C) There is no difference
-- D) Ridge is for classification, Lasso is for regression
+- D) Ridge uses L2 penalty, Lasso uses L1 penalty
 
 ---
 
 ### Question 3 (5 points)
 Which regularization technique can set coefficients to exactly zero?
-- A) Ridge Regression
-- B) Lasso Regression
+- A) Lasso Regression
+- B) Ridge Regression
 - C) Both
 - D) Neither
 
@@ -40,8 +40,8 @@ Which regularization technique can set coefficients to exactly zero?
 ### Question 4 (5 points)
 What does the alpha parameter control in Ridge/Lasso regression?
 - A) The learning rate
-- B) The strength of regularization
-- C) The number of iterations
+- B) The number of iterations
+- C) The strength of regularization
 - D) The number of features
 
 ---
@@ -51,9 +51,9 @@ What does the alpha parameter control in Ridge/Lasso regression?
 ### Question 5 (5 points)
 Which metric is most sensitive to outliers in regression?
 - A) MAE (Mean Absolute Error)
-- B) MSE (Mean Squared Error)
+- B) RMSE (Root Mean Squared Error)
 - C) R² Score
-- D) RMSE (Root Mean Squared Error)
+- D) MSE (Mean Squared Error)
 
 ---
 
@@ -69,8 +69,8 @@ What does R² (R-squared) measure?
 ### Question 7 (5 points)
 What is a good R² score?
 - A) Close to 0
-- B) Close to 1
-- C) Close to -1
+- B) Close to -1
+- C) Close to 1
 - D) Any positive value
 
 ---
@@ -79,8 +79,8 @@ What is a good R² score?
 
 ### Question 8 (5 points)
 What is the main purpose of cross-validation?
-- A) To reduce overfitting
-- B) To get a more reliable estimate of model performance
+- A) To get a more reliable estimate of model performance
+- B) To reduce overfitting
 - C) To speed up training
 - D) To handle missing values
 
@@ -89,9 +89,9 @@ What is the main purpose of cross-validation?
 ### Question 9 (5 points)
 In K-Fold cross-validation with K=5, how many times is the model trained?
 - A) 1 time
-- B) 5 times
+- B) Depends on the data size
 - C) 10 times
-- D) Depends on the data size
+- D) 5 times
 
 ---
 

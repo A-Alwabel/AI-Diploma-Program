@@ -12,8 +12,8 @@
 ### Question 1 (5 points)
 **CLO1:** What is the main goal of NLP?
 
-A) Only text classification  
-B) Enable computers to understand and process human language  
+A) Enable computers to understand and process human language  
+B) Only text classification  
 C) Only translation  
 D) Only sentiment analysis
 
@@ -33,9 +33,9 @@ D) Removing punctuation
 **CLO3:** Which ML algorithm is commonly used for text classification?
 
 A) Only neural networks  
-B) Naive Bayes, SVM, Logistic Regression  
+B) Only K-means
 C) Only decision trees  
-D) Only K-means
+D) Naive Bayes, SVM, Logistic Regression  
 
 ---
 
@@ -43,8 +43,8 @@ D) Only K-means
 **CLO4:** What is the main advantage of Transformers over RNNs?
 
 A) They are simpler  
-B) They can process sequences in parallel and capture long-range dependencies  
-C) They are faster only  
+B) They are faster only  
+C) They can process sequences in parallel and capture long-range dependencies  
 D) No advantage
 
 ---
@@ -63,9 +63,9 @@ D) Only TensorFlow
 **CLO6:** What is sentiment analysis?
 
 A) Only text classification  
-B) Determining emotional tone (positive/negative/neutral) in text  
+B) Only summarization
 C) Only translation  
-D) Only summarization
+D) Determining emotional tone (positive/negative/neutral) in text  
 
 ---
 

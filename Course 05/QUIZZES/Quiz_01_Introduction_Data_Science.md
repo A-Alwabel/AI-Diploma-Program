@@ -9,16 +9,16 @@
 ### Question 1 (2 points)
 What is the main advantage of pandas DataFrame over Python lists?
 - A) Faster iteration
-- B) Built-in data manipulation and analysis tools
-- C) Less memory usage
+- B) Less memory usage
+- C) Built-in data manipulation and analysis tools
 - D) Better for mathematical operations
 
 ---
 
 ### Question 2 (2 points)
 What does `df.head()` return?
-- A) The last 5 rows
-- B) The first 5 rows
+- A) The first 5 rows
+- B) The last 5 rows
 - C) A random sample of 5 rows
 - D) Summary statistics
 
@@ -27,9 +27,9 @@ What does `df.head()` return?
 ### Question 3 (2 points)
 What is cuDF?
 - A) A CPU-accelerated DataFrame library
-- B) A GPU-accelerated DataFrame library
+- B) A machine learning library
 - C) A visualization library
-- D) A machine learning library
+- D) A GPU-accelerated DataFrame library
 
 ---
 

@@ -15,8 +15,8 @@
 Which of the following is an example of **gender bias** in an NLP model?
 
 a) The model runs slower on longer documents  
-b) The model strongly associates professions with genders (e.g. "nurse" with female, "engineer" with male)  
-c) The model has a large vocabulary  
+b) The model has a large vocabulary  
+c) The model strongly associates professions with genders (e.g. "nurse" with female, "engineer" with male)  
 d) The model was trained on English text  
 
 ---
@@ -24,9 +24,9 @@ d) The model was trained on English text
 ### Question 2 (10 points)
 The Unit 5 notebook explicitly disclosed that its association scores were **simulated**. In a *real* bias audit, where would those scores come from?
 
-a) They would be invented by the auditor to make the report interesting  
+a) They would be measured from the system itself — e.g. cosine similarities in trained embeddings, or model outputs on controlled test inputs  
 b) They would be copied from another company's audit  
-c) They would be measured from the system itself — e.g. cosine similarities in trained embeddings, or model outputs on controlled test inputs  
+c) They would be invented by the auditor to make the report interesting  
 d) Real audits do not use numbers  
 
 ---
@@ -34,8 +34,8 @@ d) Real audits do not use numbers
 ### Question 3 (10 points)
 Which of these is a **valid bias-mitigation strategy** taught in Unit 5?
 
-a) Ensure diverse, balanced representation in the training data  
-b) Delete the test set so bias cannot be measured  
+a) Delete the test set so bias cannot be measured  
+b) Ensure diverse, balanced representation in the training data  
 c) Keep known biases undocumented so users do not worry  
 d) Audit the model once at launch and never again  
 

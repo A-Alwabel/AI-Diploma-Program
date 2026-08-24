@@ -9,8 +9,8 @@
 ### Question 1 (5 points)
 What is a probability distribution?
 - A) A single number
-- B) A function that describes the probability of different outcomes
-- C) The mean of data
+- B) The mean of data
+- C) A function that describes the probability of different outcomes
 - D) A matrix
 
 ---
@@ -18,9 +18,9 @@ What is a probability distribution?
 ### Question 2 (5 points)
 What is the difference between discrete and continuous distributions?
 - A) They are the same
-- B) Discrete has countable outcomes, continuous has uncountable outcomes
+- B) Continuous is always uniform
 - C) Discrete is always normal
-- D) Continuous is always uniform
+- D) Discrete has countable outcomes, continuous has uncountable outcomes
 
 ---
 
@@ -86,8 +86,8 @@ Explain three common probability distributions used in machine learning and when
 
 ### Question 5 (5 points)
 What is statistical inference?
-- A) Describing data
-- B) Drawing conclusions about populations from samples
+- A) Drawing conclusions about populations from samples
+- B) Describing data
 - C) Calculating means
 - D) Plotting data
 
@@ -161,8 +161,8 @@ Explain hypothesis testing and how it's used in machine learning.
 
 ### Question 8 (5 points)
 What is Bayesian inference?
-- A) Only using prior knowledge
-- B) Updating beliefs using both prior knowledge and observed data
+- A) Updating beliefs using both prior knowledge and observed data
+- B) Only using prior knowledge
 - C) Only using observed data
 - D) Ignoring uncertainty
 
@@ -170,9 +170,9 @@ What is Bayesian inference?
 
 ### Question 9 (5 points)
 What is Bayes' theorem?
-- A) P(A|B) = P(B|A) × P(A) / P(B)
+- A) P(A|B) = P(A)
 - B) P(A) = P(B)
-- C) P(A|B) = P(A)
+- C) P(A|B) = P(B|A) × P(A) / P(B)
 - D) P(A and B) = P(A) + P(B)
 
 ---

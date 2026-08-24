@@ -14,8 +14,8 @@
 ### Question 1 (10 points)
 A generative AI model trained mostly on images of one demographic generates less realistic outputs for others. This is:
 
-a) Overfitting
-b) Representation bias — the training data did not adequately represent all groups
+a) Representation bias — the training data did not adequately represent all groups
+b) Overfitting
 c) A hardware limitation
 d) Normal behavior that does not need to be addressed
 
@@ -25,9 +25,9 @@ d) Normal behavior that does not need to be addressed
 **Deepfakes** present which primary ethical risk?
 
 a) They improve image quality
-b) They can create non-consensual realistic fake media, enabling misinformation, fraud, and reputational damage
+b) They improve privacy
 c) They are only a problem in art
-d) They improve privacy
+d) They can create non-consensual realistic fake media, enabling misinformation, fraud, and reputational damage
 
 ---
 
@@ -35,8 +35,8 @@ d) They improve privacy
 Under the **EU AI Act**, generative AI systems for synthetic media must:
 
 a) Be banned entirely
-b) Clearly label AI-generated content so users know it was AI-generated
-c) Operate without any user data
+b) Operate without any user data
+c) Clearly label AI-generated content so users know it was AI-generated
 d) Only be used by governments
 
 ---

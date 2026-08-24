@@ -15,9 +15,9 @@
 In **self-attention**, the output vector for a word is:
 
 a) A copy of the word's own embedding  
-b) A weighted average of all the word vectors in the sentence, with weights computed by softmax over query–key similarity scores  
+b) A random vector that gets trained later  
 c) The hidden state of an RNN at that position  
-d) A random vector that gets trained later  
+d) A weighted average of all the word vectors in the sentence, with weights computed by softmax over query–key similarity scores  
 
 ---
 
@@ -25,8 +25,8 @@ d) A random vector that gets trained later
 Why do transformers need **positional encodings**?
 
 a) To make the vectors longer  
-b) To remove stop words automatically  
-c) Because attention by itself is order-blind — it sees a bag of vectors, so "dog bites man" and "man bites dog" would look the same without position information  
+b) Because attention by itself is order-blind — it sees a bag of vectors, so "dog bites man" and "man bites dog" would look the same without position information  
+c) To remove stop words automatically  
 d) To reduce the memory used by attention  
 
 ---
@@ -34,8 +34,8 @@ d) To reduce the memory used by attention
 ### Question 3 (10 points)
 What does the **causal mask** do, and which model family uses it?
 
-a) It hides rare words; used by BERT  
-b) It blocks attention to future positions so each word sees only itself and the past; used by GPT-style (decoder) models for generation  
+a) It blocks attention to future positions so each word sees only itself and the past; used by GPT-style (decoder) models for generation  
+b) It hides rare words; used by BERT  
 c) It removes attention entirely; used by RNNs  
 d) It doubles the attention weights; used by all transformers  
 
@@ -46,8 +46,8 @@ The Unit 4 notebook **measured** the vanishing-gradient problem: over 50 RNN ste
 
 a) They use bigger learning rates  
 b) They process the sequence backwards  
-c) They have more layers than RNNs  
-d) Learned gates (forget/input/output) plus an additive cell-state "memory lane" let information flow across many steps without being repeatedly squashed  
+c) Learned gates (forget/input/output) plus an additive cell-state "memory lane" let information flow across many steps without being repeatedly squashed  
+d) They have more layers than RNNs  
 
 ---
 

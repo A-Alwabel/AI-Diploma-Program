@@ -12,16 +12,16 @@
 
 ### Question 1 (5 points)
 What is the range of probability values?
-- A) 0 to 10
-- B) 0 to 1
+- A) 0 to 1
+- B) 0 to 10
 - C) -1 to 1
 - D) 0 to 100
 
 ### Question 2 (5 points)
 If P(A) = 0.3, what is P(not A)?
 - A) 0.3
-- B) 0.7
-- C) 1.3
+- B) 1.3
+- C) 0.7
 - D) 0
 
 ### Question 3 (10 points)
@@ -56,8 +56,8 @@ Calculate P(Rain | Cloudy) using Bayes' theorem.
 ### Question 7 (5 points)
 What is the prior probability in Bayesian inference?
 - A) Probability after seeing evidence
-- B) Initial probability before evidence
-- C) Conditional probability
+- B) Conditional probability
+- C) Initial probability before evidence
 - D) Joint probability
 
 ### Question 8 (10 points)
@@ -70,9 +70,9 @@ Explain in one sentence: What does Bayesian inference allow us to do?
 ### Question 9 (5 points)
 Decision making under uncertainty means:
 - A) Making decisions with complete information
-- B) Making decisions with incomplete or uncertain information
+- B) Not making decisions
 - C) Making random decisions
-- D) Not making decisions
+- D) Making decisions with incomplete or uncertain information
 
 ### Question 10 (10 points)
 Given two options:
@@ -87,8 +87,8 @@ Calculate expected value for each option. Which has higher expected value?
 
 ### Question 11 (10 points)
 What is expected value?
-- A) The most likely outcome
-- B) The average outcome weighted by probabilities
+- A) The average outcome weighted by probabilities
+- B) The most likely outcome
 - C) The maximum outcome
 - D) The minimum outcome
 
@@ -112,8 +112,8 @@ Why is Monte Carlo simulation useful?
 
 ### Question 14 (5 points)
 In Monte Carlo simulation, more samples generally lead to:
-- A) Less accurate results
-- B) More accurate results
+- A) More accurate results
+- B) Less accurate results
 - C) Same accuracy
 - D) Slower computation
 

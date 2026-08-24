@@ -17,8 +17,8 @@ What is the main difference between SGD and Adam optimizer?
 
 ### Question 2 (5 points)
 What is momentum in optimization?
-- A) The speed of convergence
-- B) A technique that uses past gradients to accelerate convergence
+- A) A technique that uses past gradients to accelerate convergence
+- B) The speed of convergence
 - C) The learning rate
 - D) The number of iterations
 
@@ -27,8 +27,8 @@ What is momentum in optimization?
 ### Question 3 (5 points)
 What is the advantage of Adam optimizer?
 - A) It's always faster
-- B) It adapts learning rates automatically and handles sparse gradients well
-- C) It uses less memory
+- B) It uses less memory
+- C) It adapts learning rates automatically and handles sparse gradients well
 - D) It's simpler
 
 ---
@@ -66,9 +66,9 @@ Explain the difference between batch, mini-batch, and stochastic gradient descen
 ### Question 5 (5 points)
 What is a loss function?
 - A) A metric to evaluate model performance
-- B) A function that measures the difference between predictions and actual values
+- B) A data structure
 - C) An optimization algorithm
-- D) A data structure
+- D) A function that measures the difference between predictions and actual values
 
 ---
 
@@ -84,8 +84,8 @@ When would you use Mean Squared Error (MSE)?
 ### Question 7 (5 points)
 When would you use Cross-Entropy Loss?
 - A) For regression problems
-- B) For classification problems
-- C) For clustering
+- B) For clustering
+- C) For classification problems
 - D) Never
 
 ---
@@ -120,16 +120,16 @@ Compare MSE and MAE. When would you use each?
 ### Question 9 (5 points)
 What is the mean of a dataset?
 - A) The middle value
-- B) The average value
+- B) The range
 - C) The most common value
-- D) The range
+- D) The average value
 
 ---
 
 ### Question 10 (5 points)
 What is standard deviation?
-- A) The average
-- B) A measure of how spread out the data is
+- A) A measure of how spread out the data is
+- B) The average
 - C) The median
 - D) The maximum value
 
@@ -137,8 +137,8 @@ What is standard deviation?
 
 ### Question 11 (5 points)
 What is the difference between population and sample statistics?
-- A) They are the same
-- B) Population uses all data, sample uses subset; sample uses n-1 for variance
+- A) Population uses all data, sample uses subset; sample uses n-1 for variance
+- B) They are the same
 - C) Sample is always larger
 - D) Population is always smaller
 

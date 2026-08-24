@@ -25,9 +25,9 @@ d) Only one agent is active at a time
 ### Question 2 (10 points)
 The key advantage of **model-based RL** over model-free RL is:
 
-a) It never requires real environment interactions
-b) It learns a model of the environment and can plan or generate simulated
+a) It learns a model of the environment and can plan or generate simulated
    experience, improving sample efficiency
+b) It never requires real environment interactions
 c) It always achieves higher rewards
 d) It does not require function approximation
 
@@ -37,9 +37,9 @@ d) It does not require function approximation
 **Hierarchical RL** (options framework) addresses which challenge?
 
 a) Lack of GPU memory
-b) Long-horizon planning by decomposing tasks into sub-goals at different
+b) Continuous action spaces only
+c) Long-horizon planning by decomposing tasks into sub-goals at different
    temporal abstraction levels
-c) Continuous action spaces only
 d) Multi-agent coordination only
 
 ---
@@ -47,11 +47,11 @@ d) Multi-agent coordination only
 ### Question 4 (10 points)
 Which is a real-world RL success in **robotics**?
 
-a) Training robots to walk using policy gradient methods in simulation, then
-   transferring to real hardware
+a) Robots use only supervised learning
 b) Using RL only for board games
 c) RL has never been applied to robotics
-d) Robots use only supervised learning
+d) Training robots to walk using policy gradient methods in simulation, then
+   transferring to real hardware
 
 ---
 

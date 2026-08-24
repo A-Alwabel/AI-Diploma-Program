@@ -12,9 +12,9 @@
 ### Question 1 (5 points)
 **CLO1:** What is the result of matrix multiplication A × B where A is 2×3 and B is 3×4?
 
-A) 2×4 matrix  
+A) 2×3 matrix  
 B) 3×3 matrix  
-C) 2×3 matrix  
+C) 2×4 matrix  
 D) Cannot multiply
 
 ---
@@ -22,8 +22,8 @@ D) Cannot multiply
 ### Question 2 (5 points)
 **CLO2:** What is an eigenvalue?
 
-A) A scalar that satisfies Av = λv for eigenvector v  
-B) A vector  
+A) A vector  
+B) A scalar that satisfies Av = λv for eigenvector v  
 C) A matrix  
 D) A determinant
 
@@ -32,9 +32,9 @@ D) A determinant
 ### Question 3 (5 points)
 **CLO3:** Which statistical measure indicates the spread of data?
 
-A) Mean  
+A) Standard deviation  
 B) Median  
-C) Standard deviation  
+C) Mean  
 D) Mode
 
 ---
@@ -42,10 +42,10 @@ D) Mode
 ### Question 4 (5 points)
 **CLO4:** What does PCA (Principal Component Analysis) do?
 
-A) Reduces dimensionality while preserving variance  
+A) Only clusters data
 B) Increases dimensionality  
 C) Only visualizes data  
-D) Only clusters data
+D) Reduces dimensionality while preserving variance  
 
 ---
 

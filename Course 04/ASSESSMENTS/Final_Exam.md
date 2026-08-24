@@ -22,8 +22,8 @@ D) Model training
 ### Question 2 (5 points)
 **CLO2:** What is the main difference between linear and polynomial regression?
 
-A) Polynomial can model non-linear relationships  
-B) Linear is always better  
+A) Linear is always better  
+B) Polynomial can model non-linear relationships  
 C) Polynomial is simpler  
 D) No difference
 
@@ -32,8 +32,8 @@ D) No difference
 ### Question 3 (5 points)
 **CLO3:** What does Ridge regression add to linear regression?
 
-A) L1 regularization  
-B) L2 regularization  
+A) L2 regularization  
+B) L1 regularization  
 C) No regularization  
 D) Feature selection
 
@@ -43,8 +43,8 @@ D) Feature selection
 **CLO4:** Which metric is best for imbalanced classification problems?
 
 A) Accuracy only  
-B) F1-score  
-C) Only precision  
+B) Only precision  
+C) F1-score  
 D) Only recall
 
 ---
@@ -52,9 +52,9 @@ D) Only recall
 ### Question 5 (5 points)
 **CLO5:** What does K-means clustering require as input?
 
-A) Number of clusters K  
+A) Labels  
 B) Number of features only  
-C) Labels  
+C) Number of clusters K  
 D) Nothing
 
 ---
@@ -62,8 +62,8 @@ D) Nothing
 ### Question 6 (5 points)
 **CLO6:** What is the purpose of cross-validation?
 
-A) To increase training data  
-B) To evaluate model performance on unseen data  
+A) To evaluate model performance on unseen data  
+B) To increase training data  
 C) To reduce features  
 D) To speed up training
 

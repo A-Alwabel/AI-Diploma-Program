@@ -8,8 +8,8 @@
 
 ### Question 1 (5 points)
 What does PCA stand for?
-- A) Principal Component Analysis
-- B) Primary Component Algorithm
+- A) Primary Component Algorithm
+- B) Principal Component Analysis
 - C) Principal Calculation Algorithm
 - D) Primary Calculation Analysis
 
@@ -18,8 +18,8 @@ What does PCA stand for?
 ### Question 2 (5 points)
 What is the main goal of PCA?
 - A) Increase dimensionality
-- B) Reduce dimensionality while preserving maximum variance
-- C) Remove noise
+- B) Remove noise
+- C) Reduce dimensionality while preserving maximum variance
 - D) Add features
 
 ---
@@ -27,9 +27,9 @@ What is the main goal of PCA?
 ### Question 3 (5 points)
 What are principal components?
 - A) Original features
-- B) New orthogonal directions that capture maximum variance
+- B) The mean of the data
 - C) Random directions
-- D) The mean of the data
+- D) New orthogonal directions that capture maximum variance
 
 ---
 
@@ -71,8 +71,8 @@ Explain how PCA works step by step.
 
 ### Question 5 (5 points)
 What is the curse of dimensionality?
-- A) High-dimensional data is easier to work with
-- B) Problems that arise when working with high-dimensional data
+- A) Problems that arise when working with high-dimensional data
+- B) High-dimensional data is easier to work with
 - C) Data with many samples
 - D) Low-dimensional data
 
@@ -80,8 +80,8 @@ What is the curse of dimensionality?
 
 ### Question 6 (5 points)
 What happens to distances in high-dimensional spaces?
-- A) They become more meaningful
-- B) All points become approximately equidistant
+- A) All points become approximately equidistant
+- B) They become more meaningful
 - C) They become smaller
 - D) Nothing changes
 
@@ -135,9 +135,9 @@ Explain the main problems caused by the curse of dimensionality and how dimensio
 ### Question 8 (5 points)
 What is feature selection?
 - A) Creating new features
-- B) Choosing a subset of relevant features
+- B) Scaling features
 - C) Removing all features
-- D) Scaling features
+- D) Choosing a subset of relevant features
 
 ---
 

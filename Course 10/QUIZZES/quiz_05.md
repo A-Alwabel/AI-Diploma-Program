@@ -12,12 +12,12 @@
 ## Part 1: Multiple Choice (40 points)
 
 ### Question 1 (10 points)
-**CLIP (Contrastive Language-Image Pre-Training)** enables:
+In **Stable Diffusion**, what is the role of **CLIP**?
 
-a) Only image classification
-b) Joint understanding of text and images — enabling zero-shot classification and text-to-image retrieval via aligned embeddings
-c) Only text generation
-d) Only object detection
+a) It denoises the latent image at every reverse-diffusion step
+b) It turns the text prompt into an embedding vector that the denoising U-Net attends to (cross-attention) at every step, so the prompt steers generation
+c) It compresses the image into the latent space that diffusion runs in
+d) It upscales the final output to high resolution
 
 ---
 
@@ -25,8 +25,8 @@ d) Only object detection
 **Multimodal generative AI** (e.g., DALL-E, Gemini) differs from unimodal models because:
 
 a) It only processes images
-b) It can accept and generate multiple data types (text, images, audio, video) and understands cross-modal relationships
-c) It is faster to train
+b) It is faster to train
+c) It can accept and generate multiple data types (text, images, audio, video) and understands cross-modal relationships
 d) It requires less data
 
 ---
@@ -35,17 +35,17 @@ d) It requires less data
 **WaveNet** is an example of generative AI applied to:
 
 a) Music playlist recommendation
-b) Raw audio synthesis — generating a waveform one sample at a time with an autoregressive model
+b) Text translation
 c) Video generation
-d) Text translation
+d) Raw audio synthesis — generating a waveform one sample at a time with an autoregressive model
 
 ---
 
 ### Question 4 (10 points)
 A key **computational challenge** in scaling generative AI is:
 
-a) Lack of algorithms
-b) The enormous compute, energy, and data required for very large models, raising sustainability and access concerns
+a) The enormous compute, energy, and data required for very large models, raising sustainability and access concerns
+b) Lack of algorithms
 c) GPUs are becoming slower
 d) There are no remaining challenges
 

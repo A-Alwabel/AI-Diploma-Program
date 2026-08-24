@@ -26,8 +26,8 @@ What is a matrix?
 
 ### Question 3 (5 points)
 What is the shape of a matrix with 3 rows and 4 columns?
-- A) (4, 3)
-- B) (3, 4)
+- A) (3, 4)
+- B) (4, 3)
 - C) (12,)
 - D) (3, 3)
 
@@ -59,10 +59,10 @@ print(f"Matrix shape: {matrix.shape}")
 
 ### Question 5 (5 points)
 What is matrix addition?
-- A) Adding corresponding elements
+- A) Transposing matrices
 - B) Multiplying elements
 - C) Concatenating matrices
-- D) Transposing matrices
+- D) Adding corresponding elements
 
 ---
 
@@ -70,8 +70,8 @@ What is matrix addition?
 When can two matrices be multiplied?
 - A) Always
 - B) When they have the same shape
-- C) When number of columns in first equals number of rows in second
-- D) When they are square matrices
+- C) When they are square matrices
+- D) When number of columns in first equals number of rows in second
 
 ---
 
@@ -122,8 +122,8 @@ print(f"Transpose of A:\n{A_transpose}")
 
 ### Question 9 (5 points)
 What is an eigenvalue?
-- A) A vector
-- B) A scalar that represents how a vector is scaled by a transformation
+- A) A scalar that represents how a vector is scaled by a transformation
+- B) A vector
 - C) A matrix
 - D) A function
 
@@ -132,8 +132,8 @@ What is an eigenvalue?
 ### Question 10 (5 points)
 What is an eigenvector?
 - A) A vector that changes direction under transformation
-- B) A vector that doesn't change direction under transformation
-- C) A scalar
+- B) A scalar
+- C) A vector that doesn't change direction under transformation
 - D) A matrix
 
 ---

@@ -25,8 +25,8 @@ D) Only size
 What do CNNs (Convolutional Neural Networks) excel at?
 
 A) Only text  
-B) Image processing and computer vision  
-C) Only audio  
+B) Only audio  
+C) Image processing and computer vision  
 D) Only time series
 
 ---
@@ -35,17 +35,17 @@ D) Only time series
 What is the main problem RNNs solve?
 
 A) Only classification  
-B) Sequential data and temporal dependencies  
+B) Only clustering
 C) Only regression  
-D) Only clustering
+D) Sequential data and temporal dependencies  
 
 ---
 
 ### Question 4 (5 points)
 What is the attention mechanism in Transformers?
 
-A) Only a layer  
-B) Mechanism to focus on relevant parts of input  
+A) Mechanism to focus on relevant parts of input  
+B) Only a layer  
 C) Only activation function  
 D) Only loss function
 
@@ -54,8 +54,8 @@ D) Only loss function
 ### Question 5 (5 points)
 What is transfer learning?
 
-A) Only copying models  
-B) Using pre-trained models for new tasks  
+A) Using pre-trained models for new tasks  
+B) Only copying models  
 C) Only training from scratch  
 D) Only fine-tuning
 
@@ -65,8 +65,8 @@ D) Only fine-tuning
 What is model quantization?
 
 A) Only compression  
-B) Reducing model precision to decrease size and speed  
-C) Only pruning  
+B) Only pruning  
+C) Reducing model precision to decrease size and speed  
 D) Only distillation
 
 ---

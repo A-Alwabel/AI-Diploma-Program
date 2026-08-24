@@ -10,8 +10,8 @@
 
 What is demographic parity?
 - A) Equal accuracy across all groups
-- B) Equal positive prediction rates across groups
-- C) Equal false positive rates
+- B) Equal false positive rates
+- C) Equal positive prediction rates across groups
 - D) Equal model complexity
 
 ---
@@ -29,8 +29,8 @@ What is equalized odds?
 ### Question 3 (2 points)
 
 What is the main source of bias in machine learning models?
-- A) Algorithm design
-- B) Biased training data
+- A) Biased training data
+- B) Algorithm design
 - C) Model complexity
 - D) Computing power
 
@@ -39,10 +39,10 @@ What is the main source of bias in machine learning models?
 ### Question 4 (2 points)
 
 What is fairness through unawareness?
-- A) Removing protected attributes from data
+- A) Ignoring fairness completely
 - B) Adding more protected attributes
 - C) Using only protected attributes
-- D) Ignoring fairness completely
+- D) Removing protected attributes from data
 
 ---
 
@@ -50,9 +50,9 @@ What is fairness through unawareness?
 
 What is a common limitation of fairness through unawareness?
 - A) It always works perfectly
-- B) Protected attributes can be inferred from other features (proxy discrimination)
+- B) It's too slow
 - C) It's too expensive
-- D) It's too slow
+- D) Protected attributes can be inferred from other features (proxy discrimination)
 
 ---
 
@@ -84,7 +84,10 @@ What fairness issues exist? How would you address them?
 
 ### Question 9 (5 points)
 
-What are the key metrics used to measure fairness in AI systems? Explain each.
+A model is audited using the fairness metrics from this unit. The audit reports a **demographic parity disparity of 0.013**, but a **TPR disparity of 0.299** and an **FPR disparity of 0.278**.
+
+(a) State what each of these three numbers compares across the two groups.
+(b) Is this model fair? Justify your answer, and say what this result shows about auditing a system with only one fairness metric.
 
 ---
 

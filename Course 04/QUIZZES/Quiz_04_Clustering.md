@@ -12,8 +12,8 @@
 
 ### Question 1 (5 points)
 What is the main difference between supervised and unsupervised learning?
-- A) Supervised learning uses labels, unsupervised learning doesn't
-- B) Unsupervised learning uses labels, supervised learning doesn't
+- A) Unsupervised learning uses labels, supervised learning doesn't
+- B) Supervised learning uses labels, unsupervised learning doesn't
 - C) There is no difference
 - D) Supervised learning is faster
 
@@ -21,8 +21,8 @@ What is the main difference between supervised and unsupervised learning?
 
 ### Question 2 (5 points)
 What does K-Means clustering try to minimize?
-- A) The number of clusters
-- B) The within-cluster sum of squares (WCSS)
+- A) The within-cluster sum of squares (WCSS)
+- B) The number of clusters
 - C) The number of features
 - D) The distance between clusters
 
@@ -31,18 +31,18 @@ What does K-Means clustering try to minimize?
 ### Question 3 (5 points)
 How do you choose the optimal number of clusters (K) in K-Means?
 - A) Always use K=3
-- B) Use the Elbow Method or Silhouette Score
-- C) Use the number of features
+- B) Use the number of features
+- C) Use the Elbow Method or Silhouette Score
 - D) Use the number of samples
 
 ---
 
 ### Question 4 (5 points)
 What is the main difference between K-Means and Hierarchical clustering?
-- A) K-Means requires specifying K, Hierarchical doesn't
+- A) K-Means is for classification, Hierarchical is for regression
 - B) Hierarchical requires specifying K, K-Means doesn't
 - C) There is no difference
-- D) K-Means is for classification, Hierarchical is for regression
+- D) K-Means requires specifying K, Hierarchical doesn't
 
 ---
 
@@ -51,9 +51,9 @@ What is the main difference between K-Means and Hierarchical clustering?
 ### Question 5 (5 points)
 What is the main purpose of PCA (Principal Component Analysis)?
 - A) To increase the number of features
-- B) To reduce dimensionality while preserving variance
+- B) To handle missing values
 - C) To remove outliers
-- D) To handle missing values
+- D) To reduce dimensionality while preserving variance
 
 ---
 
@@ -68,17 +68,17 @@ What does "explained variance" represent in PCA?
 
 ### Question 7 (5 points)
 How many principal components can you have at most?
-- A) The number of features
+- A) Always 2
 - B) The number of samples
-- C) Always 2
+- C) The number of features
 - D) Always 3
 
 ---
 
 ### Question 8 (5 points)
 What is a common rule of thumb for choosing the number of PCA components?
-- A) Use all components
-- B) Use components that explain 80-95% of variance
+- A) Use components that explain 80-95% of variance
+- B) Use all components
 - C) Always use 2 components
 - D) Use half the number of features
 
@@ -97,10 +97,10 @@ What does the Silhouette Score measure?
 
 ### Question 10 (5 points)
 What is a good Silhouette Score range?
-- A) -1 to 1 (closer to 1 is better)
+- A) Any positive value
 - B) 0 to 1 (closer to 1 is better)
 - C) 0 to 100 (higher is better)
-- D) Any positive value
+- D) -1 to 1 (closer to 1 is better)
 
 ---
 

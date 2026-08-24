@@ -17,9 +17,9 @@ SARSA) and related slides.
 What is the key difference between **Q-learning** (off-policy) and
 **SARSA** (on-policy)?
 
-a) Q-learning uses neural networks; SARSA does not
-b) Q-learning updates using the max Q-value of the next state; SARSA uses
+a) Q-learning updates using the max Q-value of the next state; SARSA uses
    the Q-value of the action actually taken
+b) Q-learning uses neural networks; SARSA does not
 c) SARSA is always faster
 d) Q-learning requires a model of the environment
 
@@ -29,9 +29,9 @@ d) Q-learning requires a model of the environment
 **Monte Carlo methods** estimate value functions by:
 
 a) Using neural networks to approximate values
-b) Averaging returns from complete episodes of experience
+b) Bootstrapping from the next state's estimate
 c) Using the Bellman equation at every time step
-d) Bootstrapping from the next state's estimate
+d) Averaging returns from complete episodes of experience
 
 ---
 
@@ -39,9 +39,9 @@ d) Bootstrapping from the next state's estimate
 Which statement about **Temporal Difference (TD) learning** is correct?
 
 a) It requires complete episodes before updating
-b) It updates value estimates after every step using a bootstrapped target
+b) It cannot be used in environments with long episodes
+c) It updates value estimates after every step using a bootstrapped target
    (reward + discounted next value)
-c) It cannot be used in environments with long episodes
 d) It is only used in continuous action spaces
 
 ---

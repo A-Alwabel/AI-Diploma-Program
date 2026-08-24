@@ -15,17 +15,17 @@
 A key **advantage of ONNX** over Pickle for model deployment:
 
 a) ONNX files are always smaller
-b) ONNX provides a standard cross-framework format that runs in optimized runtimes (ONNX Runtime) on various hardware
+b) Pickle is faster for inference
 c) ONNX only works with PyTorch
-d) Pickle is faster for inference
+d) ONNX provides a standard cross-framework format that runs in optimized runtimes (ONNX Runtime) on various hardware
 
 ---
 
 ### Question 2 (10 points)
 **TorchServe** is primarily used for:
 
-a) Training PyTorch models
-b) Serving PyTorch models in production via REST/gRPC APIs with multi-model support, logging, and metrics
+a) Serving PyTorch models in production via REST/gRPC APIs with multi-model support, logging, and metrics
+b) Training PyTorch models
 c) Visualizing model training
 d) Converting models to ONNX
 
@@ -35,8 +35,8 @@ d) Converting models to ONNX
 In a Dockerfile, the instruction `COPY model.pkl /app/model.pkl` is used to:
 
 a) Download the model from the internet
-b) Copy the model file from the host into the container image at build time
-c) Run the model
+b) Run the model
+c) Copy the model file from the host into the container image at build time
 d) Install Python dependencies
 
 ---

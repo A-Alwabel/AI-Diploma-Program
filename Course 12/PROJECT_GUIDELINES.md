@@ -43,22 +43,38 @@
 
 ## 📝 Project Deliverables
 
-### 1. Project Proposal (Week 1-2)
-**Due:** End of Week 2
+### 1. Project Proposal (end of Unit 1)
+**Due:** End of Unit 1
 
 **Must include:**
 - Problem statement
 - Objectives and goals
-- Dataset description
+- Dataset description (including its licence and any personal data it contains)
 - Methodology
 - Expected outcomes
+- Ethical, legal and social risks you anticipate, and how you plan to handle them
 - Timeline
 
 **Template:** See `TEMPLATES/project_proposal_template.md`
+**Graded as:** Gate 1 (10 points)
 
 ---
 
-### 2. Progress Reports (Bi-weekly)
+### 2. Design Document (after Unit 2)
+**Due:** Before implementation starts
+
+**Must include:**
+- System architecture diagram
+- Data flow between components
+- Technology and framework choices, with reasons
+- Feasibility check against your timeline and available data
+
+**Graded as:** Gate 2 (10 points). **Do not start implementation until this passes** - building
+on a design that will fail is the most expensive mistake in this course.
+
+---
+
+### 3. Progress Reports (Bi-weekly)
 **Due:** Every 2 weeks
 
 **Must include:**
@@ -67,92 +83,114 @@
 - Next steps
 - Updated timeline
 
+**Graded as:** formative - no points of their own, but they are evidence at Gate 3.
+
 ---
 
-### 3. Final Project (Week 8-12)
-**Due:** End of Week 12
+### 4. Final Project (implementation and evaluation)
+**Due:** End of Unit 4
 
 **Must include:**
 - Complete working system
-- Source code (well-documented)
+- Source code (well-documented, with `requirements.txt` and setup instructions)
 - Trained models (if applicable)
 - Deployment (local or cloud)
 - User documentation
+- Evaluation: metric choice, baseline comparison, failure analysis, limitations
+
+**Graded as:** Gate 3 (30 points, implementation) and Gate 4 (20 points, evaluation)
 
 ---
 
-### 4. Project Report (Week 12)
-**Due:** End of Week 12
+### 5. Project Report (end of Unit 5)
+**Due:** End of Unit 5
 
-**Must include:**
-- Executive summary
-- Introduction and problem statement
-- Literature review
-- Methodology
-- Implementation details
-- Results and evaluation
-- Discussion and conclusions
-- References
+**Length:** 20-40 pages, using the nine sections taught in Unit 5:
+
+1. Executive summary (1-2 pages)
+2. Introduction and problem statement (2-3 pages)
+3. Literature review (3-5 pages)
+4. Methodology (4-6 pages)
+5. Results and analysis (5-8 pages)
+6. Discussion - interpretation, limitations, **ethical considerations**, future work (2-3 pages)
+7. Conclusion (1-2 pages)
+8. References - minimum 15-25 sources (2-3 pages)
+9. Appendices (variable)
+
+Submit the separate **ethical considerations document** from the Unit 5 submission checklist
+alongside the report.
 
 **Template:** See `TEMPLATES/project_report_template.md`
+**Graded as:** Gate 5 (15 points)
 
 ---
 
-### 5. Presentation (Week 12)
-**Due:** End of Week 12
+### 6. Presentation and Defense (defense session)
+**Due:** Defense session
 
 **Must include:**
 - 15-20 minute presentation
-- Live demo of the system
+- Live demo of the system (bring a backup recording)
 - Q&A session
 
 **Template:** See `TEMPLATES/presentation_template.md`
+**Graded as:** Gate 6 (15 points)
 
 ---
 
-## ✅ Evaluation Criteria
+## ✅ Evaluation Criteria: the six milestone gates
 
-### Technical Implementation (40%)
-- Code quality and organization
-- Algorithm selection and implementation
-- Model performance
-- System functionality
+Your course grade is produced by **six milestone gates**, each graded when the corresponding
+unit ends. There is no timed written exam in AIAT 126.
 
-### Innovation and Complexity (20%)
-- Problem complexity
-- Novel approach or application
-- Technical challenges overcome
+| # | Gate | Points | Graded after | What is assessed |
+|---|------|-------:|--------------|------------------|
+| 1 | Project proposal | 10 | Unit 1 | Problem, scope, dataset, methodology, timeline, and the ethical/legal/social risks you expect |
+| 2 | Design review | 10 | Unit 2 | System architecture, data flow, technology choices, feasibility |
+| 3 | Implementation | 30 | Unit 3 | Working code, technique selection and justification, code quality, reproducibility |
+| 4 | Evaluation | 20 | Unit 4 | Metric choice, baseline comparison, failure analysis, test-set discipline, limitations |
+| 5 | Final report | 15 | Unit 5 | The 20-40 page report, including its ethical considerations section |
+| 6 | Defense | 15 | Defense session | 15-20 minute presentation, live demo, Q&A |
+| | **Total** | **100** | | |
 
-### Documentation (20%)
-- Code documentation
-- Project report quality
-- User guides
-- API documentation (if applicable)
+**Pass thresholds:** you must reach 60/100 overall **and** meet the individual threshold on
+gates 3 (18/30), 4 (12/20) and 6 (9/15). Gates 1, 2 and 5 pass at 6/10, 6/10 and 9/15. A gate
+below its threshold is resubmitted once within the window your instructor sets.
 
-### Deployment and Usability (10%)
-- Successful deployment
-- System usability
-- Error handling
-- Performance optimization
+**Gates are gates, not just scores.** Implementation does not start until the design review
+passes - this is the rule that saves the most wasted work.
 
-### Presentation (10%)
-- Clarity of presentation
-- Demo quality
-- Communication skills
-- Q&A responses
+**Ethics is assessed (CLO5).** Ethical, legal and social considerations are graded at gate 1
+(the risks you identify in the proposal), gate 5 (the report's Discussion section plus the
+ethical considerations document from the Unit 5 submission checklist) and gate 6 (defense
+Q&A). They are also the whole of Part 4 of
+[ASSESSMENTS/Final_Exam.md](ASSESSMENTS/Final_Exam.md). Treat them as a deliverable, not a
+paragraph added at the end.
+
+**Relationship to the final evaluation.** `ASSESSMENTS/Final_Exam.md` scores the *same*
+artifacts a second time as a summative review of the finished project, using its own 100-point
+breakdown (30/30/20/20). It does not ask for extra work, and it does not replace the gate
+totals above.
+
+**Progress reports are formative:** they carry no points of their own, but a missing progress
+report costs you under the project-management criterion of gate 3.
 
 ---
 
 ## 📅 Timeline
 
-| Week | Milestone | Deliverable |
-|------|-----------|-------------|
-| 1-2 | Project Planning | Proposal |
-| 3-4 | Data Collection & Preparation | Progress Report 1 |
-| 5-6 | Model Development | Progress Report 2 |
-| 7-8 | System Integration | Progress Report 3 |
-| 9-10 | Testing & Refinement | Progress Report 4 |
-| 11-12 | Deployment & Documentation | Final Report & Presentation |
+Deliverables are tied to **units**, not to fixed calendar weeks: cohorts run this course at
+different paces, so your instructor announces the binding dates in session 1. The table below
+is the indicative full-length schedule; map it onto your cohort's calendar.
+
+| Unit | Phase | Deliverable | Gate |
+|------|-------|-------------|------|
+| Unit 1 | Project planning | Proposal | Gate 1 (10) |
+| Unit 2 | System design and architecture | Design document | Gate 2 (10) |
+| Unit 3 | Data preparation and model development | Working implementation + progress reports | Gate 3 (30) |
+| Unit 4 | Evaluation, optimization, deployment | Evaluation results + progress reports | Gate 4 (20) |
+| Unit 5 | Documentation and presentation | Final report + submission package | Gate 5 (15) |
+| Defense session | Defense | Presentation, live demo, Q&A | Gate 6 (15) |
 
 ---
 
@@ -164,6 +202,7 @@ Your project must demonstrate:
 - Complete end-to-end system
 - Professional code quality
 - Clear documentation
+- Explicit ethical, legal and social analysis of the system you built (CLO5)
 
 ---
 

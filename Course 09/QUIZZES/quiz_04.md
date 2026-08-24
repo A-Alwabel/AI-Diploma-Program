@@ -17,9 +17,9 @@ exploration).
 **Upper Confidence Bound (UCB)** selects actions based on:
 
 a) The highest average reward only
-b) A combination of estimated value AND an exploration bonus proportional to
+b) A random temperature parameter
+c) A combination of estimated value AND an exploration bonus proportional to
 uncertainty (less-tried actions get higher bonus)
-c) A random temperature parameter
 d) The Bayesian posterior over rewards
 
 ---
@@ -28,19 +28,19 @@ d) The Bayesian posterior over rewards
 **Boltzmann (softmax) exploration** selects actions by:
 
 a) Choosing the action with the highest Q-value deterministically
-b) Sampling actions with probabilities proportional to exp(Q/tau), where tau
-(temperature) controls exploration breadth
+b) Using the UCB formula
 c) Adding Gaussian noise to actions
-d) Using the UCB formula
+d) Sampling actions with probabilities proportional to exp(Q/tau), where tau
+(temperature) controls exploration breadth
 
 ---
 
 ### Question 3 (10 points)
 **Epsilon decay** means:
 
-a) The learning rate decreases over time
-b) Epsilon starts high (more exploration) and decreases during training (more
+a) Epsilon starts high (more exploration) and decreases during training (more
 exploitation), balancing exploration early and convergence later
+b) The learning rate decreases over time
 c) The discount factor is reduced
 d) The replay buffer shrinks
 

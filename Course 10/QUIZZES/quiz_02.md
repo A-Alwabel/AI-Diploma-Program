@@ -14,8 +14,8 @@
 ### Question 1 (10 points)
 What is **autoregressive text generation**?
 
-a) Generating all tokens simultaneously
-b) Generating text one token at a time, where each new token is conditioned on all previously generated tokens
+a) Generating text one token at a time, where each new token is conditioned on all previously generated tokens
+b) Generating all tokens simultaneously
 c) A technique specific to BERT
 d) Generating text using only CNNs
 
@@ -25,8 +25,8 @@ d) Generating text using only CNNs
 **Perplexity** as an evaluation metric measures:
 
 a) The speed of text generation
-b) How uncertain the model is about the test data — lower perplexity means the model predicts the text more confidently
-c) The length of generated text
+b) The length of generated text
+c) How uncertain the model is about the test data — lower perplexity means the model predicts the text more confidently
 d) The BLEU score
 
 ---
@@ -45,9 +45,9 @@ d) There is no architectural difference
 **BLEU score** evaluates text quality by:
 
 a) Measuring perplexity
-b) Comparing n-gram overlaps between generated text and reference text — higher BLEU = closer to reference
+b) Measuring number of unique words
 c) Using a discriminator neural network
-d) Measuring number of unique words
+d) Comparing n-gram overlaps between generated text and reference text — higher BLEU = closer to reference
 
 ---
 

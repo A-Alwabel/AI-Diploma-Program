@@ -9,25 +9,25 @@
 ### Question 1 (2 points)
 What is Dask used for?
 - A) Data visualization
-- B) Distributed computing and parallel processing
+- B) Model training only
 - C) Data cleaning
-- D) Model training only
+- D) Distributed computing and parallel processing
 
 ---
 
 ### Question 2 (2 points)
 What is NVIDIA RAPIDS?
 - A) A CPU-only library
-- B) A GPU-accelerated data science library
-- C) A visualization tool
+- B) A visualization tool
+- C) A GPU-accelerated data science library
 - D) A database system
 
 ---
 
 ### Question 3 (2 points)
 What is the main advantage of GPU computing over CPU for data science?
-- A) Lower cost
-- B) Parallel processing of many operations simultaneously
+- A) Parallel processing of many operations simultaneously
+- B) Lower cost
 - C) Easier to use
 - D) Better for small datasets
 
@@ -45,8 +45,8 @@ What is a production pipeline?
 ### Question 5 (2 points)
 What is model deployment?
 - A) Training a model
-- B) Making a model available for use in production
-- C) Evaluating a model
+- B) Evaluating a model
+- C) Making a model available for use in production
 - D) Visualizing model results
 
 ---

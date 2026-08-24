@@ -24,9 +24,9 @@ d) Word-level vocabularies are illegal in production systems
 ### Question 2 (10 points)
 The **distributional hypothesis** behind Word2Vec states that:
 
-a) Words are distributed uniformly across documents  
+a) Words that appear in similar contexts tend to have similar meanings  
 b) Longer documents contain more information  
-c) Words that appear in similar contexts tend to have similar meanings  
+c) Words are distributed uniformly across documents  
 d) Every word must appear at least 5 times to be learned  
 
 ---
@@ -44,9 +44,9 @@ d) The context words that appear near a given center word (within a small window
 ### Question 4 (10 points)
 Two word vectors have **cosine similarity ≈ 1.0**. What does this mean?
 
-a) The vectors point in nearly the same direction — the model treats the words as very similar  
+a) The vectors are orthogonal (unrelated)  
 b) The words never co-occur in the corpus  
-c) The vectors are orthogonal (unrelated)  
+c) The vectors point in nearly the same direction — the model treats the words as very similar  
 d) One vector is exactly twice as long as the other  
 
 ---

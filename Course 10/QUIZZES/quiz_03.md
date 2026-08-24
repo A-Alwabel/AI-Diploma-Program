@@ -3,7 +3,7 @@
 
 **Time Limit:** 45 minutes
 **Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)
-**Covers:** Unit 3 (diffusion models, StyleGAN, image-to-image translation, style transfer).
+**Covers:** Unit 3 (diffusion models, StyleGAN, latent diffusion, style transfer via latent blending).
 **Concepts from:** Unit 3 examples 04 (advanced image generation: diffusion) and 05 (StyleGAN, DALL-E, Stable Diffusion) and related slides.
 **Answer key:** released by your instructor.
 
@@ -15,9 +15,9 @@
 **Denoising Diffusion Probabilistic Models (DDPM)** generate images by:
 
 a) Directly mapping noise to images in one step
-b) Learning to reverse a forward noising process — gradually denoising a random noise sample step-by-step to produce a clean image
+b) Only removing Gaussian noise from existing images
 c) Using a GAN discriminator
-d) Only removing Gaussian noise from existing images
+d) Learning to reverse a forward noising process — gradually denoising a random noise sample step-by-step to produce a clean image
 
 ---
 
@@ -35,8 +35,8 @@ d) Requiring no training data
 **Stable Diffusion** is a **latent diffusion model**, meaning:
 
 a) Diffusion happens in pixel space
-b) Diffusion happens in a compressed latent space (encoded by a VAE), making it far more computationally efficient than pixel-space diffusion
-c) It uses GANs for generation
+b) It uses GANs for generation
+c) Diffusion happens in a compressed latent space (encoded by a VAE), making it far more computationally efficient than pixel-space diffusion
 d) It does not support text conditioning
 
 ---
@@ -44,8 +44,8 @@ d) It does not support text conditioning
 ### Question 4 (10 points)
 **Style transfer via latent blending** with a VAE (unit example 02) works by:
 
-a) Training a GAN to copy painting styles
-b) Encoding two images into latent vectors, interpolating (blending) between the two codes, and decoding the blend into an image with mixed attributes
+a) Encoding two images into latent vectors, interpolating (blending) between the two codes, and decoding the blend into an image with mixed attributes
+b) Training a GAN to copy painting styles
 c) Using a classifier to identify art styles
 d) Fine-tuning a ResNet
 
@@ -67,7 +67,7 @@ Write PyTorch code to implement the **DDPM forward noising process**:
 ## Part 3: Short Answer (30 points)
 
 ### Question 6 (15 points)
-Explain the difference between **Pix2Pix** (paired) and **CycleGAN** (unpaired) image-to-image translation. When would you use each?
+Unit example 04 builds a **DDPM**. Explain (a) the **reverse (denoising) process** the trained network performs at sampling time, (b) why the network is trained to **predict the added noise** rather than the clean image directly, and (c) what the fixed **forward noising process** contributes to that training.
 
 **Answer key:** released by your instructor.
 

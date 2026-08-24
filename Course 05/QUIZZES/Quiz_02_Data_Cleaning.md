@@ -26,8 +26,8 @@ What does `df.duplicated()` return?
 
 ### Question 3 (2 points)
 What is an outlier?
-- A) A missing value
-- B) A data point that significantly differs from other observations
+- A) A data point that significantly differs from other observations
+- B) A missing value
 - C) A duplicate row
 - D) A column with wrong data type
 
@@ -35,18 +35,18 @@ What is an outlier?
 
 ### Question 4 (2 points)
 Which method is commonly used to detect outliers?
-- A) IQR (Interquartile Range) method
+- A) One-hot encoding
 - B) Mean imputation
 - C) Label encoding
-- D) One-hot encoding
+- D) IQR (Interquartile Range) method
 
 ---
 
 ### Question 5 (2 points)
 What does normalization do?
 - A) Removes missing values
-- B) Scales data to a specific range (usually 0-1)
-- C) Removes duplicates
+- B) Removes duplicates
+- C) Scales data to a specific range (usually 0-1)
 - D) Changes data types
 
 ---

@@ -13,8 +13,8 @@
 ### Question 1 (5 points)
 What is supervised learning?
 - A) Learning without labels
-- B) Learning with labeled data
-- C) Learning from rewards
+- B) Learning from rewards
+- C) Learning with labeled data
 - D) Learning randomly
 
 ### Question 2 (5 points)
@@ -38,9 +38,9 @@ What is the purpose of splitting data into training and testing sets?
 ### Question 4 (5 points)
 Linear regression is used for:
 - A) Classification
-- B) Regression (predicting continuous values)
+- B) Visualization
 - C) Clustering
-- D) Visualization
+- D) Regression (predicting continuous values)
 
 ### Question 5 (10 points)
 Complete the code to train a linear regression model:
@@ -65,8 +65,8 @@ What does the coefficient in linear regression represent?
 
 ### Question 7 (5 points)
 Logistic regression is used for:
-- A) Regression
-- B) Binary classification
+- A) Binary classification
+- B) Regression
 - C) Clustering
 - D) Visualization
 
@@ -80,8 +80,8 @@ What is the output range of logistic regression?
 ### Question 9 (5 points)
 What is the sigmoid function used for in logistic regression?
 - A) To make predictions linear
-- B) To convert outputs to probabilities between 0 and 1
-- C) To calculate errors
+- B) To calculate errors
+- C) To convert outputs to probabilities between 0 and 1
 - D) To visualize data
 
 ---
@@ -91,9 +91,9 @@ What is the sigmoid function used for in logistic regression?
 ### Question 10 (5 points)
 Decision trees split data based on:
 - A) Random selection
-- B) Features that best separate classes
+- B) The last feature
 - C) The first feature
-- D) The last feature
+- D) Features that best separate classes
 
 ### Question 11 (5 points)
 What is a leaf node in a decision tree?
@@ -105,8 +105,8 @@ What is a leaf node in a decision tree?
 ### Question 12 (5 points)
 What is overfitting in decision trees?
 - A) Model is too simple
-- B) Model memorizes training data and doesn't generalize
-- C) Model is too slow
+- B) Model is too slow
+- C) Model memorizes training data and doesn't generalize
 - D) Model doesn't work
 
 ---
@@ -123,15 +123,15 @@ KNN classifies based on:
 ### Question 14 (5 points)
 What does k represent in KNN?
 - A) The number of features
-- B) The number of nearest neighbors to consider
+- B) The number of samples
 - C) The number of classes
-- D) The number of samples
+- D) The number of nearest neighbors to consider
 
 ### Question 15 (5 points)
 If k is too small in KNN, what happens?
 - A) Model is more robust
-- B) Model is sensitive to noise
-- C) Model is slower
+- B) Model is slower
+- C) Model is sensitive to noise
 - D) Nothing changes
 
 ---
@@ -140,10 +140,10 @@ If k is too small in KNN, what happens?
 
 ### Question 16 (5 points)
 What is accuracy?
-- A) Percentage of correct predictions
+- A) Training time
 - B) Average error
 - C) Number of predictions
-- D) Training time
+- D) Percentage of correct predictions
 
 ### Question 17 (5 points)
 What is the purpose of a confusion matrix?

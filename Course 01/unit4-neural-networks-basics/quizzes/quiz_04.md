@@ -11,8 +11,8 @@
 ### Question 1 (10 points)
 What is a perceptron?
 
-A) A type of graph  
-B) A single-layer neural network  
+A) A single-layer neural network  
+B) A type of graph  
 C) A search algorithm  
 D) A knowledge representation method
 
@@ -21,8 +21,8 @@ D) A knowledge representation method
 ### Question 2 (10 points)
 What does ReLU stand for?
 
-A) Rectified Linear Unit  
-B) Random Linear Unit  
+A) Random Linear Unit  
+B) Rectified Linear Unit  
 C) Recursive Linear Unit  
 D) Regular Linear Unit
 
@@ -32,8 +32,8 @@ D) Regular Linear Unit
 What is the purpose of an activation function?
 
 A) To add randomness  
-B) To introduce non-linearity  
-C) To reduce memory usage  
+B) To reduce memory usage  
+C) To introduce non-linearity  
 D) To speed up computation
 
 ---
@@ -41,10 +41,10 @@ D) To speed up computation
 ### Question 4 (10 points)
 A single perceptron can solve which type of problems?
 
-A) Only linear problems  
+A) No problems
 B) Only non-linear problems  
 C) Both linear and non-linear  
-D) No problems
+D) Only linear problems  
 
 ---
 

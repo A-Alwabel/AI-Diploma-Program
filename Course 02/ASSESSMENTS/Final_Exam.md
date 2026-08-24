@@ -14,8 +14,8 @@ The exam covers all five units: search algorithms, knowledge representation, lea
 ### Question 1 (5 points)
 Which Python library is used for numerical computations?
 
-A) pandas  
-B) NumPy  
+A) NumPy  
+B) pandas  
 C) matplotlib  
 D) scikit-learn
 
@@ -25,8 +25,8 @@ D) scikit-learn
 Breadth-First Search (BFS) uses which data structure, and what does that guarantee in an unweighted graph?
 
 A) A stack (LIFO); it guarantees the shortest path  
-B) A queue (FIFO); it guarantees the shortest path  
-C) A queue (FIFO); it guarantees the fastest runtime  
+B) A queue (FIFO); it guarantees the fastest runtime  
+C) A queue (FIFO); it guarantees the shortest path  
 D) A priority queue; it guarantees the fewest explored nodes
 
 ---
@@ -36,8 +36,8 @@ A* search expands nodes in order of:
 
 A) f(n) = g(n), the cost from the start  
 B) f(n) = h(n), the estimated cost to the goal  
-C) f(n) = g(n) + h(n)  
-D) f(n) = g(n) − h(n)
+C) f(n) = g(n) − h(n)
+D) f(n) = g(n) + h(n)  
 
 ---
 
@@ -56,8 +56,8 @@ In Bayesian inference, the **prior** probability is:
 
 A) The probability of the evidence  
 B) The probability of a hypothesis after seeing the evidence  
-C) The probability of a hypothesis before seeing the evidence  
-D) Always equal to 0.5
+C) Always equal to 0.5
+D) The probability of a hypothesis before seeing the evidence  
 
 ---
 
@@ -65,8 +65,8 @@ D) Always equal to 0.5
 In gradient descent, if the learning rate is too high, the algorithm:
 
 A) Converges more slowly but always safely  
-B) May overshoot the minimum and diverge  
-C) Stops after one iteration  
+B) Stops after one iteration  
+C) May overshoot the minimum and diverge  
 D) Ignores the gradient
 
 ---

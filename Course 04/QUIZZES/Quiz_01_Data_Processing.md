@@ -22,9 +22,9 @@ What does `df.info()` display?
 ### Question 2 (5 points)
 Which method is used to read a CSV file in pandas?
 - A) `pd.read_excel()`
-- B) `pd.read_csv()`
+- B) `pd.load_csv()`
 - C) `pd.read_json()`
-- D) `pd.load_csv()`
+- D) `pd.read_csv()`
 
 ---
 
@@ -41,8 +41,8 @@ What does `df.describe()` return?
 
 ### Question 4 (5 points)
 How do you check for missing values in a DataFrame?
-- A) `df.missing()`
-- B) `df.isnull().sum()`
+- A) `df.isnull().sum()`
+- B) `df.missing()`
 - C) `df.find_na()`
 - D) `df.check_null()`
 
@@ -51,16 +51,16 @@ How do you check for missing values in a DataFrame?
 ### Question 5 (5 points)
 What method removes duplicate rows from a DataFrame?
 - A) `df.remove_duplicates()`
-- B) `df.drop_duplicates()`
+- B) `df.deduplicate()`
 - C) `df.unique()`
-- D) `df.deduplicate()`
+- D) `df.drop_duplicates()`
 
 ---
 
 ### Question 6 (5 points)
 Which method fills missing values with a specific value?
-- A) `df.replace()`
-- B) `df.fillna()`
+- A) `df.fillna()`
+- B) `df.replace()`
 - C) `df.update()`
 - D) `df.set_value()`
 
@@ -80,8 +80,8 @@ What is the purpose of StandardScaler?
 ### Question 8 (5 points)
 Which encoding method creates binary columns for each category?
 - A) Label Encoding
-- B) One-Hot Encoding
-- C) Ordinal Encoding
+- B) Ordinal Encoding
+- C) One-Hot Encoding
 - D) Binary Encoding
 
 ---
@@ -90,8 +90,8 @@ Which encoding method creates binary columns for each category?
 
 ### Question 9 (5 points)
 In linear regression, what does the coefficient represent?
-- A) The intercept
-- B) The change in target variable per unit change in feature
+- A) The change in target variable per unit change in feature
+- B) The intercept
 - C) The error term
 - D) The correlation coefficient
 
@@ -99,9 +99,9 @@ In linear regression, what does the coefficient represent?
 
 ### Question 10 (5 points)
 What is the difference between simple and multiple linear regression?
-- A) Simple uses one feature, multiple uses many features
+- A) There is no difference
 - B) Simple uses polynomial features, multiple uses linear features
-- C) There is no difference
+- C) Simple uses one feature, multiple uses many features
 - D) Simple is for classification, multiple is for regression
 
 ---

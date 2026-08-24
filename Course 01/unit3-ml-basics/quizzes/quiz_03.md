@@ -12,9 +12,9 @@
 What is a knowledge graph?
 
 A) A type of neural network  
-B) A way to represent relationships between entities  
+B) An activation function
 C) A search algorithm  
-D) An activation function
+D) A way to represent relationships between entities  
 
 ---
 
@@ -22,8 +22,8 @@ D) An activation function
 In a rule-based system, what does "IF-THEN" represent?
 
 A) A loop structure  
-B) A conditional rule  
-C) A data structure  
+B) A data structure  
+C) A conditional rule  
 D) An algorithm
 
 ---
@@ -31,8 +31,8 @@ D) An algorithm
 ### Question 3 (10 points)
 What is forward chaining?
 
-A) Starting from facts and applying rules  
-B) Starting from goals and working backwards  
+A) Starting from goals and working backwards  
+B) Starting from facts and applying rules  
 C) A type of search algorithm  
 D) A neural network training method
 
@@ -41,9 +41,9 @@ D) A neural network training method
 ### Question 4 (10 points)
 Which is NOT a knowledge representation method?
 
-A) Semantic networks  
+A) Binary search  
 B) Production rules  
-C) Binary search  
+C) Semantic networks  
 D) Frames
 
 ---

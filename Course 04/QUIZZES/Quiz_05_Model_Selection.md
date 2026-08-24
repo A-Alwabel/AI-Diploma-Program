@@ -84,23 +84,23 @@ What is XGBoost?
 
 ---
 
-## Part 3: Ensemble Methods (10 points)
+## Part 3: Tuning and Comparing Boosting Models (10 points)
 
 ### Question 9 (5 points)
-What is a Voting Classifier?
-- A) A classifier that uses only one model
-- B) A classifier that combines predictions from multiple models
-- C) A classifier that doesn't use training data
-- D) A classifier that only works with binary classification
+In gradient boosting (XGBoost, LightGBM), what does the `learning_rate` hyperparameter control?
+- A) How many features each tree is allowed to use
+- B) How much each newly added tree contributes to the ensemble's prediction
+- C) How many CPU cores are used during training
+- D) The size of the train/test split
 
 ---
 
 ### Question 10 (5 points)
-What is stacking?
-- A) Training models in parallel
-- B) Using a meta-learner to combine predictions from multiple base models
-- C) Using only one model
-- D) Reducing the number of features
+Compared with XGBoost, what is LightGBM's distinguishing characteristic?
+- A) It grows trees leaf-wise, which makes it faster - especially on large datasets
+- B) It trains all of its trees in parallel instead of sequentially
+- C) It does not use decision trees at all
+- D) It always achieves higher test accuracy than XGBoost
 
 ---
 

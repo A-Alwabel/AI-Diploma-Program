@@ -15,8 +15,8 @@
 What is the main purpose of **model deployment** in the AI lifecycle?
 
 a) To train the model
-b) To make a trained model available to users or other systems so it can produce predictions on new data
-c) To evaluate model accuracy offline
+b) To evaluate model accuracy offline
+c) To make a trained model available to users or other systems so it can produce predictions on new data
 d) To visualize model performance
 
 ---
@@ -25,9 +25,9 @@ d) To visualize model performance
 Which serialization format is **cross-framework** and allows AI models to run across runtimes (TF, PyTorch, etc.)?
 
 a) Pickle
-b) ONNX (Open Neural Network Exchange)
+b) CSV
 c) JSON
-d) CSV
+d) ONNX (Open Neural Network Exchange)
 
 ---
 
@@ -44,8 +44,8 @@ d) WebSocket only
 ### Question 4 (10 points)
 **Docker** is used in AI deployment to:
 
-a) Train models faster
-b) Package the model, code, and all dependencies into a portable container that runs consistently across environments
+a) Package the model, code, and all dependencies into a portable container that runs consistently across environments
+b) Train models faster
 c) Monitor model performance
 d) Replace cloud services
 

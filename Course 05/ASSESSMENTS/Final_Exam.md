@@ -12,8 +12,8 @@
 ### Question 1 (5 points)
 What is the main advantage of scalable data science?
 
-A) Only speed  
-B) Handling large datasets efficiently  
+A) Handling large datasets efficiently  
+B) Only speed  
 C) Only cost reduction  
 D) Only simplicity
 
@@ -23,9 +23,9 @@ D) Only simplicity
 Which library provides GPU-accelerated DataFrames?
 
 A) Only pandas  
-B) cuDF (RAPIDS)  
+B) Only Dask
 C) Only NumPy  
-D) Only Dask
+D) cuDF (RAPIDS)  
 
 ---
 
@@ -43,8 +43,8 @@ D) Only data cleaning
 Which is a data visualization library?
 
 A) Only pandas  
-B) matplotlib, seaborn, plotly  
-C) Only NumPy  
+B) Only NumPy  
+C) matplotlib, seaborn, plotly  
 D) Only scikit-learn
 
 ---
@@ -52,8 +52,8 @@ D) Only scikit-learn
 ### Question 5 (5 points)
 What is the purpose of data profiling?
 
-A) Only cleaning  
-B) Understanding data structure, quality, and patterns  
+A) Understanding data structure, quality, and patterns  
+B) Only cleaning  
 C) Only visualization  
 D) Only modeling
 
@@ -63,9 +63,9 @@ D) Only modeling
 Which technique is used for handling large datasets?
 
 A) Only loading all at once  
-B) Chunking, distributed computing, sampling  
+B) Only distributed computing
 C) Only sampling  
-D) Only distributed computing
+D) Chunking, distributed computing, sampling  
 
 ---
 

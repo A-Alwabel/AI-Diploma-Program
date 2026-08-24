@@ -7,6 +7,28 @@
 
 ---
 
+## How this evaluation is scored
+
+**One scheme only.** Your score comes from the nine criteria in Parts 1-4 below. They are the
+complete marking scheme for this evaluation: 30 + 30 + 20 + 20 = 100 points. There is no
+second rubric anywhere in this file.
+
+**How it relates to your milestone grades.** Your course grade for AIAT 126 is produced by
+the six milestone gates listed in [../PROJECT_GUIDELINES.md](../PROJECT_GUIDELINES.md)
+(proposal 10 · design review 10 · implementation 30 · evaluation 20 · report 15 · defense 15).
+This final evaluation is a summative review of the **same** artifacts you already submitted at
+those gates - not extra work and not a second grade for the same thing. Nothing new is
+required from you here beyond the deliverables listed under "Submission Requirements" below.
+
+**Ethics is assessed (CLO5).** Part 4 of this evaluation is worth 20 points and covers the
+ethical, legal and social analysis of your system. The same analysis is graded at the proposal,
+report and defense gates. Carry it in your report's Discussion section and in the ethical
+considerations document required by the Unit 5 submission checklist.
+
+Grading and any answer keys are released by your instructor.
+
+---
+
 ## Part 1: Project Documentation Review (30 points)
 
 ### Question 1 (10 points)
@@ -112,53 +134,29 @@
 
 ---
 
-## Evaluation Rubric
+## Points Summary
 
-### Project Quality Criteria
-
-**Problem Definition (10 points)**
-- Real-world problem: 5 points
-- Clear scope: 3 points
-- Practical value: 2 points
-
-**Technical Implementation (30 points)**
-- Code quality: 10 points
-- AI technique application: 10 points
-- System design: 10 points
-
-**Evaluation and Analysis (15 points)**
-- Metrics selection: 5 points
-- Comprehensive evaluation: 5 points
-- Critical analysis: 5 points
-
-**Documentation (10 points)**
-- Completeness: 5 points
-- Clarity: 3 points
-- Professional quality: 2 points
-
-**Presentation (10 points)**
-- Oral presentation: 5 points
-- Demo quality: 3 points
-- Q&A handling: 2 points
-
-**Ethics and Impact (20 points)**
-- Ethical analysis: 10 points
-- Social impact: 10 points
-
-**Knowledge Integration (5 points)**
-- Multiple subfields: 3 points
-- Coherent integration: 2 points
-
-**Total: 100 points**
+| Part | Criteria | Points |
+|------|----------|-------:|
+| 1. Project Documentation Review | Q1 documentation · Q2 real-world problem · Q3 knowledge integration | 30 |
+| 2. Technical Implementation | Q4 implementation · Q5 solution performance | 30 |
+| 3. Presentation and Communication | Q6 presentation · Q7 written communication | 20 |
+| 4. Ethical and Social Considerations | Q8 ethical considerations · Q9 social impact | 20 |
+| **Total** | **9 criteria** | **100** |
 
 ---
 
 ## Submission Requirements
 
-1. **Project Code:** Complete implementation in Jupyter notebooks
-2. **Project Report:** Comprehensive documentation (10-15 pages)
-3. **Presentation:** 15-minute presentation with demo
+1. **Project Code:** Complete implementation in Jupyter notebooks, with `requirements.txt`
+   and a `README.md` that lets a reader re-run it
+2. **Project Report:** Comprehensive documentation, **20-40 pages** across the nine sections
+   taught in Unit 5 (executive summary, introduction, literature review, methodology, results
+   and analysis, discussion, conclusion, references, appendices)
+3. **Presentation:** **15-20 minute** presentation with a live demo (bring a backup recording)
 4. **GitHub Repository:** Well-organized code repository
+5. **Ethical considerations document:** as listed in the Unit 5 submission checklist - this is
+   the evidence Part 4 is scored from
 
 ---
 

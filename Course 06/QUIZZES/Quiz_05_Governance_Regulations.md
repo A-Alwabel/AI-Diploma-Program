@@ -9,8 +9,8 @@
 ### Question 1 (2 points)
 
 What is AI governance?
-- A) Making AI faster
-- B) Framework of policies, processes, and controls for responsible AI development and deployment
+- A) Framework of policies, processes, and controls for responsible AI development and deployment
+- B) Making AI faster
 - C) Making AI cheaper
 - D) Training AI models
 
@@ -20,7 +20,7 @@ What is AI governance?
 
 What is the EU AI Act?
 - A) A law requiring all AI to be public
-- A) A comprehensive regulation for AI systems in the European Union
+- B) A comprehensive regulation for AI systems in the European Union
 - C) A guideline for AI research
 - D) A standard for AI hardware
 
@@ -30,9 +30,9 @@ What is the EU AI Act?
 
 What are high-risk AI systems?
 - A) All AI systems
-- B) AI systems that could cause harm to health, safety, or fundamental rights
+- B) Only autonomous vehicles
 - C) Only medical AI
-- D) Only autonomous vehicles
+- D) AI systems that could cause harm to health, safety, or fundamental rights
 
 ---
 
@@ -40,17 +40,17 @@ What are high-risk AI systems?
 
 What is an AI ethics board?
 - A) A group that trains AI models
-- B) A committee that oversees ethical AI development and deployment
-- C) A group that tests AI models
+- B) A group that tests AI models
+- C) A committee that oversees ethical AI development and deployment
 - D) A regulatory body
 
 ---
 
 ### Question 5 (2 points)
 
-What is the purpose of algorithmic impact assessments?
-- A) To measure model accuracy
-- B) To evaluate potential impacts of AI systems before deployment
+What is the purpose of a data protection impact assessment (DPIA)?
+- A) To evaluate the risks an AI system poses to people's data and rights before it is deployed
+- B) To measure model accuracy
 - C) To test model speed
 - D) To calculate costs
 

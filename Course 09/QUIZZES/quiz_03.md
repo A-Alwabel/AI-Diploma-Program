@@ -27,9 +27,9 @@ d) It allows the agent to learn from a single episode
 Why does DQN use a separate **target network** updated less frequently?
 
 a) To increase the number of parameters
-b) To stabilize training by providing a fixed target for Q-value updates,
+b) To replace experience replay
+c) To stabilize training by providing a fixed target for Q-value updates,
    preventing oscillations
-c) To replace experience replay
 d) To process images faster
 
 ---
@@ -37,9 +37,9 @@ d) To process images faster
 ### Question 3 (10 points)
 In **REINFORCE (policy gradient)**, the gradient update uses:
 
-a) Only the reward from the last step
-b) The gradient of the log probability of the action, weighted by the
+a) The gradient of the log probability of the action, weighted by the
    cumulative return
+b) Only the reward from the last step
 c) The Q-table values
 d) A fixed supervised signal
 
@@ -49,10 +49,10 @@ d) A fixed supervised signal
 The **Actor-Critic** method combines:
 
 a) Supervised learning and unsupervised learning
-b) A policy (actor) that selects actions and a value function (critic)
-   that evaluates those actions
+b) DQN and SARSA
 c) Q-learning and Monte Carlo
-d) DQN and SARSA
+d) A policy (actor) that selects actions and a value function (critic)
+   that evaluates those actions
 
 ---
 

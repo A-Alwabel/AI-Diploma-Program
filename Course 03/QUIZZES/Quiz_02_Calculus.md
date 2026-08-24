@@ -8,8 +8,8 @@
 
 ### Question 1 (5 points)
 What is a derivative?
-- A) A function
-- B) The rate of change of a function with respect to a variable
+- A) The rate of change of a function with respect to a variable
+- B) A function
 - C) An integral
 - D) A matrix
 
@@ -18,9 +18,9 @@ What is a derivative?
 ### Question 2 (5 points)
 What does the derivative f'(x) represent geometrically?
 - A) The area under the curve
-- B) The slope of the tangent line at point x
+- B) The x-intercept
 - C) The y-intercept
-- D) The x-intercept
+- D) The slope of the tangent line at point x
 
 ---
 
@@ -47,8 +47,8 @@ f'(x) = d/dx(3x³) + d/dx(2x²) - d/dx(5x) + d/dx(1)
 ### Question 5 (5 points)
 What is a gradient?
 - A) A single number
-- B) A vector of partial derivatives
-- C) A matrix
+- B) A matrix
+- C) A vector of partial derivatives
 - D) A function
 
 ---
@@ -56,9 +56,9 @@ What is a gradient?
 ### Question 6 (5 points)
 What does the gradient point toward?
 - A) The minimum of the function
-- B) The direction of steepest ascent
+- B) The maximum value
 - C) The origin
-- D) The maximum value
+- D) The direction of steepest ascent
 
 ---
 
@@ -107,16 +107,16 @@ What is gradient descent?
 ### Question 10 (5 points)
 What is the learning rate in gradient descent?
 - A) The speed of convergence
-- B) The step size used when updating parameters
-- C) The number of iterations
+- B) The number of iterations
+- C) The step size used when updating parameters
 - D) The initial value
 
 ---
 
 ### Question 11 (5 points)
 What happens if the learning rate is too large?
-- A) Convergence is faster
-- B) The algorithm may overshoot and fail to converge
+- A) The algorithm may overshoot and fail to converge
+- B) Convergence is faster
 - C) Nothing changes
 - D) It always works
 

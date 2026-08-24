@@ -3,8 +3,8 @@
 
 **Time Limit:** 45 minutes
 **Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)
-**Covers:** Unit 3 (cloud platforms, AWS SageMaker, GCP Vertex AI, Azure ML, security, auto-scaling).
-**Concepts from:** Unit 3 examples (AWS SageMaker) and related slides.
+**Covers:** Unit 3 (cloud platforms, AWS SageMaker, GCP Vertex AI, Azure ML, security, auto-scaling, monitoring and logging) plus the IaaS/CaaS/PaaS deployment tiers.
+**Concepts from:** Unit 3 examples (cloud deployment, AWS SageMaker, security measures, monitoring and logging), the Unit 4 cloud-comparison example, and related slides.
 **Answer key:** released by your instructor.
 
 ---
@@ -15,8 +15,8 @@
 **AWS SageMaker** provides which capability specifically for AI model deployment?
 
 a) Only model training
-b) End-to-end ML lifecycle: training, hosting endpoints, auto-scaling, A/B testing, and monitoring
-c) Only data storage
+b) Only data storage
+c) End-to-end ML lifecycle: training, hosting endpoints, auto-scaling, A/B testing, and monitoring
 d) Only containerization
 
 ---
@@ -35,17 +35,17 @@ d) Latency must be under 10ms
 In cloud AI deployment, **auto-scaling** means:
 
 a) The model automatically retrains when performance drops
-b) The infrastructure automatically adds or removes compute instances based on incoming traffic
+b) The model's batch size is automatically adjusted
 c) Gradients are automatically scaled during training
-d) The model's batch size is automatically adjusted
+d) The infrastructure automatically adds or removes compute instances based on incoming traffic
 
 ---
 
 ### Question 4 (10 points)
 Which security measure is most critical when deploying an AI model API on a cloud platform?
 
-a) Using only HTTP (not HTTPS)
-b) Authentication (API keys/OAuth), HTTPS, rate limiting, and input validation to prevent abuse
+a) Authentication (API keys/OAuth), HTTPS, rate limiting, and input validation to prevent abuse
+b) Using only HTTP (not HTTPS)
 c) Making the API publicly open
 d) Storing model weights in plaintext
 
@@ -72,14 +72,14 @@ Note: Structured pseudocode with correct step order is sufficient; exact boto3 s
 ## Part 3: Short Answer (30 points)
 
 ### Question 6 (15 points)
-Compare **IaaS, PaaS, and SaaS** cloud service models. Which is most commonly used for deploying custom AI models, and why?
+Compare the three tiers of cloud ML deployment taught in this course — **IaaS, CaaS, and PaaS**. For each, say what you provide, what you still have to manage, and give one platform example. Which tier is most commonly used for deploying custom AI models, and why?
 
 **Answer key:** released by your instructor.
 
 ---
 
 ### Question 7 (15 points)
-What is **edge AI deployment**, and when would you deploy a model on-device rather than in the cloud? Give one real-world example.
+Once a model is serving live traffic you have to monitor it. (a) Explain the difference between **p50 and p99 latency**, and say which one you would alert on and why. (b) In production you usually have **no ground-truth labels**, so accuracy cannot be computed directly — name **two** proxy signals covered in this unit that indicate the model is degrading, and explain what each one tells you.
 
 **Answer key:** released by your instructor.
 

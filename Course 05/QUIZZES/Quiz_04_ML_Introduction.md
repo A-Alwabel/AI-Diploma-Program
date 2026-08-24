@@ -8,26 +8,26 @@
 
 ### Question 1 (2 points)
 What is the difference between supervised and unsupervised learning?
-- A) Supervised uses labels, unsupervised doesn't
+- A) They are the same
 - B) Supervised is faster
 - C) Unsupervised uses more data
-- D) They are the same
+- D) Supervised uses labels, unsupervised doesn't
 
 ---
 
 ### Question 2 (2 points)
 What does accuracy measure?
-- A) The proportion of correct predictions
+- A) The model complexity
 - B) The average error
-- C) The model complexity
+- C) The proportion of correct predictions
 - D) The training time
 
 ---
 
 ### Question 3 (2 points)
 What is overfitting?
-- A) Model performs well on training but poorly on test data
-- B) Model performs poorly on both training and test data
+- A) Model performs poorly on both training and test data
+- B) Model performs well on training but poorly on test data
 - C) Model is too simple
 - D) Model trains too slowly
 
@@ -35,8 +35,8 @@ What is overfitting?
 
 ### Question 4 (2 points)
 What is the purpose of train_test_split?
-- A) To speed up training
-- B) To evaluate model performance on unseen data
+- A) To evaluate model performance on unseen data
+- B) To speed up training
 - C) To reduce data size
 - D) To remove outliers
 
@@ -44,8 +44,8 @@ What is the purpose of train_test_split?
 
 ### Question 5 (2 points)
 What does a confusion matrix show?
-- A) Model training time
-- B) True positives, false positives, true negatives, false negatives
+- A) True positives, false positives, true negatives, false negatives
+- B) Model training time
 - C) Feature importance
 - D) Model parameters
 

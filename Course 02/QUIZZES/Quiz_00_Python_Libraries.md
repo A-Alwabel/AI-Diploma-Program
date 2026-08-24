@@ -20,9 +20,9 @@ What is the main advantage of NumPy arrays over Python lists?
 ### Question 2 (5 points)
 What does `np.array([1, 2, 3])` create?
 - A) A Python list
-- B) A NumPy 1D array
+- B) A tuple
 - C) A NumPy 2D array
-- D) A tuple
+- D) A NumPy 1D array
 
 ### Question 3 (10 points)
 Complete the code to create a 3x3 matrix of zeros:
@@ -45,8 +45,8 @@ What does `arr.shape` return?
 
 ### Question 5 (5 points)
 What function is used to create a line plot in Matplotlib?
-- A) `plt.bar()`
-- B) `plt.plot()`
+- A) `plt.plot()`
+- B) `plt.bar()`
 - C) `plt.scatter()`
 - D) `plt.hist()`
 
@@ -64,8 +64,8 @@ plt.show()
 
 ### Question 7 (5 points)
 What does `plt.show()` do?
-- A) Saves the plot to a file
-- B) Displays the plot on screen
+- A) Displays the plot on screen
+- B) Saves the plot to a file
 - C) Clears the plot
 - D) Updates the plot
 
@@ -75,17 +75,17 @@ What does `plt.show()` do?
 
 ### Question 8 (5 points)
 What is the main advantage of `collections.deque` over a regular list for queue operations?
-- A) It's faster for append/pop operations
-- B) It uses less memory
+- A) It uses less memory
+- B) It's faster for append/pop operations
 - C) It supports more data types
 - D) It's easier to use
 
 ### Question 9 (5 points)
 What does `heapq.heappush()` do?
 - A) Removes the smallest element
-- B) Adds an element maintaining heap property
+- B) Finds the maximum element
 - C) Sorts the entire list
-- D) Finds the maximum element
+- D) Adds an element maintaining heap property
 
 ### Question 10 (5 points)
 Complete the code to create a priority queue:
@@ -103,22 +103,22 @@ heapq.______(queue, (priority, item))
 ### Question 11 (5 points)
 What is a graph in NetworkX?
 - A) A visualization
-- B) A data structure with nodes and edges
-- C) A mathematical function
+- B) A mathematical function
+- C) A data structure with nodes and edges
 - D) A file format
 
 ### Question 12 (5 points)
 How do you add an edge between two nodes in NetworkX?
 - A) `G.add_node(edge)`
-- B) `G.add_edge(node1, node2)`
+- B) `G.link(node1, node2)`
 - C) `G.connect(node1, node2)`
-- D) `G.link(node1, node2)`
+- D) `G.add_edge(node1, node2)`
 
 ### Question 13 (5 points)
 What does `G.nodes()` return?
 - A) The number of nodes
-- B) A list of all nodes
-- C) The edges
+- B) The edges
+- C) A list of all nodes
 - D) The graph structure
 
 ---
@@ -134,15 +134,15 @@ What is SciPy primarily used for?
 
 ### Question 15 (5 points)
 What is the main purpose of Scikit-learn?
-- A) Data visualization
-- B) Machine learning algorithms
+- A) Machine learning algorithms
+- B) Data visualization
 - C) Web scraping
 - D) Database operations
 
 ### Question 16 (5 points)
 Which Scikit-learn function is used to split data into training and testing sets?
-- A) `train_test_split()`
-- B) `split_data()`
+- A) `split_data()`
+- B) `train_test_split()`
 - C) `divide_data()`
 - D) `separate_data()`
 

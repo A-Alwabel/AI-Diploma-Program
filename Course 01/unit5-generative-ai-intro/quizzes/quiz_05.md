@@ -22,8 +22,8 @@ D) It only processes existing data
 What do generative models learn?
 
 A) P(Y|X) - Conditional probability  
-B) P(X|Y) and P(Y) - Joint probability distribution  
-C) Only P(X)  
+B) Only P(X)  
+C) P(X|Y) and P(Y) - Joint probability distribution  
 D) Only P(Y)
 
 ---
@@ -33,16 +33,16 @@ Which is an example of a generative model?
 
 A) Logistic Regression  
 B) Support Vector Machine  
-C) GAN (Generative Adversarial Network)  
-D) Decision Tree
+C) Decision Tree
+D) GAN (Generative Adversarial Network)  
 
 ---
 
 ### Question 4 (10 points)
 What is the main difference between generative and discriminative models?
 
-A) Generative models are faster  
-B) Generative models can create new data, discriminative cannot  
+A) Generative models can create new data, discriminative cannot  
+B) Generative models are faster  
 C) Discriminative models are always better  
 D) No difference
 

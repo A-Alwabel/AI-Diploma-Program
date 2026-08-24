@@ -10,9 +10,9 @@
 
 What is utilitarianism in ethical frameworks?
 - A) Focus on individual rights and duties
-- B) Maximize overall happiness/utility for the greatest number
+- B) Follow rules regardless of consequences
 - C) Focus on character and virtues
-- D) Follow rules regardless of consequences
+- D) Maximize overall happiness/utility for the greatest number
 
 ---
 
@@ -29,8 +29,8 @@ What is deontology?
 ### Question 3 (2 points)
 
 What was the main ethical issue with the COMPAS system?
-- A) It was too slow
-- B) It showed racial bias in risk assessment
+- A) It showed racial bias in risk assessment
+- B) It was too slow
 - C) It was too expensive
 - D) It was not accurate
 
@@ -49,8 +49,8 @@ What is virtue ethics?
 ### Question 5 (2 points)
 
 Why is ethical decision-making important in AI?
-- A) It makes models faster
-- B) It ensures AI systems are fair, just, and respect human values
+- A) It ensures AI systems are fair, just, and respect human values
+- B) It makes models faster
 - C) It reduces costs
 - D) It improves accuracy
 

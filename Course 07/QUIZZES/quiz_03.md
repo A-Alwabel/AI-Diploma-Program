@@ -14,8 +14,8 @@
 ### Question 1 (10 points)
 **TF-IDF** gives a word a high score in a document when the word is:
 
-a) Frequent in that document but rare across the whole collection of documents  
-b) Frequent in every document  
+a) Frequent in every document  
+b) Frequent in that document but rare across the whole collection of documents  
 c) Rare everywhere, including that document  
 d) A stop word  
 
@@ -25,8 +25,8 @@ d) A stop word
 Why do we evaluate a classifier on a **held-out test set** that it never saw during training?
 
 a) To make training faster  
-b) So the reported accuracy measures generalization to new data, not memorization of the training data  
-c) Because scikit-learn requires it  
+b) Because scikit-learn requires it  
+c) So the reported accuracy measures generalization to new data, not memorization of the training data  
 d) To increase the amount of training data  
 
 ---
@@ -34,9 +34,9 @@ d) To increase the amount of training data
 ### Question 3 (10 points)
 In the Unit 3 experiment, the same pipeline trained on only **8 documents** (2 in the test set) produced accuracies of 100%, 100%, 100%, 0%, 0% across five random splits. What is the lesson?
 
-a) The model was broken on splits 4 and 5  
+a) With a tiny test set, a single accuracy number is mostly noise — prefer cross-validation and more data  
 b) Accuracy above 50% is always meaningful  
-c) With a tiny test set, a single accuracy number is mostly noise — prefer cross-validation and more data  
+c) The model was broken on splits 4 and 5  
 d) Random seeds should always be set to 0  
 
 ---
@@ -45,9 +45,9 @@ d) Random seeds should always be set to 0
 In spaCy's NER output on the tech-companies paragraph, `Apple Inc.` is labeled **ORG** and `Cupertino` is labeled **GPE**. What does **GPE** stand for / denote?
 
 a) General Purpose Entity — any noun  
-b) Geopolitical entity — countries, cities, states  
+b) Global Product Edition — a product name  
 c) Grammatical Phrase Element — a syntax unit  
-d) Global Product Edition — a product name  
+d) Geopolitical entity — countries, cities, states  
 
 ---
 

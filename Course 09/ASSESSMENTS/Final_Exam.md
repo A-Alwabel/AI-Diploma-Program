@@ -25,10 +25,10 @@ D) A dataset used for supervised learning
 Why is **Q-learning** called an off-policy method?
 
 A) It cannot use exploration  
-B) It updates toward the greedy next action value, even if the behavior
-policy explored differently  
+B) It is only used for continuous action spaces
 C) It always needs a model of the environment  
-D) It is only used for continuous action spaces
+D) It updates toward the greedy next action value, even if the behavior
+policy explored differently  
 
 ---
 
@@ -36,8 +36,8 @@ D) It is only used for continuous action spaces
 What is the main purpose of **experience replay** in DQN?
 
 A) To reduce the number of actions  
-B) To break correlations between consecutive samples and reuse experience  
-C) To remove the need for epsilon-greedy  
+B) To remove the need for epsilon-greedy  
+C) To break correlations between consecutive samples and reuse experience  
 D) To replace the target network
 
 ---
@@ -45,8 +45,8 @@ D) To replace the target network
 ### Question 4 (5 points)
 Which statement about **model-based RL** is most accurate?
 
-A) It never uses planning  
-B) It learns or uses a model of the environment and can plan with it  
+A) It learns or uses a model of the environment and can plan with it  
+B) It never uses planning  
 C) It always outperforms model-free RL  
 D) It is the same as Monte Carlo learning
 

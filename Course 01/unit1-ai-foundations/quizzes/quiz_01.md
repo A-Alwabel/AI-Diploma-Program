@@ -12,8 +12,8 @@
 What is the main goal of Artificial Intelligence?
 
 A) To replace all human jobs  
-B) To simulate human intelligence in machines  
-C) To create robots only  
+B) To create robots only  
+C) To simulate human intelligence in machines  
 D) To eliminate human decision-making
 
 ---
@@ -21,9 +21,9 @@ D) To eliminate human decision-making
 ### Question 2 (10 points)
 Which type of AI is currently achievable?
 
-A) General AI  
+A) Narrow AI  
 B) Superintelligent AI  
-C) Narrow AI  
+C) General AI  
 D) Self-aware AI
 
 ---
@@ -32,9 +32,9 @@ D) Self-aware AI
 What marked the "birth" of AI as a field?
 
 A) Turing Test (1950)  
-B) Dartmouth Conference (1956)  
+B) ChatGPT release (2022)
 C) Deep Blue victory (1997)  
-D) ChatGPT release (2022)
+D) Dartmouth Conference (1956)  
 
 ---
 
@@ -42,8 +42,8 @@ D) ChatGPT release (2022)
 Which is NOT an application of AI?
 
 A) Medical image analysis  
-B) Weather prediction  
-C) Making coffee manually  
+B) Making coffee manually  
+C) Weather prediction  
 D) Fraud detection
 
 ---

@@ -12,17 +12,17 @@
 
 ### Question 1 (5 points)
 What is a knowledge graph?
-- A) A visualization tool
-- B) A way to represent facts and relationships
+- A) A way to represent facts and relationships
+- B) A visualization tool
 - C) A database
 - D) A search algorithm
 
 ### Question 2 (5 points)
 In a knowledge graph, nodes represent:
 - A) Relationships
-- B) Entities or concepts
+- B) Facts
 - C) Rules
-- D) Facts
+- D) Entities or concepts
 
 ### Question 3 (5 points)
 In a knowledge graph, edges represent:
@@ -51,8 +51,8 @@ Which library is commonly used for knowledge graphs in Python?
 ### Question 6 (5 points)
 What is a rule in a rule-based system?
 - A) A fact
-- B) A condition-action pair (IF-THEN)
-- C) A node
+- B) A node
+- C) A condition-action pair (IF-THEN)
 - D) An edge
 
 ### Question 7 (5 points)
@@ -64,8 +64,8 @@ Forward chaining:
 
 ### Question 8 (5 points)
 Backward chaining:
-- A) Starts from facts and applies rules forward
-- B) Starts from goals and works backward
+- A) Starts from goals and works backward
+- B) Starts from facts and applies rules forward
 - C) Works randomly
 - D) Doesn't use rules
 
@@ -84,15 +84,15 @@ What can we conclude?
 ### Question 10 (5 points)
 What is a semantic network?
 - A) A type of knowledge graph
-- B) A way to represent concepts and their relationships
+- B) A database
 - C) A neural network
-- D) A database
+- D) A way to represent concepts and their relationships
 
 ### Question 11 (5 points)
 In semantic networks, inheritance means:
-- A) Passing properties from parent to child
+- A) Deleting nodes
 - B) Creating new nodes
-- C) Deleting nodes
+- C) Passing properties from parent to child
 - D) Changing relationships
 
 ### Question 12 (10 points)
@@ -104,8 +104,8 @@ Draw a semantic network showing:
 
 ### Question 13 (5 points)
 What Python concept is similar to inheritance in semantic networks?
-- A) Lists
-- B) Classes and inheritance
+- A) Classes and inheritance
+- B) Lists
 - C) Functions
 - D) Dictionaries
 

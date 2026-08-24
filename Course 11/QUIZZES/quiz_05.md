@@ -15,17 +15,17 @@
 **Model drift** in production occurs when:
 
 a) The model is too large
-b) The statistical properties of input data or the input-output relationship change over time, causing performance degradation
+b) The server runs out of memory
 c) The model is updated too frequently
-d) The server runs out of memory
+d) The statistical properties of input data or the input-output relationship change over time, causing performance degradation
 
 ---
 
 ### Question 2 (10 points)
 **MLflow** is used primarily for:
 
-a) Deploying Docker containers
-b) Experiment tracking — logging parameters, metrics, and artifacts for each run, enabling comparison and reproducibility
+a) Experiment tracking — logging parameters, metrics, and artifacts for each run, enabling comparison and reproducibility
+b) Deploying Docker containers
 c) Data preprocessing
 d) Writing Kubernetes manifests
 
@@ -45,8 +45,8 @@ d) A/B testing is only for web UI design
 **Canary deployment** releases a new model version by:
 
 a) Immediately replacing the old model
-b) Gradually routing a small percentage (e.g., 5-10%) of traffic to the new version, monitoring for issues before full rollout
-c) Running both models simultaneously for all users
+b) Running both models simultaneously for all users
+c) Gradually routing a small percentage (e.g., 5-10%) of traffic to the new version, monitoring for issues before full rollout
 d) Only deploying to development environments
 
 ---

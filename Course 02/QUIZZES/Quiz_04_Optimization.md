@@ -12,10 +12,10 @@
 
 ### Question 1 (5 points)
 What is optimization?
-- A) Finding the best solution
+- A) Visualizing data
 - B) Finding any solution
 - C) Sorting data
-- D) Visualizing data
+- D) Finding the best solution
 
 ### Question 2 (5 points)
 What is an objective function?
@@ -38,8 +38,8 @@ Give an example of an optimization problem (real-world or mathematical).
 ### Question 4 (5 points)
 Gradient descent is used to:
 - A) Find maximum values
-- B) Find minimum values
-- C) Sort data
+- B) Sort data
+- C) Find minimum values
 - D) Visualize functions
 
 ### Question 5 (5 points)
@@ -70,22 +70,22 @@ What does the gradient represent?
 ### Question 8 (5 points)
 Genetic algorithms are inspired by:
 - A) Physics
-- B) Biology (evolution)
-- C) Mathematics
+- B) Mathematics
+- C) Biology (evolution)
 - D) Chemistry
 
 ### Question 9 (5 points)
 In genetic algorithms, what is a chromosome?
-- A) A solution representation
+- A) A parameter
 - B) A constraint
 - C) A function
-- D) A parameter
+- D) A solution representation
 
 ### Question 10 (5 points)
 What is crossover in genetic algorithms?
-- A) Combining parts of two solutions
+- A) Selecting best solutions
 - B) Mutating a solution
-- C) Selecting best solutions
+- C) Combining parts of two solutions
 - D) Initializing population
 
 ### Question 11 (10 points)
@@ -104,17 +104,17 @@ List the main steps of a genetic algorithm.
 
 ### Question 12 (5 points)
 Simulated annealing is inspired by:
-- A) Biology
-- B) Physics (metal cooling)
+- A) Physics (metal cooling)
+- B) Biology
 - C) Mathematics
 - D) Chemistry
 
 ### Question 13 (5 points)
 What is the temperature parameter in simulated annealing?
-- A) Controls how often we accept worse solutions
+- A) The number of iterations
 - B) The current solution value
 - C) The best solution value
-- D) The number of iterations
+- D) Controls how often we accept worse solutions
 
 ### Question 14 (5 points)
 As temperature decreases in simulated annealing:
@@ -129,8 +129,8 @@ As temperature decreases in simulated annealing:
 
 ### Question 15 (5 points)
 Which SciPy module is used for optimization?
-- A) `scipy.stats`
-- B) `scipy.optimize`
+- A) `scipy.optimize`
+- B) `scipy.stats`
 - C) `scipy.linalg`
 - D) `scipy.spatial`
 

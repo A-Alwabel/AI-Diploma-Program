@@ -20,9 +20,9 @@ What is a node in a graph?
 ### Question 2 (5 points)
 What is an edge in a graph?
 - A) A node
-- B) A connection between two nodes
+- B) A weight
 - C) A path
-- D) A weight
+- D) A connection between two nodes
 
 ### Question 3 (10 points)
 Draw a simple graph with 4 nodes (A, B, C, D) where:
@@ -37,14 +37,14 @@ Draw a simple graph with 4 nodes (A, B, C, D) where:
 ### Question 4 (5 points)
 What data structure does BFS use?
 - A) Stack (LIFO)
-- B) Queue (FIFO)
-- C) Priority Queue
+- B) Priority Queue
+- C) Queue (FIFO)
 - D) List
 
 ### Question 5 (5 points)
 BFS finds:
-- A) The deepest path first
-- B) The shortest path (in unweighted graphs)
+- A) The shortest path (in unweighted graphs)
+- B) The deepest path first
 - C) The longest path
 - D) Any path
 
@@ -60,9 +60,9 @@ Show the order nodes are visited.
 ### Question 7 (5 points)
 What is the time complexity of BFS?
 - A) O(V)
-- B) O(V + E)
+- B) O(E)
 - C) O(V²)
-- D) O(E)
+- D) O(V + E)
 
 ---
 
@@ -70,15 +70,15 @@ What is the time complexity of BFS?
 
 ### Question 8 (5 points)
 What data structure does DFS use?
-- A) Stack (LIFO)
-- B) Queue (FIFO)
+- A) Queue (FIFO)
+- B) Stack (LIFO)
 - C) Priority Queue
 - D) List
 
 ### Question 9 (5 points)
 DFS explores:
-- A) Level by level
-- B) As deep as possible first
+- A) As deep as possible first
+- B) Level by level
 - C) Randomly
 - D) Shortest paths first
 
@@ -98,30 +98,30 @@ Show the order nodes are visited (assume alphabetical order for neighbors).
 ### Question 11 (5 points)
 What makes A* different from Dijkstra's algorithm?
 - A) It uses a stack
-- B) It uses a heuristic function
-- C) It doesn't use a priority queue
+- B) It doesn't use a priority queue
+- C) It uses a heuristic function
 - D) It's slower
 
 ### Question 12 (5 points)
 The A* algorithm uses which formula for node evaluation?
-- A) f(n) = g(n)
+- A) f(n) = g(n) + h(n)
 - B) f(n) = h(n)
-- C) f(n) = g(n) + h(n)
+- C) f(n) = g(n)
 - D) f(n) = g(n) - h(n)
 
 ### Question 13 (5 points)
 What does g(n) represent in A*?
 - A) Heuristic cost
-- B) Actual cost from start to node n
-- C) Estimated cost to goal
+- B) Estimated cost to goal
+- C) Actual cost from start to node n
 - D) Total cost
 
 ### Question 14 (5 points)
 What does h(n) represent in A*?
 - A) Actual cost from start
-- B) Estimated cost from node n to goal
+- B) Path length
 - C) Total cost
-- D) Path length
+- D) Estimated cost from node n to goal
 
 ---
 
@@ -144,9 +144,9 @@ What data structure does Dijkstra's algorithm use?
 ### Question 17 (5 points)
 Dijkstra's algorithm works on:
 - A) Only unweighted graphs
-- B) Only weighted graphs with non-negative weights
+- B) Only directed graphs
 - C) Any graph
-- D) Only directed graphs
+- D) Only weighted graphs with non-negative weights
 
 ---
 

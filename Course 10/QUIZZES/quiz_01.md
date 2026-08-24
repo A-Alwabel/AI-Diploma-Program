@@ -15,17 +15,17 @@
 What is the fundamental difference between **generative** and **discriminative** models?
 
 a) Generative models are always larger
-b) Generative models learn the joint distribution P(X) and can generate new samples; discriminative models learn P(Y|X) for classification
+b) There is no difference
 c) Discriminative models can generate data
-d) There is no difference
+d) Generative models learn the joint distribution P(X) and can generate new samples; discriminative models learn P(Y|X) for classification
 
 ---
 
 ### Question 2 (10 points)
 In a GAN, what happens during **adversarial training**?
 
-a) Only the generator is trained
-b) The generator tries to produce realistic samples to fool the discriminator; the discriminator tries to tell real from fake — both improve through competition
+a) The generator tries to produce realistic samples to fool the discriminator; the discriminator tries to tell real from fake — both improve through competition
+b) Only the generator is trained
 c) The discriminator generates samples
 d) Both networks use the same loss
 
@@ -35,8 +35,8 @@ d) Both networks use the same loss
 The **reparameterization trick** in VAEs allows:
 
 a) Improving image resolution
-b) Gradients to flow through the sampling operation by writing z = mu + eps * sigma (eps ~ N(0,1)), enabling backpropagation through the latent variable
-c) Reducing model size
+b) Reducing model size
+c) Gradients to flow through the sampling operation by writing z = mu + eps * sigma (eps ~ N(0,1)), enabling backpropagation through the latent variable
 d) Replacing the KL divergence term
 
 ---

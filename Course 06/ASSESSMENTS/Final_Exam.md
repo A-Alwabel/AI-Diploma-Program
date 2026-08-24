@@ -12,8 +12,8 @@
 ### Question 1 (5 points)
 What is AI bias?
 
-A) Only statistical bias  
-B) Systematic unfairness in AI systems affecting certain groups  
+A) Systematic unfairness in AI systems affecting certain groups  
+B) Only statistical bias  
 C) Only measurement error  
 D) Only sampling bias
 
@@ -23,8 +23,8 @@ D) Only sampling bias
 What does fairness in AI mean?
 
 A) Only equal treatment  
-B) Fair treatment across different groups, considering context  
-C) Only same outcomes  
+B) Only same outcomes  
+C) Fair treatment across different groups, considering context  
 D) Only same inputs
 
 ---
@@ -33,9 +33,9 @@ D) Only same inputs
 What is differential privacy?
 
 A) Only encryption  
-B) Mathematical framework for privacy-preserving data analysis  
+B) Only access control
 C) Only anonymization  
-D) Only access control
+D) Mathematical framework for privacy-preserving data analysis  
 
 ---
 
@@ -53,8 +53,8 @@ D) Only size
 What is GDPR?
 
 A) Only a law  
-B) European data protection regulation  
-C) Only a standard  
+B) Only a standard  
+C) European data protection regulation  
 D) Only a guideline
 
 ---
@@ -62,8 +62,8 @@ D) Only a guideline
 ### Question 6 (5 points)
 What is algorithmic accountability?
 
-A) Only responsibility  
-B) Responsibility for AI system outcomes and decisions  
+A) Responsibility for AI system outcomes and decisions  
+B) Only responsibility  
 C) Only transparency  
 D) Only fairness
 

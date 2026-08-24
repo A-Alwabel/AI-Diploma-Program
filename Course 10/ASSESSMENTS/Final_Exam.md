@@ -12,10 +12,10 @@
 ### Question 1 (5 points)
 **CLO1:** What is the main difference between generative and discriminative models?
 
-A) Generative models learn P(X|Y), discriminative learn P(Y|X)  
+A) Discriminative generate data
 B) No difference  
 C) Generative are always better  
-D) Discriminative generate data
+D) Generative models learn P(X|Y), discriminative learn P(Y|X)  
 
 ---
 
@@ -33,8 +33,8 @@ D) Global Adversarial Network
 **CLO3:** What is the key component of VAEs that enables generation?
 
 A) Only encoder  
-B) Latent space with probabilistic sampling  
-C) Only decoder  
+B) Only decoder  
+C) Latent space with probabilistic sampling  
 D) Only loss function
 
 ---
@@ -42,8 +42,8 @@ D) Only loss function
 ### Question 4 (5 points)
 **CLO4:** Which metric is commonly used to evaluate generative models?
 
-A) Only accuracy  
-B) FID, IS, reconstruction error  
+A) FID, IS, reconstruction error  
+B) Only accuracy  
 C) Only precision  
 D) Only recall
 
@@ -52,8 +52,8 @@ D) Only recall
 ### Question 5 (5 points)
 **CLO5:** What is a real-world application of generative AI?
 
-A) Only image generation  
-B) Image generation, text generation, music generation, data augmentation  
+A) Image generation, text generation, music generation, data augmentation  
+B) Only image generation  
 C) Only text generation  
 D) Only music generation
 
@@ -63,8 +63,8 @@ D) Only music generation
 **CLO6:** What is a major ethical concern with generative AI?
 
 A) Only bias  
-B) Deepfakes, misinformation, bias, intellectual property  
-C) Only privacy  
+B) Only privacy  
+C) Deepfakes, misinformation, bias, intellectual property  
 D) No concerns
 
 ---

@@ -24,8 +24,8 @@ d) Encrypting text before sending it to a model
 ### Question 2 (10 points)
 You lowercase a paragraph and split it on whitespace, and your frequency table counts `language.` and `language` as **two different words**. Which preprocessing step fixes this?
 
-a) Removing stop words  
-b) Removing punctuation (normalization) before tokenizing and counting  
+a) Removing punctuation (normalization) before tokenizing and counting  
+b) Removing stop words  
 c) Splitting the text into sentences first  
 d) Counting a larger corpus  
 
@@ -36,8 +36,8 @@ What are **stop words**, and why are they often removed before frequency analysi
 
 a) Words that end a sentence; removed to shorten documents  
 b) Misspelled words; removed because models cannot process them  
-c) Very frequent function words (e.g. "the", "is", "and") that carry little topical content; removing them reduces noise in counting tasks  
-d) Rare technical terms; removed because they inflate the vocabulary  
+c) Rare technical terms; removed because they inflate the vocabulary  
+d) Very frequent function words (e.g. "the", "is", "and") that carry little topical content; removing them reduces noise in counting tasks  
 
 ---
 
@@ -45,8 +45,8 @@ d) Rare technical terms; removed because they inflate the vocabulary
 Why do we usually **lowercase** text before counting word frequencies?
 
 a) Models can only read lowercase letters  
-b) So that "The" and "the" are normalized to the same token and counted once  
-c) It removes punctuation automatically  
+b) It removes punctuation automatically  
+c) So that "The" and "the" are normalized to the same token and counted once  
 d) It removes stop words automatically  
 
 ---

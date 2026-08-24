@@ -2,7 +2,7 @@
 
 ## Instructions
 - **Time Limit**: 45 minutes
-- **Total Points**: 75 points
+- **Total Points**: 95 points (19 questions x 5 points)
 - **Format**: Multiple choice, short answer, code completion
 - **Allowed Resources**: None (closed book)
 
@@ -29,11 +29,11 @@ Which algorithm uses a sigmoid function to output probabilities?
 ---
 
 ### Question 3 (5 points)
-What is the main advantage of Decision Trees?
-- A) They are always the most accurate
-- B) They are easy to interpret and visualize
-- C) They work best with large datasets
-- D) They don't require feature scaling
+An airport security team must be able to explain to a passenger exactly why the model flagged them. Which property of Decision Trees makes them suitable for such stakeholder-facing decisions?
+- A) They are always the most accurate classifier
+- B) They produce explicit if-then rules that can be read and visualized
+- C) They train without requiring feature scaling
+- D) They never overfit the training data
 
 ---
 
@@ -75,7 +75,7 @@ How does K-Nearest Neighbors (KNN) classify a new data point?
 
 ## Part 2: Evaluation Metrics (20 points)
 
-### Question 5 (5 points)
+### Question 8 (5 points)
 What does accuracy measure?
 - A) The proportion of correctly classified instances
 - B) The proportion of positive predictions that are correct
@@ -84,7 +84,7 @@ What does accuracy measure?
 
 ---
 
-### Question 6 (5 points)
+### Question 9 (5 points)
 What is precision?
 - A) The proportion of correctly classified instances
 - B) The proportion of positive predictions that are correct
@@ -93,7 +93,7 @@ What is precision?
 
 ---
 
-### Question 7 (5 points)
+### Question 10 (5 points)
 What is recall?
 - A) The proportion of correctly classified instances
 - B) The proportion of positive predictions that are correct
@@ -102,7 +102,7 @@ What is recall?
 
 ---
 
-### Question 8 (5 points)
+### Question 11 (5 points)
 What does F1-score represent?
 - A) The proportion of correctly classified instances
 - B) The proportion of positive predictions that are correct
@@ -113,7 +113,7 @@ What does F1-score represent?
 
 ## Part 3: Confusion Matrix and ROC (20 points)
 
-### Question 9 (5 points)
+### Question 12 (5 points)
 In a confusion matrix, what does True Positive (TP) represent?
 - A) Correctly predicted negative cases
 - B) Correctly predicted positive cases
@@ -122,7 +122,7 @@ In a confusion matrix, what does True Positive (TP) represent?
 
 ---
 
-### Question 10 (5 points)
+### Question 13 (5 points)
 What does False Positive (FP) represent in a confusion matrix?
 - A) Model predicted Class 1, but actual is Class 0 (false alarm)
 - B) Model predicted Class 0, but actual is Class 1 (missed detection)
@@ -131,7 +131,7 @@ What does False Positive (FP) represent in a confusion matrix?
 
 ---
 
-### Question 11 (5 points)
+### Question 14 (5 points)
 What does False Negative (FN) represent in a confusion matrix?
 - A) Model predicted Class 1, but actual is Class 0 (false alarm)
 - B) Model predicted Class 0, but actual is Class 1 (missed detection)
@@ -140,7 +140,7 @@ What does False Negative (FN) represent in a confusion matrix?
 
 ---
 
-### Question 12 (5 points)
+### Question 15 (5 points)
 What does AUC (Area Under Curve) measure in ROC analysis?
 - A) The accuracy of the model
 - B) The model's ability to distinguish between classes
@@ -151,7 +151,7 @@ What does AUC (Area Under Curve) measure in ROC analysis?
 
 ## Part 4: Advanced Topics (20 points)
 
-### Question 13 (5 points)
+### Question 16 (5 points)
 When are classification metrics (accuracy, precision, recall) calculated?
 - A) Before training the model
 - B) During training
@@ -160,7 +160,7 @@ When are classification metrics (accuracy, precision, recall) calculated?
 
 ---
 
-### Question 14 (5 points)
+### Question 17 (5 points)
 What is the difference between `.predict()` and `.predict_proba()` in logistic regression?
 - A) `.predict()` returns probabilities, `.predict_proba()` returns classes
 - B) `.predict()` returns classes (0 or 1), `.predict_proba()` returns probabilities (0-1)
@@ -169,7 +169,7 @@ What is the difference between `.predict()` and `.predict_proba()` in logistic r
 
 ---
 
-### Question 15 (5 points)
+### Question 18 (5 points)
 What is class imbalance in classification?
 - A) When classes have equal number of samples
 - B) When one class has significantly more samples than another
@@ -178,7 +178,7 @@ What is class imbalance in classification?
 
 ---
 
-### Question 16 (5 points)
+### Question 19 (5 points)
 How can you handle class imbalance in logistic regression?
 - A) Use `class_weight='balanced'` parameter
 - B) Remove the minority class
@@ -187,4 +187,8 @@ How can you handle class imbalance in logistic regression?
 
 ---
 
-**Good luck!** 🍀  
+**Good luck!** 🍀
+
+---
+
+> Answers and rubric: released by your instructor.

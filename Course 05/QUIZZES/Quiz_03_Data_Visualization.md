@@ -9,16 +9,16 @@
 ### Question 1 (2 points)
 Which library is best for creating static statistical plots?
 - A) Plotly
-- B) Matplotlib
-- C) Seaborn
+- B) Seaborn
+- C) Matplotlib
 - D) Pandas
 
 ---
 
 ### Question 2 (2 points)
 What is the main advantage of Plotly over Matplotlib?
-- A) Faster rendering
-- B) Interactive visualizations
+- A) Interactive visualizations
+- B) Faster rendering
 - C) Better default styling
 - D) Smaller file size
 
@@ -27,17 +27,17 @@ What is the main advantage of Plotly over Matplotlib?
 ### Question 3 (2 points)
 What does `sns.histplot()` create?
 - A) A bar chart
-- B) A histogram showing distribution
+- B) A line plot
 - C) A scatter plot
-- D) A line plot
+- D) A histogram showing distribution
 
 ---
 
 ### Question 4 (2 points)
 Which plot is best for showing relationships between two continuous variables?
 - A) Bar chart
-- B) Scatter plot
-- C) Pie chart
+- B) Pie chart
+- C) Scatter plot
 - D) Histogram
 
 ---
@@ -45,9 +45,9 @@ Which plot is best for showing relationships between two continuous variables?
 ### Question 5 (2 points)
 What does `plt.subplots()` return?
 - A) A single figure
-- B) A figure and axes objects
+- B) Nothing
 - C) A list of plots
-- D) Nothing
+- D) A figure and axes objects
 
 ---
 

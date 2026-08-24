@@ -23,8 +23,8 @@ D) Only evaluating models
 **CLO2:** Which format is best for cross-platform model deployment?
 
 A) Only Pickle  
-B) ONNX format  
-C) Only JSON  
+B) Only JSON  
+C) ONNX format  
 D) Only CSV
 
 ---
@@ -32,8 +32,8 @@ D) Only CSV
 ### Question 3 (5 points)
 **CLO3:** What is the main advantage of REST APIs for model serving?
 
-A) Only speed  
-B) Standardized interface, language-agnostic, scalable  
+A) Standardized interface, language-agnostic, scalable  
+B) Only speed  
 C) Only simplicity  
 D) Only security
 
@@ -43,9 +43,9 @@ D) Only security
 **CLO4:** What does Docker provide for ML deployment?
 
 A) Only version control  
-B) Containerization for consistent environments  
+B) Only monitoring
 C) Only cloud deployment  
-D) Only monitoring
+D) Containerization for consistent environments  
 
 ---
 
@@ -63,8 +63,8 @@ D) Only manual processes
 **CLO6:** What should you monitor in production ML systems?
 
 A) Only accuracy  
-B) Performance metrics, data drift, model drift, resource usage  
-C) Only latency  
+B) Only latency  
+C) Performance metrics, data drift, model drift, resource usage  
 D) Only throughput
 
 ---

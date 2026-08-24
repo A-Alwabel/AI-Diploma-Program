@@ -25,8 +25,8 @@ d) Images can only run locally
 A **Kubernetes Pod** is:
 
 a) A node in the cluster
-b) The smallest deployable unit in Kubernetes, containing one or more containers that share networking and storage
-c) A virtual machine
+b) A virtual machine
+c) The smallest deployable unit in Kubernetes, containing one or more containers that share networking and storage
 d) A Docker registry
 
 ---
@@ -34,8 +34,8 @@ d) A Docker registry
 ### Question 3 (10 points)
 **Horizontal scaling** in Kubernetes means:
 
-a) Making each node faster (bigger CPU/RAM)
-b) Adding more replica Pods (container instances) to distribute load
+a) Adding more replica Pods (container instances) to distribute load
+b) Making each node faster (bigger CPU/RAM)
 c) Increasing the model's hidden layer size
 d) Adding more storage
 
@@ -45,9 +45,9 @@ d) Adding more storage
 In a **CI/CD pipeline for ML**, "CD" (Continuous Deployment) automates:
 
 a) Collecting training data
-b) Testing, building the Docker image, pushing to registry, and deploying the model when code passes all tests
+b) Only monitoring
 c) Only model training
-d) Only monitoring
+d) Testing, building the Docker image, pushing to registry, and deploying the model when code passes all tests
 
 ---
 
