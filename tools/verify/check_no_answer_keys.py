@@ -37,6 +37,10 @@ def main():
             m = MARKER.search(txt)
             if m:
                 bad.append((f, f"inline marker: {m.group(0)[:40]!r}"))
+            # An odd number of ``` fences means one opener was lost (bilingual strips ate a few),
+            # which leaves the solution code below a question visible to students.
+            if txt.count("```") % 2:
+                bad.append((f, "unbalanced code fences — a solution block may be exposed"))
     if bad:
         print(f"ANSWER-KEY GATE: {len(bad)} violation(s)")
         for f, why in bad:
