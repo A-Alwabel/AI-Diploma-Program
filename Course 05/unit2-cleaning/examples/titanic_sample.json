@@ -1,0 +1,186 @@
+{
+  "source": "titanic.csv",
+  "record_count": 20,
+  "passengers": [
+    {
+      "id": 1,
+      "name": "Braund, Mr. Owen Harris",
+      "ticket": {
+        "pclass": 3,
+        "fare": 7.25
+      },
+      "age": 22.0
+    },
+    {
+      "id": 2,
+      "name": "Cumings, Mrs. John Bradley (Florence Briggs Thayer)",
+      "ticket": {
+        "pclass": 1,
+        "fare": 71.2833
+      },
+      "age": 38.0
+    },
+    {
+      "id": 3,
+      "name": "Heikkinen, Miss. Laina",
+      "ticket": {
+        "pclass": 3,
+        "fare": 7.925
+      },
+      "age": 26.0
+    },
+    {
+      "id": 4,
+      "name": "Futrelle, Mrs. Jacques Heath (Lily May Peel)",
+      "ticket": {
+        "pclass": 1,
+        "fare": 53.1
+      },
+      "age": 35.0
+    },
+    {
+      "id": 5,
+      "name": "Allen, Mr. William Henry",
+      "ticket": {
+        "pclass": 3,
+        "fare": 8.05
+      },
+      "age": 35.0
+    },
+    {
+      "id": 6,
+      "name": "Moran, Mr. James",
+      "ticket": {
+        "pclass": 3,
+        "fare": 8.4583
+      },
+      "age": null
+    },
+    {
+      "id": 7,
+      "name": "McCarthy, Mr. Timothy J",
+      "ticket": {
+        "pclass": 1,
+        "fare": 51.8625
+      },
+      "age": 54.0
+    },
+    {
+      "id": 8,
+      "name": "Palsson, Master. Gosta Leonard",
+      "ticket": {
+        "pclass": 3,
+        "fare": 21.075
+      },
+      "age": 2.0
+    },
+    {
+      "id": 9,
+      "name": "Johnson, Mrs. Oscar W (Elisabeth Vilhelmina Berg)",
+      "ticket": {
+        "pclass": 3,
+        "fare": 11.1333
+      },
+      "age": 27.0
+    },
+    {
+      "id": 10,
+      "name": "Nasser, Mrs. Nicholas (Adele Achem)",
+      "ticket": {
+        "pclass": 2,
+        "fare": 30.0708
+      },
+      "age": 14.0
+    },
+    {
+      "id": 11,
+      "name": "Sandstrom, Miss. Marguerite Rut",
+      "ticket": {
+        "pclass": 3,
+        "fare": 16.7
+      },
+      "age": 4.0
+    },
+    {
+      "id": 12,
+      "name": "Bonnell, Miss. Elizabeth",
+      "ticket": {
+        "pclass": 1,
+        "fare": 26.55
+      },
+      "age": 58.0
+    },
+    {
+      "id": 13,
+      "name": "Saundercock, Mr. William Henry",
+      "ticket": {
+        "pclass": 3,
+        "fare": 8.05
+      },
+      "age": 20.0
+    },
+    {
+      "id": 14,
+      "name": "Andersson, Mr. Anders Johan",
+      "ticket": {
+        "pclass": 3,
+        "fare": 31.275
+      },
+      "age": 39.0
+    },
+    {
+      "id": 15,
+      "name": "Vestrom, Miss. Hulda Amanda Adolfina",
+      "ticket": {
+        "pclass": 3,
+        "fare": 7.8542
+      },
+      "age": 14.0
+    },
+    {
+      "id": 16,
+      "name": "Hewlett, Mrs. (Mary D Kingcome) ",
+      "ticket": {
+        "pclass": 2,
+        "fare": 16.0
+      },
+      "age": 55.0
+    },
+    {
+      "id": 17,
+      "name": "Rice, Master. Eugene",
+      "ticket": {
+        "pclass": 3,
+        "fare": 29.125
+      },
+      "age": 2.0
+    },
+    {
+      "id": 18,
+      "name": "Williams, Mr. Charles Eugene",
+      "ticket": {
+        "pclass": 2,
+        "fare": 13.0
+      },
+      "age": null
+    },
+    {
+      "id": 19,
+      "name": "Vander Planke, Mrs. Julius (Emelia Maria Vandemoortele)",
+      "ticket": {
+        "pclass": 3,
+        "fare": 18.0
+      },
+      "age": 31.0
+    },
+    {
+      "id": 20,
+      "name": "Masselmani, Mrs. Fatima",
+      "ticket": {
+        "pclass": 3,
+        "fare": 7.225
+      },
+      "age": null
+    }
+  ]
+}

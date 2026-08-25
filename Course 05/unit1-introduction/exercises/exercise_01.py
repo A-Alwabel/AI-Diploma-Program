@@ -9,7 +9,7 @@ Instructions:
 4. Create visualizations
 5. Compare CPU (pandas) operations (optional: compare with cuDF if available)
 
-Dataset: Student performance data
+Dataset: the Titanic passenger manifest (real data, real missing values)
 """
 
 import pandas as pd
@@ -21,22 +21,14 @@ import seaborn as sns
 plt.rcParams['axes.unicode_minus'] = False
 sns.set_style("whitegrid")
 
-# Sample dataset - Student Performance Data
-# البيانات النموذجية - بيانات أداء الطلاب
-np.random.seed(42)
-data = {
-    'student_id': range(1, 101),
-    'student_name': [f'Student_{i}' for i in range(1, 101)],
-    'age': np.random.randint(18, 25, 100),
-    'math_score': np.random.uniform(50, 100, 100),
-    'science_score': np.random.uniform(50, 100, 100),
-    'english_score': np.random.uniform(50, 100, 100),
-    'attendance': np.random.uniform(60, 100, 100),
-    'study_hours': np.random.uniform(5, 40, 100),
-    'department': np.random.choice(['CS', 'Engineering', 'Business', 'Arts', 'Science'], 100)
-}
+# Real dataset - the Titanic passenger manifest
+# 891 real passengers; Age, Cabin and Embarked have genuine gaps in the record.
+DATA_DIR = '../../../Course 04/datasets/raw/'
+df = pd.read_csv(DATA_DIR + 'titanic.csv')
 
-df = pd.DataFrame(data)
+# One derived column you will need below:
+# family_size = siblings/spouses + parents/children + the passenger themselves.
+df['family_size'] = df['SibSp'] + df['Parch'] + 1
 
 # TODO: Write your code here
 # TODO: اكتب الكود الخاص بك هنا
@@ -58,9 +50,9 @@ print("Task 2: Statistical Analysis")
 print("المهمة 2: التحليل الإحصائي")
 print("=" * 60)
 # Your code here...
-# - Calculate mean, median, std for each score column
-# - Find correlation between scores
-# - Calculate average scores by department
+# - Calculate mean, median, std for Age, Fare and family_size
+# - Find correlation between Age, Fare, Pclass and Survived
+# - Calculate average Fare and survival rate by Pclass
 
 # Task 3: Data filtering and selection
 print("\n" + "=" * 60)
@@ -68,9 +60,9 @@ print("Task 3: Data Filtering")
 print("المهمة 3: تصفية البيانات")
 print("=" * 60)
 # Your code here...
-# - Filter students with math_score > 80
-# - Select students from 'CS' department
-# - Find students with attendance > 90
+# - Filter passengers with Fare > 100
+# - Select passengers who boarded at Southampton (Embarked == 'S')
+# - Find passengers older than 60, and count those with no recorded Age
 
 # Task 4: Create visualizations
 print("\n" + "=" * 60)
@@ -78,10 +70,10 @@ print("Task 4: Create Visualizations")
 print("المهمة 4: إنشاء التصورات")
 print("=" * 60)
 # Your code here...
-# - Create a histogram of math scores
-# - Create a scatter plot: study_hours vs math_score
-# - Create a bar chart: average score by department
-# - Create a correlation heatmap
+# - Create a histogram of Age (remember .dropna())
+# - Create a scatter plot: Age vs Fare, coloured by Survived
+# - Create a bar chart: survival rate by Pclass
+# - Create a correlation heatmap of the numeric columns
 
 # Task 5: Data aggregation
 print("\n" + "=" * 60)
@@ -89,9 +81,9 @@ print("Task 5: Data Aggregation")
 print("المهمة 5: تجميع البيانات")
 print("=" * 60)
 # Your code here...
-# - Group by department and calculate mean scores
-# - Find department with highest average math score
-# - Calculate total study hours per department
+# - Group by Pclass and calculate mean Age, Fare and Survived
+# - Find which Pclass had the highest survival rate
+# - Group by Sex and Pclass together and interpret the result
 
 print("\n" + "=" * 60)
 print("Exercise 1 Complete!")
