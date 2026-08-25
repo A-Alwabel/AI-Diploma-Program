@@ -4,13 +4,21 @@ Unit hours: 17 total (3 theory + 14 practical)
 
 You evaluate your project systematically and refine it: run experiments, compare against baselines, analyze failure cases, and iterate on models and data.
 
+## Builds on (AIAT 111-125)
+
+**Builds on:** AIAT 114 U2/U3 (bias-variance, learning curves, classification metrics) · AIAT 116 U2/U4 (per-subgroup metrics, SHAP) · AIAT 113 U5 (confidence intervals — is the improvement real?) · AIAT 125 U5 (A/B and canary comparison).
+
+Every artifact you reuse goes in **section 6, the Prior Work Inventory**, of [`TEMPLATES/project_proposal_template.md`](../TEMPLATES/project_proposal_template.md) — scored at gate 1 and re-checked at the design review. It is this course's **CLO2** evidence: AIAT 126 integrates the diploma, it does not re-teach it.
+
 ## Prerequisites
 
 - Unit 3: Implementation and Development of the Project Idea (a first working version of your project)
 
 ## Examples (work through in order)
 
-1. [examples/01_model_evaluation_optimization.ipynb](examples/01_model_evaluation_optimization.ipynb) - Running experiments and collecting metrics, comparing against baseline models, analyzing failure cases, visualizing results (confusion matrices, curves), and iterative improvement.
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+1. **[CORE]** [examples/01_model_evaluation_optimization.ipynb](examples/01_model_evaluation_optimization.ipynb) - Running experiments and collecting metrics, comparing against baseline models, analyzing failure cases, visualizing results (confusion matrices, curves), and iterative improvement.
 
 ## Exercise
 

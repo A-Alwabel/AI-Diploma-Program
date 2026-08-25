@@ -19,10 +19,12 @@ search algorithms (BFS, DFS, A*).
 
 ## Notebooks (work in this order)
 
-1. `examples/01_python_libraries_for_ai.ipynb` - Python libraries for AI:
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+1. **[CORE]** `examples/01_python_libraries_for_ai.ipynb` - Python libraries for AI:
    NumPy, pandas, and supporting libraries, with data loading and a simple ML
    workflow.
-2. `examples/02_search_algorithms.ipynb` - Implement and compare BFS, DFS,
+2. **[CORE]** `examples/02_search_algorithms.ipynb` - Implement and compare BFS, DFS,
    and A* on graphs and problem spaces.
 
 ## Exercise

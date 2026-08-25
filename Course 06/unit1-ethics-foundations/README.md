@@ -19,9 +19,11 @@ By the end of this unit, you will be able to:
 
 ## Examples (work in this order)
 
-1. [examples/01_ethical_frameworks.ipynb](examples/01_ethical_frameworks.ipynb) — Utilitarianism, deontology, and virtue ethics, compared and applied to AI scenarios.
-2. [examples/02_ethical_decision_making.ipynb](examples/02_ethical_decision_making.ipynb) — A step-by-step ethical decision-making framework for AI design choices.
-3. [examples/03_case_study_analysis.ipynb](examples/03_case_study_analysis.ipynb) — Case study analysis of the COMPAS recidivism algorithm and its ethical issues.
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+1. **[CORE]** [examples/01_ethical_frameworks.ipynb](examples/01_ethical_frameworks.ipynb) — Utilitarianism, deontology, and virtue ethics, compared and applied to AI scenarios.
+2. **[HOMEWORK]** [examples/02_ethical_decision_making.ipynb](examples/02_ethical_decision_making.ipynb) — A step-by-step ethical decision-making framework for AI design choices.
+3. **[CORE]** [examples/03_case_study_analysis.ipynb](examples/03_case_study_analysis.ipynb) — Case study analysis of the COMPAS recidivism algorithm and its ethical issues.
 
 ## Exercise
 

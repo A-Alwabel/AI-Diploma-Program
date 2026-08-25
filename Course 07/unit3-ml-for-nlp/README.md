@@ -9,8 +9,10 @@ Applying classical machine learning to text: extracting features (Bag of Words, 
 
 ## Examples (run in order)
 
-1. `examples/01_text_classification.ipynb` — Build TF-IDF features, train and compare Naive Bayes and Logistic Regression classifiers, and see (measured) why tiny test sets mislead.
-2. `examples/02_named_entity_recognition.ipynb` — Named entity recognition and POS tagging with spaCy, plus an entity-type analysis and visualization.
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+1. **[CORE]** `examples/01_text_classification.ipynb` — Build TF-IDF features, train and compare Naive Bayes and Logistic Regression classifiers, and see (measured) why tiny test sets mislead.
+2. **[CORE]** `examples/02_named_entity_recognition.ipynb` — Named entity recognition and POS tagging with spaCy, plus an entity-type analysis and visualization.
 
 ## Exercise
 

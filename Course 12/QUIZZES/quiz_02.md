@@ -4,7 +4,7 @@
 **Time Limit:** 45 minutes  
 **Total Points:** 110 points (100 required; Q8 application may count as bonus or toward total)  
 **Covers:** Unit 2 (the five questions a system design document answers: components, data flow, model selection with justification and alternatives, data formats and storage, risks and dependencies).  
-**Concepts from:** Unit 2 exercise 01 (system design) — its design primer and the worked example design document for a customer-review sentiment web app. The Unit 2 lesson notebook is still a placeholder, so this quiz examines only the primer and worked example.  
+**Concepts from:** Unit 2 exercise 01 (system design) — its design primer and the worked example design document for a customer-review sentiment web app. This quiz examines **only** the primer and that worked example. The Unit 2 lesson notebook goes further (diagrams generated from the component list, selection matrices, measured baselines, scalability measurement); none of that is examined here, so answer from the primer.  
 **Answer key:** released by your instructor.
 
 ---

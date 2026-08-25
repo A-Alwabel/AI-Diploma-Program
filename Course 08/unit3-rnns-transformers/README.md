@@ -14,18 +14,20 @@ Sequential data (time series, text, audio) and why feedforward networks fall sho
 
 ## Examples (do in file order)
 
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
 Run the notebooks in `examples/` in this order:
 
-1. `01_understanding_sequential_data_and_time_series_prediction.ipynb` — what makes data sequential; a first time-series prediction.
-2. `02_rnn_basics.ipynb` — how RNNs work; vanishing and exploding gradients.
-3. `03_lstm_advanced.ipynb` — LSTM (and GRU) gates and why they help with long sequences.
-4. `04_transformer_attention.ipynb` — attention from scratch: queries, keys, values; self-attention.
-5. `05_bert_finetuning.ipynb` — the BERT fine-tuning pattern (encoder + classification head), demonstrated hands-on with a from-scratch LSTM stand-in; real pretrained BERT appears in `09`.
-6. `06_gpt_text_generation.ipynb` — generate text with a pretrained GPT model.
-7. `07_sequence_to_sequence.ipynb` — encoder–decoder (Seq2Seq) models for tasks like translation.
-8. `08_text_generation_rnn_lstm_gru.ipynb` — character/word-level text generation with RNN/LSTM/GRU.
-9. `09_transformer_models_bert_gpt_nlp.ipynb` — survey of Transformer models (BERT, GPT) across NLP tasks.
-10. `10_sentiment_analysis_translation_speech.ipynb` — applied NLP: sentiment analysis, translation, and speech-related tasks.
+1. **[HOMEWORK]** `01_understanding_sequential_data_and_time_series_prediction.ipynb` — what makes data sequential; a first time-series prediction.
+2. **[CORE]** `02_rnn_basics.ipynb` — how RNNs work; vanishing and exploding gradients.
+3. **[CORE]** `03_lstm_advanced.ipynb` — LSTM (and GRU) gates and why they help with long sequences.
+4. **[CORE]** `04_transformer_attention.ipynb` — attention from scratch: queries, keys, values; self-attention.
+5. **[HOMEWORK]** `05_bert_finetuning.ipynb` — the BERT fine-tuning pattern (encoder + classification head), demonstrated hands-on with a from-scratch LSTM stand-in; real pretrained BERT appears in `09`.
+6. **[HOMEWORK]** `06_gpt_text_generation.ipynb` — generate text with a pretrained GPT model.
+7. **[HOMEWORK]** `07_sequence_to_sequence.ipynb` — encoder–decoder (Seq2Seq) models for tasks like translation.
+8. **[HOMEWORK]** `08_text_generation_rnn_lstm_gru.ipynb` — character/word-level text generation with RNN/LSTM/GRU.
+9. **[CORE]** `09_transformer_models_bert_gpt_nlp.ipynb` — survey of Transformer models (BERT, GPT) across NLP tasks.
+10. **[HOMEWORK]** `10_sentiment_analysis_translation_speech.ipynb` — applied NLP: sentiment analysis, translation, and speech-related tasks.
 
 Note: notebooks that load pretrained models (05, 06, 09, 10) download weights and can take several minutes; a GPU (e.g. Colab, see `../DOCS/COLAB_SETUP.md`) and small batch sizes help.
 

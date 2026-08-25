@@ -19,13 +19,15 @@ detection workflow, and applying regulatory guidelines to model development.
 
 ## Examples (do in order)
 
-1. `examples/01_generative_ai_ethics.ipynb` — Ethics of generative AI:
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+1. **[CORE]** `examples/01_generative_ai_ethics.ipynb` — Ethics of generative AI:
    analyzing fairness and bias in model behavior.
-2. `examples/02_deepfake_detection.ipynb` — Detecting deepfakes and
+2. **[CORE]** `examples/02_deepfake_detection.ipynb` — Detecting deepfakes and
    AI-generated media.
-3. `examples/03_detecting_mitigating_bias_generative.ipynb` — Techniques for
+3. **[CORE]** `examples/03_detecting_mitigating_bias_generative.ipynb` — Techniques for
    detecting and mitigating bias in generative models.
-4. `examples/04_applying_ai_regulatory_guidelines_gdpr.ipynb` — Applying
+4. **[CORE]** `examples/04_applying_ai_regulatory_guidelines_gdpr.ipynb` — Applying
    regulatory guidelines (GDPR) for compliant model development.
 
 ## Case Study

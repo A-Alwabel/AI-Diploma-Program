@@ -20,13 +20,15 @@ By the end of this unit, you will be able to:
 
 ## Examples (work in this order)
 
-1. [examples/01_shap_explanations.ipynb](examples/01_shap_explanations.ipynb) — SHAP values: global and local explanations with summary, waterfall, and dependence plots.
-2. [examples/02_lime_explanations.ipynb](examples/02_lime_explanations.ipynb) — LIME: local surrogate explanations for individual predictions.
-3. [examples/03_counterfactual_analysis.ipynb](examples/03_counterfactual_analysis.ipynb) — Counterfactual ("what-if") analysis of model decisions.
-4. [examples/04_accountability_frameworks.ipynb](examples/04_accountability_frameworks.ipynb) — Accountability frameworks, audit timelines, and stakeholder responsibilities.
-5. [examples/05_hitl_approaches.ipynb](examples/05_hitl_approaches.ipynb) — Human-in-the-loop approaches and when to use each.
-6. [examples/06_transparency_tools.ipynb](examples/06_transparency_tools.ipynb) — Comparing transparency tools for model reporting and disclosure.
-7. [examples/07_explainable_ai_techniques.ipynb](examples/07_explainable_ai_techniques.ipynb) — Implementing explainable-AI techniques (SHAP, LIME) end to end.
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+1. **[CORE]** [examples/01_shap_explanations.ipynb](examples/01_shap_explanations.ipynb) — SHAP values: global and local explanations with summary, waterfall, and dependence plots.
+2. **[CORE]** [examples/02_lime_explanations.ipynb](examples/02_lime_explanations.ipynb) — LIME: local surrogate explanations for individual predictions.
+3. **[CORE]** [examples/03_counterfactual_analysis.ipynb](examples/03_counterfactual_analysis.ipynb) — Counterfactual ("what-if") analysis of model decisions.
+4. **[CORE]** [examples/04_accountability_frameworks.ipynb](examples/04_accountability_frameworks.ipynb) — Accountability frameworks, audit timelines, and stakeholder responsibilities.
+5. **[HOMEWORK]** [examples/05_hitl_approaches.ipynb](examples/05_hitl_approaches.ipynb) — Human-in-the-loop approaches and when to use each.
+6. **[HOMEWORK]** [examples/06_transparency_tools.ipynb](examples/06_transparency_tools.ipynb) — Comparing transparency tools for model reporting and disclosure.
+7. **[HOMEWORK]** [examples/07_explainable_ai_techniques.ipynb](examples/07_explainable_ai_techniques.ipynb) — Implementing explainable-AI techniques (SHAP, LIME) end to end.
 
 ## Exercises
 

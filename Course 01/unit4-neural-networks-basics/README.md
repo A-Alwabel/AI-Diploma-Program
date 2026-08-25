@@ -14,15 +14,17 @@ This unit builds intuition and small working Keras models: the math behind train
 
 ## Notebooks (run in order)
 
-| # | Notebook | What it covers |
-|---|----------|----------------|
-| 01 | `examples/01_simple_perceptron.ipynb` | A simple perceptron: weights, activation, training |
-| 02 | `examples/02_cnn_rnn_architectures.ipynb` | Deep learning architectures: CNNs and RNNs (`tfenv` kernel) |
-| 03 | `examples/03_single_neuron_activation_functions.ipynb` | One neuron, three activation functions: sigmoid vs tanh vs ReLU compared (`tfenv` kernel) |
-| 04 | `examples/04_multiclass_classification_keras.ipynb` | Multi-class digit classification with an MLP: softmax and categorical crossentropy (`tfenv` kernel) |
-| 05 | `examples/05_cnn_image_classification.ipynb` | Training a CNN on images and comparing it against a dense network (`tfenv` kernel) |
-| 06 | `examples/06_rnn_lstm_gru_sequential.ipynb` | Training RNN, LSTM, and GRU models on sequential data (`tfenv` kernel) |
-| 07 | `examples/07_early_stopping_regularization.ipynb` | Overfitting and its fixes: early stopping, dropout, and L2 regularization (`tfenv` kernel) |
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+| # | Notebook | What it covers | Tier |
+|---|----------|----------------|------|
+| 01 | `examples/01_simple_perceptron.ipynb` | A simple perceptron: weights, activation, training | **HOMEWORK** |
+| 02 | `examples/02_cnn_rnn_architectures.ipynb` | Deep learning architectures: CNNs and RNNs (`tfenv` kernel) | **HOMEWORK** |
+| 03 | `examples/03_single_neuron_activation_functions.ipynb` | One neuron, three activation functions: sigmoid vs tanh vs ReLU compared (`tfenv` kernel) | **CORE** |
+| 04 | `examples/04_multiclass_classification_keras.ipynb` | Multi-class digit classification with an MLP: softmax and categorical crossentropy (`tfenv` kernel) | **CORE** |
+| 05 | `examples/05_cnn_image_classification.ipynb` | Training a CNN on images and comparing it against a dense network (`tfenv` kernel) | **CORE** |
+| 06 | `examples/06_rnn_lstm_gru_sequential.ipynb` | Training RNN, LSTM, and GRU models on sequential data (`tfenv` kernel) | **HOMEWORK** |
+| 07 | `examples/07_early_stopping_regularization.ipynb` | Overfitting and its fixes: early stopping, dropout, and L2 regularization (`tfenv` kernel) | **CORE** |
 
 ---
 

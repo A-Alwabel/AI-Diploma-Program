@@ -23,7 +23,7 @@ Templates in `TEMPLATES/` are for students - use them for your proposal, report,
 ## Unit 2: Solution System Design and Architecture
 
 - [ ] Read [unit2-system-design-architecture/README.md](unit2-system-design-architecture/README.md)
-- [ ] Open [01_system_design_architecture.ipynb](unit2-system-design-architecture/examples/01_system_design_architecture.ipynb) (currently a placeholder outlining the planned lesson)
+- [ ] Work through [01_system_design_architecture.ipynb](unit2-system-design-architecture/examples/01_system_design_architecture.ipynb) and generate your own design document from it
 - [ ] Complete [exercise_01_system_design.ipynb](unit2-system-design-architecture/exercises/exercise_01_system_design.ipynb)
 - [ ] Take [Quiz 2](QUIZZES/quiz_02.md)
 

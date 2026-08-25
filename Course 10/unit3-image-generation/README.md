@@ -20,16 +20,18 @@ full-size systems referenced in examples 04–05.
 
 ## Examples (do in order)
 
-1. `examples/01_vae_implementation.ipynb` — Implementing a VAE for images,
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+1. **[HOMEWORK]** `examples/01_vae_implementation.ipynb` — Implementing a VAE for images,
    step by step.
-2. `examples/02_vae_applications.ipynb` — VAE applications: denoising and
+2. **[HOMEWORK]** `examples/02_vae_applications.ipynb` — VAE applications: denoising and
    anomaly detection hands-on, plus face-generation and style-transfer
    recipes.
-3. `examples/03_vae_advanced_topics.ipynb` — Advanced VAE topics: conditional
+3. **[HOMEWORK]** `examples/03_vae_advanced_topics.ipynb` — Advanced VAE topics: conditional
    VAE, latent interpolation, and a β-VAE experiment.
-4. `examples/04_image_generation_advanced.ipynb` — Advanced image generation:
+4. **[CORE]** `examples/04_image_generation_advanced.ipynb` — Advanced image generation:
    train and sample a DDPM diffusion model (Stable Diffusion's core).
-5. `examples/05_generating_ai_images_stylegan_dalle.ipynb` — How StyleGAN,
+5. **[CORE]** `examples/05_generating_ai_images_stylegan_dalle.ipynb` — How StyleGAN,
    DALL-E, and Stable Diffusion work, mapped to the models you built.
 
 ## Exercise

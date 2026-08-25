@@ -20,13 +20,15 @@ By the end of this unit, you will be able to:
 
 ## Examples (work in this order)
 
-1. [examples/01_data_protection.ipynb](examples/01_data_protection.ipynb) — Data protection strategies and how they compare.
-2. [examples/02_privacy_technologies.ipynb](examples/02_privacy_technologies.ipynb) — Privacy-enhancing technologies (PETs) and their trade-offs.
-3. [examples/03_differential_privacy.ipynb](examples/03_differential_privacy.ipynb) — Differential privacy: noise mechanisms and the privacy–utility trade-off.
-4. [examples/04_gdpr_compliance.ipynb](examples/04_gdpr_compliance.ipynb) — GDPR principles, data subject rights, and compliance checks.
-5. [examples/05_secure_development.ipynb](examples/05_secure_development.ipynb) — Secure AI development: common vulnerabilities and secure practices.
-6. [examples/06_data_encryption_techniques.ipynb](examples/06_data_encryption_techniques.ipynb) — Implementing encryption techniques for data protection.
-7. [examples/07_anonymization_pseudonymization.ipynb](examples/07_anonymization_pseudonymization.ipynb) — Applying anonymization and pseudonymization methods.
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+1. **[HOMEWORK]** [examples/01_data_protection.ipynb](examples/01_data_protection.ipynb) — Data protection strategies and how they compare.
+2. **[HOMEWORK]** [examples/02_privacy_technologies.ipynb](examples/02_privacy_technologies.ipynb) — Privacy-enhancing technologies (PETs) and their trade-offs.
+3. **[HOMEWORK]** [examples/03_differential_privacy.ipynb](examples/03_differential_privacy.ipynb) — Differential privacy: noise mechanisms and the privacy–utility trade-off.
+4. **[CORE]** [examples/04_gdpr_compliance.ipynb](examples/04_gdpr_compliance.ipynb) — GDPR principles, data subject rights, and compliance checks.
+5. **[HOMEWORK]** [examples/05_secure_development.ipynb](examples/05_secure_development.ipynb) — Secure AI development: common vulnerabilities and secure practices.
+6. **[HOMEWORK]** [examples/06_data_encryption_techniques.ipynb](examples/06_data_encryption_techniques.ipynb) — Implementing encryption techniques for data protection.
+7. **[CORE]** [examples/07_anonymization_pseudonymization.ipynb](examples/07_anonymization_pseudonymization.ipynb) — Applying anonymization and pseudonymization methods.
 
 ## Exercises
 

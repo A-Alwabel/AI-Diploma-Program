@@ -37,17 +37,19 @@ By the end of this unit, you should be able to:
 
 ## Study Order
 
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
 The notebooks are numbered in study order — follow the numbers:
 
-1. `examples/01_monte_carlo_value_estimation.ipynb` — Monte Carlo methods for
+1. **[CORE]** `examples/01_monte_carlo_value_estimation.ipynb` — Monte Carlo methods for
    estimating value functions from sampled episodes
-2. `examples/02_td_algorithms_td0_nstep.ipynb` — TD(0) and n-step TD:
+2. **[CORE]** `examples/02_td_algorithms_td0_nstep.ipynb` — TD(0) and n-step TD:
    bootstrapping and online updates
-3. `examples/03_q_learning.ipynb` — Q-learning: off-policy control with a
+3. **[CORE]** `examples/03_q_learning.ipynb` — Q-learning: off-policy control with a
    Q-table
-4. `examples/04_sarsa_algorithm.ipynb` — SARSA: on-policy control and how it
+4. **[CORE]** `examples/04_sarsa_algorithm.ipynb` — SARSA: on-policy control and how it
    differs from Q-learning
-5. `examples/05_policy_vs_value_iteration_comparison.ipynb` — comparing policy
+5. **[CORE]** `examples/05_policy_vs_value_iteration_comparison.ipynb` — comparing policy
    iteration and value iteration in small environments
 
 ## Exercise and Quiz

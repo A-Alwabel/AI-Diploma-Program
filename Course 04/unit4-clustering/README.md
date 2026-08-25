@@ -21,11 +21,13 @@ By the end of this unit you can:
 
 ## Examples (work in this order)
 
-| # | Notebook | What it covers |
-|---|----------|----------------|
-| 1 | `examples/01_kmeans_clustering.ipynb` | K-Means; centroids; elbow method; silhouette score; comparing K values |
-| 2 | `examples/02_hierarchical_clustering.ipynb` | Agglomerative clustering; linkage methods; dendrograms |
-| 3 | `examples/03_pca.ipynb` | PCA; explained variance; 2D projections; choosing component count |
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+| # | Notebook | What it covers | Tier |
+|---|----------|----------------|------|
+| 1 | `examples/01_kmeans_clustering.ipynb` | K-Means; centroids; elbow method; silhouette score; comparing K values | **CORE** |
+| 2 | `examples/02_hierarchical_clustering.ipynb` | Agglomerative clustering; linkage methods; dendrograms | **CORE** |
+| 3 | `examples/03_pca.ipynb` | PCA; explained variance; 2D projections; choosing component count | **CORE** |
 
 The `examples/` folder also contains the PNG figures the notebooks produce.
 

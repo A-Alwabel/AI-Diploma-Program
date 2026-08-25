@@ -20,7 +20,9 @@ optimizer behavior.
 
 ## Notebook
 
-1. `examples/01_optimization_techniques.ipynb` - Gradient-based optimization
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+1. **[CORE]** `examples/01_optimization_techniques.ipynb` - Gradient-based optimization
    and variants; tuning learning rates and comparing optimizers.
 
 ## Exercise

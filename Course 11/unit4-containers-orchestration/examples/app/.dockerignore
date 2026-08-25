@@ -1,0 +1,8 @@
+# WHAT: tell Docker which files in the context NOT to copy into the image.
+# WHY: __pycache__ holds bytecode compiled for the Python on YOUR machine; copied
+# into an image built on a different Python it is dead weight at best. The same
+# rule keeps secrets, virtualenvs and notebooks out of production images.
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env

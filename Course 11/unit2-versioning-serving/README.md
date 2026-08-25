@@ -21,13 +21,15 @@ Unit 1 showed local packaging and APIs. Here you deepen serving: versioning, mul
 
 ## Study order (required)
 
-1. `examples/01_flask_api_deployment.ipynb` — serving a model with Flask
-2. `examples/02_fastapi_deployment.ipynb` — serving a model with FastAPI
-3. `examples/03_model_versioning.ipynb` — version numbering, metadata, rollback
-4. `examples/04_saving_loading_models_pickle_onnx.ipynb` — serialization formats compared
-5. `examples/05_tensorflow_serving_torchserve.ipynb` — serving frameworks (TensorFlow Serving, TorchServe). **Run this notebook on the "tfenv" kernel** — it imports TensorFlow.
-6. `examples/06_batch_vs_realtime_inference.ipynb` — batch vs real-time inference paths
-7. `examples/07_kubernetes_scaling.ipynb` — scaling served models (Kubernetes concepts)
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+1. **[HOMEWORK]** `examples/01_flask_api_deployment.ipynb` — serving a model with Flask
+2. **[CORE]** `examples/02_fastapi_deployment.ipynb` — serving a model with FastAPI
+3. **[HOMEWORK]** `examples/03_model_versioning.ipynb` — version numbering, metadata, rollback
+4. **[CORE]** `examples/04_saving_loading_models_pickle_onnx.ipynb` — serialization formats compared
+5. **[CORE]** `examples/05_tensorflow_serving_torchserve.ipynb` — serving frameworks (TensorFlow Serving, TorchServe). **Run this notebook on the "tfenv" kernel** — it imports TensorFlow.
+6. **[CORE]** `examples/06_batch_vs_realtime_inference.ipynb` — batch vs real-time inference paths
+7. **[HOMEWORK]** `examples/07_kubernetes_scaling.ipynb` — scaling served models (Kubernetes concepts)
 
 ## Exercise and quiz
 

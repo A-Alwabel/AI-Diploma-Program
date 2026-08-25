@@ -1,6 +1,5 @@
 """
 Unit 3 - Exercise 1: Data Visualization Practice
-تمرين 1: ممارسة تصوير البيانات
 
 Instructions:
 1. Create various types of visualizations
@@ -17,26 +16,40 @@ import seaborn as sns
 plt.rcParams['axes.unicode_minus'] = False
 sns.set_style("whitegrid")
 
-# Sample dataset
-np.random.seed(42)
-data = {
-    'month': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-    'sales': [1200, 1500, 1800, 1600, 2000, 2200],
-    'region': np.random.choice(['North', 'South', 'East', 'West'], 6),
-    'product': np.random.choice(['A', 'B', 'C'], 6),
-    'rating': np.random.uniform(3, 5, 6)
-}
+# Real dataset
+# ---------------------------------------------------------------------------
+# Montgomery County (Pennsylvania) 911 emergency call log - a public dataset of
+# every call dispatched between December 2015 and July 2020. Nothing here was
+# generated: the categories, the volumes, the missing ZIP codes and the seasonal
+# swings are all real, which is exactly what makes the charts worth reading.
+#
+# `df`       : monthly call volume per service (EMS / Fire / Traffic)
+# `calls`    : the full call-level table, for distribution and correlation plots
+# ---------------------------------------------------------------------------
+DATA_DIR = '../../../Course 04/datasets/raw/'
 
-df = pd.DataFrame(data)
+calls = pd.read_csv(DATA_DIR + 'montgomery_911_calls.csv',
+                    usecols=['lat', 'lng', 'zip', 'title', 'timeStamp', 'twp'],
+                    parse_dates=['timeStamp'])
 
-# Additional data for advanced plots
-np.random.seed(42)
-advanced_data = pd.DataFrame({
-    'x': np.random.randn(100),
-    'y': np.random.randn(100),
-    'category': np.random.choice(['Type1', 'Type2', 'Type3'], 100),
-    'value': np.random.uniform(10, 100, 100)
-})
+# 'title' looks like 'EMS: BACK PAINS/INJURY' - split it into service and reason.
+calls['service'] = calls['title'].str.split(':').str[0]
+calls['reason'] = calls['title'].str.split(': ').str[1].str.strip()
+calls['hour'] = calls['timeStamp'].dt.hour
+calls['month'] = calls['timeStamp'].dt.to_period('M').dt.to_timestamp()
+
+print(f"Loaded {len(calls):,} real 911 calls "
+      f"({calls['timeStamp'].min():%Y-%m-%d} to {calls['timeStamp'].max():%Y-%m-%d})")
+print(f"Services: {calls['service'].value_counts().to_dict()}")
+print(f"Missing ZIP codes (real gaps): {calls['zip'].isna().sum():,}")
+
+# Monthly volume per service - a tidy table for line and bar charts.
+df = (calls.groupby(['month', 'service']).size()
+      .reset_index(name='calls'))
+
+# A 2,000-call sample keeps scatter plots readable. Sampling is legitimate
+# randomness: the DATA is real, only WHICH rows we draw is random.
+sample = calls.sample(n=2000, random_state=42)
 
 # TODO: Write your code here
 
@@ -45,26 +58,26 @@ print("=" * 60)
 print("Task 1: Basic Plots")
 print("=" * 60)
 # Your code here...
-# - Create a line plot of sales over months
-# - Create a bar chart of sales by region
-# - Create a scatter plot of x vs y from advanced_data
+# - Create a line plot of total monthly call volume over time (use `df`)
+# - Create a bar chart of total calls by township (top 10, use `calls['twp']`)
+# - Create a scatter plot of incident longitude vs latitude (use `sample`)
 
 # Task 2: Seaborn statistical plots
 print("\n" + "=" * 60)
 print("Task 2: Statistical Plots")
 print("=" * 60)
 # Your code here...
-# - Create a distribution plot (histogram + KDE) of 'value'
-# - Create a box plot of 'value' by 'category'
-# - Create a correlation heatmap
+# - Create a distribution plot (histogram + KDE) of 'hour' - when do people call?
+# - Create a box plot of monthly 'calls' by 'service' (use `df`)
+# - Create a correlation heatmap of a month-by-service pivot table
 
 # Task 3: Customization
 print("\n" + "=" * 60)
 print("Task 3: Plot Customization")
 print("=" * 60)
 # Your code here...
-# - Create a customized bar chart with colors, labels, title
-# - Add grid, legend, and proper axis labels
+# - Create a customized bar chart of the 10 most common call reasons
+# - Add grid, legend, and proper axis labels (state the date range in the title)
 # - Save the plot as PNG
 
 # Task 4: Multiple subplots
@@ -73,10 +86,9 @@ print("Task 4: Multiple Subplots")
 print("=" * 60)
 # Your code here...
 # - Create a figure with 2x2 subplots
-# - Plot different visualizations in each subplot
+# - Plot four different views of the same log (where / when / what / who)
 # - Add overall title
 
 print("\n" + "=" * 60)
 print("Exercise 1 Complete!")
 print("=" * 60)
-

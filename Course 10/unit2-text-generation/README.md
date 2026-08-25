@@ -22,19 +22,21 @@ Face `transformers` / OpenAI API workflows as clearly labeled reference code
 
 ## Examples (do in order)
 
-1. `examples/01_text_generation_gpt_models.ipynb` — Implementing text
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+1. **[CORE]** `examples/01_text_generation_gpt_models.ipynb` — Implementing text
    generation with GPT-style models.
-2. `examples/02_fine_tuning_language_models.ipynb` — Fine-tuning: pretrain a
+2. **[CORE]** `examples/02_fine_tuning_language_models.ipynb` — Fine-tuning: pretrain a
    small LM, fine-tune it on a new domain, and measure the improvement (plus
    the Hugging Face `Trainer` workflow as reference).
-3. `examples/03_prompt_engineering_openai_huggingface.ipynb` — Prompt
+3. **[CORE]** `examples/03_prompt_engineering_openai_huggingface.ipynb` — Prompt
    engineering strategies with a hands-on steering demo (OpenAI API and
    Hugging Face examples included as reference code).
-4. `examples/04_building_text_to_text_generation.ipynb` — Building a
+4. **[HOMEWORK]** `examples/04_building_text_to_text_generation.ipynb` — Building a
    text-to-text generation system with Transformers.
-5. `examples/05_generating_creative_text_stories_poems.ipynb` — Generating
+5. **[HOMEWORK]** `examples/05_generating_creative_text_stories_poems.ipynb` — Generating
    creative text: stories and poems.
-6. `examples/06_evaluating_text_quality_bleu_perplexity.ipynb` — Evaluating
+6. **[CORE]** `examples/06_evaluating_text_quality_bleu_perplexity.ipynb` — Evaluating
    text generation quality with BLEU and perplexity.
 
 ## Exercise

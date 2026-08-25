@@ -13,17 +13,19 @@ The data science lifecycle and the core Python toolkit: pandas and NumPy for tab
 
 ## Examples (run in order)
 
-| # | Notebook | Description |
-|---|----------|-------------|
-| 01 | `examples/01_data_science_intro.ipynb` | The data science lifecycle and a first end-to-end data exploration |
-| 02 | `examples/02_pandas_numpy_basics.ipynb` | Core pandas DataFrame and NumPy array operations |
-| 03 | `examples/03_cudf_introduction.ipynb` | cuDF GPU-accelerated DataFrames (optional GPU; pandas fallback) |
-| 04 | `examples/04_python_basics_loops_conditions.ipynb` | Python refresher: arithmetic, loops, and conditions |
-| 05 | `examples/05_jupyter_notebooks_best_practices.ipynb` | Working effectively in Jupyter notebooks |
-| 06 | `examples/06_data_structures_lists_dictionaries.ipynb` | Lists and dictionaries for data work |
-| 07 | `examples/07_data_science_applications.ipynb` | Real-world data science application examples |
-| 08 | `examples/08_numba_jit_compilation.ipynb` | Speeding up numeric Python with Numba JIT compilation |
-| 09 | `examples/09_advanced_numpy_operations.ipynb` | Advanced NumPy: broadcasting, vectorization, and array tricks |
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+| # | Notebook | Description | Tier |
+|---|----------|-------------|------|
+| 01 | `examples/01_data_science_intro.ipynb` | The data science lifecycle and a first end-to-end data exploration | **CORE** |
+| 02 | `examples/02_pandas_numpy_basics.ipynb` | Core pandas DataFrame and NumPy array operations | **CORE** |
+| 03 | `examples/03_cudf_introduction.ipynb` | cuDF GPU-accelerated DataFrames (optional GPU; pandas fallback) | **CORE** |
+| 04 | `examples/04_python_basics_loops_conditions.ipynb` | Python refresher: arithmetic, loops, and conditions | **HOMEWORK** |
+| 05 | `examples/05_jupyter_notebooks_best_practices.ipynb` | Working effectively in Jupyter notebooks | **HOMEWORK** |
+| 06 | `examples/06_data_structures_lists_dictionaries.ipynb` | Lists and dictionaries for data work | **HOMEWORK** |
+| 07 | `examples/07_data_science_applications.ipynb` | Real-world data science application examples | **HOMEWORK** |
+| 08 | `examples/08_numba_jit_compilation.ipynb` | Speeding up numeric Python with Numba JIT compilation | **CORE** |
+| 09 | `examples/09_advanced_numpy_operations.ipynb` | Advanced NumPy: broadcasting, vectorization, and array tricks | **HOMEWORK** |
 
 ## Exercise
 

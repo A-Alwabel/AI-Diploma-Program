@@ -11,7 +11,9 @@ This unit currently has one example notebook; additional content is being author
 
 ## Examples (run in order)
 
-1. `examples/01_bias_detection.ipynb` — The logic of a bias audit walked through on simulated association scores (disclosed as simulated), plus mitigation strategies and a responsible-NLP checklist; measuring bias on real data is the exercise's design task.
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+1. **[CORE]** `examples/01_bias_detection.ipynb` — The logic of a bias audit walked through on simulated association scores (disclosed as simulated), plus mitigation strategies and a responsible-NLP checklist; measuring bias on real data is the exercise's design task.
 
 ## Exercise
 

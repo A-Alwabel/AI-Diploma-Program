@@ -14,20 +14,22 @@
 
 ## Examples (run in order)
 
-| # | Notebook | Description |
-|---|----------|-------------|
-| 01 | `examples/01_pandas_data_manipulation.ipynb` | Data manipulation with pandas for ML workflows |
-| 02 | `examples/02_data_preparation_ml_tasks.ipynb` | Preparing data for ML: splits, scaling, encoding |
-| 03 | `examples/03_implementing_ml_models_sklearn.ipynb` | Implementing regression and classification with scikit-learn |
-| 04 | `examples/04_linear_regression.ipynb` | Linear regression in depth |
-| 05 | `examples/05_supervised_learning_logistic_regression.ipynb` | Supervised learning with logistic regression |
-| 06 | `examples/06_classification.ipynb` | Classification basics and common classifiers |
-| 07 | `examples/07_model_evaluation.ipynb` | Evaluation metrics, confusion matrices, ROC curves |
-| 08 | `examples/08_hyperparameter_tuning_grid_random_search.ipynb` | Hyperparameter tuning with grid search and random search |
-| 09 | `examples/09_unsupervised_learning_kmeans.ipynb` | Unsupervised learning with K-means clustering |
-| 10 | `examples/10_clustering_unsupervised.ipynb` | Clustering techniques and cluster evaluation |
-| 11 | `examples/11_real_world_problem_solving.ipynb` | End-to-end problem solving with supervised and unsupervised learning |
-| 12 | `examples/12_cpu_vs_gpu_ml.ipynb` | CPU vs GPU ML performance comparison (optional GPU) |
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+| # | Notebook | Description | Tier |
+|---|----------|-------------|------|
+| 01 | `examples/01_pandas_data_manipulation.ipynb` | Data manipulation with pandas for ML workflows | **HOMEWORK** |
+| 02 | `examples/02_data_preparation_ml_tasks.ipynb` | Preparing data for ML: splits, scaling, encoding | **CORE** |
+| 03 | `examples/03_implementing_ml_models_sklearn.ipynb` | Implementing regression and classification with scikit-learn | **CORE** |
+| 04 | `examples/04_linear_regression.ipynb` | Linear regression in depth | **HOMEWORK** |
+| 05 | `examples/05_supervised_learning_logistic_regression.ipynb` | Supervised learning with logistic regression | **HOMEWORK** |
+| 06 | `examples/06_classification.ipynb` | Classification basics and common classifiers | **HOMEWORK** |
+| 07 | `examples/07_model_evaluation.ipynb` | Evaluation metrics, confusion matrices, ROC curves | **CORE** |
+| 08 | `examples/08_hyperparameter_tuning_grid_random_search.ipynb` | Hyperparameter tuning with grid search and random search | **CORE** |
+| 09 | `examples/09_unsupervised_learning_kmeans.ipynb` | Unsupervised learning with K-means clustering | **HOMEWORK** |
+| 10 | `examples/10_clustering_unsupervised.ipynb` | Clustering techniques and cluster evaluation | **HOMEWORK** |
+| 11 | `examples/11_real_world_problem_solving.ipynb` | End-to-end problem solving with supervised and unsupervised learning | **CORE** |
+| 12 | `examples/12_cpu_vs_gpu_ml.ipynb` | CPU vs GPU ML performance comparison (optional GPU) | **CORE** |
 
 ## Exercise
 

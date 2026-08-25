@@ -18,15 +18,17 @@ Python.
 
 ## Notebooks (work in this order)
 
-1. `examples/01_knowledge_representation.ipynb` - Representing knowledge with
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+1. **[CORE]** `examples/01_knowledge_representation.ipynb` - Representing knowledge with
    logic, rules, and graphs; implementing inference and querying.
-2. `examples/02_propositional_logic_truth_tables.ipynb` - Building truth
+2. **[CORE]** `examples/02_propositional_logic_truth_tables.ipynb` - Building truth
    tables and implementing logical operators (AND, OR, NOT, IMPLIES,
    BICONDITIONAL) in Python.
-3. `examples/03_inference_rules_logical_reasoning.ipynb` - Inference rules
+3. **[CORE]** `examples/03_inference_rules_logical_reasoning.ipynb` - Inference rules
    (Modus Ponens, Modus Tollens, Disjunctive Syllogism) and programmatic
    validation of logical arguments.
-4. `examples/04_first_order_logic_fol.ipynb` - First-Order Logic syntax and
+4. **[CORE]** `examples/04_first_order_logic_fol.ipynb` - First-Order Logic syntax and
    semantics: predicates, quantifiers, and parsing/evaluating FOL formulas.
 
 ## Exercise

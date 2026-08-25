@@ -22,12 +22,14 @@ You move from your machine to managed cloud endpoints — same model artifact, d
 
 ## Study order (required)
 
-1. `examples/01_cloud_deployment.ipynb` — cloud deployment overview
-2. `examples/02_aws_sagemaker.ipynb` — AWS SageMaker patterns
-3. `examples/03_azure_ml_deployment.ipynb` — Azure ML deployment
-4. `examples/04_gcp_vertex_ai.ipynb` — GCP Vertex AI deployment
-5. `examples/05_security_measures.ipynb` — auth, encryption, access control
-6. `examples/06_monitoring_logging_cloud.ipynb` — cloud logging and monitoring
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+1. **[CORE]** `examples/01_cloud_deployment.ipynb` — cloud deployment overview
+2. **[CORE]** `examples/02_aws_sagemaker.ipynb` — AWS SageMaker patterns
+3. **[CORE]** `examples/03_azure_ml_deployment.ipynb` — Azure ML deployment
+4. **[CORE]** `examples/04_gcp_vertex_ai.ipynb` — GCP Vertex AI deployment
+5. **[CORE]** `examples/05_security_measures.ipynb` — auth, encryption, access control
+6. **[CORE]** `examples/06_monitoring_logging_cloud.ipynb` — cloud logging and monitoring
 
 ## Exercise and quiz
 

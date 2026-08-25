@@ -32,21 +32,23 @@ By the end of this unit, you should be able to:
 
 ## Study Order
 
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
 Complete the example notebooks in file order:
 
-1. `examples/01_mdp_example.ipynb` — the MDP framework: states, actions,
+1. **[CORE]** `examples/01_mdp_example.ipynb` — the MDP framework: states, actions,
    rewards, and transitions in a small worked example
-2. `examples/02_mdp_solving.ipynb` — solving a small MDP with policy
+2. **[HOMEWORK]** `examples/02_mdp_solving.ipynb` — solving a small MDP with policy
    evaluation and improvement
-3. `examples/03_value_iteration.ipynb` — the value iteration algorithm and
+3. **[CORE]** `examples/03_value_iteration.ipynb` — the value iteration algorithm and
    Bellman updates in practice
-4. `examples/04_openai_gym_setup.ipynb` — setting up Gymnasium environments
+4. **[CORE]** `examples/04_openai_gym_setup.ipynb` — setting up Gymnasium environments
    and the `reset`/`step` interaction loop
-5. `examples/05_exploration_strategies_epsilon_greedy.ipynb` — epsilon-greedy
+5. **[HOMEWORK]** `examples/05_exploration_strategies_epsilon_greedy.ipynb` — epsilon-greedy
    action selection as a first exploration strategy
-6. `examples/06_solving_rl_problems_states_actions_rewards.ipynb` — how to
+6. **[CORE]** `examples/06_solving_rl_problems_states_actions_rewards.ipynb` — how to
    define states, actions, and rewards for new RL problems
-7. `examples/07_mini_projects_cartpole_frozenlake_qlearning_dqn.ipynb` — mini
+7. **[HOMEWORK]** `examples/07_mini_projects_cartpole_frozenlake_qlearning_dqn.ipynb` — mini
    projects on CartPole and FrozenLake previewing Q-learning and DQN
 
 ## Exercise and Quiz

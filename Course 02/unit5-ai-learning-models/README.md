@@ -20,7 +20,9 @@ machine-learning course deepens.
 
 ## Notebook
 
-1. `examples/01_ai_learning_models.ipynb` - Build and evaluate common AI/ML
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+1. **[CORE]** `examples/01_ai_learning_models.ipynb` - Build and evaluate common AI/ML
    models; compare model families and deployment considerations.
 
 ## Exercise

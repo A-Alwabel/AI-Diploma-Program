@@ -11,7 +11,9 @@ This unit currently has one example notebook; additional content is being author
 
 ## Examples (run in order)
 
-1. `examples/01_text_preprocessing.ipynb` — Clean and normalize text (lowercasing, punctuation, whitespace) and build a basic preprocessing pipeline using Python's `re` and `string` modules.
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+1. **[CORE]** `examples/01_text_preprocessing.ipynb` — Clean and normalize text (lowercasing, punctuation, whitespace) and build a basic preprocessing pipeline using Python's `re` and `string` modules.
 
 ## Exercise
 

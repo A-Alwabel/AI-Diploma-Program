@@ -20,11 +20,13 @@ By the end of this unit, you will be able to:
 
 ## Examples (work in this order)
 
-1. [examples/01_global_regulations.ipynb](examples/01_global_regulations.ipynb) — Global AI regulations compared, with a regulatory timeline.
-2. [examples/02_industry_regulations.ipynb](examples/02_industry_regulations.ipynb) — Industry-specific AI regulations (healthcare, finance, and others).
-3. [examples/03_governance_frameworks.ipynb](examples/03_governance_frameworks.ipynb) — AI governance frameworks and their components.
-4. [examples/04_legal_challenges.ipynb](examples/04_legal_challenges.ipynb) — Legal challenges in AI governance: liability, IP, and accountability gaps.
-5. [examples/05_ai_governance_frameworks.ipynb](examples/05_ai_governance_frameworks.ipynb) — Implementing AI governance frameworks and compliance checks in code.
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+1. **[CORE]** [examples/01_global_regulations.ipynb](examples/01_global_regulations.ipynb) — Global AI regulations compared, with a regulatory timeline.
+2. **[CORE]** [examples/02_industry_regulations.ipynb](examples/02_industry_regulations.ipynb) — Industry-specific AI regulations (healthcare, finance, and others).
+3. **[CORE]** [examples/03_governance_frameworks.ipynb](examples/03_governance_frameworks.ipynb) — AI governance frameworks and their components.
+4. **[CORE]** [examples/04_legal_challenges.ipynb](examples/04_legal_challenges.ipynb) — Legal challenges in AI governance: liability, IP, and accountability gaps.
+5. **[HOMEWORK]** [examples/05_ai_governance_frameworks.ipynb](examples/05_ai_governance_frameworks.ipynb) — Implementing AI governance frameworks and compliance checks in code.
 
 ## Exercises
 

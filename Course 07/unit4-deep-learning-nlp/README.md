@@ -11,11 +11,13 @@ Deep learning models for language, used as **pretrained building blocks**: what 
 
 ## Examples (run in order)
 
-1. `examples/01_attention_transformers_bridge.ipynb` — Attention and transformers from scratch: scaled dot-product attention computed by hand in NumPy, attention-map heatmaps, positional encodings, causal masking, and how BERT/GPT fit the map.
-2. `examples/02_rnn_lstm_nlp.ipynb` — RNNs and LSTMs: a real NumPy forward pass, the vanishing-gradient problem measured numerically, and one hand-computed LSTM step.
-3. `examples/03_bert_advanced_usage.ipynb` — Sentiment classification with a pretrained DistilBERT model via Hugging Face, plus the fine-tuning recipe as a code walkthrough (not executed). *(downloads ~250MB on first run)*
-4. `examples/04_seq2seq_attention_translation.ipynb` — Build (and forward-pass, without training) a Keras seq2seq model with attention for machine translation. *(tfenv kernel)*
-5. `examples/05_gpt_openai_text_generation.ipynb` — Real text generation with a local GPT-2 model (greedy vs. sampling, temperature), plus an OpenAI API walkthrough (not executed; no API key needed for this notebook). *(downloads ~500MB on first run)*
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+1. **[CORE]** `examples/01_attention_transformers_bridge.ipynb` — Attention and transformers from scratch: scaled dot-product attention computed by hand in NumPy, attention-map heatmaps, positional encodings, causal masking, and how BERT/GPT fit the map.
+2. **[CORE]** `examples/02_rnn_lstm_nlp.ipynb` — RNNs and LSTMs: a real NumPy forward pass, the vanishing-gradient problem measured numerically, and one hand-computed LSTM step.
+3. **[CORE]** `examples/03_bert_advanced_usage.ipynb` — Sentiment classification with a pretrained DistilBERT model via Hugging Face, plus the fine-tuning recipe as a code walkthrough (not executed). *(downloads ~250MB on first run)*
+4. **[CORE]** `examples/04_seq2seq_attention_translation.ipynb` — Build (and forward-pass, without training) a Keras seq2seq model with attention for machine translation. *(tfenv kernel)*
+5. **[HOMEWORK]** `examples/05_gpt_openai_text_generation.ipynb` — Real text generation with a local GPT-2 model (greedy vs. sampling, temperature), plus an OpenAI API walkthrough (not executed; no API key needed for this notebook). *(downloads ~500MB on first run)*
 
 ## Exercise
 

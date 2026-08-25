@@ -2,6 +2,14 @@
 
 This page is a **single narrative map** for the whole course. The numbered notebooks in each unit are the real lessons; this file answers: *where am I, what did I just gain, and what comes next?*
 
+## What travels with you
+
+One artifact runs through this whole map: **your portfolio model**, exported from
+AIAT 114 or AIAT 122 before Unit 1 — see [`PORTFOLIO_MODEL.md`](PORTFOLIO_MODEL.md).
+It is deliberately held constant, so every difference you meet between Flask, FastAPI
+and a container is a property of the *serving layer* rather than of the model. Units 1,
+2 and 4 load it directly; the rest of the course still ships its own demo models.
+
 ## The through-line (one sentence per stage)
 
 | Stage | You can now… |
@@ -26,7 +34,7 @@ This page is a **single narrative map** for the whole course. The numbered noteb
 
 Whatever notebook you open, ask:
 
-1. **Artifact** — What file format leaves training (PyTorch state dict, pickle, ONNX)?
+1. **Artifact** — What file format leaves training (PyTorch state dict, pickle, ONNX)? And what travels *beside* it, so the next person knows the feature order?
 2. **Interface** — How does a client send features and read predictions?
 3. **Environment** — What libraries and OS packages must match at runtime?
 4. **Observability** — What would you log if predictions started failing in production?
@@ -35,7 +43,7 @@ Whatever notebook you open, ask:
 ## Close the loop
 
 - **Per unit:** `README.md` → numbered `examples/` → `exercises/` → `QUIZZES/quiz_0N.md`
-- **Whole course:** [`START_HERE.md`](START_HERE.md) → Units 1–5 → [`final_exercise.ipynb`](final_exercise.ipynb) → [`ASSESSMENTS/Final_Exam.md`](ASSESSMENTS/Final_Exam.md)
+- **Whole course:** [`START_HERE.md`](START_HERE.md) → [`PORTFOLIO_MODEL.md`](PORTFOLIO_MODEL.md) → Units 1–5 → [`final_exercise.ipynb`](final_exercise.ipynb) → [`ASSESSMENTS/Final_Exam.md`](ASSESSMENTS/Final_Exam.md)
 - **Progress:** [`STUDENT_PROGRESS_CHECKLIST.md`](STUDENT_PROGRESS_CHECKLIST.md)
 
 Skim this journey page **once at the start** and **once before the final exercise** so the course feels like one story, not five disconnected folders.

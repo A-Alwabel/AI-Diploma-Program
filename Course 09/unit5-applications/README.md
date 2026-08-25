@@ -34,23 +34,25 @@ By the end of this unit, you should be able to:
 
 ## Study Order
 
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
 Complete the example notebooks in file order:
 
-1. `examples/01_rl_applications.ipynb` — survey of RL applications across
+1. **[CORE]** `examples/01_rl_applications.ipynb` — survey of RL applications across
    domains such as robotics, games, finance, and optimization
-2. `examples/02_game_playing_agent.ipynb` — building an RL agent for game
+2. **[HOMEWORK]** `examples/02_game_playing_agent.ipynb` — building an RL agent for game
    playing
-3. `examples/03_resource_optimization.ipynb` — RL for resource optimization
+3. **[HOMEWORK]** `examples/03_resource_optimization.ipynb` — RL for resource optimization
    problems
-4. `examples/04_multi_agent_rl.ipynb` — multi-agent RL: cooperative and
+4. **[CORE]** `examples/04_multi_agent_rl.ipynb` — multi-agent RL: cooperative and
    competitive agents
-5. `examples/05_hierarchical_rl_options.ipynb` — hierarchical RL and the
+5. **[CORE]** `examples/05_hierarchical_rl_options.ipynb` — hierarchical RL and the
    options framework
-6. `examples/06_model_based_rl_world_models.ipynb` — model-based RL with
+6. **[CORE]** `examples/06_model_based_rl_world_models.ipynb` — model-based RL with
    learned world models
-7. `examples/07_model_based_vs_model_free_comparison.ipynb` — comparing
+7. **[HOMEWORK]** `examples/07_model_based_vs_model_free_comparison.ipynb` — comparing
    model-based and model-free RL approaches
-8. `examples/08_goal_conditioned_rl.ipynb` — goal-conditioned RL for complex
+8. **[HOMEWORK]** `examples/08_goal_conditioned_rl.ipynb` — goal-conditioned RL for complex
    tasks
 
 ## Scope note

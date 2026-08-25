@@ -33,19 +33,21 @@ By the end of this unit, you should be able to:
 
 ## Study Order
 
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
 Complete the example notebooks in file order:
 
-1. `examples/01_dqn_implementation.ipynb` — Deep Q-Networks: Q-learning with a
+1. **[CORE]** `examples/01_dqn_implementation.ipynb` — Deep Q-Networks: Q-learning with a
    neural network, experience replay, and a target network
-2. `examples/02_policy_gradient_basics.ipynb` — policy gradient basics:
+2. **[CORE]** `examples/02_policy_gradient_basics.ipynb` — policy gradient basics:
    learning a policy directly (REINFORCE intuition)
-3. `examples/03_actor_critic.ipynb` — actor-critic methods: combining a policy
+3. **[CORE]** `examples/03_actor_critic.ipynb` — actor-critic methods: combining a policy
    with a learned value baseline
-4. `examples/04_ppo_algorithm.ipynb` — PPO: from policy-gradient intuition to
+4. **[CORE]** `examples/04_ppo_algorithm.ipynb` — PPO: from policy-gradient intuition to
    clipped, stability-oriented updates
-5. `examples/05_training_evaluation_monitoring.ipynb` — training and
+5. **[CORE]** `examples/05_training_evaluation_monitoring.ipynb` — training and
    evaluation: monitoring learning curves, rewards, and stability
-6. `examples/06_optimization_experience_replay_reward_shaping.ipynb` —
+6. **[CORE]** `examples/06_optimization_experience_replay_reward_shaping.ipynb` —
    optimization: experience replay, reward shaping, and hyperparameter tuning
 
 ## Scope note

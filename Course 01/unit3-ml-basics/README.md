@@ -14,13 +14,15 @@ This unit works at intuition level: the math behind gradient descent (derivative
 
 ## Notebooks (run in order)
 
-| # | Notebook | What it covers |
-|---|----------|----------------|
-| 01 | `examples/01_regression_classification.ipynb` | Regression vs classification |
-| 02 | `examples/02_perceptron_xor.ipynb` | The neuron, the perceptron, and why XOR is hard (`tfenv` kernel) |
-| 03 | `examples/03_solving_xor_keras.ipynb` | Solving XOR with a neural network in Keras (`tfenv` kernel) |
-| 04 | `examples/04_gradient_descent_loss_functions.ipynb` | How models learn: loss functions and gradient descent, implemented from scratch |
-| 05 | `examples/05_model_interpretability_shap_lime.ipynb` | Explaining model predictions with SHAP and LIME |
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+| # | Notebook | What it covers | Tier |
+|---|----------|----------------|------|
+| 01 | `examples/01_regression_classification.ipynb` | Regression vs classification | **HOMEWORK** |
+| 02 | `examples/02_perceptron_xor.ipynb` | The neuron, the perceptron, and why XOR is hard (`tfenv` kernel) | **CORE** |
+| 03 | `examples/03_solving_xor_keras.ipynb` | Solving XOR with a neural network in Keras (`tfenv` kernel) | **CORE** |
+| 04 | `examples/04_gradient_descent_loss_functions.ipynb` | How models learn: loss functions and gradient descent, implemented from scratch | **HOMEWORK** |
+| 05 | `examples/05_model_interpretability_shap_lime.ipynb` | Explaining model predictions with SHAP and LIME | **HOMEWORK** |
 
 ---
 

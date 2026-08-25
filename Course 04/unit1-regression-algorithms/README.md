@@ -23,15 +23,17 @@ By the end of this unit you can:
 
 ## Examples (work in this order)
 
-| # | Notebook | What it covers |
-|---|----------|----------------|
-| 1 | `examples/01_data_loading_exploration.ipynb` | Loading CSVs with pandas; head/info/describe; first exploration plots |
-| 2 | `examples/02_data_cleaning.ipynb` | Missing values, duplicates, outliers, type conversion |
-| 3 | `examples/03_data_preprocessing.ipynb` | Feature scaling, categorical encoding, train/test preparation |
-| 4 | `examples/04_linear_regression.ipynb` | Simple and multiple linear regression; coefficients; residuals |
-| 5 | `examples/05_polynomial_regression.ipynb` | Polynomial features; degree selection; overfitting |
-| 6 | `examples/06_ridge_lasso_regression.ipynb` | L2/L1 regularization; alpha tuning; coefficient shrinkage |
-| 7 | `examples/07_svr_decision_tree_regression.ipynb` | Support Vector Regression and tree-based regression |
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+| # | Notebook | What it covers | Tier |
+|---|----------|----------------|------|
+| 1 | `examples/01_data_loading_exploration.ipynb` | Loading CSVs with pandas; head/info/describe; first exploration plots | **HOMEWORK** |
+| 2 | `examples/02_data_cleaning.ipynb` | Missing values, duplicates, outliers, type conversion | **HOMEWORK** |
+| 3 | `examples/03_data_preprocessing.ipynb` | Feature scaling, categorical encoding, train/test preparation | **CORE** |
+| 4 | `examples/04_linear_regression.ipynb` | Simple and multiple linear regression; coefficients; residuals | **CORE** |
+| 5 | `examples/05_polynomial_regression.ipynb` | Polynomial features; degree selection; overfitting | **CORE** |
+| 6 | `examples/06_ridge_lasso_regression.ipynb` | L2/L1 regularization; alpha tuning; coefficient shrinkage | **CORE** |
+| 7 | `examples/07_svr_decision_tree_regression.ipynb` | Support Vector Regression and tree-based regression | **HOMEWORK** |
 
 The `examples/` folder also contains `sample_housing_data.csv` and the PNG figures the notebooks produce.
 

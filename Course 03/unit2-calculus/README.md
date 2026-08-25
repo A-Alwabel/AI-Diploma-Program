@@ -28,12 +28,14 @@ By the end of this unit, you will be able to:
 
 ## Notebooks (work through in order)
 
-1. `examples/00_why_how_after.ipynb` — Unit overview: why calculus matters for ML, how it is used, what comes after
-2. `examples/01_derivatives_basics.ipynb` — Derivatives and their role in loss functions
-3. `examples/02_gradients_multivariable.ipynb` — Gradients and multivariable calculus
-4. `examples/03_gradient_descent.ipynb` — Implementing gradient descent
-5. `examples/04_backpropagation_neural_networks.ipynb` — Programming backpropagation in neural networks
-6. `examples/05_function_approximation_ml.ipynb` — Applying function approximation to real-world ML models
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+1. **[HOMEWORK — pre-read]** `examples/00_why_how_after.ipynb` — Unit overview: why calculus matters for ML, how it is used, what comes after
+2. **[CORE]** `examples/01_derivatives_basics.ipynb` — Derivatives and their role in loss functions
+3. **[CORE]** `examples/02_gradients_multivariable.ipynb` — Gradients and multivariable calculus
+4. **[CORE]** `examples/03_gradient_descent.ipynb` — Implementing gradient descent
+5. **[CORE]** `examples/04_backpropagation_neural_networks.ipynb` — Programming backpropagation in neural networks
+6. **[HOMEWORK]** `examples/05_function_approximation_ml.ipynb` — Applying function approximation to real-world ML models
 
 ---
 

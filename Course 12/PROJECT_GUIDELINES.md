@@ -54,9 +54,19 @@
 - Expected outcomes
 - Ethical, legal and social risks you anticipate, and how you plan to handle them
 - Timeline
+- **Prior Work Inventory** (template section 6) - for each of the five components (dataset,
+  model, pipeline, deployment target, ethics review), the AIAT 111-125 artifact you reuse or
+  extend, with the course, the unit and a path your instructor can open. At least three
+  components must name a real artifact, from at least three different courses.
 
-**Template:** See `TEMPLATES/project_proposal_template.md`
-**Graded as:** Gate 1 (10 points)
+**Template:** See `TEMPLATES/project_proposal_template.md` (sections 1-9)
+**Graded as:** Gate 1 (10 points), of which 1.5 are the Prior Work Inventory
+
+> **Why the inventory is graded.** The official AIAT 126 description requires the project to
+> integrate knowledge from multiple AI domains, and CLO2 is "integrate knowledge from the
+> different AI subfields into a coherent, practical system". A capstone that starts from a blank
+> file has integrated nothing. Naming what you build **on** is the evidence - and it is also a
+> plan: a component with a named prior artifact starts from code that already runs.
 
 ---
 
@@ -64,10 +74,21 @@
 **Due:** Before implementation starts
 
 **Must include:**
+- Prior Work Inventory, carried forward from proposal section 6 and updated if the design changed
 - System architecture diagram
 - Data flow between components
-- Technology and framework choices, with reasons
+- Model, algorithm, dataset and platform choices, each with a justification citing your own data
+  type, data size and constraints, plus at least one alternative and why you rejected it
+- Data collection and preprocessing plan
+- Evaluation metrics and the baselines you must beat
+- Input/output formats and where artifacts are stored
 - Feasibility check against your timeline and available data
+
+**Taught in:** `unit2-system-design-architecture/examples/01_system_design_architecture.ipynb`.
+Part 8 of that lesson generates the twelve-section document for you from your own answers, and
+its `check_design()` validator refuses to write a document that still contains `TODO`, names a
+model with no justification, states no baseline, or maps fewer than three components to earlier
+courses. Run it before you submit: it is the same list your instructor grades from.
 
 **Graded as:** Gate 2 (10 points). **Do not start implementation until this passes** - building
 on a design that will fail is the most expensive mistake in this course.

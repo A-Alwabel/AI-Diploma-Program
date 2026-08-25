@@ -18,17 +18,19 @@ Copilot).
 
 ## Examples (do in order)
 
-1. `examples/01_generative_ai_applications.ipynb` — Survey of generative AI
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+1. **[CORE]** `examples/01_generative_ai_applications.ipynb` — Survey of generative AI
    applications across industries.
-2. `examples/02_future_trends_research.ipynb` — Current research directions
+2. **[CORE]** `examples/02_future_trends_research.ipynb` — Current research directions
    and open problems in generative AI.
-3. `examples/03_music_generation.ipynb` — AI music generation.
-4. `examples/04_experimenting_advanced_generative_models.ipynb` —
+3. **[HOMEWORK]** `examples/03_music_generation.ipynb` — AI music generation.
+4. **[CORE]** `examples/04_experimenting_advanced_generative_models.ipynb` —
    Advanced image models compared (StyleGAN, Stable Diffusion, DALL-E),
    grounded with a small GAN trained locally.
-5. `examples/05_audio_voice_synthesis_wavenet_jukebox.ipynb` — Audio and
+5. **[HOMEWORK]** `examples/05_audio_voice_synthesis_wavenet_jukebox.ipynb` — Audio and
    voice synthesis with WaveNet- and Jukebox-style approaches.
-6. `examples/06_code_generation_openai_codex_copilot.ipynb` — Code generation
+6. **[CORE]** `examples/06_code_generation_openai_codex_copilot.ipynb` — Code generation
    with models like OpenAI Codex and GitHub Copilot.
 
 ## Exercise

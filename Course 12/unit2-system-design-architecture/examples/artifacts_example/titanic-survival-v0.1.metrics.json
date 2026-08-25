@@ -1,0 +1,9 @@
+{
+  "validation": {
+    "accuracy": 0.8034,
+    "precision": 0.7619,
+    "recall": 0.7059,
+    "f1": 0.7328
+  },
+  "baseline_f1_to_beat": 0.7368
+}

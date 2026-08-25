@@ -1,6 +1,7 @@
 # WHAT: pin every dependency to an exact version in requirements.txt.
-# WHY: '==' is what makes the image reproducible — the same build next year
+# WHY: '==' is what makes the image reproducible - the same build next year
 # installs the same versions, avoiding 'works on my machine' drift.
+# If your card says framework "onnx", swap scikit-learn+joblib for onnxruntime.
 fastapi==0.110.0
 uvicorn==0.29.0
 scikit-learn==1.4.2

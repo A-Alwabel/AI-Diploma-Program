@@ -13,18 +13,20 @@ Scaling data science beyond a single machine and into production: big data conce
 
 ## Examples (run in order)
 
-| # | Notebook | Description |
-|---|----------|-------------|
-| 01 | `examples/01_big_data_theory.ipynb` | Big data characteristics and distributed computing theory |
-| 02 | `examples/02_dask_distributed.ipynb` | Distributed computing with Dask |
-| 03 | `examples/03_pyspark_distributed.ipynb` | Distributed data processing with PySpark (optional dependency) |
-| 04 | `examples/04_rapids_workflows.ipynb` | GPU workflows with RAPIDS (optional GPU) |
-| 05 | `examples/05_production_pipelines.ipynb` | Building production data pipelines |
-| 06 | `examples/06_performance_optimization.ipynb` | Profiling and optimizing data processing performance |
-| 07 | `examples/07_large_datasets.ipynb` | Techniques for handling large datasets |
-| 08 | `examples/08_deployment.ipynb` | Deploying models and pipelines |
-| 09 | `examples/09_model_monitoring.ipynb` | Model monitoring and performance tracking |
-| 10 | `examples/10_data_pipeline_automation.ipynb` | Automating data pipelines |
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+| # | Notebook | Description | Tier |
+|---|----------|-------------|------|
+| 01 | `examples/01_big_data_theory.ipynb` | Big data characteristics and distributed computing theory | **CORE** |
+| 02 | `examples/02_dask_distributed.ipynb` | Distributed computing with Dask | **CORE** |
+| 03 | `examples/03_pyspark_distributed.ipynb` | Distributed data processing with PySpark (optional dependency) | **CORE** |
+| 04 | `examples/04_rapids_workflows.ipynb` | GPU workflows with RAPIDS (optional GPU) | **CORE** |
+| 05 | `examples/05_production_pipelines.ipynb` | Building production data pipelines | **ENRICHMENT** |
+| 06 | `examples/06_performance_optimization.ipynb` | Profiling and optimizing data processing performance | **HOMEWORK** |
+| 07 | `examples/07_large_datasets.ipynb` | Techniques for handling large datasets | **HOMEWORK** |
+| 08 | `examples/08_deployment.ipynb` | Deploying models and pipelines | **CORE** |
+| 09 | `examples/09_model_monitoring.ipynb` | Model monitoring and performance tracking | **CORE** |
+| 10 | `examples/10_data_pipeline_automation.ipynb` | Automating data pipelines | **ENRICHMENT** |
 
 PySpark and RAPIDS are optional - see `../DOCS/OPTIONAL_DEPENDENCIES.md`. The other files in `examples/` (`large_dataset.csv`, `deployed_model.pkl`, logs, metadata) are inputs/outputs of these notebooks.
 

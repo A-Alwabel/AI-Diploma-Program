@@ -14,15 +14,17 @@ How CNNs process images: convolution, pooling, and feature maps; classic and adv
 
 ## Examples (do in file order)
 
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
 Run the notebooks in `examples/` in this order:
 
-1. `01_cnn_architecture.ipynb` — convolution, pooling, and fully connected layers; a first CNN.
-2. `02_image_processing_fundamentals_and_feature_extraction.ipynb` — pixels, channels, normalization, and augmentation.
-3. `03_cnn_advanced_architectures.ipynb` — classic architectures (LeNet, AlexNet) and what changed between them.
-4. `04_transfer_learning_object_detection.ipynb` — object detection concepts (Faster R-CNN, SSD, YOLO) with pretrained backbones.
-5. `05_transfer_learning_cnns.ipynb` — reuse a pretrained CNN: freeze layers and fine-tune.
-6. `06_pretrained_cnn_architectures.ipynb` — compare pretrained architectures (VGG, ResNet, MobileNet).
-7. `07_training_cnn_image_datasets.ipynb` — train a CNN from scratch on CIFAR-10; full pipeline.
+1. **[CORE]** `01_cnn_architecture.ipynb` — convolution, pooling, and fully connected layers; a first CNN.
+2. **[HOMEWORK]** `02_image_processing_fundamentals_and_feature_extraction.ipynb` — pixels, channels, normalization, and augmentation.
+3. **[HOMEWORK]** `03_cnn_advanced_architectures.ipynb` — classic architectures (LeNet, AlexNet) and what changed between them.
+4. **[HOMEWORK]** `04_transfer_learning_object_detection.ipynb` — object detection concepts (Faster R-CNN, SSD, YOLO) with pretrained backbones.
+5. **[CORE]** `05_transfer_learning_cnns.ipynb` — reuse a pretrained CNN: freeze layers and fine-tune.
+6. **[HOMEWORK]** `06_pretrained_cnn_architectures.ipynb` — compare pretrained architectures (VGG, ResNet, MobileNet).
+7. **[HOMEWORK]** `07_training_cnn_image_datasets.ipynb` — train a CNN from scratch on CIFAR-10; full pipeline.
 
 Note: notebooks 04, 05, and 07 involve downloads and training runs that can take tens of minutes on CPU — use a GPU (e.g. Colab, see `../DOCS/COLAB_SETUP.md`) or reduce epochs/data for a quicker pass.
 

@@ -15,16 +15,18 @@ What deep learning is and how it differs from traditional ML; the structure of n
 
 ## Examples (do in file order)
 
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
 Run the notebooks in `examples/` in this order:
 
-1. `01_deep_learning_fundamentals_compared_to_traditional_ml.ipynb` — what deep learning is and when it beats (or loses to) traditional ML.
-2. `02_simple_neural_network.ipynb` — build and train your first neural network; layers, fit, loss and accuracy curves.
-3. `03_perceptron_mlp_tensorflow_pytorch_setup.ipynb` — perceptron and MLP; setting up and comparing TensorFlow and PyTorch.
-4. `04_activation_functions_and_optimization_algorithms.ipynb` — sigmoid/ReLU/tanh and how optimizers update weights.
-5. `05_backpropagation_detailed.ipynb` — gradients and the chain rule, step by step.
-6. `06_optimization_techniques.ipynb` — SGD, momentum, Adam; learning-rate effects.
-7. `07_image_processing_feature_extraction.ipynb` — image data as arrays; basic preprocessing and feature extraction.
-8. `08_forward_and_backward_propagation.ipynb` — the full forward and backward pass through a network.
+1. **[CORE]** `01_deep_learning_fundamentals_compared_to_traditional_ml.ipynb` — what deep learning is and when it beats (or loses to) traditional ML.
+2. **[CORE]** `02_simple_neural_network.ipynb` — build and train your first neural network; layers, fit, loss and accuracy curves.
+3. **[HOMEWORK]** `03_perceptron_mlp_tensorflow_pytorch_setup.ipynb` — perceptron and MLP; setting up and comparing TensorFlow and PyTorch.
+4. **[CORE]** `04_activation_functions_and_optimization_algorithms.ipynb` — sigmoid/ReLU/tanh and how optimizers update weights.
+5. **[HOMEWORK]** `05_backpropagation_detailed.ipynb` — gradients and the chain rule, step by step.
+6. **[HOMEWORK]** `06_optimization_techniques.ipynb` — SGD, momentum, Adam; learning-rate effects.
+7. **[HOMEWORK]** `07_image_processing_feature_extraction.ipynb` — image data as arrays; basic preprocessing and feature extraction.
+8. **[CORE]** `08_forward_and_backward_propagation.ipynb` — the full forward and backward pass through a network.
 
 ## Exercise
 

@@ -14,8 +14,13 @@ This course teaches how to deploy AI models to production: packaging artifacts, 
 
 ## Prerequisites
 
-- Semester 1 (AIAT 111–116)
+- Semester 1 (AIAT 111–116), including AIAT 114 — Machine Learning Algorithms (Course 04)
 - AIAT 122 — Deep Learning (Course 08): train and save models
+
+**Bring a model with you.** This course deploys *your* classifier — the one you trained
+in AIAT 114 or AIAT 122 — over and over: as a Flask API, a FastAPI service, and a Docker
+image. [`PORTFOLIO_MODEL.md`](PORTFOLIO_MODEL.md) is the one-page how-to for exporting
+it. Without one, the notebooks fall back to a named baseline and say so in their output.
 
 ## Units
 
@@ -50,9 +55,10 @@ Follow this pattern in every unit:
 For the whole course:
 
 1. Start with [`START_HERE.md`](START_HERE.md)
-2. Work through Units 1 to 5 in order
-3. Complete [`final_exercise.ipynb`](final_exercise.ipynb) — the graded course practical (100 points, covers all six CLOs). Its solution is released by your instructor.
-4. Finish with [`ASSESSMENTS/Final_Exam.md`](ASSESSMENTS/Final_Exam.md)
+2. Export your portfolio model — [`PORTFOLIO_MODEL.md`](PORTFOLIO_MODEL.md)
+3. Work through Units 1 to 5 in order
+4. Complete [`final_exercise.ipynb`](final_exercise.ipynb) — the graded course practical (100 points, covers all six CLOs). Its solution is released by your instructor.
+5. Finish with [`ASSESSMENTS/Final_Exam.md`](ASSESSMENTS/Final_Exam.md)
 
 `PROJECTS/ML_Deployment_Pipeline/` is used only if your instructor assigns it.
 
@@ -62,6 +68,7 @@ Read [`DEPLOYMENT_LEARNING_JOURNEY.md`](DEPLOYMENT_LEARNING_JOURNEY.md) once at 
 
 ## Supporting Documents
 
+- [`PORTFOLIO_MODEL.md`](PORTFOLIO_MODEL.md) — the model you carry through this course: how to export it from AIAT 114 or AIAT 122, what the model card must contain, and which lessons consume it
 - [`../docs/SETUP_GUIDE.md`](../docs/SETUP_GUIDE.md) — environment setup for the whole diploma
 - [`DOCS/EXAMPLES_ORDER.md`](DOCS/EXAMPLES_ORDER.md) — notebook order for every unit
 - [`DOCS/REQUIREMENTS_COURSE_11.md`](DOCS/REQUIREMENTS_COURSE_11.md) — packages needed per unit (see also [`requirements-course11.txt`](requirements-course11.txt))
@@ -74,6 +81,8 @@ Read [`DEPLOYMENT_LEARNING_JOURNEY.md`](DEPLOYMENT_LEARNING_JOURNEY.md) once at 
 Course 11/
 ├── README.md
 ├── START_HERE.md
+├── PORTFOLIO_MODEL.md          # the model you bring into this course
+├── portfolio_model.py          # loader/exporter the notebooks import
 ├── DEPLOYMENT_LEARNING_JOURNEY.md
 ├── STUDENT_PROGRESS_CHECKLIST.md
 ├── requirements-course11.txt

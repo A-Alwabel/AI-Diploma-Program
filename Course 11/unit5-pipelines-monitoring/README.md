@@ -21,13 +21,15 @@ Deployment does not end at launch. This unit covers living models: monitoring, d
 
 ## Study order (required)
 
-1. `examples/01_model_monitoring.ipynb` — performance monitoring of a deployed model
-2. `examples/02_retraining_pipeline.ipynb` — retraining workflows
-3. `examples/03_alerting_incident_management.ipynb` — alerts and incident handling
-4. `examples/04_drift_detection.ipynb` — data and concept drift detection
-5. `examples/05_experiment_tracking_mlflow_wandb.ipynb` — experiment tracking (MLflow, W&B patterns)
-6. `examples/06_model_versioning_reproducibility.ipynb` — reproducibility across model versions
-7. `examples/07_ab_testing_canary_deployment.ipynb` — A/B testing and canary rollout
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+1. **[CORE]** `examples/01_model_monitoring.ipynb` — performance monitoring of a deployed model
+2. **[CORE]** `examples/02_retraining_pipeline.ipynb` — retraining workflows
+3. **[HOMEWORK]** `examples/03_alerting_incident_management.ipynb` — alerts and incident handling
+4. **[CORE]** `examples/04_drift_detection.ipynb` — data and concept drift detection
+5. **[CORE]** `examples/05_experiment_tracking_mlflow_wandb.ipynb` — experiment tracking (MLflow, W&B patterns)
+6. **[CORE]** `examples/06_model_versioning_reproducibility.ipynb` — reproducibility across model versions
+7. **[CORE]** `examples/07_ab_testing_canary_deployment.ipynb` — A/B testing and canary rollout
 
 ## Exercise and quiz
 

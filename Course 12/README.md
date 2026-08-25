@@ -29,7 +29,7 @@ The final course of the AI Diploma. You plan, design, build, evaluate, document,
 | 4 | Evaluation and Refinement | [unit4-evaluation-optimization/](unit4-evaluation-optimization/README.md) | 17 (3 + 14) |
 | 5 | Project Documentation and Final Presentation | [unit5-documentation-presentation/](unit5-documentation-presentation/README.md) | 17 (3 + 14) |
 
-Note: the Unit 2 lesson notebook is currently a placeholder that outlines the planned content; see the Unit 2 README.
+All five unit lesson notebooks are complete. Every lesson opens with a **Builds on (AIAT 111-125)** section naming the earlier-course notebooks it assembles - this course integrates the diploma, it does not re-teach it.
 
 ---
 

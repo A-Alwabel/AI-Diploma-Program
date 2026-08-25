@@ -13,16 +13,18 @@ Turning raw data into analysis-ready data: loading from multiple formats, handli
 
 ## Examples (run in order)
 
-| # | Notebook | Description |
-|---|----------|-------------|
-| 01 | `examples/01_data_loading.ipynb` | Loading data from CSV, JSON, and Excel |
-| 02 | `examples/02_missing_values_duplicates.ipynb` | Detecting and handling missing values and duplicates |
-| 03 | `examples/03_outliers_transformation.ipynb` | Outlier detection and data transformation |
-| 04 | `examples/04_feature_transformation_scaling_encoding.ipynb` | Feature scaling and categorical encoding |
-| 05 | `examples/05_eda_visualizations.ipynb` | Visual EDA: distributions and relationships |
-| 06 | `examples/06_statistical_eda.ipynb` | Statistical EDA: summaries, correlations, hypothesis checks |
-| 07 | `examples/07_cudf_import_export_gpu.ipynb` | cuDF import/export and GPU acceleration (optional GPU) |
-| 08 | `examples/08_feature_extraction_unstructured.ipynb` | Extracting features from unstructured data (e.g. text) |
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+| # | Notebook | Description | Tier |
+|---|----------|-------------|------|
+| 01 | `examples/01_data_loading.ipynb` | Loading data from CSV, JSON, and Excel | **HOMEWORK** |
+| 02 | `examples/02_missing_values_duplicates.ipynb` | Detecting and handling missing values and duplicates | **CORE** |
+| 03 | `examples/03_outliers_transformation.ipynb` | Outlier detection and data transformation | **CORE** |
+| 04 | `examples/04_feature_transformation_scaling_encoding.ipynb` | Feature scaling and categorical encoding | **CORE** |
+| 05 | `examples/05_eda_visualizations.ipynb` | Visual EDA: distributions and relationships | **CORE** |
+| 06 | `examples/06_statistical_eda.ipynb` | Statistical EDA: summaries, correlations, hypothesis checks | **HOMEWORK** |
+| 07 | `examples/07_cudf_import_export_gpu.ipynb` | cuDF import/export and GPU acceleration (optional GPU) | **HOMEWORK** |
+| 08 | `examples/08_feature_extraction_unstructured.ipynb` | Extracting features from unstructured data (e.g. text) | **HOMEWORK** |
 
 Sample data files (`sample_data.csv/.json/.xlsx`, `large_data.csv`) used by the notebooks live in `examples/`.
 

@@ -20,10 +20,12 @@ Cloud platforms often run containers. This unit makes environments reproducible 
 
 ## Study order (required)
 
-1. `examples/01_docker_deployment.ipynb` — Docker images for model services
-2. `examples/02_kubernetes_deployment.ipynb` — Kubernetes rollout of a model service
-3. `examples/03_cloud_deployment_comparison.ipynb` — comparing container deployment options across clouds
-4. `examples/04_cicd_pipelines.ipynb` — CI/CD steps for model delivery
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+1. **[CORE]** `examples/01_docker_deployment.ipynb` — Docker images for model services
+2. **[CORE]** `examples/02_kubernetes_deployment.ipynb` — Kubernetes rollout of a model service
+3. **[CORE]** `examples/03_cloud_deployment_comparison.ipynb` — comparing container deployment options across clouds
+4. **[CORE]** `examples/04_cicd_pipelines.ipynb` — CI/CD steps for model delivery
 
 ### Supporting files (used by the notebooks)
 

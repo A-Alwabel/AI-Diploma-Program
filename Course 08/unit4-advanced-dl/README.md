@@ -14,12 +14,14 @@ Generative models — GANs (generator vs discriminator) and autoencoders/VAEs (l
 
 ## Examples (do in file order)
 
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
 Run the notebooks in `examples/` in this order:
 
-1. `01_gans_and_autoencoders_vaes.ipynb` — GANs and autoencoders/VAEs: how generative models learn to produce data.
-2. `02_implementing_a_vae_variational_autoencoder_for_anomaly_detection.ipynb` — build a VAE and use reconstruction error to flag anomalies.
-3. `03_reinforcement_learning_fundamentals_deep_q_networks_policy_gradients.ipynb` — rewards, DQN, and policy gradients (uses `gymnasium`).
-4. `04_ethical_concerns_in_ai_bias_fairness_interpretability.ipynb` — measure bias and fairness; interpret model decisions.
+1. **[CORE]** `01_gans_and_autoencoders_vaes.ipynb` — GANs and autoencoders/VAEs: how generative models learn to produce data.
+2. **[CORE]** `02_implementing_a_vae_variational_autoencoder_for_anomaly_detection.ipynb` — build a VAE and use reconstruction error to flag anomalies.
+3. **[CORE]** `03_reinforcement_learning_fundamentals_deep_q_networks_policy_gradients.ipynb` — rewards, DQN, and policy gradients (uses `gymnasium`).
+4. **[CORE]** `04_ethical_concerns_in_ai_bias_fairness_interpretability.ipynb` — measure bias and fairness; interpret model decisions.
 
 Note: GAN/VAE training in 01–02 can take several minutes; a GPU helps (see `../DOCS/COLAB_SETUP.md`). The ethics notebook uses synthetic data to illustrate fairness metrics.
 

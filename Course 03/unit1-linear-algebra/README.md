@@ -29,15 +29,17 @@ By the end of this unit, you will be able to:
 
 ## Notebooks (work through in order)
 
-1. `examples/00_why_how_after.ipynb` — Unit overview: why linear algebra matters for ML, how it is used, what comes after
-2. `examples/01_vectors_matrices_basics.ipynb` — Vectors and matrices basics with NumPy
-3. `examples/02_matrix_operations.ipynb` — Matrix operations used in ML (products, transposes, norms)
-4. `examples/03_eigenvalues_eigenvectors.ipynb` — Eigenvalues and eigenvectors
-5. `examples/04_substitution_elimination_linear_equations.ipynb` — Solving linear equations by substitution and elimination
-6. `examples/05_determinants_inverse_matrices.ipynb` — Computing determinants and inverse matrices
-7. `examples/06_transformation_matrices_orthogonal_basis.ipynb` — Transformation matrices and orthogonal basis sets
-8. `examples/07_eigenvalue_analysis_large_matrices.ipynb` — Eigenvalue analysis on large-dimensional matrices
-9. `examples/08_ml_parameter_experiments.ipynb` — Experimenting with ML model parameters
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+1. **[HOMEWORK — pre-read]** `examples/00_why_how_after.ipynb` — Unit overview: why linear algebra matters for ML, how it is used, what comes after
+2. **[CORE]** `examples/01_vectors_matrices_basics.ipynb` — Vectors and matrices basics with NumPy
+3. **[CORE]** `examples/02_matrix_operations.ipynb` — Matrix operations used in ML (products, transposes, norms)
+4. **[CORE]** `examples/03_eigenvalues_eigenvectors.ipynb` — Eigenvalues and eigenvectors
+5. **[HOMEWORK]** `examples/04_substitution_elimination_linear_equations.ipynb` — Solving linear equations by substitution and elimination
+6. **[HOMEWORK]** `examples/05_determinants_inverse_matrices.ipynb` — Computing determinants and inverse matrices
+7. **[CORE]** `examples/06_transformation_matrices_orthogonal_basis.ipynb` — Transformation matrices and orthogonal basis sets
+8. **[HOMEWORK]** `examples/07_eigenvalue_analysis_large_matrices.ipynb` — Eigenvalue analysis on large-dimensional matrices
+9. **[HOMEWORK]** `examples/08_ml_parameter_experiments.ipynb` — Experimenting with ML model parameters
 
 ---
 

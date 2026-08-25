@@ -1,0 +1,57 @@
+{
+  "input": {
+    "Pclass": {
+      "type": "int",
+      "required": true,
+      "allowed": [
+        1,
+        2,
+        3
+      ],
+      "note": "ticket class"
+    },
+    "Sex": {
+      "type": "str",
+      "required": true,
+      "allowed": [
+        "male",
+        "female"
+      ]
+    },
+    "Age": {
+      "type": "float",
+      "required": false,
+      "note": "years; missing is legal (19.9% of the training data was)"
+    },
+    "SibSp": {
+      "type": "int",
+      "required": true,
+      "note": "siblings/spouses aboard"
+    },
+    "Parch": {
+      "type": "int",
+      "required": true,
+      "note": "parents/children aboard"
+    },
+    "Fare": {
+      "type": "float",
+      "required": true,
+      "note": "pounds sterling, 1912"
+    },
+    "Embarked": {
+      "type": "str",
+      "required": false,
+      "allowed": [
+        "C",
+        "Q",
+        "S"
+      ]
+    }
+  },
+  "output": {
+    "survival_probability": "float in [0, 1]",
+    "predicted_label": "int 0 or 1",
+    "threshold_used": "float \u2014 recorded so a past decision can be reproduced",
+    "model_version": "str \u2014 which artifact produced this answer"
+  }
+}

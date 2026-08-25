@@ -20,11 +20,13 @@ By the end of this unit, you will be able to:
 
 ## Examples (work in this order)
 
-1. [examples/01_bias_detection.ipynb](examples/01_bias_detection.ipynb) — Detecting bias in ML models with fairness metrics such as demographic parity and equalized odds.
-2. [examples/02_bias_mitigation.ipynb](examples/02_bias_mitigation.ipynb) — Bias mitigation techniques applied before, during, and after model training.
-3. [examples/03_fair_representation.ipynb](examples/03_fair_representation.ipynb) — Fair representation learning: transforming features to reduce encoded bias.
-4. [examples/04_bias_case_studies.ipynb](examples/04_bias_case_studies.ipynb) — Case studies of biased AI: hiring, credit scoring, facial recognition, predictive policing.
-5. [examples/05_fair_ai_development.ipynb](examples/05_fair_ai_development.ipynb) — Building fairness into the development workflow, including human-in-the-loop review.
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+1. **[CORE]** [examples/01_bias_detection.ipynb](examples/01_bias_detection.ipynb) — Detecting bias in ML models with fairness metrics such as demographic parity and equalized odds.
+2. **[CORE]** [examples/02_bias_mitigation.ipynb](examples/02_bias_mitigation.ipynb) — Bias mitigation techniques applied before, during, and after model training.
+3. **[HOMEWORK]** [examples/03_fair_representation.ipynb](examples/03_fair_representation.ipynb) — Fair representation learning: transforming features to reduce encoded bias.
+4. **[HOMEWORK]** [examples/04_bias_case_studies.ipynb](examples/04_bias_case_studies.ipynb) — Case studies of biased AI: hiring, credit scoring, facial recognition, predictive policing.
+5. **[HOMEWORK]** [examples/05_fair_ai_development.ipynb](examples/05_fair_ai_development.ipynb) — Building fairness into the development workflow, including human-in-the-loop review.
 
 ## Exercise
 

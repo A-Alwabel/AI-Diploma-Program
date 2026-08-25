@@ -20,10 +20,12 @@ By the end of this unit you can:
 
 ## Examples (work in this order)
 
-| # | Notebook | What it covers |
-|---|----------|----------------|
-| 1 | `examples/01_grid_search.ipynb` | Grid Search and Random Search; CV-based tuning; result heatmaps |
-| 2 | `examples/02_boosting.ipynb` | Gradient boosting with XGBoost and LightGBM; learning curves; feature importance |
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+| # | Notebook | What it covers | Tier |
+|---|----------|----------------|------|
+| 1 | `examples/01_grid_search.ipynb` | Grid Search and Random Search; CV-based tuning; result heatmaps | **CORE** |
+| 2 | `examples/02_boosting.ipynb` | Gradient boosting with XGBoost and LightGBM; learning curves; feature importance | **CORE** |
 
 The `examples/` folder also contains the PNG figures the notebooks produce.
 

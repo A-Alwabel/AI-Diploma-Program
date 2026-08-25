@@ -17,13 +17,15 @@ algorithm, and Markov Decision Processes solved with value iteration.
 
 ## Notebooks (work in this order)
 
-1. `examples/01_learning_under_uncertainty.ipynb` - Probability, Bayes'
+> **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
+
+1. **[CORE]** `examples/01_learning_under_uncertainty.ipynb` - Probability, Bayes'
    rule, and decision theory; modeling uncertainty in inference and learning.
-2. `examples/02_bayesian_networks.ipynb` - Building Bayesian networks and
+2. **[CORE]** `examples/02_bayesian_networks.ipynb` - Building Bayesian networks and
    running inference with the pgmpy library.
-3. `examples/03_hmm_viterbi.ipynb` - Hidden Markov Models and the Viterbi
+3. **[CORE]** `examples/03_hmm_viterbi.ipynb` - Hidden Markov Models and the Viterbi
    algorithm for sequence decoding.
-4. `examples/04_mdp_value_iteration.ipynb` - Markov Decision Processes and
+4. **[CORE]** `examples/04_mdp_value_iteration.ipynb` - Markov Decision Processes and
    value iteration for sequential decision making.
 
 ## Exercise
