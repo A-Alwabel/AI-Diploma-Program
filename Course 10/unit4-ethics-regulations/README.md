@@ -37,8 +37,8 @@ detection workflow, and applying regulatory guidelines to model development.
 
 ## Exercise
 
-- `exercises/01_ai_ethics_exercise.ipynb` — building a fair and ethical AI
-  system.
+- `exercises/01_ai_ethics_exercise.ipynb` — auditing a real model for bias,
+  fairness and GDPR/EU AI Act compliance on the real Titanic manifest.
 
 ## Quiz
 

@@ -23,7 +23,7 @@ Run the notebooks in `examples/` in this order:
 3. **[CORE]** `03_reinforcement_learning_fundamentals_deep_q_networks_policy_gradients.ipynb` — rewards, DQN, and policy gradients (uses `gymnasium`).
 4. **[CORE]** `04_ethical_concerns_in_ai_bias_fairness_interpretability.ipynb` — measure bias and fairness; interpret model decisions.
 
-Note: GAN/VAE training in 01–02 can take several minutes; a GPU helps (see `../DOCS/COLAB_SETUP.md`). The ethics notebook uses synthetic data to illustrate fairness metrics.
+Note: GAN/VAE training in 01–02 can take several minutes; a GPU helps (see `../DOCS/COLAB_SETUP.md`). The ethics notebook audits a classifier trained on the real Titanic manifest (`Course 04/datasets/raw/titanic.csv`), where the group disparity is historical fact rather than injected by the code.
 
 ## Exercises
 

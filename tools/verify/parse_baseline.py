@@ -27,12 +27,17 @@ def strip_magics(src: str) -> str:
     if lines and lines[0].lstrip().startswith("%%"):
         return ""  # cell magic: whole cell is not plain Python
     out = []
+    depth = 0  # bracket depth: a "%" inside an open call is the format operator, not a magic
     for ln in lines:
         ls = ln.lstrip()
-        if ls.startswith(("%", "!")):
+        if depth == 0 and ls.startswith(("%", "!")):
             out.append("pass")
         else:
             out.append(ln)
+        # crude but sufficient: brackets outside strings dominate in notebook code
+        depth += ln.count("(") + ln.count("[") + ln.count("{")
+        depth -= ln.count(")") + ln.count("]") + ln.count("}")
+        depth = max(depth, 0)
     return "\n".join(out)
 
 def check(path: Path):
