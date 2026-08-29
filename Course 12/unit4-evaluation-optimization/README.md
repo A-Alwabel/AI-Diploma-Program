@@ -19,6 +19,7 @@ Every artifact you reuse goes in **section 6, the Prior Work Inventory**, of [`T
 > **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
 
 1. **[CORE]** [examples/01_model_evaluation_optimization.ipynb](examples/01_model_evaluation_optimization.ipynb) - Running experiments and collecting metrics, comparing against baseline models, analyzing failure cases, visualizing results (confusion matrices, curves), and iterative improvement.
+2. **[ENRICHMENT]** [enrichment/E2_one_success_isnt_reliability.ipynb](enrichment/E2_one_success_isnt_reliability.ipynb) - Non-examinable: why a single successful run measures almost nothing - pass@1 vs pass^k, Wilson vs Wald intervals, and how many repeated runs your project needs before it may claim an improvement.
 
 ## Exercise
 

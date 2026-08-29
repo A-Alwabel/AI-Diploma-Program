@@ -25,6 +25,7 @@ Run the notebooks in `examples/` in this order:
 5. **[HOMEWORK]** `05_model_distillation.ipynb` — train a small student model from a large teacher.
 6. **[CORE]** `06_flask_fastapi_deployment.ipynb` — wrap a model in a REST API with Flask/FastAPI.
 7. **[CORE]** `07_model_optimization_quantization.ipynb` — quantize a model and compare size, speed, and accuracy.
+8. **[ENRICHMENT]** `../enrichment/E6_quantization_you_can_feel.ipynb` — write symmetric INT8/INT4 quantization yourself, find the accuracy cliff below 4 bits, and see where the error concentrates (not examinable).
 
 The `simple_model.onnx` / `simple_model.onnx.data` files in `examples/` are sample artifacts used by the ONNX notebooks.
 

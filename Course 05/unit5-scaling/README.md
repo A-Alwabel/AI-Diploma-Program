@@ -27,6 +27,9 @@ Scaling data science beyond a single machine and into production: big data conce
 | 08 | `examples/08_deployment.ipynb` | Deploying models and pipelines | **CORE** |
 | 09 | `examples/09_model_monitoring.ipynb` | Model monitoring and performance tracking | **CORE** |
 | 10 | `examples/10_data_pipeline_automation.ipynb` | Automating data pipelines | **ENRICHMENT** |
+| E15 | `enrichment/E15_zero_shot_forecasting_honestly.ipynb` | Seasonal-naive, Holt-Winters and Theta forecasts written from their formulas, backtested on rolling origins before and across the March-2020 break — then what a fair comparison against a zero-shot foundation model would require | **ENRICHMENT** |
+
+Notebooks in `enrichment/` are **not examinable** - they connect this unit to current practice and appear in no quiz or exam.
 
 PySpark and RAPIDS are optional - see `../DOCS/OPTIONAL_DEPENDENCIES.md`. The other files in `examples/` (`large_dataset.csv`, `deployed_model.pkl`, logs, metadata) are inputs/outputs of these notebooks.
 

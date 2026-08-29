@@ -26,8 +26,10 @@ By the end of this unit you can:
 |---|----------|----------------|------|
 | 1 | `examples/01_cross_validation.ipynb` | K-Fold cross-validation, CV score distributions, model comparison | **CORE** |
 | 2 | `examples/02_bias_variance_learning_curves.ipynb` | Bias-variance tradeoff, learning curves, validation curves | **CORE** |
+| 3 | `enrichment/E10_conformal_prediction_in_twenty_lines.ipynb` | Split-conformal prediction sets and intervals: turn any fitted model into one with a verified 90% coverage guarantee, and read set size as a per-prediction difficulty signal | **ENRICHMENT** |
 
-The `examples/` folder also contains the PNG figures the notebooks produce.
+The `examples/` folder also contains the PNG figures the notebooks produce. Notebooks in `enrichment/` are
+**not examinable** - they connect this unit to current practice and appear in no quiz or exam.
 
 ## Exercises
 

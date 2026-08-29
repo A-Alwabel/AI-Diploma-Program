@@ -29,6 +29,7 @@ By the end of this unit, you will be able to:
 5. **[HOMEWORK]** [examples/05_hitl_approaches.ipynb](examples/05_hitl_approaches.ipynb) — Human-in-the-loop approaches and when to use each.
 6. **[HOMEWORK]** [examples/06_transparency_tools.ipynb](examples/06_transparency_tools.ipynb) — Comparing transparency tools for model reporting and disclosure.
 7. **[HOMEWORK]** [examples/07_explainable_ai_techniques.ipynb](examples/07_explainable_ai_techniques.ipynb) — Implementing explainable-AI techniques (SHAP, LIME) end to end.
+8. **[ENRICHMENT]** [enrichment/E13_llm_as_a_judge_disagreement.ipynb](enrichment/E13_llm_as_a_judge_disagreement.ipynb) — Grading with a model instead of a human: position bias, self-inconsistency and Cohen's κ on a bundled (simulated, clearly labelled) judge log, then the protocol change that recovers the true answer. Not examinable.
 
 ## Exercises
 

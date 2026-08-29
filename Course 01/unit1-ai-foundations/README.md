@@ -26,6 +26,7 @@ What AI is and where it came from; intelligent agents and rationality; the philo
 | 10 | `examples/10_knowledge_representation.ipynb` | Knowledge representation and reasoning | **HOMEWORK** |
 | 11 | `examples/11_generative_ai_intro.ipynb` | First look at generative AI frameworks and applications | **HOMEWORK** |
 | 12 | `examples/12_case_studies_intelligent_agents.ipynb` | Case studies of intelligent agents and rational decision-making | **HOMEWORK** |
+| E1 | `enrichment/E1_agent_loop_without_a_model.ipynb` | The `observe → act → observe` agent loop in pure Python — a JSON tool schema, a tool that fails on purpose, and a retry; the same policy scores 4/8 then 8/8 as only the harness changes. Non-examinable. | **ENRICHMENT** |
 
 ---
 

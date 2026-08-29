@@ -40,6 +40,7 @@ By the end of this unit, you will be able to:
 7. **[CORE]** `examples/06_transformation_matrices_orthogonal_basis.ipynb` — Transformation matrices and orthogonal basis sets
 8. **[HOMEWORK]** `examples/07_eigenvalue_analysis_large_matrices.ipynb` — Eigenvalue analysis on large-dimensional matrices
 9. **[HOMEWORK]** `examples/08_ml_parameter_experiments.ipynb` — Experimenting with ML model parameters
+10. **[ENRICHMENT]** `enrichment/E5_lora_on_a_matrix.ipynb` — Not examinable. LoRA as pure linear algebra: fit a rank-*r* update ΔW = BA to a real 512×512 transform, count the parameters, and discover the rank your adaptation data has already imposed.
 
 ---
 

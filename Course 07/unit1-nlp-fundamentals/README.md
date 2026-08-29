@@ -14,6 +14,7 @@ This unit currently has one example notebook; additional content is being author
 > **Tiers:** **CORE** = taught live in class (max 2 per 3-hour session) · **HOMEWORK** = self-study, assigned around the live sessions · **ENRICHMENT** = optional extra, only if time allows.
 
 1. **[CORE]** `examples/01_text_preprocessing.ipynb` — Clean and normalize text (lowercasing, punctuation, whitespace) and build a basic preprocessing pipeline using Python's `re` and `string` modules.
+2. **[ENRICHMENT]** `enrichment/E16_document_parsing_became_a_vlm_problem.ipynb` — Non-examinable: where the text you preprocess actually comes from. Score a regex/whitespace extraction pipeline against a checked-in reference parse, cell by cell, and see why document parsing became a vision-language task. Notebooks in `enrichment/` appear in no quiz or exam.
 
 ## Exercise
 

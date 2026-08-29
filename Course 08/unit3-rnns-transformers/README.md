@@ -28,6 +28,7 @@ Run the notebooks in `examples/` in this order:
 8. **[HOMEWORK]** `08_text_generation_rnn_lstm_gru.ipynb` — character/word-level text generation with RNN/LSTM/GRU.
 9. **[CORE]** `09_transformer_models_bert_gpt_nlp.ipynb` — survey of Transformer models (BERT, GPT) across NLP tasks.
 10. **[HOMEWORK]** `10_sentiment_analysis_translation_speech.ipynb` — applied NLP: sentiment analysis, translation, and speech-related tasks.
+11. **[ENRICHMENT]** `enrichment/E8_speculative_decoding_toy.ipynb` — Not examinable. Draft-and-verify decoding on two character n-gram models: far fewer expensive model calls per token, with the output distribution left provably unchanged.
 
 Note: notebooks that load pretrained models (05, 06, 09, 10) download weights and can take several minutes; a GPU (e.g. Colab, see `../DOCS/COLAB_SETUP.md`) and small batch sizes help.
 

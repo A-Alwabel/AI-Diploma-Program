@@ -47,6 +47,9 @@ MNIST data included in `examples/data/`.
     from trained generative models.
 12. **[HOMEWORK]** `examples/12_exploring_latent_spaces_interpolation.ipynb` — Exploring
     latent spaces and interpolation in VAEs.
+13. **[ENRICHMENT]** `enrichment/E12_flow_matching_in_two_dimensions.ipynb` — Non-examinable:
+    train a 1,882-parameter velocity field on a 2-D distribution and integrate the ODE to watch
+    noise become data — the flow-matching mechanism behind 2026 image and video generators.
 
 ## Exercise
 

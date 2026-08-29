@@ -142,6 +142,7 @@ instructions. See [docs/GPU_REQUIREMENTS_SUMMARY.md](docs/GPU_REQUIREMENTS_SUMMA
 | Document | Description |
 |---|---|
 | [Student Guide](docs/STUDENT_GUIDE.md) | How to work through the program |
+| [Glossary](docs/GLOSSARY.md) | **One meaning per term, across all twelve courses** — the definition of record for every word the diploma reuses (bias, agent, policy, p-value, epoch, inference…), plus the overloaded symbols |
 | [Student Handbook](docs/STUDENT_HANDBOOK.md) | Study habits, notebooks, progress tracking |
 | [Setup Guide](docs/SETUP_GUIDE.md) | Environment installation, kernels, smoke test |
 | [Course Navigation](docs/COURSE_NAVIGATION.md) | How courses connect; prerequisites by AIAT code |

@@ -1,0 +1,46 @@
+AI Diploma - Quick Reference Guide
+
+Semester 1
+
+Code          Course                      Hours    CLOs    Key Topics
+
+AIAT 111      Introduction to Artificial  64       8       AI history, search algorithms, neural
+              Intelligence and                             networks, generative AI intro
+              Applications
+AIAT 112      Python for Artificial       96       5       Python programming, AI algorithms,
+              Intelligence                                 knowledge representation, optimization
+AIAT 113      Mathematics and             64       6       Linear algebra, calculus, probability,
+              Probability for Machine                      statistics, dimensionality reduction
+              Learning
+AIAT 114      Machine Learning            96       7       Regression, classification,
+              Algorithms and                               clustering, model selection, boosting
+              Applications
+AIAT 115      Scalable Data Science       96       5       Data cleaning, visualization, ML
+                                                           pipelines, big data, GPU acceleration
+AIAT 116      Artificial Intelligence     64       5       Bias, fairness, privacy, transparency,
+              Ethics                                       AI governance
+
+AI Diploma  -  page 3
+
+AI Diploma - Quick Reference Guide
+
+Semester 2
+
+Code          Course                      Hours    CLOs    Key Topics
+
+AIAT 121      Natural Language            64       10      Text processing, embeddings,
+              Processing                                   classification, deep learning NLP,
+                                                           transformers
+AIAT 122      Deep Learning               64       5       Neural networks, CNNs, RNNs,
+                                                           transformers, GANs, model deployment
+AIAT 123      Reinforcement Learning      96       6       MDPs, Q-learning, deep RL, exploration
+                                                           strategies, multi-agent RL
+AIAT 124      Generative Artificial       64       7       GANs, VAEs, transformers, text/image
+              Intelligence                                 generation, ethics
+AIAT 125      Deploying AI Models         96       6       Model packaging, APIs, containers,
+                                                           cloud deployment, MLOps
+AIAT 126      Graduation Project          80       5       Project planning, implementation,
+                                                           evaluation, documentation,
+                                                           presentation
+
+AI Diploma  -  page 4

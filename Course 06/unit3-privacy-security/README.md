@@ -29,6 +29,7 @@ By the end of this unit, you will be able to:
 5. **[HOMEWORK]** [examples/05_secure_development.ipynb](examples/05_secure_development.ipynb) — Secure AI development: common vulnerabilities and secure practices.
 6. **[HOMEWORK]** [examples/06_data_encryption_techniques.ipynb](examples/06_data_encryption_techniques.ipynb) — Implementing encryption techniques for data protection.
 7. **[CORE]** [examples/07_anonymization_pseudonymization.ipynb](examples/07_anonymization_pseudonymization.ipynb) — Applying anonymization and pseudonymization methods.
+8. **[ENRICHMENT]** [enrichment/E3_prompt_injection_sandbox.ipynb](enrichment/E3_prompt_injection_sandbox.ipynb) — Indirect prompt injection against a tool-using assistant: a poisoned document flips the tool call, a keyword filter fails, an allow-list privilege policy blocks it. Not examinable.
 
 ## Exercises
 

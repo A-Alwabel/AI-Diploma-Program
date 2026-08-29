@@ -30,6 +30,7 @@ Deployment does not end at launch. This unit covers living models: monitoring, d
 5. **[CORE]** `examples/05_experiment_tracking_mlflow_wandb.ipynb` — experiment tracking (MLflow, W&B patterns)
 6. **[CORE]** `examples/06_model_versioning_reproducibility.ipynb` — reproducibility across model versions
 7. **[CORE]** `examples/07_ab_testing_canary_deployment.ipynb` — A/B testing and canary rollout
+8. **[ENRICHMENT]** `enrichment/E11_drift_detection_is_harder_than_it_looks.ipynb` — run the KS test and PSI on a real 4½-year 911-call stream, watch the window and the bin count change the verdict, and compare drift-triggered retraining against a plain calendar (not examinable)
 
 ## Exercise and quiz
 

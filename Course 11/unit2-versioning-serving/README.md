@@ -30,6 +30,7 @@ Unit 1 showed local packaging and APIs. Here you deepen serving: versioning, mul
 5. **[CORE]** `examples/05_tensorflow_serving_torchserve.ipynb` — serving frameworks (TensorFlow Serving, TorchServe). **Run this notebook on the "tfenv" kernel** — it imports TensorFlow.
 6. **[CORE]** `examples/06_batch_vs_realtime_inference.ipynb` — batch vs real-time inference paths
 7. **[HOMEWORK]** `examples/07_kubernetes_scaling.ipynb` — scaling served models (Kubernetes concepts)
+8. **[ENRICHMENT]** `enrichment/E7_why_serving_is_memory_bound.ipynb` — write a decode loop with and without a KV cache, measure both cost curves, and compute how much cache memory a real model needs per request (not examinable)
 
 ## Exercise and quiz
 

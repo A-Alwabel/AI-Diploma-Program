@@ -26,6 +26,10 @@ search algorithms (BFS, DFS, A*).
    workflow.
 2. **[CORE]** `examples/02_search_algorithms.ipynb` - Implement and compare BFS, DFS,
    and A* on graphs and problem spaces.
+3. **[ENRICHMENT]** `enrichment/E9_test_time_compute_measured.ipynb` - Test-time compute,
+   measured: 30 real routing instances solved exactly by enumeration, then accuracy plotted
+   against compute budget for three search policies - the curve that governs 2026 reasoning
+   budgets. Non-examinable.
 
 ## Exercise
 

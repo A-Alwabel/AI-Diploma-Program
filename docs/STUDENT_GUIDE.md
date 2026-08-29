@@ -18,6 +18,26 @@ Start with these documents:
 1. [QUICK_REFERENCE_GUIDE.md](QUICK_REFERENCE_GUIDE.md) — courses, hours, and CLOs at a glance
 2. [SETUP_GUIDE.md](SETUP_GUIDE.md) — set up your environment
 3. [COURSE_NAVIGATION.md](COURSE_NAVIGATION.md) — how the courses connect
+4. [GLOSSARY.md](GLOSSARY.md) — the definition of record for every term the diploma reuses
+
+---
+
+## When a word seems to change meaning
+
+Twelve courses in a row will hand you the same word more than once. Sometimes that is
+one idea returning at a deeper level; sometimes it is two unrelated fields that happened
+to pick the same word decades apart. **"Bias" is the clearest example** — in Course 04
+(AIAT 114) it names a model that is too simple, and in Course 06 (AIAT 116) it names a
+system that treats a group of people worse. Those are homonyms, not a contradiction, and
+you are supposed to be told which is which.
+
+[GLOSSARY.md](GLOSSARY.md) is where that is written down: one authoritative definition
+per shared term, every second technical sense flagged explicitly, the courses that teach
+each one, and the paper or official documentation that settles it. It also lists the
+symbols that carry more than one meaning (α alone has four jobs).
+
+**Use it as a right, not a courtesy.** If a notebook contradicts the glossary, the
+notebook is wrong — say so, and give the course, unit, lesson and cell.
 
 ---
 
