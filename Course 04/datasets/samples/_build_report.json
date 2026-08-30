@@ -1,0 +1,42 @@
+{
+  "creditcard_fraud": {
+    "file": "creditcard_fraud.sample.csv",
+    "sample_rows": 16000,
+    "full_rows": 284807,
+    "bytes": 4661794,
+    "mb": 4.66,
+    "note": "fraud rate 0.1750% vs 0.1727% in the full file; 28 fraud rows; V1-V28 and Amount rounded to 6 dp"
+  },
+  "montgomery_911_calls": {
+    "file": "montgomery_911_calls.sample.csv",
+    "sample_rows": 25000,
+    "full_rows": 663522,
+    "bytes": 4635943,
+    "mb": 4.64,
+    "note": "1 row in every 27, evenly spread; covers 2015-12-10 to 2020-07-29 - the same window as the full file; 100 distinct call types, 68 townships"
+  },
+  "border_crossing_data": {
+    "file": "border_crossing_data.sample.csv",
+    "sample_rows": 43818,
+    "full_rows": 346733,
+    "bytes": 4684235,
+    "mb": 4.68,
+    "note": "stratified by (month, crossing type), at least 1 row per group; 279/279 months and 12/12 crossing types kept; 'Value' totals are roughly 13% of the real totals"
+  },
+  "cicids2017": {
+    "file": "cicids2017.sample.csv",
+    "sample_rows": 14015,
+    "full_rows": 2300825,
+    "bytes": 4298322,
+    "mb": 4.3,
+    "note": "stratified by Label, at least 5 rows per class -> BENIGN 10607/1,743,179; DoS Hulk 1406/231,073; PortScan 967/158,930; DDoS 779/128,027; DoS GoldenEye 63/10,293; FTP-Patator 48/7,938; SSH-Patator 36/5,897; DoS slowloris 35/5,796; DoS Slowhttptest 33/5,499; Bot 12/1,966; Web Attack \ufffd Brute Force 9/1,507; Web Attack \ufffd XSS 5/652; Infiltration 5/36; Web Attack \ufffd Sql Injection 5/21; Heartbleed 5/11"
+  },
+  "unsw_nb15": {
+    "file": "unsw_nb15.sample.csv",
+    "sample_rows": 20148,
+    "full_rows": 2540047,
+    "bytes": 4642918,
+    "mb": 4.64,
+    "note": "headerless, exactly like the full file; stratified by attack_cat, at least 40 rows per class -> (unlabelled) 17470/2,218,764; Generic 1697/215,481; Exploits 351/44,525; Fuzzers 191/24,246; DoS 129/16,353; Reconnaissance 110/13,987; Analysis 40/2,677; Backdoor 40/1,795; Shellcode 40/1,511; Backdoors 40/534; Worms 40/174"
+  }
+}

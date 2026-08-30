@@ -32,13 +32,29 @@ wandb/
 *.pb
 model_*.zip
 
-# Data files (download scripts provided in notebooks)
+# Data files.
+# The multi-hundred-megabyte originals in Course 04/datasets/raw/ stay OUT of the repo.
+# What DOES ship is one committed sample of each (Course 04/datasets/samples/) plus the
+# small real files. tools/data.py loads whichever is present and prints which one it used,
+# so a student who clones the repo is never blocked. See Course 04/datasets/DATA.md.
 data/
 *.csv
 *.parquet
 *.npy
 *.npz
 /tmp/
+
+# ... except these, which are course INPUTS and must be in the repository:
+!Course 04/datasets/samples/*.csv
+!Course 04/datasets/raw/titanic.csv
+!Course 04/datasets/raw/crime_statistics.csv
+!Course 04/datasets/raw/crime_statistics_large.csv
+!Course 04/datasets/raw/crime_statistics_original_50.csv
+!Course 04/unit1-regression-algorithms/examples/sample_housing_data.csv
+!Course 06/unit4-transparency-accountability/enrichment/*.csv
+
+# Written by Course 05 unit2 07_cudf_import_export_gpu.ipynb on every run (20 MB).
+Course 05/unit2-cleaning/examples/output_pandas.csv
 
 # Logs & outputs
 *.log

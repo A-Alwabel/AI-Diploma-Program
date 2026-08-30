@@ -1,0 +1,4 @@
+judge,first_position_bonus,leniency,score_noise_sd,note
+judge_A,0.5,0.3,0.15,TRUE simulator settings - the notebook tries to recover these
+judge_B,0.08,-0.2,0.4,TRUE simulator settings - the notebook tries to recover these
+judge_C,0.3,0.6,0.1,TRUE simulator settings - the notebook tries to recover these
