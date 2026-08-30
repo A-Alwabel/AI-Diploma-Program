@@ -116,6 +116,31 @@ deactivate
 When a notebook imports `tensorflow`, switch its kernel to **Python (tfenv-TF)**
 (Jupyter: Kernel → Change Kernel). All other notebooks stay on `ai-diploma`.
 
+### Exactly which notebooks need `tfenv`
+
+These 12 lessons import TensorFlow/Keras directly and will not run on `ai-diploma`:
+
+- `Course 01/unit3-ml-basics/examples/02_perceptron_xor.ipynb`
+- `Course 01/unit3-ml-basics/examples/03_solving_xor_keras.ipynb`
+- `Course 01/unit4-neural-networks-basics/examples/02_cnn_rnn_architectures.ipynb`
+- `Course 01/unit4-neural-networks-basics/examples/03_single_neuron_activation_functions.ipynb`
+- `Course 01/unit4-neural-networks-basics/examples/04_multiclass_classification_keras.ipynb`
+- `Course 01/unit4-neural-networks-basics/examples/05_cnn_image_classification.ipynb`
+- `Course 01/unit4-neural-networks-basics/examples/06_rnn_lstm_gru_sequential.ipynb`
+- `Course 01/unit4-neural-networks-basics/examples/07_early_stopping_regularization.ipynb`
+- `Course 01/unit4-neural-networks-basics/exercises/exercise_01.ipynb`
+- `Course 01/unit5-generative-ai-intro/examples/03_diabetes_classification_ffnn.ipynb`
+- `Course 01/unit5-generative-ai-intro/examples/04_simple_gan_experiment.ipynb`
+- `Course 08/unit3-rnns-transformers/exercises/02_transformer_exercise.ipynb`
+
+Every other notebook runs on `ai-diploma`. A few lessons — Course 02 unit 1's library
+tour, Course 07's seq2seq lesson and Course 11's serving comparison — mention TensorFlow
+inside a `try`/`except`: they detect that it is missing, print a short note and carry on,
+so you do not need `tfenv` for them.
+
+**PyTorch is different:** `torch` IS installed by `requirements.txt`, so the PyTorch
+notebooks (most of Course 08) run on the ordinary `ai-diploma` kernel.
+
 ---
 
 ## Course-Specific Notes
