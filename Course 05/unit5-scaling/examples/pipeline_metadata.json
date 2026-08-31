@@ -1,6 +1,6 @@
 {
   "pipeline_version": "1.0",
-  "created_at": "2026-08-31T02:51:00.039799",
+  "created_at": "2026-08-31T03:17:48.464147",
   "source_dataset": "titanic.csv (891 real passenger records)",
   "train_samples": 712,
   "test_samples": 179,
