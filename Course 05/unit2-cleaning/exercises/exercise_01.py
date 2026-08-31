@@ -21,18 +21,50 @@ sns.set_style("whitegrid")
 
 # Real dataset with real issues
 # ---------------------------------------------------------------------------
-# Montgomery County (Pennsylvania) 911 emergency call log - a public dataset.
-# We read the first 100,000 calls so the exercise runs in seconds. That slice is
-# a contiguous window of real history, not a random sample, so the duplicate
-# records the dispatch system produced are preserved.
+# Montgomery County (Pennsylvania) 911 emergency call log - a public dataset,
+# covering 2015-12-10 to 2020-07-29.
 #
-# Nothing below was planted. This file arrives with:
-#   - missing values in 'zip' and 'twp'
-#   - exact duplicate rows (the same call written twice)
+# Nothing below was planted. This data arrives with:
+#   - missing values in 'zip' (about 12% of calls) and a few in 'twp'
 #   - impossible coordinates (a handful of calls placed outside Pennsylvania)
-DATA_DIR = '../../../Course 04/datasets/raw/'
+#
+# HONEST NOTE about duplicates. The full 663,522-call log is 123 MB and is NOT
+# committed to this repository; load() below reads the 25,000-call sample that IS,
+# which keeps 1 call in every 27. The full file's first 100,000 rows contain 37
+# exact duplicate rows; the sample contains ZERO, because thinning 1-in-27 almost
+# never keeps both copies of a duplicated call. Task 3 below is written around
+# that fact rather than pretending otherwise. Put the full file in
+# Course 04/datasets/raw/ and pass prefer="full" if you want to meet the real ones.
+# --- Data setup. Works from any folder, and on Google Colab. -------------------------
+# WHAT: find the repository root and put it on sys.path, then import the shared loader.
+# WHY:  a hard-coded '../../../Course 04/datasets/raw/titanic.csv' only resolves when the
+#       working directory happens to be this file's folder. This does not care, and the
+#       datasets themselves are not committed - the loader fetches or samples them for you.
+import sys, pathlib
 
-df = pd.read_csv(DATA_DIR + 'montgomery_911_calls.csv', nrows=100_000)
+_here = (pathlib.Path(__file__).resolve().parent if "__file__" in globals()
+         else pathlib.Path.cwd().resolve())
+_root = next((p for p in [_here, *_here.parents] if (p / "tools" / "data.py").exists()), None)
+if _root is None:                     # Google Colab, or a stray copy of this file
+    import urllib.request
+    pathlib.Path("tools").mkdir(exist_ok=True)
+    try:
+        urllib.request.urlretrieve(
+            "https://raw.githubusercontent.com/A-Alwabel/"
+            "AI-Diploma-Program/main/tools/data.py", "tools/data.py")
+    except Exception as _e:
+        raise RuntimeError(
+            "Could not find the AI Diploma repository from this folder, and could not "
+            "download the data loader either. Run this file inside a clone of "
+            "https://github.com/A-Alwabel/AI-Diploma-Program, or connect to the internet "
+            f"and run it again. (underlying error: {_e})") from None
+    _root = pathlib.Path.cwd()
+sys.path.insert(0, str(_root))
+
+from tools.data import load
+# -------------------------------------------------------------------------------------
+
+df = load("montgomery_911_calls", prefer="sample")
 
 # One parsing step you need before any time-based task:
 df['timeStamp'] = pd.to_datetime(df['timeStamp'])
@@ -71,9 +103,13 @@ print("\n" + "=" * 60)
 print("Task 3: Handle Duplicates")
 print("=" * 60)
 # Your code here...
-# - Count fully identical rows with df.duplicated()
-# - Count duplicates on the key ['timeStamp', 'addr', 'title'] instead
-# - Remove the exact duplicates and verify the count dropped
+# - Count fully identical rows with df.duplicated(). Expect ZERO here, and read the
+#   HONEST NOTE at the top of this file before you conclude the data is clean:
+#   "no duplicates in this sample" is not the same claim as "no duplicates in the log"
+# - Count duplicates on the key ['timeStamp', 'addr', 'title'] instead. Also zero.
+#   Write one sentence on what a zero result does and does not prove
+# - Say what you would do differently if this were a real hand-off and you needed to
+#   know the duplicate rate: which file would you have to obtain, and why
 # - Explain why the two numbers differ
 
 # Task 4: Identify outliers

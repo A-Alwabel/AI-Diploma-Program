@@ -23,8 +23,36 @@ sns.set_style("whitegrid")
 
 # Real dataset - the Titanic passenger manifest
 # 891 real passengers; Age, Cabin and Embarked have genuine gaps in the record.
-DATA_DIR = '../../../Course 04/datasets/raw/'
-df = pd.read_csv(DATA_DIR + 'titanic.csv')
+# --- Data setup. Works from any folder, and on Google Colab. -------------------------
+# WHAT: find the repository root and put it on sys.path, then import the shared loader.
+# WHY:  a hard-coded '../../../Course 04/datasets/raw/titanic.csv' only resolves when the
+#       working directory happens to be this file's folder. This does not care, and the
+#       datasets themselves are not committed - the loader fetches or samples them for you.
+import sys, pathlib
+
+_here = (pathlib.Path(__file__).resolve().parent if "__file__" in globals()
+         else pathlib.Path.cwd().resolve())
+_root = next((p for p in [_here, *_here.parents] if (p / "tools" / "data.py").exists()), None)
+if _root is None:                     # Google Colab, or a stray copy of this file
+    import urllib.request
+    pathlib.Path("tools").mkdir(exist_ok=True)
+    try:
+        urllib.request.urlretrieve(
+            "https://raw.githubusercontent.com/A-Alwabel/"
+            "AI-Diploma-Program/main/tools/data.py", "tools/data.py")
+    except Exception as _e:
+        raise RuntimeError(
+            "Could not find the AI Diploma repository from this folder, and could not "
+            "download the data loader either. Run this file inside a clone of "
+            "https://github.com/A-Alwabel/AI-Diploma-Program, or connect to the internet "
+            f"and run it again. (underlying error: {_e})") from None
+    _root = pathlib.Path.cwd()
+sys.path.insert(0, str(_root))
+
+from tools.data import load
+# -------------------------------------------------------------------------------------
+
+df = load("titanic")          # the whole 891-row file ships with the repository
 
 # One derived column you will need below:
 # family_size = siblings/spouses + parents/children + the passenger themselves.

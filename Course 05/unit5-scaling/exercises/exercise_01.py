@@ -27,20 +27,54 @@ import matplotlib.pyplot as plt
 # Real defects you will meet: column names carry leading spaces, and the
 # flow-rate columns contain infinities produced by zero-duration flows.
 # ---------------------------------------------------------------------------
-DATA_DIR = '../../../Course 04/datasets/raw/'
-LARGE_FILE = DATA_DIR + 'cicids2017.csv'
+# HONEST NOTE: the full 708 MB / 2,300,825-flow capture is NOT committed to this
+# repository. dataset_path(..., prefer="sample") returns the 14,015-flow copy that
+# IS - stratified by Label, so all 15 attack classes survive. The code below is
+# unchanged for the full file: put cicids2017.csv in Course 04/datasets/raw/ and
+# drop the prefer= argument. CHUNK_SIZE is scaled to the file you actually have,
+# because chunking a 14,015-row file into 200,000-row chunks gives one chunk and
+# teaches nothing.
+# --- Data setup. Works from any folder, and on Google Colab. -------------------------
+# WHAT: find the repository root and put it on sys.path, then import the shared loader.
+# WHY:  a hard-coded '../../../Course 04/datasets/raw/titanic.csv' only resolves when the
+#       working directory happens to be this file's folder. This does not care, and the
+#       datasets themselves are not committed - the loader fetches or samples them for you.
+import sys, pathlib
+
+_here = (pathlib.Path(__file__).resolve().parent if "__file__" in globals()
+         else pathlib.Path.cwd().resolve())
+_root = next((p for p in [_here, *_here.parents] if (p / "tools" / "data.py").exists()), None)
+if _root is None:                     # Google Colab, or a stray copy of this file
+    import urllib.request
+    pathlib.Path("tools").mkdir(exist_ok=True)
+    try:
+        urllib.request.urlretrieve(
+            "https://raw.githubusercontent.com/A-Alwabel/"
+            "AI-Diploma-Program/main/tools/data.py", "tools/data.py")
+    except Exception as _e:
+        raise RuntimeError(
+            "Could not find the AI Diploma repository from this folder, and could not "
+            "download the data loader either. Run this file inside a clone of "
+            "https://github.com/A-Alwabel/AI-Diploma-Program, or connect to the internet "
+            f"and run it again. (underlying error: {_e})") from None
+    _root = pathlib.Path.cwd()
+sys.path.insert(0, str(_root))
+
+from tools.data import load, path as dataset_path
+# -------------------------------------------------------------------------------------
+
+LARGE_FILE = dataset_path("cicids2017", prefer="sample")
 
 USECOLS = [' Destination Port', ' Flow Duration', ' Total Fwd Packets',
            ' Total Backward Packets', ' Fwd Packet Length Mean',
            'Flow Bytes/s', ' Label']
-CHUNK_SIZE = 200_000
+CHUNK_SIZE = 1_500 if os.path.getsize(LARGE_FILE) < 50e6 else 200_000
 
-print(f"Source file: cicids2017.csv ({os.path.getsize(LARGE_FILE) / 1e6:,.0f} MB on disk)")
+print(f"Source file: {LARGE_FILE.name} ({os.path.getsize(LARGE_FILE) / 1e6:,.1f} MB on disk)")
 print(f"Columns selected: {len(USECOLS)} of 79")
 print(f"Chunk size: {CHUNK_SIZE:,} rows")
 
-# A classroom-size in-memory sample, for the tasks that need one DataFrame.
-# The rows are real; only WHICH rows we take is random.
+# A classroom-size in-memory slice, for the tasks that need one DataFrame.
 large_data = pd.read_csv(LARGE_FILE, usecols=USECOLS, nrows=100_000)
 large_data.columns = [c.strip() for c in large_data.columns]
 print(f"\nIn-memory slice for profiling: {large_data.shape}")

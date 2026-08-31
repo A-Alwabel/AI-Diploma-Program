@@ -2,7 +2,7 @@
 """Batch-execute student-path notebooks for one course (or a file list).
 
 Generalizes Course 09/Course 11's verify_student_notebooks.py:
-- targets unit*/examples and unit*/exercises notebooks (skips solutions/, DOCS/)
+- targets unit*/examples, unit*/exercises and unit*/enrichment notebooks (skips solutions/, DOCS/)
 - executes each notebook with its own directory as cwd
 - writes outputs IN PLACE by default (project rule: students see real outputs);
   use --check-only to execute to a throwaway copy instead
@@ -27,7 +27,7 @@ REPO = Path(__file__).resolve().parents[2]
 PY = sys.executable
 
 def student_notebooks(course_dir: Path):
-    for pattern in ("unit*/examples/*.ipynb", "unit*/exercises/*.ipynb"):
+    for pattern in ("unit*/examples/*.ipynb", "unit*/exercises/*.ipynb", "unit*/enrichment/*.ipynb"):
         yield from sorted(course_dir.glob(pattern))
 
 def run_one(nb: Path, timeout: int, inplace: bool, kernel: str | None = None) -> tuple[bool, float, str]:
