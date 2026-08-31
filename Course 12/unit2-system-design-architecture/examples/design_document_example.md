@@ -84,7 +84,7 @@ Input: JSON record validated against 7 fields (Pclass, Sex, Age, SibSp, Parch, F
 
 ## 10. Scalability, modularity and integration
 
-- measured on 284,807 real rows of creditcard_fraud.csv: linear projection from four sample sizes missed the measured full-data time by 18.0%
+- measured on 284,807 real rows of creditcard_fraud.csv: linear projection from four sample sizes missed the measured full-data time by 0.3%
 - read only the required columns (usecols) — the first scalability technique, from AIAT 115 U5
 - modularity: swapping the estimator changes the artifact-store format only; source, preprocessing, serving and monitoring interfaces hold
 - integration: every component maps to a named AIAT 111-125 artifact (see section 1)
