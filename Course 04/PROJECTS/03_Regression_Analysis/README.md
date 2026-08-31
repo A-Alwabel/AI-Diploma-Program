@@ -78,10 +78,27 @@ Implement and compare different regression techniques with proper hyperparameter
 
 ## Dataset Suggestions
 
-- `datasets/raw/us_accidents.csv` — Traffic Management (predict severity/duration proxy)
-- `datasets/raw/creditcard_fraud.csv` — Financial risk scoring (use continuous proxy)
-- `datasets/raw/crime_statistics.csv` — Internal intelligence metrics
-- `datasets/raw/border_crossing_data.csv` — Border throughput forecasting
+- `load("montgomery_911_calls")` — Emergency Response (predict call volume per hour or per day)
+- `load("border_crossing_data")` — Border throughput forecasting (predict `Value` per port and month)
+- `load("crime_statistics")` — Internal intelligence metrics (predict `Murder` from the other columns)
+- `load("creditcard_fraud")` — Financial risk scoring (regress `Amount`; the `Class` column makes it a
+  classification file, so state clearly which problem you chose)
+
+**No file paths.** Load any of these with the shared loader, which finds the data from any
+working directory and on Google Colab, and prints whether it gave you the full file or the
+bundled sample:
+
+```python
+import sys, pathlib
+_here = pathlib.Path.cwd().resolve()
+sys.path.insert(0, str(next(p for p in [_here, *_here.parents] if (p / "tools" / "data.py").exists())))
+from tools.data import load
+
+df = load("creditcard_fraud", prefer="sample")   # prefer="sample" = same rows for everyone
+```
+
+See `Course 04/datasets/DATA.md` for what ships in the repository, what each sample changes,
+and how to fetch the full files if you want them.
 
 Use `random_state=73` for all splits/models to keep runs reproducible.
 

@@ -81,10 +81,26 @@ Build a comprehensive classification system that implements and compares multipl
 
 ## Dataset Suggestions
 
-- `datasets/raw/montgomery_911_calls.csv` (multi-class: EMS/Fire/Traffic) — Emergency Response
-- `datasets/raw/unsw_nb15.csv` (multi-class cyber threats; or collapse to binary threat) — Cyber/Communication
-- `datasets/raw/crime_statistics.csv` (categorical incident grouping) — Internal Intelligence
-- `datasets/raw/creditcard_fraud.csv` (binary with imbalance; set class weights) — Financial/Terrorism Financing
+- `load("montgomery_911_calls")` (multi-class: EMS/Fire/Traffic from `title`) — Emergency Response
+- `load("unsw_nb15")` (multi-class `attack_cat`, or collapse to the binary `label`) — Cyber/Communication
+- `load("cicids2017")` (multi-class ` Label`: 15 attack classes) — Cyber/Communication
+- `load("creditcard_fraud")` (binary `Class`, heavily imbalanced; set class weights) — Financial/Terrorism Financing
+
+**No file paths.** Load any of these with the shared loader, which finds the data from any
+working directory and on Google Colab, and prints whether it gave you the full file or the
+bundled sample:
+
+```python
+import sys, pathlib
+_here = pathlib.Path.cwd().resolve()
+sys.path.insert(0, str(next(p for p in [_here, *_here.parents] if (p / "tools" / "data.py").exists())))
+from tools.data import load
+
+df = load("creditcard_fraud", prefer="sample")   # prefer="sample" = same rows for everyone
+```
+
+See `Course 04/datasets/DATA.md` for what ships in the repository, what each sample changes,
+and how to fetch the full files if you want them.
 
 Use `random_state=73` for all splits/models to keep results reproducible.
 

@@ -128,12 +128,26 @@ project_01_ml_pipeline/
 
 ## Dataset Suggestions
 
-Use provided GDI datasets (under `Course 04/datasets/raw/`):
+1. `load("creditcard_fraud")` (default) — Financial/Terrorism Financing (binary target: `Class`)
+2. `load("border_crossing_data")` — Border Cargo/Entry flows (pick a binary target you define)
+3. `load("unsw_nb15")` — Cyber intrusion (multi-class `attack_cat`, or the binary `label`)
+4. `load("crime_statistics")` — Internal intelligence pattern scoring
 
-1. **creditcard_fraud.csv** (default) — Financial/Terrorism Financing (binary target: `Class`)
-2. **border_crossing_data.csv** — Border Cargo/Entry flows (pick a binary target you define)
-3. **unsw_nb15.csv** — Cyber intrusion (multi-class or binary threat flag)
-4. **crime_statistics.csv** — Internal intelligence pattern scoring
+**No file paths.** Load any of these with the shared loader, which finds the data from any
+working directory and on Google Colab, and prints whether it gave you the full file or the
+bundled sample:
+
+```python
+import sys, pathlib
+_here = pathlib.Path.cwd().resolve()
+sys.path.insert(0, str(next(p for p in [_here, *_here.parents] if (p / "tools" / "data.py").exists())))
+from tools.data import load
+
+df = load("creditcard_fraud", prefer="sample")   # prefer="sample" = same rows for everyone
+```
+
+See `Course 04/datasets/DATA.md` for what ships in the repository, what each sample changes,
+and how to fetch the full files if you want them.
 
 Set `random_state=73` everywhere for reproducibility.
 
