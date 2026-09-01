@@ -15,9 +15,9 @@ Every option below is a statement someone in this field has actually believed. E
 correct. Read all four before you answer.
 
 ### Question 1 (5 points)
-A team replaces a logistic-regression classifier with a deep neural network on the **same raw
-pixels**, and test accuracy rises. Which statement best explains the advantage the deep
-network has here?
+A team replaces a logistic-regression classifier with a two-layer neural network on the **same
+raw pixels** and the **same 10,000 test images**. Test accuracy rises from **0.8879 to 0.9130** —
+1,121 wrong images down to 870. Which statement best explains the advantage the network has here?
 
 A) It needs fewer labelled training images, because its layers share information between classes  
 B) It learns hierarchical features from the raw pixels instead of using each pixel as a fixed feature  
@@ -31,21 +31,21 @@ Your first model for a 28×28 image task is a `Dense` network on flattened pixel
 it with a CNN and accuracy improves. What does the **convolutional layer** give you that the
 `Dense` layer did not?
 
-A) It treats each image as one flat vector, so where a pixel sits no longer changes the result  
+A) It treats each image as one flat vector, so the position of a pixel no longer changes the result  
 B) Its weight sharing removes the risk of overfitting, so a held-out validation split is no longer needed  
-C) It supplies the non-linearity itself, so no ReLU or other activation is needed after it  
-D) The same small filter is applied at every position, so a pattern learned once is detected anywhere in the image
+C) It supplies the non-linearity itself, so no ReLU or other activation is needed after the layer  
+D) The same small filter runs at every position, so a pattern learned once is found anywhere
 
 ---
 
 ### Question 3 (5 points)
-A `SimpleRNN` trained on 100-token movie reviews barely uses the words near the **start** of
-each review. You replace it with an **LSTM** and results improve. Why does the LSTM help?
+On IMDB reviews padded to 100 tokens, a `SimpleRNN` reaches **0.544** best validation accuracy
+and an **LSTM** of the same width reaches **0.776**. Where does the LSTM's advantage come from?
 
-A) Its gates and cell state stop the gradient from shrinking away over many time steps  
-B) It reads all 100 tokens in parallel instead of one at a time  
-C) It has fewer parameters than a `SimpleRNN`, so it needs less data to train  
-D) It reads each review backwards as well as forwards, so the early words are seen last
+A) Its gates and cell state add a path along which the gradient can be carried back many steps  
+B) It reads all 100 tokens in parallel instead of one at a time, so early words are not forgotten  
+C) It has fewer parameters than a `SimpleRNN` of the same width, so it needs less data to train  
+D) It reads each review backwards as well as forwards, so the early words are seen last of all
 
 ---
 
@@ -73,8 +73,9 @@ D) A frozen backbone pays off only when the new dataset is at least as large as 
 ---
 
 ### Question 6 (5 points)
-A trained FP32 model is converted to INT8. The stored file gets smaller and validation
-accuracy barely moves. Which optimization technique is this, and what did it change?
+A trained FP32 model is converted to INT8. The stored file falls from **5,597 to 4,557 bytes**
+and validation accuracy is unchanged at **0.840**. Which optimization technique is this, and what
+did it change?
 
 A) Quantization — the number of **bits** used to store each weight value  
 B) Pruning — the number of **weights**, by zeroing out the smallest ones  
