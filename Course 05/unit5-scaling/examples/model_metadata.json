@@ -1,7 +1,7 @@
 {
   "model_version": "1.0.0",
-  "deployed_at": "2026-08-31T03:17:54.855479",
-  "training_date": "2026-08-31T03:17:54.855482",
+  "deployed_at": "2026-09-01T00:54:29.211703",
+  "training_date": "2026-09-01T00:54:29.211706",
   "training_data": "California Housing (1990 U.S. census), 5000-block sample",
   "target": "median house value in $100,000s",
   "metrics": {

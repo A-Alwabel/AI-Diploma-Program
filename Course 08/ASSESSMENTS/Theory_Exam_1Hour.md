@@ -9,89 +9,94 @@
 
 ## Part A: Multiple Choice (20 points)
 
-Choose the best answer. Each question is worth **2 points**.
+Choose the best answer. Each question is worth **2 points**. Every option is a statement
+someone could believe, and in several questions more than one option names a real technique —
+read all four before choosing.
 
 ### Question 1
 What is a key advantage of deep learning compared with many
 traditional machine learning methods?
 
-A) It always needs less data  
-B) It automatically learns hierarchical features from raw data  
-C) It removes the need for evaluation  
-D) It only works for images
+A) It reaches higher accuracy than traditional ML on any dataset, including small tabular ones  
+B) It needs fewer labelled examples, because its layers share information between classes  
+C) It automatically learns hierarchical features from raw data, with no hand-designed features  
+D) It does not require choosing hyperparameters such as the learning rate or the number of layers
 
 ### Question 2
 What is the main purpose of backpropagation?
 
-A) To increase dataset size  
-B) To deploy the model
-C) To remove hidden layers  
-D) To compute gradients used to update model weights  
+A) To compute the gradients of the loss with respect to each weight  
+B) To choose a separate learning rate for each weight automatically  
+C) To pass the input forward through the layers and produce the prediction  
+D) To decide how many hidden layers the network should have
 
 ### Question 3
-Which technique is commonly used to reduce overfitting in neural networks?
+Which of the following is a technique used to **reduce** overfitting in neural networks?
 
-A) Removing the loss function  
-B) Increasing noise in labels  
-C) Dropout  
-D) Using only one epoch
+A) Adding more layers and more units to the network  
+B) Training for more epochs on the same data  
+C) Raising the learning rate so that training converges faster  
+D) Randomly switching off units during training (dropout)
 
 ### Question 4
 Why are CNNs effective for image tasks?
 
-A) They use convolutions to detect local visual patterns  
-B) They ignore spatial structure  
-C) They only work on text  
-D) They do not need training
+A) They flatten the image first, so that every pixel is compared with every other pixel  
+B) They use convolutions to detect local visual patterns, and pooling to tolerate small shifts  
+C) They need no activation function after them, because convolution is already non-linear  
+D) They have more parameters than a fully connected network of the same depth
 
 ### Question 5
 What is transfer learning?
 
-A) Training a model from scratch on a new dataset only  
-B) Converting a model to ONNX  
-C) Reusing a pre-trained model for a related task  
-D) Replacing labels with features
+A) Reusing a model pre-trained on a large dataset for a related task  
+B) Training one model on two datasets at the same time so it learns both tasks  
+C) Using a large model's outputs as targets to train a smaller model  
+D) Copying a trained model to another machine so that it can serve predictions
 
 ### Question 6
 Why are LSTMs usually better than basic RNNs for longer sequences?
 
-A) They remove all parameters  
-B) They use gates to preserve important information over time  
-C) They can only do classification  
-D) They do not use hidden states
+A) They process all of the time steps in parallel instead of one at a time  
+B) They have far fewer parameters, so they can be trained on much less data  
+C) They use gates and a cell state to carry information across many time steps  
+D) They read the whole sequence backwards as well as forwards
 
 ### Question 7
 What does self-attention allow a Transformer to do?
 
-A) Eliminate the need for optimization
-B) Replace all training data  
-C) Work only on images  
-D) Focus on relevant tokens in the sequence when processing each token  
+A) Encode each token's position, which is why no positional encoding is needed  
+B) Guarantee that the highest-weighted token is the reason for the prediction  
+C) Process the sequence one token at a time while carrying a hidden state  
+D) Let every token weigh every other token when computing its own representation
 
 ### Question 8
-Which model is most closely associated with learning a compressed
-latent representation and reconstructing the input?
+Which model learns a **compressed latent representation**, then treats that latent as a
+**probability distribution** (a mean and a variance) that it samples from to reconstruct or
+generate data?
 
-A) VAE  
-B) CNN  
-C) DQN  
-D) FastAPI
+A) Generative adversarial network (GAN)  
+B) Variational autoencoder (VAE)  
+C) Plain (deterministic) autoencoder  
+D) Deep Q-network (DQN)
 
 ### Question 9
-In reinforcement learning, what guides the agent toward better actions?
+In reinforcement learning, what is the training signal that guides the agent toward better
+actions?
 
-A) Random labels  
-B) Batch normalization only
-C) Convolution kernels only  
-D) Reward signals from the environment  
+A) Reward signals returned by the environment after each action  
+B) Labelled (state, correct action) pairs collected in advance  
+C) The reconstruction error between the agent's output and its input  
+D) A discriminator's judgement of whether the action looks real
 
 ### Question 10
+A team audits a model and finds its accuracy is 0.750 for one group and 0.783 for another.
 Which statement about responsible AI is correct?
 
-A) Bias can be ignored if accuracy is high  
-B) Explainability and fairness should be considered before deployment  
-C) Ethics only matter in research, not production  
-D) A model is fair if it works well on one group
+A) If the training data is a faithful record of what really happened, a model trained on it cannot be biased  
+B) Deleting the protected attribute from the feature set removes the disparity between groups  
+C) Accuracy can be near-equal across groups while the *kinds* of error differ sharply, so one metric is not enough  
+D) A measured difference in outcomes between two groups is by itself proof that the model is unjust
 
 ---
 
