@@ -16,10 +16,10 @@ Each question has exactly one best answer. Every option describes a position som
 ### Question 1 (5 points)
 **CLO2:** A team removes the `Sex` column from a screening model's training data and reports that the system is now fair. On the held-out set the model's positive-prediction rate is **44.3% for women and 31.6% for men** — a demographic parity difference of **0.128**. What does this result show?
 
-A) The gap must be a measurement error, because a model cannot discriminate on a feature it was never given at all  
-B) A gap of 0.128 sits below the 0.1 warning level used in this unit, so no further investigation is required  
+A) Removing `Sex` made the model blind to gender, so the remaining gap is not something the model itself produced  
+B) Demographic parity is the wrong test here: on the same held-out set the equalized-odds gaps are small (TPR gap 0.047)  
 C) The model rebuilt the group split from correlated features like fare and class, so deleting the column changed nothing  
-D) The model satisfies demographic parity, because two applicants with identical inputs always receive identical decisions  
+D) The model satisfies demographic parity, since two applicants with identical inputs receive an identical decision from it  
 
 ---
 
@@ -27,8 +27,8 @@ D) The model satisfies demographic parity, because two applicants with identical
 **CLO1, CLO2:** Northpointe showed that COMPAS was **calibrated** — a given risk score meant the same re-offence probability for Black and for white defendants. ProPublica showed that the **false-positive rates differed**: 44.9% for Black defendants against 23.5% for white defendants. Which statement best describes this situation?
 
 A) Both are correct: with different base rates, no classifier can be calibrated and have equal error rates at once  
-B) One of the two analyses must contain an arithmetic error, because a single system cannot be both fair and unfair here  
-C) ProPublica measured demographic parity, which is the fairness definition that a court is required to use  
+B) Northpointe is right and ProPublica is not: a score that means the same thing for both groups is the fairness that counts  
+C) ProPublica measured demographic parity, which is the fairness definition a court would apply to a sentencing tool  
 D) Calibrating the scores separately within each group would let both fairness criteria hold at the same time  
 
 ---
@@ -48,17 +48,17 @@ D) Laplace noise scales with sensitivity and ε, not with the size of the true a
 
 A) Report 0.204, since it is computed on far more data and is therefore the more reliable estimate  
 B) Report 0.163, and state that the global average of 0.204 in fact describes none of the three classes  
-C) Report 0.204 and explain that SHAP values are not additive, so per-subgroup values cannot be compared  
-D) Report that SHAP cannot answer this, since Shapley values only ever explain single predictions  
+C) Report 0.300 from second class, since a regulator should be shown the largest reliance on sex the model has  
+D) Report that SHAP explains single predictions, so a per-class average of SHAP values is not a usable figure  
 
 ---
 
 ### Question 5 (5 points)
 **CLO5:** Your company is placing a CV-screening model that ranks job applicants on the EU market. Under the EU AI Act risk tiers taught in Unit 5, what follows?
 
-A) Limited risk: the only duty is a transparency notice telling applicants that an AI system is involved  
+A) Limited risk: the duty is a transparency notice telling applicants that an AI system is involved in the screening  
 B) Prohibited: the Act lists automated decision-making about employment among its Article 5 banned practices  
-C) Minimal risk: the model only produces a ranking, and a human recruiter still takes the final decision  
+C) Minimal risk: the system produces a ranking and a human recruiter still takes the final hiring decision  
 D) High risk: data governance, logging, human oversight and a conformity assessment apply before deployment  
 
 ---
@@ -68,7 +68,7 @@ D) High risk: data governance, logging, human oversight and a conformity assessm
 
 A) A named human role is accountable for the gap, and the audit trail is what made it measurable months later  
 B) Accountability rests with the routing algorithm, since it issued all those decisions with no human involved  
-C) No action is needed here, since 62.1% is above chance and the system's overall accuracy was 78.9%  
+C) The band's 62.1% is normal variation around the 78.9% overall accuracy, so the trail shows no problem to fix  
 D) Retraining the model on those 29 cases resolves it, because the problem is model accuracy, not process  
 
 ---
