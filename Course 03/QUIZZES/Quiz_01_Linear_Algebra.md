@@ -40,18 +40,10 @@ Write NumPy code to:
 3. Get the shape of both
 
 ```python
-import numpy as np
-
-# Create vector
-vector = np.array([1, 2, 3, 4, 5])
-print(f"Vector: {vector}")
-print(f"Vector shape: {vector.shape}")
-
-# Create matrix
-matrix = np.array([[1, 2, 3], [4, 5, 6]])
-print(f"Matrix:\n{matrix}")
-print(f"Matrix shape: {matrix.shape}")
+# Your code here
 ```
+
+**Answer key:** released by your instructor.
 
 ---
 
@@ -97,24 +89,10 @@ Write NumPy code to:
 4. Calculate the transpose of A
 
 ```python
-import numpy as np
-
-# Create matrices
-A = np.array([[1, 2], [3, 4]])
-B = np.array([[5, 6], [7, 8]])
-
-# Matrix multiplication
-C = np.dot(A, B)  # or A @ B
-print(f"Matrix multiplication:\n{C}")
-
-# Element-wise multiplication
-D = A * B
-print(f"Element-wise multiplication:\n{D}")
-
-# Transpose
-A_transpose = A.T
-print(f"Transpose of A:\n{A_transpose}")
+# Your code here
 ```
+
+**Answer key:** released by your instructor.
 
 ---
 
@@ -151,17 +129,10 @@ Why are eigenvalues and eigenvectors important in machine learning?
 Write NumPy code to find eigenvalues and eigenvectors of a matrix:
 
 ```python
-import numpy as np
-
-# Create a matrix
-A = np.array([[4, 2], [1, 3]])
-
-# Find eigenvalues and eigenvectors
-eigenvalues, eigenvectors = np.linalg.eig(A)
-
-print(f"Eigenvalues: {eigenvalues}")
-print(f"Eigenvectors:\n{eigenvectors}")
+# Your code here
 ```
+
+**Answer key:** released by your instructor.
 
 ---
 
@@ -170,54 +141,14 @@ print(f"Eigenvectors:\n{eigenvectors}")
 ### Question 13 (10 points)
 Explain how linear algebra is used in machine learning. Give at least 3 examples.
 
-**Applications:**
-
-1. **Data Representation:**
-   - Data points as vectors
-   - Datasets as matrices
-   - Features as columns, samples as rows
-
-2. **Linear Regression:**
-   - Model: y = Xw + b (matrix form)
-   - Solution: w = (X^T X)^(-1) X^T y
-   - Uses matrix operations for predictions
-
-3. **Dimensionality Reduction (PCA):**
-   - Uses eigenvalues/eigenvectors
-   - Finds principal components
-   - Reduces feature space
-
-4. **Neural Networks:**
-   - Weight matrices for layers
-   - Matrix multiplication for forward propagation
-   - Efficient computation
-
-5. **Image Processing:**
-   - Images as matrices
-   - Transformations using matrix operations
-   - Convolution operations
+**Answer key:** released by your instructor.
 
 ---
 
 ### Question 14 (10 points)
 What is the dot product? How is it used in machine learning?
 
-**Dot Product:**
-- Sum of element-wise products of two vectors
-- Formula: a · b = Σ(a_i × b_i)
-- Result is a scalar
-
-**Properties:**
-- Measures similarity between vectors
-- Related to cosine similarity
-- Used in distance calculations
-
-**ML Applications:**
-1. **Similarity Measures:** Compare feature vectors
-2. **Linear Models:** y = w · x + b (dot product of weights and features)
-3. **Neural Networks:** Each neuron computes dot product of inputs and weights
-4. **Kernel Methods:** Many kernels use dot products
-5. **Recommendation Systems:** User-item similarity
+**Answer key:** released by your instructor.
 
 ---
 
