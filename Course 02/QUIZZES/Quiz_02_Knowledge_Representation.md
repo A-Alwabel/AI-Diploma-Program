@@ -34,8 +34,7 @@ In a knowledge graph, edges represent:
 ### Question 4 (10 points)
 Create a simple knowledge graph with 3 entities and 2 relationships. Draw it.
 
-- Entities: Person (John), City (Riyadh), Country (Saudi Arabia)
-- Relationships: John lives_in Riyadh, Riyadh located_in Saudi Arabia
+**Answer key:** released by your instructor.
 
 ### Question 5 (5 points)
 Which library is commonly used for knowledge graphs in Python?

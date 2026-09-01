@@ -27,9 +27,7 @@ What is the difference between classification and regression?
 ### Question 3 (10 points)
 What is the purpose of splitting data into training and testing sets?
 
-- To evaluate model performance on unseen data
-- To prevent overfitting
-- To ensure the model generalizes well
+**Answer key:** released by your instructor.
 
 ---
 

@@ -81,9 +81,7 @@ Given two options:
 
 Calculate expected value for each option. Which has higher expected value?
 
-- Option A: 0.8 × $100 = $80
-- Option B: 0.5 × $200 = $100
-- Option B has higher expected value
+**Answer key:** released by your instructor.
 
 ### Question 11 (10 points)
 What is expected value?

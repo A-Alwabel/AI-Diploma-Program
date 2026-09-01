@@ -27,9 +27,7 @@ What is an objective function?
 ### Question 3 (10 points)
 Give an example of an optimization problem (real-world or mathematical).
 
-- Minimizing cost while maximizing profit
-- Finding shortest path
-- Minimizing error in machine learning
+**Answer key:** released by your instructor.
 
 ---
 
@@ -91,12 +89,7 @@ What is crossover in genetic algorithms?
 ### Question 11 (10 points)
 List the main steps of a genetic algorithm.
 
-1. Initialize population
-2. Evaluate fitness
-3. Select parents
-4. Crossover (reproduction)
-5. Mutation
-6. Repeat until convergence
+**Answer key:** released by your instructor.
 
 ---
 
