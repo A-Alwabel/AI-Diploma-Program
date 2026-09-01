@@ -1,6 +1,7 @@
 # Quiz 3: Data Visualization
 
-**Time Limit:** 30 minutes | **Marks:** 30 points
+**Time Limit:** 30 minutes | **Marks:** 30 points  
+**Answer key:** released by your instructor.
 
 ---
 
@@ -60,22 +61,7 @@ Write code to create a simple line plot using Matplotlib:
 3. Plot the line
 4. Add title and labels
 
-```python
-import matplotlib.pyplot as plt
-
-# Create data
-x = range(1, 11)
-y = [i**2 for i in x]
-
-# Create plot
-plt.figure(figsize=(8, 6))
-plt.plot(x, y, marker='o')
-plt.title('Squares of Numbers')
-plt.xlabel('Number')
-plt.ylabel('Square')
-plt.grid(True)
-plt.show()
-```
+**Answer key:** released by your instructor.
 
 ---
 
@@ -85,24 +71,7 @@ Write code to create a scatter plot with Seaborn:
 2. Load or create sample data
 3. Create scatter plot with hue (color by category)
 
-```python
-import seaborn as sns
-import pandas as pd
-import matplotlib.pyplot as plt
-
-# Sample data
-df = pd.DataFrame({
-    'x': [1, 2, 3, 4, 5, 6, 7, 8],
-    'y': [2, 4, 6, 8, 10, 12, 14, 16],
-    'category': ['A', 'A', 'B', 'B', 'A', 'B', 'A', 'B']
-})
-
-# Create scatter plot
-plt.figure(figsize=(8, 6))
-sns.scatterplot(data=df, x='x', y='y', hue='category')
-plt.title('Scatter Plot with Categories')
-plt.show()
-```
+**Answer key:** released by your instructor.
 
 ---
 
@@ -111,19 +80,14 @@ plt.show()
 ### Question 8 (5 points)
 Explain when to use different types of visualizations. Give examples.
 
-**Visualization Types:**
-1. **Bar Chart**: Compare categories (e.g., sales by region)
-2. **Line Plot**: Show trends over time (e.g., stock prices over months)
-3. **Scatter Plot**: Show relationship between two variables (e.g., height vs weight)
-4. **Histogram**: Show distribution of a single variable (e.g., age distribution)
-5. **Box Plot**: Show distribution and outliers (e.g., income by education level)
-6. **Heatmap**: Show correlation matrix or 2D data (e.g., correlation between features)
-7. **Pie Chart**: Show proportions (e.g., market share)
+**Answer key:** released by your instructor.
 
 ---
 
 ### Question 9 (5 points)
 What are the key principles of effective data visualization?
+
+**Answer key:** released by your instructor.
 
 ---
 

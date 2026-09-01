@@ -1,6 +1,7 @@
 # Quiz 2: Data Cleaning and Preparation
 
-**Time Limit:** 30 minutes | **Marks:** 30 points
+**Time Limit:** 30 minutes | **Marks:** 30 points  
+**Answer key:** released by your instructor.
 
 ---
 
@@ -60,24 +61,7 @@ Write Python code to:
 3. Fill missing values in numeric columns with median
 4. Remove duplicate rows
 
-```python
-import pandas as pd
-
-# Load CSV
-df = pd.read_csv('data.csv')
-
-# Check missing values
-print(df.isnull().sum())
-
-# Fill missing values in numeric columns with median
-numeric_cols = df.select_dtypes(include=['number']).columns
-df[numeric_cols] = df[numeric_cols].fillna(df[numeric_cols].median())
-
-# Remove duplicates
-df = df.drop_duplicates()
-
-print(df.info())
-```
+**Answer key:** released by your instructor.
 
 ---
 
@@ -87,22 +71,7 @@ Write code to detect and handle outliers using IQR method:
 2. Define outlier boundaries
 3. Remove outliers from a specific column
 
-```python
-import pandas as pd
-import numpy as np
-
-# Assuming df and column_name are defined
-Q1 = df[column_name].quantile(0.25)
-Q3 = df[column_name].quantile(0.75)
-IQR = Q3 - Q1
-
-# Define boundaries
-lower_bound = Q1 - 1.5 * IQR
-upper_bound = Q3 + 1.5 * IQR
-
-# Remove outliers
-df_clean = df[(df[column_name] >= lower_bound) & (df[column_name] <= upper_bound)]
-```
+**Answer key:** released by your instructor.
 
 ---
 
@@ -111,41 +80,14 @@ df_clean = df[(df[column_name] >= lower_bound) & (df[column_name] <= upper_bound
 ### Question 8 (5 points)
 Explain different strategies for handling missing values. When would you use each?
 
-**Strategies:**
-1. **Deletion**: Drop rows/columns with missing values
-   - Use when: Missing data is <5% and random
-   
-2. **Mean/Median/Mode Imputation**: Fill with central tendency
-   - Use when: Data is normally distributed (mean) or has outliers (median)
-   
-3. **Forward Fill / Backward Fill**: Use previous/next value
-   - Use when: Time series data with temporal patterns
-   
-4. **Interpolation**: Estimate based on surrounding values
-   - Use when: Ordered data with patterns
-   
-5. **Predictive Imputation**: Use ML models to predict missing values
-   - Use when: Significant missing data and strong relationships exist
+**Answer key:** released by your instructor.
 
 ---
 
 ### Question 9 (5 points)
 What are the main steps in data cleaning? Why is it important?
 
-**Main Steps:**
-1. **Handle Missing Values**: Identify and treat missing data
-2. **Remove Duplicates**: Eliminate duplicate records
-3. **Detect and Handle Outliers**: Identify and treat anomalies
-4. **Fix Data Types**: Ensure correct data types
-5. **Standardize Formats**: Consistent naming, date formats, etc.
-6. **Validate Data**: Check for logical inconsistencies
-
-**Importance:**
-- "Garbage in, garbage out" - poor data quality leads to poor models
-- Improves model accuracy and reliability
-- Reduces bias and errors in analysis
-- Ensures data consistency and usability
-- Critical for production ML systems
+**Answer key:** released by your instructor.
 
 ---
 

@@ -1,6 +1,7 @@
 # Quiz 1: Introduction to Data Science
 
-**Time Limit:** 30 minutes | **Marks:** 30 points
+**Time Limit:** 30 minutes | **Marks:** 30 points  
+**Answer key:** released by your instructor.
 
 ---
 
@@ -60,22 +61,7 @@ Write Python code to:
 3. Display the DataFrame
 4. Show basic statistics
 
-```python
-import pandas as pd
-
-# Create DataFrame
-df = pd.DataFrame({
-    'name': ['Alice', 'Bob', 'Charlie'],
-    'age': [25, 30, 35],
-    'city': ['New York', 'London', 'Tokyo']
-})
-
-# Display DataFrame
-print(df)
-
-# Show basic statistics
-print(df.describe())
-```
+**Answer key:** released by your instructor.
 
 ---
 
@@ -86,24 +72,7 @@ Write code to:
 3. Calculate the standard deviation
 4. Reshape it to a 5x1 array
 
-```python
-import numpy as np
-
-# Create array
-arr = np.array([1, 2, 3, 4, 5])
-
-# Calculate mean
-mean = np.mean(arr)
-print(f"Mean: {mean}")
-
-# Calculate standard deviation
-std = np.std(arr)
-print(f"Std: {std}")
-
-# Reshape
-arr_reshaped = arr.reshape(5, 1)
-print(arr_reshaped)
-```
+**Answer key:** released by your instructor.
 
 ---
 
@@ -112,34 +81,14 @@ print(arr_reshaped)
 ### Question 8 (5 points)
 Explain the data science lifecycle. What are the main stages?
 
-The data science lifecycle typically includes:
-1. **Problem Definition**: Understanding the business problem
-2. **Data Collection**: Gathering relevant data
-3. **Data Cleaning**: Handling missing values, outliers, duplicates
-4. **Exploratory Data Analysis (EDA)**: Understanding patterns and relationships
-5. **Feature Engineering**: Creating new features from existing data
-6. **Model Building**: Training machine learning models
-7. **Model Evaluation**: Testing model performance
-8. **Deployment**: Putting the model into production
-9. **Monitoring**: Tracking model performance over time
+**Answer key:** released by your instructor.
 
 ---
 
 ### Question 9 (5 points)
 What are the key differences between pandas and NumPy? When would you use each?
 
-**Pandas:**
-- Built on top of NumPy
-- Designed for structured data (tables, time series)
-- Has labeled axes (index, columns)
-- Better for data manipulation and analysis
-- Use for: CSV files, data cleaning, data analysis, time series
-
-**NumPy:**
-- Fundamental library for numerical computing
-- Works with arrays (n-dimensional)
-- Faster for mathematical operations
-- Use for: Mathematical computations, linear algebra, array operations, scientific computing
+**Answer key:** released by your instructor.
 
 ---
 

@@ -2,7 +2,8 @@
 ## AIAT 111 - Unit 5
 
 **Time Limit:** 30 minutes  
-**Total Points:** 100 points
+**Total Points:** 100 points  
+**Answer key:** released by your instructor.
 
 ---
 
@@ -64,8 +65,8 @@ Describe a real-world application where you would use a generative model instead
 
 ### Question 7 (30 points)
 You are working on a project that needs to:
-1. Classify images (discriminative task)
-2. Generate new images (generative task)
+1. Classify images
+2. Generate new images
 
 Explain:
 - Which type of model you would use for each task
