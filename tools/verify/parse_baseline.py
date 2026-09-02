@@ -11,6 +11,7 @@ Re-run any time; the reorg gate is "no NEW failures vs the committed baseline".
 import sys
 from pathlib import Path
 
+import re
 import nbformat
 
 REPO = Path(__file__).resolve().parents[2]
@@ -22,6 +23,10 @@ def iter_notebooks(root: Path):
             continue
         yield p
 
+# name = %magic ... / name = !shell ...
+ASSIGN_MAGIC = re.compile(r"^(\s*[A-Za-z_][\w.\[\]'\"]*\s*=\s*)[%!]\S")
+
+
 def strip_magics(src: str) -> str:
     lines = src.splitlines()
     if lines and lines[0].lstrip().startswith("%%"):
@@ -30,7 +35,12 @@ def strip_magics(src: str) -> str:
     depth = 0  # bracket depth: a "%" inside an open call is the format operator, not a magic
     for ln in lines:
         ls = ln.lstrip()
-        if depth == 0 and ls.startswith(("%", "!")):
+        # "timing = %timeit -o -q f(x)" is valid IPython and runs fine, but compile() rejects it.
+        # Rewrite the assignment form to a plain name so the rest of the cell still type-checks.
+        m = ASSIGN_MAGIC.match(ln) if depth == 0 else None
+        if m:
+            out.append(f"{m.group(1)}None")
+        elif depth == 0 and ls.startswith(("%", "!")):
             out.append("pass")
         else:
             out.append(ln)
