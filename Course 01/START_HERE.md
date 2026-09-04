@@ -7,6 +7,20 @@ Welcome to the first course of the AI Diploma (Semester 1, AIAT 111–116). Work
 
 ---
 
+## Before Step 1: Read `CAREER_ROUTE.md` (15 minutes, this week)
+
+Read `CAREER_ROUTE.md` now, in week 1. It is the one page in this course that changes what you do with the next nine months rather than what you do in the final week.
+
+It answers three questions with quoted, dated sources rather than encouragement:
+
+- **Where does this certificate sit?** Saudi's National Qualifications Framework places it at Level 4, "Associate Diploma". A bachelor's degree is Level 6. Any advert whose basic qualifications say "bachelor's degree" is a wall, not a preference.
+- **What does an open door look like?** Two real job adverts are quoted in full — one in Riyadh that shuts on line one, and one in the region that names no degree and no years at all, only skills this diploma teaches.
+- **What did the state build for people in your position?** HRDF's **Tamheer** and **Tawteen** programmes, quoted from HRDF's own pages, including the conditions that make Tamheer eligibility a clock you can run down without noticing.
+
+Nothing on that page is discouraging and nothing on it is decoration. Read it before you start Unit 1, and re-read it in month six.
+
+---
+
 ## Step 1: Set Up Your Environment
 
 The whole repository shares one environment at the repo root.
