@@ -1,23 +1,15 @@
-# Cumulative Retrieval Quiz - Week 15
+# Retrieval Quiz — Week 15
 
-**Programme week 15 of 35 | Course 05 - AIAT 115 (Scalable Data Science)**
+**Week 15 of 35 · Course 05 — AIAT 115 (Scalable Data Science)**
 
-Taught this week: Unit 4 (machine learning, sessions 57-58) and Unit 5 (scaling, sessions 59-60).
-
----
-
-## How this works
-
-- **15 minutes, in class, at the END of session 60.** You answer for about 7 minutes; your instructor then works the correct answers aloud for about 8.
-- **This is not graded.** No mark from this paper reaches your course grade, and it carries no weight in any of the six assessment lines.
-- **The correct answers are worked immediately afterwards, in the room.** That worked correction is the part that does the teaching; a quiz that only returns a score is worth about a third less.
-- Ten questions. Three are on material from this week or last, three on material from about a month ago, and four on material from earlier in the programme. Each earlier question carries the context it needs, so you are not being asked to recall a lesson cold.
-- Write one letter per question. No calculator, no laptop, no notes - answering from memory is the whole point.
+- **15 minutes, in class, at the end of the session.** About 7 minutes to answer, about 8 minutes for your instructor to work the answers.
+- **Not graded.** Nothing you write here is collected, and nothing counts towards your course grade.
+- **The answers are worked immediately afterwards,** in the same session — being wrong now and corrected now is the point.
+- **Ten questions, one letter each.** Some are from this week; some are from earlier in the programme, on purpose.
 
 ---
 
 ### Question 1
-*taught this week or last | Course 05, Unit 5*
 
 In Course 05 Unit 5 you measured pandas against Dask on the same 4.3 MB file. pandas ran the groupby in 0.0007 s against Dask's 0.0146 s, and pandas also won the whole job end to end: 0.01 s against 0.02 s. Given that measurement, what does a scaling tool such as Dask, PySpark or RAPIDS actually buy you?
 
@@ -29,7 +21,6 @@ D) Lowering total cost, because a cluster of small commodity machines comes out 
 ---
 
 ### Question 2
-*taught this week or last | Course 05, Unit 5*
 
 In Course 05 Unit 5, dd.read_csv on the 4.3 MB sample returned in 0.003 s reporting 4 partitions of 1 MB each, and df['Flow Duration'].mean() then printed a dask_expr object instead of a number. It took a .compute() call to produce 15,409,254.17 - the same value pandas gave. What did Dask actually do?
 
@@ -41,7 +32,6 @@ D) The 0.003 s read the file into four partitions; mean() returned an object bec
 ---
 
 ### Question 3
-*taught this week or last | Course 05, Unit 4*
 
 Course 05 Unit 4 called train_test_split before fitting each model. What is that call for?
 
@@ -53,7 +43,6 @@ D) It balances the classes, so the training half and the testing half hold equal
 ---
 
 ### Question 4
-*taught about a month ago | Course 04, Unit 3*
 
 Course 04 Unit 3's KNN lesson fits the same model twice on the same 313 real card transactions. Without scaling it scores accuracy 0.9048; with StandardScaler it scores 0.9683. The lesson also prints that the Time column alone contributes 99.9978% of the raw squared distance between two transactions (Time std 46,331.2, against a median feature std of 1.302). What does that 99.9978% figure explain?
 
@@ -65,7 +54,6 @@ D) StandardScaler dropped Time from the feature set, and removing that one domin
 ---
 
 ### Question 5
-*taught about a month ago | Course 04, Unit 4*
 
 Course 04 Unit 4 clusters 1,994 communities on 4 scaled crime features and prints:
 
@@ -85,7 +73,6 @@ D) The two criteria measure different things and disagree, so K is settled by wh
 ---
 
 ### Question 6
-*taught about a month ago | Course 04, Unit 3*
 
 The same lesson refits the model with class_weight='balanced' and prints the change on the test set:
 
@@ -104,7 +91,6 @@ D) Accuracy fell from 0.9981 to 0.9934, so the balanced model is the worse of th
 ---
 
 ### Question 7
-*taught eight or more weeks ago | Course 01, Unit 1*
 
 Course 01 sorted AI systems by how broad their competence is. Which kind is actually built and deployed today?
 
@@ -116,7 +102,6 @@ D) Superintelligent AI - a system exceeding the best human performance across es
 ---
 
 ### Question 8
-*taught eight or more weeks ago | Course 01, Unit 5*
 
 What distinguishes a generative AI system from the classifiers Course 01 built earlier?
 
@@ -128,7 +113,6 @@ D) It retrieves the stored training example closest to the input and returns tha
 ---
 
 ### Question 9
-*taught eight or more weeks ago | Course 03, Unit 1*
 
 You want to compute A @ B where A has shape (64, 128). What has to be true of B's shape?
 
@@ -140,7 +124,6 @@ D) B has 128 rows, matching A's column count, and the product then has shape (64
 ---
 
 ### Question 10
-*taught eight or more weeks ago | Course 02, Unit 4*
 
 Course 02 ran simulated annealing with a cooling schedule. What does the temperature parameter do?
 
@@ -150,5 +133,3 @@ C) It scales the size of each proposed move, so a hot run jumps further across t
 D) It records the value of the best solution found so far, against which each proposal is compared  
 
 ---
-
-**Answers: worked aloud by your instructor in the eight minutes after you hand this back. Nothing to submit, nothing to mark.**

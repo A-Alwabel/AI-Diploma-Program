@@ -1,23 +1,15 @@
-# Cumulative Retrieval Quiz - Week 11
+# Retrieval Quiz — Week 11
 
-**Programme week 11 of 35 | Course 04 - AIAT 114 (Machine Learning Algorithms and Applications)**
+**Week 11 of 35 · Course 04 — AIAT 114 (Machine Learning Algorithms and Applications)**
 
-Taught this week: Unit 3 (classification, session 41) and Unit 4 (clustering and PCA, sessions 42-44).
-
----
-
-## How this works
-
-- **15 minutes, in class, at the END of session 43.** You answer for about 7 minutes; your instructor then works the correct answers aloud for about 8.
-- **This is not graded.** No mark from this paper reaches your course grade, and it carries no weight in any of the six assessment lines.
-- **The correct answers are worked immediately afterwards, in the room.** That worked correction is the part that does the teaching; a quiz that only returns a score is worth about a third less.
-- Ten questions. Three are on material from this week or last, three on material from about a month ago, and four on material from earlier in the programme. Each earlier question carries the context it needs, so you are not being asked to recall a lesson cold.
-- Write one letter per question. No calculator, no laptop, no notes - answering from memory is the whole point.
+- **15 minutes, in class, at the end of the session.** About 7 minutes to answer, about 8 minutes for your instructor to work the answers.
+- **Not graded.** Nothing you write here is collected, and nothing counts towards your course grade.
+- **The answers are worked immediately afterwards,** in the same session — being wrong now and corrected now is the point.
+- **Ten questions, one letter each.** Some are from this week; some are from earlier in the programme, on purpose.
 
 ---
 
 ### Question 1
-*taught this week or last | Course 04, Unit 3*
 
 Course 04 Unit 3's KNN lesson fits the same model twice on the same 313 real card transactions. Without scaling it scores accuracy 0.9048; with StandardScaler it scores 0.9683. The lesson also prints that the Time column alone contributes 99.9978% of the raw squared distance between two transactions (Time std 46,331.2, against a median feature std of 1.302). What does that 99.9978% figure explain?
 
@@ -29,7 +21,6 @@ D) StandardScaler dropped Time from the feature set, and removing that one domin
 ---
 
 ### Question 2
-*taught this week or last | Course 04, Unit 4*
 
 Course 04 Unit 4 clusters 1,994 communities on 4 scaled crime features and prints:
 
@@ -49,7 +40,6 @@ D) The two criteria measure different things and disagree, so K is settled by wh
 ---
 
 ### Question 3
-*taught this week or last | Course 04, Unit 3*
 
 The same lesson refits the model with class_weight='balanced' and prints the change on the test set:
 
@@ -68,7 +58,6 @@ D) Accuracy fell from 0.9981 to 0.9934, so the balanced model is the worse of th
 ---
 
 ### Question 4
-*taught about a month ago | Course 03, Unit 1*
 
 Course 03 computed the same two-layer transformation of the same data two ways: Route A as (X @ W1) @ W2, using 8,510,592 scalar multiplications, and Route B as X @ (W1 @ W2), using 1,191,040. The largest disagreement between the two outputs was 1.33e-14. What does this establish about a two-layer network with no activation function between the layers?
 
@@ -80,19 +69,17 @@ D) The second layer re-weights the first layer's outputs, so stacking the two ad
 ---
 
 ### Question 5
-*taught about a month ago | Course 03, Unit 2*
 
 Minimising f(x) = x^2 from x = 5 for 30 steps, Course 03 changed only the learning rate and printed: lr = 0.01 -> x = 2.72742; lr = 0.1 -> x = 0.0061897; lr = 0.9 -> x = 0.0061897; lr = 1.0 -> x = 5 with loss 25; lr = 1.1 -> x = 1186.88. On a log axis the lr = 0.9 loss curve lies exactly on top of the lr = 0.1 curve. What does that coincidence tell you?
 
 A) lr = 0.9 takes smaller steps than lr = 0.1, which is why the two runs finish at the same value of x  
-B) The loss depends only on |x|, so a smoothly falling curve can still hide a run that crosses the minimum each step  
+B) The loss depends on |x| alone, so a smoothly falling curve can still hide a run that crosses the minimum each step  
 C) A smoothly falling loss curve rules out instability, so the rate could safely be raised from 0.9 up to 1.0 for speed  
 D) lr = 0.9 has settled into a second minimum of f that happens to sit at the same height as the first one  
 
 ---
 
 ### Question 6
-*taught about a month ago | Course 02, Unit 5*
 
 Course 02 classified points with k-nearest neighbours and varied k. What goes wrong when k is set too small - say k = 1?
 
@@ -104,7 +91,6 @@ D) The model becomes more robust to noise, since consulting fewer neighbours mea
 ---
 
 ### Question 7
-*taught eight or more weeks ago | Course 01, Unit 1*
 
 Course 01 opened by contrasting two ways of building an AI system. What is the main difference between traditional, rule-based AI and modern, data-driven AI?
 
@@ -116,7 +102,6 @@ D) Traditional AI runs faster, while modern AI is slower because it has to proce
 ---
 
 ### Question 8
-*taught eight or more weeks ago | Course 01, Unit 5*
 
 A discriminative model learns P(Y | X) - the label given the input. What does a generative model learn instead?
 
@@ -128,7 +113,6 @@ D) P(X | Y) and P(Y) - the joint distribution over inputs and labels
 ---
 
 ### Question 9
-*taught eight or more weeks ago | Course 02, Unit 1*
 
 Course 02 Unit 1 doubled the same numbers twice - once as a Python list comprehension, once as one NumPy whole-array operation - and printed:
 
@@ -144,13 +128,12 @@ Which statement is supported by this table?
 
 A) The list version scales better, because its cost per element falls as N grows  
 B) NumPy's lead grows with N, and at N = 10 the list version is the faster of the two  
-C) Both converge to the same speed at large N, since each loop is run by the interpreter  
+C) The two converge to the same speed at large N, since each loop is run by the interpreter  
 D) NumPy runs about 100x faster here, the speed-up the notebook's own text quotes  
 
 ---
 
 ### Question 10
-*taught eight or more weeks ago | Course 01, Unit 4*
 
 Why does a feedforward network put an activation function between two dense layers?
 
@@ -160,5 +143,3 @@ C) To reduce memory use, because the activation discards values that the next la
 D) To speed up computation, since the activation replaces the layer's matrix product with a lookup  
 
 ---
-
-**Answers: worked aloud by your instructor in the eight minutes after you hand this back. Nothing to submit, nothing to mark.**

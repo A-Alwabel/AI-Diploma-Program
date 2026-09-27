@@ -1,17 +1,11 @@
-# Cumulative Retrieval Quiz - Week 06
+# Retrieval Quiz — Week 06
 
-**Course 02 - AIAT 112, Unit 5**
+**Week 06 of 35 · Course 02 — AIAT 112 (Python for Artificial Intelligence)**
 
-- **15 minutes, in class, at the very end of the session.** It replaces the session's
-  self-check block: about 7 minutes to answer, about 8 minutes for your instructor to work
-  the correct answers aloud.
-- **This quiz is not graded.** It carries no marks and does not appear in your course grade.
-  Nothing you write here is collected.
-- **The correct answers are worked immediately afterwards**, in the same session, before you
-  leave. Being wrong now and corrected now is the point of the exercise - it is what makes
-  the material stick.
-- Ten questions, one answer each. Some are from this week; some are from earlier in the
-  programme, on purpose.
+- **15 minutes, in class, at the end of the session.** About 7 minutes to answer, about 8 minutes for your instructor to work the answers.
+- **Not graded.** Nothing you write here is collected, and nothing counts towards your course grade.
+- **The answers are worked immediately afterwards,** in the same session — being wrong now and corrected now is the point.
+- **Ten questions, one letter each.** Some are from this week; some are from earlier in the programme, on purpose.
 
 ---
 
@@ -62,7 +56,7 @@ On an unweighted graph — one in which each edge costs the same — which searc
 A) Breadth-first search, because it finishes depth level d before opening depth level d+1  
 B) Depth-first search, because it commits to one branch and stops as soon as the goal appears  
 C) Whichever visits fewer nodes here, since less searching means a shorter path  
-D) Dijkstra's algorithm; a fewest-edge guarantee needs edge weights and a priority queue  
+D) Dijkstra's algorithm, since a fewest-edge result needs edge weights and a priority queue  
 
 ---
 
@@ -116,8 +110,8 @@ A bank wants two models: one that predicts whether an applicant will default, ye
 
 A) Default is classification because its target is a category; loss size is regression because its target is a number  
 B) Default is regression because a probability is a number; loss size is classification because losses naturally fall into bands  
-C) Both are classification, since the bank has to act on each prediction by approving or refusing  
-D) Both are regression, since each model is fitted by minimising a squared error  
+C) The two are classification, since the bank has to act on each prediction by approving or refusing  
+D) The two are regression, since each model is fitted by minimising a squared error  
 
 ---
 
@@ -142,5 +136,3 @@ C) A node-and-edge structure over which a search algorithm looks for a path
 D) A method for choosing which features to keep before a model is fitted  
 
 ---
-
-**End of quiz. Your instructor works the answers now.**

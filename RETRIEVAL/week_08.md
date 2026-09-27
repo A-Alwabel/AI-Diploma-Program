@@ -1,17 +1,11 @@
-# Cumulative Retrieval Quiz - Week 08
+# Retrieval Quiz — Week 08
 
-**Course 03 - AIAT 113, Units 2, 3 and 4**
+**Week 08 of 35 · Course 03 — AIAT 113 (Mathematics and Probability for Machine Learning)**
 
-- **15 minutes, in class, at the very end of the session.** It replaces the session's
-  self-check block: about 7 minutes to answer, about 8 minutes for your instructor to work
-  the correct answers aloud.
-- **This quiz is not graded.** It carries no marks and does not appear in your course grade.
-  Nothing you write here is collected.
-- **The correct answers are worked immediately afterwards**, in the same session, before you
-  leave. Being wrong now and corrected now is the point of the exercise - it is what makes
-  the material stick.
-- Ten questions, one answer each. Some are from this week; some are from earlier in the
-  programme, on purpose.
+- **15 minutes, in class, at the end of the session.** About 7 minutes to answer, about 8 minutes for your instructor to work the answers.
+- **Not graded.** Nothing you write here is collected, and nothing counts towards your course grade.
+- **The answers are worked immediately afterwards,** in the same session — being wrong now and corrected now is the point.
+- **Ten questions, one letter each.** Some are from this week; some are from earlier in the programme, on purpose.
 
 ---
 
@@ -34,7 +28,7 @@ The same classifier on all 30 raw features, with no PCA at all, scores 0.9789. W
 A) Each component adds accuracy in proportion to the variance it carries, so keeping all 30 is the best choice  
 B) PCA hurt this classifier here: the reduced models score below the 0.9789 that the 30 raw features reach with no reduction at all  
 C) The dip at k = 3 shows the third component carries no variance, so it should be dropped from the model  
-D) Accuracy flattens long before variance does — k = 5 already reaches 0.9736 while keeping only 84.7% of the variance  
+D) Accuracy flattens long before variance does — k = 5 already reaches 0.9736 while keeping 84.7% of the variance  
 
 ---
 
@@ -145,5 +139,3 @@ C) It begins from the facts and fires the rules they satisfy, adding results as 
 D) It searches the rule set for the rule with the highest stated confidence and fires that one alone  
 
 ---
-
-**End of quiz. Your instructor works the answers now.**

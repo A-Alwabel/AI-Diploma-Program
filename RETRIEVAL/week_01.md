@@ -1,17 +1,11 @@
-# Cumulative Retrieval Quiz - Week 01
+# Retrieval Quiz — Week 01
 
-**Course 01 - AIAT 111 (Introduction to AI), Unit 1 and the opening of Unit 2**
+**Week 01 of 35 · Course 01 — AIAT 111 (Introduction to Artificial Intelligence and Applications)**
 
-- **15 minutes, in class, at the very end of the session.** It replaces the session's
-  self-check block: about 7 minutes to answer, about 8 minutes for your instructor to work
-  the correct answers aloud.
-- **This quiz is not graded.** It carries no marks and does not appear in your course grade.
-  Nothing you write here is collected.
-- **The correct answers are worked immediately afterwards**, in the same session, before you
-  leave. Being wrong now and corrected now is the point of the exercise - it is what makes
-  the material stick.
-- Ten questions, one answer each. Some are from this week; some are from earlier in the
-  programme, on purpose.
+- **15 minutes, in class, at the end of the session.** About 7 minutes to answer, about 8 minutes for your instructor to work the answers.
+- **Not graded.** Nothing you write here is collected, and nothing counts towards your course grade.
+- **The answers are worked immediately afterwards,** in the same session — being wrong now and corrected now is the point.
+- **Ten questions, one letter each.** Some are from this week; some are from earlier in the programme, on purpose.
 
 ---
 
@@ -88,7 +82,7 @@ On an unweighted graph — one in which each edge costs the same — which searc
 A) Breadth-first search, because it finishes depth level d before opening depth level d+1  
 B) Depth-first search, because it commits to one branch and stops as soon as the goal appears  
 C) Whichever visits fewer nodes here, since less searching means a shorter path  
-D) Dijkstra's algorithm; a fewest-edge guarantee needs edge weights and a priority queue  
+D) Dijkstra's algorithm, since a fewest-edge result needs edge weights and a priority queue  
 
 ---
 
@@ -124,5 +118,3 @@ C) It visits each node once, where breadth-first search may expand the same node
 D) Its asymptotic running time is lower, O(V) against breadth-first search's O(V + E)  
 
 ---
-
-**End of quiz. Your instructor works the answers now.**

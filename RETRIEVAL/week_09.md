@@ -1,17 +1,11 @@
-# Cumulative Retrieval Quiz - Week 09
+# Retrieval Quiz — Week 09
 
-**Course 03 wrap-up and Course 04 - AIAT 114 (ML Algorithms), Unit 1**
+**Week 09 of 35 · Course 03 — AIAT 113 (Mathematics and Probability for Machine Learning) and Course 04 — AIAT 114 (Machine Learning Algorithms and Applications)**
 
-- **15 minutes, in class, at the very end of the session.** It replaces the session's
-  self-check block: about 7 minutes to answer, about 8 minutes for your instructor to work
-  the correct answers aloud.
-- **This quiz is not graded.** It carries no marks and does not appear in your course grade.
-  Nothing you write here is collected.
-- **The correct answers are worked immediately afterwards**, in the same session, before you
-  leave. Being wrong now and corrected now is the point of the exercise - it is what makes
-  the material stick.
-- Ten questions, one answer each. Some are from this week; some are from earlier in the
-  programme, on purpose.
+- **15 minutes, in class, at the end of the session.** About 7 minutes to answer, about 8 minutes for your instructor to work the answers.
+- **Not graded.** Nothing you write here is collected, and nothing counts towards your course grade.
+- **The answers are worked immediately afterwards,** in the same session — being wrong now and corrected now is the point.
+- **Ten questions, one letter each.** Some are from this week; some are from earlier in the programme, on purpose.
 
 ---
 
@@ -43,8 +37,8 @@ A Bayesian calculation starts from a 1% chance that a patient has a disease and,
 
 A) 1% — the probability of the hypothesis before this evidence is taken into account  
 B) 8.76% — the probability after the evidence has been taken into account  
-C) Neither: the prior is the probability of the evidence itself, P(positive test)  
-D) Neither: the prior is P(positive test | disease), the figure the test's manufacturer publishes  
+C) A third number: the prior is the probability of the evidence itself, P(positive test)  
+D) A third number: the prior is P(positive test | disease), the figure the test's manufacturer publishes  
 
 ---
 
@@ -52,9 +46,9 @@ D) Neither: the prior is P(positive test | disease), the figure the test's manuf
 
 A colour column holds red, green and blue. One encoding turns it into three 0/1 columns; another turns it into a single column holding 0, 1 and 2. Which is which?
 
-A) Both are one-hot encoding, with different encoder settings  
+A) The two are one-hot encoding, produced with different encoder settings  
 B) The three-column result is label encoding; the single-column result is one-hot encoding, packed into one column  
-C) Both are label encoding, since each maps the same three categories to numbers  
+C) The two are label encoding, since each maps the same three categories to numbers  
 D) The three-column result is one-hot encoding; the single-column result is label encoding  
 
 ---
@@ -66,7 +60,7 @@ On an unweighted graph — one in which each edge costs the same — which searc
 A) Breadth-first search, because it finishes depth level d before opening depth level d+1  
 B) Depth-first search, because it commits to one branch and stops as soon as the goal appears  
 C) Whichever visits fewer nodes here, since less searching means a shorter path  
-D) Dijkstra's algorithm; a fewest-edge guarantee needs edge weights and a priority queue  
+D) Dijkstra's algorithm, since a fewest-edge result needs edge weights and a priority queue  
 
 ---
 
@@ -134,5 +128,3 @@ C) Sorting a spreadsheet column alphabetically with a fixed comparison rule
 D) Reading a tumour boundary out of an MRI scan  
 
 ---
-
-**End of quiz. Your instructor works the answers now.**

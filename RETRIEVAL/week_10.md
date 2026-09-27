@@ -1,35 +1,26 @@
-# Cumulative Retrieval Quiz - Week 10
+# Retrieval Quiz — Week 10
 
-**Programme week 10 of 35 | Course 04 - AIAT 114 (Machine Learning Algorithms and Applications)**
+**Week 10 of 35 · Course 04 — AIAT 114 (Machine Learning Algorithms and Applications)**
 
-Taught this week: Unit 2 (model evaluation, sessions 37-38) and Unit 3 (classification, sessions 39-40).
-
----
-
-## How this works
-
-- **15 minutes, in class, at the END of session 40.** You answer for about 7 minutes; your instructor then works the correct answers aloud for about 8.
-- **This is not graded.** No mark from this paper reaches your course grade, and it carries no weight in any of the six assessment lines.
-- **The correct answers are worked immediately afterwards, in the room.** That worked correction is the part that does the teaching; a quiz that only returns a score is worth about a third less.
-- Ten questions. Three are on material from this week or last, three on material from about a month ago, and four on material from earlier in the programme. Each earlier question carries the context it needs, so you are not being asked to recall a lesson cold.
-- Write one letter per question. No calculator, no laptop, no notes - answering from memory is the whole point.
+- **15 minutes, in class, at the end of the session.** About 7 minutes to answer, about 8 minutes for your instructor to work the answers.
+- **Not graded.** Nothing you write here is collected, and nothing counts towards your course grade.
+- **The answers are worked immediately afterwards,** in the same session — being wrong now and corrected now is the point.
+- **Ten questions, one letter each.** Some are from this week; some are from earlier in the programme, on purpose.
 
 ---
 
 ### Question 1
-*taught this week or last | Course 04, Unit 2*
 
 Course 04 Unit 2 compared one 80/20 split against 5-fold cross-validation on the same community crime data. A colleague evaluates the crime-rate regression on one 80/20 split and reports R2 = 0.1095. The 5-fold cross-validation prints R2 = 0.0844 +/- 0.0358, and across ten different single splits the R2 ran from 0.0402 to 0.1259 - the largest 3.1 times the smallest. What is wrong with the colleague's report?
 
 A) 0.1095 sits near the top of the range a single split produces, and the report gives no way to spot a lucky split  
 B) 0.1095 has to be wrong: the true value is 0.0844, so test rows have leaked into the colleague's training set and inflated it  
-C) Both procedures hold out 20% of the rows, so the difference is down to the seed and can be ignored  
+C) The two procedures hold out 20% of the rows, so the difference is down to the seed and can be ignored  
 D) Cross-validation trains each fold on less data, which makes 0.0844 pessimistic and 0.1095 the honest figure  
 
 ---
 
 ### Question 2
-*taught this week or last | Course 04, Unit 3*
 
 Course 04 Unit 3's logistic-regression lesson tests on 3,200 real card transactions, 6 of them fraudulent, and prints a confusion matrix of TN 3191, FP 3, FN 3, TP 3 - test accuracy 0.9981. The same lesson prints that labelling every row 'legitimate' also scores 0.9981. What do those two identical accuracies establish?
 
@@ -41,7 +32,6 @@ D) The two agree because the cut sits at 0.5; moving that cut down to 0.3 would 
 ---
 
 ### Question 3
-*taught this week or last | Course 04, Unit 1*
 
 Course 04 Unit 1's regularization lesson predicts transaction Amount from 29 features using 8,000 training rows, and prints:
 
@@ -54,7 +44,7 @@ Lasso (a = 0.1)     4130.9723   0.8931
 
 Alphas from 0.01 to 100 were tried for both. At its best alpha, Lasso kept 29 of 29 features. Which conclusion do these numbers support?
 
-A) Neither penalty was tuned far enough; the search should be extended past a = 100 until one of them clearly beats the baseline  
+A) The penalties were not tuned far enough; the search should be extended past a = 100 until one of them clearly beats the baseline  
 B) Lasso won, and its margin is L1 performing the feature selection that Ridge leaves undone here  
 C) V1-V28 are uncorrelated PCA components, so a penalty on their coefficients has no well-defined effect here  
 D) With 8,000 rows against 29 features the baseline is not overfitting, so shrinking coefficients adds bias and buys nothing  
@@ -62,7 +52,6 @@ D) With 8,000 rows against 29 features the baseline is not overfitting, so shrin
 ---
 
 ### Question 4
-*taught about a month ago | Course 02, Unit 4*
 
 Course 02's Unit 4 notebook ran gradient descent on f(x) = x^2 from x = 5.0, changing only the learning rate:
 
@@ -84,7 +73,6 @@ D) lr = 1.10: its sign alternates, showing that overshoot and divergence are the
 ---
 
 ### Question 5
-*taught about a month ago | Course 02, Unit 3*
 
 Course 02's Unit 3 diagnosis system is given a patient with fever, cough and fatigue, and prints:
 
@@ -105,7 +93,6 @@ D) The posterior follows the highest single symptom probability, and Flu's fever
 ---
 
 ### Question 6
-*taught about a month ago | Course 02, Unit 5*
 
 One trained logistic-regression model is scored on the same 171 held-out breast-tumour biopsies; only the decision threshold changes:
 
@@ -128,7 +115,6 @@ D) 0.20 - it misses 1 malignant tumour rather than 11, and its 21 false alarms f
 ---
 
 ### Question 7
-*taught eight or more weeks ago | Course 01, Unit 2*
 
 What is the main difference between supervised and unsupervised learning?
 
@@ -140,7 +126,6 @@ D) Supervised learning uses neural networks, unsupervised learning uses clusteri
 ---
 
 ### Question 8
-*taught eight or more weeks ago | Course 01, Unit 1*
 
 What are the components of a knowledge representation system, of the kind Course 01 built to answer questions about a family?
 
@@ -152,7 +137,6 @@ D) Facts, rules, and an inference mechanism that derives new facts from them
 ---
 
 ### Question 9
-*taught eight or more weeks ago | Course 01, Unit 1*
 
 Course 01 ran BFS, DFS and A* on the same small graph. Which of these is guaranteed to return a shortest path on an unweighted graph, and why?
 
@@ -164,7 +148,6 @@ D) Depth-First Search with a visited set, because marking visited nodes stops it
 ---
 
 ### Question 10
-*taught eight or more weeks ago | Course 01, Unit 4*
 
 Which of these groups lists three activation functions of the kind used inside a feedforward neural network?
 
@@ -174,5 +157,3 @@ C) MSE, Cross-Entropy, Hinge
 D) Dropout, Batch Normalization, Early Stopping  
 
 ---
-
-**Answers: worked aloud by your instructor in the eight minutes after you hand this back. Nothing to submit, nothing to mark.**

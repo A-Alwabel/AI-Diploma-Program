@@ -1,17 +1,11 @@
-# Cumulative Retrieval Quiz - Week 03
+# Retrieval Quiz — Week 03
 
-**Course 01 wrap-up and Course 02 - AIAT 112 (Python for AI), Unit 1**
+**Week 03 of 35 · Course 01 — AIAT 111 (Introduction to Artificial Intelligence and Applications) and Course 02 — AIAT 112 (Python for Artificial Intelligence)**
 
-- **15 minutes, in class, at the very end of the session.** It replaces the session's
-  self-check block: about 7 minutes to answer, about 8 minutes for your instructor to work
-  the correct answers aloud.
-- **This quiz is not graded.** It carries no marks and does not appear in your course grade.
-  Nothing you write here is collected.
-- **The correct answers are worked immediately afterwards**, in the same session, before you
-  leave. Being wrong now and corrected now is the point of the exercise - it is what makes
-  the material stick.
-- Ten questions, one answer each. Some are from this week; some are from earlier in the
-  programme, on purpose.
+- **15 minutes, in class, at the end of the session.** About 7 minutes to answer, about 8 minutes for your instructor to work the answers.
+- **Not graded.** Nothing you write here is collected, and nothing counts towards your course grade.
+- **The answers are worked immediately afterwards,** in the same session — being wrong now and corrected now is the point.
+- **Ten questions, one letter each.** Some are from this week; some are from earlier in the programme, on purpose.
 
 ---
 
@@ -33,7 +27,7 @@ Which statement is supported by this table?
 
 A) The list version scales better, because its cost per element falls as N grows  
 B) NumPy's lead grows with N, and at N = 10 the list version is the faster of the two  
-C) Both converge to the same speed at large N, since each loop is run by the interpreter  
+C) The two converge to the same speed at large N, since each loop is run by the interpreter  
 D) NumPy runs about 100x faster here, the speed-up the notebook's own text quotes  
 
 ---
@@ -67,7 +61,7 @@ On an unweighted graph — one in which each edge costs the same — which searc
 A) Breadth-first search, because it finishes depth level d before opening depth level d+1  
 B) Depth-first search, because it commits to one branch and stops as soon as the goal appears  
 C) Whichever visits fewer nodes here, since less searching means a shorter path  
-D) Dijkstra's algorithm; a fewest-edge guarantee needs edge weights and a priority queue  
+D) Dijkstra's algorithm, since a fewest-edge result needs edge weights and a priority queue  
 
 ---
 
@@ -99,7 +93,7 @@ A single perceptron computes one weighted sum of its inputs and passes it throug
 A) Problems whose two classes can be separated by a single straight boundary  
 B) Problems with a curved decision boundary, which the step function bends to fit  
 C) Problems of both kinds, provided it is trained for enough epochs  
-D) Neither kind; a perceptron scores its inputs but does not assign a class  
+D) Problems of neither kind, since a perceptron scores its inputs but does not assign a class  
 
 ---
 
@@ -129,7 +123,7 @@ D) To automate repetitive clerical work
 
 A Course 01 notebook starts from a 1% prior that a patient has a disease and, after a positive test, prints P(disease | positive) = 8.76%. What is Bayesian probability used for in AI?
 
-A) Guaranteeing a correct diagnosis after a positive test  
+A) Confirming a diagnosis once a test comes back positive  
 B) Computing the prior probability of a hypothesis, before evidence is observed  
 C) Eliminating uncertainty so that model predictions become deterministic  
 D) Handling uncertainty and updating a belief as evidence arrives  
@@ -146,5 +140,3 @@ C) A node-and-edge structure over which a search algorithm looks for a path
 D) A method for choosing which features to keep before a model is fitted  
 
 ---
-
-**End of quiz. Your instructor works the answers now.**

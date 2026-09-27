@@ -1,23 +1,15 @@
-# Cumulative Retrieval Quiz - Week 17
+# Retrieval Quiz — Week 17
 
-**Programme week 17 of 35 | Course 06 - AIAT 116 (Ethics of Artificial Intelligence)**
+**Week 17 of 35 · Course 06 — AIAT 116 (Artificial Intelligence Ethics)**
 
-Taught this week: Unit 3 (privacy, session 65), Unit 4 (transparency and accountability, sessions 66-67) and Unit 5 (governance, session 68).
-
----
-
-## How this works
-
-- **15 minutes, in class, at the END of session 68.** You answer for about 7 minutes; your instructor then works the correct answers aloud for about 8.
-- **This is not graded.** No mark from this paper reaches your course grade, and it carries no weight in any of the six assessment lines.
-- **The correct answers are worked immediately afterwards, in the room.** That worked correction is the part that does the teaching; a quiz that only returns a score is worth about a third less.
-- Ten questions. Three are on material from this week or last, three on material from about a month ago, and four on material from earlier in the programme. Each earlier question carries the context it needs, so you are not being asked to recall a lesson cold.
-- Write one letter per question. No calculator, no laptop, no notes - answering from memory is the whole point.
+- **15 minutes, in class, at the end of the session.** About 7 minutes to answer, about 8 minutes for your instructor to work the answers.
+- **Not graded.** Nothing you write here is collected, and nothing counts towards your course grade.
+- **The answers are worked immediately afterwards,** in the same session — being wrong now and corrected now is the point.
+- **Ten questions, one letter each.** Some are from this week; some are from earlier in the programme, on purpose.
 
 ---
 
 ### Question 1
-*taught this week or last | Course 06, Unit 3*
 
 In Course 06's differential privacy lesson, the Laplace mechanism at epsilon = 0.1 produced a mean absolute error of about 10 on a count of 212 patients (4.7% of the answer) and about 10 again on a count of 29 patients (34.2% of the answer). What does this tell you about deploying differential privacy?
 
@@ -29,7 +21,6 @@ D) Laplace noise scales with sensitivity and epsilon, not with the true answer, 
 ---
 
 ### Question 2
-*taught this week or last | Course 06, Unit 4*
 
 A global SHAP chart reports a mean |SHAP| of 0.204 for the feature is_female. Computed within ticket class, the same quantity is 0.300 in second class and 0.163 in third class. A regulator asks how much the model relies on sex when it decides about third-class passengers. What is the correct response?
 
@@ -41,7 +32,6 @@ D) Report that SHAP explains single predictions, so a per-class average of SHAP 
 ---
 
 ### Question 3
-*taught this week or last | Course 06, Unit 2*
 
 A team removes the Sex column from a screening model's training data and reports that the system is now fair. On the held-out set the model's positive-prediction rate is 44.3% for women and 31.6% for men - a demographic parity difference of 0.128. What does this result show?
 
@@ -53,7 +43,6 @@ D) The model satisfies demographic parity, since two applicants with identical i
 ---
 
 ### Question 4
-*taught about a month ago | Course 05, Unit 2*
 
 In Course 05 Unit 2 you profiled two columns of the same 891-row Titanic manifest. Age printed a skew of 0.53 and a median near 26; Fare printed a skew of 4.79, with most passengers in the first histogram bin and a few tickets reaching 512 pounds. A colleague's report quotes one 'average' per column. What does the profiling step tell you to do, and why?
 
@@ -65,7 +54,6 @@ D) Standardise both columns to mean 0 and standard deviation 1 first, because sc
 ---
 
 ### Question 5
-*taught about a month ago | Course 05, Unit 1*
 
 Your pipeline's groupby is saturating a single CPU core, and the machine has an NVIDIA GPU. Which Course 05 tool runs the same pandas-style DataFrame operations on that GPU with essentially unchanged code, and by what mechanism?
 
@@ -77,7 +65,6 @@ D) cuDF, because it re-implements the pandas DataFrame API, method for method, o
 ---
 
 ### Question 6
-*taught about a month ago | Course 05, Unit 2*
 
 Course 05 Unit 2 flagged unusual Fare values on the Titanic manifest. Which rule is the IQR method?
 
@@ -89,7 +76,6 @@ D) Flag a value in the top or bottom 1% of the column, so 2% of rows are marked 
 ---
 
 ### Question 7
-*taught eight or more weeks ago | Course 01, Unit 4*
 
 ReLU is the default activation in the networks Course 01 built. What does the name stand for, and what does the function do?
 
@@ -101,7 +87,6 @@ D) Regular Linear Unit - it returns the input unchanged, which keeps the layer's
 ---
 
 ### Question 8
-*taught eight or more weeks ago | Course 01, Unit 1*
 
 How did Course 01 define the goal of artificial intelligence as a field?
 
@@ -113,7 +98,6 @@ D) To replace human labour across the economy with systems that work without wag
 ---
 
 ### Question 9
-*taught eight or more weeks ago | Course 03, Unit 1*
 
 Course 03 decomposed the USArrests covariance matrix into eigenvalues and eigenvectors. What is an eigenvector of a matrix M?
 
@@ -125,7 +109,6 @@ D) A vector of the variances of M's columns, ordered from the largest down to th
 ---
 
 ### Question 10
-*taught eight or more weeks ago | Course 02, Unit 5*
 
 Course 02's logistic-regression model on the breast-tumour biopsies produced a score for each case that was then compared with a threshold. What does the sigmoid do in that model?
 
@@ -135,5 +118,3 @@ C) It measures the distance between the prediction and the label, which training
 D) It removes the non-linear terms from the weighted sum so the boundary comes out straight  
 
 ---
-
-**Answers: worked aloud by your instructor in the eight minutes after you hand this back. Nothing to submit, nothing to mark.**

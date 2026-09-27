@@ -1,23 +1,15 @@
-# Cumulative Retrieval Quiz - Week 13
+# Retrieval Quiz — Week 13
 
-**Programme week 13 of 35 | Course 05 - AIAT 115 (Scalable Data Science)**
+**Week 13 of 35 · Course 05 — AIAT 115 (Scalable Data Science)**
 
-Taught this week: Unit 1 (introduction, sessions 49-50) and Unit 2 (cleaning and EDA, sessions 51-52).
-
----
-
-## How this works
-
-- **15 minutes, in class, at the END of session 51.** You answer for about 7 minutes; your instructor then works the correct answers aloud for about 8.
-- **This is not graded.** No mark from this paper reaches your course grade, and it carries no weight in any of the six assessment lines.
-- **The correct answers are worked immediately afterwards, in the room.** That worked correction is the part that does the teaching; a quiz that only returns a score is worth about a third less.
-- Ten questions. Three are on material from this week or last, three on material from about a month ago, and four on material from earlier in the programme. Each earlier question carries the context it needs, so you are not being asked to recall a lesson cold.
-- Write one letter per question. No calculator, no laptop, no notes - answering from memory is the whole point.
+- **15 minutes, in class, at the end of the session.** About 7 minutes to answer, about 8 minutes for your instructor to work the answers.
+- **Not graded.** Nothing you write here is collected, and nothing counts towards your course grade.
+- **The answers are worked immediately afterwards,** in the same session — being wrong now and corrected now is the point.
+- **Ten questions, one letter each.** Some are from this week; some are from earlier in the programme, on purpose.
 
 ---
 
 ### Question 1
-*taught this week or last | Course 05, Unit 2*
 
 In Course 05 Unit 2 you profiled two columns of the same 891-row Titanic manifest. Age printed a skew of 0.53 and a median near 26; Fare printed a skew of 4.79, with most passengers in the first histogram bin and a few tickets reaching 512 pounds. A colleague's report quotes one 'average' per column. What does the profiling step tell you to do, and why?
 
@@ -29,7 +21,6 @@ D) Standardise both columns to mean 0 and standard deviation 1 first, because sc
 ---
 
 ### Question 2
-*taught this week or last | Course 05, Unit 1*
 
 Your pipeline's groupby is saturating a single CPU core, and the machine has an NVIDIA GPU. Which Course 05 tool runs the same pandas-style DataFrame operations on that GPU with essentially unchanged code, and by what mechanism?
 
@@ -41,7 +32,6 @@ D) cuDF, because it re-implements the pandas DataFrame API, method for method, o
 ---
 
 ### Question 3
-*taught this week or last | Course 05, Unit 2*
 
 Course 05 Unit 2 flagged unusual Fare values on the Titanic manifest. Which rule is the IQR method?
 
@@ -53,7 +43,6 @@ D) Flag a value in the top or bottom 1% of the column, so 2% of rows are marked 
 ---
 
 ### Question 4
-*taught about a month ago | Course 04, Unit 1*
 
 Course 04's KNN lesson scored 0.9048 without scaling and 0.9683 with StandardScaler on the same rows. What does StandardScaler do to a column?
 
@@ -65,7 +54,6 @@ D) It fills the column's missing entries with the column's mean, so no row has t
 ---
 
 ### Question 5
-*taught about a month ago | Course 03, Unit 3*
 
 Course 03 compared loss functions on the same predictions. Which task calls for cross-entropy loss?
 
@@ -77,7 +65,6 @@ D) Predicting which of three diseases a patient has, where the model outputs a p
 ---
 
 ### Question 6
-*taught about a month ago | Course 03, Unit 3*
 
 Course 03 compared SGD and Adam on the same loss surface. What does Adam do that plain SGD does not?
 
@@ -89,7 +76,6 @@ D) It applies the update to the parameters in a random order, which keeps the ru
 ---
 
 ### Question 7
-*taught eight or more weeks ago | Course 01, Unit 1*
 
 Course 01's history lesson placed four landmarks on a timeline. Which one is normally taken as the birth of AI as a named research field?
 
@@ -101,7 +87,6 @@ D) The 2022 public release of ChatGPT, which put a language model in front of th
 ---
 
 ### Question 8
-*taught eight or more weeks ago | Course 01, Unit 2*
 
 Course 01's expert system held three recorded facts about a patient and two IF-THEN rules. What does forward chaining do with them?
 
@@ -113,7 +98,6 @@ D) It searches the rule base breadth-first, expanding rules in the order they we
 ---
 
 ### Question 9
-*taught eight or more weeks ago | Course 02, Unit 4*
 
 Course 02's genetic algorithm cycled through selection, crossover and mutation. What does crossover do?
 
@@ -125,7 +109,6 @@ D) It scores each candidate against the objective, so the population can be rank
 ---
 
 ### Question 10
-*taught eight or more weeks ago | Course 01, Unit 5*
 
 Course 01 ran a small GAN at the end of the course. Which of these models can produce a new sample rather than a label for an existing one?
 
@@ -135,5 +118,3 @@ C) A GAN, whose generator is trained to output samples a discriminator accepts a
 D) A logistic regression, which maps a weighted sum through a sigmoid to a probability  
 
 ---
-
-**Answers: worked aloud by your instructor in the eight minutes after you hand this back. Nothing to submit, nothing to mark.**

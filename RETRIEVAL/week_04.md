@@ -1,17 +1,11 @@
-# Cumulative Retrieval Quiz - Week 04
+# Retrieval Quiz — Week 04
 
-**Course 02 - AIAT 112, Units 2 and 3**
+**Week 04 of 35 · Course 02 — AIAT 112 (Python for Artificial Intelligence)**
 
-- **15 minutes, in class, at the very end of the session.** It replaces the session's
-  self-check block: about 7 minutes to answer, about 8 minutes for your instructor to work
-  the correct answers aloud.
-- **This quiz is not graded.** It carries no marks and does not appear in your course grade.
-  Nothing you write here is collected.
-- **The correct answers are worked immediately afterwards**, in the same session, before you
-  leave. Being wrong now and corrected now is the point of the exercise - it is what makes
-  the material stick.
-- Ten questions, one answer each. Some are from this week; some are from earlier in the
-  programme, on purpose.
+- **15 minutes, in class, at the end of the session.** About 7 minutes to answer, about 8 minutes for your instructor to work the answers.
+- **Not graded.** Nothing you write here is collected, and nothing counts towards your course grade.
+- **The answers are worked immediately afterwards,** in the same session — being wrong now and corrected now is the point.
+- **Ten questions, one letter each.** Some are from this week; some are from earlier in the programme, on purpose.
 
 ---
 
@@ -107,8 +101,8 @@ A Bayesian calculation starts from a 1% chance that a patient has a disease and,
 
 A) 1% — the probability of the hypothesis before this evidence is taken into account  
 B) 8.76% — the probability after the evidence has been taken into account  
-C) Neither: the prior is the probability of the evidence itself, P(positive test)  
-D) Neither: the prior is P(positive test | disease), the figure the test's manufacturer publishes  
+C) A third number: the prior is the probability of the evidence itself, P(positive test)  
+D) A third number: the prior is P(positive test | disease), the figure the test's manufacturer publishes  
 
 ---
 
@@ -133,5 +127,3 @@ C) Superintelligent AI — a system that outperforms the best humans at science,
 D) Narrow AI — a system specialised for one task, such as a spam filter  
 
 ---
-
-**End of quiz. Your instructor works the answers now.**
