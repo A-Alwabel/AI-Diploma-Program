@@ -27,7 +27,7 @@ By the end of this unit you can:
 | # | Notebook | What it covers | Tier |
 |---|----------|----------------|------|
 | 1 | `examples/01_logistic_regression.ipynb` | Logistic regression; confusion matrix, ROC curve, threshold analysis | **CORE** |
-| 2 | `examples/02_decision_trees.ipynb` | Decision trees and random forest; feature importance; tree depth | **CORE** |
+| 2 | `examples/02_decision_trees.ipynb` | Decision trees and random forest; feature importance; tree depth; error per group (Sex) | **CORE** |
 | 3 | `examples/03_svm.ipynb` | SVM kernels; C and gamma effects; support vectors; decision boundaries | **CORE** |
 | 4 | `examples/04_knn.ipynb` | K-Nearest Neighbors; choosing K; distance metrics | **ENRICHMENT** |
 | 5 | `examples/05_random_forest_naive_bayes.ipynb` | Random forest vs Naive Bayes comparison | **CORE** |

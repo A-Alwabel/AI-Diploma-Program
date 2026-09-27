@@ -24,7 +24,7 @@ By the end of this unit you can:
 
 | # | Notebook | What it covers | Tier |
 |---|----------|----------------|------|
-| 1 | `examples/01_grid_search.ipynb` | Grid Search and Random Search; CV-based tuning; result heatmaps | **CORE** |
+| 1 | `examples/01_grid_search.ipynb` | Grid Search and Random Search; CV-based tuning; result heatmaps; what the scorer cannot see (error per group) | **CORE** |
 | 2 | `examples/02_boosting.ipynb` | Gradient boosting with XGBoost and LightGBM; learning curves; feature importance | **CORE** |
 | 3 | `enrichment/E14_tabular_foundation_models_vs_boosting.ipynb` | Measures what tuning actually buys over XGBoost's defaults, finds where boosting is weak (small training sets), and reads the 2025-2026 tabular foundation model results as a labelled read-only comparison | **ENRICHMENT** |
 
