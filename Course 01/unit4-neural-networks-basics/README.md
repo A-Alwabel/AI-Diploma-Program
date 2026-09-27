@@ -31,6 +31,6 @@ This unit builds intuition and small working Keras models: the math behind train
 ## After the Notebooks
 
 1. **Exercise:** `exercises/exercise_01.ipynb` (`tfenv` kernel). Solutions are released by your instructor.
-2. **Quiz:** `quizzes/quiz_04.md`
+2. **Quiz:** `../QUIZZES/quiz_04.md`
 
 Then continue to Unit 5: `../unit5-generative-ai-intro/README.md`.

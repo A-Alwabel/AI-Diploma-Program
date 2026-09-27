@@ -46,9 +46,16 @@ def leaks(path):
             out.append((s + 1, lines[s].strip(), len(rest), rest[0].strip()[:70]))
     return out
 
+# Blocks a human has read and judged to be question data (a matrix to multiply, a snippet
+# with blanks, a scenario, a task spec). Listed as "path:heading". Anything not listed is
+# reported; a gate that is red on known-good blocks gets ignored, and then it misses the leak.
+ALLOW = pathlib.Path(__file__).with_name("_unlabelled_answers_reviewed.txt")
+reviewed = set(l.strip() for l in ALLOW.read_text().splitlines() if l.strip() and not l.startswith("#")) if ALLOW.exists() else set()
 hits = collections.defaultdict(list)
 for quiz in sorted(ROOT.glob("Course */QUIZZES/*.md")) + sorted(ROOT.glob("Course */*/quizzes/*.md")):
     for item in leaks(quiz):
+        key = f"{quiz.relative_to(ROOT)}:{item[1]}"
+        if key in reviewed: continue
         hits[quiz.parts[len(ROOT.parts)]].append((quiz.relative_to(ROOT),) + item)
 
 total = 0

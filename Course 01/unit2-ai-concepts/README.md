@@ -28,6 +28,6 @@ Applied Python review, rule-based expert systems, knowledge graphs with RDF and 
 ## After the Notebooks
 
 1. **Exercise:** `exercises/exercise_01.ipynb` — applied Python, a small expert system, Bayes' theorem, feature encoding, and first supervised/unsupervised models. Solutions are released by your instructor.
-2. **Quiz:** `quizzes/quiz_02.md`
+2. **Quiz:** `../QUIZZES/quiz_02.md`
 
 Then continue to Unit 3: `../unit3-ml-basics/README.md`.

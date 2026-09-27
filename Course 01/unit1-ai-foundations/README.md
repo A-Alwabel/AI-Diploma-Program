@@ -33,6 +33,6 @@ What AI is and where it came from; intelligent agents and rationality; the philo
 ## After the Notebooks
 
 1. **Exercise:** `exercises/exercise_01.ipynb` — AI fundamentals and Python basics. Solutions are released by your instructor.
-2. **Quiz:** `quizzes/quiz_01.md`
+2. **Quiz:** `../QUIZZES/quiz_01.md`
 
 Then continue to Unit 2: `../unit2-ai-concepts/README.md`.

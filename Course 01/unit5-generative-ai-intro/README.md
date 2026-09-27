@@ -29,6 +29,6 @@ This unit is a first taste: the math behind these models arrives in Course 03 (A
 ## After the Notebooks
 
 1. **Exercise:** `exercises/01_generative_ai_exercise.ipynb` — generative AI concepts. Solutions are released by your instructor.
-2. **Quiz:** `quizzes/quiz_05.md`
+2. **Quiz:** `../QUIZZES/quiz_05.md`
 
 Then finish the course with the final exam: `../ASSESSMENTS/Final_Exam.md`.

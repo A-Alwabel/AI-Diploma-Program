@@ -34,6 +34,8 @@ it was looking at.
 
 ## 2. The template
 
+**Length: 300–600 words.** Findings and checks only; the commentary in the worked example below is not part of a review.
+
 ```markdown
 # Review of <artefact path>  @ <commit / tag>
 Round: <1 | 2 | 3>   Reviewer: <name>   Date: <yyyy-mm-dd>

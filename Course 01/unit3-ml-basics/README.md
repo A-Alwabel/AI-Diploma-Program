@@ -29,6 +29,6 @@ This unit works at intuition level: the math behind gradient descent (derivative
 ## After the Notebooks
 
 1. **Exercise:** `exercises/exercise_01.ipynb` — regression vs classification, XOR and feature engineering, gradient descent by hand, and feature importances (`ai-diploma` kernel). Solutions are released by your instructor.
-2. **Quiz:** `quizzes/quiz_03.md`
+2. **Quiz:** `../QUIZZES/quiz_03.md`
 
 Then continue to Unit 4: `../unit4-neural-networks-basics/README.md`.
