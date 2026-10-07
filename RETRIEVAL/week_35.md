@@ -77,12 +77,12 @@ D) It rescales gradients during training so that large updates do not destabilis
 
 ### Question 7
 
-Minimising `f(x) = x²` from `x = 5` for 30 steps, Unit 2 changed only the learning rate and printed: lr = 0.01 → x = 2.72742; lr = 0.1 → x = 0.0061897; lr = 0.9 → x = 0.0061897; lr = 1.0 → x = 5 with loss 25; lr = 1.1 → x = 1186.88. On a log axis the **lr = 0.9** loss curve lies exactly on top of the **lr = 0.1** curve. What does that coincidence tell you?
+The gradient-descent lesson prints, next to each learning rate, the factor |1 − 2·lr| that multiplies x at each step when minimising f(x) = x² from x = 5 for 30 steps: 0.98 for lr = 0.01, 0.80 for lr = 0.1, 0.80 for lr = 0.9, 1.00 for lr = 1.0 and 1.20 for lr = 1.1. The losses after 30 steps are 7.43883, 3.83124e-05, 3.83124e-05, 25 and 1.40869e+06 respectively. A colleague watching a training run sees a loss curve that is a straight line down on a log axis and concludes the step size is well chosen. Using the printed factors, which objection is justified?
 
-A) lr = 0.9 takes smaller steps than lr = 0.1, which is why the two runs finish at the same value of x  
-B) A smoothly falling loss curve rules out instability, so the rate could be raised from 0.9 to 1.0 for speed  
-C) The loss depends on |x| alone, so a falling curve can still hide a run that crosses the minimum each step  
-D) lr = 0.9 has settled into a second minimum of f that happens to sit at the same height as the first one  
+A) A factor of 0.80 means both runs move x by the same distance each step, so lr = 0.9 is a relabelled lr = 0.1 and no objection applies  
+B) A straight line down shows the factor is below 1, so the rate can safely be raised toward the 1.00 row for a faster descent  
+C) A factor of 0.80 belongs to both lr = 0.1 and lr = 0.9, so the same straight line can come from a run that crosses zero at each step  
+D) The 3.83124e-05 reached at lr = 0.9 beats the 7.43883 at lr = 0.01 because the larger rate found a second, deeper minimum of f  
 
 ---
 
@@ -99,22 +99,22 @@ D) Dropout, Batch Norm and Early Stopping
 
 ### Question 9
 
-In Unit 4 the pretrained English sentiment model labelled *"I have no opinion about this product"* **NEGATIVE at 0.9997**, and gave an Arabic sentence **P(POSITIVE) = 0.42** after splitting it into 5.5 word-pieces per word. What do these two results, read together, show?
+The same Unit 4 probe scored *"The meeting is scheduled for Tuesday at 3pm"* **POSITIVE at 0.9301**, and the Arabic sentence glossed *"the meeting is Tuesday at 3"* at **P(POSITIVE) = 0.3695** after chopping it into **6.4** word-pieces per word. Same content, two very different scores — what explains the pair?
 
-A) The model is well calibrated: confident where the sentiment is clear, and hesitant where it is genuinely ambiguous  
-B) The Arabic sentence was correctly judged neutral, which shows the model handles other languages acceptably  
-C) The two outputs are casing failures, and each disappears once the text is lowercased before it is scored  
-D) The model has no neutral class, so it picks a side; and 0.42 on Arabic means "nothing readable", not "unsure"  
+A) The English fact had to leave through one of two exits, since there is no neutral class; the Arabic one was read letter by letter, so 0.3695 carries no information  
+B) The model understood the English sentence as mildly positive and the Arabic one as close to neutral, so both numbers are fair readings of what the two sentences say  
+C) The model is well calibrated: 0.9301 sits below the 0.9999 it gave a real opinion because a schedule is a weaker positive than praise  
+D) Both scores come from the lowercasing the `uncased` checkpoint applies; the `cased` checkpoint would read the capital letters and fix both  
 
 ---
 
 ### Question 10
 
-A trained FP32 model is converted to INT8. The stored file falls from **5,597 to 4,557 bytes** and validation accuracy is unchanged at **0.840**. Which optimization technique is this, and what did it change?
+In the lesson's worked example, a trained digits classifier is converted with a single library call and no retraining. Measured on the same laptop CPU: stored size **70.2 KB → 22.2 KB** (**3.2×** smaller), accuracy **96.7%** before and after, and latency **0.228 → 0.360 ms/batch** — the converted model runs **1.6×** slower. Name the technique and the property of the model it modified.
 
-A) Pruning — the number of weights, by zeroing the smallest  
-B) ONNX export — the file format, so the model runs outside its framework  
-C) Quantization — the number of bits used to store each weight value  
-D) Distillation — the architecture, by training a smaller model to copy a larger  
+A) Pruning — the number of surviving weights, with the smallest ones zeroed out so the file has fewer values to hold  
+B) Quantization — the precision each weight is stored at, FP32 down to INT8, with a scale and zero-point kept per layer  
+C) Distillation — the architecture, with a smaller student trained to match the 96.7% teacher's soft outputs  
+D) ONNX export — the file format, so the model runs outside PyTorch, which is also why inference got slower in the new runtime  
 
 ---

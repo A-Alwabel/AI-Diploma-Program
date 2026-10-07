@@ -11,12 +11,12 @@
 
 ### Question 1
 
-A colleague's bar chart of 2018 quarterly 911 call volume shows Q2 as a collapse and Q4 as a full recovery. The counts behind it are Q1 1,478, Q2 1,352, Q3 1,402, Q4 1,478 - a change of +0.00% across the year. No number was altered between the data and the chart. What produced the misleading chart, and what is the fix?
+You are reviewing a slide built from the Unit 3 best-practices lesson. Its bar chart of 2018 quarterly 911 dispatches shows a visible plunge in Q2, yet the check printed under the very same data reads: *"the whole year sits within 8.8% of its own mean"*. The data is the bundled 1-in-27 sample of the call log. How do you reconcile the chart with the printout, and what should the slide do?
 
-A) The bars were sorted by value rather than by quarter; re-order them chronologically so the trend reads correctly  
-B) Counts were plotted where percentages were needed; convert each quarter to a percentage change from Q1  
-C) The y-axis was truncated to start just below the smallest bar; start it at zero, or flag the zoom  
-D) Four categories are too few for bars; a pie chart would show the quarters' shares more fairly  
+A) The 8.8% is measured against the mean while the bars show raw counts, so the chart is right and the printout understates the swing; keep the bars as drawn and delete the sentence  
+B) The 1-in-27 sampling inflates quarter-to-quarter variation in the counts, so the chart exaggerates; multiply each quarter by 27 before plotting so the bars settle  
+C) Quarters differ in length by a few days, which the raw counts do not correct for; convert each bar to calls per day and the plunge will shrink to its true size  
+D) The axis made the plunge, not the data: `set_ylim` starts just under the lowest quarter, so a year within 8.8% of its mean fills the frame; redraw from zero or flag the zoom  
 
 ---
 
@@ -44,43 +44,66 @@ D) Training score high and test score high, because the model has learned a patt
 
 ### Question 4
 
-Course 04 Unit 2 compared one 80/20 split against 5-fold cross-validation on the same community crime data. A colleague evaluates the crime-rate regression on one 80/20 split and reports R2 = 0.1095. The 5-fold cross-validation prints R2 = 0.0844 +/- 0.0358, and across ten different single splits the R2 ran from 0.0402 to 0.1259 - the largest 3.1 times the smallest. What is wrong with the colleague's report?
+Unit 2's 5-fold cross-validation of the murder-rate regression prints these fold scores:
 
-A) 0.1095 sits near the top of the range a single split produces, and the report gives no way to spot a lucky split  
-B) 0.1095 has to be wrong: the true value is 0.0844, so test rows have leaked into the colleague's training set and inflated it  
-C) The two procedures hold out 20% of the rows, so the difference is down to the seed and can be ignored  
-D) Cross-validation trains each fold on less data, which makes 0.0844 pessimistic and 0.1095 the honest figure  
+```
+Fold 1: R² = 0.1095
+Fold 2: R² = 0.0616
+Fold 3: R² = 0.0703
+Fold 4: R² = 0.0999
+Fold 5: R² = 0.0809
+
+Mean R²: 0.0844
+Std R²:  0.0179
+```
+
+A teammate wants the report to state **R² = 0.0616** - "the worst fold, so nobody can accuse us of picking a lucky split." Which response is right?
+
+A) Agree: the lowest fold is the floor on what the model can do, so quoting it is the conservative choice and needs no spread beside it  
+B) The spread comes from fold 5 holding out 398 rows instead of 399, so the fix is Leave-One-Out cross-validation, which gives each fold the same size before anything is reported  
+C) Quoting the worst fold is still quoting one draw; the honest figure is the pair 0.0844 ± 0.0179, which shows how far a single fold can land from the mean  
+D) A std of 0.0179 on a mean of 0.0844 means the model is too unstable to report; collect more features before quoting any R² to the client  
 
 ---
 
 ### Question 5
 
-Course 04 Unit 3's logistic-regression lesson tests on 3,200 real card transactions, 6 of them fraudulent, and prints a confusion matrix of TN 3191, FP 3, FN 3, TP 3 - test accuracy 0.9981. The same lesson prints that labelling every row 'legitimate' also scores 0.9981. What do those two identical accuracies establish?
+Unit 3's logistic-regression lesson sweeps the decision cut from 0.1 to 0.9 on its 3,200-row test set and prints:
 
-A) The classifier learned nothing from the 30 features, since it scores exactly what a model with no features scores  
-B) Accuracy is set by the 3,194 legitimate rows and has no room to register the 6 fraud rows either way  
-C) At 3,200 rows the test set is too small for accuracy to be reliable for either model  
-D) The two agree because the cut sits at 0.5; moving that cut down to 0.3 would separate the model from the baseline  
+```
+Threshold    Accuracy     Precision    Recall       F1 Score
+0.1          0.9975       0.4000       0.6667       0.5000
+0.2          0.9984       0.5714       0.6667       0.6154
+0.3          0.9981       0.5000       0.5000       0.5000
+...
+0.9          0.9981       0.5000       0.5000       0.5000
+```
+
+Precision and recall move by tens of points down the table; the accuracy column stays between 0.9975 and 0.9984. A student asks why accuracy looks "stuck". What is the correct explanation?
+
+A) The model's predicted probabilities are nearly identical from row to row, so sliding the cut hardly changes any individual prediction  
+B) Accuracy, like AUC, is defined over the whole range of thresholds at once, so a table that varies the cut is not something it is expected to respond to  
+C) A 3,200-row test set is simply too small for accuracy to resolve the differences between cuts; a larger test sample would separate the rows of the table cleanly and rank them  
+D) 3,194 of 3,200 rows are legitimate and cleared at almost any cut, so accuracy stays pinned near the baseline of calling each row legitimate, whatever the 6 fraud rows do  
 
 ---
 
 ### Question 6
 
-Course 04 Unit 1's regularization lesson predicts transaction Amount from 29 features using 8,000 training rows, and prints:
+Unit 1's regularization lesson predicts transaction `Amount` and prints a plain `LinearRegression` baseline of **MSE 4133.96**, then this part of the Lasso sweep:
 
 ```
-Model               Test MSE    Test R2
-Linear Regression   4133.9568   0.8930
-Ridge (a = 0.01)    4133.9591   0.8930
-Lasso (a = 0.1)     4130.9723   0.8931
+Alpha   1.00: MSE = 4137.4229, R² = 0.8930, Features = 28/29
+Alpha  10.00: MSE = 6043.0153, R² = 0.8437, Features = 14/29
+Alpha 100.00: MSE = 36102.8517, R² = 0.0659, Features = 1/29
 ```
 
-Alphas from 0.01 to 100 were tried for both. At its best alpha, Lasso kept 29 of 29 features. Which conclusion do these numbers support?
+A teammate wants to report the α = 10 model: "it is the first setting where Lasso actually selects features, so the regularization is finally doing its job." Which reading of these rows is right?
 
-A) The penalties were not tuned far enough; the search should be extended past a = 100 until one of them clearly beats the baseline  
-B) Lasso won, and its margin is L1 performing the feature selection that Ridge leaves undone here  
-C) V1-V28 are uncorrelated PCA components, so a penalty on their coefficients has no well-defined effect here  
-D) With 8,000 rows against 29 features the baseline is not overfitting, so shrinking coefficients adds bias and buys nothing  
+A) Each column Lasso switched off cost test error, which is what selection looks like when the baseline had no overfitting for a penalty to remove  
+B) Fourteen inputs at R² 0.8437 is the leaner model, and leaner is what regularization is for, so it should replace the 29-feature baseline in the report  
+C) The grid is too coarse: an α between 1 and 10 would drop columns while holding the baseline's error, so refine the sweep before choosing  
+D) Removing half the columns cures the multicollinearity among V1–V28, so the α = 10 coefficients are the trustworthy ones to publish  
 
 ---
 

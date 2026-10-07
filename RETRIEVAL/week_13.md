@@ -11,23 +11,30 @@
 
 ### Question 1
 
-In Course 05 Unit 2 you profiled two columns of the same 891-row Titanic manifest. Age printed a skew of 0.53 and a median near 26; Fare printed a skew of 4.79, with most passengers in the first histogram bin and a few tickets reaching 512 pounds. A colleague's report quotes one 'average' per column. What does the profiling step tell you to do, and why?
+The Unit 2 outliers lesson profiled the cleaned **889**-row `Fare` column and printed mean **32.10**, median **14.45**, quartiles **7.90** to **31.00** and a maximum of **512.33**. Its IQR rule flagged **114** fares (12.8% of passengers), **102** of them first class. A colleague's slide carries one line: "average fare: 32.10 pounds". Which revision does that profiling support?
 
-A) Report Fare by its median and quartiles and note that it is skewed, because one mean describes almost nobody in that shape  
-B) Report the mean for both columns, because a mean is computed from the whole column while a median keeps just the middle value of it  
-C) Drop the tickets near 512 pounds as outliers, because the mean of Fare becomes fair once that tail is gone  
-D) Standardise both columns to mean 0 and standard deviation 1 first, because scaling removes the skew and makes the averages comparable  
+A) Keep 32.10 but recompute it after dropping the 114 IQR-flagged fares first, so the mean then describes the typical passenger rather than the first-class tail  
+B) Standardise `Fare` to mean 0 and standard deviation 1 before quoting the average, so the first-class tail no longer pulls the reported figure away from the centre of the column  
+C) Keep 32.10 and add the standard deviation 49.70, so readers can see the spread around the average and judge the typical fare for themselves  
+D) Replace it with the median 14.45 and the 7.90 to 31.00 quartile range, and say the column is right-skewed, since 32.10 sits above the third quartile  
 
 ---
 
 ### Question 2
 
-Your pipeline's groupby is saturating a single CPU core, and the machine has an NVIDIA GPU. Which Course 05 tool runs the same pandas-style DataFrame operations on that GPU with essentially unchanged code, and by what mechanism?
+The Unit 1 cuDF lesson could not run its GPU cells; it printed `cuDF NOT available on this machine (no NVIDIA GPU / RAPIDS not installed)` and showed this reference code instead:
 
-A) Numba, because its @jit decorator compiles a pandas groupby call into a CUDA kernel  
-B) Dask, because it dispatches its DataFrame partitions to the GPU whenever one is present  
-C) PySpark, because its executors move DataFrame operations onto the GPU when the cluster has one  
-D) cuDF, because it re-implements the pandas DataFrame API, method for method, on top of CUDA  
+```
+df_cudf = cudf.from_pandas(df_pandas)             # move the same real frame to the GPU
+df_cudf.groupby('label')['flow_duration'].mean()  # same groupby syntax
+```
+
+On the CPU the groupby + sum + mean took **0.001 s** on **14,015** rows, while reading the file took **0.012 s**. A classmate on a Colab GPU runtime runs the two lines above and they work without edits. What makes the unchanged `groupby` line execute on the GPU?
+
+A) A GPU runtime lets the ordinary pandas library execute on the GPU, so the `from_pandas` line is cosmetic and the unchanged pandas code would have been accelerated there anyway  
+B) Dask's scheduler notices the attached GPU and sends the groupby's partitions to it; cuDF is simply the name those partitions take once on the device  
+C) Numba's `@jit` is applied inside cuDF to compile each pandas method into a CUDA kernel at call time, so the method names stay put while each call is compiled first  
+D) cuDF re-implements the pandas DataFrame API method for method on CUDA; `from_pandas` copies the frame into GPU memory and the familiar method names then execute there  
 
 ---
 

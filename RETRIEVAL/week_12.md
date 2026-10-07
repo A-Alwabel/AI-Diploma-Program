@@ -44,46 +44,34 @@ D) It settles on the best combination in the grid, and does so without repeating
 
 ### Question 4
 
-On 89 held-out diabetes patients, Course 03 printed MAE 42.79, RMSE 53.85, and a mean signed error of -3.91, and reported that the 10 worst-predicted patients carry 44.3% of the total squared error. What does the gap between MAE and RMSE tell you about this model?
+The statistical-measures lesson evaluates a linear model on held-out diabetes patients and prints MSE 2900.19, then notes in 'Where this breaks' that RMSE exceeds MAE by about 26%. Its diagnostic panel adds that 30 of the 89 patients are missed by more than 53.9 and that the worst single prediction is off by 154. A teammate proposes reporting MAE on its own because it 'looks better'. What does the 26% gap, read together with those two counts, tell you?
 
-A) The model over-predicts by roughly 11 units on each patient, which is what the gap between the two metrics measures  
-B) The model accounts for 53.85% of the variation in the targets, which is the quantity a root-mean-squared error reports  
-C) RMSE and MAE are on different scales, so RMSE has to be squared before the two numbers can be compared  
-D) A small group of large errors inflates RMSE, so the typical patient is missed by about 43 rather than 54  
+A) Errors are unevenly spread: a minority of badly missed patients pulls RMSE up, so MAE alone would understate the worst cases  
+B) The model over-predicts by about a quarter on average, since RMSE exceeding MAE by 26% measures the direction of the typical miss  
+C) RMSE has to be squared back to MSE 2900.19 before it can be set against MAE, because the 26% gap compares unlike units  
+D) The 154 miss is one outlier; remove that patient and RMSE would fall back to MAE, because the whole gap comes from a single record  
 
 ---
 
 ### Question 5
 
-Course 03 ran the same classifier on the 569-biopsy breast-cancer data, changing only how many principal components it may see, scoring every row with the same 5-fold cross-validation:
+The PCA lesson's first cell prints the explained-variance ratios of the top three components of the standardized 569-biopsy data as 44.3%, 19.0% and 9.4%, and adds that keeping 80% of the variance needs 5 of the 30 components while keeping 95% needs 10. Its cross-validation figure then reports that the classifier's accuracy climbs from 91.2% at k = 1 to 97.4% by k = 5, dips at k = 3, and from k = 5 to k = 30 stays inside a band 0.7 percentage points tall, with its best point at k = 10 (98.07%) just above the 97.89% of the 30 raw features. A colleague applies the rule 'keep 95% of the variance' and so picks k = 10. Which assessment of that rule do the printed figures support?
 
-```
-components   variance kept   5-fold accuracy
-    1            44.3%           0.9121
-    2            63.2%           0.9578
-    3            72.6%           0.9491
-    5            84.7%           0.9736
-   10            95.2%           0.9807
-   30           100.0%           0.9789
-```
-
-The same classifier on all 30 raw features, with no PCA at all, scores 0.9789. Which conclusion do these numbers support?
-
-A) Each component adds accuracy in proportion to the variance it carries, so keeping all 30 components is the best choice  
-B) Accuracy flattens long before variance does — k = 5 already reaches 0.9736 while keeping 84.7% of the variance  
-C) PCA hurt this classifier: the reduced models score below the 0.9789 that the 30 raw features reach on their own  
-D) The dip at k = 3 shows the third component carries no variance, so it should be dropped from the model  
+A) It is the right rule because accuracy rises with variance kept, which is why the k that reaches 95% of the variance is also the k that scores highest  
+B) It reached a good k for the wrong reason: the plateau from k = 5 shows the accuracy had flattened long before the variance reached its 95% line  
+C) It is too generous: the dip at k = 3 shows the third component's 9.4% of variance is harming the classifier, so k should stop at 2  
+D) It is too strict: a reduced model can at best match the 30 raw features, so the 5 components that already keep 80% of the variance are the honest ceiling  
 
 ---
 
 ### Question 6
 
-Course 03 drew a sample of n = 100 from the 714 recorded Titanic passenger ages and printed a 95% confidence interval of [26.8815, 32.7235] for the mean age. Repeating the whole study 2000 times, 96.4% of the intervals built this way contained the true population mean of 29.6991. Which statement do these results support?
+From the same sample of 100 recorded Titanic ages, the confidence-interval lesson prints a 90% interval of [27.3582, 32.2468] (width 4.8886) and a 99% interval of [25.9361, 33.6689] (width 7.7327). When it redoes the whole study 2000 times, 92.5% of the 90% intervals and 99.6% of the 99% intervals capture the population mean, and in the panel that draws 100 of those repeats, 3 intervals are shown in crimson. A student writes: 'There is a 99% chance the true mean age is between 25.9361 and 33.6689.' Which statement about that sentence is right?
 
-A) There is a 95% probability that the true mean age of the 714 recorded passengers lies inside this interval [26.88, 32.72]  
-B) The 95% is a hit rate of the procedure across repeated studies, not a probability attached to this interval  
-C) About 95% of the 714 recorded passenger ages fall inside [26.88, 32.72], which is what the level counts  
-D) Raising the level to 99% would narrow the interval, because greater confidence pins the true mean down more tightly  
+A) Acceptable: 99.6% of the 2000 repeated intervals held the mean, so roughly 99% is also the right probability for this one  
+B) Wrong: the level counts recorded ages, so the sentence should say that 99% of the 714 ages lie between 25.9361 and 33.6689  
+C) Acceptable, and understated: the wider 99% interval (7.7327 against 4.8886) carries more knowledge about the mean, which is why its coverage rose to 99.6%  
+D) Wrong: the 99% is the capture rate of the procedure across repeats — measured here as 99.6% — not the odds for this one interval  
 
 ---
 
@@ -111,31 +99,51 @@ D) An activation function applied over a graph of inputs to produce one scalar o
 
 ### Question 9
 
-Course 02 ran A* with the heuristic h(n) = |ord(n) - ord(goal)| and checked it against the true remaining cost h*:
+The Unit 1 search notebook also printed the order in which A\* popped nodes on the same graph, with the `f = g + h` each one carried:
 
 ```
-   A: h=6, h*=3  ->  OVERESTIMATES by 3
-   B: h=5, h*=2  ->  OVERESTIMATES by 3
-   E: h=2, h*=1  ->  OVERESTIMATES by 1
-   G: h=0, h*=0  ->  OK
+   #1  A   f=6  (g=0 + h=6)
+   #2  C   f=5  (g=1 + h=4)
+   #3  F   f=3  (g=2 + h=1)
+   #4  B   f=6  (g=1 + h=5)
+   #5  E   f=4  (g=2 + h=2)
+   #6  G   f=3  (g=3 + h=0)
 ```
 
-A* then returned A -> B -> E -> G, which is the shortest path on that graph, having opened 6 of the 7 nodes (BFS opened 7). What does this run establish about the heuristic?
+Its admissibility check also reported `C: h=4, h*=unreachable` and `F: h=1, h*=unreachable` — the branch A\* tried first cannot reach the goal at all, so two of the six expansions went to a dead end before the search came back to `B`. A student concludes: *"that wasted detour is what shows the heuristic is inadmissible."* How should the detour be read?
 
-A) h is admissible, because the path A* returned is in fact the shortest one available on this graph  
-B) The overestimates are uniform across nodes, so they cancel and optimality still holds  
-C) h is inadmissible, and that is what made A* open 6 nodes where BFS had to open 7  
-D) h overestimates, so the optimality proof did not apply — the shortest path came back anyway  
+A) The detour is the evidence: an admissible heuristic steers A* straight toward the goal, so expanding a dead end means h must have overestimated somewhere  
+B) The detour is not the evidence; h is inadmissible because the node-by-node check finds h above h* at A, B and E, whichever route the search took first  
+C) The detour shows h behaved admissibly: C was popped at f=5 ahead of B at f=6, which is just the lowest-f-first order the optimality proof relies on  
+D) The detour is beside the point because C and F have h*=unreachable, which makes h <= h* hold on that branch and settles the question in h's favour  
 
 ---
 
 ### Question 10
 
-A triage knowledge base holds 4,000 recorded patient facts and 300 rules. A clinician needs one answer: should Patient 7 be flagged for sepsis? Which inference strategy fits this request, and why?
+In the Unit 2 expert-system cell, three recorded observations about `Patient1` and two rules went in, and the run printed:
 
-A) Backward chaining: it starts from this one goal and expands just the rules that bear on the case  
-B) Forward chaining: firing the rules in the order they were written is what makes a conclusion sound  
-C) Backward chaining: it can withdraw a conclusion when a later fact turns out to contradict it  
-D) Forward chaining: it derives the consequences of the 4,000 facts, and this answer is among them  
+```
+   BEFORE Forward Chaining:
+      Facts: 3
+
+  ➕ Added: Fact(Patient1, likely_has, Flu)
+   ✅ Applied rule: Flu Diagnosis Rule
+  ➕ Added: Fact(Patient1, recommend, Rest)
+   ✅ Applied rule: Flu Treatment Rule
+
+✅ Forward chaining complete! (2 iterations)
+   (Stopped because no more new facts can be derived)
+
+   AFTER Forward Chaining:
+      Facts: 5
+```
+
+A clinic now wants the system to run with no particular question in mind: *each time a nurse records a new observation, surface whatever recommendations now follow for that patient.* Which chaining direction suits that job, and what in the printout shows why?
+
+A) Forward chaining: the Flu Diagnosis Rule was entered before the Flu Treatment Rule, and firing rules in the order they were written is what keeps the chain valid  
+B) Backward chaining: it would prove `recommend Rest` for one patient at a time, and a focused proof costs less than deriving facts even when no goal has been named  
+C) Forward chaining: data-driven, firing whichever rules the recorded facts satisfy until a pass adds no new fact — the loop that stopped above after 2 iterations  
+D) Backward chaining: if a later observation contradicts `likely_has Flu`, it can take back the `Rest` recommendation, which a forward chainer has no way to do  
 
 ---

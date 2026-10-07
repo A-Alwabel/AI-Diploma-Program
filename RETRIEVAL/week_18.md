@@ -11,23 +11,31 @@
 
 ### Question 1
 
-Your company is placing a CV-screening model that ranks job applicants on the EU market. Under the EU AI Act risk tiers taught in Course 06 Unit 5, what follows?
+A bank is placing two systems on the EU market: a **customer-service chatbot** that answers account questions, and a **credit-scoring model** that decides loan eligibility. The lesson's `classify_eu_risk()` returned a tier for each, and the chart under it counts obligations per tier as **0 → 2 → 9** from minimal to high risk. What follows for the two systems?
 
-A) Limited risk: the duty is a transparency notice telling applicants that an AI system is involved in the screening  
-B) Prohibited: the Act lists automated decision-making about employment among its Article 5 banned practices  
-C) Minimal risk: the system produces a ranking and a human recruiter still takes the final hiring decision  
-D) High risk: data governance, logging, human oversight and a conformity assessment apply before deployment  
+A) Both fall in limited risk: each system faces customers directly, so an Article 50 notice that an AI is involved discharges the bank's duties for the pair  
+B) The credit scorer is prohibited under Article 5, since algorithmic decisions on access to loans sit beside social scoring, while the chatbot is minimal risk with no new obligations  
+C) Both are high risk: a bank counts as critical infrastructure under the Act, so the 9 obligations attach to any AI system it deploys, the account-questions chatbot included  
+D) The chatbot carries the 2 limited-risk duties (disclose the AI, label synthetic media); the credit scorer carries the 9 high-risk obligations, conformity assessment included  
 
 ---
 
 ### Question 2
 
-In Course 07 Unit 1 a paragraph was split on whitespace and counted. The frequency table gave every word a count of 1 - even though language and nlp each occur twice in that paragraph. Which explanation is correct?
+Unit 1 also printed the pipeline as a step table:
 
-A) The stop-word list deleted one of the two occurrences of each of those words before they were counted  
-B) 'language.' and '(nlp)' remained separate tokens from 'language' and 'nlp', splitting each count  
-C) Counter records each distinct word just once per document, however often the word occurs  
-D) Lowercasing merged the two occurrences of each word into one token before they were counted  
+```
+stage                                   tokens  distinct types
+3. stop-words removed                       21              21
+4. punctuation stripped per token           21              19
+```
+
+Between steps 3 and 4 the token count holds at 21 while the number of distinct types drops by two. What happened at step 4?
+
+A) Two tokens made of punctuation alone were deleted from the list, because stripping punctuation removes such tokens from a token sequence  
+B) Two more words matched the nine-word stop list once their trailing punctuation no longer hid them from it  
+C) Stripping the bracket and the full stop turned `(nlp)` and `language.` into `nlp` and `language`, which were already types  
+D) Lowercasing merged `Natural` and `NLP` with their lower-case spellings, cutting the type count by two  
 
 ---
 
@@ -44,12 +52,12 @@ D) A word missing from the vocabulary can still be spelled out of pieces the mod
 
 ### Question 4
 
-A colleague's bar chart of 2018 quarterly 911 call volume shows Q2 as a collapse and Q4 as a full recovery. The counts behind it are Q1 1,478, Q2 1,352, Q3 1,402, Q4 1,478 - a change of +0.00% across the year. No number was altered between the data and the chart. What produced the misleading chart, and what is the fix?
+You are reviewing a slide built from the Unit 3 best-practices lesson. Its bar chart of 2018 quarterly 911 dispatches shows a visible plunge in Q2, yet the check printed under the very same data reads: *"the whole year sits within 8.8% of its own mean"*. The data is the bundled 1-in-27 sample of the call log. How do you reconcile the chart with the printout, and what should the slide do?
 
-A) The bars were sorted by value rather than by quarter; re-order them chronologically so the trend reads correctly  
-B) Counts were plotted where percentages were needed; convert each quarter to a percentage change from Q1  
-C) The y-axis was truncated to start just below the smallest bar; start it at zero, or flag the zoom  
-D) Four categories are too few for bars; a pie chart would show the quarters' shares more fairly  
+A) The 8.8% is measured against the mean while the bars show raw counts, so the chart is right and the printout understates the swing; keep the bars as drawn and delete the sentence  
+B) The 1-in-27 sampling inflates quarter-to-quarter variation in the counts, so the chart exaggerates; multiply each quarter by 27 before plotting so the bars settle  
+C) The axis made the plunge, not the data: `set_ylim` starts just under the lowest quarter, so a year within 8.8% of its mean fills the frame; redraw from zero or flag the zoom  
+D) Quarters differ in length by a few days, which the raw counts do not correct for; convert each bar to calls per day and the plunge will shrink to its true size  
 
 ---
 

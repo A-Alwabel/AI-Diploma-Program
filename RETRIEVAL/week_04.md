@@ -11,43 +11,71 @@
 
 ### Question 1
 
-A triage knowledge base holds 4,000 recorded patient facts and 300 rules. A clinician needs one answer: should Patient 7 be flagged for sepsis? Which inference strategy fits this request, and why?
+In the Unit 2 expert-system cell, three recorded observations about `Patient1` and two rules went in, and the run printed:
 
-A) Backward chaining: it starts from this one goal and expands just the rules that bear on the case  
-B) Forward chaining: firing the rules in the order they were written is what makes a conclusion sound  
-C) Backward chaining: it can withdraw a conclusion when a later fact turns out to contradict it  
-D) Forward chaining: it derives the consequences of the 4,000 facts, and this answer is among them  
+```
+   BEFORE Forward Chaining:
+      Facts: 3
+
+  ➕ Added: Fact(Patient1, likely_has, Flu)
+   ✅ Applied rule: Flu Diagnosis Rule
+  ➕ Added: Fact(Patient1, recommend, Rest)
+   ✅ Applied rule: Flu Treatment Rule
+
+✅ Forward chaining complete! (2 iterations)
+   (Stopped because no more new facts can be derived)
+
+   AFTER Forward Chaining:
+      Facts: 5
+```
+
+A clinic now wants the system to run with no particular question in mind: *each time a nurse records a new observation, surface whatever recommendations now follow for that patient.* Which chaining direction suits that job, and what in the printout shows why?
+
+A) Forward chaining: data-driven, firing whichever rules the recorded facts satisfy until a pass adds no new fact — the loop that stopped above after 2 iterations  
+B) Forward chaining: the Flu Diagnosis Rule was entered before the Flu Treatment Rule, and firing rules in the order they were written is what keeps the chain valid  
+C) Backward chaining: it would prove `recommend Rest` for one patient at a time, and a focused proof costs less than deriving facts even when no goal has been named  
+D) Backward chaining: if a later observation contradicts `likely_has Flu`, it can take back the `Rest` recommendation, which a forward chainer has no way to do  
 
 ---
 
 ### Question 2
 
-A feedforward network's hidden layer needs an activation function. Which list contains three activation functions and nothing else?
+Before training anything, the single-neuron lesson printed this table:
 
-A) Adam, SGD, RMSprop  
-B) MSE, cross-entropy, hinge  
-C) Dropout, batch normalization, early stopping  
-D) ReLU, sigmoid, tanh  
+```
+     z |  sigmoid |    tanh |  relu
+   1.0 |    0.731 |   0.762 |   1.0
+   3.0 |    0.953 |   0.995 |   3.0
+```
+
+The training cell that followed compiled the neuron with `Adam(learning_rate=0.05)` and `loss="mse"`. A classmate files sigmoid, tanh and relu under "things that score the model". What job do the three functions in this table actually do inside a `Dense(1)` neuron?
+
+A) They measure how far the neuron's output is from the 0/1 label, which is the scoring job that `mse` also performs in the compile line  
+B) They decide how much each weight moves after a batch, which is why the learning rate 0.05 is set right beside them  
+C) They turn the weighted sum `z` into the neuron's output, which is why each column is a different reshaping of the same `z`  
+D) They switch random units off during training to limit overfitting, the way dropout does in a larger network  
 
 ---
 
 ### Question 3
 
-The Unit 3 diagnosis system is given a patient with fever, cough and fatigue, and prints:
+The Unit 3 diagnosis system was loaded with these printed symptom probabilities, among others:
 
 ```
-disease         prevalence  prior (norm.)  P(symptoms|d)   posterior   rank move
-Common Cold         15.0%          68.2%           5.6%       19.6%       1 -> 3
-Flu                  5.0%          22.7%          50.4%       58.9%       2 -> 1
-COVID-19             2.0%           9.1%          45.9%       21.5%       3 -> 2
+  ➕ P(Fever|Flu) = 90.00%
+  ➕ P(Cough|Flu) = 80.00%
+  ➕ P(Fatigue|Flu) = 70.00%
+  ➕ P(Fever|COVID-19) = 85.00%
+  ➕ P(Cough|COVID-19) = 90.00%
+  ➕ P(Fatigue|COVID-19) = 60.00%
 ```
 
-Common Cold is by far the most prevalent of the three diseases, yet it finishes last. Why?
+For the patient with fever, cough and fatigue it printed `Flu: 58.91%` and `COVID-19: 21.46%`. Its slope-chart table shows the two likelihoods nearly tied — `P(symptoms|d)` of 50.4% for Flu against 45.9% for COVID-19 — with normalised priors of 22.7% and 9.1%. COVID-19 explains this patient almost as well as Flu does. Why does it end up with far less than half of Flu's posterior?
 
-A) Renormalising the three prevalences over one another pushes the largest of them below the other two  
-B) Bayes multiplies prior by likelihood, and P(symptoms | Cold) = 5.6% is nine times below Flu's  
-C) Common Cold has no listed probability for fatigue, so the system skips it in the product  
-D) The posterior follows the highest single symptom probability, and Flu's fever figure is 90%  
+A) COVID-19's 2.0% prevalence is renormalised up to 9.1% over three diseases, and that renormalisation step is what costs it the ranking against Flu  
+B) The likelihood gap does it: COVID-19's fatigue figure of 60.00% is the weakest entry, and 45.9% against 50.4% is what pulls its posterior down to 21.46%  
+C) Normalising the three posteriors to sum to 100% hands the leader a share of the others' mass, which is what widens a near-tie into 58.91% against 21.46%  
+D) With the likelihoods this close, the prior decides: Flu's normalised prior of 22.7% is more than twice COVID-19's 9.1%, and Bayes multiplies the two  
 
 ---
 

@@ -11,24 +11,30 @@
 
 ### Question 1
 
-The Unit 1 libraries notebook doubles the same numbers twice — once as a Python list comprehension, once as one NumPy whole-array operation — and prints:
+The Unit 1 libraries notebook timed the doubling of 1,000,000 numbers twice. A one-shot timing cell printed:
 
 ```
-         N    list (ms)   NumPy (ms)   speed-up
-        10       0.0001       0.0003       0.5x
-       100       0.0009       0.0003       3.0x
-     1,000       0.0123       0.0006      21.5x
-    10,000       0.1195       0.0032      37.1x
-   100,000       1.2403       0.0254      48.8x
- 1,000,000      15.1218       0.2454      61.6x
+   Python list comprehension :    11.05 ms
+   NumPy, whole array at once:     0.71 ms
+   Speed-up measured here    :     15.5x
+
+Against the "100x faster" line in the Part 2 text above:
+   this run measured 15.5x - well short of 100x.
 ```
 
-Which statement is supported by this table?
+The next cell re-timed six array sizes, keeping the best of three trials after a warm-up, and closed with:
 
-A) The list version scales better, because its cost per element falls as N grows  
-B) NumPy's lead grows with N, and at N = 10 the list version is the faster of the two  
-C) The two converge to the same speed at large N, since each loop is run by the interpreter  
-D) NumPy runs about 100x faster here, the speed-up the notebook's own text quotes  
+```
+Smallest N (10):        NumPy is SLOWER (0.5x)
+Largest N (1,000,000): NumPy is 62x faster
+```
+
+A teammate wants to vectorise a helper that is called thousands of times per second on arrays of about ten values, and quotes the 62x as the gain to expect. Which printed line actually bears on that helper, and what does it say?
+
+A) `Largest N (1,000,000): NumPy is 62x faster` — the compiled loop is the same code at any N, so the factor carries over to ten values  
+B) `Smallest N (10): NumPy is SLOWER (0.5x)` — on ten values the per-call setup cost is the whole job, so the plain list stays ahead  
+C) `this run measured 15.5x` — one honest measurement on this machine, so that is the realistic gain for the helper to expect  
+D) The Part 2 text's `100x faster` — the 15.5x and 62x were pulled down by timing noise, so the tutorial figure is the safer planning estimate  
 
 ---
 

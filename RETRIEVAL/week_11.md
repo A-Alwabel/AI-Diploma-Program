@@ -11,71 +11,84 @@
 
 ### Question 1
 
-Course 04 Unit 3's KNN lesson fits the same model twice on the same 313 real card transactions. Without scaling it scores accuracy 0.9048; with StandardScaler it scores 0.9683. The lesson also prints that the Time column alone contributes 99.9978% of the raw squared distance between two transactions (Time std 46,331.2, against a median feature std of 1.302). What does that 99.9978% figure explain?
+Unit 3's KNN lesson splits its card transactions into 250 training and 63 test rows and prints, before any scaling:
 
-A) Unscaled, 'nearest neighbour' means roughly 'happened at a similar moment', so what V1-V28 know is drowned out  
-B) The V1-V28 columns barely vary across these rows, so they contribute almost nothing to the distances the model computes  
-C) Time is the most predictive feature of fraud here, so scaling it down discards the best signal  
-D) StandardScaler dropped Time from the feature set, and removing that one dominant column is what lifted accuracy by 6.35 points  
+```
+Std of first feature (Time): 46331.17
+Std of Amount feature: 215.28
+```
+
+The figure caption adds that on a log axis `Time` stands about four orders of magnitude above the V1–V28 columns, and `Amount` about two. A classmate proposes a shortcut: delete `Time`, skip `StandardScaler`, and fit KNN on the remaining 29 raw columns, "since the one problem column is gone." What does the lesson's evidence say will happen to the distances KNN computes?
+
+A) With `Time` removed the remaining columns sit on comparable scales, so the shortcut does the same job `StandardScaler` would have done  
+B) Dropping `Time` discards the column that dominated the distance, which is the model's strongest fraud signal, so the fit gets worse for a different reason  
+C) `Amount` inherits the role `Time` played: its spread sits about two orders of magnitude above V1–V28, so it now decides who counts as a neighbour  
+D) KNN compares the ranking of distances rather than their raw size, so a column's standard deviation cannot change which rows come out nearest  
 
 ---
 
 ### Question 2
 
-Course 04 Unit 4 clusters 1,994 communities on 4 scaled crime features and prints:
+Unit 4's K-Means sweep over the 1,994 scaled communities prints, among its rows:
 
 ```
-K=2   Inertia=5347.86   Silhouette=0.3967       K=6    Inertia=2398.46   Silhouette=0.2954
-K=3   Inertia=4041.38   Silhouette=0.3134       K=8    Inertia=1970.75   Silhouette=0.3007
-K=4   Inertia=3124.93   Silhouette=0.3153       K=10   Inertia=1720.82   Silhouette=0.2941
+K=7: Inertia=2145.23, Silhouette=0.2970
+K=9: Inertia=1824.09, Silhouette=0.3008
 ```
 
-The elbow falls at K = 4; the silhouette peaks at K = 2; the lesson itself clusters at K = 3. How should K be settled?
+A colleague picks K = 9: "it beats K = 7 on silhouette *and* on inertia - for once both criteria agree, so the data has decided." The lesson's own elbow landed on K = 4, and the lesson clustered at K = 3. What is the right response?
 
-A) Take K = 10: it posts the lowest inertia anywhere in the table, and lower inertia means tighter clusters  
-B) Take K = 2: the silhouette is the score that measures separation, so it settles the question  
-C) The disagreement is a symptom of unscaled features; rescaling the four crime columns would make the criteria converge  
-D) The two criteria measure different things and disagree, so K is settled by what the clusters are for  
+A) The colleague is right: when the inertia criterion and the silhouette criterion point the same way, the data has chosen K and no judgement is needed  
+B) Inertia falls with each added cluster by construction, and a third-decimal silhouette bump is no ranking, so K is still settled by what the clusters are for  
+C) K = 2 should stand: its silhouette of 0.3967 is the highest in the sweep, and the global peak outranks any comparison between neighbouring rows  
+D) K = 4 should stand: the elbow was located geometrically, from the chord between the first and last points of the curve, which makes it a measurement rather than a judgement  
 
 ---
 
 ### Question 3
 
-The same lesson refits the model with class_weight='balanced' and prints the change on the test set:
+The same lesson prints two different ways of pushing the fraud model to flag more of the 3,200 test transactions - lowering the cut on the original model, and refitting with `class_weight='balanced'`:
 
 ```
-Fraud caught (TP):   3 -> 3       Fraud missed (FN):   3 -> 3
-False alarms (FP):   3 -> 18      Legit cleared (TN):  3191 -> 3176
+cut 0.1 (original model):   caught 4   missed 2   false alarms 6    recall 0.6667   precision 0.4000
+class_weight='balanced':    caught 3   missed 3   false alarms 18   recall 0.5000   precision 0.1429
 ```
 
-Precision 0.5000 -> 0.1429, recall 0.5000 -> 0.5000, accuracy 0.9981 -> 0.9934. What should the analyst conclude?
+A colleague reads the second line and concludes that the weighted refit is "the more aggressive model, so it must be the one catching more fraud." What do the two lines establish?
 
-A) Recall did not move because the weighting was too weak; a larger manual weight on class 1 would lift it  
-B) Precision falling from 0.50 to 0.14 is the signature of a model overfitting the minority class it was weighted towards  
-C) The weighting bought 15 extra false alarms and no extra fraud: it moved the operating point, not the information  
-D) Accuracy fell from 0.9981 to 0.9934, so the balanced model is the worse of the two and should be dropped  
+A) Recall sat at 0.5000 because 'balanced' is a mild preset; a hand-set weight on class 1 would carry recall past the 0.6667 the lower cut reached  
+B) The precision collapse to 0.1429 is the minority class being overfitted by the refit, which the threshold change avoids because the fitted model is left untouched  
+C) Flagging more is not finding more: 18 alarms bought 3 frauds where 6 alarms bought 4, so the weighting moved the operating point without adding signal  
+D) Both rows fall below the 0.9981 that labelling each row legitimate scores, so the default 0.5 cut, which matches it, remains the model to keep  
 
 ---
 
 ### Question 4
 
-Course 03 computed the same two-layer transformation of the same data two ways: Route A as (X @ W1) @ W2, using 8,510,592 scalar multiplications, and Route B as X @ (W1 @ W2), using 1,191,040. The largest disagreement between the two outputs was 1.33e-14. What does this establish about a two-layer network with no activation function between the layers?
+The matrix-operations lesson redraws its fusion experiment on the 1,797 mean-centred digit images and adds a third route, `relu(X @ W1) @ W2`, with a ReLU between the two layers. The printed reading of the figure is:
 
-A) Route B is cheaper because it drops the hidden layer, so it returns an approximation rather than the exact output  
-B) The 1.33e-14 disagreement shows the two routes compute different functions  
-C) The two layers can be replaced by one layer with weight matrix W1 @ W2 without changing the function computed  
-D) The second layer re-weights the first layer's outputs, so stacking the two adds expressive power a single layer lacks  
+```
+Blue points (no activation): 2.0e-14 is the largest amount any of the 17,970 output numbers differs from the fused one-layer network.
+Orange points (ReLU inserted): up to 11.8 away from the diagonal, on outputs that span roughly -19 to +18.
+```
+
+A classmate argues that the ReLU is a minor numerical detail and that the real lesson is which bracketing is cheaper. Which reading of these two printed gaps is correct?
+
+A) Both gaps are rounding noise; the ReLU route sits further off because `max()` adds another rounded operation per entry  
+B) The 2.0e-14 gap shows the layer-by-layer route drifts from the fused one, so even without a ReLU the two layers compute a slightly different function  
+C) The orange points leave the diagonal because the digits were mean-centred, not because of the ReLU; on raw pixels the same ReLU would spread them as far  
+D) The 2.0e-14 gap says the two linear routes are one function; the 11.8 gap says the ReLU made a genuinely different model  
 
 ---
 
 ### Question 5
 
-Minimising f(x) = x^2 from x = 5 for 30 steps, Course 03 changed only the learning rate and printed: lr = 0.01 -> x = 2.72742; lr = 0.1 -> x = 0.0061897; lr = 0.9 -> x = 0.0061897; lr = 1.0 -> x = 5 with loss 25; lr = 1.1 -> x = 1186.88. On a log axis the lr = 0.9 loss curve lies exactly on top of the lr = 0.1 curve. What does that coincidence tell you?
+The gradient-descent lesson prints, next to each learning rate, the factor |1 − 2·lr| that multiplies x at each step when minimising f(x) = x² from x = 5 for 30 steps: 0.98 for lr = 0.01, 0.80 for lr = 0.1, 0.80 for lr = 0.9, 1.00 for lr = 1.0 and 1.20 for lr = 1.1. The losses after 30 steps are 7.43883, 3.83124e-05, 3.83124e-05, 25 and 1.40869e+06 respectively. A colleague watching a training run sees a loss curve that is a straight line down on a log axis and concludes the step size is well chosen. Using the printed factors, which objection is justified?
 
-A) lr = 0.9 takes smaller steps than lr = 0.1, which is why the two runs finish at the same value of x  
-B) The loss depends on |x| alone, so a smoothly falling curve can still hide a run that crosses the minimum each step  
-C) A smoothly falling loss curve rules out instability, so the rate could safely be raised from 0.9 up to 1.0 for speed  
-D) lr = 0.9 has settled into a second minimum of f that happens to sit at the same height as the first one  
+A) A factor of 0.80 belongs to both lr = 0.1 and lr = 0.9, so the same straight line can come from a run that crosses zero at each step  
+B) A factor of 0.80 means both runs move x by the same distance each step, so lr = 0.9 is a relabelled lr = 0.1 and no objection applies  
+C) A straight line down shows the factor is below 1, so the rate can safely be raised toward the 1.00 row for a faster descent  
+D) The 3.83124e-05 reached at lr = 0.9 beats the 7.43883 at lr = 0.01 because the larger rate found a second, deeper minimum of f  
 
 ---
 
@@ -92,12 +105,19 @@ D) The model becomes more robust to noise, since consulting fewer neighbours mea
 
 ### Question 7
 
-Course 01 opened by contrasting two ways of building an AI system. What is the main difference between traditional, rule-based AI and modern, data-driven AI?
+The weather recommender in Course 01's first lesson printed two neighbouring cases:
 
-A) Traditional AI uses neural networks, while modern AI works from hand-written rules  
-B) Traditional AI hides its reasoning, while modern AI is transparent by construction  
-C) Traditional AI applies rules written by a person; modern AI learns its rules from data  
-D) Traditional AI runs faster, while modern AI is slower because it has to process far more data  
+```
+26 °C, 59% humidity, morning -> Go for a jog in the park
+26 °C, 61% humidity, morning -> Moderate weather, any outdoor activity is fine
+```
+
+A classmate concludes that the recommender "learned a humidity boundary near 60% from past weather data". Which statement describes where that boundary actually came from, and what it tells you about the system's family?
+
+A) The 60% cut was fitted from the four printed test cases, which makes the recommender a small data-driven model of the kind Unit 2 trains  
+B) The jump between 59% and 61% shows the system hides its reasoning, which is the mark of a modern learned model  
+C) A person typed `humidity < 60` into an `if` statement, so the system is rule-based: the threshold was authored, not fitted to data  
+D) The two answers differ because the hand-written rule evaluates faster than a fitted model would; speed is what separates the two families  
 
 ---
 
@@ -114,22 +134,30 @@ D) P(X | Y) and P(Y) - the joint distribution over inputs and labels
 
 ### Question 9
 
-Course 02 Unit 1 doubled the same numbers twice - once as a Python list comprehension, once as one NumPy whole-array operation - and printed:
+The Unit 1 libraries notebook timed the doubling of 1,000,000 numbers twice. A one-shot timing cell printed:
 
 ```
-         N    list (ms)   NumPy (ms)   speed-up
-        10       0.0001       0.0003       0.5x
-     1,000       0.0123       0.0006      21.5x
-   100,000       1.2403       0.0254      48.8x
- 1,000,000      15.1218       0.2454      61.6x
+   Python list comprehension :    11.05 ms
+   NumPy, whole array at once:     0.71 ms
+   Speed-up measured here    :     15.5x
+
+Against the "100x faster" line in the Part 2 text above:
+   this run measured 15.5x - well short of 100x.
 ```
 
-Which statement is supported by this table?
+The next cell re-timed six array sizes, keeping the best of three trials after a warm-up, and closed with:
 
-A) The list version scales better, because its cost per element falls as N grows  
-B) NumPy's lead grows with N, and at N = 10 the list version is the faster of the two  
-C) The two converge to the same speed at large N, since each loop is run by the interpreter  
-D) NumPy runs about 100x faster here, the speed-up the notebook's own text quotes  
+```
+Smallest N (10):        NumPy is SLOWER (0.5x)
+Largest N (1,000,000): NumPy is 62x faster
+```
+
+A teammate wants to vectorise a helper that is called thousands of times per second on arrays of about ten values, and quotes the 62x as the gain to expect. Which printed line actually bears on that helper, and what does it say?
+
+A) `Smallest N (10): NumPy is SLOWER (0.5x)` — on ten values the per-call setup cost is the whole job, so the plain list stays ahead  
+B) `Largest N (1,000,000): NumPy is 62x faster` — the compiled loop is the same code at any N, so the factor carries over to ten values  
+C) `this run measured 15.5x` — one honest measurement on this machine, so that is the realistic gain for the helper to expect  
+D) The Part 2 text's `100x faster` — the 15.5x and 62x were pulled down by timing noise, so the tutorial figure is the safer planning estimate  
 
 ---
 

@@ -11,23 +11,33 @@
 
 ### Question 1
 
-You have a trained scikit-learn model. It must be called from a Java backend service and must also run inside a mobile app that hosts no Python interpreter. Which packaging choice makes that possible?
+Unit 1 lesson 02 wrote the same Iris RandomForest to disk four ways and printed:
 
-A) `pickle`, because Python runs on all the major operating systems  
-B) `joblib` with `compress=3`, because it produces the smallest artifact of the four  
-C) ONNX, because the graph runs in an ONNX runtime with no Python present  
-D) JSON of the learned parameters, because most languages parse JSON  
+```
+format                  size (KB)  load (ms)
+pickle                      170.6       0.59
+joblib                      182.5       5.28
+joblib (compress=3)          25.4       5.35
+ONNX                         78.3       0.59
+```
+
+A teammate reads the table and says: "pickle ties for the fastest load, so send `iris_rf.pkl` to the gateway team." The gateway is a C++ service on a factory device with no Python installed. Which reply is right?
+
+A) Send `iris_rf.pkl` (170.6 KB): it loads in 0.59 ms and C++ can read the bytes like any other file  
+B) Send `iris_rf_compressed.joblib` (25.4 KB): on a constrained device the smallest artifact is the one to ship  
+C) Send `iris_rf.onnx` (78.3 KB): a C++ ONNX runtime executes the saved graph without importing scikit-learn  
+D) Send the forest's learned thresholds as JSON: C++ parses numbers natively, so no model runtime is needed  
 
 ---
 
 ### Question 2
 
-Unit 1 put a model behind an HTTP endpoint instead of importing it into the calling program. What is the main advantage of a REST API for model serving?
+In Unit 1 lesson 01, `wdbc-baseline` was wrapped in a FastAPI app and the notebook printed a ready-to-paste `curl -X POST http://localhost:8000/predict` carrying 30 JSON fields. The dashboard team writes JavaScript and the billing team writes Go; both want predictions. A colleague asks why they should call this endpoint instead of each loading `model.joblib` themselves. Which answer gives the benefit the lesson actually claims for serving over HTTP?
 
-A) A standardized, language-neutral interface that scales out  
-B) Lower latency than an in-process `model.predict()` call  
-C) Automatic validation of requests against the model's schema  
-D) Automatic scaling of the service as request volume grows  
+A) Any program that can send JSON to one address can use the model, whatever language it was written in  
+B) HTTP makes each prediction faster than the in-process call the lesson timed at 0.060 ms per call  
+C) Behind HTTP, Flask returns `400` for a missing field on its own, so nobody has to write any validation code  
+D) Once the model sits behind one address, extra worker processes are started by the API layer as traffic grows  
 
 ---
 
@@ -44,21 +54,20 @@ D) When peak throughput matters most, because a managed runtime outruns a contai
 
 ### Question 4
 
-Unit 5 ran a model-free and a model-based agent on FrozenLake over **20 seeds × 300 episodes**, with the same learning rule, the same discount and the same epsilon = 0.2. The sole difference: after each real environment step the model-based agent also replays 20 remembered transitions.
+Unit 5's comparison notebook runs Dyna-style planning (20 replayed transitions after each real step) against plain Q-learning on `FrozenLake-v1`, averaged over **20 seeds × 300 episodes** with epsilon = 0.2 for both. It summarises its own table in two lines:
 
 ```
-  Success rate after ...   | model-free | model-based
-  50 episodes              |      0.020 |      0.332
-  100 episodes             |      0.217 |      0.584
-  the last 50 episodes     |      0.747 |      0.746
+- EARLY: the model-based agent is ahead by +0.312 success rate over the first
+  50 episodes. Same number of environment steps, more learning squeezed out of them.
+- LATE: the gap has closed to -0.001. Both reach roughly the same level.
 ```
 
-The model-based agent did about **20× more Q-updates** for the same environment experience. What do these numbers support?
+and adds that the planning agent performed about **20x more Q-updates** for the same environment experience. A team is choosing an agent for a warehouse robot: each real step costs time and wear, while a desktop CPU sits idle between steps. Which recommendation follows from those two gaps?
 
-A) The model-based agent had 20× more experience of the environment, so its early lead at 50 and 100 episodes is what you would expect  
-B) The model-based agent is more sample-efficient — it reaches a given success rate in fewer environment steps — but it does not end higher  
-C) The model-based agent is the better choice when compute is the scarce resource, because it extracts more learning per unit of computation  
-D) The 300-episode budget is too short to separate the two: with more episodes the model-based agent's early lead would reappear as a higher final rate  
+A) Choose the model-free agent: the -0.001 late gap shows both end level, so the 20x extra Q-updates are compute spent for no advantage that survives to the end of the 300 episodes.  
+B) Choose the planning agent because the +0.312 gap shows it extracted 20x more environment experience from the same 300 episodes, which is exactly what a costly robot needs.  
+C) Choose the planning agent: the +0.312 early gap means it reaches a usable success rate on far fewer costly real steps, and the -0.001 late gap says no final performance is lost.  
+D) Run both past 300 episodes before deciding; a -0.001 gap averaged over 20 seeds is too narrow to show which agent would end higher, and that is what the choice turns on.  
 
 ---
 
@@ -86,54 +95,76 @@ D) The replay buffer is trimmed as training proceeds, so stale transitions go
 
 ### Question 7
 
-Unit 4 ran gradient descent on `f(x) = x²` from `x = 5.0`, changing only the learning rate:
+Under its learning-rate table, the Unit 4 notebook printed where each gradient-descent run on `f(x) = x²` stood after 25 steps from `x = 5.0`:
 
 ```
-learning rate    x @ step 3    x @ step 25
-0.01                 4.7060         3.0173
-0.10                 2.5600         0.0189
-0.95                -3.6450        -0.3589
-1.10                -8.6400      -476.9810
+Distance from the optimum after 25 steps:
+   lr = 0.01  |x| =     3.0173   f(x) =   9.1042e+00   (too small)
+   lr = 0.1   |x| =     0.0189   f(x) =   3.5681e-04   (just right)
+   lr = 0.95  |x| =     0.3589   f(x) =   1.2884e-01   (too big)
+   lr = 1.1   |x| =   476.9810   f(x) =   2.2751e+05   (way too big)
 ```
 
-A student concludes: *"a learning rate that overshoots the minimum will diverge."* Which row refutes that, and how?
+A student disputes the two bottom verdicts: *"0.95 and 1.1 both jump across the minimum on every step, so they are the same failure and both deserve 'way too big'."* What in this printout separates the two rows?
 
-A) lr = 0.01: it stays on one side of the minimum, so overshoot is not required in order to converge  
-B) lr = 0.10: it reaches x = 0.019 without overshooting, so overshoot is what slows a run down  
-C) lr = 1.10: its sign alternates, showing that overshoot and divergence are the same behaviour  
-D) lr = 0.95: it lands beyond the minimum (x = −3.65 at step 3) and still closes in to |x| = 0.36  
+A) The labels alone: both |x| values belong to runs that crossed the minimum on each step, so the printout gives the student no numerical ground for keeping the two verdicts apart  
+B) Which way |x| moved: 0.95 ends 0.3589 away, nearer than its start at 5.0, while 1.1 ends 476.9810 away — crossing while shrinking converges, crossing while growing diverges  
+C) The f(x) column read against a cut-off: 1.2884e-01 is below 1 and 2.2751e+05 is far above it, and a cost under 1 is the notebook's working test for having converged  
+D) The 0.1 row: its 0.0189 is the one distance that has essentially reached zero, so a run still 0.3589 away after 25 steps has failed in the same way 1.1 did  
 
 ---
 
 ### Question 8
 
-What is the main difference between traditional, rule-based AI and modern, data-driven AI?
+The weather recommender in Course 01's first lesson printed two neighbouring cases:
 
-A) Traditional AI relies on neural networks, and modern AI on hand-written rules  
-B) Traditional AI hides its reasoning, and modern AI is transparent by construction  
-C) Traditional AI applies rules a person wrote, and modern AI fits its rules to data  
-D) Traditional AI runs faster, and modern AI is slower because it does more arithmetic  
+```
+26 °C, 59% humidity, morning -> Go for a jog in the park
+26 °C, 61% humidity, morning -> Moderate weather, any outdoor activity is fine
+```
+
+A classmate concludes that the recommender "learned a humidity boundary near 60% from past weather data". Which statement describes where that boundary actually came from, and what it tells you about the system's family?
+
+A) The 60% cut was fitted from the four printed test cases, which makes the recommender a small data-driven model of the kind Unit 2 trains  
+B) The jump between 59% and 61% shows the system hides its reasoning, which is the mark of a modern learned model  
+C) The two answers differ because the hand-written rule evaluates faster than a fitted model would; speed is what separates the two families  
+D) A person typed `humidity < 60` into an `if` statement, so the system is rule-based: the threshold was authored, not fitted to data  
 
 ---
 
 ### Question 9
 
-Unit 3's KNN lesson fits the same model twice on the same 313 real card transactions. Without scaling it scores accuracy **0.9048**; with `StandardScaler` it scores **0.9683**. The lesson also prints that the `Time` column alone contributes **99.9978%** of the raw squared distance between two transactions (`Time` std 46,331.2, against a median feature std of 1.302). What does that 99.9978% figure explain?
+Unit 3's KNN lesson splits its card transactions into 250 training and 63 test rows and prints, before any scaling:
 
-A) The V1–V28 columns barely vary across these rows, so they contribute almost nothing to the distances  
-B) Unscaled, "nearest neighbour" means roughly "happened at a similar moment", so what V1–V28 know is drowned out  
-C) `Time` is the most predictive feature of fraud here, so scaling it down discards the best signal the model has  
-D) `StandardScaler` dropped `Time` from the feature set, and removing that dominant column is what lifted accuracy  
+```
+Std of first feature (Time): 46331.17
+Std of Amount feature: 215.28
+```
+
+The figure caption adds that on a log axis `Time` stands about four orders of magnitude above the V1–V28 columns, and `Amount` about two. A classmate proposes a shortcut: delete `Time`, skip `StandardScaler`, and fit KNN on the remaining 29 raw columns, "since the one problem column is gone." What does the lesson's evidence say will happen to the distances KNN computes?
+
+A) With `Time` removed the remaining columns sit on comparable scales, so the shortcut does the same job `StandardScaler` would have done  
+B) Dropping `Time` discards the column that dominated the distance, which is the model's strongest fraud signal, so the fit gets worse for a different reason  
+C) KNN compares the ranking of distances rather than their raw size, so a column's standard deviation cannot change which rows come out nearest  
+D) `Amount` inherits the role `Time` played: its spread sits about two orders of magnitude above V1–V28, so it now decides who counts as a neighbour  
 
 ---
 
 ### Question 10
 
-In the differential privacy lesson, the Laplace mechanism at **ε = 0.1** produced a mean absolute error of about **10** on a count of **212** patients (4.7% of the answer) and about **10** again on a count of **29** patients (34.2% of the answer). What does this tell you about deploying differential privacy?
+The lesson's epsilon sweep prints the private count's error as a share of the true answer for the 212-patient cohort and the 29-patient subgroup:
 
-A) The Laplace mechanism is unsuited to small groups, which should be protected with k-anonymity rather than added noise  
-B) Lowering ε further would shrink the error on the small subgroup, because ε is the mechanism's accuracy setting  
-C) Laplace noise scales with sensitivity and ε, not with the size of the true answer, so one ε costs small groups more  
-D) The small subgroup has fewer records to average over, so collecting more data there would close the gap  
+```
+ epsilon    cohort (212)   subgroup (29)    ratio
+     0.5            0.9%            7.8%     8.2x
+     5.0            0.1%            0.6%     6.2x
+```
+
+A colleague reads the ratio column and concludes that the subgroup must be receiving a noisier draw from the mechanism. What actually produces this pattern?
+
+A) The Laplace scale is sensitivity divided by epsilon, with no term for group size, so both counts get noise of the same size and the smaller answer absorbs it as a larger share  
+B) A count over 29 patients has higher sensitivity than one over 212, because one patient is a larger fraction of the group, so the mechanism deliberately draws wider noise to protect the subgroup  
+C) The subgroup count is an estimate from fewer records, so its ordinary sampling error adds to the privacy noise and inflates its share of the answer  
+D) Laplace noise is drawn in proportion to the true answer, so the subgroup gets smaller absolute noise and the larger share is a rounding effect in the printed table  
 
 ---

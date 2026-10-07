@@ -11,21 +11,19 @@
 
 ### Question 1
 
-Unit 2's cliff-walking lesson trains **SARSA** and **Q-learning** on `CliffWalking-v1` with the same environment, the same seed and identical settings (alpha = 0.5, gamma = 1.0, epsilon = 0.1, 500 episodes). Only the TD target line differs. It prints:
+The cliff-walking comparison in Unit 2 (a 4x12 grid, -1 per step and -100 for the cliff; alpha = 0.5, gamma = 1.0, epsilon = 0.1, 500 episodes, one shared seed) ends with a row statistic for the two greedy paths:
 
 ```
-Greedy path length  - SARSA: 17 steps | Q-learning: 13 steps
-Average return over the last 100 TRAINING episodes (epsilon still 0.1):
-   SARSA      :  -24.49
-   Q-learning :  -47.96
+Mean grid row walked - SARSA: 0.67 | Q-learning: 2.14
+(row 3 is the cliff row, row 2 runs right along its edge, row 0 is the far safe side)
 ```
 
-Which reading of those four numbers is correct?
+A colleague glances at the line and decides the agent walking at row 2.14 must be the cautious one. Which statement correctly explains the two row figures?
 
-A) Q-learning's greedy path is the shorter one, and SARSA still earned more in training because its target prices in the exploratory steps taken  
-B) SARSA's greedy path is the shorter one, and it earned more in training because a shorter route pays fewer -1 step penalties per episode  
-C) Q-learning earned less while training because gamma = 1.0 leaves its max-target undiscounted, so the values it bootstraps from grow without bound  
-D) The two agents converged on the same greedy path, and the 23-point gap in training return is down to the different random seeds the two runs were given  
+A) SARSA's greedy path is the one hugging the cliff edge, since an on-policy learner settles wherever its exploratory steps happened to lead it most often while it was training.  
+B) The agent averaging row 0.67 scored lower in training, because its long detour pays extra -1 step penalties on each episode that the edge route avoids.  
+C) With gamma = 1.0 the undiscounted max target inflates the cliff-edge tiles, so Q-learning's 2.14 reflects value overestimation rather than a route it would actually walk.  
+D) Q-learning hugs the cliff edge because its max target values the greedy policy; SARSA keeps to the far side because its target also prices the 10% of steps that are random.  
 
 ---
 
@@ -42,45 +40,52 @@ D) By fitting a neural network to the visited states, since tables do not scale
 
 ### Question 3
 
-Unit 3's monitoring lesson trains two tabular Q-learning agents on slippery `FrozenLake-v1` — same algorithm, same environment, different hyperparameters — then evaluates both greedily on 1000 fresh episodes. It prints:
+Unit 3's monitoring lesson trains a well-tuned tabular Q-learning agent on slippery `FrozenLake-v1` (cautious learning rate, exploration decaying) for 4000 episodes. Across two cells it prints:
 
 ```
-Well-tuned run  : final rolling std = 0.500 | final rolling mean = 0.495
-Badly-tuned run : final rolling std = 0.099 | final rolling mean = 0.010
+Success rate, first 200 eps : 0.010
+Success rate, last 500 eps  : 0.498
+Smoothed curve range        : 0.000 to 0.590
 
-Evaluation on 1000 fresh episodes with exploration turned off (greedy policy):
-  Well-tuned agent  : 0.726 success rate (training curve ended at 0.498)
-  Badly-tuned agent : 0.040 success rate (training curve ended at 0.014)
+Well-tuned run  : final rolling std = 0.500
 ```
 
-A dashboard that plots only the rolling standard deviation flags the **badly-tuned** run as the more stable of the two. What is the error?
+A student's dashboard raises an alert whenever the 200-episode rolling standard deviation of episode reward climbs during training, and it fires on this run: the spread ends at 0.500, five times the 0.099 of the badly-tuned run trained in the same notebook. How should the alert be read?
 
-A) The two standard deviations were computed over different rolling window lengths, so 0.500 and 0.099 are not on a comparable scale  
-B) With a 0/1 reward the spread is mechanically tied to the mean, so a run stuck at 0.010 has almost no spread; 0.099 signals failure  
-C) Rolling standard deviation describes just the exploring behaviour policy, so both runs would show the same spread once exploration is switched off  
-D) The well-tuned run's 0.500 is an artefact of its greedy evaluation at 0.726; the training std should be recomputed from the evaluation episodes  
+A) The rise is a symptom of learning: with a 0/1 reward the spread is sqrt(p(1-p)), so it has to grow as the success rate climbs from 0.010 toward 0.498, and the greedy evaluation of 0.726 confirms it.  
+B) The alert is justified: a spread of 0.500 on a reward that can be 0 or 1 means the agent is winning and losing almost at random, so the learning rate should be lowered until the spread settles back down again.  
+C) The alert should be recomputed from the 1000 greedy evaluation episodes, where exploration is off; a training-time spread describes just the epsilon-greedy behaviour policy.  
+D) The spread climbed because the 200-episode window is too short for a slippery environment; a 500-episode window would smooth the figure back down.  
 
 ---
 
 ### Question 4
 
-Course 07 Unit 4 measured how much gradient signal survives travelling backwards through a plain RNN with typical weights: about 5×10⁻¹ after 1 step, 6×10⁻⁶ after 10 steps, and 7×10⁻³⁰ after 50 steps. Which conclusion does that measurement support?
+Unit 4 then repeated the gradient measurement along an LSTM's memory lane and printed it beside the plain RNN:
 
-A) The signal that would link far-apart words dies exponentially with distance; attention links two distant positions in one step  
-B) The recurrent weights grow exponentially during training, which is the problem that transformers solve by clipping the gradient  
-C) The network's accuracy falls as sentences get longer, which is why transformers truncate their inputs to 512 tokens  
-D) The hidden state vector is too short to hold a long sentence, which is why transformers use a much longer one  
+```
+distance k     plain RNN    LSTM b_f=1
+        25      2.41e-15      1.84e-02
+        50      7.33e-30      1.24e-04
+```
+
+At k = 50 the LSTM lane keeps about 2e+25 times more signal than the RNN, yet on the log plot its curve still slopes downward. Which conclusion does this table support?
+
+A) The lane slows the exponential decay of the backward signal but does not stop it; attention removes the distance, putting two far-apart words one step apart  
+B) Biasing the forget gate towards 1 has pushed the recurrent weights high enough for the gradient to explode instead — the mirror problem, which gradient clipping is there to handle  
+C) A surviving signal of 1.24e-04 after 50 steps shows the long-range dependency is now learnable, so the vanishing gradient is a solved problem for LSTMs  
+D) The LSTM's separate cell-state vector has room to store a 50-step sequence that the RNN's hidden state could not hold, which makes this a capacity fix  
 
 ---
 
 ### Question 5
 
-In Course 07 Unit 4 the pretrained English sentiment model labelled *"I have no opinion about this product"* **NEGATIVE at 0.9997**, and gave an Arabic sentence **P(POSITIVE) = 0.42** after splitting it into 5.5 word-pieces per word. What do these two results, read together, show?
+The same Unit 4 probe scored *"The meeting is scheduled for Tuesday at 3pm"* **POSITIVE at 0.9301**, and the Arabic sentence glossed *"the meeting is Tuesday at 3"* at **P(POSITIVE) = 0.3695** after chopping it into **6.4** word-pieces per word. Same content, two very different scores — what explains the pair?
 
-A) The model has no neutral class, so it picks a side either way; and 0.42 on Arabic means "nothing readable", not "unsure"  
-B) The model is well calibrated: it is confident where the sentiment is clear, and hesitant where the sentiment is genuinely ambiguous  
-C) The Arabic sentence was correctly judged neutral, which shows the model handles other languages acceptably  
-D) The two outputs are casing failures, and each disappears once the text is lowercased before it is scored  
+A) The model understood the English sentence as mildly positive and the Arabic one as close to neutral, so both numbers are fair readings of what the two sentences say  
+B) The model is well calibrated: 0.9301 sits below the 0.9999 it gave a real opinion because a schedule is a weaker positive than praise  
+C) The English fact had to leave through one of two exits, since there is no neutral class; the Arabic one was read letter by letter, so 0.3695 carries no information  
+D) Both scores come from the lowercasing the `uncased` checkpoint applies; the `cased` checkpoint would read the capital letters and fix both  
 
 ---
 
@@ -97,20 +102,19 @@ D) How stable the model is under paraphrase, since the two sentences carry the s
 
 ### Question 7
 
-Course 04 clustered 1,994 communities on 4 scaled crime features and printed:
+Unit 4's K-Means sweep over the 1,994 scaled communities prints, among its rows:
 
 ```
-K=2   Inertia=5347.86   Silhouette=0.3967       K=6    Inertia=2398.46   Silhouette=0.2954
-K=3   Inertia=4041.38   Silhouette=0.3134       K=8    Inertia=1970.75   Silhouette=0.3007
-K=4   Inertia=3124.93   Silhouette=0.3153       K=10   Inertia=1720.82   Silhouette=0.2941
+K=7: Inertia=2145.23, Silhouette=0.2970
+K=9: Inertia=1824.09, Silhouette=0.3008
 ```
 
-The elbow falls at K = 4; the silhouette peaks at K = 2; the lesson itself clusters at K = 3. How should K be settled?
+A colleague picks K = 9: "it beats K = 7 on silhouette *and* on inertia - for once both criteria agree, so the data has decided." The lesson's own elbow landed on K = 4, and the lesson clustered at K = 3. What is the right response?
 
-A) Take K = 10: it posts the lowest inertia anywhere in the table, and lower inertia means tighter, better clusters  
-B) Take K = 2: the silhouette is the score that measures separation, so it settles the question  
-C) The disagreement is a symptom of unscaled features; rescaling the four crime columns would make the two criteria converge  
-D) The two criteria measure different things and disagree, so K is settled by what the clusters are for  
+A) The colleague is right: when the inertia criterion and the silhouette criterion point the same way, the data has chosen K and no judgement is needed  
+B) K = 2 should stand: its silhouette of 0.3967 is the highest in the sweep, and the global peak outranks any comparison between neighbouring rows  
+C) K = 4 should stand: the elbow was located geometrically, from the chord between the first and last points of the curve, which makes it a measurement rather than a judgement  
+D) Inertia falls with each added cluster by construction, and a third-decimal silhouette bump is no ranking, so K is still settled by what the clusters are for  
 
 ---
 
@@ -127,7 +131,7 @@ D) It removes the need for cross-validation, since each draw is an independent e
 
 ### Question 9
 
-One trained logistic-regression model was scored on the same 171 held-out breast-tumour biopsies in Course 02; only the decision threshold changes:
+Unit 5's threshold sweep — one logistic-regression model, its probability cut-off moved while nothing else changed, evaluated on 171 held-out biopsies — printed these rows (the four cut-offs above 0.50 miss 13 or more):
 
 ```
     threshold   missed malignant   false alarms   accuracy
@@ -136,30 +140,26 @@ One trained logistic-regression model was scored on the same 171 held-out breast
          0.30                  5             12     90.1%
          0.40                  7              9     90.6%
          0.50                 11              5     90.6%
-         0.60                 13              4     90.1%
-         0.70                 16              3     88.9%
-         0.80                 20              0     88.3%
-         0.90                 29              0     83.0%
 
    Best accuracy on this grid: 92.4% at threshold 0.44 — which still misses 8 malignant tumours.
 ```
 
-A screening clinic can absorb at most 25 false alarms out of the 171, and within that limit wants to miss as few malignant tumours as it can. Which threshold does the table support, and at what cost?
+A regional programme builds its rule around the dangerous error instead: it will tolerate at most 5 missed malignant tumours among these 171, and inside that cap it wants the fewest false alarms it can get. Which row meets the rule at the lowest false-alarm count, and what is traded away to get there?
 
-A) 0.44 — it is the highest accuracy on the grid, 92.4%, and accuracy is the metric to maximise  
-B) 0.80 — it brings false alarms down to zero, and 88.3% accuracy is near the grid maximum  
-C) 0.50 — it is the library default, so it already balances the two kinds of error by construction  
-D) 0.20 — it misses 1 malignant tumour rather than 11, and its 21 false alarms fit the budget  
+A) 0.10 — the one row that misses no malignant tumours, and a programme that fears misses should begin from zero of them and then work its way up  
+B) 0.30 — the highest cut-off whose misses stay within 5, bringing false alarms down to 12 at the price of 5 missed tumours rather than 1  
+C) 0.20 — it misses 1 and raises 21 false alarms, which satisfies the rule with a comfortable margin on the missed-tumour side  
+D) 0.44 — the grid's best accuracy at 92.4%, and 8 misses is near enough to the rule for a figure the notebook itself singled out  
 
 ---
 
 ### Question 10
 
-Course 01 printed, for supervised learning, "Input: Features (X) and Labels (y)", and for unsupervised learning, "Input: Features (X) only"; it then fit `LinearRegression` and `LogisticRegression` on labelled data (R² 0.4526, accuracy 0.9825) and K-Means on unlabelled points (inertia 78.85). What is the main difference between supervised and unsupervised learning?
+Unit 2 ran K-Means on 150 iris flowers with the species column hidden. The crosstab printed afterwards showed cluster 1 holding 50 setosa flowers and 0 of either other species. A classmate says: "a match that clean means K-Means obviously trained on the species labels." Which statement correctly describes what the clustering run was given?
 
-A) Supervised learning is the faster of the two to train, which is the practical distinction  
-B) Supervised predicts numbers, unsupervised predicts categories  
-C) Supervised learning is fitted on labelled rows; unsupervised on features alone  
-D) Supervised learning uses neural networks, unsupervised learning uses clustering algorithms  
+A) It received the 4 measurements plus the species column, which is why cluster 1 lines up with setosa so exactly  
+B) It received the measurements and predicted a species category for each flower, so it was a classification model like the biopsy one  
+C) It received the 4 measurements per flower; the species column stayed hidden and was brought back afterwards to score the clusters  
+D) It received the measurements and the labels but ignored them to finish faster, because fits without labels take fewer passes  
 
 ---

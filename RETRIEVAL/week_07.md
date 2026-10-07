@@ -11,35 +11,48 @@
 
 ### Question 1
 
-Unit 1 computes the same two-layer transformation of the same data two ways: Route A as `(X @ W1) @ W2`, using 8,510,592 scalar multiplications, and Route B as `X @ (W1 @ W2)`, using 1,191,040. The largest disagreement between the two outputs is 1.33e-14. What does this establish about a two-layer network with no activation function between the layers?
+The matrix-operations lesson redraws its fusion experiment on the 1,797 mean-centred digit images and adds a third route, `relu(X @ W1) @ W2`, with a ReLU between the two layers. The printed reading of the figure is:
 
-A) Route B is cheaper because it drops the hidden layer, so its output is an approximation  
-B) The 1.33e-14 disagreement shows the two routes compute different functions, so the order the products are taken in matters  
-C) The two layers can be replaced by one layer with weight matrix `W1 @ W2` without changing the function computed  
-D) The second layer re-weights the first layer's outputs, so stacking the two adds expressive power a single layer lacks  
+```
+Blue points (no activation): 2.0e-14 is the largest amount any of the 17,970 output numbers differs from the fused one-layer network.
+Orange points (ReLU inserted): up to 11.8 away from the diagonal, on outputs that span roughly -19 to +18.
+```
+
+A classmate argues that the ReLU is a minor numerical detail and that the real lesson is which bracketing is cheaper. Which reading of these two printed gaps is correct?
+
+A) Both gaps are rounding noise; the ReLU route sits further off because `max()` adds another rounded operation per entry  
+B) The 2.0e-14 gap shows the layer-by-layer route drifts from the fused one, so even without a ReLU the two layers compute a slightly different function  
+C) The orange points leave the diagonal because the digits were mean-centred, not because of the ReLU; on raw pixels the same ReLU would spread them as far  
+D) The 2.0e-14 gap says the two linear routes are one function; the 11.8 gap says the ReLU made a genuinely different model  
 
 ---
 
 ### Question 2
 
-The Unit 1 libraries notebook doubles the same numbers twice — once as a Python list comprehension, once as one NumPy whole-array operation — and prints:
+The Unit 1 libraries notebook timed the doubling of 1,000,000 numbers twice. A one-shot timing cell printed:
 
 ```
-         N    list (ms)   NumPy (ms)   speed-up
-        10       0.0001       0.0003       0.5x
-       100       0.0009       0.0003       3.0x
-     1,000       0.0123       0.0006      21.5x
-    10,000       0.1195       0.0032      37.1x
-   100,000       1.2403       0.0254      48.8x
- 1,000,000      15.1218       0.2454      61.6x
+   Python list comprehension :    11.05 ms
+   NumPy, whole array at once:     0.71 ms
+   Speed-up measured here    :     15.5x
+
+Against the "100x faster" line in the Part 2 text above:
+   this run measured 15.5x - well short of 100x.
 ```
 
-Which statement is supported by this table?
+The next cell re-timed six array sizes, keeping the best of three trials after a warm-up, and closed with:
 
-A) The list version scales better, because its cost per element falls as N grows  
-B) NumPy's lead grows with N, and at N = 10 the list version is the faster of the two  
-C) The two converge to the same speed at large N, since each loop is run by the interpreter  
-D) NumPy runs about 100x faster here, the speed-up the notebook's own text quotes  
+```
+Smallest N (10):        NumPy is SLOWER (0.5x)
+Largest N (1,000,000): NumPy is 62x faster
+```
+
+A teammate wants to vectorise a helper that is called thousands of times per second on arrays of about ten values, and quotes the 62x as the gain to expect. Which printed line actually bears on that helper, and what does it say?
+
+A) `Largest N (1,000,000): NumPy is 62x faster` — the compiled loop is the same code at any N, so the factor carries over to ten values  
+B) `Smallest N (10): NumPy is SLOWER (0.5x)` — on ten values the per-call setup cost is the whole job, so the plain list stays ahead  
+C) `this run measured 15.5x` — one honest measurement on this machine, so that is the realistic gain for the helper to expect  
+D) The Part 2 text's `100x faster` — the 15.5x and 62x were pulled down by timing noise, so the tutorial figure is the safer planning estimate  
 
 ---
 
@@ -89,17 +102,12 @@ D) f(n) = g(n) - h(n) — the cost paid, discounted by the estimate of what rema
 
 ### Question 7
 
-On the 50-state USArrests data (Murder, Assault), Unit 1 eigen-decomposes the covariance matrix twice.
+The eigenvalues lesson notes that the raw USArrests features live on very different ranges — Murder spans 0.8–17.4 and Assault 45–337 arrests per 100,000 — and its figure note says that on raw units PC1 'points almost straight up: 99.8% of it is the Assault axis'. After standardizing, the printed feature variances are Murder = 1.02 and Assault = 1.02, and PC2 keeps 9.91% of the variance. A colleague wants to send the raw-units decomposition to a state governor because 'it explains far more of the variance'. Why is the standardized run the one to report?
 
-- **Standardized:** eigenvalues 1.8019 and 0.1981; PC1 = +0.707 x Murder +0.707 x Assault; PC1 explains 90.09% of the variance.
-- **Raw units:** feature variances Murder 18.97 and Assault 6945.17; PC1 = +0.042 x Murder +0.999 x Assault; PC1 explains 99.90% of the variance.
-
-Why is the raw-units 99.90% the less informative of the two figures?
-
-A) The raw-units run keeps one component while the standardized run keeps two, so the two percentages count different totals  
-B) Standardizing increases the variance available to PC1, so 90.09% of standardized variance carries more information than the raw 99.90%  
-C) A first component above 99% means the raw covariance matrix is singular  
-D) On raw units PC1 follows Assault, whose variance is 6945 against Murder's 19, so it reports the measuring scale  
+A) Standardizing gives both features a variance of 1.02, which adds spread for PC1 to explain that the raw run lacked  
+B) The 9.91% left to PC2 after standardizing shows the raw run had dropped its second component and summed over a single eigenvalue  
+C) On raw units PC1 is nearly the Assault column renamed, so its variance figure describes the recording scale, not a crime pattern  
+D) Because 99.8% of raw PC1 lies along Assault, the raw covariance matrix is close to singular and its eigenvalues cannot be trusted  
 
 ---
 

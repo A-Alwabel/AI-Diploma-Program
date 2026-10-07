@@ -11,46 +11,59 @@
 
 ### Question 1
 
-Unit 4 runs the same classifier on the 569-biopsy breast-cancer data, changing only how many principal components the classifier may see, and scores each row with the same 5-fold cross-validation:
+The PCA lesson's first cell prints the explained-variance ratios of the top three components of the standardized 569-biopsy data as 44.3%, 19.0% and 9.4%, and adds that keeping 80% of the variance needs 5 of the 30 components while keeping 95% needs 10. Its cross-validation figure then reports that the classifier's accuracy climbs from 91.2% at k = 1 to 97.4% by k = 5, dips at k = 3, and from k = 5 to k = 30 stays inside a band 0.7 percentage points tall, with its best point at k = 10 (98.07%) just above the 97.89% of the 30 raw features. A colleague applies the rule 'keep 95% of the variance' and so picks k = 10. Which assessment of that rule do the printed figures support?
 
-| components | variance kept | 5-fold accuracy |
-|---|---|---|
-| 1 | 44.3% | 0.9121 |
-| 2 | 63.2% | 0.9578 |
-| 3 | 72.6% | 0.9491 |
-| 5 | 84.7% | 0.9736 |
-| 10 | 95.2% | 0.9807 |
-| 20 | 99.6% | 0.9772 |
-| 30 | 100.0% | 0.9789 |
-
-The same classifier on all 30 raw features, with no PCA at all, scores 0.9789. Which conclusion do these numbers support?
-
-A) Each component adds accuracy in proportion to the variance it carries, so keeping all 30 is the best choice  
-B) PCA hurt this classifier here: the reduced models score below the 0.9789 that the 30 raw features reach with no reduction at all  
-C) The dip at k = 3 shows the third component carries no variance, so it should be dropped from the model  
-D) Accuracy flattens long before variance does — k = 5 already reaches 0.9736 while keeping 84.7% of the variance  
+A) It reached a good k for the wrong reason: the plateau from k = 5 shows the accuracy had flattened long before the variance reached its 95% line  
+B) It is the right rule because accuracy rises with variance kept, which is why the k that reaches 95% of the variance is also the k that scores highest  
+C) It is too generous: the dip at k = 3 shows the third component's 9.4% of variance is harming the classifier, so k should stop at 2  
+D) It is too strict: a reduced model can at best match the 30 raw features, so the 5 components that already keep 80% of the variance are the honest ceiling  
 
 ---
 
 ### Question 2
 
-A triage knowledge base holds 4,000 recorded patient facts and 300 rules. A clinician needs one answer: should Patient 7 be flagged for sepsis? Which inference strategy fits this request, and why?
+In the Unit 2 expert-system cell, three recorded observations about `Patient1` and two rules went in, and the run printed:
 
-A) Backward chaining: it starts from this one goal and expands just the rules that bear on the case  
-B) Forward chaining: firing the rules in the order they were written is what makes a conclusion sound  
-C) Backward chaining: it can withdraw a conclusion when a later fact turns out to contradict it  
-D) Forward chaining: it derives the consequences of the 4,000 facts, and this answer is among them  
+```
+   BEFORE Forward Chaining:
+      Facts: 3
+
+  ➕ Added: Fact(Patient1, likely_has, Flu)
+   ✅ Applied rule: Flu Diagnosis Rule
+  ➕ Added: Fact(Patient1, recommend, Rest)
+   ✅ Applied rule: Flu Treatment Rule
+
+✅ Forward chaining complete! (2 iterations)
+   (Stopped because no more new facts can be derived)
+
+   AFTER Forward Chaining:
+      Facts: 5
+```
+
+A clinic now wants the system to run with no particular question in mind: *each time a nurse records a new observation, surface whatever recommendations now follow for that patient.* Which chaining direction suits that job, and what in the printout shows why?
+
+A) Forward chaining: the Flu Diagnosis Rule was entered before the Flu Treatment Rule, and firing rules in the order they were written is what keeps the chain valid  
+B) Backward chaining: it would prove `recommend Rest` for one patient at a time, and a focused proof costs less than deriving facts even when no goal has been named  
+C) Backward chaining: if a later observation contradicts `likely_has Flu`, it can take back the `Rest` recommendation, which a forward chainer has no way to do  
+D) Forward chaining: data-driven, firing whichever rules the recorded facts satisfy until a pass adds no new fact — the loop that stopped above after 2 iterations  
 
 ---
 
 ### Question 3
 
-What is the main difference between traditional rule-based AI and modern data-driven AI?
+The weather recommender in Course 01's first lesson printed two neighbouring cases:
 
-A) Traditional AI uses neural networks, modern AI uses rules  
-B) Traditional AI hides its reasoning, while modern AI can be audited line by line  
-C) Traditional AI uses explicit rules, modern AI learns from data  
-D) Traditional AI is faster, modern AI is slower  
+```
+26 °C, 59% humidity, morning -> Go for a jog in the park
+26 °C, 61% humidity, morning -> Moderate weather, any outdoor activity is fine
+```
+
+A classmate concludes that the recommender "learned a humidity boundary near 60% from past weather data". Which statement describes where that boundary actually came from, and what it tells you about the system's family?
+
+A) A person typed `humidity < 60` into an `if` statement, so the system is rule-based: the threshold was authored, not fitted to data  
+B) The 60% cut was fitted from the four printed test cases, which makes the recommender a small data-driven model of the kind Unit 2 trains  
+C) The jump between 59% and 61% shows the system hides its reasoning, which is the mark of a modern learned model  
+D) The two answers differ because the hand-written rule evaluates faster than a fitted model would; speed is what separates the two families  
 
 ---
 
@@ -78,21 +91,23 @@ D) P(X | Y) with P(Y) — how the features are distributed inside each class, an
 
 ### Question 6
 
-The Unit 3 diagnosis system is given a patient with fever, cough and fatigue, and prints:
+The Unit 3 diagnosis system was loaded with these printed symptom probabilities, among others:
 
 ```
-disease         prevalence  prior (norm.)  P(symptoms|d)   posterior   rank move
-Common Cold         15.0%          68.2%           5.6%       19.6%       1 -> 3
-Flu                  5.0%          22.7%          50.4%       58.9%       2 -> 1
-COVID-19             2.0%           9.1%          45.9%       21.5%       3 -> 2
+  ➕ P(Fever|Flu) = 90.00%
+  ➕ P(Cough|Flu) = 80.00%
+  ➕ P(Fatigue|Flu) = 70.00%
+  ➕ P(Fever|COVID-19) = 85.00%
+  ➕ P(Cough|COVID-19) = 90.00%
+  ➕ P(Fatigue|COVID-19) = 60.00%
 ```
 
-Common Cold is by far the most prevalent of the three diseases, yet it finishes last. Why?
+For the patient with fever, cough and fatigue it printed `Flu: 58.91%` and `COVID-19: 21.46%`. Its slope-chart table shows the two likelihoods nearly tied — `P(symptoms|d)` of 50.4% for Flu against 45.9% for COVID-19 — with normalised priors of 22.7% and 9.1%. COVID-19 explains this patient almost as well as Flu does. Why does it end up with far less than half of Flu's posterior?
 
-A) Renormalising the three prevalences over one another pushes the largest of them below the other two  
-B) Bayes multiplies prior by likelihood, and P(symptoms | Cold) = 5.6% is nine times below Flu's  
-C) Common Cold has no listed probability for fatigue, so the system skips it in the product  
-D) The posterior follows the highest single symptom probability, and Flu's fever figure is 90%  
+A) COVID-19's 2.0% prevalence is renormalised up to 9.1% over three diseases, and that renormalisation step is what costs it the ranking against Flu  
+B) The likelihood gap does it: COVID-19's fatigue figure of 60.00% is the weakest entry, and 45.9% against 50.4% is what pulls its posterior down to 21.46%  
+C) With the likelihoods this close, the prior decides: Flu's normalised prior of 22.7% is more than twice COVID-19's 9.1%, and Bayes multiplies the two  
+D) Normalising the three posteriors to sum to 100% hands the leader a share of the others' mass, which is what widens a near-tie into 58.91% against 21.46%  
 
 ---
 
@@ -109,12 +124,12 @@ D) Its asymptotic running time is lower, O(V) against breadth-first search's O(V
 
 ### Question 8
 
-Minimising `f(x) = x**2` from x = 5 for 30 steps, Unit 2 changes only the learning rate and prints: lr = 0.01 -> x = 2.72742; lr = 0.1 -> x = 0.0061897; lr = 0.9 -> x = 0.0061897; lr = 1.0 -> x = 5 with loss 25; lr = 1.1 -> x = 1186.88. On a log axis the lr = 0.9 loss curve lies exactly on top of the lr = 0.1 curve. What does that coincidence tell you?
+The gradient-descent lesson prints, next to each learning rate, the factor |1 − 2·lr| that multiplies x at each step when minimising f(x) = x² from x = 5 for 30 steps: 0.98 for lr = 0.01, 0.80 for lr = 0.1, 0.80 for lr = 0.9, 1.00 for lr = 1.0 and 1.20 for lr = 1.1. The losses after 30 steps are 7.43883, 3.83124e-05, 3.83124e-05, 25 and 1.40869e+06 respectively. A colleague watching a training run sees a loss curve that is a straight line down on a log axis and concludes the step size is well chosen. Using the printed factors, which objection is justified?
 
-A) The loss depends on |x| alone, so a smoothly falling curve can still hide a run that crosses the minimum each step  
-B) A smoothly falling loss curve rules out instability, so the learning rate could safely be raised from 0.9 to 1.0 for speed  
-C) lr = 0.9 takes smaller steps than lr = 0.1, which is why the two runs finish at the same value of x  
-D) lr = 0.9 has settled into a second minimum of f that happens to sit at the same height as the first one  
+A) A factor of 0.80 belongs to both lr = 0.1 and lr = 0.9, so the same straight line can come from a run that crosses zero at each step  
+B) A factor of 0.80 means both runs move x by the same distance each step, so lr = 0.9 is a relabelled lr = 0.1 and no objection applies  
+C) A straight line down shows the factor is below 1, so the rate can safely be raised toward the 1.00 row for a faster descent  
+D) The 3.83124e-05 reached at lr = 0.9 beats the 7.43883 at lr = 0.01 because the larger rate found a second, deeper minimum of f  
 
 ---
 

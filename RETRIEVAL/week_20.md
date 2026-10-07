@@ -11,23 +11,31 @@
 
 ### Question 1
 
-Unit 4 measured how much gradient signal survives travelling backwards through a plain RNN with typical weights: about 5×10⁻¹ after 1 step, 6×10⁻⁶ after 10 steps, and 7×10⁻³⁰ after 50 steps. Which conclusion does that measurement support?
+Unit 4 then repeated the gradient measurement along an LSTM's memory lane and printed it beside the plain RNN:
 
-A) The signal that would link far-apart words dies exponentially with distance; attention links two distant positions in one step  
-B) The recurrent weights grow exponentially during training, which is the problem that transformers solve by clipping the gradient  
-C) The network's accuracy falls as sentences get longer, which is why transformers truncate their inputs to 512 tokens  
-D) The hidden state vector is too short to hold a long sentence, which is why transformers use a much longer one  
+```
+distance k     plain RNN    LSTM b_f=1
+        25      2.41e-15      1.84e-02
+        50      7.33e-30      1.24e-04
+```
+
+At k = 50 the LSTM lane keeps about 2e+25 times more signal than the RNN, yet on the log plot its curve still slopes downward. Which conclusion does this table support?
+
+A) Biasing the forget gate towards 1 has pushed the recurrent weights high enough for the gradient to explode instead — the mirror problem, which gradient clipping is there to handle  
+B) A surviving signal of 1.24e-04 after 50 steps shows the long-range dependency is now learnable, so the vanishing gradient is a solved problem for LSTMs  
+C) The lane slows the exponential decay of the backward signal but does not stop it; attention removes the distance, putting two far-apart words one step apart  
+D) The LSTM's separate cell-state vector has room to store a 50-step sequence that the RNN's hidden state could not hold, which makes this a capacity fix  
 
 ---
 
 ### Question 2
 
-In Unit 4 the pretrained English sentiment model labelled *"I have no opinion about this product"* **NEGATIVE at 0.9997**, and gave an Arabic sentence **P(POSITIVE) = 0.42** after splitting it into 5.5 word-pieces per word. What do these two results, read together, show?
+The same Unit 4 probe scored *"The meeting is scheduled for Tuesday at 3pm"* **POSITIVE at 0.9301**, and the Arabic sentence glossed *"the meeting is Tuesday at 3"* at **P(POSITIVE) = 0.3695** after chopping it into **6.4** word-pieces per word. Same content, two very different scores — what explains the pair?
 
-A) The model has no neutral class, so it picks a side either way; and 0.42 on Arabic means "nothing readable", not "unsure"  
-B) The model is well calibrated: it is confident where the sentiment is clear, and hesitant where the sentiment is genuinely ambiguous  
-C) The Arabic sentence was correctly judged neutral, which shows the model handles other languages acceptably  
-D) The two outputs are casing failures, and each disappears once the text is lowercased before it is scored  
+A) The model understood the English sentence as mildly positive and the Arabic one as close to neutral, so both numbers are fair readings of what the two sentences say  
+B) The model is well calibrated: 0.9301 sits below the 0.9999 it gave a real opinion because a schedule is a weaker positive than praise  
+C) The English fact had to leave through one of two exits, since there is no neutral class; the Arabic one was read letter by letter, so 0.3695 carries no information  
+D) Both scores come from the lowercasing the `uncased` checkpoint applies; the `cased` checkpoint would read the capital letters and fix both  
 
 ---
 
@@ -44,12 +52,12 @@ D) How stable the model is under paraphrase, since the two sentences carry the s
 
 ### Question 4
 
-You must compute two figures from a 40 GB `sales.csv` on a laptop with 16 GB of RAM, using `pd.read_csv(..., chunksize=...)`: **(i)** the mean `amount` per `category`, and **(ii)** the median `amount` over the whole file. Which statement correctly describes what one chunked pass can give you, and how?
+The Unit 5 chunking lesson streamed the **14,015**-flow sample in **10 chunks of 1,500** rows (the last chunk held **515**) and printed a global mean of **6.84** forward packets per flow from a running total of **95,877** packets. A colleague wants two further figures from that same single pass: **(a)** the largest `Flow Duration` recorded for each `Label`, and **(b)** the quartiles of `Flow Duration` across the whole file. Which of the two can one chunked pass deliver exactly, and how?
 
-A) (i) exactly, by carrying a running sum and a running count per category; (ii) exactly, by taking one median per chunk and averaging those medians in proportion to the number of rows in each chunk  
-B) (i) exactly, by averaging the per-chunk category means at the end; (ii) exactly, because the median of the per-chunk medians is the median of the whole file  
-C) (i) exactly, by carrying a running sum and a running count per category; (ii) not from one chunked pass — a median needs all the values at once, so it takes an approximation or another engine  
-D) (i) and (ii) approximately at best: combining results across chunks assumes the chunks hold equal numbers of rows, and here the last chunk holds fewer rows than the ones before it  
+A) (a) exactly, by keeping each label's largest value seen so far and updating it per chunk; (b) not from one pass, since quartiles are rank statistics that need the whole ordering, so use t-digest or a real engine  
+B) (a) exactly, by keeping per-chunk maxima for each label; (b) exactly, by computing the quartiles of each chunk and weighting the ten results by chunk size so that the 515-row final chunk counts for less  
+C) (a) approximately at best, because a rare label such as Heartbleed may fall inside a single chunk and its maximum is then compared against no other chunk; (b) exactly, by taking the quartiles of the per-chunk quartiles  
+D) Neither exactly: an uneven final chunk of 515 rows breaks any statistic merged across chunks, so both need the file in memory at once, as the lesson's 1.3 MB measurement did  
 
 ---
 
@@ -66,23 +74,31 @@ D) A path by which new records reach the model and its predictions reach whateve
 
 ### Question 6
 
-A Course 06 team removed the `Sex` column from a screening model's training data and reported that the system was now fair. On the held-out set the model's positive-prediction rate was **44.3% for women and 31.6% for men** — a demographic parity difference of **0.128**. What does this result show?
+The Unit 2 screening model was trained on `Pclass, Age, SibSp, Parch, Fare, Embarked`, with `Sex` deliberately left out. A reviewer writes: "since the model never received sex, its positive-prediction rates for women and men can differ only by chance." The lesson's threshold storyboard (same model, same test set, only the cut-off moves) prints:
 
-A) Removing `Sex` made the model blind to gender, so the remaining gap is not something the model itself produced  
-B) Demographic parity is the wrong test here: on the same held-out set the equalized-odds gaps are small (TPR gap 0.047)  
-C) The model rebuilt the group split from correlated features like fare and class, so deleting the column changed nothing  
-D) The model satisfies demographic parity, since two applicants with identical inputs receive an identical decision from it  
+```
+ threshold   female rate     male rate   DP gap
+      0.20         0.660         0.497    0.163
+      0.65         0.309         0.222    0.087
+```
+
+How should you answer the reviewer?
+
+A) The gaps are cut-off artefacts: moving the threshold from 0.20 to 0.65 shrinks the gap from 0.163 to 0.087, so with a sensible cut-off the model is gender-blind as the reviewer says  
+B) The reviewer is right: on the same test set the TPR gap is 0.047 and the FPR gap 0.031, so a model that passes equalized odds cannot be carrying sex through proxies  
+C) Unequal group sizes in the test set (97 women against 171 men) make different rates expected, so the gap is not evidence of proxies in the features  
+D) The model's scores separate women from men through fare, class and family size, so the rates differ at any cut-off; dropping the column removed the label, not the information  
 
 ---
 
 ### Question 7
 
-On 89 held-out diabetes patients, Course 03 Unit 3 printed MAE 42.79, RMSE 53.85, and a mean signed error of −3.91, and reported that the 10 worst-predicted patients carry 44.3% of the total squared error. What does the gap between MAE and RMSE tell you about this model?
+The statistical-measures lesson evaluates a linear model on held-out diabetes patients and prints MSE 2900.19, then notes in 'Where this breaks' that RMSE exceeds MAE by about 26%. Its diagnostic panel adds that 30 of the 89 patients are missed by more than 53.9 and that the worst single prediction is off by 154. A teammate proposes reporting MAE on its own because it 'looks better'. What does the 26% gap, read together with those two counts, tell you?
 
-A) The model over-predicts by roughly 11 units on each patient, which is what the gap between the two metrics measures  
-B) The model accounts for 53.85% of the variation in the targets, which is the quantity a root-mean-squared error reports  
-C) RMSE and MAE are on different scales, so RMSE has to be squared before the two numbers can be compared  
-D) A small group of large errors inflates RMSE, so the typical patient is missed by about 43 rather than 54  
+A) The model over-predicts by about a quarter on average, since RMSE exceeding MAE by 26% measures the direction of the typical miss  
+B) RMSE has to be squared back to MSE 2900.19 before it can be set against MAE, because the 26% gap compares unlike units  
+C) The 154 miss is one outlier; remove that patient and RMSE would fall back to MAE, because the whole gap comes from a single record  
+D) Errors are unevenly spread: a minority of badly missed patients pulls RMSE up, so MAE alone would understate the worst cases  
 
 ---
 
@@ -110,20 +126,22 @@ D) A discrete variable comes from a finite dataset; a continuous one needs the w
 
 ### Question 10
 
-Course 02's Unit 3 diagnosis system was given a patient with fever, cough and fatigue, and printed:
+The Unit 3 diagnosis system was loaded with these printed symptom probabilities, among others:
 
 ```
-disease         prevalence  prior (norm.)  P(symptoms|d)   posterior   rank move
-Common Cold         15.0%          68.2%           5.6%       19.6%       1 → 3
-Flu                  5.0%          22.7%          50.4%       58.9%       2 → 1
-COVID-19             2.0%           9.1%          45.9%       21.5%       3 → 2
+  ➕ P(Fever|Flu) = 90.00%
+  ➕ P(Cough|Flu) = 80.00%
+  ➕ P(Fatigue|Flu) = 70.00%
+  ➕ P(Fever|COVID-19) = 85.00%
+  ➕ P(Cough|COVID-19) = 90.00%
+  ➕ P(Fatigue|COVID-19) = 60.00%
 ```
 
-Common Cold is by far the most prevalent of the three diseases, yet it finishes last. Why?
+For the patient with fever, cough and fatigue it printed `Flu: 58.91%` and `COVID-19: 21.46%`. Its slope-chart table shows the two likelihoods nearly tied — `P(symptoms|d)` of 50.4% for Flu against 45.9% for COVID-19 — with normalised priors of 22.7% and 9.1%. COVID-19 explains this patient almost as well as Flu does. Why does it end up with far less than half of Flu's posterior?
 
-A) Renormalising the three prevalences over one another pushes the largest of them below the rest  
-B) Common Cold has no listed probability for fatigue, so the system skips it in the product  
-C) Bayes multiplies prior by likelihood, and P(symptoms | Cold) = 5.6% is nine times below Flu's  
-D) The posterior follows the highest single symptom probability, and Flu's fever figure is 90%  
+A) COVID-19's 2.0% prevalence is renormalised up to 9.1% over three diseases, and that renormalisation step is what costs it the ranking against Flu  
+B) The likelihood gap does it: COVID-19's fatigue figure of 60.00% is the weakest entry, and 45.9% against 50.4% is what pulls its posterior down to 21.46%  
+C) With the likelihoods this close, the prior decides: Flu's normalised prior of 22.7% is more than twice COVID-19's 9.1%, and Bayes multiplies the two  
+D) Normalising the three posteriors to sum to 100% hands the leader a share of the others' mass, which is what widens a near-tie into 58.91% against 21.46%  
 
 ---

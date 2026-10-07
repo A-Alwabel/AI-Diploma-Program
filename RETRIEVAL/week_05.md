@@ -11,22 +11,22 @@
 
 ### Question 1
 
-The Unit 4 notebook runs gradient descent on `f(x) = x**2` from `x = 5.0`, changing only the learning rate:
+Under its learning-rate table, the Unit 4 notebook printed where each gradient-descent run on `f(x) = x²` stood after 25 steps from `x = 5.0`:
 
 ```
-learning rate     x @ step 0   x @ step 3   x @ step 6  x @ step 12  x @ step 25   verdict
-0.01                  5.0000       4.7060       4.4292       3.9236       3.0173   too small
-0.10                  5.0000       2.5600       1.3107       0.3436       0.0189   just right
-0.95                  5.0000      -3.6450       2.6572       1.4121      -0.3589   too big
-1.10                  5.0000      -8.6400      14.9299      44.5805    -476.9810   way too big
+Distance from the optimum after 25 steps:
+   lr = 0.01  |x| =     3.0173   f(x) =   9.1042e+00   (too small)
+   lr = 0.1   |x| =     0.0189   f(x) =   3.5681e-04   (just right)
+   lr = 0.95  |x| =     0.3589   f(x) =   1.2884e-01   (too big)
+   lr = 1.1   |x| =   476.9810   f(x) =   2.2751e+05   (way too big)
 ```
 
-A student concludes: "a learning rate that overshoots the minimum will diverge." Which row refutes that, and how?
+A student disputes the two bottom verdicts: *"0.95 and 1.1 both jump across the minimum on every step, so they are the same failure and both deserve 'way too big'."* What in this printout separates the two rows?
 
-A) lr = 0.01: it stays on one side of the minimum, so overshoot is not required in order to converge  
-B) lr = 0.95: it lands beyond the minimum (x = -3.65 at step 3) and still closes in to |x| = 0.36  
-C) lr = 1.10: its sign alternates, showing that overshoot and divergence are the same behaviour  
-D) lr = 0.10: it reaches x = 0.019 without overshooting, so overshoot is what slows a run down  
+A) The labels alone: both |x| values belong to runs that crossed the minimum on each step, so the printout gives the student no numerical ground for keeping the two verdicts apart  
+B) The f(x) column read against a cut-off: 1.2884e-01 is below 1 and 2.2751e+05 is far above it, and a cost under 1 is the notebook's working test for having converged  
+C) The 0.1 row: its 0.0189 is the one distance that has essentially reached zero, so a run still 0.3589 away after 25 steps has failed in the same way 1.1 did  
+D) Which way |x| moved: 0.95 ends 0.3589 away, nearer than its start at 5.0, while 1.1 ends 476.9810 away — crossing while shrinking converges, crossing while growing diverges  
 
 ---
 

@@ -11,30 +11,25 @@
 
 ### Question 1
 
-One trained logistic-regression model is scored on the same 171 held-out breast-tumour biopsies; only the decision threshold changes:
+Unit 5's threshold sweep — one logistic-regression model, its probability cut-off moved while nothing else changed, evaluated on 171 held-out biopsies — printed these rows (the four cut-offs above 0.50 miss 13 or more):
 
 ```
     threshold   missed malignant   false alarms   accuracy
-   --------------------------------------------------------
          0.10                  0             38     77.8%
          0.20                  1             21     87.1%
          0.30                  5             12     90.1%
          0.40                  7              9     90.6%
          0.50                 11              5     90.6%
-         0.60                 13              4     90.1%
-         0.70                 16              3     88.9%
-         0.80                 20              0     88.3%
-         0.90                 29              0     83.0%
 
-   Best accuracy on this grid: 92.4% at threshold 0.44 - which still misses 8 malignant tumours.
+   Best accuracy on this grid: 92.4% at threshold 0.44 — which still misses 8 malignant tumours.
 ```
 
-A screening clinic can absorb at most 25 false alarms out of the 171, and within that limit wants to miss as few malignant tumours as it can. Which threshold does the table support, and at what cost?
+A regional programme builds its rule around the dangerous error instead: it will tolerate at most 5 missed malignant tumours among these 171, and inside that cap it wants the fewest false alarms it can get. Which row meets the rule at the lowest false-alarm count, and what is traded away to get there?
 
-A) 0.44 — it is the highest accuracy anywhere on the grid, 92.4%, and accuracy is the metric to maximise  
-B) 0.50 — it is the library default, so it already balances the two kinds of error by construction  
-C) 0.80 — it brings false alarms to zero, and 88.3% is near the grid maximum  
-D) 0.20 — it misses 1 malignant tumour rather than 11, and its 21 false alarms fit the budget  
+A) 0.10 — the one row that misses no malignant tumours, and a programme that fears misses should begin from zero of them and then work its way up  
+B) 0.20 — it misses 1 and raises 21 false alarms, which satisfies the rule with a comfortable margin on the missed-tumour side  
+C) 0.44 — the grid's best accuracy at 92.4%, and 8 misses is near enough to the rule for a figure the notebook itself singled out  
+D) 0.30 — the highest cut-off whose misses stay within 5, bringing false alarms down to 12 at the price of 5 missed tumours rather than 1  
 
 ---
 
@@ -95,12 +90,19 @@ D) P(X | Y) with P(Y) — how the features are distributed inside each class, an
 
 ### Question 7
 
-What is the main difference between traditional rule-based AI and modern data-driven AI?
+The weather recommender in Course 01's first lesson printed two neighbouring cases:
 
-A) Traditional AI uses neural networks, modern AI uses rules  
-B) Traditional AI hides its reasoning, while modern AI can be audited line by line  
-C) Traditional AI uses explicit rules, modern AI learns from data  
-D) Traditional AI is faster, modern AI is slower  
+```
+26 °C, 59% humidity, morning -> Go for a jog in the park
+26 °C, 61% humidity, morning -> Moderate weather, any outdoor activity is fine
+```
+
+A classmate concludes that the recommender "learned a humidity boundary near 60% from past weather data". Which statement describes where that boundary actually came from, and what it tells you about the system's family?
+
+A) The 60% cut was fitted from the four printed test cases, which makes the recommender a small data-driven model of the kind Unit 2 trains  
+B) The jump between 59% and 61% shows the system hides its reasoning, which is the mark of a modern learned model  
+C) A person typed `humidity < 60` into an `if` statement, so the system is rule-based: the threshold was authored, not fitted to data  
+D) The two answers differ because the hand-written rule evaluates faster than a fitted model would; speed is what separates the two families  
 
 ---
 
@@ -117,12 +119,20 @@ D) The two are regression, since each model is fitted by minimising a squared er
 
 ### Question 9
 
-A feedforward network's hidden layer needs an activation function. Which list contains three activation functions and nothing else?
+Before training anything, the single-neuron lesson printed this table:
 
-A) Adam, SGD, RMSprop  
-B) MSE, cross-entropy, hinge  
-C) Dropout, batch normalization, early stopping  
-D) ReLU, sigmoid, tanh  
+```
+     z |  sigmoid |    tanh |  relu
+   1.0 |    0.731 |   0.762 |   1.0
+   3.0 |    0.953 |   0.995 |   3.0
+```
+
+The training cell that followed compiled the neuron with `Adam(learning_rate=0.05)` and `loss="mse"`. A classmate files sigmoid, tanh and relu under "things that score the model". What job do the three functions in this table actually do inside a `Dense(1)` neuron?
+
+A) They measure how far the neuron's output is from the 0/1 label, which is the scoring job that `mse` also performs in the compile line  
+B) They decide how much each weight moves after a batch, which is why the learning rate 0.05 is set right beside them  
+C) They switch random units off during training to limit overfitting, the way dropout does in a larger network  
+D) They turn the weighted sum `z` into the neuron's output, which is why each column is a different reshaping of the same `z`  
 
 ---
 

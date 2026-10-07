@@ -11,23 +11,23 @@
 
 ### Question 1
 
-A product team must generate a million catalogue images a day at interactive latency on a fixed GPU budget. The diffusion model you built needs roughly **200 sequential network passes per image**; a GAN needs **one**. Which trade-off should drive the family choice?
+A marketplace wants a fresh banner image for each of its listings every night, inside a fixed maintenance window on the GPUs it already owns. A colleague proposes the Unit 3 diffusion model and argues its sampling cost will shrink on its own: the training loss fell `0.2712 → 0.1229 → 0.0956` over three epochs, so a better-trained denoiser should need fewer denoising steps. In the notebook, the from-scratch sampler walked **t = 199 down to t = 0** for each image, while a GAN produces an image in one forward pass. Which reasoning should drive the family choice for this job?
 
-A) Diffusion — its sample quality is higher, and its sampling cost falls as the model is trained longer, so throughput improves with training  
-B) A VAE — its encoder makes generation a single pass, and its reconstruction loss is what keeps catalogue images sharp  
-C) A GAN generates in one forward pass, so it is the throughput answer; diffusion buys quality at a cost that scales with the step count  
-D) The choice is immaterial at this scale: latency is set by output resolution and batch size, not by which generator family you pick  
+A) The falling MSE is the right signal: a denoiser that predicts noise more accurately can skip steps safely, so diffusion's per-image cost converges on the GAN's as training continues and the maintenance window stops being a constraint.  
+B) Step counts are beside the point for a batch job: how many images fit in the window is set by output resolution and batch size, so pick whichever family gives the sharper banners and tune the batching afterwards.  
+C) The step count comes from the schedule, not the weights — the sampler walks t = 199 down to 0 whatever the loss reads — so diffusion's cost scales with its steps and the one-pass GAN is the throughput choice for this nightly job.  
+D) A VAE decoder is the one-pass option to prefer here: it generates in a single decoder pass, and its pixel-wise reconstruction loss is what keeps each banner crisp enough for a product page, without the GAN's training instability.  
 
 ---
 
 ### Question 2
 
-A team removes the protected attribute from its training data and reports that the model is now fair. Unit 4 ran exactly that experiment: dropping `Sex` cut the predicted-rate gap from **81.9% to 13.4%**, cost **9.7 points of accuracy**, and `Sex` was still predictable from the remaining features at **66.0%** against a **63.8%** majority-class baseline. What is the correct conclusion?
+Unit 4's Titanic audit trained a survival model with `Sex` and again without it. The sex-aware model predicted survival for **90.7%** of women and **8.8%** of men; the blind model for **35.1%** and **21.6%**. Among passengers who actually survived, the aware model found **97.1%** of the women and **24.2%** of the men; the blind model **44.3%** and **48.5%**. A team lead wants to ship the blind model and stop collecting the attribute altogether, "so nobody can say we used it". What do these figures say about that plan?
 
-A) Removing the column removed the ability to audit, not the ability to discriminate — the attribute survives in correlated features  
-B) Fairness through unawareness worked here: a residual gap of 13.4% is small enough to report the model to the client as unbiased  
-C) The gap fell because accuracy fell: a model that predicts one class for everyone shows no gap at all, and has no value either  
-D) The result transfers: a mitigation of this kind leaves a residual gap of roughly this size, so about 13% is the floor a team should expect  
+A) The plan is sound: with no `Sex` column there is no route from sex to the prediction, so the 35.1% against 21.6% is sampling noise on a small test split that a larger manifest would wash out, and the audit has already done its job.  
+B) The plan is sound on the second metric: 44.3% against 48.5% shows the blind model treats surviving women and surviving men nearly alike, so equal opportunity is satisfied and the attribute can safely be retired from the pipeline.  
+C) The figures show the gap closed because the model degraded: a classifier that predicts 'died' for everyone would also show matching rates for the two groups, and the blind model's falling rates are drifting toward that.  
+D) The blind model still predicts survival for women more often than for men, so the disparity came through correlated features — and without the attribute the team could no longer measure it: the audit it would be giving up.  
 
 ---
 
@@ -66,24 +66,24 @@ D) The well-tuned run's 0.500 is an artefact of its greedy evaluation at 0.726; 
 
 ### Question 5
 
-Unit 4 ran epsilon-greedy on the same 5-variant A/B test at four values of epsilon, **50 runs of 2000 rounds each**:
+The Unit 4 notebook on tuning exploration parameters sweeps four epsilon settings on the same five-variant A/B test, **50 independent runs per epsilon**, then asks how often a lone run would have picked each setting. Three rows of its table, plus the tally from its closing cell:
 
 ```
-   ε    |  mean ± std    |  min … max across runs
-  0.01  |  489.0 ± 120.3 |  292 … 704
-  0.05  |  599.6 ±  76.2 |  314 … 697
-  0.1   |  623.7 ±  50.1 |  475 … 691
-  0.3   |  610.8 ±  35.7 |  508 … 673
-Best epsilon by MEAN total reward: ε = 0.1
-27 of 50 single runs would have crowned a DIFFERENT epsilon than the 50-run average does.
+   ε    |  mean ± std   |  min … max across runs
+  0.05 |   599.6 ±  76.2 |   314 …   697
+   0.1 |   623.7 ±  50.1 |   475 …   691
+   0.3 |   610.8 ±  35.7 |   508 …   673
+
+Single-run winners: ε=0.01: 6, ε=0.05: 15, ε=0.1: 23, ε=0.3: 6
+The 50-run mean picks ε = 0.1; a single run agrees only 23/50 of the time.
 ```
 
-A student reports: *"epsilon = 0.01 is the best setting — I ran it once and scored 704, the highest total anywhere in this table."* What is the strongest objection?
+A classmate insists: *'epsilon = 0.05 can beat epsilon = 0.1 — look, its top run hit 697 and 0.1 peaked at 691.'* Which reply refutes the claim most directly?
 
-A) 704 is one draw from the widest-spread row (±120.3 on a mean of 489.0), and 27 of 50 single runs disagree with the average  
-B) Total reward is the wrong statistic for ranking exploration rates; cumulative regret is what orders these four settings correctly  
-C) 704 does not fit the ε = 0.01 row, whose mean is 489.0; a single run does not exceed its own mean by more than one standard deviation  
-D) ε = 0.01 explores too little for its runs to be compared with the others, so drop that row  
+A) Top run against top run is a one-draw comparison: the 50-run means (599.6 vs 623.7) and the single-run win tally (15 vs 23) both put ε = 0.1 ahead, and 23/50 is the printed warning.  
+B) A maximum of 697 does not belong in the ε = 0.05 row, whose mean is 599.6; a single run of that setting should stay within one standard deviation (±76.2) of it.  
+C) Neither a top run nor a mean settles it, because total reward is the wrong statistic for exploration rates; the whole sweep would have to be redone in cumulative regret before any ranking is made.  
+D) The spread column should decide it, and ε = 0.3 has the tightest band (±35.7) and the highest floor (508), so neither ε = 0.05 nor ε = 0.1 deserved to be crowned as the best setting in the first place.  
 
 ---
 
@@ -100,12 +100,12 @@ D) By fitting a neural network to the observed rewards and reading its predictio
 
 ### Question 7
 
-Unit 5 drew a sample of n = 100 from the 714 recorded Titanic passenger ages and printed a 95% confidence interval of **[26.8815, 32.7235]** for the mean age. Repeating the whole study 2000 times, **96.4%** of the intervals built this way contained the true population mean of **29.6991**. Which statement do these results support?
+From the same sample of 100 recorded Titanic ages, the confidence-interval lesson prints a 90% interval of [27.3582, 32.2468] (width 4.8886) and a 99% interval of [25.9361, 33.6689] (width 7.7327). When it redoes the whole study 2000 times, 92.5% of the 90% intervals and 99.6% of the 99% intervals capture the population mean, and in the panel that draws 100 of those repeats, 3 intervals are shown in crimson. A student writes: 'There is a 99% chance the true mean age is between 25.9361 and 33.6689.' Which statement about that sentence is right?
 
-A) There is a 95% probability that the true mean age of the 714 recorded passengers lies inside [26.88, 32.72]  
-B) About 95% of the 714 recorded passenger ages fall inside [26.88, 32.72], which is the quantity the level counts  
-C) Raising the level to 99% would narrow the interval, because greater confidence pins the true mean down more tightly  
-D) The 95% is a hit rate of the procedure across repeated studies, not a probability attached to this one interval  
+A) Acceptable: 99.6% of the 2000 repeated intervals held the mean, so roughly 99% is also the right probability for this one  
+B) Wrong: the 99% is the capture rate of the procedure across repeats — measured here as 99.6% — not the odds for this one interval  
+C) Wrong: the level counts recorded ages, so the sentence should say that 99% of the 714 ages lie between 25.9361 and 33.6689  
+D) Acceptable, and understated: the wider 99% interval (7.7327 against 4.8886) carries more knowledge about the mean, which is why its coverage rose to 99.6%  
 
 ---
 
@@ -122,22 +122,22 @@ D) It computes the probability of a hypothesis before evidence has been observed
 
 ### Question 9
 
-A colleague's bar chart of 2018 quarterly 911-call volume shows Q2 as a collapse and Q4 as a full recovery. The counts behind it are **Q1 1,478, Q2 1,352, Q3 1,402, Q4 1,478** — a change of **+0.00%** across the year, and no number was altered between the data and the chart. What produced the misleading chart, and what is the fix?
+You are reviewing a slide built from the Unit 3 best-practices lesson. Its bar chart of 2018 quarterly 911 dispatches shows a visible plunge in Q2, yet the check printed under the very same data reads: *"the whole year sits within 8.8% of its own mean"*. The data is the bundled 1-in-27 sample of the call log. How do you reconcile the chart with the printout, and what should the slide do?
 
-A) The bars were sorted by value rather than by quarter; re-order them chronologically so the trend reads correctly  
-B) Counts were plotted where percentages were needed; convert each quarter to a percentage change from Q1  
-C) The y-axis was truncated to start just below the smallest bar; start it at zero, or flag the zoom  
-D) Four categories are too few for bars; a pie chart would show the quarters' shares more fairly  
+A) The 8.8% is measured against the mean while the bars show raw counts, so the chart is right and the printout understates the swing; keep the bars as drawn and delete the sentence  
+B) The 1-in-27 sampling inflates quarter-to-quarter variation in the counts, so the chart exaggerates; multiply each quarter by 27 before plotting so the bars settle  
+C) The axis made the plunge, not the data: `set_ylim` starts just under the lowest quarter, so a year within 8.8% of its mean fills the frame; redraw from zero or flag the zoom  
+D) Quarters differ in length by a few days, which the raw counts do not correct for; convert each bar to calls per day and the plunge will shrink to its true size  
 
 ---
 
 ### Question 10
 
-A team replaced a logistic-regression classifier with a two-layer neural network on the **same raw pixels** and the **same 10,000 test images**. Test accuracy rose from **0.8879 to 0.9130** — 1,121 wrong images down to 870. Which statement best explains the advantage the network has here?
+In the per-digit error chart of the lesson, both models were fitted on the identical **5,000** MNIST training images. Logistic regression misreads **143** of the test threes; the network with **128** ReLU hidden units misreads **73** of them, and it makes fewer errors on 9 of the 10 digits — digit **4** is the exception (**81** errors for logistic regression against **89** for the network). Which account of *how each model uses a pixel* explains this pattern?
 
-A) It needs fewer labelled training images, because its hidden layers share information between the classes  
-B) It learns hierarchical features from the raw pixels instead of using each pixel as a fixed feature  
-C) Its loss surface is convex, so training reaches the global minimum, which logistic regression's does not  
-D) It removes the need to scale or normalise the inputs before training  
+A) The network needs fewer labelled threes to fit well, because its hidden units share what they learn across the ten digit classes, while logistic regression has to fit each class on its own  
+B) The network's loss surface is convex, so Adam reaches the global minimum, while the logistic-regression solver stopped short at `max_iter=500` on the harder digits  
+C) The network trains on pixels divided by 255 while logistic regression sees `StandardScaler` output, and raw-scale pixels preserve more of the stroke information  
+D) Logistic regression scores each pixel with one fixed weight, so a slanted or off-centre 3 misses its template; the hidden layer combines pixels non-linearly and recovers it  
 
 ---

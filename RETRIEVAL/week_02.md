@@ -66,12 +66,20 @@ D) f(n) = g(n) - h(n) — the cost paid, discounted by the estimate of what rema
 
 ### Question 6
 
-A feedforward network's hidden layer needs an activation function. Which list contains three activation functions and nothing else?
+Before training anything, the single-neuron lesson printed this table:
 
-A) Adam, SGD, RMSprop  
-B) MSE, cross-entropy, hinge  
-C) Dropout, batch normalization, early stopping  
-D) ReLU, sigmoid, tanh  
+```
+     z |  sigmoid |    tanh |  relu
+   1.0 |    0.731 |   0.762 |   1.0
+   3.0 |    0.953 |   0.995 |   3.0
+```
+
+The training cell that followed compiled the neuron with `Adam(learning_rate=0.05)` and `loss="mse"`. A classmate files sigmoid, tanh and relu under "things that score the model". What job do the three functions in this table actually do inside a `Dense(1)` neuron?
+
+A) They measure how far the neuron's output is from the 0/1 label, which is the scoring job that `mse` also performs in the compile line  
+B) They decide how much each weight moves after a batch, which is why the learning rate 0.05 is set right beside them  
+C) They switch random units off during training to limit overfitting, the way dropout does in a larger network  
+D) They turn the weighted sum `z` into the neuron's output, which is why each column is a different reshaping of the same `z`  
 
 ---
 
@@ -99,12 +107,19 @@ D) Handling uncertainty and updating a belief as evidence arrives
 
 ### Question 9
 
-What is the main difference between traditional rule-based AI and modern data-driven AI?
+The weather recommender in Course 01's first lesson printed two neighbouring cases:
 
-A) Traditional AI uses neural networks, modern AI uses rules  
-B) Traditional AI hides its reasoning, while modern AI can be audited line by line  
-C) Traditional AI uses explicit rules, modern AI learns from data  
-D) Traditional AI is faster, modern AI is slower  
+```
+26 °C, 59% humidity, morning -> Go for a jog in the park
+26 °C, 61% humidity, morning -> Moderate weather, any outdoor activity is fine
+```
+
+A classmate concludes that the recommender "learned a humidity boundary near 60% from past weather data". Which statement describes where that boundary actually came from, and what it tells you about the system's family?
+
+A) The 60% cut was fitted from the four printed test cases, which makes the recommender a small data-driven model of the kind Unit 2 trains  
+B) The jump between 59% and 61% shows the system hides its reasoning, which is the mark of a modern learned model  
+C) The two answers differ because the hand-written rule evaluates faster than a fitted model would; speed is what separates the two families  
+D) A person typed `humidity < 60` into an `if` statement, so the system is rule-based: the threshold was authored, not fitted to data  
 
 ---
 

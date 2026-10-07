@@ -44,12 +44,22 @@ D) It rescales gradients during training so that large updates do not destabilis
 
 ### Question 4
 
-Two image generators are scored with **FID** inside one fixed, documented pipeline. Model A scores 8.0 and Model B scores 12.0. Which reading of that result is correct?
+The lesson's Fréchet-distance check, run inside one fixed PCA-feature pipeline, printed:
 
-A) Model A is both better and more diverse than B, since FID's covariance term is what penalises a generator that has lost diversity  
-B) Model A fits this pipeline's feature distribution better — but FID also scores well a model that memorised the training set  
-C) The 4-point gap can be compared directly against FID values published in papers, since FID is a standardised metric  
-D) Model A's images are sharper, since FID computes a per-image sharpness score and averages it over the generated set  
+```
+candidate set      Frechet distance (PCA features) — lower is better
+real (held-out)          0.06
+blurred                  2.29
+noisy                    0.26
+pure noise               3.82
+```
+
+A teammate's new digit generator scores **0.06** on that same pipeline, and they want to sign it off as a faithful generator on the strength of that number. What does the score establish?
+
+A) It scores below both corrupted sets, so the generator has been shown to cover the ten digit classes as evenly as the real data does — a distribution-level metric penalises any lost diversity by construction.  
+B) Its feature distribution sits as close to the reference as a second sample of real digits does — the floor of this measurement — which leaves a memorised training set or a dropped rare class undetected.  
+C) A 0.06 can be quoted directly against the FID figures reported in GAN papers, since the formula is the same one and lower is better on the same scale no matter which feature extractor produced the vectors.  
+D) Each generated digit is individually as crisp as a real one, since the distance averages a per-image quality score over the set, and a value of 0.06 leaves very little room for blur.  
 
 ---
 
@@ -77,12 +87,19 @@ D) It works without function approximation, so a table suffices for large state 
 
 ### Question 7
 
-Unit 1 computed the same two-layer transformation of the same data two ways: Route A as `(X @ W1) @ W2`, using 8,510,592 scalar multiplications, and Route B as `X @ (W1 @ W2)`, using 1,191,040. The largest disagreement between the two outputs is **1.33e-14**. What does this establish about a two-layer network with **no activation function** between the layers?
+The matrix-operations lesson redraws its fusion experiment on the 1,797 mean-centred digit images and adds a third route, `relu(X @ W1) @ W2`, with a ReLU between the two layers. The printed reading of the figure is:
 
-A) Route B is cheaper because it drops the hidden layer, so it returns an approximation  
-B) The 1.33e-14 disagreement shows the two routes compute different functions, so the order the products are taken in matters  
-C) The two layers can be replaced by one layer with weight matrix `W1 @ W2` without changing the function computed  
-D) The second layer re-weights the first layer's outputs, so stacking the two adds expressive power a single layer lacks  
+```
+Blue points (no activation): 2.0e-14 is the largest amount any of the 17,970 output numbers differs from the fused one-layer network.
+Orange points (ReLU inserted): up to 11.8 away from the diagonal, on outputs that span roughly -19 to +18.
+```
+
+A classmate argues that the ReLU is a minor numerical detail and that the real lesson is which bracketing is cheaper. Which reading of these two printed gaps is correct?
+
+A) Both gaps are rounding noise; the ReLU route sits further off because `max()` adds another rounded operation per entry  
+B) The 2.0e-14 gap shows the layer-by-layer route drifts from the fused one, so even without a ReLU the two layers compute a slightly different function  
+C) The 2.0e-14 gap says the two linear routes are one function; the 11.8 gap says the ReLU made a genuinely different model  
+D) The orange points leave the diagonal because the digits were mean-centred, not because of the ReLU; on raw pixels the same ReLU would spread them as far  
 
 ---
 
@@ -99,22 +116,22 @@ D) A single unit that takes a weighted sum of its inputs and passes it through a
 
 ### Question 9
 
-On IMDB reviews padded to 100 tokens, a `SimpleRNN` reaches **0.544** best validation accuracy and an **LSTM** of the same width reaches **0.776**. Where does the LSTM's advantage come from?
+The lesson trains three recurrent layers of width 64 on the same `Embedding(2000, 64)`, the same **2,000** training reviews, the same **12** epochs and the same seed. Best validation accuracy: `GRU` **0.720** (final 0.692), `SimpleRNN` **0.544** (final 0.520). A classmate says the GRU beats the gateless layer for the same reason an LSTM does. Which reason is that?
 
-A) It has fewer parameters than a `SimpleRNN` of the same width, so it needs less data to train  
-B) Its gates and cell state add a path along which the gradient can be carried back many steps  
-C) It reads all 100 tokens in parallel instead of one at a time, so early words are not forgotten  
-D) It reads each review backwards as well as forwards, so early words are seen last  
+A) It takes in the 100 padded positions at once rather than one word at a time, so the opening words are not overwritten by the ones that come later  
+B) Its gates make each step a controlled, trainable update of the state, so a gradient can reach earlier words along a near-additive path  
+C) It carries fewer recurrent weights than the SimpleRNN's 8,256 — so with 2,000 reviews there is less for it to overfit  
+D) It runs over each review forwards and then backwards, so the words from the start are the freshest when the verdict is made  
 
 ---
 
 ### Question 10
 
-Unit 2 profiled two columns of the same 891-row Titanic manifest. `Age` printed a skew of **0.53** and a median near **26**; `Fare` printed a skew of **4.79**, with most passengers in the first histogram bin and a few tickets reaching **512** pounds. A colleague's report quotes one "average" per column. What does the profiling step tell you to do, and why?
+The Unit 2 outliers lesson profiled the cleaned **889**-row `Fare` column and printed mean **32.10**, median **14.45**, quartiles **7.90** to **31.00** and a maximum of **512.33**. Its IQR rule flagged **114** fares (12.8% of passengers), **102** of them first class. A colleague's slide carries one line: "average fare: 32.10 pounds". Which revision does that profiling support?
 
-A) Report `Fare` by its median and quartiles and say the column is skewed, because a single mean describes almost nobody in that shape  
-B) Report the mean for both columns, because the mean uses all the rows while the median keeps just the middle one  
-C) Drop the tickets near 512 pounds as outliers first, because the mean of `Fare` becomes a fair summary once that tail is gone  
-D) Standardise both columns to mean 0 and standard deviation 1 first, because scaling removes the skew and makes the averages comparable  
+A) Keep 32.10 but recompute it after dropping the 114 IQR-flagged fares first, so the mean then describes the typical passenger rather than the first-class tail  
+B) Replace it with the median 14.45 and the 7.90 to 31.00 quartile range, and say the column is right-skewed, since 32.10 sits above the third quartile  
+C) Standardise `Fare` to mean 0 and standard deviation 1 before quoting the average, so the first-class tail no longer pulls the reported figure away from the centre of the column  
+D) Keep 32.10 and add the standard deviation 49.70, so readers can see the spread around the average and judge the typical fare for themselves  
 
 ---

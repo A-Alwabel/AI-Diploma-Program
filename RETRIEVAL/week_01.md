@@ -55,12 +55,19 @@ D) f(n) = g(n) - h(n) — the cost paid, discounted by the estimate of what rema
 
 ### Question 5
 
-What is the main difference between traditional rule-based AI and modern data-driven AI?
+The weather recommender in Course 01's first lesson printed two neighbouring cases:
 
-A) Traditional AI uses neural networks, modern AI uses rules  
-B) Traditional AI hides its reasoning, while modern AI can be audited line by line  
-C) Traditional AI uses explicit rules, modern AI learns from data  
-D) Traditional AI is faster, modern AI is slower  
+```
+26 °C, 59% humidity, morning -> Go for a jog in the park
+26 °C, 61% humidity, morning -> Moderate weather, any outdoor activity is fine
+```
+
+A classmate concludes that the recommender "learned a humidity boundary near 60% from past weather data". Which statement describes where that boundary actually came from, and what it tells you about the system's family?
+
+A) The 60% cut was fitted from the four printed test cases, which makes the recommender a small data-driven model of the kind Unit 2 trains  
+B) The jump between 59% and 61% shows the system hides its reasoning, which is the mark of a modern learned model  
+C) A person typed `humidity < 60` into an `if` statement, so the system is rule-based: the threshold was authored, not fitted to data  
+D) The two answers differ because the hand-written rule evaluates faster than a fitted model would; speed is what separates the two families  
 
 ---
 

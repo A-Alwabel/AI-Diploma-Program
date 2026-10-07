@@ -11,12 +11,12 @@
 
 ### Question 1
 
-A trained FP32 model is converted to INT8. The stored file falls from **5,597 to 4,557 bytes** and validation accuracy is unchanged at **0.840**. Which optimization technique is this, and what did it change?
+In the lesson's worked example, a trained digits classifier is converted with a single library call and no retraining. Measured on the same laptop CPU: stored size **70.2 KB → 22.2 KB** (**3.2×** smaller), accuracy **96.7%** before and after, and latency **0.228 → 0.360 ms/batch** — the converted model runs **1.6×** slower. Name the technique and the property of the model it modified.
 
-A) Quantization — the number of **bits** used to store each weight value  
-B) Pruning — the number of **weights**, by zeroing the smallest  
-C) Distillation — the **architecture**, by training a smaller model to copy a larger one  
-D) ONNX export — the **file format**, so the model runs outside the framework that trained it  
+A) Pruning — the number of surviving weights, with the smallest ones zeroed out so the file has fewer values to hold  
+B) Quantization — the precision each weight is stored at, FP32 down to INT8, with a scale and zero-point kept per layer  
+C) Distillation — the architecture, with a smaller student trained to match the 96.7% teacher's soft outputs  
+D) ONNX export — the file format, so the model runs outside PyTorch, which is also why inference got slower in the new runtime  
 
 ---
 
@@ -33,7 +33,7 @@ D) It encodes each input to a distribution and samples from that, so new points 
 
 ### Question 3
 
-Unit 1's value-iteration lesson runs a 3x3 grid world with **-1 for every ordinary step, +10 for entering the goal, -10 for entering the pit, and gamma = 0.90**. It prints this converged value table and the greedy policy read off it:
+Unit 1's value-iteration notebook reports that its 3x3 grid world (gamma = 0.90; -1 for an ordinary step, +10 for entering the goal, -10 for entering the pit) **converged in 5 sweeps**, printing:
 
 ```
 State values:              Greedy policy:
@@ -42,23 +42,23 @@ State values:              Greedy policy:
   P     10.00   G            P   →   G
 ```
 
-The tile immediately **above the pit** holds **6.20** — a positive value, even though one of its four actions steps straight into the -10 pit. Which explanation is correct?
+Look at the **bottom-row tile between the pit and the goal**. It reads **10.00** — as much as the goal reward itself, and more than the 8.00 in the top-right corner — although stepping left from it lands in the -10 pit. A classmate concludes the pit must have been left out of that tile's backup. What actually happened in the code?
 
-A) The pit's -10 is discounted once per sweep, so by the time the table converges 0.90 raised to the sweep count has shrunk it below -1  
-B) The sweep skips terminal states, so `transition(3, "down")` returns no pit transition, leaving the -10 out of that tile's backup  
-C) The backup keeps the maximum over four actions, and the best moves right: -1 + 0.90 x 8.00 = 6.20, so the pit shows in the arrow  
-D) The backup averages the four action targets instead of maximising, and the three non-pit actions outweigh the single -10  
+A) The -10 is multiplied by gamma = 0.90 once per sweep, so by the time the 5 sweeps are over it has shrunk too far to pull the tile below the 10.00 that the goal side offers.  
+B) The pit is in `TERMINAL_STATES`, so the sweep's `continue` skips it and `transition(7, 'left')` therefore returns no -10 for this tile's backup.  
+C) Four targets were computed and the largest kept: stepping right enters the goal for +10 with no future to discount, so 10.00 wins and the -10 target loses the comparison.  
+D) The four targets are averaged rather than maximised, and the right-hand move into the goal lifts the mean far enough to cancel the single -10 that the pit contributes.  
 
 ---
 
 ### Question 4
 
-You must extract PERSON, ORG and DATE mentions from 50,000 English news articles, on a CPU-only server, with **no labelled data**. Which tool from Course 07 does the job with the least work?
+An investigative newsroom has inherited an English-language document leak of the kind that opened Unit 3. No file has been annotated, the only machine is a laptop, and the editors want, for each file, the people, companies and dates it names. Which approach from this course gets there with the least work?
 
-A) `TfidfVectorizer` with `MultinomialNB`, trained on the 50,000 articles  
-B) spaCy's `en_core_web_sm` pipeline, whose NER already tags these entity types  
-C) A local GPT-2 text-generation pipeline, prompted to list the entities in each article  
-D) `AutoModelForSequenceClassification` from Hugging Face, fine-tuned on the articles  
+A) Vectorise the files with TF-IDF and fit `MultinomialNB`, treating each file as one document to be labelled  
+B) Prompt the local GPT-2 text-generation pipeline from Unit 4 to write out the names it notices in each file  
+C) Fine-tune `AutoModelForSequenceClassification` from Hugging Face on the leaked files so that it learns the newsroom's own entity types  
+D) Run `en_core_web_sm` over each file and read `doc.ents`, the pretrained NER that tagged 12 spans in the sample paragraph  
 
 ---
 
@@ -75,69 +75,98 @@ D) One vector is about twice the length of the other, since cosine similarity co
 
 ### Question 6
 
-Which group lists three methods that can serve as the **classifier** in a text-classification pipeline?
+Unit 3's pipeline was `TfidfVectorizer(stop_words="english")` feeding `MultinomialNB()`. A teammate wants to replace the second stage and still get a *positive* or *negative* label for each of the 1,000 held-out reviews. Which replacement still does that job?
 
-A) TF-IDF, bag-of-words, Word2Vec  
-B) Tokenization, stemming and lemmatization  
-C) K-Means clustering, PCA, t-SNE  
-D) Naive Bayes, Logistic Regression, SVM  
+A) A Porter stemmer applied to each review before its text reaches the TF-IDF vectorizer  
+B) `LogisticRegression(max_iter=1000)`, fitted on the same 3,000 TF-IDF rows and their labels  
+C) A second `TfidfVectorizer` with a larger vocabulary, run on the output of the first one  
+D) K-Means with two clusters, fitted on the same TF-IDF rows without ever looking at the review labels  
 
 ---
 
 ### Question 7
 
-Course 04's logistic-regression lesson tested on 3,200 real transactions, 6 of them fraudulent, and printed:
+Unit 3's logistic-regression lesson sweeps the decision cut from 0.1 to 0.9 on its 3,200-row test set and prints:
 
 ```
-[[3191    3]      TN = 3191    FP = 3
- [   3    3]]     FN = 3       TP = 3
+Threshold    Accuracy     Precision    Recall       F1 Score
+0.1          0.9975       0.4000       0.6667       0.5000
+0.2          0.9984       0.5714       0.6667       0.6154
+0.3          0.9981       0.5000       0.5000       0.5000
+...
+0.9          0.9981       0.5000       0.5000       0.5000
 ```
 
-Test accuracy **0.9981**. The same lesson printed that labelling every row "legitimate" scores **0.9981**. What do those two identical accuracies establish?
+Precision and recall move by tens of points down the table; the accuracy column stays between 0.9975 and 0.9984. A student asks why accuracy looks "stuck". What is the correct explanation?
 
-A) The classifier learned nothing from the 30 features, since it scores exactly what a model with no features scores  
-B) Accuracy is set by the 3,194 legitimate rows and has no room to register the 6 fraud rows either way  
-C) At 3,200 rows the test set is too small for accuracy to be reliable  
-D) The two agree because the cut sits at 0.5; moving that cut down to 0.3 would separate the model from the baseline  
+A) The model's predicted probabilities are nearly identical from row to row, so sliding the cut hardly changes any individual prediction  
+B) Accuracy, like AUC, is defined over the whole range of thresholds at once, so a table that varies the cut is not something it is expected to respond to  
+C) 3,194 of 3,200 rows are legitimate and cleared at almost any cut, so accuracy stays pinned near the baseline of calling each row legitimate, whatever the 6 fraud rows do  
+D) A 3,200-row test set is simply too small for accuracy to resolve the differences between cuts; a larger test sample would separate the rows of the table cleanly and rank them  
 
 ---
 
 ### Question 8
 
-The same lesson refit the model with `class_weight='balanced'` and printed the change on the test set:
+The same lesson prints two different ways of pushing the fraud model to flag more of the 3,200 test transactions - lowering the cut on the original model, and refitting with `class_weight='balanced'`:
 
 ```
-Fraud caught (TP):   3 -> 3       Fraud missed (FN):   3 -> 3
-False alarms (FP):   3 -> 18      Legit cleared (TN):  3191 -> 3176
+cut 0.1 (original model):   caught 4   missed 2   false alarms 6    recall 0.6667   precision 0.4000
+class_weight='balanced':    caught 3   missed 3   false alarms 18   recall 0.5000   precision 0.1429
 ```
 
-Precision 0.5000 → 0.1429, recall 0.5000 → 0.5000, accuracy 0.9981 → 0.9934. What should the analyst conclude?
+A colleague reads the second line and concludes that the weighted refit is "the more aggressive model, so it must be the one catching more fraud." What do the two lines establish?
 
-A) Recall did not move because the weighting was too weak; a larger manual weight on class 1 would lift it above 0.50  
-B) Precision falling from 0.50 to 0.14 is the signature of a model overfitting the minority class  
-C) The weighting bought 15 extra false alarms and no extra fraud: it moved the operating point, not the information  
-D) Accuracy fell from 0.9981 to 0.9934, so the balanced model is the worse of the two and should be dropped  
+A) Flagging more is not finding more: 18 alarms bought 3 frauds where 6 alarms bought 4, so the weighting moved the operating point without adding signal  
+B) Recall sat at 0.5000 because 'balanced' is a mild preset; a hand-set weight on class 1 would carry recall past the 0.6667 the lower cut reached  
+C) The precision collapse to 0.1429 is the minority class being overfitted by the refit, which the threshold change avoids because the fitted model is left untouched  
+D) Both rows fall below the 0.9981 that labelling each row legitimate scores, so the default 0.5 cut, which matches it, remains the model to keep  
 
 ---
 
 ### Question 9
 
-A triage knowledge base holds 4,000 recorded patient facts and 300 rules. A clinician needs one answer: *should Patient 7 be flagged for sepsis?* Which inference strategy fits this request, and why?
+In the Unit 2 expert-system cell, three recorded observations about `Patient1` and two rules went in, and the run printed:
 
-A) Backward chaining: it starts from this one goal and expands just the rules that bear on the case  
-B) Forward chaining: firing the rules in the order they were written is what makes a conclusion sound  
-C) Backward chaining: it can withdraw a conclusion when a later fact turns out to contradict it  
-D) Forward chaining: it derives the consequences of the 4,000 facts, and this answer is among them  
+```
+   BEFORE Forward Chaining:
+      Facts: 3
+
+  ➕ Added: Fact(Patient1, likely_has, Flu)
+   ✅ Applied rule: Flu Diagnosis Rule
+  ➕ Added: Fact(Patient1, recommend, Rest)
+   ✅ Applied rule: Flu Treatment Rule
+
+✅ Forward chaining complete! (2 iterations)
+   (Stopped because no more new facts can be derived)
+
+   AFTER Forward Chaining:
+      Facts: 5
+```
+
+A clinic now wants the system to run with no particular question in mind: *each time a nurse records a new observation, surface whatever recommendations now follow for that patient.* Which chaining direction suits that job, and what in the printout shows why?
+
+A) Forward chaining: data-driven, firing whichever rules the recorded facts satisfy until a pass adds no new fact — the loop that stopped above after 2 iterations  
+B) Forward chaining: the Flu Diagnosis Rule was entered before the Flu Treatment Rule, and firing rules in the order they were written is what keeps the chain valid  
+C) Backward chaining: it would prove `recommend Rest` for one patient at a time, and a focused proof costs less than deriving facts even when no goal has been named  
+D) Backward chaining: if a later observation contradicts `likely_has Flu`, it can take back the `Rest` recommendation, which a forward chainer has no way to do  
 
 ---
 
 ### Question 10
 
-Course 01 hand-wrote a weather agent as `if temperature > 25 and humidity < 60: ...`, which does no learning at all; a later lesson fitted a model from features `X` and labels `y`. What is the main difference between traditional (rule-based) AI and modern (data-driven) AI?
+The weather recommender in Course 01's first lesson printed two neighbouring cases:
 
-A) Traditional AI uses neural networks, modern AI uses rules  
-B) Traditional AI is opaque about its decisions, while modern AI is transparent by construction  
-C) Traditional AI uses explicit rules, modern AI learns from data  
-D) Traditional AI is faster, modern AI is slower  
+```
+26 °C, 59% humidity, morning -> Go for a jog in the park
+26 °C, 61% humidity, morning -> Moderate weather, any outdoor activity is fine
+```
+
+A classmate concludes that the recommender "learned a humidity boundary near 60% from past weather data". Which statement describes where that boundary actually came from, and what it tells you about the system's family?
+
+A) The 60% cut was fitted from the four printed test cases, which makes the recommender a small data-driven model of the kind Unit 2 trains  
+B) A person typed `humidity < 60` into an `if` statement, so the system is rule-based: the threshold was authored, not fitted to data  
+C) The jump between 59% and 61% shows the system hides its reasoning, which is the mark of a modern learned model  
+D) The two answers differ because the hand-written rule evaluates faster than a fitted model would; speed is what separates the two families  
 
 ---

@@ -11,27 +11,24 @@
 
 ### Question 1
 
-Unit 4's tuning lesson runs epsilon-greedy on the same 5-variant A/B test at four values of epsilon, **50 runs of 2000 rounds each**, and prints:
+The Unit 4 notebook on tuning exploration parameters sweeps four epsilon settings on the same five-variant A/B test, **50 independent runs per epsilon**, then asks how often a lone run would have picked each setting. Three rows of its table, plus the tally from its closing cell:
 
 ```
-Total reward per epsilon (50 runs of 2000 rounds each):
    ε    |  mean ± std   |  min … max across runs
-  0.01 |   489.0 ± 120.3 |   292 …   704
   0.05 |   599.6 ±  76.2 |   314 …   697
    0.1 |   623.7 ±  50.1 |   475 …   691
    0.3 |   610.8 ±  35.7 |   508 …   673
 
-Best epsilon by MEAN total reward: ε=0.1
-The single-run trap: judging by one run alone, 27 of 50 runs
-would have crowned a DIFFERENT epsilon than the 50-run average does.
+Single-run winners: ε=0.01: 6, ε=0.05: 15, ε=0.1: 23, ε=0.3: 6
+The 50-run mean picks ε = 0.1; a single run agrees only 23/50 of the time.
 ```
 
-A student reports: *"epsilon = 0.01 is the best setting — I ran it once and scored 704, the highest total anywhere in this table."* What is the strongest objection?
+A classmate insists: *'epsilon = 0.05 can beat epsilon = 0.1 — look, its top run hit 697 and 0.1 peaked at 691.'* Which reply refutes the claim most directly?
 
-A) 704 does not fit the epsilon = 0.01 row, whose mean is 489.0; a single run of that setting stays within one standard deviation of its own printed mean  
-B) Total reward is the wrong statistic for ranking exploration rates; cumulative regret is the one that orders these four settings  
-C) Epsilon = 0.01 explores too little for its runs to be compared with the others, so that row should be left out of the ranking  
-D) 704 is one draw from the widest-spread row (±120.3 on a mean of 489.0), and the printed 27-of-50 figure says one run is not enough to rank epsilon  
+A) A maximum of 697 does not belong in the ε = 0.05 row, whose mean is 599.6; a single run of that setting should stay within one standard deviation (±76.2) of it.  
+B) Neither a top run nor a mean settles it, because total reward is the wrong statistic for exploration rates; the whole sweep would have to be redone in cumulative regret before any ranking is made.  
+C) The spread column should decide it, and ε = 0.3 has the tightest band (±35.7) and the highest floor (508), so neither ε = 0.05 nor ε = 0.1 deserved to be crowned as the best setting in the first place.  
+D) Top run against top run is a one-draw comparison: the 50-run means (599.6 vs 623.7) and the single-run win tally (15 vs 23) both put ε = 0.1 ahead, and 23/50 is the printed warning.  
 
 ---
 
@@ -59,23 +56,23 @@ D) Refreshing weights rarely means fewer gradient steps, so the same policy is l
 
 ### Question 4
 
-A team replaces a logistic-regression classifier with a two-layer neural network on the **same raw pixels** and the **same 10,000 test images**. Test accuracy rises from **0.8879 to 0.9130** — 1,121 wrong images down to 870. Which statement best explains the advantage the network has here?
+In the per-digit error chart of the lesson, both models were fitted on the identical **5,000** MNIST training images. Logistic regression misreads **143** of the test threes; the network with **128** ReLU hidden units misreads **73** of them, and it makes fewer errors on 9 of the 10 digits — digit **4** is the exception (**81** errors for logistic regression against **89** for the network). Which account of *how each model uses a pixel* explains this pattern?
 
-A) It needs fewer labelled training images, because its layers share information between the ten classes  
-B) It learns hierarchical features from the raw pixels instead of using each pixel as a fixed feature  
-C) Its loss surface is convex, so training reaches the global minimum, which logistic regression's does not  
-D) It removes the need to scale or normalise the inputs before training  
+A) The network needs fewer labelled threes to fit well, because its hidden units share what they learn across the ten digit classes, while logistic regression has to fit each class on its own  
+B) Logistic regression scores each pixel with one fixed weight, so a slanted or off-centre 3 misses its template; the hidden layer combines pixels non-linearly and recovers it  
+C) The network's loss surface is convex, so Adam reaches the global minimum, while the logistic-regression solver stopped short at `max_iter=500` on the harder digits  
+D) The network trains on pixels divided by 255 while logistic regression sees `StandardScaler` output, and raw-scale pixels preserve more of the stroke information  
 
 ---
 
 ### Question 5
 
-Your first model for a 28×28 image task is a `Dense` network on flattened pixels. You replace it with a CNN and accuracy improves. What does the **convolutional layer** give you that the `Dense` layer did not?
+The lesson's `model.summary()` lists `conv2d_1 (Conv2D)`, 64 filters, at **18,496** parameters, and the `dense (Dense)` layer of 64 units that follows `Flatten` at **102,464** — the largest line in a **121,930**-parameter model. The conv layer turns a 13×13×32 map into an 11×11×64 one; the Dense layer reads a **1,600**-long vector. Which statement correctly accounts for the gap between the two counts?
 
-A) It treats each image as one flat vector, so the position of a pixel no longer changes the result  
-B) Its weight sharing removes the risk of overfitting, so a held-out validation split is no longer needed  
-C) It supplies the non-linearity itself, so no ReLU is needed after the layer  
-D) The same small filter runs at each position, so a pattern learned once is found anywhere  
+A) Each of the 64 filters is one 3×3×32 weight block reused at each position of the map, so a pattern is learned once; Dense buys a separate weight per input per unit  
+B) Flattening throws away where each value sat in the 13×13 grid, so the Dense layer has to compensate for the lost position information with many more weights than a conv layer needs  
+C) Weight sharing keeps the conv layer from memorising, which is why the lesson can train without holding out a validation split  
+D) The convolution already includes its non-linearity, so it saves the parameters that a separate ReLU stage would otherwise add  
 
 ---
 
@@ -92,12 +89,12 @@ D) The auditor's own judgement of how strongly each profession reads as male or 
 
 ### Question 7
 
-In Course 05 Unit 2 you profiled two columns of the same 891-row Titanic manifest. `Age` printed a skew of **0.53** and a median near **26**; `Fare` printed a skew of **4.79**, with most passengers in the first histogram bin and a few tickets reaching **512** pounds. A colleague's report quotes one "average" per column. What does the profiling step tell you to do, and why?
+The Unit 2 outliers lesson profiled the cleaned **889**-row `Fare` column and printed mean **32.10**, median **14.45**, quartiles **7.90** to **31.00** and a maximum of **512.33**. Its IQR rule flagged **114** fares (12.8% of passengers), **102** of them first class. A colleague's slide carries one line: "average fare: 32.10 pounds". Which revision does that profiling support?
 
-A) Report `Fare` by its median and quartiles and say the column is skewed, because a single mean describes almost nobody in that shape  
-B) Report the mean for both columns, because the mean uses all the rows while the median throws away everything except the middle one  
-C) Drop the tickets near 512 pounds as outliers first, because the mean of `Fare` becomes a fair summary once that tail is gone  
-D) Standardise both columns to mean 0 and standard deviation 1 first, because scaling removes the skew and makes the two averages comparable  
+A) Replace it with the median 14.45 and the 7.90 to 31.00 quartile range, and say the column is right-skewed, since 32.10 sits above the third quartile  
+B) Keep 32.10 but recompute it after dropping the 114 IQR-flagged fares first, so the mean then describes the typical passenger rather than the first-class tail  
+C) Standardise `Fare` to mean 0 and standard deviation 1 before quoting the average, so the first-class tail no longer pulls the reported figure away from the centre of the column  
+D) Keep 32.10 and add the standard deviation 49.70, so readers can see the spread around the average and judge the typical fare for themselves  
 
 ---
 
@@ -114,12 +111,20 @@ D) It costs 708 rows, and it removes second- and third-class passengers at a far
 
 ### Question 9
 
-Course 01 Unit 4 plotted and trained three activation functions on the same single neuron and compared them. Which group below lists **activation functions** used in a feedforward neural network?
+Before training anything, the single-neuron lesson printed this table:
 
-A) ReLU, Sigmoid, Tanh  
-B) Adam, SGD, RMSprop  
-C) MSE, Cross-Entropy, Hinge  
-D) Dropout, Batch Normalization, Early Stopping  
+```
+     z |  sigmoid |    tanh |  relu
+   1.0 |    0.731 |   0.762 |   1.0
+   3.0 |    0.953 |   0.995 |   3.0
+```
+
+The training cell that followed compiled the neuron with `Adam(learning_rate=0.05)` and `loss="mse"`. A classmate files sigmoid, tanh and relu under "things that score the model". What job do the three functions in this table actually do inside a `Dense(1)` neuron?
+
+A) They measure how far the neuron's output is from the 0/1 label, which is the scoring job that `mse` also performs in the compile line  
+B) They decide how much each weight moves after a batch, which is why the learning rate 0.05 is set right beside them  
+C) They turn the weighted sum `z` into the neuron's output, which is why each column is a different reshaping of the same `z`  
+D) They switch random units off during training to limit overfitting, the way dropout does in a larger network  
 
 ---
 

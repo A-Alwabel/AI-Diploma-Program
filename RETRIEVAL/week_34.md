@@ -44,23 +44,33 @@ D) Drop the baseline from the report so that the results read consistently
 
 ### Question 4
 
-You have a trained scikit-learn model. It must be called from a Java backend service and must also run inside a mobile app that hosts no Python interpreter. Which packaging choice makes that possible?
+Unit 1 lesson 02 wrote the same Iris RandomForest to disk four ways and printed:
 
-A) ONNX, because the graph runs in an ONNX runtime with no Python present  
-B) `joblib` with `compress=3`, because it produces the smallest artifact of the four  
-C) `pickle`, because Python runs on all the major operating systems  
-D) JSON of the learned parameters, because most languages parse JSON  
+```
+format                  size (KB)  load (ms)
+pickle                      170.6       0.59
+joblib                      182.5       5.28
+joblib (compress=3)          25.4       5.35
+ONNX                         78.3       0.59
+```
+
+A teammate reads the table and says: "pickle ties for the fastest load, so send `iris_rf.pkl` to the gateway team." The gateway is a C++ service on a factory device with no Python installed. Which reply is right?
+
+A) Send `iris_rf.pkl` (170.6 KB): it loads in 0.59 ms and C++ can read the bytes like any other file  
+B) Send `iris_rf_compressed.joblib` (25.4 KB): on a constrained device the smallest artifact is the one to ship  
+C) Send `iris_rf.onnx` (78.3 KB): a C++ ONNX runtime executes the saved graph without importing scikit-learn  
+D) Send the forest's learned thresholds as JSON: C++ parses numbers natively, so no model runtime is needed  
 
 ---
 
 ### Question 5
 
-Unit 1 put a model behind an HTTP endpoint instead of importing it into the calling program. What is the main advantage of a REST API for model serving?
+In Unit 1 lesson 01, `wdbc-baseline` was wrapped in a FastAPI app and the notebook printed a ready-to-paste `curl -X POST http://localhost:8000/predict` carrying 30 JSON fields. The dashboard team writes JavaScript and the billing team writes Go; both want predictions. A colleague asks why they should call this endpoint instead of each loading `model.joblib` themselves. Which answer gives the benefit the lesson actually claims for serving over HTTP?
 
-A) Lower latency than an in-process `model.predict()` call  
-B) Automatic validation of requests against the model's schema  
-C) Automatic scaling of the service as request volume grows  
-D) A standardized, language-neutral interface that scales out  
+A) HTTP makes each prediction faster than the in-process call the lesson timed at 0.060 ms per call  
+B) Behind HTTP, Flask returns `400` for a missing field on its own, so nobody has to write any validation code  
+C) Once the model sits behind one address, extra worker processes are started by the API layer as traffic grows  
+D) Any program that can send JSON to one address can use the model, whatever language it was written in  
 
 ---
 
@@ -77,44 +87,62 @@ D) When peak throughput matters most, because a managed runtime outruns a contai
 
 ### Question 7
 
-Unit 2 trained a classifier on labelled patient records and then clustered the same records with no labels at all. What is the main difference between supervised and unsupervised learning?
+Unit 2 ran K-Means on 150 iris flowers with the species column hidden. The crosstab printed afterwards showed cluster 1 holding 50 setosa flowers and 0 of either other species. A classmate says: "a match that clean means K-Means obviously trained on the species labels." Which statement correctly describes what the clustering run was given?
 
-A) Supervised learning trains on examples with a target; unsupervised learning has none  
-B) Supervised learning predicts numbers, while unsupervised learning predicts categories  
-C) Supervised learning runs faster, because a labelled dataset needs fewer passes  
-D) Supervised learning uses neural networks, and unsupervised learning uses clustering  
+A) It received the 4 measurements plus the species column, which is why cluster 1 lines up with setosa so exactly  
+B) It received the 4 measurements per flower; the species column stayed hidden and was brought back afterwards to score the clusters  
+C) It received the measurements and predicted a species category for each flower, so it was a classification model like the biopsy one  
+D) It received the measurements and the labels but ignored them to finish faster, because fits without labels take fewer passes  
 
 ---
 
 ### Question 8
 
-A triage knowledge base holds 4,000 recorded patient facts and 300 rules. A clinician needs one answer: *should Patient 7 be flagged for sepsis?* Which inference strategy fits this request, and why?
+In the Unit 2 expert-system cell, three recorded observations about `Patient1` and two rules went in, and the run printed:
 
-A) Forward chaining: firing the rules in the order they were written is what makes a conclusion sound  
-B) Backward chaining: it starts from this one goal and expands just the rules that bear on the case  
-C) Backward chaining: it can withdraw a conclusion when a later fact turns out to contradict it  
-D) Forward chaining: it derives the consequences of the 4,000 facts, and this answer is among them  
+```
+   BEFORE Forward Chaining:
+      Facts: 3
+
+  ➕ Added: Fact(Patient1, likely_has, Flu)
+   ✅ Applied rule: Flu Diagnosis Rule
+  ➕ Added: Fact(Patient1, recommend, Rest)
+   ✅ Applied rule: Flu Treatment Rule
+
+✅ Forward chaining complete! (2 iterations)
+   (Stopped because no more new facts can be derived)
+
+   AFTER Forward Chaining:
+      Facts: 5
+```
+
+A clinic now wants the system to run with no particular question in mind: *each time a nurse records a new observation, surface whatever recommendations now follow for that patient.* Which chaining direction suits that job, and what in the printout shows why?
+
+A) Forward chaining: data-driven, firing whichever rules the recorded facts satisfy until a pass adds no new fact — the loop that stopped above after 2 iterations  
+B) Forward chaining: the Flu Diagnosis Rule was entered before the Flu Treatment Rule, and firing rules in the order they were written is what keeps the chain valid  
+C) Backward chaining: it would prove `recommend Rest` for one patient at a time, and a focused proof costs less than deriving facts even when no goal has been named  
+D) Backward chaining: if a later observation contradicts `likely_has Flu`, it can take back the `Rest` recommendation, which a forward chainer has no way to do  
 
 ---
 
 ### Question 9
 
-You must compute two figures from a 40 GB `sales.csv` on a laptop with 16 GB of RAM, using `pd.read_csv(..., chunksize=...)`: **(i)** the mean `amount` per `category`, and **(ii)** the median `amount` over the whole file. Which statement describes what one chunked pass can give you?
+The Unit 5 chunking lesson streamed the **14,015**-flow sample in **10 chunks of 1,500** rows (the last chunk held **515**) and printed a global mean of **6.84** forward packets per flow from a running total of **95,877** packets. A colleague wants two further figures from that same single pass: **(a)** the largest `Flow Duration` recorded for each `Label`, and **(b)** the quartiles of `Flow Duration` across the whole file. Which of the two can one chunked pass deliver exactly, and how?
 
-A) (i) exactly, by carrying a running sum and count per category; (ii) exactly, by taking one median per chunk and weighting those by chunk size  
-B) (i) exactly, by averaging the per-chunk category means at the end; (ii) exactly, because the median of the per-chunk medians is the file's median  
-C) (i) and (ii) approximately at best: combining across chunks assumes equal chunk sizes, and the last chunk holds fewer rows  
-D) (i) exactly, by carrying a running sum and count per category; (ii) not from one pass — a median needs all the values at once  
+A) (a) exactly, by keeping per-chunk maxima for each label; (b) exactly, by computing the quartiles of each chunk and weighting the ten results by chunk size so that the 515-row final chunk counts for less  
+B) (a) approximately at best, because a rare label such as Heartbleed may fall inside a single chunk and its maximum is then compared against no other chunk; (b) exactly, by taking the quartiles of the per-chunk quartiles  
+C) Neither exactly: an uneven final chunk of 515 rows breaks any statistic merged across chunks, so both need the file in memory at once, as the lesson's 1.3 MB measurement did  
+D) (a) exactly, by keeping each label's largest value seen so far and updating it per chunk; (b) not from one pass, since quartiles are rank statistics that need the whole ordering, so use t-digest or a real engine  
 
 ---
 
 ### Question 10
 
-A global SHAP chart reports a mean |SHAP| of **0.204** for the feature `is_female`. Computed *within* ticket class, the same quantity is **0.300** in second class and **0.163** in third class. A regulator asks how much the model relies on sex when it decides about **third-class** passengers. What is the correct response?
+A colleague drafts one line for the model card: "mean |SHAP| for `is_female` is **2.2×** that of the next feature (`Fare`), so the model's reliance on sex is uniform across passengers." You recompute the same quantity *within* each ticket class on the **223** held-out passengers. Reliance ranks **2nd class > 1st class > 3rd class**, the highest class is **1.83×** the lowest, and the real women-minus-men survival gap in the manifest ranks the classes in the same order. What should the line say instead?
 
-A) Report 0.204, since it rests on far more data and is the more reliable estimate  
-B) Report 0.300 from second class, since a regulator should see the largest reliance on sex  
-C) Report 0.163, and state that the global 0.204 in fact describes none of the classes  
-D) Report that SHAP explains single predictions, so a per-class average is not usable here  
+A) Reliance on sex is heterogeneous, 1.83× between the most- and least-affected class, so each class gets its own figure and the 2.2× ratio is labelled an average, not a per-passenger fact  
+B) Keep the 2.2× line exactly as written: the class ranking matches the real survival gap, which shows the global figure tracks the historical data correctly and needs no caveat about subgroups  
+C) Replace it with the figure for the class where reliance is strongest, since a model card should disclose the worst case the model exhibits rather than an average  
+D) Drop the SHAP figures: with 223 test passengers split three ways the per-class means are too thin to report, and a local waterfall for one passenger belongs there instead  
 
 ---

@@ -11,12 +11,12 @@
 
 ### Question 1
 
-You must extract PERSON, ORG and DATE mentions from 50,000 English news articles, on a CPU-only server, with **no labelled data**. Which tool from Course 07 does the job with the least work?
+An investigative newsroom has inherited an English-language document leak of the kind that opened Unit 3. No file has been annotated, the only machine is a laptop, and the editors want, for each file, the people, companies and dates it names. Which approach from this course gets there with the least work?
 
-A) `TfidfVectorizer` with `MultinomialNB`, trained on the 50,000 articles  
-B) spaCy's `en_core_web_sm` pipeline, whose NER already tags these entity types  
-C) A local GPT-2 text-generation pipeline, prompted to list the entities in each article  
-D) `AutoModelForSequenceClassification` from Hugging Face, fine-tuned on the articles  
+A) Vectorise the files with TF-IDF and fit `MultinomialNB`, treating each file as one document to be labelled  
+B) Run `en_core_web_sm` over each file and read `doc.ents`, the pretrained NER that tagged 12 spans in the sample paragraph  
+C) Prompt the local GPT-2 text-generation pipeline from Unit 4 to write out the names it notices in each file  
+D) Fine-tune `AutoModelForSequenceClassification` from Hugging Face on the leaked files so that it learns the newsroom's own entity types  
 
 ---
 
@@ -33,72 +33,95 @@ D) One vector is about twice the length of the other, since cosine similarity co
 
 ### Question 3
 
-Which group lists three methods that can serve as the **classifier** in a text-classification pipeline?
+Unit 3's pipeline was `TfidfVectorizer(stop_words="english")` feeding `MultinomialNB()`. A teammate wants to replace the second stage and still get a *positive* or *negative* label for each of the 1,000 held-out reviews. Which replacement still does that job?
 
-A) TF-IDF, bag-of-words, Word2Vec  
-B) Tokenization, stemming and lemmatization  
-C) K-Means clustering, PCA, t-SNE  
-D) Naive Bayes, Logistic Regression, SVM  
+A) A Porter stemmer applied to each review before its text reaches the TF-IDF vectorizer  
+B) A second `TfidfVectorizer` with a larger vocabulary, run on the output of the first one  
+C) K-Means with two clusters, fitted on the same TF-IDF rows without ever looking at the review labels  
+D) `LogisticRegression(max_iter=1000)`, fitted on the same 3,000 TF-IDF rows and their labels  
 
 ---
 
 ### Question 4
 
-In Course 05 Unit 5 you measured pandas against Dask on the same 4.3 MB file. pandas ran the groupby in 0.0007 s against Dask's 0.0146 s, and pandas also won the whole job end to end: 0.01 s against 0.02 s. Given that measurement, what does a scaling tool such as Dask, PySpark or RAPIDS actually buy you?
+The Dask lesson's per-operation table on the 14,015-flow CIC-IDS2017 sample reads:
 
-A) Handling data that will not fit in one machine's memory, because the engine works over partitions instead of materialising the whole file  
-B) Reducing wall-clock time on a job whose data already fits in memory, because the partitions are scheduled in parallel across the available cores  
-C) Improving data quality, because an engine that partitions a file also validates and repairs the records as it reads them  
-D) Lowering total cost, because a cluster of small commodity machines comes out cheaper than one machine with more memory  
+```
+Filter   pandas 0.0005 s | Dask 0.0105 s -> faster here: pandas
+Sort     pandas 0.0007 s | Dask 0.0094 s -> faster here: pandas
+```
+
+Its closing note adds that pandas was only in the race because the code read **5 of the file's 79 columns**, and that the 708 MB original is about **165x** this sample. A teammate reads the table as proof that Dask is simply a slower pandas. Which conclusion do the printed timings and the note together support?
+
+A) Dask lost because 14,015 rows are too few to spread across cores; with more cores on the same sample, parallel partitions would pull the 0.0105 s filter below pandas's 0.0005 s  
+B) Dask lost on filter and sort but gains on operations that move rows between partitions, such as a merge or a high-cardinality groupby, so the ranking depends on which operation you time  
+C) Dask lost because reading 5 columns is cheap; requesting the full 79 would let Dask parse the columns in parallel and overtake pandas even on this sample  
+D) Dask's case is size, not speed: once a file is too big to materialise, `dd.read_csv` still works partition by partition where `pd.read_csv` fails, and this sample cannot show that  
 
 ---
 
 ### Question 5
 
-In Course 05 Unit 5, `dd.read_csv` on the 4.3 MB sample returned in 0.003 s reporting 4 partitions of 1 MB each, and `df['Flow Duration'].mean()` then printed a `dask_expr` object instead of a number. It took a `.compute()` call to produce 15,409,254.17 — the same value pandas gave. What did Dask actually do?
+In the same Dask lesson two consecutive calls behaved differently. `df_dask.head()` printed five real BENIGN flows straight away, but `df_dask['Flow Duration'].mean()` printed
 
-A) The 0.003 s read the file into four partitions; `mean()` returned an object because each of those partitions holds its own mean, and `.compute()` averages the four into the value shown  
-B) Almost nothing had happened yet: `dd.read_csv` inferred the schema and stopped there, and `mean()` added a node to a task graph that `.compute()` then ran over the four partitions  
-C) `mean()` returned an object because 4.3 MB exceeds the memory Dask allows per partition, so `.compute()` spills the partitions to disk and reads them back in order  
-D) The 0.003 s read the file into four partitions; `mean()` returned an object because Dask types its results lazily, and `.compute()` casts that object to float64  
+```
+<dask_expr.expr.Scalar: expr=(...)['Flow Duration'].mean(), dtype=float64>
+   ^ that is a task graph, not a number
+```
+
+For comparison, `pd.read_csv` had already returned in **0.01 s** with all **14,015** rows in memory. Why did `head()` hand back rows while `mean()` handed back an object?
+
+A) `head()` needs the first partition alone, so Dask reads just that one and returns real rows; `mean()` needs each of the four partitions, so it stays a graph node until `.compute()` runs it  
+B) `head()` is served from rows that `dd.read_csv` loaded during its 0.003 s open; `mean()` ignores those rows because a Scalar result is recomputed from disk on each `.compute()`  
+C) `head()` is not a reduction, so it returns a pandas object; `mean()` is a reduction whose value has been computed but is stored as a Scalar until `.compute()` casts it to float64  
+D) `head()` fits inside Dask's per-partition memory budget, so it runs at once; a mean across four 1 MB partitions would exceed that budget, so Dask defers it until it can spill partitions to disk  
 
 ---
 
 ### Question 6
 
-Your pipeline's `groupby` is saturating a single CPU core, and the machine has an NVIDIA GPU. Which Course 05 tool runs the same pandas-style DataFrame operations on that GPU with essentially unchanged code, and by what mechanism?
+The Unit 1 cuDF lesson could not run its GPU cells; it printed `cuDF NOT available on this machine (no NVIDIA GPU / RAPIDS not installed)` and showed this reference code instead:
 
-A) Numba, because its `@jit` decorator compiles a pandas `groupby` call into a CUDA kernel  
-B) Dask, because it dispatches its DataFrame partitions to the GPU whenever one is present  
-C) PySpark, because its executors move DataFrame operations onto the GPU when the cluster has one  
-D) cuDF, because it re-implements the pandas DataFrame API, method for method, on top of CUDA  
+```
+df_cudf = cudf.from_pandas(df_pandas)             # move the same real frame to the GPU
+df_cudf.groupby('label')['flow_duration'].mean()  # same groupby syntax
+```
+
+On the CPU the groupby + sum + mean took **0.001 s** on **14,015** rows, while reading the file took **0.012 s**. A classmate on a Colab GPU runtime runs the two lines above and they work without edits. What makes the unchanged `groupby` line execute on the GPU?
+
+A) A GPU runtime lets the ordinary pandas library execute on the GPU, so the `from_pandas` line is cosmetic and the unchanged pandas code would have been accelerated there anyway  
+B) cuDF re-implements the pandas DataFrame API method for method on CUDA; `from_pandas` copies the frame into GPU memory and the familiar method names then execute there  
+C) Dask's scheduler notices the attached GPU and sends the groupby's partitions to it; cuDF is simply the name those partitions take once on the device  
+D) Numba's `@jit` is applied inside cuDF to compile each pandas method into a CUDA kernel at call time, so the method names stay put while each call is compiled first  
 
 ---
 
 ### Question 7
 
-Course 03 Unit 1 computed the same two-layer transformation of the same data two ways: Route A as `(X @ W1) @ W2`, using 8,510,592 scalar multiplications, and Route B as `X @ (W1 @ W2)`, using 1,191,040. The largest disagreement between the two outputs was 1.33e-14. What does this establish about a two-layer network with no activation function between the layers?
+The matrix-operations lesson redraws its fusion experiment on the 1,797 mean-centred digit images and adds a third route, `relu(X @ W1) @ W2`, with a ReLU between the two layers. The printed reading of the figure is:
 
-A) Route B is cheaper because it drops the hidden layer, so it returns an approximation  
-B) The 1.33e-14 disagreement shows the two routes compute different functions, so the order the products are taken in matters  
-C) The two layers can be replaced by one layer with weight matrix `W1 @ W2` without changing the function computed  
-D) The second layer re-weights the first layer's outputs, so stacking the two adds expressive power a single layer lacks  
+```
+Blue points (no activation): 2.0e-14 is the largest amount any of the 17,970 output numbers differs from the fused one-layer network.
+Orange points (ReLU inserted): up to 11.8 away from the diagonal, on outputs that span roughly -19 to +18.
+```
+
+A classmate argues that the ReLU is a minor numerical detail and that the real lesson is which bracketing is cheaper. Which reading of these two printed gaps is correct?
+
+A) Both gaps are rounding noise; the ReLU route sits further off because `max()` adds another rounded operation per entry  
+B) The 2.0e-14 gap shows the layer-by-layer route drifts from the fused one, so even without a ReLU the two layers compute a slightly different function  
+C) The 2.0e-14 gap says the two linear routes are one function; the 11.8 gap says the ReLU made a genuinely different model  
+D) The orange points leave the diagonal because the digits were mean-centred, not because of the ReLU; on raw pixels the same ReLU would spread them as far  
 
 ---
 
 ### Question 8
 
-On the 50-state USArrests data (Murder, Assault), Course 03 Unit 1 eigen-decomposed the covariance matrix twice.
+The eigenvalues lesson notes that the raw USArrests features live on very different ranges — Murder spans 0.8–17.4 and Assault 45–337 arrests per 100,000 — and its figure note says that on raw units PC1 'points almost straight up: 99.8% of it is the Assault axis'. After standardizing, the printed feature variances are Murder = 1.02 and Assault = 1.02, and PC2 keeps 9.91% of the variance. A colleague wants to send the raw-units decomposition to a state governor because 'it explains far more of the variance'. Why is the standardized run the one to report?
 
-- **Standardized:** eigenvalues 1.8019 and 0.1981; PC1 = +0.707×Murder +0.707×Assault; PC1 explains 90.09% of the variance.
-- **Raw units:** feature variances Murder 18.97 and Assault 6945.17; PC1 = +0.042×Murder +0.999×Assault; PC1 explains 99.90% of the variance.
-
-Why is the raw-units 99.90% the less informative of the two figures?
-
-A) On raw units PC1 follows Assault, whose variance is 6945 against Murder's 19, so it reports the measuring scale  
-B) The raw-units run keeps one component while the standardized run keeps two, so the totals differ  
-C) Standardizing increases the variance available to PC1, so 90.09% of standardized variance carries more information than the raw 99.90%  
-D) A first component above 99% means the raw covariance matrix is singular, which makes its second eigenvalue unreliable  
+A) Standardizing gives both features a variance of 1.02, which adds spread for PC1 to explain that the raw run lacked  
+B) The 9.91% left to PC2 after standardizing shows the raw run had dropped its second component and summed over a single eigenvalue  
+C) Because 99.8% of raw PC1 lies along Assault, the raw covariance matrix is close to singular and its eigenvalues cannot be trusted  
+D) On raw units PC1 is nearly the Assault column renamed, so its variance figure describes the recording scale, not a crime pattern  
 
 ---
 
@@ -115,20 +138,22 @@ D) An activation function applied over a graph of inputs to produce one scalar o
 
 ### Question 10
 
-Course 02 Unit 1 ran A\* with the heuristic `h(n) = |ord(n) - ord(goal)|` and checked it against the true remaining cost `h*`:
+The Unit 1 search notebook also printed the order in which A\* popped nodes on the same graph, with the `f = g + h` each one carried:
 
 ```
-   A: h=6, h*=3  ->  OVERESTIMATES by 3
-   B: h=5, h*=2  ->  OVERESTIMATES by 3
-   E: h=2, h*=1  ->  OVERESTIMATES by 1
-   G: h=0, h*=0  ->  OK
+   #1  A   f=6  (g=0 + h=6)
+   #2  C   f=5  (g=1 + h=4)
+   #3  F   f=3  (g=2 + h=1)
+   #4  B   f=6  (g=1 + h=5)
+   #5  E   f=4  (g=2 + h=2)
+   #6  G   f=3  (g=3 + h=0)
 ```
 
-A\* then returned `A -> B -> E -> G`, which is the shortest path on that graph, having opened 6 of the 7 nodes (BFS opened 7). What does this run establish about the heuristic?
+Its admissibility check also reported `C: h=4, h*=unreachable` and `F: h=1, h*=unreachable` — the branch A\* tried first cannot reach the goal at all, so two of the six expansions went to a dead end before the search came back to `B`. A student concludes: *"that wasted detour is what shows the heuristic is inadmissible."* How should the detour be read?
 
-A) h is admissible, because the path A\* returned is in fact the shortest one available on this graph  
-B) The overestimates are uniform across nodes, so they cancel and optimality still holds  
-C) h is inadmissible, and that is what made A\* open 6 nodes where BFS had to open 7  
-D) h overestimates, so the optimality proof did not apply — the shortest path came back anyway  
+A) The detour is the evidence: an admissible heuristic steers A* straight toward the goal, so expanding a dead end means h must have overestimated somewhere  
+B) The detour is not the evidence; h is inadmissible because the node-by-node check finds h above h* at A, B and E, whichever route the search took first  
+C) The detour shows h behaved admissibly: C was popped at f=5 ahead of B at f=6, which is just the lowest-f-first order the optimality proof relies on  
+D) The detour is beside the point because C and F have h*=unreachable, which makes h <= h* hold on that branch and settles the question in h's favour  
 
 ---

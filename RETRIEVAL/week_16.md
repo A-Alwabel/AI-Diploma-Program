@@ -11,12 +11,12 @@
 
 ### Question 1
 
-You must compute two figures from a 40 GB sales.csv on a laptop with 16 GB of RAM, using pd.read_csv(..., chunksize=...): (i) the mean amount per category, and (ii) the median amount over the whole file. Which statement correctly describes what one chunked pass can give you, and how?
+The Unit 5 chunking lesson streamed the **14,015**-flow sample in **10 chunks of 1,500** rows (the last chunk held **515**) and printed a global mean of **6.84** forward packets per flow from a running total of **95,877** packets. A colleague wants two further figures from that same single pass: **(a)** the largest `Flow Duration` recorded for each `Label`, and **(b)** the quartiles of `Flow Duration` across the whole file. Which of the two can one chunked pass deliver exactly, and how?
 
-A) (i) exactly, by carrying a running sum and count per category; (ii) exactly, by taking one median per chunk and averaging those in proportion to chunk size  
-B) (i) exactly, by averaging the per-chunk category means at the end; (ii) exactly, because the median of the per-chunk medians is the median of the file  
-C) (i) exactly, by carrying a running sum and a running count per category; (ii) not from one chunked pass - a median needs all the values at once  
-D) (i) and (ii) approximately: combining across chunks assumes the chunks hold equal numbers of rows, and here the last chunk holds fewer  
+A) (a) exactly, by keeping each label's largest value seen so far and updating it per chunk; (b) not from one pass, since quartiles are rank statistics that need the whole ordering, so use t-digest or a real engine  
+B) (a) exactly, by keeping per-chunk maxima for each label; (b) exactly, by computing the quartiles of each chunk and weighting the ten results by chunk size so that the 515-row final chunk counts for less  
+C) (a) approximately at best, because a rare label such as Heartbleed may fall inside a single chunk and its maximum is then compared against no other chunk; (b) exactly, by taking the quartiles of the per-chunk quartiles  
+D) Neither exactly: an uneven final chunk of 515 rows breaks any statistic merged across chunks, so both need the file in memory at once, as the lesson's 1.3 MB measurement did  
 
 ---
 
@@ -99,17 +99,12 @@ D) A search procedure that expands the fact base outward from the start node
 
 ### Question 9
 
-Course 03 eigen-decomposed the covariance matrix of the 50-state USArrests data (Murder, Assault) twice:
+The eigenvalues lesson notes that the raw USArrests features live on very different ranges — Murder spans 0.8–17.4 and Assault 45–337 arrests per 100,000 — and its figure note says that on raw units PC1 'points almost straight up: 99.8% of it is the Assault axis'. After standardizing, the printed feature variances are Murder = 1.02 and Assault = 1.02, and PC2 keeps 9.91% of the variance. A colleague wants to send the raw-units decomposition to a state governor because 'it explains far more of the variance'. Why is the standardized run the one to report?
 
-- Standardized: eigenvalues 1.8019 and 0.1981; PC1 = +0.707 x Murder + 0.707 x Assault; PC1 explains 90.09% of the variance.
-- Raw units: feature variances Murder 18.97 and Assault 6945.17; PC1 = +0.042 x Murder + 0.999 x Assault; PC1 explains 99.90% of the variance.
-
-Why is the raw-units 99.90% the less informative of the two figures?
-
-A) On raw units PC1 follows Assault, whose variance is 6945 against Murder's 19, so the component reports the measuring scale  
-B) The raw-units run keeps one component while the standardized run keeps two, so the two percentages count different totals  
-C) Standardizing increases the variance available to PC1, so 90.09% of standardized variance carries more information than the raw 99.90%  
-D) A first component above 99% means the raw covariance matrix is singular, which makes its second eigenvalue unreliable  
+A) Standardizing gives both features a variance of 1.02, which adds spread for PC1 to explain that the raw run lacked  
+B) The 9.91% left to PC2 after standardizing shows the raw run had dropped its second component and summed over a single eigenvalue  
+C) On raw units PC1 is nearly the Assault column renamed, so its variance figure describes the recording scale, not a crime pattern  
+D) Because 99.8% of raw PC1 lies along Assault, the raw covariance matrix is close to singular and its eigenvalues cannot be trusted  
 
 ---
 

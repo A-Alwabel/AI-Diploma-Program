@@ -11,12 +11,12 @@
 
 ### Question 1
 
-Unit 5 draws a sample of n = 100 from the 714 recorded Titanic passenger ages and prints a 95% confidence interval of [26.8815, 32.7235] for the mean age. Repeating the whole study 2000 times, 96.4% of the intervals built this way contained the true population mean of 29.6991. Which statement do these results support?
+From the same sample of 100 recorded Titanic ages, the confidence-interval lesson prints a 90% interval of [27.3582, 32.2468] (width 4.8886) and a 99% interval of [25.9361, 33.6689] (width 7.7327). When it redoes the whole study 2000 times, 92.5% of the 90% intervals and 99.6% of the 99% intervals capture the population mean, and in the panel that draws 100 of those repeats, 3 intervals are shown in crimson. A student writes: 'There is a 99% chance the true mean age is between 25.9361 and 33.6689.' Which statement about that sentence is right?
 
-A) There is a 95% probability that the true mean age lies inside [26.88, 32.72]  
-B) Raising the level to 99% would narrow the interval, because greater confidence pins the true mean down more tightly  
-C) The 95% is a hit rate of the procedure across repeated studies, not a probability attached to this interval  
-D) About 95% of the 714 recorded passenger ages fall inside [26.88, 32.72], which is the quantity the level counts  
+A) Acceptable: 99.6% of the 2000 repeated intervals held the mean, so roughly 99% is also the right probability for this one  
+B) Wrong: the level counts recorded ages, so the sentence should say that 99% of the 714 ages lie between 25.9361 and 33.6689  
+C) Wrong: the 99% is the capture rate of the procedure across repeats — measured here as 99.6% — not the odds for this one interval  
+D) Acceptable, and understated: the wider 99% interval (7.7327 against 4.8886) carries more knowledge about the mean, which is why its coverage rose to 99.6%  
 
 ---
 
@@ -66,22 +66,22 @@ D) Dijkstra's algorithm, since a fewest-edge result needs edge weights and a pri
 
 ### Question 6
 
-The Unit 4 notebook runs gradient descent on `f(x) = x**2` from `x = 5.0`, changing only the learning rate:
+Under its learning-rate table, the Unit 4 notebook printed where each gradient-descent run on `f(x) = x²` stood after 25 steps from `x = 5.0`:
 
 ```
-learning rate     x @ step 0   x @ step 3   x @ step 6  x @ step 12  x @ step 25   verdict
-0.01                  5.0000       4.7060       4.4292       3.9236       3.0173   too small
-0.10                  5.0000       2.5600       1.3107       0.3436       0.0189   just right
-0.95                  5.0000      -3.6450       2.6572       1.4121      -0.3589   too big
-1.10                  5.0000      -8.6400      14.9299      44.5805    -476.9810   way too big
+Distance from the optimum after 25 steps:
+   lr = 0.01  |x| =     3.0173   f(x) =   9.1042e+00   (too small)
+   lr = 0.1   |x| =     0.0189   f(x) =   3.5681e-04   (just right)
+   lr = 0.95  |x| =     0.3589   f(x) =   1.2884e-01   (too big)
+   lr = 1.1   |x| =   476.9810   f(x) =   2.2751e+05   (way too big)
 ```
 
-A student concludes: "a learning rate that overshoots the minimum will diverge." Which row refutes that, and how?
+A student disputes the two bottom verdicts: *"0.95 and 1.1 both jump across the minimum on every step, so they are the same failure and both deserve 'way too big'."* What in this printout separates the two rows?
 
-A) lr = 0.01: it stays on one side of the minimum, so overshoot is not required in order to converge  
-B) lr = 0.95: it lands beyond the minimum (x = -3.65 at step 3) and still closes in to |x| = 0.36  
-C) lr = 1.10: its sign alternates, showing that overshoot and divergence are the same behaviour  
-D) lr = 0.10: it reaches x = 0.019 without overshooting, so overshoot is what slows a run down  
+A) The labels alone: both |x| values belong to runs that crossed the minimum on each step, so the printout gives the student no numerical ground for keeping the two verdicts apart  
+B) Which way |x| moved: 0.95 ends 0.3589 away, nearer than its start at 5.0, while 1.1 ends 476.9810 away — crossing while shrinking converges, crossing while growing diverges  
+C) The f(x) column read against a cut-off: 1.2884e-01 is below 1 and 2.2751e+05 is far above it, and a cost under 1 is the notebook's working test for having converged  
+D) The 0.1 row: its 0.0189 is the one distance that has essentially reached zero, so a run still 0.3589 away after 25 steps has failed in the same way 1.1 did  
 
 ---
 

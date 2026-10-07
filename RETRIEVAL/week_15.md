@@ -11,23 +11,37 @@
 
 ### Question 1
 
-In Course 05 Unit 5 you measured pandas against Dask on the same 4.3 MB file. pandas ran the groupby in 0.0007 s against Dask's 0.0146 s, and pandas also won the whole job end to end: 0.01 s against 0.02 s. Given that measurement, what does a scaling tool such as Dask, PySpark or RAPIDS actually buy you?
+The Dask lesson's per-operation table on the 14,015-flow CIC-IDS2017 sample reads:
 
-A) Handling data that will not fit in one machine's memory, because the engine works over partitions rather than the whole file  
-B) Reducing wall-clock time on a job whose data already fits in memory, because the partitions are scheduled in parallel across the cores  
-C) Improving data quality, because an engine that partitions a file also validates and repairs the records as it reads them  
-D) Lowering total cost, because a cluster of small commodity machines comes out cheaper than one machine with more memory  
+```
+Filter   pandas 0.0005 s | Dask 0.0105 s -> faster here: pandas
+Sort     pandas 0.0007 s | Dask 0.0094 s -> faster here: pandas
+```
+
+Its closing note adds that pandas was only in the race because the code read **5 of the file's 79 columns**, and that the 708 MB original is about **165x** this sample. A teammate reads the table as proof that Dask is simply a slower pandas. Which conclusion do the printed timings and the note together support?
+
+A) Dask's case is size, not speed: once a file is too big to materialise, `dd.read_csv` still works partition by partition where `pd.read_csv` fails, and this sample cannot show that  
+B) Dask lost because 14,015 rows are too few to spread across cores; with more cores on the same sample, parallel partitions would pull the 0.0105 s filter below pandas's 0.0005 s  
+C) Dask lost on filter and sort but gains on operations that move rows between partitions, such as a merge or a high-cardinality groupby, so the ranking depends on which operation you time  
+D) Dask lost because reading 5 columns is cheap; requesting the full 79 would let Dask parse the columns in parallel and overtake pandas even on this sample  
 
 ---
 
 ### Question 2
 
-In Course 05 Unit 5, dd.read_csv on the 4.3 MB sample returned in 0.003 s reporting 4 partitions of 1 MB each, and df['Flow Duration'].mean() then printed a dask_expr object instead of a number. It took a .compute() call to produce 15,409,254.17 - the same value pandas gave. What did Dask actually do?
+In the same Dask lesson two consecutive calls behaved differently. `df_dask.head()` printed five real BENIGN flows straight away, but `df_dask['Flow Duration'].mean()` printed
 
-A) The 0.003 s read the file into four partitions; mean() returned an object because each partition holds its own mean, which .compute() averages  
-B) Almost nothing had happened yet: dd.read_csv inferred the schema and stopped there, and mean() added a node to a task graph that .compute() then ran  
-C) mean() returned an object because 4.3 MB exceeds the memory Dask allows per partition, so .compute() spills the partitions to disk and reads them back  
-D) The 0.003 s read the file into four partitions; mean() returned an object because Dask types results lazily, and .compute() casts it  
+```
+<dask_expr.expr.Scalar: expr=(...)['Flow Duration'].mean(), dtype=float64>
+   ^ that is a task graph, not a number
+```
+
+For comparison, `pd.read_csv` had already returned in **0.01 s** with all **14,015** rows in memory. Why did `head()` hand back rows while `mean()` handed back an object?
+
+A) `head()` is served from rows that `dd.read_csv` loaded during its 0.003 s open; `mean()` ignores those rows because a Scalar result is recomputed from disk on each `.compute()`  
+B) `head()` is not a reduction, so it returns a pandas object; `mean()` is a reduction whose value has been computed but is stored as a Scalar until `.compute()` casts it to float64  
+C) `head()` needs the first partition alone, so Dask reads just that one and returns real rows; `mean()` needs each of the four partitions, so it stays a graph node until `.compute()` runs it  
+D) `head()` fits inside Dask's per-partition memory budget, so it runs at once; a mean across four 1 MB partitions would exceed that budget, so Dask defers it until it can spill partitions to disk  
 
 ---
 
@@ -44,49 +58,55 @@ D) It balances the classes, so the training half and the testing half hold equal
 
 ### Question 4
 
-Course 04 Unit 3's KNN lesson fits the same model twice on the same 313 real card transactions. Without scaling it scores accuracy 0.9048; with StandardScaler it scores 0.9683. The lesson also prints that the Time column alone contributes 99.9978% of the raw squared distance between two transactions (Time std 46,331.2, against a median feature std of 1.302). What does that 99.9978% figure explain?
+Unit 3's KNN lesson splits its card transactions into 250 training and 63 test rows and prints, before any scaling:
 
-A) Unscaled, 'nearest neighbour' means roughly 'happened at a similar moment', so what V1-V28 know is drowned out  
-B) The V1-V28 columns barely vary across these rows, so they contribute almost nothing to the distances the model computes  
-C) Time is the most predictive feature of fraud here, so scaling it down discards the best signal  
-D) StandardScaler dropped Time from the feature set, and removing that one dominant column is what lifted accuracy by 6.35 points  
+```
+Std of first feature (Time): 46331.17
+Std of Amount feature: 215.28
+```
+
+The figure caption adds that on a log axis `Time` stands about four orders of magnitude above the V1–V28 columns, and `Amount` about two. A classmate proposes a shortcut: delete `Time`, skip `StandardScaler`, and fit KNN on the remaining 29 raw columns, "since the one problem column is gone." What does the lesson's evidence say will happen to the distances KNN computes?
+
+A) With `Time` removed the remaining columns sit on comparable scales, so the shortcut does the same job `StandardScaler` would have done  
+B) Dropping `Time` discards the column that dominated the distance, which is the model's strongest fraud signal, so the fit gets worse for a different reason  
+C) KNN compares the ranking of distances rather than their raw size, so a column's standard deviation cannot change which rows come out nearest  
+D) `Amount` inherits the role `Time` played: its spread sits about two orders of magnitude above V1–V28, so it now decides who counts as a neighbour  
 
 ---
 
 ### Question 5
 
-Course 04 Unit 4 clusters 1,994 communities on 4 scaled crime features and prints:
+Unit 4's K-Means sweep over the 1,994 scaled communities prints, among its rows:
 
 ```
-K=2   Inertia=5347.86   Silhouette=0.3967       K=6    Inertia=2398.46   Silhouette=0.2954
-K=3   Inertia=4041.38   Silhouette=0.3134       K=8    Inertia=1970.75   Silhouette=0.3007
-K=4   Inertia=3124.93   Silhouette=0.3153       K=10   Inertia=1720.82   Silhouette=0.2941
+K=7: Inertia=2145.23, Silhouette=0.2970
+K=9: Inertia=1824.09, Silhouette=0.3008
 ```
 
-The elbow falls at K = 4; the silhouette peaks at K = 2; the lesson itself clusters at K = 3. How should K be settled?
+A colleague picks K = 9: "it beats K = 7 on silhouette *and* on inertia - for once both criteria agree, so the data has decided." The lesson's own elbow landed on K = 4, and the lesson clustered at K = 3. What is the right response?
 
-A) Take K = 10: it posts the lowest inertia anywhere in the table, and lower inertia means tighter clusters  
-B) Take K = 2: the silhouette is the score that measures separation, so it settles the question  
-C) The disagreement is a symptom of unscaled features; rescaling the four crime columns would make the criteria converge  
-D) The two criteria measure different things and disagree, so K is settled by what the clusters are for  
+A) Inertia falls with each added cluster by construction, and a third-decimal silhouette bump is no ranking, so K is still settled by what the clusters are for  
+B) The colleague is right: when the inertia criterion and the silhouette criterion point the same way, the data has chosen K and no judgement is needed  
+C) K = 2 should stand: its silhouette of 0.3967 is the highest in the sweep, and the global peak outranks any comparison between neighbouring rows  
+D) K = 4 should stand: the elbow was located geometrically, from the chord between the first and last points of the curve, which makes it a measurement rather than a judgement  
 
 ---
 
 ### Question 6
 
-The same lesson refits the model with class_weight='balanced' and prints the change on the test set:
+The same lesson prints two different ways of pushing the fraud model to flag more of the 3,200 test transactions - lowering the cut on the original model, and refitting with `class_weight='balanced'`:
 
 ```
-Fraud caught (TP):   3 -> 3       Fraud missed (FN):   3 -> 3
-False alarms (FP):   3 -> 18      Legit cleared (TN):  3191 -> 3176
+cut 0.1 (original model):   caught 4   missed 2   false alarms 6    recall 0.6667   precision 0.4000
+class_weight='balanced':    caught 3   missed 3   false alarms 18   recall 0.5000   precision 0.1429
 ```
 
-Precision 0.5000 -> 0.1429, recall 0.5000 -> 0.5000, accuracy 0.9981 -> 0.9934. What should the analyst conclude?
+A colleague reads the second line and concludes that the weighted refit is "the more aggressive model, so it must be the one catching more fraud." What do the two lines establish?
 
-A) Recall did not move because the weighting was too weak; a larger manual weight on class 1 would lift it  
-B) Precision falling from 0.50 to 0.14 is the signature of a model overfitting the minority class it was weighted towards  
-C) The weighting bought 15 extra false alarms and no extra fraud: it moved the operating point, not the information  
-D) Accuracy fell from 0.9981 to 0.9934, so the balanced model is the worse of the two and should be dropped  
+A) Recall sat at 0.5000 because 'balanced' is a mild preset; a hand-set weight on class 1 would carry recall past the 0.6667 the lower cut reached  
+B) Flagging more is not finding more: 18 alarms bought 3 frauds where 6 alarms bought 4, so the weighting moved the operating point without adding signal  
+C) The precision collapse to 0.1429 is the minority class being overfitted by the refit, which the threshold change avoids because the fitted model is left untouched  
+D) Both rows fall below the 0.9981 that labelling each row legitimate scores, so the default 0.5 cut, which matches it, remains the model to keep  
 
 ---
 

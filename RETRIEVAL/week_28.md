@@ -11,34 +11,50 @@
 
 ### Question 1
 
-Unit 1 fits a generative model (Gaussian Naive Bayes) and a discriminative model (logistic regression) to the same two-class dataset. The generative model scores **97.2%** test accuracy; the discriminative model scores **96.1%**. Which conclusion do those two numbers support?
+A teammate reruns Unit 1's side-by-side experiment with a new random seed, and this time **logistic regression edges out Gaussian Naive Bayes** on the held-out split. The team is choosing a model for a spam filter that must also flag mail unlike anything it has seen before, and the teammate says the rerun settles it in favour of logistic regression. Which piece of lesson evidence decides the question?
 
-A) The 1.1-point gap shows generative models classify better, so prefer them whenever accuracy matters  
-B) Logistic regression could generate new samples too, if its decision boundary were inverted into a data distribution  
-C) Accuracy is not what separates the two families — what separates them is that the generative model learns p(x) and can draw new samples from it  
-D) The generative model was bound to win here: p(x|y) turns into a classifier by Bayes' rule, so it carries more information than a bare decision boundary  
+A) The accuracy printout: the model that scores higher on the held-out split has learned the data better, so a rerun that puts logistic regression ahead settles the choice in its favour for this filter as well.  
+B) The right-hand panel: far from its boundary, logistic regression still answers confidently — it stored no picture of where data lives — so an accuracy swing does not make it a model that can flag unfamiliar mail.  
+C) The left-hand panel: the Gaussian model's invented points land on top of the real ones, which shows that a generative model will also be the more accurate classifier once the random seed is held fixed across reruns.  
+D) The probability field in the right-hand panel: an uncertain p(y|x) carries the same information as a low p(x), so logistic regression already flags unfamiliar mail without modelling the data distribution.  
 
 ---
 
 ### Question 2
 
-You are training the GAN from Unit 1. After a few hundred steps the **discriminator's loss has fallen to nearly 0 and stays there**, while the generator's loss climbs. What is happening, and what does it mean for the generator?
+Two loss readouts printed by Unit 1's GAN notebook:
 
-A) The discriminator has saturated — it wins batch after batch — so the gradient reaching G through D vanishes and G stops improving  
-B) Training has converged — a discriminator loss near zero is the equilibrium the adversarial game aims for  
-C) The generator has mode-collapsed onto a single output, and a collapsed generator is what drives the discriminator's loss to zero  
-D) The discriminator has overfitted the real images; the standard fix is to lower the generator's learning rate until the two losses cross  
+```
+2-D toy run   — Final G loss: 0.6610   D loss: 1.3927
+MNIST run     — Epoch 1/5 — D_loss=0.8774  G_loss=1.4142
+                Epoch 5/5 — D_loss=0.5101  G_loss=2.8917
+```
+
+A classmate says the 2-D run is the one in trouble, because its discriminator posts the larger loss. Which reading of the two logs is right?
+
+A) The 2-D run is the one in trouble: a discriminator posting a larger loss than its generator has lost the game and stopped teaching it anything, and the repair is extra D updates per G step until D's loss falls back below G's.  
+B) Both runs are healthy: the MNIST discriminator's falling loss shows it is learning the digits, and a generator loss that climbs to 2.8917 simply means G is now being graded by a stricter judge, which is how it improves.  
+C) The 2-D run sits at the balance point — a D loss near 1.39 means D cannot tell real from fake — while the MNIST trend is the one to watch: D's loss falls as G's rises, and a D that wins outright starves G of gradient.  
+D) The MNIST run has mode-collapsed: a generator loss that climbs while D's falls is the signature of G producing one output over and over, which the discriminator then learns to reject with growing confidence.  
 
 ---
 
 ### Question 3
 
-In the β-VAE experiment (identical data, architecture and epochs, β alone changed), **β = 1** finished at reconstruction **104.6** and KL **20.5**; **β = 4** finished at reconstruction **137.8** and KL **7.2**. You need a VAE for anomaly detection that flags defects by **reconstruction error**. Which run do you ship, and why?
+The β-VAE experiment's per-epoch table (same data, same architecture, same epoch count; β is the one thing that changed):
 
-A) β = 4 — its much lower KL means a latent space closer to N(0, I), and a more regular latent space reconstructs normal inputs more accurately overall  
-B) β = 4 — a higher β disentangles the latent axes, and disentangled axes make anomalies easier to separate  
-C) The two are interchangeable — they differ just in a loss weighting, so their decoders produce equivalent reconstructions  
-D) β = 1 — the detector's signal is reconstruction error, and β = 4 raised it by about 32%, lifting the error floor a small defect has to clear  
+```
+epoch |  recon b=1   KL b=1 |  recon b=4   KL b=4
+    1 |      202.7     10.8 |      219.3      2.7
+    3 |      113.6     19.2 |      146.9      6.3
+```
+
+A product team wants a **design tool with latent sliders** — a user drags latent coordinates and watches the output change. Which run do they take, and on what grounds?
+
+A) β = 1 — its reconstruction is lower at both epochs, and a slider tool is judged on how faithfully each decoded image matches a real digit, so the run with the sharper decoder is clearly the one to put behind the sliders.  
+B) β = 4 — a KL of 6.3 against 19.2 shows that each latent axis now encodes one human-readable factor, so the sliders can be labelled thickness, slant and so on straight from the training run.  
+C) Either run — the sliders act on the decoder, and both decoders saw the same images for the same number of epochs, so dragging a coordinate produces much the same change in each model.  
+D) β = 4 — its KL sits far below β = 1's from the first epoch, so its latent is pressed closer to N(0, I); that regularity is what sliders need, and whether the axes are disentangled is a separate claim to measure.  
 
 ---
 
@@ -77,23 +93,12 @@ D) How much weight a future reward carries against an immediate one, near 0 bein
 
 ### Question 7
 
-Unit 4 ran one classifier on the 569-biopsy breast-cancer data, changing how many principal components it may see, scored throughout by the same 5-fold cross-validation:
+The PCA lesson's first cell prints the explained-variance ratios of the top three components of the standardized 569-biopsy data as 44.3%, 19.0% and 9.4%, and adds that keeping 80% of the variance needs 5 of the 30 components while keeping 95% needs 10. Its cross-validation figure then reports that the classifier's accuracy climbs from 91.2% at k = 1 to 97.4% by k = 5, dips at k = 3, and from k = 5 to k = 30 stays inside a band 0.7 percentage points tall, with its best point at k = 10 (98.07%) just above the 97.89% of the 30 raw features. A colleague applies the rule 'keep 95% of the variance' and so picks k = 10. Which assessment of that rule do the printed figures support?
 
-| components | variance kept | 5-fold accuracy |
-|---|---|---|
-| 1 | 44.3% | 0.9121 |
-| 2 | 63.2% | 0.9578 |
-| 3 | 72.6% | 0.9491 |
-| 5 | 84.7% | 0.9736 |
-| 10 | 95.2% | 0.9807 |
-| 30 | 100.0% | 0.9789 |
-
-The same classifier on all 30 raw features, with no PCA at all, scores **0.9789**. Which conclusion do these numbers support?
-
-A) Each component adds accuracy in proportion to the variance it carries, so keeping all 30 is the best choice  
-B) Accuracy flattens long before variance does — k = 5 already reaches 0.9736 while keeping 84.7% of the variance  
-C) PCA hurt this classifier: the reduced models score below the 0.9789 that the 30 raw features reach on their own  
-D) The dip at k = 3 shows the third component carries no variance, so it should be dropped from the model  
+A) It reached a good k for the wrong reason: the plateau from k = 5 shows the accuracy had flattened long before the variance reached its 95% line  
+B) It is the right rule because accuracy rises with variance kept, which is why the k that reaches 95% of the variance is also the k that scores highest  
+C) It is too generous: the dip at k = 3 shows the third component's 9.4% of variance is harming the classifier, so k should stop at 2  
+D) It is too strict: a reduced model can at best match the 30 raw features, so the 5 components that already keep 80% of the variance are the honest ceiling  
 
 ---
 
@@ -110,22 +115,30 @@ D) Regular Linear Unit - it returns the input unchanged, which keeps the layer's
 
 ### Question 9
 
-Unit 4 measured how much gradient signal survives travelling backwards through a plain RNN with typical weights: about **5×10⁻¹ after 1 step**, **6×10⁻⁶ after 10 steps**, and **7×10⁻³⁰ after 50 steps**. Which conclusion does that measurement support?
+Unit 4 then repeated the gradient measurement along an LSTM's memory lane and printed it beside the plain RNN:
 
-A) The recurrent weights grow exponentially during training, and gradient clipping in transformers is the fix for that  
-B) The hidden state vector is too short to hold a long sentence, which is why transformers use a much longer one  
-C) The signal linking far-apart words dies exponentially with distance; attention links two positions in one step  
-D) The network's accuracy falls as sentences get longer, which is why transformers truncate their inputs to 512 tokens  
+```
+distance k     plain RNN    LSTM b_f=1
+        25      2.41e-15      1.84e-02
+        50      7.33e-30      1.24e-04
+```
+
+At k = 50 the LSTM lane keeps about 2e+25 times more signal than the RNN, yet on the log plot its curve still slopes downward. Which conclusion does this table support?
+
+A) Biasing the forget gate towards 1 has pushed the recurrent weights high enough for the gradient to explode instead — the mirror problem, which gradient clipping is there to handle  
+B) The lane slows the exponential decay of the backward signal but does not stop it; attention removes the distance, putting two far-apart words one step apart  
+C) A surviving signal of 1.24e-04 after 50 steps shows the long-range dependency is now learnable, so the vanishing gradient is a solved problem for LSTMs  
+D) The LSTM's separate cell-state vector has room to store a 50-step sequence that the RNN's hidden state could not hold, which makes this a capacity fix  
 
 ---
 
 ### Question 10
 
-Northpointe showed that COMPAS was **calibrated** — a given risk score meant the same re-offence probability for Black and for white defendants. ProPublica showed that the **false-positive rates differed**: 44.9% for Black defendants against 23.5% for white defendants. Which statement best describes this situation?
+A student reruns the lesson's five-frame storyboard. Both groups are pinned to **PPV = 62%** and **FNR = 28%** in every frame; the white base rate stays at 39% while the Black base rate slides from 39% to 51%. Frame 1 prints a forced false-positive gap of **0.0 points**; frame 5 prints **17.7 points**. The gap ProPublica measured in Broward County was **21.4 points**. What does the storyboard establish?
 
-A) Each side is correct: with different base rates, no classifier is calibrated and holds equal error rates at once  
-B) Northpointe is right and ProPublica is not: a score that means the same thing for both groups is the fairness that counts  
-C) ProPublica measured demographic parity, which is the fairness definition a court would apply to a sentencing tool  
-D) Calibrating the scores separately within each group would let both fairness criteria hold at the same time  
+A) ProPublica's 21.4-point finding is mostly an artefact: a tool pinned to equal PPV treats both groups correctly, so the error-rate critique of COMPAS does not stand  
+B) The gap sits in the base-rate column, so lowering the cut-off for white defendants until their FPR also reads 45.9% would let calibration and equal error rates hold together  
+C) Both camps measured correctly: holding PPV equal while base rates differ forces an FPR gap by arithmetic, so the dispute is which criterion to hold, not who miscounted  
+D) Frame 5 shows a 17.7-point failure of demographic parity, which is the fairness test a court applies, so Northpointe's calibration defence is beside the point  
 
 ---

@@ -11,23 +11,31 @@
 
 ### Question 1
 
-Unit 1 fits a generative model (Gaussian Naive Bayes) and a discriminative model (logistic regression) to the same two-class dataset. The generative model scores **97.2%** test accuracy; the discriminative model scores **96.1%**. Which conclusion do those two numbers support?
+A teammate reruns Unit 1's side-by-side experiment with a new random seed, and this time **logistic regression edges out Gaussian Naive Bayes** on the held-out split. The team is choosing a model for a spam filter that must also flag mail unlike anything it has seen before, and the teammate says the rerun settles it in favour of logistic regression. Which piece of lesson evidence decides the question?
 
-A) The 1.1-point gap shows generative models classify better, so prefer them whenever accuracy matters  
-B) Logistic regression could generate new samples too, if its decision boundary were inverted into a data distribution  
-C) Accuracy is not what separates the two families here — what separates them is that the generative model learns p(x) and can draw new samples from it  
-D) The generative model was bound to win here: p(x|y) turns into a classifier by Bayes' rule, so it carries more information than a bare decision boundary  
+A) The right-hand panel: far from its boundary, logistic regression still answers confidently — it stored no picture of where data lives — so an accuracy swing does not make it a model that can flag unfamiliar mail.  
+B) The accuracy printout: the model that scores higher on the held-out split has learned the data better, so a rerun that puts logistic regression ahead settles the choice in its favour for this filter as well.  
+C) The left-hand panel: the Gaussian model's invented points land on top of the real ones, which shows that a generative model will also be the more accurate classifier once the random seed is held fixed across reruns.  
+D) The probability field in the right-hand panel: an uncertain p(y|x) carries the same information as a low p(x), so logistic regression already flags unfamiliar mail without modelling the data distribution.  
 
 ---
 
 ### Question 2
 
-You are training the GAN from Unit 1. After a few hundred steps the **discriminator's loss has fallen to nearly 0 and stays there**, while the generator's loss climbs. What is happening, and what does it mean for the generator?
+Two loss readouts printed by Unit 1's GAN notebook:
 
-A) Training has converged — a discriminator loss near zero is the equilibrium the adversarial game aims for  
-B) The generator has mode-collapsed onto a single output, and a collapsed generator is what drives the discriminator's loss to zero over the following steps  
-C) The discriminator has overfitted the real images; the standard fix is to lower the generator's learning rate until the two losses cross  
-D) The discriminator has saturated — it wins on each batch — so the gradient that reaches G through D vanishes and the generator stops improving  
+```
+2-D toy run   — Final G loss: 0.6610   D loss: 1.3927
+MNIST run     — Epoch 1/5 — D_loss=0.8774  G_loss=1.4142
+                Epoch 5/5 — D_loss=0.5101  G_loss=2.8917
+```
+
+A classmate says the 2-D run is the one in trouble, because its discriminator posts the larger loss. Which reading of the two logs is right?
+
+A) The 2-D run is the one in trouble: a discriminator posting a larger loss than its generator has lost the game and stopped teaching it anything, and the repair is extra D updates per G step until D's loss falls back below G's.  
+B) Both runs are healthy: the MNIST discriminator's falling loss shows it is learning the digits, and a generator loss that climbs to 2.8917 simply means G is now being graded by a stricter judge, which is how it improves.  
+C) The 2-D run sits at the balance point — a D loss near 1.39 means D cannot tell real from fake — while the MNIST trend is the one to watch: D's loss falls as G's rises, and a D that wins outright starves G of gradient.  
+D) The MNIST run has mode-collapsed: a generator loss that climbs while D's falls is the signature of G producing one output over and over, which the discriminator then learns to reject with growing confidence.  
 
 ---
 
@@ -44,12 +52,12 @@ D) Sample efficiency, by replaying remembered transitions between real steps in 
 
 ### Question 4
 
-A trained FP32 model is converted to INT8. The stored file falls from **5,597 to 4,557 bytes** and validation accuracy is unchanged at **0.840**. Which optimization technique is this, and what did it change?
+In the lesson's worked example, a trained digits classifier is converted with a single library call and no retraining. Measured on the same laptop CPU: stored size **70.2 KB → 22.2 KB** (**3.2×** smaller), accuracy **96.7%** before and after, and latency **0.228 → 0.360 ms/batch** — the converted model runs **1.6×** slower. Name the technique and the property of the model it modified.
 
-A) Quantization — the number of **bits** used to store each weight value  
-B) Pruning — the number of **weights**, by zeroing the smallest  
-C) Distillation — the **architecture**, by training a smaller model to copy a larger one  
-D) ONNX export — the **file format**, so the model runs outside the framework that trained it  
+A) Pruning — the number of surviving weights, with the smallest ones zeroed out so the file has fewer values to hold  
+B) Distillation — the architecture, with a smaller student trained to match the 96.7% teacher's soft outputs  
+C) ONNX export — the file format, so the model runs outside PyTorch, which is also why inference got slower in the new runtime  
+D) Quantization — the precision each weight is stored at, FP32 down to INT8, with a scale and zero-point kept per layer  
 
 ---
 
@@ -66,7 +74,7 @@ D) It encodes each input to a distribution and samples from that, so new points 
 
 ### Question 6
 
-Course 09's value-iteration lesson runs a 3x3 grid world with **-1 for every ordinary step, +10 for entering the goal, -10 for entering the pit, and gamma = 0.90**. It prints this converged value table and the greedy policy read off it:
+Unit 1's value-iteration notebook reports that its 3x3 grid world (gamma = 0.90; -1 for an ordinary step, +10 for entering the goal, -10 for entering the pit) **converged in 5 sweeps**, printing:
 
 ```
 State values:              Greedy policy:
@@ -75,67 +83,87 @@ State values:              Greedy policy:
   P     10.00   G            P   →   G
 ```
 
-The tile immediately **above the pit** holds **6.20** — a positive value, even though one of its four actions steps straight into the -10 pit. Which explanation is correct?
+Look at the **bottom-row tile between the pit and the goal**. It reads **10.00** — as much as the goal reward itself, and more than the 8.00 in the top-right corner — although stepping left from it lands in the -10 pit. A classmate concludes the pit must have been left out of that tile's backup. What actually happened in the code?
 
-A) The pit's -10 is discounted once per sweep, so by the time the table converges 0.90 raised to the sweep count has shrunk it below -1  
-B) The sweep skips terminal states, so `transition(3, "down")` returns no pit transition, leaving the -10 out of that tile's backup  
-C) The backup keeps the maximum over four actions, and the best moves right: -1 + 0.90 x 8.00 = 6.20, so the pit shows in the arrow  
-D) The backup averages the four action targets instead of maximising, and the three non-pit actions outweigh the single -10  
+A) The -10 is multiplied by gamma = 0.90 once per sweep, so by the time the 5 sweeps are over it has shrunk too far to pull the tile below the 10.00 that the goal side offers.  
+B) Four targets were computed and the largest kept: stepping right enters the goal for +10 with no future to discount, so 10.00 wins and the -10 target loses the comparison.  
+C) The pit is in `TERMINAL_STATES`, so the sweep's `continue` skips it and `transition(7, 'left')` therefore returns no -10 for this tile's backup.  
+D) The four targets are averaged rather than maximised, and the right-hand move into the goal lifts the mean far enough to cancel the single -10 that the pit contributes.  
 
 ---
 
 ### Question 7
 
-In Course 05 Unit 5 you measured pandas against Dask on the same 4.3 MB file. pandas ran the groupby in 0.0007 s against Dask's 0.0146 s, and pandas also won the whole job end to end: 0.01 s against 0.02 s. Given that measurement, what does a scaling tool such as Dask, PySpark or RAPIDS actually buy you?
+The Dask lesson's per-operation table on the 14,015-flow CIC-IDS2017 sample reads:
 
-A) Handling data that will not fit in one machine's memory, because the engine works over partitions instead of materialising the whole file  
-B) Reducing wall-clock time on a job whose data already fits in memory, because the partitions are scheduled in parallel across the available cores  
-C) Improving data quality, because an engine that partitions a file also validates and repairs the records as it reads them  
-D) Lowering total cost, because a cluster of small commodity machines comes out cheaper than one machine with more memory  
+```
+Filter   pandas 0.0005 s | Dask 0.0105 s -> faster here: pandas
+Sort     pandas 0.0007 s | Dask 0.0094 s -> faster here: pandas
+```
+
+Its closing note adds that pandas was only in the race because the code read **5 of the file's 79 columns**, and that the 708 MB original is about **165x** this sample. A teammate reads the table as proof that Dask is simply a slower pandas. Which conclusion do the printed timings and the note together support?
+
+A) Dask lost because 14,015 rows are too few to spread across cores; with more cores on the same sample, parallel partitions would pull the 0.0105 s filter below pandas's 0.0005 s  
+B) Dask lost on filter and sort but gains on operations that move rows between partitions, such as a merge or a high-cardinality groupby, so the ranking depends on which operation you time  
+C) Dask's case is size, not speed: once a file is too big to materialise, `dd.read_csv` still works partition by partition where `pd.read_csv` fails, and this sample cannot show that  
+D) Dask lost because reading 5 columns is cheap; requesting the full 79 would let Dask parse the columns in parallel and overtake pandas even on this sample  
 
 ---
 
 ### Question 8
 
-In Course 05 Unit 5, `dd.read_csv` on the 4.3 MB sample returned in 0.003 s reporting 4 partitions of 1 MB each, and `df['Flow Duration'].mean()` then printed a `dask_expr` object instead of a number. It took a `.compute()` call to produce 15,409,254.17 — the same value pandas gave. What did Dask actually do?
+In the same Dask lesson two consecutive calls behaved differently. `df_dask.head()` printed five real BENIGN flows straight away, but `df_dask['Flow Duration'].mean()` printed
 
-A) The 0.003 s read the file into four partitions; `mean()` returned an object because each of those partitions holds its own mean, and `.compute()` averages the four into the value shown  
-B) Almost nothing had happened yet: `dd.read_csv` inferred the schema and stopped there, and `mean()` added a node to a task graph that `.compute()` then ran over the four partitions  
-C) `mean()` returned an object because 4.3 MB exceeds the memory Dask allows per partition, so `.compute()` spills the partitions to disk and reads them back in order  
-D) The 0.003 s read the file into four partitions; `mean()` returned an object because Dask types its results lazily, and `.compute()` casts that object to float64  
+```
+<dask_expr.expr.Scalar: expr=(...)['Flow Duration'].mean(), dtype=float64>
+   ^ that is a task graph, not a number
+```
+
+For comparison, `pd.read_csv` had already returned in **0.01 s** with all **14,015** rows in memory. Why did `head()` hand back rows while `mean()` handed back an object?
+
+A) `head()` needs the first partition alone, so Dask reads just that one and returns real rows; `mean()` needs each of the four partitions, so it stays a graph node until `.compute()` runs it  
+B) `head()` is served from rows that `dd.read_csv` loaded during its 0.003 s open; `mean()` ignores those rows because a Scalar result is recomputed from disk on each `.compute()`  
+C) `head()` is not a reduction, so it returns a pandas object; `mean()` is a reduction whose value has been computed but is stored as a Scalar until `.compute()` casts it to float64  
+D) `head()` fits inside Dask's per-partition memory budget, so it runs at once; a mean across four 1 MB partitions would exceed that budget, so Dask defers it until it can spill partitions to disk  
 
 ---
 
 ### Question 9
 
-Course 01's `KnowledgeBase` stored facts and rules, and its agent applied the rules to derive new conclusions. What is a key component of a knowledge representation system?
+In the knowledge-representation lesson, `classify_animal` returned `is a fish` for the whale and the printout marked it `WRONG`. After the repair the same printout read `is a mammal`, and the heading said the function's code was untouched. Which part of the knowledge-based system was changed to get the right answer?
 
-A) A relational database table with indexed columns, plus a query language to search them  
-B) A labeled training dataset and a loss function  
-C) A priority queue of nodes ordered by a heuristic estimate of the cost that remains  
-D) A store of facts, a set of rules over them, and an inference mechanism  
+A) The rule store: `breathes air -> is a mammal` was inserted at the front of `animal_kb.rules`, and the old loop reached it first  
+B) The inference loop: `classify_animal` was rewritten so that it tests `breathes air` before it tests `lives in water`  
+C) The training data: the whale's row was relabelled `mammal` and the classifier was refitted on the four observed animals  
+D) The fact table: an index on the fact `lives in water` was rebuilt so that a lookup for the whale returned mammal instead of fish  
 
 ---
 
 ### Question 10
 
-Course 02's Unit 1 libraries notebook doubled the same numbers twice — once as a Python list comprehension, once as one NumPy whole-array operation — and printed:
+The Unit 1 libraries notebook timed the doubling of 1,000,000 numbers twice. A one-shot timing cell printed:
 
 ```
-         N    list (ms)   NumPy (ms)   speed-up
-        10       0.0001       0.0003       0.5x
-       100       0.0009       0.0003       3.0x
-     1,000       0.0123       0.0006      21.5x
-    10,000       0.1195       0.0032      37.1x
-   100,000       1.2403       0.0254      48.8x
- 1,000,000      15.1218       0.2454      61.6x
+   Python list comprehension :    11.05 ms
+   NumPy, whole array at once:     0.71 ms
+   Speed-up measured here    :     15.5x
+
+Against the "100x faster" line in the Part 2 text above:
+   this run measured 15.5x - well short of 100x.
 ```
 
-Which statement is supported by this table?
+The next cell re-timed six array sizes, keeping the best of three trials after a warm-up, and closed with:
 
-A) NumPy's lead grows with N, and at N = 10 the list version is the faster of the two  
-B) The list version scales better, because its cost per element falls as N grows  
-C) The two converge to the same speed at large N, since each loop is run by the interpreter  
-D) NumPy runs about 100× faster here, the speed-up the notebook's own text quotes  
+```
+Smallest N (10):        NumPy is SLOWER (0.5x)
+Largest N (1,000,000): NumPy is 62x faster
+```
+
+A teammate wants to vectorise a helper that is called thousands of times per second on arrays of about ten values, and quotes the 62x as the gain to expect. Which printed line actually bears on that helper, and what does it say?
+
+A) `Largest N (1,000,000): NumPy is 62x faster` — the compiled loop is the same code at any N, so the factor carries over to ten values  
+B) `Smallest N (10): NumPy is SLOWER (0.5x)` — on ten values the per-call setup cost is the whole job, so the plain list stays ahead  
+C) `this run measured 15.5x` — one honest measurement on this machine, so that is the realistic gain for the helper to expect  
+D) The Part 2 text's `100x faster` — the 15.5x and 62x were pulled down by timing noise, so the tutorial figure is the safer planning estimate  
 
 ---
