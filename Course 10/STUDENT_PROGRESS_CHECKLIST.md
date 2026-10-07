@@ -7,13 +7,14 @@
 - [ ] Read the unit README
 - [ ] Complete example notebooks 01–12
 - [ ] Complete `exercises/01_generative_models_fundamentals_exercise.ipynb`
+- [ ] Complete `exercises/02_gan_exercise.ipynb`
 - [ ] Take `QUIZZES/quiz_01.md`
 
 ### Unit 2: Text and Language Generation (`unit2-text-generation/`)
 
 - [ ] Read the unit README
 - [ ] Complete example notebooks 01–06
-- [ ] Complete `exercises/01_gan_exercise.ipynb`
+- [ ] Complete `exercises/01_text_generation_exercise.ipynb`
 - [ ] Take `QUIZZES/quiz_02.md`
 
 ### Unit 3: Image and Visual Generation (`unit3-image-generation/`)

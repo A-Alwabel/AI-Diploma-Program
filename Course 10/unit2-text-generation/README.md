@@ -41,8 +41,14 @@ Face `transformers` / OpenAI API workflows as clearly labeled reference code
 
 ## Exercise
 
-- `exercises/01_gan_exercise.ipynb` — GAN practice exercise (generating
-  realistic faces), reinforcing Unit 1 skills.
+- `exercises/01_text_generation_exercise.ipynb` — train lesson 01's
+  character-level language model on real text (600 `rec.sport.hockey` posts
+  from the cached 20 Newsgroups corpus, offline), sample it at two temperatures
+  (0.5 and 1.2) from the same seed, and evaluate it honestly: held-out
+  perplexity against an untrained model and a counting bigram baseline, the
+  training-vs-held-out gap, and an in-vocabulary word rate for each
+  temperature. Each task ends in an assertion gate that fails until the task is
+  done — by design. CPU only, about a minute to run.
 
 ## Quiz
 

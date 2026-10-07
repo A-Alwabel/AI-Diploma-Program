@@ -51,9 +51,14 @@ MNIST data included in `examples/data/`.
     train a 1,882-parameter velocity field on a 2-D distribution and integrate the ODE to watch
     noise become data — the flow-matching mechanism behind 2026 image and video generators.
 
-## Exercise
+## Exercises
 
-- `exercises/01_generative_models_fundamentals_exercise.ipynb`
+- `exercises/01_generative_models_fundamentals_exercise.ipynb` — generative vs
+  discriminative models, a latent space, and a first generative model on the
+  8×8 digits.
+- `exercises/02_gan_exercise.ipynb` — build and train a GAN (generator,
+  discriminator, alternating updates): the practice for examples 05–08. Its
+  worked example trains on MNIST.
 
 ## Quiz
 
