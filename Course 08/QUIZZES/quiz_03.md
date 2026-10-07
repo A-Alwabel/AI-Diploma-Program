@@ -15,49 +15,49 @@
 What problem do **RNNs** address that feedforward networks do not?
 
 a) They are faster  
-b) They can handle **sequential data** by maintaining a hidden state that carries information across time steps  
-c) They need less memory  
-d) They only work for images  
+b) They learn a separate set of weights for each time step, so longer sequences need a bigger model  
+c) They read the whole sequence at once and weight the most relevant positions  
+d) They can handle sequential data by maintaining a hidden state that carries information across time steps  
 
 ---
 
 ### Question 2 (10 points)
 Why do we use **LSTM** (or GRU) instead of a simple RNN in practice?
 
-a) LSTMs are always smaller  
-b) LSTMs mitigate the **vanishing gradient** problem and can capture long-range dependencies better  
-c) LSTMs do not use gradients  
-d) LSTMs only work for classification  
+a) The gates let an LSTM skip time steps that carry no new information, so long sequences take fewer steps  
+b) LSTMs remove the need to pad or truncate sequences to a common length  
+c) LSTMs mitigate the vanishing gradient problem and can capture long-range dependencies better  
+d) LSTMs copy the complete input history into the cell state instead of a compressed summary  
 
 ---
 
 ### Question 3 (10 points)
 What does the **attention mechanism** in Transformers do?
 
-a) It replaces all layers  
-b) It lets the model **focus on relevant parts of the input** (e.g. different words) when producing each output  
-c) It only runs once per sequence  
-d) It is used only in CNNs  
+a) It lets the model focus on relevant parts of the input (e.g. different words) when producing each output  
+b) It processes the tokens one at a time, passing a hidden state from each token to the next  
+c) It gives each vocabulary word a fixed importance score that is learned during training and reused at inference  
+d) It compresses the whole input sequence into a single fixed-size context vector  
 
 ---
 
 ### Question 4 (10 points)
 **BERT** is primarily used for:
 
-a) Only image classification  
-b) **Understanding** text (e.g. classification, NER, QA) and is pre-trained with masked language modeling  
-c) Only text generation  
-d) Reinforcement learning  
+a) Generating long passages of text one token at a time from a left-to-right prompt, as GPT-style decoders do  
+b) Understanding text (e.g. classification, NER, QA) and is pre-trained with masked language modeling  
+c) Translating between languages with an encoder–decoder trained on paired sentences  
+d) Predicting the next word in a sentence, which is the objective it is pre-trained on before fine-tuning  
 
 ---
 
 ## Part 2: Code Writing (30 points)
 
 ### Question 5 (30 points)
-Write code to build a **simple LSTM** in **PyTorch** for sequence classification (e.g. binary sentiment). Use:
-- `nn.Embedding(vocab_size=1000, embedding_dim=64)`, then `nn.LSTM(input_size=64, hidden_size=32, batch_first=True)`.
-- Take the last hidden state and pass through `nn.Linear(32, 1)` with sigmoid for binary output.
-- Show the full `nn.Module` class with `__init__` and `forward` methods. Input is integer sequences of shape `(batch, seq_len=100)`.
+Write code to build a **simple LSTM** for sequence classification (e.g. binary sentiment) in **either PyTorch or Keras/TensorFlow** (both are used in Unit 3; state which one you chose). Input is integer token sequences of shape `(batch, seq_len=100)` from a vocabulary of 1000. Architecture:
+- Embedding layer (1000 tokens → 64 dimensions), then an LSTM with 32 hidden units, then a single sigmoid output for the binary label.
+- PyTorch: `nn.Embedding(1000, 64)` → `nn.LSTM(input_size=64, hidden_size=32, batch_first=True)` → take the last time step (`out[:, -1, :]` or the final hidden state) → `nn.Linear(32, 1)` → sigmoid; show the full `nn.Module` class with `__init__` and `forward`.
+- Keras/TensorFlow: `Embedding(1000, 64)` → `LSTM(32)` → `Dense(1, activation='sigmoid')`; name the matching loss (`binary_crossentropy`).
 
 **Answer key:** released by your instructor.
 

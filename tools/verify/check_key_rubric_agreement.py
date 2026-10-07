@@ -59,7 +59,10 @@ def sequences(path):
 bad = clean = nokey = 0
 for course in sorted(INSTR.glob("Course *")):
     # Only the documents an instructor actually grades from.
-    files = sorted(course.glob("exam-keys/**/*.md")) + sorted(course.glob("quiz-keys/**/*.md"))
+    # Course 08 keeps its quiz keys under solutions/DOCS_SOLUTIONS/quizzes/; a gate that
+    # cannot see a key file cannot catch its drift, and that is how 20 "b" answers survived.
+    files = (sorted(course.glob("exam-keys/**/*.md")) + sorted(course.glob("quiz-keys/**/*.md"))
+             + sorted(course.glob("solutions/**/quizzes/*.md")))
     found = {f: sequences(f) for f in files}
     found = {f: s for f, s in found.items() if s}
     if not found:

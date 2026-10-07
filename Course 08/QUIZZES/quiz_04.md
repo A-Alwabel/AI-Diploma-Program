@@ -15,39 +15,39 @@
 In a **GAN**, what is the role of the **discriminator**?
 
 a) To generate new samples  
-b) To **distinguish real data from generator outputs** and provide a signal to train the generator  
-c) To compress data  
-d) To tune the learning rate  
+b) To distinguish real data from generator outputs and provide a signal to train the generator  
+c) To be trained to high accuracy first and then frozen while the generator catches up  
+d) To encode each real image into a latent vector that the generator later decodes  
 
 ---
 
 ### Question 2 (10 points)
 A **Variational Autoencoder (VAE)** differs from a standard autoencoder because:
 
-a) It has no encoder  
-b) It learns a **latent distribution** (e.g. Gaussian) and uses reparameterization; we can sample from it to generate new data  
-c) It does not use backpropagation  
-d) It is only for classification  
+a) It learns a latent distribution (e.g. Gaussian) and uses reparameterization; we can sample from it to generate new data  
+b) Its decoder is trained adversarially against a discriminator network that tries to tell reconstructions from real images  
+c) It maps each input to a single fixed point in latent space rather than a distribution, so reconstructions are more exact  
+d) It adds random noise to the input image so that the decoder learns to remove it  
 
 ---
 
 ### Question 3 (10 points)
 In **reinforcement learning**, the agent learns by:
 
-a) Using only labeled data  
-b) **Maximizing cumulative reward** through interaction with an environment (trial and error)  
-c) Minimizing classification loss only  
-d) Using only supervised learning  
+a) Imitating the correct action for each state, which it reads from a labeled dataset  
+b) Choosing the action with the highest immediate reward at each step  
+c) Maximizing cumulative reward through interaction with an environment (trial and error)  
+d) Exploring at random for the whole run, since trying new actions is what produces the learning  
 
 ---
 
 ### Question 4 (10 points)
 Why do we evaluate **fairness** (e.g. accuracy by demographic group) in addition to overall accuracy?
 
-a) To make models larger  
-b) Because a model can have **high overall accuracy but be unfair** to some groups; we need to measure and mitigate this  
-c) To replace the need for a test set  
-d) Only for image models  
+a) Because per-group accuracy gives a more precise estimate of the overall accuracy when the groups differ in size  
+b) To replace the need for a test set  
+c) To confirm that the model generalizes from the training split to the test split  
+d) Because a model can have high overall accuracy but be unfair to some groups; we need to measure and mitigate this  
 
 ---
 

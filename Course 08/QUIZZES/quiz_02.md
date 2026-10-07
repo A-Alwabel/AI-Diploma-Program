@@ -14,10 +14,10 @@
 ### Question 1 (10 points)
 What does a **convolutional layer** do in a CNN?
 
-a) Flattens the image to a vector  
-b) Applies learnable filters that slide over the image to detect local patterns (e.g. edges)  
-c) Reduces the number of parameters by removing layers  
-d) Only works on 1D data  
+a) Applies learnable filters that slide over the image to detect local patterns (e.g. edges)  
+b) Flattens the image to a vector  
+c) Connects each pixel to each neuron in the next layer so that no spatial information is lost  
+d) Shrinks the feature map by summarizing each window with a single value  
 
 ---
 
@@ -25,9 +25,9 @@ d) Only works on 1D data
 What is the main purpose of **max pooling**?
 
 a) To increase the spatial dimensions of the feature map  
-b) To reduce spatial size, retain strong activations, and add translation invariance  
-c) To add more parameters  
-d) To replace convolution  
+b) To learn a set of weights that selects the most informative pixels in each window  
+c) To average the activations in each window so that the feature map is smoother  
+d) To reduce spatial size, retain strong activations, and add translation invariance  
 
 ---
 
@@ -36,17 +36,17 @@ Why is **transfer learning** useful for image classification?
 
 a) It makes models smaller  
 b) We can use features learned on large datasets (e.g. ImageNet) and adapt them to our task with less data and training time  
-c) It removes the need for a GPU  
-d) It only works for text  
+c) The pre-trained weights can be reused as long as the new images belong to the same classes as the original dataset  
+d) Re-training the pre-trained architecture from scratch on the new data converges faster because the design is already proven  
 
 ---
 
 ### Question 4 (10 points)
 **Data augmentation** (e.g. random rotation, flip) for images is used to:
 
-a) Speed up training  
-b) Increase effective dataset size and improve generalization by adding variation  
-c) Reduce model size  
+a) Make each epoch faster, since the network sees more images per pass  
+b) Let the model fit the training set more closely by showing each image in several versions  
+c) Increase effective dataset size and improve generalization by adding variation  
 d) Replace the need for a validation set  
 
 ---
@@ -54,11 +54,10 @@ d) Replace the need for a validation set
 ## Part 2: Code Writing (30 points)
 
 ### Question 5 (30 points)
-Write code to build a **small CNN** in **PyTorch** for image classification with:
-- One `nn.Conv2d` layer (1 input channel, 32 filters, 3×3, ReLU), then `nn.MaxPool2d(2)`.
-- `Flatten`, then one `nn.Linear(32*13*13, 64)` with ReLU, then `nn.Linear(64, 10)` (logits).
-- Input shape suitable for 28×28 grayscale images (e.g. MNIST).
-- Show the full `nn.Module` class with `__init__` and `forward` methods.
+Write code to build a **small CNN** for classifying 28×28 grayscale images (e.g. MNIST, 10 classes) in **either PyTorch or Keras/TensorFlow** (both are used in Unit 2; state which one you chose). Architecture:
+- One convolutional layer (1 input channel, 32 filters, 3×3, ReLU), then 2×2 max pooling; flatten; a dense layer with 64 units and ReLU; an output layer with 10 units.
+- PyTorch: `nn.Conv2d(1, 32, 3)` → `nn.MaxPool2d(2)` → `Flatten` → `nn.Linear(32*13*13, 64)` → `nn.Linear(64, 10)` (logits); show the full `nn.Module` class with `__init__` and `forward`.
+- Keras/TensorFlow: `Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1))` → `MaxPooling2D((2, 2))` → `Flatten` → `Dense(64, relu)` → `Dense(10)` with a softmax output or `from_logits=True`.
 
 **Answer key:** released by your instructor.
 

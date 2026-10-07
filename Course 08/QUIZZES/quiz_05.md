@@ -14,10 +14,10 @@
 ### Question 1 (10 points)
 **Model quantization** (e.g. converting weights from float32 to int8) is used to:
 
-a) Increase model size  
-b) **Reduce model size and speed up inference** with often minimal accuracy loss when done carefully  
-c) Only improve accuracy  
-d) Replace the need for a GPU  
+a) Speed up training by storing the weights and gradients in int8 from the first epoch onwards  
+b) Replace the need for a GPU  
+c) Reduce model size and speed up inference with often minimal accuracy loss when done carefully  
+d) Improve accuracy, because rounding the weights removes small noise that the model learned from the data  
 
 ---
 
@@ -25,28 +25,28 @@ d) Replace the need for a GPU
 What is **knowledge distillation**?
 
 a) Removing layers from the model  
-b) **Training a smaller “student” model to mimic the outputs of a larger “teacher” model** to get similar performance with less compute  
-c) Converting to ONNX only  
-d) Only used in training  
+b) Training a smaller “student” model to mimic the outputs of a larger “teacher” model to get similar performance with less compute  
+c) Copying the teacher’s weights into a student with the same architecture, so that the student needs no training of its own  
+d) Rounding the teacher’s weights to a lower precision (e.g. int8) so that the same model runs on smaller hardware  
 
 ---
 
 ### Question 3 (10 points)
 **ONNX** (Open Neural Network Exchange) is useful because:
 
-a) It is the only way to train models  
-b) It provides a **standard format** to export models so they can run across frameworks (e.g. TensorFlow, PyTorch) and runtimes  
-c) It replaces TensorFlow  
-d) It is only for reinforcement learning  
+a) It speeds up training by running the training loop on an optimized computation graph instead of eager Python code  
+b) It replaces TensorFlow and PyTorch with its own training framework, so models are written once in ONNX  
+c) It shrinks the exported model to int8 as part of the export step, so no separate quantization pass is needed  
+d) It provides a standard format to export models so they can run across frameworks (e.g. TensorFlow, PyTorch) and runtimes  
 
 ---
 
 ### Question 4 (10 points)
 Why do we expose a model via a **REST API** (e.g. Flask or FastAPI) in production?
 
-a) To train the model  
-b) So **other services or applications can send requests and get predictions** over the network (HTTP)  
-c) Only to reduce latency  
+a) So other services or applications can send requests and get predictions over the network (HTTP)  
+b) So the model keeps learning from each request it receives in production, without a separate training job  
+c) Because an HTTP call to the model is faster than calling it in-process from the same Python program  
 d) To replace the need for a database  
 
 ---

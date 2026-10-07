@@ -14,39 +14,39 @@
 ### Question 1 (10 points)
 What is the main advantage of deep neural networks over shallow (single hidden layer) networks?
 
-a) They are always faster to train  
-b) They can learn hierarchical representations and complex non-linear patterns  
-c) They require less data  
-d) They never overfit  
+a) Each extra layer lowers the training loss further, since more parameters mean a closer fit  
+b) They require less data  
+c) They can learn hierarchical representations and complex non-linear patterns  
+d) They are easier to optimize, because the gradient has more layers to flow through  
 
 ---
 
 ### Question 2 (10 points)
 What is the role of the loss function during training?
 
-a) To initialize the weights  
-b) To measure how wrong the model’s predictions are and guide gradient updates  
+a) To measure how wrong the model’s predictions are and guide gradient updates  
+b) To initialize the weights  
 c) To choose the learning rate  
-d) To select the number of layers  
+d) To report the percentage of predictions the model got right after each epoch  
 
 ---
 
 ### Question 3 (10 points)
 Which statement about backpropagation is correct?
 
-a) It runs only once at the end of training  
-b) It computes gradients of the loss with respect to the weights using the chain rule  
-c) It is used only in CNNs  
-d) It replaces the need for an optimizer  
+a) It computes the activations and the loss for each mini-batch, layer by layer from input to output  
+b) It replaces the need for an optimizer  
+c) It computes the gradient at the output layer and copies that same value back to each earlier layer  
+d) It computes gradients of the loss with respect to the weights using the chain rule  
 
 ---
 
 ### Question 4 (10 points)
 Why do we use activation functions (e.g. ReLU) in hidden layers?
 
-a) To reduce memory usage  
+a) To turn the hidden layer’s outputs into class probabilities that sum to 1  
 b) To introduce non-linearity so the network can learn complex functions  
-c) To speed up training only  
+c) To squash each activation into the range 0 to 1 so that the gradients stay stable  
 d) To normalize the inputs  
 
 ---
@@ -54,11 +54,10 @@ d) To normalize the inputs
 ## Part 2: Code Writing (30 points)
 
 ### Question 5 (30 points)
-Write code to build a **2-layer feedforward neural network** in **PyTorch** for **MNIST digit classification** (10 classes). Requirements:
-- Define a class `SimpleNN` inheriting from `nn.Module`.
-- One hidden layer with 128 units and ReLU activation.
-- Output layer with 10 units (logits, no softmax needed here — use `CrossEntropyLoss`).
-- Include `__init__` and `forward` methods. Input size is 784 (flattened 28×28).
+Write code to build a **2-layer feedforward neural network** for **MNIST digit classification** (10 classes) in **either PyTorch or Keras/TensorFlow** (both are used in Unit 1; state which one you chose). Requirements:
+- Input size 784 (flattened 28×28); one hidden layer with 128 units and ReLU activation; output layer with 10 units.
+- PyTorch: define a class `SimpleNN` inheriting from `nn.Module` with `__init__` and `forward`; output logits (no softmax) and name the matching loss (`CrossEntropyLoss`).
+- Keras/TensorFlow: build the equivalent `Sequential` model (`Flatten` → `Dense(128, relu)` → `Dense(10)`) and name the matching loss (`sparse_categorical_crossentropy`, with a softmax output or `from_logits=True`).
 
 **Answer key:** released by your instructor.
 
