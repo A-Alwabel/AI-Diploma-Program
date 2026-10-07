@@ -22,6 +22,16 @@ New students: read [START_HERE.md](START_HERE.md) first.
 
 ---
 
+## Course learning outcomes
+
+These are the official outcomes this course is assessed against. Every final-exam item and the case study trace to one of them.
+
+- **CLO1** — Explain ethical frameworks (e.g., utilitarianism, deontology, virtue ethics) and their relevance to AI development; analyze case studies of AI ethics violations.
+- **CLO2** — Identify and analyze bias, fairness, and discrimination in AI systems; apply bias detection and mitigation techniques and fairness metrics.
+- **CLO3** — Assess privacy, security, and data protection risks in AI applications; apply relevant regulations (e.g., GDPR, CCPA) and privacy-preserving techniques.
+- **CLO4** — Evaluate transparency, interpretability, and accountability in AI systems; apply XAI techniques (e.g., LIME, SHAP) and accountability frameworks.
+- **CLO5** — Analyze AI governance, regulations, and future challenges; formulate ethics policies and comply with legal frameworks.
+
 ## Learning Path
 
 Follow one numbered path:

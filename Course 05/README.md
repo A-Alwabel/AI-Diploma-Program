@@ -23,6 +23,16 @@ This course trains students to process, clean, visualize, and model data at scal
 
 ---
 
+## Course learning outcomes
+
+These are the official outcomes this course is assessed against. Every final-exam item and the case study trace to one of them.
+
+- **CLO1** — Demonstrate the ability to analyze and visualize data using Python with confidence in diverse contexts.
+- **CLO2** — Identify and implement strategies for scaling data processing tasks effectively.
+- **CLO3** — Clean and prepare raw datasets to make them suitable for analysis and modeling, handling missing data, outliers, and data transformation requirements.
+- **CLO4** — Build, evaluate, and deploy machine learning models using Python in a scalable environment, utilizing appropriate frameworks and tools.
+- **CLO5** — Complete a comprehensive data science project involving large-scale models and datasets, demonstrating end-to-end project management skills from data acquisition to model deployment.
+
 ## Prerequisites
 
 - **AIAT 112 - Python for AI** (Course 02) or equivalent Python fundamentals (variables, functions, data structures)

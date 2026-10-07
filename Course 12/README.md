@@ -12,6 +12,16 @@ The final course of the AI Diploma. You plan, design, build, evaluate, document,
 - **Course name:** Graduation Project
 - Credit hours: 3 · Contact hours: 5/week · Total training hours: 80 (theory+practical)
 
+## Course learning outcomes
+
+These are the official outcomes this course is assessed against. Every final-exam item and the case study trace to one of them.
+
+- **CLO1** — Design and develop a comprehensive solution based on AI to address a specific real-world problem.
+- **CLO2** — Integrate knowledge from different AI subdisciplines into a coherent and practical system.
+- **CLO3** — Conduct critical evaluation of the implemented solution's performance using relevant metrics.
+- **CLO4** — Communicate effectively the project objectives, processes, results, and implications through technical documentation.
+- **CLO5** — Identify and analyze ethical, legal, and social considerations related to the AI solution.
+
 ## Prerequisites
 
 - Semester 1 (AIAT 111-116)

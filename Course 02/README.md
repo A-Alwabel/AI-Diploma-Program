@@ -18,6 +18,16 @@ plus basic Python (variables, lists, dictionaries, functions, classes).
 
 ---
 
+## Course learning outcomes
+
+These are the official outcomes this course is assessed against. Every final-exam item and the case study trace to one of them.
+
+- **CLO1** — Demonstrate and implement the functionality of at least three major algorithms in AI (e.g., k-Neighbors, Decision Trees) using Python.
+- **CLO2** — Complete a practical project that applies machine learning techniques to a real problem, demonstrating their ability to integrate AI concepts in practical application.
+- **CLO3** — Evaluate AI model performance using appropriate metrics (such as accuracy, precision, recall, F1 score), and be able to discuss the implications of these metrics in the context of their projects.
+- **CLO4** — Analyze case studies of AI applications, identifying the algorithms used and evaluating their effectiveness in solving specified problems.
+- **CLO5** — Design and implement a prototype of an intelligent system that includes at least two different AI techniques (such as natural language processing and machine learning), demonstrating creativity and technical competence.
+
 ## Learning Path
 
 Follow the units in order. Inside each unit: read the unit `README.md`, work through

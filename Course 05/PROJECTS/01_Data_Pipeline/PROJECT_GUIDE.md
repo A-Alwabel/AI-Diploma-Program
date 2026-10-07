@@ -27,12 +27,15 @@ Processing data that:
 - Needs to run on multiple machines
 - Benefits from GPU acceleration
 
-**Example:**
-```
-Regular pandas: 1 million rows = 5 minutes
-Dask (distributed): 1 million rows = 30 seconds
-cuDF (GPU): 1 million rows = 5 seconds
-```
+**Do not take the speed-up on faith — measure it.** This guide used to print a table claiming
+pandas needs 5 minutes for a million rows while Dask needs 30 seconds and cuDF 5. Nobody had
+measured that, and the course's own lessons measured the opposite at classroom scale: on the
+25,000-row 911 sample, pandas finished the group-by in under a millisecond and the Dask lesson
+printed *"No comparison possible: only the pandas baseline."* Distributed and GPU tools win when
+the data does not fit in one machine's memory, not by default. So in your project: time the
+pandas version first (`TOOLING/examples/05_measuring_before_optimising.ipynb` shows how), state
+the data size and the machine, and only then decide whether Dask or RAPIDS earns its complexity.
+A number you measured is a result; a number you copied from a guide is a rumour.
 
 ---
 
