@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Sample dataset - Sales data
-# البيانات النموذجية - بيانات المبيعات
+# Sample data - sales records
 np.random.seed(42)
 data = {
     'product_id': range(1, 101),
