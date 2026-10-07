@@ -7,6 +7,8 @@ people for more often than anything else this diploma already teaches.
 SQL/examples/01_getting_the_data_out.ipynb    SELECT, WHERE, ORDER BY, GROUP BY, HAVING
 SQL/examples/02_joins_and_windows.ipynb       INNER/LEFT JOIN, fan-out, CTEs, window functions
 SQL/examples/03_the_row_count_is_wrong.ipynb  debugging a query somebody else wrote
+SQL/examples/04_the_semantic_model.ipynb      measure vs column, star schema, one metric one definition - what a dashboard rests on
+SQL/examples/05_when_the_data_cannot_answer.ipynb  scoping a vague question, and saying when the data cannot answer it
 ```
 
 ---

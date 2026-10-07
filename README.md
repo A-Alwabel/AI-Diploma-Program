@@ -112,6 +112,19 @@ this repository.
 
 ---
 
+## Cross-course strands
+
+Four things that run across the twelve courses rather than inside one. They were added after an
+evidence pass on what makes graduates employable, and they are where a student is most often asked
+to work on something unfamiliar.
+
+| Strand | What it is | Hours |
+|--------|-----------|-------|
+| [TOOLING/](TOOLING/README.md) | Shell, git, environments, reading a traceback, profiling, handing over a repository — six lessons delivered at the week each problem first appears | 12 |
+| [SQL/](SQL/README.md) | Getting the data out of a real database and debugging a query someone else wrote — the most-requested skill in every job market sampled, previously absent | 6–9 |
+| [RETRIEVAL/](RETRIEVAL/README.md) | Fifteen minutes a week of cumulative, ungraded quizzing with the answers worked aloud, so Course 01 is still alive in week 20 | ~9 |
+| [PEER_REVIEW/](PEER_REVIEW/README.md) | Three graded rounds of reviewing another student's work under a form that makes praise structurally impossible | 18 |
+
 ## Tech Stack
 
 | Area | Tools | Where |

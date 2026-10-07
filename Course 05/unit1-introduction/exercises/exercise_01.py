@@ -1,6 +1,6 @@
 """
 Unit 1 - Exercise 1: Data Science Fundamentals Practice
-تمرين 1: ممارسة أساسيات علم البيانات
+Exercise 1: Practising the basics of data science
 
 Instructions:
 1. Load a sample dataset (provided below)
@@ -59,12 +59,12 @@ df = load("titanic")          # the whole 891-row file ships with the repository
 df['family_size'] = df['SibSp'] + df['Parch'] + 1
 
 # TODO: Write your code here
-# TODO: اكتب الكود الخاص بك هنا
+# TODO: write your code here
 
 # Task 1: Explore the data
 print("=" * 60)
 print("Task 1: Explore the data")
-print("المهمة 1: استكشاف البيانات")
+print("Task 1: Explore the data")
 print("=" * 60)
 # Your code here...
 # - Display first 5 rows
@@ -75,7 +75,7 @@ print("=" * 60)
 # Task 2: Basic statistical analysis
 print("\n" + "=" * 60)
 print("Task 2: Statistical Analysis")
-print("المهمة 2: التحليل الإحصائي")
+print("Task 2: Statistical analysis")
 print("=" * 60)
 # Your code here...
 # - Calculate mean, median, std for Age, Fare and family_size
@@ -85,7 +85,7 @@ print("=" * 60)
 # Task 3: Data filtering and selection
 print("\n" + "=" * 60)
 print("Task 3: Data Filtering")
-print("المهمة 3: تصفية البيانات")
+print("Task 3: Filter the data")
 print("=" * 60)
 # Your code here...
 # - Filter passengers with Fare > 100
@@ -95,7 +95,7 @@ print("=" * 60)
 # Task 4: Create visualizations
 print("\n" + "=" * 60)
 print("Task 4: Create Visualizations")
-print("المهمة 4: إنشاء التصورات")
+print("Task 4: Build the visualisations")
 print("=" * 60)
 # Your code here...
 # - Create a histogram of Age (remember .dropna())
@@ -106,7 +106,7 @@ print("=" * 60)
 # Task 5: Data aggregation
 print("\n" + "=" * 60)
 print("Task 5: Data Aggregation")
-print("المهمة 5: تجميع البيانات")
+print("Task 5: Group the data")
 print("=" * 60)
 # Your code here...
 # - Group by Pclass and calculate mean Age, Fare and Survived
@@ -115,6 +115,6 @@ print("=" * 60)
 
 print("\n" + "=" * 60)
 print("Exercise 1 Complete!")
-print("اكتمل التمرين 1!")
+print("Exercise 1 complete.")
 print("=" * 60)
 
