@@ -60,7 +60,7 @@ Course 07/
 ├── unit3-ml-for-nlp/              Unit 3: Machine Learning for NLP
 ├── unit4-deep-learning-nlp/       Unit 4: Deep Learning for NLP
 ├── unit5-applications-ethics/     Unit 5: NLP Applications and Ethics Standards
-├── QUIZZES/                       Quiz 01 (Unit 1); quizzes 02-05 are placeholders being authored
+├── QUIZZES/                       five quizzes, one per unit
 ├── ASSESSMENTS/                   Final exam
 ├── PROJECTS/                      Course project (Sentiment Analysis System) + template
 ├── CASE_STUDIES/                  NLP application case study
@@ -69,7 +69,7 @@ Course 07/
 
 ## Assessments
 
-- Quizzes: `QUIZZES/` — `quiz_01.md` covers Unit 1; quizzes 02–05 are placeholders being authored.
+- Quizzes: `QUIZZES/` — `quiz_01.md` … `quiz_05.md`, one per unit.
 - Final exam: `ASSESSMENTS/Final_Exam.md` (2 hours, 100 points, covers all 10 CLOs).
 - Project: `PROJECTS/Sentiment_Analysis_System/`.
 - Answer keys and solutions are released by your instructor.
