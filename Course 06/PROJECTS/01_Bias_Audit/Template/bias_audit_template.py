@@ -1,5 +1,5 @@
 """
-AI Bias Audit Tool Template | قالب أداة تدقيق تحيز الذكاء الاصطناعي
+AI Bias Audit Tool Template
 Project 01 Template
 
 Fill in the functions marked with TODO comments.

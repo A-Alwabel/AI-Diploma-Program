@@ -1,6 +1,6 @@
 """
 Unit 3 - Exercise 4: K-Nearest Neighbors (KNN) Practice
-تقنيات التصنيف المتقدمة - تمرين 4: ممارسة خوارزمية الجيران الأقرب (KNN)
+Advanced classification techniques - Exercise 4: Practising k-nearest neighbours (KNN)
 
 Instructions:
 1. Load the provided dataset
@@ -45,7 +45,7 @@ print(f"\nClass distribution:")
 print(df['target'].value_counts())
 
 # TODO: Write your code here
-# TODO: اكتب الكود الخاص بك هنا
+# TODO: write your code here
 
 # Task 1: Split the data
 print("\n" + "="*60)
@@ -96,6 +96,6 @@ print("="*60)
 
 print("\n" + "="*60)
 print("Exercise 4 Complete!")
-print("اكتمل التمرين 4!")
+print("Exercise 4 complete.")
 print("="*60)
 

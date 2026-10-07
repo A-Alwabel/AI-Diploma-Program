@@ -1,5 +1,5 @@
 """
-Scalable Data Pipeline Template | قالب خط أنابيب البيانات القابل للتوسع
+Scalable Data Pipeline Template
 Project 01 Template
 
 Fill in the functions marked with TODO comments.

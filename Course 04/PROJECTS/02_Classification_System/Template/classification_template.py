@@ -1,5 +1,5 @@
 """
-Multi-Class Classification System Template | قالب نظام التصنيف متعدد الفئات
+Multi-Class Classification System Template
 Project 02 Template
 
 Fill in the functions marked with TODO comments.

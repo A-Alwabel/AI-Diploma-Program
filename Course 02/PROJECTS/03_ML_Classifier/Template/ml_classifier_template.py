@@ -1,5 +1,5 @@
 """
-Machine Learning Classifier Template | قالب مصنف التعلم الآلي
+Machine Learning Classifier Template
 Project 03 Template
 
 Fill in the functions marked with TODO comments.

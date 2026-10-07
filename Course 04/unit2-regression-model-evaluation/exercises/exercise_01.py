@@ -1,6 +1,6 @@
 """
 Unit 2 - Exercise 1: Ridge and Lasso Regression Practice
-تقنيات الانحدار المتقدمة - تمرين 1: ممارسة الانحدار ريدج ولاسو
+Advanced regression techniques - Exercise 1: Practising Ridge and Lasso regression
 
 Instructions:
 1. Load the provided dataset
@@ -37,7 +37,7 @@ print("Dataset loaded!")
 print(f"Shape: {df.shape}")
 
 # TODO: Write your code here
-# TODO: اكتب الكود الخاص بك هنا
+# TODO: write your code here
 
 # Task 1: Split the data and scale features
 print("\nTask 1: Split and scale data")
@@ -56,5 +56,5 @@ print("\nTask 4: Find optimal alpha")
 # Your code here...
 
 print("\nExercise 1 Complete!")
-print("اكتمل التمرين 1!")
+print("Exercise 1 complete.")
 

@@ -1,6 +1,6 @@
 """
 Unit 5 - Exercise 1: Model Selection Practice
-اختيار النموذج والتعزيز - تمرين 1: ممارسة اختيار النموذج
+Model selection and boosting - Exercise 1: Practising model selection
 
 Instructions:
 1. Load the provided dataset
@@ -33,7 +33,7 @@ print("Dataset loaded!")
 print(f"Shape: {df.shape}")
 
 # TODO: Write your code here
-# TODO: اكتب الكود الخاص بك هنا
+# TODO: write your code here
 
 # Task 1: Split the data
 print("\nTask 1: Split data")
@@ -52,5 +52,5 @@ print("\nTask 4: Compare")
 # Your code here...
 
 print("\nExercise 1 Complete!")
-print("اكتمل التمرين 1!")
+print("Exercise 1 complete.")
 

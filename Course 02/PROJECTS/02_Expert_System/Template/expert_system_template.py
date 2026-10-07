@@ -1,5 +1,5 @@
 """
-Expert System Template | قالب نظام خبير
+Expert System Template
 Project 02 Template
 
 Fill in the functions marked with TODO comments.

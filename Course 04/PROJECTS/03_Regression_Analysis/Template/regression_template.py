@@ -1,5 +1,5 @@
 """
-Advanced Regression Analysis Template | قالب تحليل الانحدار المتقدم
+Advanced Regression Analysis Template
 Project 03 Template
 
 Fill in the functions marked with TODO comments.

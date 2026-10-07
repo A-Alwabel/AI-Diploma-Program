@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Installation Verification Script | سكريبت التحقق من التثبيت
+Installation Verification Script
 Verifies all required libraries are installed and working correctly.
 """
 

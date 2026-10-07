@@ -1,6 +1,6 @@
 """
 Unit 2 - Exercise 2: Cross-Validation Practice
-تقنيات الانحدار المتقدمة - تمرين 2: ممارسة التحقق المتقاطع
+Advanced regression techniques - Exercise 2: Practising cross-validation
 
 Instructions:
 1. Load the provided dataset
@@ -33,7 +33,7 @@ print("Dataset loaded!")
 print(f"Shape: {df.shape}")
 
 # TODO: Write your code here
-# TODO: اكتب الكود الخاص بك هنا
+# TODO: write your code here
 
 # Task 1: Single train-test split (baseline)
 print("\n" + "="*60)
@@ -94,6 +94,6 @@ print("="*60)
 
 print("\n" + "="*60)
 print("Exercise 2 Complete!")
-print("اكتمل التمرين 2!")
+print("Exercise 2 complete.")
 print("="*60)
 

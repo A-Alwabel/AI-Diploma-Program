@@ -1,6 +1,6 @@
 """
 Unit 1 - Exercise 3: Polynomial Regression Practice
-أساليب معالجة البيانات - تمرين 3: ممارسة الانحدار متعدد الحدود
+Data processing methods - Exercise 3: Practising polynomial regression
 
 Instructions:
 1. Load the provided dataset
@@ -34,7 +34,7 @@ print(f"Shape: {df.shape}")
 print(df.head())
 
 # TODO: Write your code here
-# TODO: اكتب الكود الخاص بك هنا
+# TODO: write your code here
 
 # Task 1: Split the data into train and test sets (80/20)
 print("\n" + "="*60)
@@ -88,6 +88,6 @@ print("="*60)
 
 print("\n" + "="*60)
 print("Exercise 3 Complete!")
-print("اكتمل التمرين 3!")
+print("Exercise 3 complete.")
 print("="*60)
 

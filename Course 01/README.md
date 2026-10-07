@@ -15,6 +15,19 @@ An introduction to Artificial Intelligence: what AI is, intelligent agents, sear
 
 ---
 
+## Course learning outcomes
+
+These are the official outcomes this course is assessed against. Every final-exam item and the case study trace to one of them.
+
+- **CLO1** — Differentiate between traditional AI (rule-based) and modern AI (data-driven), including major historical milestones and philosophical discussions (like Turing's objections).
+- **CLO2** — Apply basic AI techniques such as search algorithms (uninformed, heuristic, competitive) and understand agent design in the PEAS framework (rational agents).
+- **CLO3** — Demonstrate knowledge in cognitive systems, including knowledge representation, ontology, and cognitive agent engineering.
+- **CLO4** — Use Bayesian probabilities and other probabilistic models to handle uncertainty in AI problems, distinguishing between rule-based and data-driven systems.
+- **CLO5** — Implement supervised and unsupervised machine learning pipelines, understanding data processing, encoding, hypothesis space, and loss/optimization, with understanding of basic forward neural network mathematics for classification or regression tasks.
+- **CLO6** — Build and train basic feedforward neural networks for classification or regression tasks, understanding the mathematics of individual neurons, weights, and activation functions.
+- **CLO7** — Compare different deep learning architectures (CNN, RNN, LSTM), evaluate overfitting vs. underfitting, and apply techniques to improve model generalization.
+- **CLO8** — Explore concepts and frameworks of generative AI, discussing ethical implications and creative applications of models like GANs, Transformers, and Large Language Models.
+
 ## Units
 
 | Unit | Folder | Official title | Hours |

@@ -1,6 +1,6 @@
 """
 Unit 1 - Exercise 1: Data Processing Practice
-أساليب معالجة البيانات - تمرين 1: ممارسة معالجة البيانات
+Data processing methods - Exercise 1: Practising data processing
 
 Instructions:
 1. Load the sample dataset provided below
@@ -38,7 +38,7 @@ df.loc[5:7, 'price'] = np.nan
 df = pd.concat([df, df.iloc[[0, 1, 2]]], ignore_index=True)
 
 # TODO: Write your code here
-# TODO: اكتب الكود الخاص بك هنا
+# TODO: write your code here
 
 # Task 1: Load and explore the data
 print("Task 1: Explore the data")
@@ -57,5 +57,5 @@ print("\nTask 4: Create visualizations")
 # Your code here...
 
 print("\nExercise 1 Complete!")
-print("اكتمل التمرين 1!")
+print("Exercise 1 complete.")
 

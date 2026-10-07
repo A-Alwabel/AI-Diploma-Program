@@ -1,6 +1,6 @@
 """
 Unit 4 - Exercise 2: Principal Component Analysis (PCA) Practice
-التجميع وتقليل الأبعاد - تمرين 2: ممارسة تحليل المكونات الرئيسية (PCA)
+Clustering and dimensionality reduction - Exercise 2: Practising principal component analysis (PCA)
 
 Instructions:
 1. Load the provided dataset
@@ -36,7 +36,7 @@ print(f"\nClass distribution:")
 print(df['target'].value_counts())
 
 # TODO: Write your code here
-# TODO: اكتب الكود الخاص بك هنا
+# TODO: write your code here
 
 # Task 1: Scale the data (CRITICAL for PCA!)
 print("\n" + "="*60)
@@ -97,6 +97,6 @@ print("="*60)
 
 print("\n" + "="*60)
 print("Exercise 2 Complete!")
-print("اكتمل التمرين 2!")
+print("Exercise 2 complete.")
 print("="*60)
 

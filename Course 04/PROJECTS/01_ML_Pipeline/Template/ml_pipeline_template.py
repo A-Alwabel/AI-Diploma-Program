@@ -1,5 +1,5 @@
 """
-Complete ML Pipeline Template | قالب خط أنابيب تعلم الآلة الكامل
+Complete ML Pipeline Template
 Project 01 Template
 
 Fill in the functions marked with TODO comments.

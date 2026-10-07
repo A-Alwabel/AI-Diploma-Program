@@ -1,5 +1,5 @@
 """
-PCA Implementation and Visualization Template | قالب تطبيق PCA والتصور
+PCA Implementation and Visualization Template
 Project 02 Template
 
 Fill in the functions marked with TODO comments.

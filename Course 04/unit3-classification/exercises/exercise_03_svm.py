@@ -1,6 +1,6 @@
 """
 Unit 3 - Exercise 3: Support Vector Machine (SVM) Practice
-تقنيات التصنيف المتقدمة - تمرين 3: ممارسة آلات ناقلات الدعم (SVM)
+Advanced classification techniques - Exercise 3: Practising support vector machines (SVM)
 
 Instructions:
 1. Load the provided dataset
@@ -46,7 +46,7 @@ print(f"\nClass distribution:")
 print(df['target'].value_counts())
 
 # TODO: Write your code here
-# TODO: اكتب الكود الخاص بك هنا
+# TODO: write your code here
 
 # Task 1: Split the data and scale features (CRITICAL for SVM!)
 print("\n" + "="*60)
@@ -104,6 +104,6 @@ print("="*60)
 
 print("\n" + "="*60)
 print("Exercise 3 Complete!")
-print("اكتمل التمرين 3!")
+print("Exercise 3 complete.")
 print("="*60)
 

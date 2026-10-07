@@ -1,5 +1,5 @@
 """
-Interactive Data Dashboard Template | قالب لوحة البيانات التفاعلية
+Interactive Data Dashboard Template
 Project 02 Template
 
 Fill in the functions marked with TODO comments.

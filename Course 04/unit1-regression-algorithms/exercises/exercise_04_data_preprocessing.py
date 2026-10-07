@@ -1,6 +1,6 @@
 """
 Unit 1 - Exercise 4: Data Preprocessing Practice
-أساليب معالجة البيانات - تمرين 4: ممارسة المعالجة المسبقة للبيانات
+Data processing methods - Exercise 4: Practising data preprocessing
 
 Instructions:
 1. Load the credit card fraud dataset (or use provided sample data)
@@ -31,7 +31,7 @@ np.random.seed(73)
 # Generate sample financial transaction data (GDI Theme: Financial Investigations)
 # This simulates transaction data that needs preprocessing for fraud detection
 print("📥 Generating sample financial transaction data...")
-print("إنشاء بيانات معاملات مالية نموذجية...")
+print("Building the sample financial-transactions data...")
 print("   GDI Theme: Financial Investigations / Terrorism Financing Detection\n")
 
 # Create sample dataset with mixed data types
@@ -58,12 +58,12 @@ print(f"\n📋 First few rows:")
 print(df.head())
 
 # TODO: Write your code here
-# TODO: اكتب الكود الخاص بك هنا
+# TODO: write your code here
 
 # Task 1: Identify feature types
 print("\n" + "=" * 60)
 print("Task 1: Identify Feature Types")
-print("المهمة 1: تحديد أنواع الميزات")
+print("Task 1: Identify feature types")
 print("=" * 60)
 # TODO: Separate numerical and categorical features
 # Hint: Use df.select_dtypes(include=['number']) for numerical
@@ -73,7 +73,7 @@ print("=" * 60)
 # Task 2: Feature Scaling - StandardScaler
 print("\n" + "=" * 60)
 print("Task 2: Feature Scaling - StandardScaler")
-print("المهمة 2: تحجيم الميزات - StandardScaler")
+print("Task 2: Scale features - StandardScaler")
 print("=" * 60)
 # TODO: Apply StandardScaler to numerical features
 # Steps:
@@ -87,7 +87,7 @@ print("=" * 60)
 # Task 3: Feature Scaling - MinMaxScaler
 print("\n" + "=" * 60)
 print("Task 3: Feature Scaling - MinMaxScaler")
-print("المهمة 3: تحجيم الميزات - MinMaxScaler")
+print("Task 3: Scale features - MinMaxScaler")
 print("=" * 60)
 # TODO: Apply MinMaxScaler to numerical features
 # Steps:
@@ -100,7 +100,7 @@ print("=" * 60)
 # Task 4: Categorical Encoding - LabelEncoder
 print("\n" + "=" * 60)
 print("Task 4: Categorical Encoding - LabelEncoder")
-print("المهمة 4: ترميز الفئات - LabelEncoder")
+print("Task 4: Encode categories - LabelEncoder")
 print("=" * 60)
 # TODO: Apply LabelEncoder to ordinal categorical features
 # Steps:
@@ -113,7 +113,7 @@ print("=" * 60)
 # Task 5: Categorical Encoding - OneHotEncoder
 print("\n" + "=" * 60)
 print("Task 5: Categorical Encoding - OneHotEncoder")
-print("المهمة 5: ترميز الفئات - OneHotEncoder")
+print("Task 5: Encode categories - OneHotEncoder")
 print("=" * 60)
 # TODO: Apply OneHotEncoder to nominal categorical features
 # Steps:
@@ -127,7 +127,7 @@ print("=" * 60)
 # Task 6: Train-Test Split
 print("\n" + "=" * 60)
 print("Task 6: Train-Test Split")
-print("المهمة 6: تقسيم البيانات")
+print("Task 6: Split the data")
 print("=" * 60)
 # TODO: Split data into training and testing sets
 # Steps:
@@ -140,7 +140,7 @@ print("=" * 60)
 # Task 7: Complete Preprocessing Pipeline
 print("\n" + "=" * 60)
 print("Task 7: Complete Preprocessing Pipeline")
-print("المهمة 7: خط أنابيب المعالجة المسبقة الكامل")
+print("Task 7: The complete preprocessing pipeline")
 print("=" * 60)
 # TODO: Create a complete preprocessing pipeline
 # Steps:
@@ -155,7 +155,7 @@ print("=" * 60)
 # Task 8: Visualization - Compare Before/After Scaling
 print("\n" + "=" * 60)
 print("Task 8: Visualization - Compare Before/After Scaling")
-print("المهمة 8: التصور - مقارنة قبل وبعد التحجيم")
+print("Task 8: Visualisation - before and after scaling")
 print("=" * 60)
 # TODO: Create visualizations comparing original vs scaled features
 # Steps:
@@ -168,7 +168,7 @@ print("=" * 60)
 
 print("\n" + "=" * 60)
 print("Exercise 4 Complete!")
-print("اكتمل التمرين 4!")
+print("Exercise 4 complete.")
 print("=" * 60)
 print("\n📚 What You Learned:")
 print("   ✅ Feature scaling (StandardScaler vs MinMaxScaler)")

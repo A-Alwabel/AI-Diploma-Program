@@ -1,5 +1,5 @@
 """
-Privacy-Preserving ML System Template | قالب نظام تعلم الآلة الحافظ للخصوصية
+Privacy-Preserving ML System Template
 Project 02 Template
 
 Fill in the functions marked with TODO comments.

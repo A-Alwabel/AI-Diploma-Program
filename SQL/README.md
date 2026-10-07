@@ -59,10 +59,12 @@ This folder is the smallest honest response to that fact.
 
 ## Where the hours come from
 
-`TEACHING_PLAN.md` in the instructor repository already identifies the cheapest hours in the
-programme, in its own words: Course 05 Unit 4, where *"all six are C04 re-teaches"*. Six lessons
-that re-teach material from Course 04 are worth less than six hours of SQL a student will use in
-their first week of work. Take **6–9 hours** from there.
+Six contact hours, from the two Course 05 Unit 5 sessions whose lessons the teaching plan already
+tags ENRICHMENT / off-spec (`05_production_pipelines` and `10_data_pipeline_automation`). An
+earlier version of this file pointed at Course 05 Unit 4 instead; that unit's nine hours were
+already committed to the tooling strand (one session) and peer-review round 1 (two sessions), so
+the claim booked the same hours three times. The teaching plan's strands table records the same
+displacement.
 
 | lesson | teaches | time |
 |---|---|---|

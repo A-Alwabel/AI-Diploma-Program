@@ -1,6 +1,6 @@
 """
 Unit 5 - Exercise 2: Boosting Algorithms Practice
-اختيار النموذج والتعزيز - تمرين 2: ممارسة خوارزميات التعزيز
+Model selection and boosting - Exercise 2: Practising boosting algorithms
 
 Instructions:
 1. Load the provided dataset
@@ -39,7 +39,7 @@ print(f"\nClass distribution:")
 print(df['target'].value_counts())
 
 # TODO: Write your code here
-# TODO: اكتب الكود الخاص بك هنا
+# TODO: write your code here
 
 # Task 1: Split the data
 print("\n" + "="*60)
@@ -104,6 +104,6 @@ print("="*60)
 
 print("\n" + "="*60)
 print("Exercise 2 Complete!")
-print("اكتمل التمرين 2!")
+print("Exercise 2 complete.")
 print("="*60)
 

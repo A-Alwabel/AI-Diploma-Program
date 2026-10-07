@@ -1,5 +1,5 @@
 """
-Pathfinding Game Template | قالب لعبة البحث عن المسار
+Pathfinding Game Template
 Project 01 Template
 
 Fill in the functions marked with TODO comments.

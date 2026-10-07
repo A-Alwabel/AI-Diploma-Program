@@ -1,5 +1,5 @@
 """
-Explainable AI Tool Template | قالب أداة الذكاء الاصطناعي القابل للتفسير
+Explainable AI Tool Template
 Project 03 Template
 
 Fill in the functions marked with TODO comments.

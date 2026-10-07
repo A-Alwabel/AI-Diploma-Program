@@ -1,5 +1,5 @@
 """
-Gradient Descent Visualizer Template | قالب متصور نزول التدرج
+Gradient Descent Visualizer Template
 Project 03 Template
 
 Fill in the functions marked with TODO comments.

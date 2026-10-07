@@ -1,5 +1,5 @@
 """
-Production ML System Template | قالب نظام تعلم الآلة للإنتاج
+Production ML System Template
 Project 03 Template
 
 Fill in the functions marked with TODO comments.

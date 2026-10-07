@@ -1,6 +1,6 @@
 """
 Unit 1 - Exercise 2: Linear Regression Practice
-أساليب معالجة البيانات - تمرين 2: ممارسة الانحدار الخطي
+Data processing methods - Exercise 2: Practising linear regression
 
 Instructions:
 1. Create a simple linear regression model to predict house prices based on size
@@ -33,7 +33,7 @@ print(f"Shape: {df.shape}")
 print(df.head())
 
 # TODO: Write your code here
-# TODO: اكتب الكود الخاص بك هنا
+# TODO: write your code here
 
 # Task 1: Split the data into train and test sets (80/20)
 print("\nTask 1: Split data")
@@ -57,5 +57,5 @@ new_sizes = [[1000], [2000], [3000]]
 # Your code here...
 
 print("\nExercise 2 Complete!")
-print("اكتمل التمرين 2!")
+print("Exercise 2 complete.")
 

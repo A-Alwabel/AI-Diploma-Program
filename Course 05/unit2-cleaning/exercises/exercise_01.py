@@ -1,6 +1,6 @@
 """
 Unit 2 - Exercise 1: Data Cleaning Practice
-تمرين 1: ممارسة تنظيف البيانات
+Exercise 1: Practising data cleaning
 
 Instructions:
 1. Load the real dataset (provided below)
@@ -77,7 +77,7 @@ print(f"Loaded {len(df):,} real 911 calls, {df.shape[1]} columns")
 print(f"Covering {df['timeStamp'].min():%Y-%m-%d} to {df['timeStamp'].max():%Y-%m-%d}")
 
 # TODO: Write your code here
-# TODO: اكتب الكود الخاص بك هنا
+# TODO: write your code here
 
 # Task 1: Identify missing values
 print("=" * 60)

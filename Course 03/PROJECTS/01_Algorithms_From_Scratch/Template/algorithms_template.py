@@ -1,5 +1,5 @@
 """
-ML Algorithms from Scratch Template | قالب خوارزميات تعلم الآلة من الصفر
+ML Algorithms from Scratch Template
 Project 01 Template
 
 Fill in the functions marked with TODO comments.

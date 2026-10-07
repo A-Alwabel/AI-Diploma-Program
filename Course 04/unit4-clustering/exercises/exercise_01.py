@@ -1,6 +1,6 @@
 """
 Unit 4 - Exercise 1: Clustering Practice
-التجميع وتقليل الأبعاد - تمرين 1: ممارسة التجميع
+Clustering and dimensionality reduction - Exercise 1: Practising clustering
 
 Instructions:
 1. Load the provided dataset
@@ -35,7 +35,7 @@ print("Dataset loaded!")
 print(f"Shape: {df.shape}")
 
 # TODO: Write your code here
-# TODO: اكتب الكود الخاص بك هنا
+# TODO: write your code here
 
 # Task 1: Scale the data
 print("\nTask 1: Scale data")
@@ -58,5 +58,5 @@ print("\nTask 5: Visualize")
 # Your code here...
 
 print("\nExercise 1 Complete!")
-print("اكتمل التمرين 1!")
+print("Exercise 1 complete.")
 

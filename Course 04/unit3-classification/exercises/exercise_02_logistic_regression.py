@@ -1,6 +1,6 @@
 """
 Unit 3 - Exercise 2: Logistic Regression Practice
-تقنيات التصنيف المتقدمة - تمرين 2: ممارسة الانحدار اللوجستي
+Advanced classification techniques - Exercise 2: Practising logistic regression
 
 Instructions:
 1. Load the provided dataset
@@ -47,7 +47,7 @@ print(f"\nClass distribution:")
 print(df['target'].value_counts())
 
 # TODO: Write your code here
-# TODO: اكتب الكود الخاص بك هنا
+# TODO: write your code here
 
 # Task 1: Split the data into train and test sets (80/20, use stratify)
 print("\n" + "="*60)
@@ -101,6 +101,6 @@ print("="*60)
 
 print("\n" + "="*60)
 print("Exercise 2 Complete!")
-print("اكتمل التمرين 2!")
+print("Exercise 2 complete.")
 print("="*60)
 
