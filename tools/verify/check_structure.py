@@ -11,6 +11,7 @@ Per Course NN (01..12):
 Errors exit 1; warnings only are exit 0.
 """
 import re
+import subprocess
 import sys
 from pathlib import Path
 
@@ -52,7 +53,18 @@ def check_course(cdir: Path):
                        (".DS_Store", ".DS_Store"), ("__pycache__", "__pycache__"),
                        ("mlruns", "mlruns"), (".pytest_cache", "pytest cache")]:
         for hit in cdir.rglob(pat):
-            errors.append(f"{name}: {label} at {hit.relative_to(REPO)}")
+            rel = hit.relative_to(REPO)
+            # Run-time and OS litter (__pycache__ from importing course09_step_viz, checkpoints,
+            # .DS_Store, mlruns, pytest cache) appears whenever anyone RUNS the notebooks, students
+            # included, and git already ignores it. It is a defect only if it is tracked. Authoring
+            # mistakes (brace-dirs, Untitled) stay errors either way.
+            tracked = subprocess.run(["git", "ls-files", "--error-unmatch", str(rel)], cwd=REPO,
+                                     capture_output=True, text=True).returncode == 0 if hit.is_file() else bool(
+                      subprocess.run(["git", "ls-files", str(rel)], cwd=REPO, capture_output=True, text=True).stdout.strip())
+            if tracked or label in ("brace-dir", "stray Untitled"):
+                errors.append(f"{name}: {label} at {rel}" + (" (tracked)" if tracked else ""))
+            else:
+                warns.append(f"{name}: untracked, ignored {label} at {rel} - run-time litter, not a defect")
     q = cdir / "QUIZZES"
     if q.is_dir():
         n = len(list(q.glob("[Qq]uiz*.md")))
