@@ -31,7 +31,7 @@ Scaling data science beyond a single machine and into production: big data conce
 
 Notebooks in `enrichment/` are **not examinable** - they connect this unit to current practice and appear in no quiz or exam.
 
-PySpark and RAPIDS are optional - see `../DOCS/OPTIONAL_DEPENDENCIES.md`. The other files in `examples/` (`large_dataset.csv`, `deployed_model.pkl`, logs, metadata) are inputs/outputs of these notebooks.
+Every notebook in `examples/` runs from the shared data loader and writes nothing into this folder; anything it needs to save goes to a temporary directory and is removed at the end.
 
 ## Exercise
 

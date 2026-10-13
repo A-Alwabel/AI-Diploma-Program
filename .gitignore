@@ -54,7 +54,6 @@ data/
 !Course 06/unit4-transparency-accountability/enrichment/*.csv
 
 # Written by Course 05 unit2 07_cudf_import_export_gpu.ipynb on every run (20 MB).
-Course 05/unit2-cleaning/examples/output_pandas.csv
 
 # Logs & outputs
 *.log
